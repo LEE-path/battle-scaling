@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "pk-process-synthetic-simultaneous",
+  "fixture_kind": "synthetic",
+  "characters": [
+    {"id": "a", "name": "Synthetic A", "version": "same test version", "state": "10HP"},
+    {"id": "b", "name": "Synthetic B", "version": "same test version", "state": "10HP"}
+  ],
+  "sources": [{
+    "id": "s-game", "title": "合成规则", "origin": "synthetic", "access": "provided",
+    "locator": "《合成规则》§1-4",
+    "text": "A和B属于同一测试版本同一状态，无场外支援；A有10HP、每次命中造成10HP伤害，B同样10HP/10伤害，原资料未给速度差、战术经验和先后手；原资料明确允许同一时点交换攻击且同时命中时结算两边伤害，无复活；仅胜利条件为对方失能。"
+  }],
+  "anchors": [], "edges": [],
+  "matchup": {
+    "presentation": "process",
+    "teams": [{"id": "a", "members": [{"subject": "a", "count": 1}]},
+              {"id": "b", "members": [{"subject": "b", "count": 1}]}],
+    "conditions": {"victory": "对方失能；双失能裁决未给", "revival": "none"},
+    "mode_processes": {
+      "normal": {
+        "actors": [
+          {"id": "a", "initial": {"state": "active", "hp": 10, "max_hp": 10},
+           "hp_model": {"kind": "game", "zero_state": "incapacitated", "evidence_ids": ["s-game"],
+                        "assumptions": ["本分支采用HP≤0即失能解释；原文未明写阈值"]}, "recoveries": []},
+          {"id": "b", "initial": {"state": "active", "hp": 10, "max_hp": 10},
+           "hp_model": {"kind": "game", "zero_state": "incapacitated", "evidence_ids": ["s-game"],
+                        "assumptions": ["本分支采用HP≤0即失能解释；原文未明写阈值"]}, "recoveries": []}
+        ],
+        "victory": {"defeated_states": ["incapacitated"]},
+        "max_steps": 10,
+        "include_narrative": true,
+        "steps": [{
+          "id": "simultaneous-exchange",
+          "actions": [
+            {"actor": "a", "target": "b", "intent": "A尝试一次攻击",
+             "activation": {"status": "assumed", "assumptions": ["本分支双方进入可发动条件并同刻出手；不补速度、距离或耗时"]},
+             "hit": {"status": "assumed", "assumptions": ["本分支A有效命中；不宣称必命中"]},
+             "defense": {"status": "assumed", "outcome": "not_prevented", "assumptions": ["本分支B未成功阻止A此次命中；不推断B从来不会防御"]},
+             "effects": [{"type": "damage", "target": "b", "amount": 10, "status": "supported", "evidence_ids": ["s-game"]}]},
+            {"actor": "b", "target": "a", "intent": "B尝试一次攻击",
+             "activation": {"status": "assumed", "assumptions": ["本分支双方进入可发动条件并同刻出手；不补速度、距离或耗时"]},
+             "hit": {"status": "assumed", "assumptions": ["本分支B有效命中；不宣称必命中"]},
+             "defense": {"status": "assumed", "outcome": "not_prevented", "assumptions": ["本分支A未成功阻止B此次命中；不推断A从来不会防御"]},
+             "effects": [{"type": "damage", "target": "a", "amount": 10, "status": "supported", "evidence_ids": ["s-game"]}]}
+          ]
+        }]
+      }
+    }
+  },
+  "coverage": {"scope": "Synthetic regression only; no real characters or empirical combat sampling"},
+  "limitations": ["The simultaneous successful hits are an explicit hypothetical branch, not an observed event or a probability estimate.", "Mutual incapacitation adjudication is not specified by the provided rule."]
+}

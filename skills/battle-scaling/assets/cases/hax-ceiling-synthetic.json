@@ -1,0 +1,113 @@
+{
+  "mode": "normal",
+  "ability_id": "mind-control",
+  "sources": [
+    {
+      "id": "source",
+      "access": "provided",
+      "origin": "primary",
+      "title": "Synthetic packet; no real work is cited."
+    }
+  ],
+  "caster_ap": {
+    "system": "synthetic-tiers",
+    "ruleset": "synthetic-v1",
+    "axis": "affected_entity_tier",
+    "rank": 1,
+    "label": "building",
+    "source_ids": [
+      "source"
+    ]
+  },
+  "observed_limit": {
+    "basis": "demonstrated",
+    "ability_id": "mind-control",
+    "statement": "The ability demonstrably controlled a city-tier entity.",
+    "source_ids": [
+      "source"
+    ],
+    "level": {
+      "system": "synthetic-tiers",
+      "ruleset": "synthetic-v1",
+      "axis": "affected_entity_tier",
+      "rank": 2,
+      "label": "city",
+      "source_ids": [
+        "source"
+      ]
+    }
+  },
+  "world_ceiling": {
+    "kind": "strongest_character",
+    "character_id": "world-strongest",
+    "source_ids": [
+      "source"
+    ],
+    "level": {
+      "system": "synthetic-tiers",
+      "ruleset": "synthetic-v1",
+      "axis": "affected_entity_tier",
+      "rank": 3,
+      "label": "star",
+      "source_ids": [
+        "source"
+      ]
+    },
+    "attainment": {
+      "kind": "achieved",
+      "statement": "The strongest character achieved star tier.",
+      "source_ids": [
+        "source"
+      ]
+    }
+  },
+  "target_level": {
+    "system": "synthetic-tiers",
+    "ruleset": "synthetic-v1",
+    "axis": "affected_entity_tier",
+    "rank": 2,
+    "label": "city",
+    "source_ids": [
+      "source"
+    ]
+  },
+  "checks": {
+    "object": {
+      "state": "pass",
+      "explanation": "Host-recorded synthetic mechanism check.",
+      "source_ids": [
+        "source"
+      ]
+    },
+    "compatibility": {
+      "state": "pass",
+      "explanation": "Host-recorded synthetic mechanism check.",
+      "source_ids": [
+        "source"
+      ]
+    },
+    "activation": {
+      "state": "pass",
+      "explanation": "Host-recorded synthetic mechanism check.",
+      "source_ids": [
+        "source"
+      ]
+    },
+    "resistance": {
+      "state": "pass",
+      "explanation": "Host-recorded synthetic mechanism check.",
+      "source_ids": [
+        "source"
+      ]
+    }
+  },
+  "effect_scope": {
+    "description": "One target entity; entity tier is distinct from area/count.",
+    "resistance_interaction": "Mind-control resistance checked separately.",
+    "source_ids": [
+      "source"
+    ]
+  },
+  "fixture_kind": "synthetic_not_original_evidence",
+  "description": "Invented city-control / star-ceiling packet for policy regression; not evidence for any fictional work."
+}

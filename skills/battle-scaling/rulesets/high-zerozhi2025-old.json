@@ -1,0 +1,21 @@
+{
+  "id": "zerozhi2025-old-threshold",
+  "title": "零智的地底太阳《论战常识科普2》所记旧论外门槛",
+  "status": "个人整理的历史口径；非已核验的2026汪吧官方总规范",
+  "published_date": "2025-01-22",
+  "read_date": "2026-10-18",
+  "source": {
+    "url": "https://www.bilibili.com/opus/1022449834228973569",
+    "locator": "一、单体宇宙以上的论战：论外旧门槛；四、量级枚举",
+    "kind": "personal_community_summary"
+  },
+  "old_uncountable_threshold": "论外三线及以上",
+  "threshold_domain": "cardinal or cardinality of an ordinal; not a raw fictional adjective",
+  "threshold": "aleph1",
+  "background_note": "数学部分原文默认GCH；执行器不会因为引用这张表就暗中加入GCH。请求必须显式声明公理。",
+  "caveats": [
+    "旧门槛用于对照历史口径，不代表当前统一规则。",
+    "不可数结构的标签不能自动继承为角色攻击、耐久或速度。",
+    "真类、理论、模型和作品自定义对象不凭名字换算成基数。"
+  ]
+}

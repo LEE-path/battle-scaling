@@ -1,0 +1,21 @@
+{
+  "model": "gravitational_binding",
+  "inputs": {
+    "mass": {
+      "value": 5.9722e24,
+      "unit": "kg",
+      "source": "NASA Earth Fact Sheet, Bulk parameters: mass 5.9722 x 10^24 kg; https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html; checked 2026-10-18",
+      "assumption": "A fictional Earth-like target is modeled using Earth's mass only if the case explicitly accepts this analogy; this file itself is a physical benchmark."
+    },
+    "radius": {
+      "value": 6371000,
+      "unit": "m",
+      "source": "NASA Earth Fact Sheet: volumetric mean radius 6371.000 km, converted explicitly to m; https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html; checked 2026-10-18",
+      "assumption": "Spherical target with volumetric mean radius; real Earth is differentiated, while this calculation deliberately uses uniform density."
+    }
+  },
+  "assumptions": [
+    "Physical benchmark for complete gravitational dispersal to infinity, not mere cracking or surface devastation.",
+    "No specific character, attack, target identity or mass is established by this fixture. Attach separate primary-work evidence before transferring it to a feat."
+  ]
+}

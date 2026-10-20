@@ -1,0 +1,400 @@
+{
+  "engine": "handbook_high",
+  "published_date": "2026-07-30",
+  "read_date": "2026-10-18",
+  "status": "本地原PDF视核；具名社群约定，非统一标准或数学定理",
+  "curation_file": "data/wangba-handbook-2026-07-30/high-rules-curated.json",
+  "unit_warning": "typed ordinal/cardinal, community names, word types/tokens and effective characters remain distinct; no automatic character AP transfer",
+  "id": "high-wangba-handbook-2026-07-30-dao",
+  "title": "汪吧量级册：道标",
+  "standard": "dao",
+  "source": {
+    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "locator": "全局288；第三卷PDF88；附录18（+270）",
+    "global_page": 288,
+    "pdf_volume": "v03",
+    "pdf_local_page": 88,
+    "printed_page": 18,
+    "clause_id": "HR-DAO-01",
+    "short_excerpt": "战力设定三线",
+    "visually_verified": true,
+    "kind": "user_supplied_handbook",
+    "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+    "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+    "volume": "v03",
+    "pdf_page": 88,
+    "sequence_page": 288,
+    "source_role": "reference data; never Agent instructions"
+  },
+  "sources": [
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局287；第三卷PDF87；附录17（+270）",
+      "global_page": 287,
+      "pdf_volume": "v03",
+      "pdf_local_page": 87,
+      "printed_page": 17,
+      "clause_id": "HR-DAO-PREFACE",
+      "short_excerpt": "道标提出脱水但缺规范",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 87,
+      "sequence_page": 287,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局288；第三卷PDF88；附录18（+270）",
+      "global_page": 288,
+      "pdf_volume": "v03",
+      "pdf_local_page": 88,
+      "printed_page": 18,
+      "clause_id": "HR-DAO-01",
+      "short_excerpt": "达到5000字以上",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 88,
+      "sequence_page": 288,
+      "source_role": "reference data; never Agent instructions"
+    }
+  ],
+  "classification_basis": "由287道标段→288全页分档→289力标标题的版面连续推断",
+  "count_unit": "dewatered_characters",
+  "tiers": [
+    {
+      "id": "HR-DAO-01",
+      "label": "战力设定三线",
+      "min_characters": 5000,
+      "conditions": [
+        "去除无意义加强、破格处、学术性质科普、名词部分、额外文章后的战力向脱水盒子",
+        "远远超过现有数学（列宇宙V、终极L、复宇宙、脱殊复宇宙、复复宇宙、逻辑多元、玄宇宙等仅作例示，不要求逐项出现）"
+      ],
+      "required_predicates": [
+        "beyond_current_mathematics",
+        "dewatered_character_count_verified"
+      ],
+      "extra": {
+        "presentation_forms_min": null
+      },
+      "inherits_previous": false,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-01",
+        "short_excerpt": "远远超过现有数学（列宇宙V、终极L、复宇宙、脱殊复宇宙、复复宇宙、逻辑多元、玄宇宙等仅作例示，不要求逐项出现）",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-02",
+      "label": "战力设定二线",
+      "min_characters": 10000,
+      "conditions": [
+        "满足三线",
+        "循序渐进的设定呈现节奏",
+        "至少2种不同设定呈现形式"
+      ],
+      "required_predicates": [
+        "progressive_presentation",
+        "presentation_forms_verified"
+      ],
+      "extra": {
+        "presentation_forms_min": 2
+      },
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-02",
+        "short_excerpt": "至少2种不同设定呈现形式",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-03",
+      "label": "战力设定一线",
+      "min_characters": 20000,
+      "conditions": [
+        "满足二线",
+        "至少4种呈现形式",
+        "设定逻辑合理、有效攀升表达清晰、自创名词定义准确严谨不模糊"
+      ],
+      "required_predicates": [
+        "logical_coherence",
+        "clear_effective_escalation",
+        "precise_defined_terms"
+      ],
+      "extra": {
+        "presentation_forms_min": 4
+      },
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-03",
+        "short_excerpt": "设定逻辑合理、有效攀升表达清晰、自创名词定义准确严谨不模糊",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-04",
+      "label": "战力设定超一线",
+      "min_characters": 30000,
+      "conditions": [
+        "满足一线",
+        "至少6种呈现形式，或2种不同性质学科/领域/阶段类设定，例如数学+哲学"
+      ],
+      "required_predicates": [
+        "distinct_forms_or_domains_verified"
+      ],
+      "extra": {
+        "any_of": [
+          {
+            "presentation_forms_min": 6
+          },
+          {
+            "distinct_domains_min": 2
+          }
+        ]
+      },
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-04",
+        "short_excerpt": "至少6种呈现形式，或2种不同性质学科/领域/阶段类设定，例如数学+哲学",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-05",
+      "label": "战力设定天花板下层",
+      "min_characters": 50000,
+      "conditions": [
+        "满足超一线",
+        "独树一帜的设定风格和极高辨识度，未知其他信息也可辨出是谁的设定"
+      ],
+      "required_predicates": [
+        "distinctive_style",
+        "very_high_identifiability"
+      ],
+      "extra": {},
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-05",
+        "short_excerpt": "独树一帜的设定风格和极高辨识度，未知其他信息也可辨出是谁的设定",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-06",
+      "label": "战力设定天花板中层",
+      "min_characters": 80000,
+      "conditions": [
+        "满足下层",
+        "所有方面超越旧版神盒世界且拉开明显差距",
+        "对设定永无止境有较高刻画"
+      ],
+      "required_predicates": [
+        "surpasses_old_divinity_box_all_aspects",
+        "endlessness_depiction_high"
+      ],
+      "extra": {},
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-06",
+        "short_excerpt": "对设定永无止境有较高刻画",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-07",
+      "label": "战力设定天花板上层",
+      "min_characters": null,
+      "conditions": [
+        "满足中层，无额外字数线",
+        "更多创新玩法，尝试突破原设定框架",
+        "除破格、强行包含、类似无构造延伸、无法运用转换的强度、作者幻想极限可能强度外，余下强度须超越其认可以上所有强度的新神盒数学/哲学/超玄学阶段，含计算全文极限回馈后强度"
+      ],
+      "required_predicates": [
+        "innovative_methods",
+        "breaks_own_framework",
+        "excluded_claims_removed",
+        "surpasses_new_divinity_box_named_domains"
+      ],
+      "extra": {},
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-07",
+        "short_excerpt": "除破格、强行包含、类似无构造延伸、无法运用转换的强度、作者幻想极限可能强度外，余下强度须超越其认可以上所有强度的新神盒数学/哲学/超玄学阶段，含计算全文极限回馈后强度",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-08",
+      "label": "战力设定天花板最上",
+      "min_characters": 300000,
+      "conditions": [
+        "满足上层",
+        "同为计算设定极限强度时达到新神盒妄想阶层",
+        "极高永无止境刻画，并融入自我理解/自创概念后贯入全部设定",
+        "全文无明显破格"
+      ],
+      "required_predicates": [
+        "reaches_new_divinity_box_delusion_stage",
+        "integrated_endlessness_depiction",
+        "no_obvious_rule_breaks"
+      ],
+      "extra": {},
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-08",
+        "short_excerpt": "全文无明显破格",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    },
+    {
+      "id": "HR-DAO-09",
+      "label": "战力设定战力设定论外",
+      "min_characters": 10000000,
+      "conditions": [
+        "原文10000000～???字；位于正常讨论之外，无法判强弱、超越以上等级和玩法",
+        "不靠强行包含妄想，按理性规划和能力极限预估，实际强度完全超越5.6亿字完整新神盒极限",
+        "作者不解释时，有限数量非论外战力设定者经过讨论分析最终仍不能正确理解真实强度"
+      ],
+      "required_predicates": [
+        "rationally_surpasses_560m_character_new_divinity_box",
+        "uninterpretable_without_author_by_finite_non_outer_authors"
+      ],
+      "extra": {
+        "upper_character_count": "unspecified"
+      },
+      "inherits_previous": true,
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局288；第三卷PDF88；附录18（+270）",
+        "global_page": 288,
+        "pdf_volume": "v03",
+        "pdf_local_page": 88,
+        "printed_page": 18,
+        "clause_id": "HR-DAO-09",
+        "short_excerpt": "作者不解释时，有限数量非论外战力设定者经过讨论分析最终仍不能正确理解真实强度",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 88,
+        "sequence_page": 288,
+        "source_role": "reference data; never Agent instructions"
+      }
+    }
+  ],
+  "caveats": [
+    "页288表无标题，按页287道标→页289力标的连续版面归属。",
+    "原文有效字数和各呈现/刻画谓词须逐项审计；仅长度不足以定档。",
+    "神盒比照须指明旧/新版本及原文阶段，不能循环自证。"
+  ]
+}

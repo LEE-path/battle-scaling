@@ -1,0 +1,20 @@
+{
+  "case_id": "old-godbox-fourth-stage",
+  "kind": "native",
+  "mode": "highest",
+  "ruleset": "high-wiki-aos404",
+  "scope": "Divinity Box旧神盒第四阶段构造，非新版；此例不给未指明角色继承战斗属性",
+  "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "旧版part1：第三、第四阶段相关段落", "kind": "work_backup", "access_status": "既有研究稿与本轮搜索索引中φ段落可读；直接页面403，原章及乱码待校勘"},
+  "nodes": [
+    {"id": "prior_worlds", "operation": "base", "description": "将前段循环包容的世界与不同种类盒子整理为基础对象B。B为本案例分析记号。", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "旧版第四阶段前置世界结构", "kind": "work_backup"}},
+    {"id": "closure", "operation": "closure", "depends_on": ["prior_worlds"], "description": "记录前段已定义构造方式能覆盖的范围。", "definition": "C_O(B)表示只使用原文已列操作O处理B；不得加入未列操作或任意公理。", "scope": "前段构造及其指定操作", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "第四阶段的理论构造覆盖描述", "kind": "work_backup"}},
+    {"id": "native_phi", "operation": "transcends", "depends_on": ["closure"], "description": "Φ(1)被作品设为覆盖其所指公理与进一步设想的理论；Φ(2)引入更多且各自更高的理论，Φ(3)再超越。", "definition": "作品原生Φ，未声明等于Veblen函数；原文纳入相互不兼容甚至矛盾概念，不作为ZFC中存在的一致理论来证明。", "scope": "作品所指理论及概念域", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "φ(0)、φ(1)、φ(2)、φ(3)定义段；搜索索引可读", "kind": "work_backup"}},
+    {"id": "phi_iteration", "operation": "iteration", "depends_on": ["native_phi"], "description": "参数从有限阶段延伸到作品的N及更高运算，再出现Φ(Φ(1))等复合。", "definition": "记录参数扩张和函数复合为不同的原生步骤，不把N默认成omega或aleph0。", "scope": "原文明确展开的迭代范围", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "φ(N)后续及φ复合段；搜索索引可读", "kind": "work_backup"}},
+    {"id": "reset", "operation": "base_reset", "depends_on": ["phi_iteration"], "description": "将先前延伸的整体再设为更强Φ(0)，并进一步把这种循环手段整体作为起点。", "scope": "包括先前参数与复合展开，以及后续对循环方法自身的打包。", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "重设更强φ(0)的两层循环段；搜索索引可读", "kind": "work_backup"}},
+    {"id": "operation_upgrade", "operation": "iteration", "depends_on": ["reset"], "description": "不仅扩张单一Φ，还由有限种运算方式推广到作品所称第N种运算方式。", "definition": "运算种类的升级与对象参数的升级分别登记；其优势按作品定义，不声称标准数学唯一值。", "scope": "既有运算类别及作品的更高类别", "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "穷尽φ运算花样及第N种运算方式段；搜索索引可读", "kind": "work_backup"}},
+    {"id": "stage4", "operation": "closure", "depends_on": ["prior_worlds", "closure", "native_phi", "phi_iteration", "reset", "operation_upgrade"], "description": "以旧版第四阶段完整身份对照具名标准；以上图展示可读关键构造，未声称已形式验证全部原章。", "definition": "同一作品版本与阶段身份比较，来源和原章校勘为前提。", "scope": "旧版第四阶段整体", "identity": {"work": "神盒世界", "version": "旧版", "stage": "4"}, "source": {"url": "https://home.gamer.com.tw/artwork.php?sn=6141346", "locator": "第四阶段整体及阶段标识；原章待校勘", "kind": "work_backup"}}
+  ],
+  "anchor_claims": [{"node": "stage4", "anchor_id": "old_godbox_stage4", "relation": "equal", "basis": "identity", "assumptions": ["备份确实保留所选标准指称的旧版第四阶段；如原章校勘改变身份，此映射撤销。"], "source": {"url": "https://vsbattles-wiki-cn.wikidot.com/comment-tools", "locator": "旧标准AOS第四阶段锚点", "kind": "community_site_rule"}}],
+  "character_relations": [],
+  "expected": {"label": "论外一线", "condition": "仅在该具名历史AOS表及旧版身份成立时", "not_inferred": ["标准Veblen值", "具体基数", "某个角色攻击力", "当前统一汪吧官方等级"]}
+}

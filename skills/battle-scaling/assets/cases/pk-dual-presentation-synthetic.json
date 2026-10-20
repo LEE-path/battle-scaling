@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "case_id": "pk-dual-presentation-synthetic",
+  "fixture_kind": "synthetic",
+  "characters": [
+    {
+      "id": "a",
+      "name": "合成角色A",
+      "version": "规则测试v1",
+      "state": "满游戏HP"
+    },
+    {
+      "id": "b",
+      "name": "合成角色B",
+      "version": "规则测试v1",
+      "state": "满游戏HP"
+    }
+  ],
+  "sources": [
+    {
+      "id": "game-rule",
+      "title": "双呈现演示的自创规则（非作品战绩）",
+      "origin": "synthetic",
+      "access": "provided",
+      "locator": "本CASE内自创规则1-3",
+      "exact_text": "规则1：双方各10游戏HP，普通有效攻击造成10HP伤害，0HP失能。规则2：本测试无恢复与外援。规则3：对方失能且自己可行动即胜，双方同时失能算互败。先手和命中未给定。"
+    }
+  ],
+  "anchors": [],
+  "edges": [],
+  "matchup": {
+    "presentation": "overview",
+    "teams": [
+      "a",
+      "b"
+    ],
+    "conditions": {
+      "support": "none",
+      "first_move": "unknown",
+      "victory": "对方失能；互败独立记录"
+    },
+    "win_paths": [],
+    "mode_assessments": {
+      "normal": {
+        "winner": "even",
+        "status": "conditional",
+        "reasoning": "已知规则完全对称；以下数值仅在无同时出手且随机先手对称的额外假设下成立。",
+        "evidence_ids": [
+          "game-rule"
+        ],
+        "critical_assumptions": [
+          "不论证现实命中率，不代表真实角色"
+        ],
+        "win_estimate": {
+          "method": "reasoned_estimate",
+          "basis": "同一规则下先手决定胜负，额外假设双方先手对称。",
+          "evidence_ids": [
+            "game-rule"
+          ],
+          "assumptions": [
+            "排除此分支之外的同时命中",
+            "随机先手对称",
+            "先手有效命中"
+          ],
+          "outcomes": [
+            {
+              "outcome": "a",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            },
+            {
+              "outcome": "b",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            }
+          ]
+        }
+      },
+      "highest": {
+        "winner": "even",
+        "status": "conditional",
+        "reasoning": "已知规则完全对称；以下数值仅在无同时出手且随机先手对称的额外假设下成立。",
+        "evidence_ids": [
+          "game-rule"
+        ],
+        "critical_assumptions": [
+          "不论证现实命中率，不代表真实角色"
+        ],
+        "win_estimate": {
+          "method": "reasoned_estimate",
+          "basis": "同一规则下先手决定胜负，额外假设双方先手对称。",
+          "evidence_ids": [
+            "game-rule"
+          ],
+          "assumptions": [
+            "排除此分支之外的同时命中",
+            "随机先手对称",
+            "先手有效命中"
+          ],
+          "outcomes": [
+            {
+              "outcome": "a",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            },
+            {
+              "outcome": "b",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            }
+          ]
+        }
+      },
+      "lowball": {
+        "winner": "even",
+        "status": "conditional",
+        "reasoning": "已知规则完全对称；以下数值仅在无同时出手且随机先手对称的额外假设下成立。",
+        "evidence_ids": [
+          "game-rule"
+        ],
+        "critical_assumptions": [
+          "不论证现实命中率，不代表真实角色"
+        ],
+        "win_estimate": {
+          "method": "reasoned_estimate",
+          "basis": "同一规则下先手决定胜负，额外假设双方先手对称。",
+          "evidence_ids": [
+            "game-rule"
+          ],
+          "assumptions": [
+            "排除此分支之外的同时命中",
+            "随机先手对称",
+            "先手有效命中"
+          ],
+          "outcomes": [
+            {
+              "outcome": "a",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            },
+            {
+              "outcome": "b",
+              "min": 0.4,
+              "best": 0.5,
+              "max": 0.6
+            }
+          ]
+        }
+      }
+    },
+    "mode_processes": {
+      "normal": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "a-first-branch",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "普通攻击",
+                "activation": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支A先发动且资源足够"
+                  ]
+                },
+                "hit": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支命中"
+                  ]
+                },
+                "defense": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支B未成功防御"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "type": "damage",
+                    "target": "b",
+                    "amount": 10,
+                    "status": "supported",
+                    "evidence_ids": [
+                      "game-rule"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "mutual_outcome": "mutual_defeat"
+        },
+        "include_narrative": true,
+        "max_steps": 10
+      },
+      "highest": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "a-first-branch",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "普通攻击",
+                "activation": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支A先发动且资源足够"
+                  ]
+                },
+                "hit": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支命中"
+                  ]
+                },
+                "defense": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支B未成功防御"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "type": "damage",
+                    "target": "b",
+                    "amount": 10,
+                    "status": "supported",
+                    "evidence_ids": [
+                      "game-rule"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "mutual_outcome": "mutual_defeat"
+        },
+        "include_narrative": true,
+        "max_steps": 10
+      },
+      "lowball": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active",
+              "hp": 10,
+              "max_hp": 10,
+              "resources": {}
+            },
+            "hp_model": {
+              "kind": "game",
+              "zero_state": "incapacitated",
+              "evidence_ids": [
+                "game-rule"
+              ]
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "a-first-branch",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "普通攻击",
+                "activation": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支A先发动且资源足够"
+                  ]
+                },
+                "hit": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支命中"
+                  ]
+                },
+                "defense": {
+                  "status": "assumed",
+                  "assumptions": [
+                    "此分支B未成功防御"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "type": "damage",
+                    "target": "b",
+                    "amount": 10,
+                    "status": "supported",
+                    "evidence_ids": [
+                      "game-rule"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "mutual_outcome": "mutual_defeat"
+        },
+        "include_narrative": true,
+        "max_steps": 10
+      }
+    }
+  },
+  "coverage": {
+    "scope": "仅验证两种呈现入口，不评任何真实角色量级"
+  },
+  "limitations": [
+    "不能将游戏HP换为焦耳、肉身承伤或汪吧量级",
+    "单条过程分支不产生胜率"
+  ]
+}

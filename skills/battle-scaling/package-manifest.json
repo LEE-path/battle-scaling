@@ -1,0 +1,577 @@
+{
+  "skill": "battle-scaling",
+  "version": "1.7.0",
+  "updated": "2026-10-20",
+  "scope": "Public source distribution: static package excluding self, bytecode and mutable site-experience. Original 310-page OCR corpus and images are not distributed; default rule profile is unchanged.",
+  "mutable_paths": [
+    "data/site-experience/**"
+  ],
+  "files": {
+    "agents/openai.yaml": {
+      "bytes": 508,
+      "sha256": "75b4f415fdca210d81e50221e2c39ce77892887bf138d94b13cc2eedafbdf522"
+    },
+    "assets/cases/feat-review-synthetic.json": {
+      "bytes": 3787,
+      "sha256": "1d7329e23054db341eb498c99c2ea0f44e1f9dfa4dfd546357d937847ea9d58a"
+    },
+    "assets/cases/hax-ceiling-synthetic.json": {
+      "bytes": 2751,
+      "sha256": "ac951b2ccf126fde60ca4b16902add0fe9b34c3efb88b8858638a73aa556841d"
+    },
+    "assets/cases/high-godbox-stage4.json": {
+      "bytes": 4733,
+      "sha256": "66100962c7476d21e2cced51fcbce151011cfc12d8fcc212de9ecd51d53b8d19"
+    },
+    "assets/cases/high-scp3812.json": {
+      "bytes": 2096,
+      "sha256": "f3e1e9595cf68b8971ca2dc7304e6a0c2d9e0f6704f8d54ba1c44a964c65ca31"
+    },
+    "assets/cases/high-whitelight.json": {
+      "bytes": 1783,
+      "sha256": "7be31e1a0a31d95f9ddb5f4f2059e9bcb157a07a30e77af528ee916ac025716f"
+    },
+    "assets/cases/physics-earth-binding.json": {
+      "bytes": 1181,
+      "sha256": "3e62b0140c5fe9a8777d2e52f3b8f9d4019f11f2685aedfeeeedae7aacf50bfb"
+    },
+    "assets/cases/physics-wood-bending-conditional.json": {
+      "bytes": 1679,
+      "sha256": "b041834ada1389b86298b7d99f0e742eb149633f2e07e69318c6a32930ad71fa"
+    },
+    "assets/cases/pk-dual-presentation-synthetic.json": {
+      "bytes": 11898,
+      "sha256": "e72b8ac1a48f10f0d73fd86a65dfd445d45c0d2f9084628e3ee2fda99c42eeef"
+    },
+    "assets/cases/pk-process-synthetic.json": {
+      "bytes": 3592,
+      "sha256": "5603533184565736a3bcdbdb3d62f47ef0d241e0dcad27a21bacf5cec724b345"
+    },
+    "assets/cases/research-animals.json": {
+      "bytes": 18826,
+      "sha256": "82fc161a51650db186756fe418ec82547786f08d44d8374c6b22512aab69c3cb"
+    },
+    "assets/cases/research-captain-wood.json": {
+      "bytes": 16147,
+      "sha256": "b11713c97ddd2248d244826251483277f2b97b3a24e5d8f4ab60afeace71fd45"
+    },
+    "assets/cases/research-deathstar.json": {
+      "bytes": 22117,
+      "sha256": "09cb30585428fcfa04a74b939000a23670bf2e95c1bda8d53dfeab5f591b3a81"
+    },
+    "assets/cases/research-franx.json": {
+      "bytes": 18230,
+      "sha256": "0829e7c72c69a49355ef6f4185352bcc549277d7c2d0a5581de7eb8402b75718"
+    },
+    "assets/formula-ocr-validation/crop-manifest.json": {
+      "bytes": 3214,
+      "sha256": "cbb71f9df94d380dbe9c95ae90f1cce1de499245fa3a2b39f88f66ebc148a839"
+    },
+    "assets/formula-ocr-validation/formula-results-threshold160.json": {
+      "bytes": 8632,
+      "sha256": "4b959e28bfc330e7d593af2dc8260004fa7c6693041e3e671b58c3f52cc67f2a"
+    },
+    "assets/formula-ocr-validation/formula-results.json": {
+      "bytes": 7761,
+      "sha256": "72583d9e0141925eebf3843a0fb52cc9d3f095aa1e7620c397f94918e9d752e8"
+    },
+    "assets/formula-ocr-validation/model-manifest.json": {
+      "bytes": 1866,
+      "sha256": "98633785ac3dd00e7526a212bffef7d606c972cb1d6b3c9ddab9b92e55b8f8b9"
+    },
+    "assets/licenses/novel-refpack-MIT.txt": {
+      "bytes": 1083,
+      "sha256": "ccb9eb4a40e1bbccd09555ed5bad1b532729c67eac349022735ee53eba7f425f"
+    },
+    "assets/site-experience-seeds.json": {
+      "bytes": 16214,
+      "sha256": "789c4a68ad62bf0ee093969db0c145a1a14414934c8333b941308554c9cfaa16"
+    },
+    "assets/source-ledger.json": {
+      "bytes": 19133,
+      "sha256": "e62e174f9d1a9a559e08889986a4eafa78bf8799d0bc205b2750b26c989e8f53"
+    },
+    "assets/templates/novel-evidence-card.md": {
+      "bytes": 6846,
+      "sha256": "b45dd12eccb9aac43abea3db21f51e722f68a70799e06a24d5842ec490ba9229"
+    },
+    "data/wangba-handbook-2026-07-30/directory.json": {
+      "bytes": 16336,
+      "sha256": "f70112834fa5f31da6232ad9f865c99329cae6fb28ea2e07dd30df930a71797b"
+    },
+    "data/wangba-handbook-2026-07-30/finite-rules-curated.json": {
+      "bytes": 133743,
+      "sha256": "8617bd9f86ef8228d06c2d7ada41e429c735df339396f228195b5a6a539a5663"
+    },
+    "data/wangba-handbook-2026-07-30/high-rules-curated.json": {
+      "bytes": 174960,
+      "sha256": "56ab689a41ec8008e7b646af487ed1a47101439f1553d7cae006f00c119b9ddd"
+    },
+    "data/wangba-handbook-2026-07-30/manifest.json": {
+      "bytes": 5240,
+      "sha256": "43e5a6f0202b1b8f4bfbd7548868e9fbd9559370d9b6ab65ae3a06b9d1f121a6"
+    },
+    "data/wangba-handbook-2026-07-30/reviewed-clauses.json": {
+      "bytes": 177415,
+      "sha256": "0ed5daa532f61dbdb369578a099d9de0e376fcd71ad4470658b5365f08811848"
+    },
+    "references/captain-wood-case.md": {
+      "bytes": 7309,
+      "sha256": "1d953461079fb85c30533223f59e22d0f42b36eeeaab4a009da0e609c64f86cb"
+    },
+    "references/case-format.md": {
+      "bytes": 11215,
+      "sha256": "47032594f479903b0f967cb06e921294756a6694ed18b3ae0dca2906737a7f6d"
+    },
+    "references/case-index.md": {
+      "bytes": 2731,
+      "sha256": "e34aa664da6429c5fc1a44f6de559e88b3c9b3214fa8c0370a45d58ef59ded66"
+    },
+    "references/combat-absorption.md": {
+      "bytes": 5314,
+      "sha256": "7f8d5a7775dcefd8814955695c03a6bd03073bc781e46a31083223d5f0b5b77f"
+    },
+    "references/combat-process.md": {
+      "bytes": 14804,
+      "sha256": "0a3ffadbb3e69bc28c4be257da7859f660ef38cbbfe50911f1adaa2ec689128d"
+    },
+    "references/derivation-workflow.md": {
+      "bytes": 13361,
+      "sha256": "404c52efd628cb54b5d3e75a6e3a5295df22fcebf0b85ce0e5825f1ee1276543"
+    },
+    "references/discovery-dossiers.md": {
+      "bytes": 9130,
+      "sha256": "5a7ab4281f8fbb69545a03554c4667e485bedb13651a4e676c9c4f95d80c309f"
+    },
+    "references/evidence.md": {
+      "bytes": 8097,
+      "sha256": "fc1f53bbca70c24f171e38be7806a58fc3983a2ad6e6eac68dd6fb9d4835645f"
+    },
+    "references/external-ideas.md": {
+      "bytes": 4008,
+      "sha256": "d89a3379c119be5072f9e5c961935a77bc03b5cb19e79fc17c89a82079281230"
+    },
+    "references/feat-review.md": {
+      "bytes": 10162,
+      "sha256": "489d237a0838a7c448df0e621b7115be39eac3f4cdf36630b237cafc904c4245"
+    },
+    "references/formula-ocr-validation.md": {
+      "bytes": 6209,
+      "sha256": "16665dc3c89a54021cd9b7d04433db84d2ce2ac9e20dc40d41b65dcfa83b032f"
+    },
+    "references/handbook-finite-review.md": {
+      "bytes": 14428,
+      "sha256": "69e4a37c6331ef2a4359189681b725d391db86816a4f9d8e83a86d458c5b7aa0"
+    },
+    "references/handbook-high-review.md": {
+      "bytes": 28776,
+      "sha256": "0b61f8004140e38c03c3f754ad5f9099b3da5a175ea98c6810574ac99ae26eda"
+    },
+    "references/handbook.md": {
+      "bytes": 8285,
+      "sha256": "dd4809b3d6757a661c552e0aea73ef793add2902b3772c936a08297f03efdd7a"
+    },
+    "references/hax-ceiling.md": {
+      "bytes": 8682,
+      "sha256": "67123f8f2703c1532e7496c20d73d0a6c1efa2b13cf7d3edcf9a84197e0daaa7"
+    },
+    "references/high-tier-cases.md": {
+      "bytes": 6088,
+      "sha256": "34ad5c1e920116207444d113f1c10f792d9138de838cee4ac2208b5610359ca9"
+    },
+    "references/high-tier.md": {
+      "bytes": 12792,
+      "sha256": "186adee4fe4e84a7441ecfe4ccc4f18b898bf82106c2473befd828f420d8d0d0"
+    },
+    "references/matchups.md": {
+      "bytes": 6803,
+      "sha256": "3918386f28807019b0aa87a2fb12c278473cb3298364605df776d80c44d79e97"
+    },
+    "references/media-reading.md": {
+      "bytes": 10244,
+      "sha256": "774ec0aba441320168f1aba3e43de251f79ccbffebdffbf5706c5301c15026f1"
+    },
+    "references/modes-scaling.md": {
+      "bytes": 3533,
+      "sha256": "4ef3aca4e642f592f979fa1bd84346514fcddf8da82634d5b89e4d9cd0fd48a9"
+    },
+    "references/novel-ending-state.md": {
+      "bytes": 4097,
+      "sha256": "a3957f7d7d8ce6a3a21766fc5813f6bb043e8495b997d6e572ce3d479317b916"
+    },
+    "references/novel-evidence.md": {
+      "bytes": 16383,
+      "sha256": "5c9e2345179b071116f8e2c1f510c93f9d724f67df319775848adc134351fcfd"
+    },
+    "references/novel-refpack-pipeline.md": {
+      "bytes": 11707,
+      "sha256": "e530963ee7dbe94115bb815ac36d6074d9e63c6142e3e0fd33ac72e4e9e2211b"
+    },
+    "references/ocr-projects.md": {
+      "bytes": 18727,
+      "sha256": "577daeb6581591e625982d2f6171b7560344bff56ab49dda031df2c56a1610eb"
+    },
+    "references/physics-models.md": {
+      "bytes": 12447,
+      "sha256": "f3114c78cc36fc3939cd9599ceedba98ca9e4153fbecf094b7525d8e7999fa43"
+    },
+    "references/rating-card.md": {
+      "bytes": 8160,
+      "sha256": "809939820cf4ed14ca0ee0830cfded8e26a69e01e3d19f905aa22748f8ccf4d0"
+    },
+    "references/research-workflow.md": {
+      "bytes": 11225,
+      "sha256": "b1a575881584ec974b9533dd50274b7c38c0f45f15c62c9d7f58458304352bf9"
+    },
+    "references/site-experience.md": {
+      "bytes": 7934,
+      "sha256": "fe75c00c92392d378c83b81d40d1a9ee3d81293eb7a1a742bbb7cedbb97ccb96"
+    },
+    "references/tier-map.md": {
+      "bytes": 4582,
+      "sha256": "91dd12ea39ca5ee66c1e4dfb9333add9d6cacf85d2914592afa9ba4d19cba877"
+    },
+    "references/tool-contracts.md": {
+      "bytes": 10158,
+      "sha256": "50d096e7faf7854f11ceb68cc56b05fe543c50ead2269c046c30a4da3c8d230f"
+    },
+    "references/validation.md": {
+      "bytes": 2474,
+      "sha256": "90552fc8349a5e7af22b150884fb1f1232b5a68402ae05c08b43cb16d469b9a0"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30-404.json": {
+      "bytes": 18075,
+      "sha256": "18bb7a2a673142e9551ad3adfe7ed5bf322587dd0b02a29d64918116346ff7e3"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30-aos.json": {
+      "bytes": 10820,
+      "sha256": "9838f09fa10afe29e9a89a9447c39ee74608f386abd2efcff7c7682d25e4bc17"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30-dao.json": {
+      "bytes": 16506,
+      "sha256": "f6aa629825b3cb5f202b4b57a6d81793a9e29c3017041937071734a797eaa82f"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30-li.json": {
+      "bytes": 8098,
+      "sha256": "282ab760969287af800e7b752f2c5c5dae5c682fb10a0df47a8c2047172c30d5"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30-new.json": {
+      "bytes": 11152,
+      "sha256": "6f0d61e3bb6e6a67e114418bf35c219c894fd2adf01124d7a8695411fb6efedb"
+    },
+    "rulesets/high-wangba-handbook-2026-07-30.json": {
+      "bytes": 6093,
+      "sha256": "ff7218b3d2a6e5c66b2b73eb8f9e89ff3eca531e361757ef6d37c073bb0db5c2"
+    },
+    "rulesets/high-wiki-aos404.json": {
+      "bytes": 3268,
+      "sha256": "9f588fc40d610fa51a474eac97ac3ce42b7cf9ebdd0c72500a6f347e92372570"
+    },
+    "rulesets/high-zerozhi2025-new.json": {
+      "bytes": 2503,
+      "sha256": "d914addf2738a088b38c62c37abb167dbc74b77aecfc988c2fbc143e615d1745"
+    },
+    "rulesets/high-zerozhi2025-old.json": {
+      "bytes": 1071,
+      "sha256": "4a9252661bfb100aac070560985483da99483de6fca345ae9eee84a6e7ad9ba3"
+    },
+    "rulesets/profiles.json": {
+      "bytes": 1043,
+      "sha256": "535b1d5bae5ed4596fa8415c6b1b9b2f7aebba50fb78a09d5d27b061e4e69cd1"
+    },
+    "rulesets/wangba-energy-2024-03-18.json": {
+      "bytes": 2656,
+      "sha256": "484a5cbe2de8e6cea2bd20a028b558383acbeecb2a42da31c51890e4ac9ee5aa"
+    },
+    "rulesets/wangba-handbook-2026-07-30-finite.json": {
+      "bytes": 133824,
+      "sha256": "b03bdfe650d885825bf37853c31c7fda70e1066c23d0bbd5d754750c655583d1"
+    },
+    "runtime/local-tools.json": {
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+    },
+    "scripts/battle.py": {
+      "bytes": 31723,
+      "sha256": "4d9faa05244b37128db290900ae80a22bf19952af5a0cd62a8f403563fd9724c"
+    },
+    "scripts/combat_refpack/__init__.py": {
+      "bytes": 103,
+      "sha256": "01884822a4f2314087a2d21c6b9abe00339b9c4a6e7aa02d14ce116cd7250198"
+    },
+    "scripts/combat_refpack/cli.py": {
+      "bytes": 2385,
+      "sha256": "1301f557a1b15cf932cbf38f08e3d28c570ccd316435552279bfcc2afa799209"
+    },
+    "scripts/combat_refpack/core.py": {
+      "bytes": 40091,
+      "sha256": "a67c02a94d8ab06cdc9702466d07698e34e4f120c6bf4611c00f0f5d76c5cae5"
+    },
+    "scripts/combat_refpack/extraction.py": {
+      "bytes": 6156,
+      "sha256": "645d4137122f6e12dec344736cea2fc33a3540962a43efd89d56f05ec8fb4659"
+    },
+    "scripts/combat_trace.py": {
+      "bytes": 33475,
+      "sha256": "c48bae08748663b1db5b746835704d8b4dd1f291ac04be2de0b2f19eeaac1dc8"
+    },
+    "scripts/derivation_audit.py": {
+      "bytes": 37533,
+      "sha256": "700cd115cc3d434e1ffa106c79f79d168eee4ec9a1aed36265dc77c5e1acc71d"
+    },
+    "scripts/evidence.py": {
+      "bytes": 42352,
+      "sha256": "100627531abdb7fd458b068638fe71c9743bf340093fdf64b836636f49a50de9"
+    },
+    "scripts/feat_audit.py": {
+      "bytes": 22236,
+      "sha256": "50fcf7fceed2783eaa0109d86c7c0868531361eaeca5df5911b922f79d99cb2c"
+    },
+    "scripts/formula_adapter.py": {
+      "bytes": 16116,
+      "sha256": "ee776ea39da1b7c9dd5087fe6b5e23b87a11cd1af329baf2b8b78e3c3e8bba2d"
+    },
+    "scripts/handbook.py": {
+      "bytes": 11285,
+      "sha256": "8a2e491e9133e251bf4059c9cf9037b6898fa7296bedaad7f268872b0f7c7b02"
+    },
+    "scripts/handbook_finite.py": {
+      "bytes": 17590,
+      "sha256": "ae6f9e5d06500dee1da19a747d95f6102d9395da56c6bd59c99665a1991566e0"
+    },
+    "scripts/handbook_high.py": {
+      "bytes": 26596,
+      "sha256": "ead508de21dd54d86cdd9f4084a5b2de18f09fee74cae3ca674a9a6574bab1dd"
+    },
+    "scripts/hax_gate.py": {
+      "bytes": 4133,
+      "sha256": "03cd6d1a29fe4908afbd947c0e6244242b6110172ae8a0f376b364caf35a8e72"
+    },
+    "scripts/hax_policy.py": {
+      "bytes": 14979,
+      "sha256": "3af9a0932d39f3139a783f1cb508ebc689d87978f57dd2fbefb8a172b9701141"
+    },
+    "scripts/high_tier.py": {
+      "bytes": 37779,
+      "sha256": "59b85b300ba6d8dceede58230cccd00596ead8bf420b6b0ea466b091a4496998"
+    },
+    "scripts/li_metrics.py": {
+      "bytes": 9296,
+      "sha256": "4b1e42bdf897f1916625e468dd096a5307bb51f5c026e3870c9a54f1260f97ab"
+    },
+    "scripts/media.py": {
+      "bytes": 20390,
+      "sha256": "674b8204c1a737a5068cc7eed48b18e9fc280e89f43cb8efdd954981e7702e12"
+    },
+    "scripts/novel_evidence.py": {
+      "bytes": 24217,
+      "sha256": "5f990ccd45059b947742e988900c7d5dda11355788a76ae5ee464d2fa59e192f"
+    },
+    "scripts/novel_refpack.py": {
+      "bytes": 198,
+      "sha256": "68ab405d2d0455bed904fe03e30741315d66b949739de43f848f1d8372359cec"
+    },
+    "scripts/ocr_pdf.py": {
+      "bytes": 4249,
+      "sha256": "8bdef99b66155fb7dd3b69c92ff186038bb7910b44c78fc6368cff8a4ffecf20"
+    },
+    "scripts/physics.py": {
+      "bytes": 27601,
+      "sha256": "ec0b93b782ebc9ab3d7ed4bf6aecf5090194a05dbd20c551f9072fca5d7c0d04"
+    },
+    "scripts/pk_modes.py": {
+      "bytes": 4825,
+      "sha256": "fb242b8db127db46dd6031f2d8624395e633600d34f6d43af231bc1fefa63e90"
+    },
+    "scripts/research.py": {
+      "bytes": 28053,
+      "sha256": "a3341a153862bd1400e5b728511d67bf539dc9166db95f39d98a328d19119a6c"
+    },
+    "scripts/rule_profiles.py": {
+      "bytes": 2859,
+      "sha256": "699ecdec53fe83838e2de7b755059676fd90a729cfb234c690ec2a2ba2a0f92d"
+    },
+    "scripts/site_registry.py": {
+      "bytes": 19764,
+      "sha256": "b18ed670619e9beb4f8e1ee6c0471139bb969c482555146dfb914c3f8d3a9120"
+    },
+    "scripts/sources.py": {
+      "bytes": 19856,
+      "sha256": "0248352bd8c08cae700ece9af5026ea3aa7fdee8ad9631e04608e8b5b7342052"
+    },
+    "scripts/vision_adapter.py": {
+      "bytes": 6382,
+      "sha256": "b7cb16226dc3f55397d4cd0289cc5d1f1b685ccc76d6219243b817c86f54ade3"
+    },
+    "SKILL.md": {
+      "bytes": 12854,
+      "sha256": "7277a27353f33e466e7a238440c3aed046934e350374bb6064b022794e5754fc"
+    },
+    "tests/test_combat_trace.py": {
+      "bytes": 17415,
+      "sha256": "feb03f8e1c0cb474424f463711bbbb52e637a5b9343f71c635b4e66801e2d9ba"
+    },
+    "tests/test_derivation_audit.py": {
+      "bytes": 14923,
+      "sha256": "2465a75e423649c5bab97809f2adb4de7cd2e7db103eb67b88e69192c8194c4d"
+    },
+    "tests/test_discovery_plan.py": {
+      "bytes": 2572,
+      "sha256": "23ea5a817fe109522da2fea968dde7faa03a74b8596ff0b4dbb8a1d37d406163"
+    },
+    "tests/test_evidence.py": {
+      "bytes": 5526,
+      "sha256": "131a3992a590e2dbfde3850f86451828f730f103e8f0abe836497bace4eef6a0"
+    },
+    "tests/test_feat_audit.py": {
+      "bytes": 16754,
+      "sha256": "f1d07243e7cdca812318e68c08b52fc2ec55dc55af1eecb1e29c8acb724d65b9"
+    },
+    "tests/test_feat_integration.py": {
+      "bytes": 10966,
+      "sha256": "2478e1dfd8a34c80d9967944518b673a7411ab6507e73bb17bf908b8beba0e21"
+    },
+    "tests/test_formula_adapter.py": {
+      "bytes": 11088,
+      "sha256": "a2f17cb6f809fa0703f332ced1938fedab8971d43e3455135d14a0644fe811a3"
+    },
+    "tests/test_handbook.py": {
+      "bytes": 4811,
+      "sha256": "4e97951c0755d0c8e84a161f733d362db1bf80ebcf18e53d0a6841c7b7457b42"
+    },
+    "tests/test_handbook_finite.py": {
+      "bytes": 10066,
+      "sha256": "fb1c6f076109ffcb2ccdd96995af65e2281aff404f23025103030f2ac9dd228c"
+    },
+    "tests/test_handbook_high.py": {
+      "bytes": 12741,
+      "sha256": "2ffaf96180957b8ba0768921da657b1647d0a52bc82ef5c0d1533cf46ad818b4"
+    },
+    "tests/test_hax_combat.py": {
+      "bytes": 14856,
+      "sha256": "a84c7e65dbf1049f2e6e9edb5b4d717352c3fae4756540ca8cde3ea41a10047e"
+    },
+    "tests/test_hax_integration.py": {
+      "bytes": 9720,
+      "sha256": "49e3a00bd04019503b234ff4797f8c31376234c54abc2f6b6e87711afbe657e3"
+    },
+    "tests/test_hax_policy.py": {
+      "bytes": 15998,
+      "sha256": "9783a4882fc3b4b32f8546e2aa5b19a16e394f8feef7ec8dbe47c6dfff36789c"
+    },
+    "tests/test_high_tier.py": {
+      "bytes": 16157,
+      "sha256": "1ed60a306e7f6d889d5beebc02f6f20301a3f012e20f4b45fc01b5fcb273076a"
+    },
+    "tests/test_integration.py": {
+      "bytes": 7008,
+      "sha256": "ff6ee16e4ab247122088e035c1d0d29a2477916855b386f83418793687d9d5a5"
+    },
+    "tests/test_li_metrics.py": {
+      "bytes": 3419,
+      "sha256": "838d4b6a62a4456805a0d42b1bc56c5feab713f03043186b9bb3c90dc34b3b44"
+    },
+    "tests/test_media.py": {
+      "bytes": 7590,
+      "sha256": "182e9c38d7f0ea03ab67cb16c491cb91cb54edc344a73ed4d63f7d2c607a09ef"
+    },
+    "tests/test_novel_cli.py": {
+      "bytes": 3341,
+      "sha256": "abaf0b69eb8e8ba08b6b7b4ada9b050944d80e7c79c5e0ff47ad66524c1f3004"
+    },
+    "tests/test_novel_evidence.py": {
+      "bytes": 13901,
+      "sha256": "bd06f9f8f74cf61b214095ae08052209e7f0efbe889090f3bdf36aca8e647281"
+    },
+    "tests/test_optional_handbook.py": {
+      "bytes": 6013,
+      "sha256": "cd37212d192f2b29fcbbc6b17021ef1b826b59bc2a7ed2979d9040e82d4c03bc"
+    },
+    "tests/test_physics.py": {
+      "bytes": 7757,
+      "sha256": "ce01a089d40c2a2fe975ed05603cd6aaa2108e3a80b5c4139817d9bd9b50bcd2"
+    },
+    "tests/test_pk_integration.py": {
+      "bytes": 7350,
+      "sha256": "2d9503c2af63cd25910b65c7fed3d33d32c71bec5db4147189e1997376b5512b"
+    },
+    "tests/test_pk_modes.py": {
+      "bytes": 3853,
+      "sha256": "637dd3e2bd813dc93a7cda93946c5f5f0631b8e59149dea34b3686392fdbae61"
+    },
+    "tests/test_research.py": {
+      "bytes": 8683,
+      "sha256": "eb7cde0751320b2786b33a92505e39797b6a9195dbb810ee114f3f095a3d4e5d"
+    },
+    "tests/test_rule_profiles.py": {
+      "bytes": 1753,
+      "sha256": "2f22bc0cfb2f8e909460685960a909858a0e86b7f8d546aafd5cdecb63b27937"
+    },
+    "tests/test_site_integration.py": {
+      "bytes": 4959,
+      "sha256": "71592e37450c7965486ad7038a39e925298752c573b4359fc971be51c2daefa7"
+    },
+    "tests/test_site_registry.py": {
+      "bytes": 13613,
+      "sha256": "a07375532d5d4b1df0e78ccaf74344c3b55f54d6d907794de36e7e882143ad88"
+    },
+    "tests/test_sources.py": {
+      "bytes": 13804,
+      "sha256": "c3f13bf228fd031d855ab59ff80084ed5b7ee102c8afd146d0a2167fa3e507d7"
+    },
+    "tests/test_vision_adapter.py": {
+      "bytes": 3560,
+      "sha256": "f65502ea42386812db680d1ba0b2317684f06ce2b810201154f0927451046eca"
+    }
+  },
+  "distribution": "public-source",
+  "optional_paths": [
+    "data/wangba-handbook-2026-07-30/pages.jsonl"
+  ],
+  "excluded_original_assets": {
+    "assets/cases/captain-contact.png": {
+      "bytes": 1130222,
+      "sha256": "31af2ac319974251587e72f656f41c2131554814c18f648a02c9aed9f7923fb4"
+    },
+    "assets/formula-ocr-validation/adiabatic-p150-crop.png": {
+      "bytes": 51101,
+      "sha256": "3b4487775aba480e4a26e4c70c5c698aad651d4f6d50bc4df99174f4c3cbb4b0"
+    },
+    "assets/formula-ocr-validation/inertia-p021-crop.png": {
+      "bytes": 9202,
+      "sha256": "0c3a2113bc9f477709d023fff8216f736c993fa87f2ebfa4c9597e144c62bcca"
+    },
+    "assets/formula-ocr-validation/tke-p200-crop.png": {
+      "bytes": 34795,
+      "sha256": "1255b3ee13ba1b9be63e9671e8fa1149d648371c34265cf0d87aa7ef8dfa08f8"
+    },
+    "assets/handbook-review/cone-density-crop.png": {
+      "bytes": 62631,
+      "sha256": "7a3a4f2f0f144a361d838e2d36d80a15423e4d8209e598f7ec917ec4f1975394"
+    },
+    "assets/handbook-review/g289-machine-detail.png": {
+      "bytes": 809969,
+      "sha256": "c3a61f474e6ccdc9e32db585f10d8f89718ce19d09a1e34b2ad8fa2642c1a6e6"
+    },
+    "assets/handbook-review/plate-traction-crop.png": {
+      "bytes": 62191,
+      "sha256": "c798e81c22df66065b32aecc3789f6015c49b30ac8b3f0a40021bdc5bbcaf572"
+    },
+    "assets/handbook-review/stellar-exponent-crop.png": {
+      "bytes": 44878,
+      "sha256": "8e43bf5678de4a360785cfcd56a4b2a5ed3807f3452c21e4cb32cdcfd362f1ba"
+    },
+    "assets/handbook-review/v03-p050-g250.png": {
+      "bytes": 565940,
+      "sha256": "f67b245d03e0a703e8ec923ad9376aea6c449f538d6a077fad33135805ebd0ea"
+    },
+    "assets/handbook-review/v03-p089-g289.png": {
+      "bytes": 530677,
+      "sha256": "895e8cd849e9cb027c0a5317bd3bfec22b751293dd97d759bd60245de792e04f"
+    },
+    "data/wangba-handbook-2026-07-30/pages.jsonl": {
+      "bytes": 4600496,
+      "sha256": "df0f64e7320e83d39338aff996475e041642a341ff4f768191564eaf35c8119a"
+    }
+  }
+}

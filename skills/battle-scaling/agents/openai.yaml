@@ -1,0 +1,6 @@
+interface:
+  display_name: "全自动论战"
+  short_description: "角色与群战评定，三种取证口径，默认宏观判胜，按需推演战斗过程"
+  default_prompt: "使用 $battle-scaling，按需搜证、物理推算和叠盒审查；角色默认先给“角色（版本）量级：具体常态主档”，再列常态九维，最高和扒下限放后续分析；对战默认宏观判胜，明确请求时展示具体过程，交付可复核报告。"
+policy:
+  allow_implicit_invocation: true

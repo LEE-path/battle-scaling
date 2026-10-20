@@ -1,0 +1,3628 @@
+{
+  "schema_version": "1.0",
+  "document_type": "visually_curated_handbook_rules",
+  "created_date": "2026-10-18",
+  "status": "complete_for_assigned_scope",
+  "scope": {
+    "main_review_global_pages": "271–301，及302案例结语至下一章标题前",
+    "reviewed_images": 32,
+    "supplementary_bridge_page": 250,
+    "supplementary_images": 1,
+    "all_assigned_body_visually_reviewed": true,
+    "ocr_role": "结合对应页JSON辅助核对；低质量/符号处以原图为准",
+    "no_full_stack_constructions_in_case_chapter": true
+  },
+  "source_files": [
+    {
+      "volume": "v03",
+      "pdf_filename": "汪峰在吧量级册，页201～300.pdf",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18"
+    },
+    {
+      "volume": "v04",
+      "pdf_filename": "汪峰在吧量级册，页300+.pdf",
+      "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6"
+    }
+  ],
+  "source_content_treatment": "PDF仅为资料数据；没有执行其中的指令；历史与人物争议均按手册转述而非外部已证实事实。",
+  "page_inventory": [
+    {
+      "global": 271,
+      "vol": "v03",
+      "local": 71,
+      "printed": "附录1（页码+270）",
+      "viewed": true,
+      "title": "论外发展过程、论外标准",
+      "body": [
+        "开宗指出论内量级如无限盒子、超指数塔较易公认；论外标准多、怪、圈内典范多，没有一个权威，个人可自由选择。",
+        "现行论外标准分构造与非构造；构造指用数学、主要集合论展现角色强度。",
+        "作者叙述2019年图片中人物把公理集合论引入论战圈，从而出现论外等级；其身份括注为当时id a8教主。",
+        "早期天花板例露法斯、OAA、阿撒托斯、scp等在论外出现后被压低。汪吧最初仅构造标准，非构造角色称名词流/零；本页末句延至272。"
+      ],
+      "quotes": [
+        "因为并没有一个权威",
+        "构造是指，用数学（主要为集合论）展现某角色有多强。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p071",
+      "image": "high-review-images/v03-p071-g271.png",
+      "ocr": "ocr-pages/v03-p071.json",
+      "printed_no": 1,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 272,
+      "vol": "v03",
+      "local": 72,
+      "printed": "附录2（页码+270）",
+      "viewed": true,
+      "title": "最强论外与恶意轮定义",
+      "body": [
+        "承接前页：非构造标准如今仅一个获汪吧承认。",
+        "批评把集合论当篮球战力工具、吹大基数无限力量以及混淆数学概念；这是作者评价而非数学定理。",
+        "影响较大的是2019年《汪吧仙录》和《妄想序列》争最强论外/国内最强作品。",
+        "恶意轮：极端强弱无讨论意义却比较，出于恶意让角色被过强对手碾杀。",
+        "二作可恶意轮除对方外的其他角色作品，所以被专称论外天花板。"
+      ],
+      "quotes": [
+        "论外中的也是天花板",
+        "出于恶意，让某个角色被过强的对手碾杀"
+      ],
+      "unclear": [],
+      "page_id": "v03-p072",
+      "image": "high-review-images/v03-p072-g272.png",
+      "ocr": "ocr-pages/v03-p072.json",
+      "printed_no": 2,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 273,
+      "vol": "v03",
+      "local": 73,
+      "printed": "附录3（页码+270）",
+      "viewed": true,
+      "title": "论外天花板早史",
+      "body": [
+        "排行榜插图圈出全能大仙《汪吧仙录》、妄想序列《妄想序列》；另见神盒世界、终极次元旅行者等。",
+        "《妄想序列》主角洛晨曦，《汪吧仙录》主角全能大仙，但二者并非本作品最强角色。",
+        "作者说洛晨曦曾直接使用乐正绫图片，二作2019年以集合论吹强，早于a8引入；其作者参与论外建立，故有最强论外名称。",
+        "后来学者/模仿者沾光；当时SCP整体世界观仅天花板（旧论内），远低于最强论外和论外各线。",
+        "跨页等级次序从本页末延至274。"
+      ],
+      "quotes": [
+        "然而他们都不是本作品最强的角色。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p073",
+      "image": "high-review-images/v03-p073-g273.png",
+      "ocr": "ocr-pages/v03-p073.json",
+      "printed_no": 3,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 274,
+      "vol": "v03",
+      "local": 74,
+      "printed": "附录4（页码+270）",
+      "viewed": true,
+      "title": "构造膨胀、复制和自创兴起",
+      "body": [
+        "续273早期圈内排序：论外天花板（汪吧仙录、妄想序列）>论外超一线>论外一线>论外二线>论外三线>>>>>天花板（SCP全体世界观）。",
+        "作者批评早期误解集合论、混淆序数基数/宇宙与基数，给出的圈内排序是被批判对象，不应当作标准数学层次。",
+        "稀有论文被复制粘贴，既有论外增加，构造通胀，仙录妄想带头的数学论外时代被作者判为泛滥。",
+        "自创圈兴起，要求写自己的强大构想、不必有数学构造、且受众更广。",
+        "高清细部确认被批判序列原文为：“实无穷阶实无穷”>复宇宙公理>冯诺依曼宇宙>V=终极L>伯克利基数>不可达基数…不可达基数可以加减乘除。"
+      ],
+      "quotes": [
+        "这套规则甚至向外蔓延",
+        "那就是自创。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p074",
+      "image": "high-review-images/v03-p074-g274.png",
+      "ocr": "ocr-pages/v03-p074.json",
+      "printed_no": 4,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 275,
+      "vol": "v03",
+      "local": 75,
+      "printed": "附录5（页码+270）",
+      "viewed": true,
+      "title": "自创先例截图",
+      "body": [
+        "两篇2021年2月作者自创存档截图：论外自创与无限盒子自创；练气期基础境界、先天来源之气即可某界之主等。",
+        "说明自创概念很早且最初含论内，作者在2020/2021年写过多篇。",
+        "仙录、妄想作者也被作者称作自创元老。"
+      ],
+      "quotes": [],
+      "unclear": [],
+      "page_id": "v03-p075",
+      "image": "high-review-images/v03-p075-g275.png",
+      "ocr": "ocr-pages/v03-p075.json",
+      "printed_no": 5,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 276,
+      "vol": "v03",
+      "local": 76,
+      "printed": "附录6（页码+270）",
+      "viewed": true,
+      "title": "自创圈与OC圈起源区分",
+      "body": [
+        "引《妄想序列》作者聊天截图：最初是一堆论战人自己写设定去论战而形成自创圈；自创与OC从起源上是两圈，扩圈后有人误认特殊OC圈；战力执着由此而来。",
+        "叙述2022/2023年前后仙录作者与旧伙伴争论，作者明确时间可能有误；以《神盒世界》对比仙录的视频意外流行，本页末句续277。"
+      ],
+      "quotes": [
+        "这个时间可能有误"
+      ],
+      "unclear": [
+        "私人冲突与截图仅是资料作者转述，不在本审读认定现实指控为事实。"
+      ],
+      "page_id": "v03-p076",
+      "image": "high-review-images/v03-p076-g276.png",
+      "ocr": "ocr-pages/v03-p076.json",
+      "printed_no": 6,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 277,
+      "vol": "v03",
+      "local": 77,
+      "printed": "附录7（页码+270）",
+      "viewed": true,
+      "title": "盒标兴起与名词流重估",
+      "body": [
+        "续276：神盒世界被带入大众视野。作者叙述仙录名誉争论与跌落；本人区分部分抄袭指控为谣言，有截图中的争议指控。",
+        "神盒支持者增长并填补所谓最强论外空位，与洛晨曦同列。",
+        "用神盒世界的某一阶段定义论外某级形成盒标；另细分a标、4标，作者认为归根结底同套。",
+        "构造标准失用，自创兴起，旧名词流被重新给更高等级；本页例超越数学/A0=全体数学/A1等曾被判零，句续278。"
+      ],
+      "quotes": [
+        "这就是盒标",
+        "构造是客观的数学，而自创是主观设定。"
+      ],
+      "unclear": [
+        "此处a标/4标仅述别称，未给细分定义。"
+      ],
+      "page_id": "v03-p077",
+      "image": "high-review-images/v03-p077-g277.png",
+      "ocr": "ocr-pages/v03-p077.json",
+      "printed_no": 7,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 278,
+      "vol": "v03",
+      "local": 78,
+      "printed": "附录8（页码+270）",
+      "viewed": true,
+      "title": "盒标对小说文本的偏差（作者批评）",
+      "body": [
+        "续277：旧名词流描述在自创标识后可被判论外二线。",
+        "作者叙述洛晨曦因盒标与作品文体/写法不适配而一降再降；有人以强于洛晨曦作为名声加成。",
+        "用神盒为标尺可低估小说的战力、把其削至很弱，然后声称强于该标下洛晨曦；作者反对此种比较。"
+      ],
+      "quotes": [
+        "这个文体和以神盒世界为标准的“盒标”，天生不适配。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p078",
+      "image": "high-review-images/v03-p078-g278.png",
+      "ocr": "ocr-pages/v03-p078.json",
+      "printed_no": 8,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 279,
+      "vol": "v03",
+      "local": 79,
+      "printed": "附录9（页码+270）",
+      "viewed": true,
+      "title": "洛晨曦早期圈外名声示意",
+      "body": [
+        "整页是AI问答截图，询问主神空间召唤诸天导致过强者打碎空间且出现洛晨曦的小说。截图回答《诸天苟仙》、起点/冬雪华阳、给链接1016735308并说第一章出现洛晨曦。",
+        "本页仅是资料展示的AI回答，不能据此独立认定小说原文和链接内容已被核验；280括注据此说2019年圈外也闻其名。"
+      ],
+      "quotes": [],
+      "unclear": [
+        "截图中的AI回答没有在本任务外部验证，不纳入原作直接证据。"
+      ],
+      "page_id": "v03-p079",
+      "image": "high-review-images/v03-p079-g279.png",
+      "ocr": "ocr-pages/v03-p079.json",
+      "printed_no": 9,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 280,
+      "vol": "v03",
+      "local": 80,
+      "printed": "附录10（页码+270）",
+      "viewed": true,
+      "title": "完整妄想世界观与盒标排外批评",
+      "body": [
+        "圈中被贬低的对象并非完整《妄想序列》世界观，作者列其含小说《妄想序列》《近乎全能者的V家狂想曲》、多个《xx奥义》与番外。",
+        "被称作弱化洛晨曦的对象实际上是半隐退后随手写的自创《密契奥义》，别名《妄想序列之晨曦传说》，附作者聊天截图。",
+        "作者认为盒标越来越拘束、排外，只能评判与神盒类似自创，遗漏/低估其他作品。",
+        "批评A1全体数学/A2全体哲学/字母数字序列模板，认为只需套模板便得高档、扼杀创造力。"
+      ],
+      "quotes": [
+        "也就只能评判与神盒类似的自创：遗漏了大量作品，低估大量角色。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p080",
+      "image": "high-review-images/v03-p080-g280.png",
+      "ocr": "ocr-pages/v03-p080.json",
+      "printed_no": 10,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 281,
+      "vol": "v03",
+      "local": 81,
+      "printed": "附录11（页码+270）",
+      "viewed": true,
+      "title": "盒标主观性、超指数塔扩展与资格循环批评",
+      "body": [
+        "作者批评十大论外排名主观、炒作、关系上下调等；这些是作者观点/指控，非本任务验证事实。",
+        "对缺乏内涵的数字/字母串，有支持者解释为迭代递归、套娃基数，作者判其仍只是论内超指数塔的扩展，未脱离超指数塔范围。",
+        "如果先宣称A1=全体数学、强行包含且超越全部数学，再搬入层级结构不能补成严格数学；构造圈曾有对不可达基数加减乘除之乱象。",
+        "某些人口中的国内第一须先进入盒标榜单，而参评又要求仿神盒某阶段，作者判为强行包含和既当裁判又当选手。",
+        "页末说2025年有人发现大量重复段落，续282。"
+      ],
+      "quotes": [
+        "它仍属于“超指数塔”的范畴。",
+        "当你用的标准不能普适于各种作品，就不要以“国内第几论外”自称。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p081",
+      "image": "high-review-images/v03-p081-g281.png",
+      "ocr": "ocr-pages/v03-p081.json",
+      "printed_no": 11,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 282,
+      "vol": "v03",
+      "local": 82,
+      "printed": "附录12（页码+270）",
+      "viewed": true,
+      "title": "神盒与盒标相互担保的循环",
+      "body": [
+        "续281：同义替换的无穷延伸段落并列属于循环论证（作者判断）。",
+        "神盒强度/地位在盒标中来自标准；标准以它为基础，其他盒标作品作者有维持其高位的利益，作者认为这形成体系绑定。",
+        "列循环：神盒最强所以理当作标准→在自己的标准中最强→因此神盒最强所以理当作标准。",
+        "作者最终说这种绑定未必出自原作者意愿，可能已非作者所能控制。"
+      ],
+      "quotes": [
+        "神盒强在循环论证"
+      ],
+      "unclear": [],
+      "page_id": "v03-p082",
+      "image": "high-review-images/v03-p082-g282.png",
+      "ocr": "ocr-pages/v03-p082.json",
+      "printed_no": 12,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 283,
+      "vol": "v03",
+      "local": 83,
+      "printed": "附录13（页码+270）",
+      "viewed": true,
+      "title": "神盒作者对跨作品比较的态度",
+      "body": [
+        "聊天截图显示双方一切拉踩无效、希望结束洛全与全仙神盒争斗；作品作者认为很多人本来无争斗意图却被拿作品争来争去。",
+        "作者转述《神盒世界》本人表示不同作品用不同标准、难以比较，要求某作品必须用某标准不可；给汪吧帖子10327200920链接。",
+        "末段作者评价神盒作者被捧起且难下台，遭各方攻击可能非其本意。"
+      ],
+      "quotes": [
+        "不同作品用不同标准，难以比较。要求某作品必须用某标准，绝不行。"
+      ],
+      "unclear": [
+        "聊天截图与现实人物发言真实性未在本任务外部验证；可作为本手册立场来源，不当作外部已核验史实。"
+      ],
+      "page_id": "v03-p083",
+      "image": "high-review-images/v03-p083-g283.png",
+      "ocr": "ocr-pages/v03-p083.json",
+      "printed_no": 13,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 284,
+      "vol": "v03",
+      "local": 84,
+      "printed": "附录14（页码+270）",
+      "viewed": true,
+      "title": "历史结语与标准分流",
+      "body": [
+        "上部续作者聊天，自嘲所有坏事归己等，资料正文认为问题在整个盒标架构而非神盒世界作品本身。",
+        "2025后段推出力标，作者认为过于客观而受抵制、评价不佳；论外圈尚有道听途说、圈内低龄化等批评和个人写作经历，不作本任务外部事实认定。",
+        "章节末开始总结：构造圈=新标；自创圈=盒标(a4)、力标、道标；设定圈=设定标。",
+        "页底仅新标标题，实际新标清单在285。"
+      ],
+      "quotes": [
+        "这不是神盒世界的错误，整个盒标的架构就有问题。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p084",
+      "image": "high-review-images/v03-p084-g284.png",
+      "ocr": "ocr-pages/v03-p084.json",
+      "printed_no": 14,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 285,
+      "vol": "v03",
+      "local": 85,
+      "printed": "附录15（页码+270）",
+      "viewed": true,
+      "title": "新标八档与旧盒/道标AOS表",
+      "body": [
+        "新标八档：三线(守门员)=阿列夫数；二线=不可达基数；一线=巨大基数~伯克利基数；超一线=终极L；论外天花板下层=脱殊复宇宙；中层=复复宇宙楼；上层◇V-logic(逻辑多元)；最上=>V-Logic即可。",
+        "本页转入盒标、道标，作者认为将大基数/终极L等垫在脚下、宣称超越全体大基数后加减乘除是强行包含，应无视自创标准里涉及构造的部分。",
+        "嵌图旧标准(自创圈)(AOS)：三线阿列夫一；二线不可达基数~终极L=宇宙V；一线旧神盒第4阶段；超一线第5阶段；论天下第6~7阶段；论天中第8~12阶段；论天上无限阶段；论天最上深渊之底。"
+      ],
+      "quotes": [
+        "请无视自创标准中提到构造（大基数、终极L等）的部分。"
+      ],
+      "unclear": [
+        "上层前的◇仅按原字形保存，页面没有说明它是何关系符。",
+        "脱殊复宇宙/复复宇宙楼为原文社群用语，此处未给形式化定义。"
+      ],
+      "page_id": "v03-p085",
+      "image": "high-review-images/v03-p085-g285.png",
+      "ocr": "ocr-pages/v03-p085.json",
+      "printed_no": 15,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 286,
+      "vol": "v03",
+      "local": 86,
+      "printed": "附录16（页码+270）",
+      "viewed": true,
+      "title": "旧盒/道标404表及强行包含批评",
+      "body": [
+        "旧标准(自创圈)(404)嵌图完整分档已视核，见结构化ruleset条目。",
+        "作者重复要求无视其构造部分和无证据的自创超越全体数学宣称。",
+        "反例：设A0=全体数学，A1>A0，于是A1>全体数学，只是强行包含；同样可设A0=一切自创、A1>A0反驳。",
+        "作者说盒标只给对应阶段，却未给判断对应的方法，究竟是否真正对应难知。"
+      ],
+      "quotes": [
+        "盒标只给了所谓“对应阶段”，具体如何判断对应，一个字也没有提及。"
+      ],
+      "unclear": [],
+      "page_id": "v03-p086",
+      "image": "high-review-images/v03-p086-g286.png",
+      "ocr": "ocr-pages/v03-p086.json",
+      "printed_no": 16,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 287,
+      "vol": "v03",
+      "local": 87,
+      "printed": "附录17（页码+270）",
+      "viewed": true,
+      "title": "道标",
+      "body": [
+        "相较前两盒标的模板横出、同质化、模糊和狂妄，道标仍受神盒世界影响但改善明显。",
+        "开始明确客观要求并提出脱水，几乎成力标雏形；但脱水未规范化、较高刻画程度/辨识度等含糊。",
+        "作者认为神盒在道标仍被定义等级、排名不靠前，与天花板最上相距远；对理性规划到5.6亿字的说法持批评态度。"
+      ],
+      "quotes": [
+        "开始明确客观要求，并提出了“脱水”"
+      ],
+      "unclear": [
+        "287未显式注明下一页表名；288按章节连续归属道标，属于版面推断。"
+      ],
+      "page_id": "v03-p087",
+      "image": "high-review-images/v03-p087-g287.png",
+      "ocr": "ocr-pages/v03-p087.json",
+      "printed_no": 17,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 288,
+      "vol": "v03",
+      "local": 88,
+      "printed": "附录18（页码+270；页图截图无可见页脚）",
+      "viewed": true,
+      "title": "道标连续页：战力设定分档表",
+      "body": [
+        "整页截图列三线到战力设定论外的字数/呈现方式/逻辑与框架要求，完整字段见rulesets.dao。",
+        "三线去除无意义加强、破格、学术科普、名词、额外文章后>=5000字，且内容应远超现有数学概念，列宇宙V/终极L/复宇宙/脱殊复宇宙/复复宇宙/逻辑多元/玄宇宙仅例示。",
+        "二线>=10000字、2种呈现形式且循序渐进；一线>=20000字、4种呈现形式加逻辑和清晰刻画；超一线>=30000字并6种形式或2种不同学科类设置。",
+        "天花板下>=50000字加独有风格/高辨识；中>=80000字并全面超越旧版神盒、永无止境刻画；上无新增字数线但须新玩法/破框架/除破格强行包含与无构造延伸后仍超越其认可以上强度的新神盒数学/哲学/超玄学；最上>=300000字另三条件。",
+        "设定论外10000000~???字，超常规量级与玩法；要求真实规划的强度超越5.6亿字完整新神盒极限，以及有限数量非论外设定者讨论分析仍无法正确理解真实强度。"
+      ],
+      "quotes": [
+        "注意是“现有”"
+      ],
+      "unclear": [
+        "截图未显示独立表名/日期；按前后文识别为道标表，需保留这一归属推断。",
+        "这些是社群规范对字数/刻画的公理要求，不能当物理或数学定理。"
+      ],
+      "page_id": "v03-p088",
+      "image": "high-review-images/v03-p088-g288.png",
+      "ocr": "ocr-pages/v03-p088.json",
+      "printed_no": 18,
+      "printed_no_visual": false,
+      "printed_no_basis": "adjacent_footer_and_page_plus_270_continuity",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 289,
+      "vol": "v03",
+      "local": 89,
+      "printed": "附录19（页码+270）",
+      "viewed": true,
+      "title": "力标评审流程与量化",
+      "body": [
+        "先全文初步脱水，去无意义堆名词/符号/无限嵌套等；再检查散布全文的同义重复、进一步浓缩。",
+        "机评用AntConc，重复条目仅计一次且有注水惩罚；先判断超然体系/满足力标三线要求（声称包含哲学或数学即可）。",
+        "A=条目(型符)数、B=词元(例符)数，按词划分；查高频词是详细描写还是重复；E=2A-B。",
+        "A<4000：按E判级，E<0无量级。4000<A<10000：E判级，E<0下调至一线（依注水程度）。A>10000：保底论天下，可选择2A-B估测；E<4000保留论天下，E>4000参照表得新估测档。",
+        "手评逐句浓缩，必须批注解释；超数学=三线，超哲学=二线；满足上述基础后有效字数500一线、1000强一线、2000超一线、4000论天下、6000论天中、8000论天上、万字最上；手评优先，无手评才用机评。",
+        "页底力标标题及下一页文字开头。"
+      ],
+      "quotes": [
+        "注意：是按词划分",
+        "若有手动，以手动为最终量级。"
+      ],
+      "unclear": [
+        "A=4000、A=10000、E=0、E=4000与相邻非整阈值的处理未在本页完整定义，不能擅自补闭区间。",
+        "机评E为词统计所得，手评阈值文字写有效字数；二者单位并不当然等同。",
+        "初看原图曾误读成二线，4x局部原图已确认是一线；OCR同为一线，已纠正。"
+      ],
+      "page_id": "v03-p089",
+      "image": "high-review-images/v03-p089-g289.png",
+      "ocr": "ocr-pages/v03-p089.json",
+      "printed_no": 19,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 290,
+      "vol": "v03",
+      "local": 90,
+      "printed": "附录20（页码+270）",
+      "viewed": true,
+      "title": "力标方法的理由与限制",
+      "body": [
+        "道标只句内去形容/副词而未控制全文同义重复、同作品不同评者不同判。",
+        "力标引入AntConc全文检索查重复、量化机制；作者认为能不随评者变动且可客观验证，但这是其方法主张，不是外部测量证明。",
+        "人工脱水要求全程公开、注解诠释，与机评交叉验证；公开AntConc可缓解旧标门槛和过程隐蔽。",
+        "作者认为机评速度快、便于边写边估计纠错；部分人误叫AI标准，作者区分语言学软件与AI。",
+        "缺陷：手评工作量大，必须精读逐句细讲而非概览/概括，容易让人依赖机评削弱人的主动性。页末括号续291。"
+      ],
+      "quotes": [
+        "人工与计算机交叉验证",
+        "必须细致精读，不能概览（然后含糊过关）"
+      ],
+      "unclear": [],
+      "page_id": "v03-p090",
+      "image": "high-review-images/v03-p090-g290.png",
+      "ocr": "ocr-pages/v03-p090.json",
+      "printed_no": 20,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 291,
+      "vol": "v03",
+      "local": 91,
+      "printed": "附录21（页码+270）",
+      "viewed": true,
+      "title": "力标早期版本尾段与三案例开篇",
+      "body": [
+        "页首承接290：最初力标没有脱水，一万字论天最上就是一万字，作者称其最松弛、起初只是讽刺盒标乱象；不可与现行脱水力标混用。",
+        "新章三个案例：洛全盒。聊天插图说三位同框、最强群聊等。",
+        "正文称自论外等级形成以来有三个角色曾获最强论外的普遍认知，接下来介绍角色及作者。"
+      ],
+      "quotes": [
+        "那时的力标没有引入脱水概念"
+      ],
+      "unclear": [],
+      "page_id": "v03-p091",
+      "image": "high-review-images/v03-p091-g291.png",
+      "ocr": "ocr-pages/v03-p091.json",
+      "printed_no": 21,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 292,
+      "vol": "v03",
+      "local": 92,
+      "printed": "附录22（页码+270；页图无可见页脚）",
+      "viewed": true,
+      "title": "洛晨曦形象与身份",
+      "body": [
+        "整页乐正绫图片（底部Vsinger Ling Yuezheng）用作洛晨曦形象，底部正文介绍洛晨曦出自《妄想序列》，与同作者多个作品/世界观联动。",
+        "描述其圈内知名，作者与《汪吧仙录》作者多年争斗，称洛全大战（2019~2026）。"
+      ],
+      "quotes": [],
+      "unclear": [
+        "使用其他角色图片只说明此册图示，不构成洛晨曦自身设定证据。"
+      ],
+      "page_id": "v03-p092",
+      "image": "high-review-images/v03-p092-g292.png",
+      "ocr": "ocr-pages/v03-p092.json",
+      "printed_no": 22,
+      "printed_no_visual": false,
+      "printed_no_basis": "adjacent_footer_and_page_plus_270_continuity",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 293,
+      "vol": "v03",
+      "local": 93,
+      "printed": "附录23（页码+270）",
+      "viewed": true,
+      "title": "洛晨曦作者与入圈史",
+      "body": [
+        "截图最爱洛天依/百度贴吧账号，2025-12-14发帖称洛晨曦争议、曾两年不逛汪吧、洛全大战传统等。",
+        "正文称作者段少爷（少爷为互称），2019年年初开始写《妄想序列》，数月后首次接触汪峰在吧，洛晨曦随后成汪吧最强角色之一。"
+      ],
+      "quotes": [],
+      "unclear": [
+        "入圈时间等为手册转述，本任务未外部核验。"
+      ],
+      "page_id": "v03-p093",
+      "image": "high-review-images/v03-p093-g293.png",
+      "ocr": "ocr-pages/v03-p093.json",
+      "printed_no": 23,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 294,
+      "vol": "v03",
+      "local": 94,
+      "printed": "附录24（页码+270）",
+      "viewed": true,
+      "title": "全能大仙形象与身份",
+      "body": [
+        "全能大仙图片，出自《汪吧仙录》。",
+        "作者温少爷，同样2019年略晚于妄想序列创角色；设定集中于2019年，增添剧情成为完整小说在2020年3月。",
+        "作者先入汪吧后创作，以汪吧为架空背景，以圈内知名人士为原型加工角色及故事；末句续295。"
+      ],
+      "quotes": [],
+      "unclear": [],
+      "page_id": "v03-p094",
+      "image": "high-review-images/v03-p094-g294.png",
+      "ocr": "ocr-pages/v03-p094.json",
+      "printed_no": 24,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 295,
+      "vol": "v03",
+      "local": 95,
+      "printed": "附录25（页码+270）",
+      "viewed": true,
+      "title": "仙录高密叠盒、作品互写与自指引擎",
+      "body": [
+        "承294：仙录极高密度叠盒，第四章写洛晨曦出场后很快落败；段少爷在妄想序列写全能大仙落败以回击，资料提污秽之卵部分。",
+        "作者承认故事类型有强行包含成分，但反对将授权包含其他体系具体设定叫抄袭；ych体系举例附获许可聊天截图。",
+        "历史：a8等引集合论后先捧《自指引擎》为天花板中的天花板，后页续其问题。"
+      ],
+      "quotes": [
+        "以极高密度的叠盒。"
+      ],
+      "unclear": [
+        "授权争议为本册转述/截图，未外部核验；不能据此自动认定跨作战力传播成立。"
+      ],
+      "page_id": "v03-p095",
+      "image": "high-review-images/v03-p095-g295.png",
+      "ocr": "ocr-pages/v03-p095.json",
+      "printed_no": 25,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 296,
+      "vol": "v03",
+      "local": 96,
+      "printed": "附录26（页码+270）",
+      "viewed": true,
+      "title": "构造标准的形成与错误",
+      "body": [
+        "温少爷认为《自指引擎》的巨大基数只是名词流，进而要求使用集合论刻画强度需给具体构造，论外术语逐渐形成；嵌图说当时只有天花板中的天花板。",
+        "作者称仙录发迹于批评自指引擎数学构造，却后来也因构造问题受批评；将新标的数学标准与温少爷推动相关。",
+        "批评论文复制粘贴流派，例把可测基数写成可爱基数，作为构造圈逸闻。"
+      ],
+      "quotes": [
+        "只有给出具体的“构造”……才得到承认。"
+      ],
+      "unclear": [
+        "历史因果和逸闻为本册作者观点，非数学证明。"
+      ],
+      "page_id": "v03-p096",
+      "image": "high-review-images/v03-p096-g296.png",
+      "ocr": "ocr-pages/v03-p096.json",
+      "printed_no": 26,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 297,
+      "vol": "v03",
+      "local": 97,
+      "printed": "附录27（页码+270）",
+      "viewed": true,
+      "title": "神盒身份",
+      "body": [
+        "上图仙录作者账号，下面神盒世界图。",
+        "神盒世界没有角色，仅以世界观为整体；作者杨少爷较前两位资历浅、成名晚；资料批评网络吹捧如一万个洛晨曦打不过、5.6亿字、人类想象力先驱等。"
+      ],
+      "quotes": [
+        "无角色，仅以世界观为整体"
+      ],
+      "unclear": [
+        "网络吹捧并非本册认同的测量值。"
+      ],
+      "page_id": "v03-p097",
+      "image": "high-review-images/v03-p097-g297.png",
+      "ocr": "ocr-pages/v03-p097.json",
+      "printed_no": 27,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 298,
+      "vol": "v03",
+      "local": 98,
+      "printed": "附录28（页码+270）",
+      "viewed": true,
+      "title": "神盒宣传争议与DDF",
+      "body": [
+        "截图展示跨越现实、可强行包含、AI支持等说法，本册作者称其为易判伪的网络宣传，不能当能力证据。",
+        "作者指出在非盒标标准中神盒强度并不高，解释其依赖自身标准；写道道标论外天花板中层（又疑问是否下层）、力标下层。",
+        "DDF论坛逸闻：据称海外深处神秘圈、最弱都强于国内全部论外，作品内部流通；作者用讽刺口吻质疑不可核验叙述。"
+      ],
+      "quotes": [
+        "在所有“非盒标”标准中，它都不算很强"
+      ],
+      "unclear": [
+        "道标是中层还是下层，作者自身括号存疑，不可自动定为其一。",
+        "DDF逸闻不可核验，不写入现实可确认的实力证据。"
+      ],
+      "page_id": "v03-p098",
+      "image": "high-review-images/v03-p098-g298.png",
+      "ocr": "ocr-pages/v03-p098.json",
+      "printed_no": 28,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 299,
+      "vol": "v03",
+      "local": 99,
+      "printed": "附录29（页码+270）",
+      "viewed": true,
+      "title": "DDF争议截图",
+      "body": [
+        "上部2022年4月贴吧回复称DDF水平高但私人站需权限；本册作者称这种神秘论坛传言曾骗许多人。",
+        "下部2023年10月评论称DDF被证明虚构且无网址，另说VS Battle是真的。",
+        "本页展示争议/反驳截图；不构成外部论坛事实核验，不产出角色或世界观等级。"
+      ],
+      "quotes": [],
+      "unclear": [
+        "无DDF可核验原始网址或作品，不能纳入战力证据链。"
+      ],
+      "page_id": "v03-p099",
+      "image": "high-review-images/v03-p099-g299.png",
+      "ocr": "ocr-pages/v03-p099.json",
+      "printed_no": 29,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 300,
+      "vol": "v03",
+      "local": 100,
+      "printed": "附录30（页码+270）",
+      "viewed": true,
+      "title": "DDF传言收尾",
+      "body": [
+        "截图2023年8月讨论既往ddf虚假论坛与询问网址遭推脱。",
+        "资料作者叙述传言被揭穿、杨少被迫道歉并称自己也是受害者，原话说论坛来自至交好友因此无条件追捧但实为假。"
+      ],
+      "quotes": [],
+      "unclear": [
+        "叙述及聊天真实性未外部验证；与实际叠法无关。"
+      ],
+      "page_id": "v03-p100",
+      "image": "high-review-images/v03-p100-g300.png",
+      "ocr": "ocr-pages/v03-p100.json",
+      "printed_no": 30,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 301,
+      "vol": "v04",
+      "local": 1,
+      "printed": "附录31（页码+270）",
+      "viewed": true,
+      "title": "IWCSDF与不可核验论外榜单",
+      "body": [
+        "上部rAritY°2022-11-13回复明确说IWCSDF论坛系自己胡扯，提醒其后统计排名不应继续；下图展示大量论坛/体系的顶级论外榜。",
+        "作者认为短视频自创宣传水深，DDF不止一例，以车库里的无限盒子喷火龙作讽喻。",
+        "另提误信民科文章、错误数学构造等小争议，并示《神盒世界》作者贴吧账号图，下页收尾。"
+      ],
+      "quotes": [
+        "我在我车库里养了一只无限盒子量级的喷火龙"
+      ],
+      "unclear": [
+        "截图论坛/体系长名单不是实际存在证明，亦不是任何量级推导。"
+      ],
+      "page_id": "v04-p001",
+      "image": "high-review-images/v04-p001-g301.png",
+      "ocr": "ocr-pages/v04-p001.json",
+      "printed_no": 31,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "全页正文与嵌图中相关文字"
+    },
+    {
+      "global": 302,
+      "vol": "v04",
+      "local": 2,
+      "printed": "附录32（页码+270）",
+      "viewed": true,
+      "title": "案例章结语；下部进入人物章",
+      "body": [
+        "本任务仅收案例章结语：上图为《神盒世界》作者贴吧账号；仙录搅乱构造圈，神盒绑架自创圈。",
+        "紧接下方新标题“论战圈部分知名人士”开始另一章，含OM/来自地球的巨人/a8等，不纳入本任务规则及案例审读范围。"
+      ],
+      "quotes": [
+        "仙录搅乱构造圈，神盒绑架自创圈。"
+      ],
+      "unclear": [],
+      "scope": "top_until_next_heading",
+      "page_id": "v04-p002",
+      "image": "high-review-images/v04-p002-g302.png",
+      "ocr": "ocr-pages/v04-p002.json",
+      "printed_no": 32,
+      "printed_no_visual": true,
+      "printed_no_basis": "footer_visible",
+      "body_coverage": "案例结语，至下一章标题前"
+    }
+  ],
+  "rulesets": {
+    "handbook_constructive_new": {
+      "classification": "构造圈新标",
+      "rules": [
+        {
+          "clause_id": "HR-NEW-01",
+          "tier_raw": "论外三线（论外守门员）",
+          "definition_raw": "阿列夫数",
+          "short_excerpt": "阿列夫数",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": [
+            "未在此处指定阿列夫下标或最小起点。"
+          ]
+        },
+        {
+          "clause_id": "HR-NEW-02",
+          "tier_raw": "论外二线",
+          "definition_raw": "不可达基数",
+          "short_excerpt": "不可达基数",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-NEW-03",
+          "tier_raw": "论外一线",
+          "definition_raw": "巨大基数～伯克利基数",
+          "short_excerpt": "巨大基数～伯克利基数",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-NEW-04",
+          "tier_raw": "论外超一线",
+          "definition_raw": "终极L",
+          "short_excerpt": "终极L",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-NEW-05",
+          "tier_raw": "论外天花板下层",
+          "definition_raw": "脱殊复宇宙",
+          "short_excerpt": "脱殊复宇宙",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": [
+            "社群名称，本页未形式化定义。"
+          ]
+        },
+        {
+          "clause_id": "HR-NEW-06",
+          "tier_raw": "论外天花板中层",
+          "definition_raw": "复复宇宙楼",
+          "short_excerpt": "复复宇宙楼",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": [
+            "楼为原页换行的最后一字；本页未形式化定义。"
+          ]
+        },
+        {
+          "clause_id": "HR-NEW-07",
+          "tier_raw": "论外天花板上层",
+          "definition_raw": "◇V-logic（逻辑多元）",
+          "short_excerpt": "◇V-logic（逻辑多元）",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": [
+            "原字形◇语义未解释；不自动改成≥或数学模态公式。"
+          ]
+        },
+        {
+          "clause_id": "HR-NEW-08",
+          "tier_raw": "论外天花板最上",
+          "definition_raw": ">V-Logic即可",
+          "short_excerpt": ">V-Logic即可",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "上部新标八档表，约y=.09–.36",
+            "bbox_normalized_xyxy": [
+              0.19,
+              0.08,
+              0.77,
+              0.36
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页给定对应关系；不提供从作品文本到该对象的形式化构造证明。",
+          "status": "source_rule_transcribed",
+          "uncertainties": [
+            "大于关系没有给出具体判定操作。"
+          ]
+        }
+      ]
+    },
+    "box_aos_old": {
+      "classification": "旧自创圈AOS盒标",
+      "author_stance": "作者批评构造垫脚、强行包含；仅历史描述",
+      "rules": [
+        {
+          "clause_id": "HR-BOX-AOS-01",
+          "tier_raw": "论外三线",
+          "definition_raw": "阿列夫一",
+          "short_excerpt": "阿列夫一",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-02",
+          "tier_raw": "论外二线",
+          "definition_raw": "不可达基数～终极L=宇宙V",
+          "short_excerpt": "不可达基数～终极L=宇宙V",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": [
+            "这是被作者批评的旧盒标原文，不当作集合论等式成立。"
+          ]
+        },
+        {
+          "clause_id": "HR-BOX-AOS-03",
+          "tier_raw": "论外一线",
+          "definition_raw": "旧神盒第四阶段",
+          "short_excerpt": "旧神盒第四阶段",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-04",
+          "tier_raw": "论外超一线",
+          "definition_raw": "旧神盒第五阶段",
+          "short_excerpt": "旧神盒第五阶段",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-05",
+          "tier_raw": "论天下（论外天花板下层）",
+          "definition_raw": "旧神盒第六阶段～第七阶段",
+          "short_excerpt": "旧神盒第六阶段～第七阶段",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-06",
+          "tier_raw": "论天中（论外天花板中层）",
+          "definition_raw": "旧神盒第八阶段～第十二阶段",
+          "short_excerpt": "旧神盒第八阶段～第十二阶段",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-07",
+          "tier_raw": "论天上（论外天花板上层）",
+          "definition_raw": "旧神盒第无限阶段",
+          "short_excerpt": "旧神盒第无限阶段",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-AOS-08",
+          "tier_raw": "论天最上（论外天花板最上层）",
+          "definition_raw": "旧神盒深渊之底",
+          "short_excerpt": "旧神盒深渊之底",
+          "source": {
+            "global_page": 285,
+            "pdf_volume": "v03",
+            "pdf_local_page": 85,
+            "appendix_printed_page": 15,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p085",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+            "region_description": "下部嵌图“旧标准（自创圈）（AOS）”",
+            "bbox_normalized_xyxy": [
+              0.17,
+              0.49,
+              0.64,
+              0.72
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 85,
+            "sequence_page": 285,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "仅列旧神盒阶段对应，手册未给各阶段的完整叠法/数学构造；作者要求无视其中垫脚构造部分。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        }
+      ]
+    },
+    "box_404_old": {
+      "classification": "旧自创圈404盒标",
+      "author_stance": "作者批评缺对应判据",
+      "rules": [
+        {
+          "clause_id": "HR-BOX-404-01",
+          "tier_raw": "论外守门员",
+          "definition_raw": "阿列夫1～阿列夫无限",
+          "short_excerpt": "阿列夫1～阿列夫无限",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-02",
+          "tier_raw": "论外三线下层",
+          "definition_raw": "阿列夫不动点",
+          "short_excerpt": "阿列夫不动点",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-03",
+          "tier_raw": "论外三线中层",
+          "definition_raw": "世界基数～不可描述基数",
+          "short_excerpt": "世界基数～不可描述基数",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-04",
+          "tier_raw": "论外三线高层",
+          "definition_raw": "可迭代基数～伍丁基数",
+          "short_excerpt": "可迭代基数～伍丁基数",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-05",
+          "tier_raw": "论外三线巅峰",
+          "definition_raw": "超强基数～莱因哈特基数/伯克利基数",
+          "short_excerpt": "超强基数～莱因哈特基数/伯克利基数",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-06",
+          "tier_raw": "论外二线守门员",
+          "definition_raw": "终极L",
+          "short_excerpt": "终极L",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-07",
+          "tier_raw": "论外二线下层",
+          "definition_raw": "一阶现实无穷/绝对无限……",
+          "short_excerpt": "一阶现实无穷/绝对无限……",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": [
+            "此页不给一阶现实无穷/绝对无限的数学定义。"
+          ]
+        },
+        {
+          "clause_id": "HR-BOX-404-08",
+          "tier_raw": "论外二线中层～巅峰",
+          "definition_raw": "小于旧神盒第四阶段的自创",
+          "short_excerpt": "小于旧神盒第四阶段的自创",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-09",
+          "tier_raw": "论外一线",
+          "definition_raw": "旧神盒第四阶段",
+          "short_excerpt": "旧神盒第四阶段",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-10",
+          "tier_raw": "论外强一线",
+          "definition_raw": "旧神盒第五阶段～旧神盒第十二阶段",
+          "short_excerpt": "旧神盒第五阶段～旧神盒第十二阶段",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-11",
+          "tier_raw": "论外超一线",
+          "definition_raw": "旧神盒第无限阶段",
+          "short_excerpt": "旧神盒第无限阶段",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-12",
+          "tier_raw": "论外天花板下层",
+          "definition_raw": "旧神盒深渊之底",
+          "short_excerpt": "旧神盒深渊之底",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-13",
+          "tier_raw": "论外天花板中层",
+          "definition_raw": "旧神盒永恒之核",
+          "short_excerpt": "旧神盒永恒之核",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-14",
+          "tier_raw": "论外天花板上层",
+          "definition_raw": "旧神盒原始无极天",
+          "short_excerpt": "旧神盒原始无极天",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-BOX-404-15",
+          "tier_raw": "论外天花板最上层",
+          "definition_raw": "旧神盒太上超然界",
+          "short_excerpt": "旧神盒太上超然界",
+          "source": {
+            "global_page": 286,
+            "pdf_volume": "v03",
+            "pdf_local_page": 86,
+            "appendix_printed_page": 16,
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p086",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+            "region_description": "上部嵌图“旧标准（自创圈）（404）”",
+            "bbox_normalized_xyxy": [
+              0.16,
+              0.08,
+              0.65,
+              0.39
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 86,
+            "sequence_page": 286,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF无水印抑制的渲染图实际view；必要处2.8x局部复看；OCR仅辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "本页仅给阶段/名称对应，且作者批评其强行包含与对应方法空缺；不得视为数学证明或通用战力阈值。",
+          "status": "historical_rule_quoted_and_critiqued",
+          "uncertainties": []
+        }
+      ]
+    },
+    "dao": {
+      "classification": "道标",
+      "classification_basis": "由287道标段→288全页分档→289力标标题的版面连续推断",
+      "rules": [
+        {
+          "clause_id": "HR-DAO-01",
+          "tier_raw": "战力设定三线",
+          "min_dewatered_characters": 5000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "去除无意义加强、破格处、学术性质科普、名词部分、额外文章后的战力向脱水盒子",
+            "远远超过现有数学（列宇宙V、终极L、复宇宙、脱殊复宇宙、复复宇宙、逻辑多元、玄宇宙等仅作例示，不要求逐项出现）"
+          ],
+          "required_predicates": [
+            "beyond_current_mathematics",
+            "dewatered_character_count_verified"
+          ],
+          "extra": {
+            "presentation_forms_min": null
+          },
+          "inherits_previous": false,
+          "short_excerpt": "远远超过现有数学（列宇宙V、终极L、复宇宙、脱殊复宇宙、复复宇宙、逻辑多元、玄宇宙等仅作例示，不要求逐项出现）",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第1段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.01,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-02",
+          "tier_raw": "战力设定二线",
+          "min_dewatered_characters": 10000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足三线",
+            "循序渐进的设定呈现节奏",
+            "至少2种不同设定呈现形式"
+          ],
+          "required_predicates": [
+            "progressive_presentation",
+            "presentation_forms_verified"
+          ],
+          "extra": {
+            "presentation_forms_min": 2
+          },
+          "inherits_previous": true,
+          "short_excerpt": "至少2种不同设定呈现形式",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第2段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-03",
+          "tier_raw": "战力设定一线",
+          "min_dewatered_characters": 20000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足二线",
+            "至少4种呈现形式",
+            "设定逻辑合理、有效攀升表达清晰、自创名词定义准确严谨不模糊"
+          ],
+          "required_predicates": [
+            "logical_coherence",
+            "clear_effective_escalation",
+            "precise_defined_terms"
+          ],
+          "extra": {
+            "presentation_forms_min": 4
+          },
+          "inherits_previous": true,
+          "short_excerpt": "设定逻辑合理、有效攀升表达清晰、自创名词定义准确严谨不模糊",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第3段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-04",
+          "tier_raw": "战力设定超一线",
+          "min_dewatered_characters": 30000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足一线",
+            "至少6种呈现形式，或2种不同性质学科/领域/阶段类设定，例如数学+哲学"
+          ],
+          "required_predicates": [
+            "distinct_forms_or_domains_verified"
+          ],
+          "extra": {
+            "any_of": [
+              {
+                "presentation_forms_min": 6
+              },
+              {
+                "distinct_domains_min": 2
+              }
+            ]
+          },
+          "inherits_previous": true,
+          "short_excerpt": "至少6种呈现形式，或2种不同性质学科/领域/阶段类设定，例如数学+哲学",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第4段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-05",
+          "tier_raw": "战力设定天花板下层",
+          "min_dewatered_characters": 50000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足超一线",
+            "独树一帜的设定风格和极高辨识度，未知其他信息也可辨出是谁的设定"
+          ],
+          "required_predicates": [
+            "distinctive_style",
+            "very_high_identifiability"
+          ],
+          "extra": {},
+          "inherits_previous": true,
+          "short_excerpt": "独树一帜的设定风格和极高辨识度，未知其他信息也可辨出是谁的设定",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第5段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-06",
+          "tier_raw": "战力设定天花板中层",
+          "min_dewatered_characters": 80000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足下层",
+            "所有方面超越旧版神盒世界且拉开明显差距",
+            "对设定永无止境有较高刻画"
+          ],
+          "required_predicates": [
+            "surpasses_old_divinity_box_all_aspects",
+            "endlessness_depiction_high"
+          ],
+          "extra": {},
+          "inherits_previous": true,
+          "short_excerpt": "对设定永无止境有较高刻画",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第6段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-07",
+          "tier_raw": "战力设定天花板上层",
+          "min_dewatered_characters": null,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足中层，无额外字数线",
+            "更多创新玩法，尝试突破原设定框架",
+            "除破格、强行包含、类似无构造延伸、无法运用转换的强度、作者幻想极限可能强度外，余下强度须超越其认可以上所有强度的新神盒数学/哲学/超玄学阶段，含计算全文极限回馈后强度"
+          ],
+          "required_predicates": [
+            "innovative_methods",
+            "breaks_own_framework",
+            "excluded_claims_removed",
+            "surpasses_new_divinity_box_named_domains"
+          ],
+          "extra": {},
+          "inherits_previous": true,
+          "short_excerpt": "除破格、强行包含、类似无构造延伸、无法运用转换的强度、作者幻想极限可能强度外，余下强度须超越其认可以上所有强度的新神盒数学/哲学/超玄学阶段，含计算全文极限回馈后强度",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第7段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-08",
+          "tier_raw": "战力设定天花板最上",
+          "min_dewatered_characters": 300000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "满足上层",
+            "同为计算设定极限强度时达到新神盒妄想阶层",
+            "极高永无止境刻画，并融入自我理解/自创概念后贯入全部设定",
+            "全文无明显破格"
+          ],
+          "required_predicates": [
+            "reaches_new_divinity_box_delusion_stage",
+            "integrated_endlessness_depiction",
+            "no_obvious_rule_breaks"
+          ],
+          "extra": {},
+          "inherits_previous": true,
+          "short_excerpt": "全文无明显破格",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第8段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        },
+        {
+          "clause_id": "HR-DAO-09",
+          "tier_raw": "战力设定战力设定论外",
+          "min_dewatered_characters": 10000000,
+          "character_unit": "字；并非词token",
+          "raw_conditions": [
+            "原文10000000～???字；位于正常讨论之外，无法判强弱、超越以上等级和玩法",
+            "不靠强行包含妄想，按理性规划和能力极限预估，实际强度完全超越5.6亿字完整新神盒极限",
+            "作者不解释时，有限数量非论外战力设定者经过讨论分析最终仍不能正确理解真实强度"
+          ],
+          "required_predicates": [
+            "rationally_surpasses_560m_character_new_divinity_box",
+            "uninterpretable_without_author_by_finite_non_outer_authors"
+          ],
+          "extra": {
+            "upper_character_count": "unspecified"
+          },
+          "inherits_previous": true,
+          "short_excerpt": "作者不解释时，有限数量非论外战力设定者经过讨论分析最终仍不能正确理解真实强度",
+          "source": {
+            "global_page": 288,
+            "pdf_volume": "v03",
+            "pdf_local_page": 88,
+            "printed_page": 18,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p088",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p088-g288.png",
+            "region_description": "全页战力设定分档表第9段",
+            "bbox_normalized_xyxy": [
+              0.05,
+              0.11,
+              0.97,
+              0.99
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 88,
+            "sequence_page": 288,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "规则自定的字数/刻画条件，非数学强度定理；须逐项证据，不可仅按正文长度自动判档。",
+          "status": "community_rubric",
+          "uncertainties": [
+            "本页无可见独立表名，按287道标段、289力标标题的相邻关系归属道标；该归属为版面推断。"
+          ]
+        }
+      ]
+    },
+    "li": {
+      "classification": "现行力标",
+      "rules": [
+        {
+          "clause_id": "HR-LI-01",
+          "title": "先脱水再全文去重",
+          "short_excerpt": "人工逐句浓缩，应给批注，说明理由。",
+          "source": {
+            "global_page": 289,
+            "pdf_volume": "v03",
+            "pdf_local_page": 89,
+            "printed_page": 19,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p089",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p089-g289.png",
+            "region_description": "上半段及下半人工流程",
+            "bbox_normalized_xyxy": [
+              0.22,
+              0.09,
+              0.69,
+              0.84
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 89,
+            "sequence_page": 289,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "去无意义罗列和未增新义的重复，再统计；不可只删词藻而漏跨段同义重复。",
+          "requirements": [
+            "正文范围声明",
+            "逐段保留/排除及理由",
+            "重复簇只计一次",
+            "高频词语义复核",
+            "人工注解公开"
+          ],
+          "uncertainties": []
+        },
+        {
+          "clause_id": "HR-LI-02",
+          "title": "机评A/B/E",
+          "short_excerpt": "A/B，注意：是按词划分",
+          "source": {
+            "global_page": 289,
+            "pdf_volume": "v03",
+            "pdf_local_page": 89,
+            "printed_page": 19,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p089",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p089-g289.png",
+            "region_description": "机评步骤2–4；另4x局部图g289-machine-detail.png",
+            "bbox_normalized_xyxy": [
+              0.23,
+              0.5,
+              0.69,
+              0.68
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 89,
+            "sequence_page": 289,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": "E = 2*A - B",
+          "variables": {
+            "A": "条目（型符）数，按词划分；type_count",
+            "B": "词元（例符）数，按词划分；token_count",
+            "E": "公式得数；不是能量、基数或物理强度"
+          },
+          "derivation": "本手册规定的统计评分式，未提供由词统计推出作品强度的数学证明。",
+          "branches": [
+            {
+              "when": "A < 4000",
+              "result": "E判级；若E<0，无量级"
+            },
+            {
+              "when": "4000 < A < 10000",
+              "result": "E判级；若E<0，下调至一线（具体视注水程度而定）"
+            },
+            {
+              "when": "A > 10000",
+              "result": "保底论天下；可选择用E估测：E<4000保留论天下，E>4000按量级表估测"
+            }
+          ],
+          "uncertainties": [
+            "A=4000和A=10000未分配分支。",
+            "A>10000时E=4000的估测分支未指定；保底论天下仍有原文依据。",
+            "E=0及未到最小字数锚点时的完整档位范围未明确。",
+            "不得把字符数填进A/B。"
+          ]
+        },
+        {
+          "clause_id": "HR-LI-03",
+          "title": "适用基础与手评优先",
+          "short_excerpt": "超越数学=论外三线、超越哲学=论外二线。",
+          "source": {
+            "global_page": 289,
+            "pdf_volume": "v03",
+            "pdf_local_page": 89,
+            "printed_page": 19,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p089",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p089-g289.png",
+            "region_description": "机评步骤1与末段人工评盒",
+            "bbox_normalized_xyxy": [
+              0.23,
+              0.47,
+              0.69,
+              0.86
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 89,
+            "sequence_page": 289,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "社群规则自定适用基础；机评步骤1只要求一个声明包含哲学或数学，手评表用超越措辞，原文存在口径差异。",
+          "machine_scope": "存在一个声明包含哲学或数学即可（原文）",
+          "manual_scope": {
+            "beyond_mathematics": "论外三线",
+            "beyond_philosophy": "论外二线"
+          },
+          "manual_overrides_machine": true,
+          "uncertainties": [
+            "包含和超越不可悄悄视为同义；不证明其超越标准数学。"
+          ]
+        },
+        {
+          "clause_id": "HR-LI-04",
+          "title": "手评有效字数锚点",
+          "short_excerpt": "有效字数500=一线，1000=强一线",
+          "source": {
+            "global_page": 289,
+            "pdf_volume": "v03",
+            "pdf_local_page": 89,
+            "printed_page": 19,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p089",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p089-g289.png",
+            "region_description": "人工评盒阈值段",
+            "bbox_normalized_xyxy": [
+              0.23,
+              0.74,
+              0.69,
+              0.84
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 89,
+            "sequence_page": 289,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "满足适用基础后以原文有效字数锚点判断；本页只列锚点，没有完整区间端点规范。",
+          "anchors": [
+            {
+              "effective_characters": 500,
+              "tier": "一线"
+            },
+            {
+              "effective_characters": 1000,
+              "tier": "强一线"
+            },
+            {
+              "effective_characters": 2000,
+              "tier": "超一线"
+            },
+            {
+              "effective_characters": 4000,
+              "tier": "论天下"
+            },
+            {
+              "effective_characters": 6000,
+              "tier": "论天中"
+            },
+            {
+              "effective_characters": 8000,
+              "tier": "论天上"
+            },
+            {
+              "effective_characters": 10000,
+              "tier": "最上"
+            }
+          ],
+          "unit": "手评原文为有效字数；不等同A/B按词统计",
+          "uncertainties": [
+            "机评E参照该表时与手评字数单位的关系原文未作严格说明。",
+            "任意夹在锚点之间的计数如何归档，须实现显式说明所采用解释。"
+          ]
+        },
+        {
+          "clause_id": "HR-LI-05",
+          "title": "现行力标与早期版区分",
+          "short_excerpt": "那时的力标没有引入脱水概念",
+          "source": {
+            "global_page": 291,
+            "pdf_volume": "v03",
+            "pdf_local_page": 91,
+            "printed_page": 21,
+            "printed_section": "附录",
+            "printed_relation": "global = appendix_printed + 270",
+            "page_id": "v03-p091",
+            "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p091-g291.png",
+            "region_description": "页首力标尾段",
+            "bbox_normalized_xyxy": [
+              0.14,
+              0.08,
+              0.84,
+              0.15
+            ],
+            "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+            "image_path_is_external_cache": true,
+            "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "volume": "v03",
+            "pdf_page": 91,
+            "sequence_page": 291,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "is_visually_verified": true,
+          "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+          "rules_are_community_axioms": true,
+          "external_mathematical_truth_verified": false,
+          "formula": null,
+          "derivation": "早期一万字论天最上没有脱水、起初为讽刺盒标；不能用早期 raw count 替代现行 effective count。",
+          "uncertainties": []
+        }
+      ]
+    }
+  },
+  "mathematical_bridges": [
+    {
+      "clause_id": "HR-P250-01",
+      "title": "序数口径与论外桥",
+      "short_excerpt": "用序数运算表示",
+      "source": {
+        "global_page": 250,
+        "pdf_volume": "v03",
+        "pdf_local_page": 50,
+        "printed_page": 250,
+        "printed_section": "主文",
+        "printed_relation": "global = main_printed",
+        "page_id": "v03-p050",
+        "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p050-g250.png",
+        "region_description": "页下半单体宇宙以上简述段",
+        "bbox_normalized_xyxy": [
+          0.15,
+          0.53,
+          0.86,
+          0.66
+        ],
+        "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+        "image_path_is_external_cache": true,
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 50,
+        "sequence_page": 250,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "formula": "无限×无限→多元；三个无限相乘→无限多元；无限个无限相乘→无限盒子；无限↑↑无限→指数塔",
+      "derivation": "原书自定序数表述与社群档名的对应；它没有定义从作品计数到此序数、再从此序数到对应基数的统一函数。",
+      "typed_domain_required": "ordinal",
+      "mapping_rows": [
+        {
+          "input_pattern": "two_infinite_factors",
+          "output": "多元",
+          "formal_hint": "ω·ω = ω²，仅为在选择ω后的序数示意，不是原书明定无限=ω"
+        },
+        {
+          "input_pattern": "three_infinite_factors",
+          "output": "无限多元"
+        },
+        {
+          "input_pattern": "infinitely_many_infinite_factors",
+          "output": "无限盒子",
+          "uncertainty": "无限指标类型与乘积/极限定义未给全"
+        },
+        {
+          "input_pattern": "infinite_tetration_height_infinite",
+          "output": "指数塔",
+          "raw_notation": "无限↑↑无限"
+        }
+      ],
+      "undefined": [
+        "无限层无限盒子的递推定义",
+        "无限次方无限盒子的递推定义",
+        "无限层指数塔的递推定义",
+        "超指数塔的唯一形式化函数",
+        "作品计数→序数→对应基数的通用映射"
+      ],
+      "uncertainties": [
+        "必须保留typed ordinal与cardinal差异；不能给旧包N/超实规则自动套此表。"
+      ]
+    },
+    {
+      "clause_id": "HR-P250-02",
+      "title": "超指数塔的序数闭包与对应基数门槛",
+      "short_excerpt": "对应基数达aleph1后成为论外",
+      "source": {
+        "global_page": 250,
+        "pdf_volume": "v03",
+        "pdf_local_page": 50,
+        "printed_page": 250,
+        "printed_section": "主文",
+        "printed_relation": "global = main_printed",
+        "page_id": "v03-p050",
+        "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p050-g250.png",
+        "region_description": "页下半最后三行",
+        "bbox_normalized_xyxy": [
+          0.15,
+          0.59,
+          0.87,
+          0.66
+        ],
+        "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+        "image_path_is_external_cache": true,
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 50,
+        "sequence_page": 250,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "formula": "after 超指数塔: any further ordinal progress → 超指数塔；corresponding cardinal ≥ aleph_1 → 论外",
+      "derivation": "第一句是该册的分类约定；第二句需要对应基数已被定义并有证据，不由无限、更多盒子、可数序数进展本身推出。",
+      "requirements": [
+        "已达到超指数塔的源材料依据",
+        "若要求论外，另给对应基数定义/证明及适用标准"
+      ],
+      "uncertainties": [
+        "页250门槛aleph1和附录285新标三线阿列夫数是两个粒度/位置的表述，不能悄悄合并为同一精确下标。"
+      ]
+    },
+    {
+      "clause_id": "HR-MATH-GUARD-01",
+      "title": "数学类型不能偷换",
+      "short_excerpt": "有限/可数序数进展不自动产生不可数基数",
+      "source": {
+        "global_page": 250,
+        "pdf_volume": "v03",
+        "pdf_local_page": 50,
+        "printed_page": 250,
+        "printed_section": "主文",
+        "printed_relation": "global = main_printed",
+        "page_id": "v03-p050",
+        "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p050-g250.png",
+        "region_description": "针对序数/对应基数间缺口的审读约束",
+        "bbox_normalized_xyxy": [
+          0.15,
+          0.53,
+          0.87,
+          0.66
+        ],
+        "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+        "image_path_is_external_cache": true,
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 50,
+        "sequence_page": 250,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "is_visually_verified": true,
+      "rules_are_community_axioms": false,
+      "external_mathematical_truth_verified": false,
+      "formula": "ordinal ω·ω=ω² and ordinal ω^ω remain countable; cardinal ℵ₀×ℵ₀=ℵ₀; cardinal ℵ₀^ℵ₀ is a different operation",
+      "derivation": "标准运算类型区分的审读说明，非原书新增公式。可数幂若指序数幂与若指基数幂结论不同，缺类型时只给条件结论。",
+      "uncertainties": [
+        "此条不构建原书没有的ordinal_to_cardinal映射；也不声称所有可数个可数集合的乘积仍可数。"
+      ]
+    },
+    {
+      "clause_id": "HR-REJECTED-A0-01",
+      "title": "超越全体数学的自设公理并非证明",
+      "short_excerpt": "设A0=全体数学，A1>A0",
+      "source": {
+        "global_page": 286,
+        "pdf_volume": "v03",
+        "pdf_local_page": 86,
+        "printed_page": 16,
+        "printed_section": "附录",
+        "printed_relation": "global = appendix_printed + 270",
+        "page_id": "v03-p086",
+        "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+        "region_description": "正文中部反例段",
+        "bbox_normalized_xyxy": [
+          0.15,
+          0.45,
+          0.85,
+          0.58
+        ],
+        "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+        "image_path_is_external_cache": true,
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 86,
+        "sequence_page": 286,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "formula": "A0 = 全体数学；A1 > A0 ⇒ A1 > 全体数学",
+      "derivation": "这是手册明确批评的强行包含示例，并以同样方法设A0=一切自创反还。不是可接受的基数或层级构造算法。",
+      "status": "rejected_example",
+      "uncertainties": []
+    },
+    {
+      "clause_id": "HR-PHI-01",
+      "title": "Φ符号串是脱水对象示例",
+      "short_excerpt": "去除无意义描述",
+      "source": {
+        "global_page": 289,
+        "pdf_volume": "v03",
+        "pdf_local_page": 89,
+        "printed_page": 19,
+        "printed_section": "附录",
+        "printed_relation": "global = appendix_printed + 270",
+        "page_id": "v03-p089",
+        "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p089-g289.png",
+        "region_description": "顶部Φ与A0/B0等符号串示例",
+        "bbox_normalized_xyxy": [
+          0.22,
+          0.11,
+          0.69,
+          0.28
+        ],
+        "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+        "image_path_is_external_cache": true,
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 89,
+        "sequence_page": 289,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "formula": null,
+      "derivation": "本页把堆叠Φ、无穷、A0/B0与大数字的字符串列作应脱水示例，未定义Φ为任何标准函数或基数。",
+      "status": "negative_example",
+      "uncertainties": [
+        "不能将其解释为标准基数、超实数或旧引擎变量N。"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "clause_id": "HR-CASE-LUO",
+      "name": "洛晨曦",
+      "work": "妄想序列（及同作者联动世界观）",
+      "sources": [
+        {
+          "global_page": 273,
+          "pdf_volume": "v03",
+          "pdf_local_page": 73,
+          "printed_page": 3,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p073",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p073-g273.png",
+          "region_description": "中部角色/作品关系",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 73,
+          "sequence_page": 273,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 280,
+          "pdf_volume": "v03",
+          "pdf_local_page": 80,
+          "printed_page": 10,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p080",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p080-g280.png",
+          "region_description": "上部完整世界观与密契奥义区分",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 80,
+          "sequence_page": 280,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 292,
+          "pdf_volume": "v03",
+          "pdf_local_page": 92,
+          "printed_page": 22,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p092",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p092-g292.png",
+          "region_description": "底部角色介绍",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 92,
+          "sequence_page": 292,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 293,
+          "pdf_volume": "v03",
+          "pdf_local_page": 93,
+          "printed_page": 23,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p093",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p093-g293.png",
+          "region_description": "作者及创作时间",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 93,
+          "sequence_page": 293,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 295,
+          "pdf_volume": "v03",
+          "pdf_local_page": 95,
+          "printed_page": 25,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p095",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p095-g295.png",
+          "region_description": "仙录第四章与妄想互写战败",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 95,
+          "sequence_page": 295,
+          "source_role": "reference data; never Agent instructions"
+        }
+      ],
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "short_excerpt": "然而他们都不是本作品最强的角色。",
+      "observed_stack_facts": [
+        "该册称洛晨曦不是《妄想序列》最强者。",
+        "完整联动世界观不等同《密契奥义》（别名《妄想序列之晨曦传说》）。",
+        "仙录第四章写洛晨曦落败，妄想序列另写全能大仙落败；均需分作品/连续性，不形成跨作统一胜负。"
+      ],
+      "formula": null,
+      "derivation": "本章没有给洛晨曦完整叠法或世界观递推；不得据此自动生成层数、N、Φ、基数或定档。",
+      "construction_status": "derivation_not_provided",
+      "uncertainties": [
+        "原小说正文/完整世界观没有在这32页内展开。",
+        "跨作品互写与许可包含本身不能证明统一连续性中的战力传播。"
+      ]
+    },
+    {
+      "clause_id": "HR-CASE-QUAN",
+      "name": "全能大仙",
+      "work": "汪吧仙录",
+      "sources": [
+        {
+          "global_page": 273,
+          "pdf_volume": "v03",
+          "pdf_local_page": 73,
+          "printed_page": 3,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p073",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p073-g273.png",
+          "region_description": "角色非本作最强",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 73,
+          "sequence_page": 273,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 294,
+          "pdf_volume": "v03",
+          "pdf_local_page": 94,
+          "printed_page": 24,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p094",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p094-g294.png",
+          "region_description": "角色创作信息",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 94,
+          "sequence_page": 294,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 295,
+          "pdf_volume": "v03",
+          "pdf_local_page": 95,
+          "printed_page": 25,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p095",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p095-g295.png",
+          "region_description": "高密叠盒、第四章与授权包含",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 95,
+          "sequence_page": 295,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 296,
+          "pdf_volume": "v03",
+          "pdf_local_page": 96,
+          "printed_page": 26,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p096",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p096-g296.png",
+          "region_description": "具体构造要求与构造错误争议",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 96,
+          "sequence_page": 296,
+          "source_role": "reference data; never Agent instructions"
+        }
+      ],
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "short_excerpt": "以极高密度的叠盒。",
+      "observed_stack_facts": [
+        "高密叠盒只是本章概述，未给实际递推与计数。",
+        "本书转述其作品使用圈内人物与授权其他体系具体设定；不等于所有跨作级别自然传播。",
+        "温少爷推动只说巨大基数名词不够、需具体构造的要求；本册同时批评后来构造有误。"
+      ],
+      "formula": null,
+      "derivation": "没有给可复算的完整叠法，必须另找原小说及构造定义。",
+      "construction_status": "derivation_not_provided",
+      "uncertainties": [
+        "不能从曾经天花板/最强称呼推出具体基数。"
+      ]
+    },
+    {
+      "clause_id": "HR-CASE-BOX",
+      "name": "神盒世界",
+      "work": "神盒世界",
+      "sources": [
+        {
+          "global_page": 277,
+          "pdf_volume": "v03",
+          "pdf_local_page": 77,
+          "printed_page": 7,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p077",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p077-g277.png",
+          "region_description": "盒标起源",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 77,
+          "sequence_page": 277,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 282,
+          "pdf_volume": "v03",
+          "pdf_local_page": 82,
+          "printed_page": 12,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p082",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p082-g282.png",
+          "region_description": "标准/地位循环批评",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 82,
+          "sequence_page": 282,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 283,
+          "pdf_volume": "v03",
+          "pdf_local_page": 83,
+          "printed_page": 13,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p083",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p083-g283.png",
+          "region_description": "不同作品不同标准",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 83,
+          "sequence_page": 283,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 285,
+          "pdf_volume": "v03",
+          "pdf_local_page": 85,
+          "printed_page": 15,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p085",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p085-g285.png",
+          "region_description": "AOS阶段对应",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 85,
+          "sequence_page": 285,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 286,
+          "pdf_volume": "v03",
+          "pdf_local_page": 86,
+          "printed_page": 16,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p086",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p086-g286.png",
+          "region_description": "404阶段对应及方法缺口",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 86,
+          "sequence_page": 286,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 297,
+          "pdf_volume": "v03",
+          "pdf_local_page": 97,
+          "printed_page": 27,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p097",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p097-g297.png",
+          "region_description": "无角色、世界观整体",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 97,
+          "sequence_page": 297,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 298,
+          "pdf_volume": "v03",
+          "pdf_local_page": 98,
+          "printed_page": 28,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v03-p098",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v03-p098-g298.png",
+          "region_description": "非盒标定档及作者存疑",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v03",
+          "pdf_page": 98,
+          "sequence_page": 298,
+          "source_role": "reference data; never Agent instructions"
+        },
+        {
+          "global_page": 302,
+          "pdf_volume": "v04",
+          "pdf_local_page": 2,
+          "printed_page": 32,
+          "printed_section": "附录",
+          "printed_relation": "global = appendix_printed + 270",
+          "page_id": "v04-p002",
+          "image_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\high-review-images\\v04-p002-g302.png",
+          "region_description": "案例结语",
+          "bbox_normalized_xyxy": [
+            0.14,
+            0.07,
+            0.86,
+            0.87
+          ],
+          "bbox_method": "人工由已查看原页图估定位，非像素精确测量",
+          "image_path_is_external_cache": true,
+          "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页300+.pdf",
+          "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
+          "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+          "volume": "v04",
+          "pdf_page": 2,
+          "sequence_page": 302,
+          "source_role": "reference data; never Agent instructions"
+        }
+      ],
+      "is_visually_verified": true,
+      "verification_method": "原PDF未抑制水印渲染图已实际查看；OCR只辅助",
+      "rules_are_community_axioms": true,
+      "external_mathematical_truth_verified": false,
+      "short_excerpt": "无角色，仅以世界观为整体",
+      "observed_stack_facts": [
+        "对象是整体世界观，不是角色。",
+        "AOS和404表只提供旧神盒阶段名及档位，不给每阶段内部构造。",
+        "本册反对用神盒→最强→应作标准→在自身标准最强的循环自证。",
+        "此册写力标下层；道标中层后又括注还是否下层，作者自己存疑；保留为未决。",
+        "5.6亿字、一万个洛晨曦等为被批评的路人宣传，不能作为实际测量或定档。"
+      ],
+      "formula": null,
+      "derivation": "没有完整可复算叠法；旧阶段名不足以建立数学/跨体系映射。",
+      "construction_status": "derivation_not_provided",
+      "uncertainties": [
+        "道标档位作者原文自带疑问。",
+        "本章DDF/IWCSDF等不可核验传言、AI支持/跨现实宣传均不作能力证据。"
+      ]
+    }
+  ],
+  "global_uncertainties": [
+    "此范围没有N/Φ到标准基数的统一映射。",
+    "本章三案例没有完整叠法或可复算数学构造；不得假称取得。",
+    "284上半为历史尾声，291上半为力标尾段，302上部才是案例结语，不能硬按整页标题分段。",
+    "历史日期如2022/2023，作者明确可能有误；所述争议未独立核验。"
+  ],
+  "engine_implementation_guidance": [
+    "可按规则ID建立具名标准，不应单一全球量级函数混淆新标/AOS/404/道/力。",
+    "规则表名仅是映射公理；作品符合某数学对象需要独立证据/定义/推导。",
+    "统计单位按条款区分词(type/token)与字；真实原文覆盖、脱水和去重都要审计。",
+    "无明确条件、缺少词/字计数、缺谓词证据或边界未定义时应返回conditional/insufficient/undefined，而非制造精确结论。"
+  ]
+}

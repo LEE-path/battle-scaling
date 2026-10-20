@@ -1,0 +1,190 @@
+{
+  "status": "completed_and_visually_compared",
+  "python_executable": "D:\\Codex\\tools\\rapid-latex-ocr\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "versions": {
+    "PyYAML": "6.0.3",
+    "certifi": "2026.7.22",
+    "chardet": "7.7.0",
+    "charset-normalizer": "3.5.2",
+    "colorama": "0.4.6",
+    "coloredlogs": "15.0.1",
+    "filelock": "4.2.2",
+    "flatbuffers": "25.12.19",
+    "fsspec": "2026.9.0",
+    "huggingface_hub": "0.36.2",
+    "humanfriendly": "10.0",
+    "idna": "3.20",
+    "mpmath": "1.3.0",
+    "numpy": "1.26.4",
+    "onnxruntime": "1.20.1",
+    "opencv-python": "4.11.0.86",
+    "packaging": "26.3",
+    "pillow": "10.4.0",
+    "pip": "24.0",
+    "protobuf": "7.36.2",
+    "pyreadline3": "3.5.6",
+    "rapid-latex-ocr": "0.0.9",
+    "requests": "2.34.2",
+    "setuptools": "65.5.0",
+    "sympy": "1.14.0",
+    "tokenizers": "0.15.2",
+    "tqdm": "4.70.1",
+    "typing_extensions": "4.16.0",
+    "urllib3": "2.8.0"
+  },
+  "ort_available_providers": [
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "session_threads": {
+    "intra_op": 1,
+    "inter_op": 1,
+    "execution_mode": "ORT_SEQUENTIAL"
+  },
+  "runtime_override": "In-memory OrtInferSession._init_sess_opt wrapper constrains thread scheduling only. Installed package files unchanged.",
+  "api": "LaTeXOCR(image_resizer_path,encoder_path,decoder_path,tokenizer_json)(crop_path) -> (latex, elapsed_seconds)",
+  "samples": [
+    {
+      "id": "inertia-p021",
+      "sequence_page": 21,
+      "volume": "v01",
+      "pdf_page": 21,
+      "source_filename": "汪峰在吧量级册，页1～100.pdf",
+      "printed_footer": 21,
+      "crop_bbox_native_px": [
+        190,
+        500,
+        430,
+        578
+      ],
+      "visual_transcription_latex": "I=\\frac{2}{5}MR^{2}",
+      "visual_note": "Visually read the fraction 2/5, capital I/M/R, superscript 2. No physical validation asserted.",
+      "native_page_dimensions_px": [
+        1152,
+        1628
+      ],
+      "native_page_image_sha256": "e5f450e9e0c317f022f71c9f09a6cc24f18882fe5b330d4069117dbfd37ee119",
+      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\inertia-p021-crop-threshold160.png",
+      "crop_sha256": "34f33a89aba3c7d5cce2635c215ec83052c0e2b78b059379ef3c68e28f70a9fc",
+      "crop_dimensions_px": [
+        240,
+        78
+      ],
+      "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
+      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\inertia-p021-crop.png",
+      "parent_crop_sha256": "0c3a2113bc9f477709d023fff8216f736c993fa87f2ebfa4c9597e144c62bcca",
+      "output_latex": "\\bar{\\cal T}\\stackrel{\\lbrack\\star}{\\longrightarrow}\\stackrel{\\iota\\star}{\\frac{\\iota}{\\partial\\bar{\\cal S}}}\\bar{\\cal S}\\bar{\\cal Q}^{\\underline{{\\alpha}}}",
+      "reported_inference_seconds": 1.6949653000338003,
+      "call_wall_seconds": 1.6949835999985225,
+      "status": "returned_candidate_needs_visual_review",
+      "visual_review_status": "incorrect",
+      "visual_review_note": "去浅水印后仍生成无关书法T、箭头、星号、偏导符号等；并未恢复原式。",
+      "confidence_score": null,
+      "confidence_score_note": "The library returns no calibrated formula confidence score."
+    },
+    {
+      "id": "adiabatic-p150",
+      "sequence_page": 150,
+      "volume": "v02",
+      "pdf_page": 50,
+      "source_filename": "汪峰在吧量级册，页101～200.pdf",
+      "printed_footer": 150,
+      "crop_bbox_native_px": [
+        255,
+        490,
+        885,
+        710
+      ],
+      "visual_transcription_latex": "T_{2}=T_{1}\\cdot\\left(\\frac{P_{2}}{P_{1}}\\right)^{\\frac{\\gamma-1}{\\gamma}}",
+      "visual_note": "Visually read subscript 2/1, pressure ratio P2/P1, parenthesized ratio raised to (gamma-1)/gamma.",
+      "native_page_dimensions_px": [
+        1152,
+        1628
+      ],
+      "native_page_image_sha256": "d4661837c887489fc8eea0dc81e89072ecec04d30e904bc4e0e511e48067ba97",
+      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\adiabatic-p150-crop-threshold160.png",
+      "crop_sha256": "88a449b214f01a1e158d52002032fbf874f06d0eb63698387ae0164ffcc7b678",
+      "crop_dimensions_px": [
+        630,
+        220
+      ],
+      "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
+      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\adiabatic-p150-crop.png",
+      "parent_crop_sha256": "3b4487775aba480e4a26e4c70c5c698aad651d4f6d50bc4df99174f4c3cbb4b0",
+      "output_latex": "T_{2}=T_{1}\\cdot\\left({\\frac{P_{2}}{P_{1}}}\\right)^{\\frac{\\gamma-1}{\\gamma}}",
+      "reported_inference_seconds": 2.4506475999951363,
+      "call_wall_seconds": 2.4506934999953955,
+      "status": "returned_candidate_needs_visual_review",
+      "visual_review_status": "visually_matches_source",
+      "visual_review_note": "去浅水印后不再多出星号；T/P下标、乘点、括号和(gamma-1)/gamma指数与原图一致。",
+      "confidence_score": null,
+      "confidence_score_note": "The library returns no calibrated formula confidence score."
+    },
+    {
+      "id": "tke-p200",
+      "sequence_page": 200,
+      "volume": "v02",
+      "pdf_page": 100,
+      "source_filename": "汪峰在吧量级册，页101～200.pdf",
+      "printed_footer": 200,
+      "crop_bbox_native_px": [
+        210,
+        960,
+        1000,
+        1100
+      ],
+      "visual_transcription_latex": "TKE=\\frac{1}{2}\\rho HA\\sum f_{i}v_{i}^{2}",
+      "visual_note": "Visually read one-half, Greek rho, H A, summation without shown bounds, f_i v_i^2.",
+      "native_page_dimensions_px": [
+        1220,
+        1726
+      ],
+      "native_page_image_sha256": "4d2a76c471a5ed60b00dc76e05b202d07621e95d9d0cb615ea8e341bb87b1ec9",
+      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\tke-p200-crop-threshold160.png",
+      "crop_sha256": "93484cd2c49e58baf63e523de237af4374579b3b0fdbf8bcf16025614723cadc",
+      "crop_dimensions_px": [
+        790,
+        140
+      ],
+      "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
+      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\tke-p200-crop.png",
+      "parent_crop_sha256": "1255b3ee13ba1b9be63e9671e8fa1149d648371c34265cf0d87aa7ef8dfa08f8",
+      "output_latex": "T K E={\\frac{1}{2}}\\ \\rho H A\\sum f_{i}v_{i}^{2}",
+      "reported_inference_seconds": 1.1758018999826163,
+      "call_wall_seconds": 1.1758246999816038,
+      "status": "returned_candidate_needs_visual_review",
+      "visual_review_status": "visually_matches_source",
+      "visual_review_note": "与未处理版本输出相同；符号及上下标结构与原图一致。",
+      "confidence_score": null,
+      "confidence_score_note": "The library returns no calibrated formula confidence score."
+    }
+  ],
+  "initialization_seconds": 1.9314566000248305,
+  "actual_session_providers": {
+    "image_resizer": [
+      "CPUExecutionProvider"
+    ],
+    "encoder": [
+      "CPUExecutionProvider"
+    ],
+    "decoder": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "max_dims": [
+    672,
+    192
+  ],
+  "min_dims": [
+    32,
+    32
+  ],
+  "temperature": 1e-05,
+  "max_seq_len": 512,
+  "local_review_timestamp": "2026-10-18T22:31:34.394359+08:00",
+  "review_method": "Actually viewed full source page and raw crop, then compared the returned LaTeX token-by-token against visible glyphs. Threshold derivatives also visually viewed. LaTeX was not rendered back in this test; no renderer installed. This evaluates transcription only, not physical validity or theorem correctness.",
+  "sample_generalization_warning": "Only three formulas; these counts are not an estimated accuracy rate for the handbook or benchmark.",
+  "visually_matching_count": 2
+}

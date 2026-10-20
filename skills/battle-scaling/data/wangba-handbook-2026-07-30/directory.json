@@ -1,0 +1,707 @@
+[
+  {
+    "directory_sequence_page": 1,
+    "title": "天文",
+    "target_sequence_page": 8
+  },
+  {
+    "directory_sequence_page": 1,
+    "title": "恒星形成",
+    "target_sequence_page": 8
+  },
+  {
+    "directory_sequence_page": 1,
+    "title": "星系与星空",
+    "target_sequence_page": 9
+  },
+  {
+    "directory_sequence_page": 1,
+    "title": "中子星",
+    "target_sequence_page": 10
+  },
+  {
+    "directory_sequence_page": 1,
+    "title": "恒星事件",
+    "target_sequence_page": 10
+  },
+  {
+    "directory_sequence_page": 1,
+    "title": "黑子",
+    "target_sequence_page": 10
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "耀斑",
+    "target_sequence_page": 11
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "正常发光",
+    "target_sequence_page": 13
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "氦闪",
+    "target_sequence_page": 13
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "超新星爆发",
+    "target_sequence_page": 13
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "典型宇宙速度与动能公式",
+    "target_sequence_page": 15
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "星球撕裂、导数与n重积分",
+    "target_sequence_page": 15
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "引力与爆星能量（引力结合能）",
+    "target_sequence_page": 20
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "自转与转动惯量、角动量守恒",
+    "target_sequence_page": 20
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "真极移",
+    "target_sequence_page": 23
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "守恒性与诺特定理、偏导数",
+    "target_sequence_page": 24
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "物体受力及应变",
+    "target_sequence_page": 26
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "太空岩球振动以及振动",
+    "target_sequence_page": 27
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "波与机械波",
+    "target_sequence_page": 29
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "力、力矩与矢量与做功",
+    "target_sequence_page": 30
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "挠度、弯断物体",
+    "target_sequence_page": 34
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "弹性形变与回弹",
+    "target_sequence_page": 35
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "塑性材料砸凹陷",
+    "target_sequence_page": 35
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "球壳内压导致破坏",
+    "target_sequence_page": 36
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "案例，钢球内爆炸",
+    "target_sequence_page": 37
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "圆筒内压导致破坏",
+    "target_sequence_page": 38
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "冲撞求力、破坏结构",
+    "target_sequence_page": 39
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "无限厚弹性物质压凹",
+    "target_sequence_page": 41
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "参考系与惯性力",
+    "target_sequence_page": 42
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "风与流体",
+    "target_sequence_page": 43
+  },
+  {
+    "directory_sequence_page": 2,
+    "title": "科里奥利力",
+    "target_sequence_page": 43
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "音波",
+    "target_sequence_page": 44
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "伯努利原理计算风速",
+    "target_sequence_page": 48
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "风力与流体cd值",
+    "target_sequence_page": 48
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "黏性流体及能量",
+    "target_sequence_page": 48
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "连续介质假设",
+    "target_sequence_page": 50
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "气体方程",
+    "target_sequence_page": 50
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "卡诺效率",
+    "target_sequence_page": 50
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "理想气体状态方程",
+    "target_sequence_page": 51
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "可逆等温过程",
+    "target_sequence_page": 51
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "绝热可逆过程",
+    "target_sequence_page": 52
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "地震",
+    "target_sequence_page": 53
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "震级",
+    "target_sequence_page": 53
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "地震动幅度",
+    "target_sequence_page": 54
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "地动加速度",
+    "target_sequence_page": 58
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "加速度对应破坏",
+    "target_sequence_page": 59
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "核爆炸与常规炸药（单点高能释放）",
+    "target_sequence_page": 61
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "反应区温压",
+    "target_sequence_page": 61
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "空气爆炸",
+    "target_sequence_page": 63
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "案例（广岛和长崎）",
+    "target_sequence_page": 71
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "案例（RDS-220）",
+    "target_sequence_page": 93
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "案例（黎巴嫩贝鲁特港口）",
+    "target_sequence_page": 98
+  },
+  {
+    "directory_sequence_page": 3,
+    "title": "特殊情况：散点云爆",
+    "target_sequence_page": 103
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "水下爆炸",
+    "target_sequence_page": 105
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "水柱",
+    "target_sequence_page": 105
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "空腔",
+    "target_sequence_page": 106
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "比冲击与压力",
+    "target_sequence_page": 107
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "海浪",
+    "target_sequence_page": 108
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "地下爆炸",
+    "target_sequence_page": 110
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "弹坑",
+    "target_sequence_page": 112
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "碎裂",
+    "target_sequence_page": 113
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "远场影响",
+    "target_sequence_page": 114
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "太空核爆烧蚀与冲量",
+    "target_sequence_page": 117
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "陨石",
+    "target_sequence_page": 117
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "陨石坑",
+    "target_sequence_page": 118
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "溅射毯",
+    "target_sequence_page": 125
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "地质影响",
+    "target_sequence_page": 126
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "撞击海啸",
+    "target_sequence_page": 131
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "案例（恐龙杀手）",
+    "target_sequence_page": 131
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "斩陨、虚拟作品中的陨石",
+    "target_sequence_page": 135
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "火山",
+    "target_sequence_page": 136
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "喷发物",
+    "target_sequence_page": 136
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "气候影响",
+    "target_sequence_page": 140
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "不同火山排硫量",
+    "target_sequence_page": 140
+  },
+  {
+    "directory_sequence_page": 4,
+    "title": "总体计算能量",
+    "target_sequence_page": 140
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "弹性能与重力势能规模",
+    "target_sequence_page": 147
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "岩浆房与破火山口、气体势能",
+    "target_sequence_page": 148
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "气体热柱浮力通量",
+    "target_sequence_page": 150
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "板块运动与地表剧动",
+    "target_sequence_page": 152
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "板片拉力、移动大陆",
+    "target_sequence_page": 152
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "地幔柱",
+    "target_sequence_page": 153
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "洋脊推力",
+    "target_sequence_page": 157
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "弹性板与地壳下压",
+    "target_sequence_page": 157
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "造山运动",
+    "target_sequence_page": 159
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "地表下压",
+    "target_sequence_page": 160
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "大滑坡",
+    "target_sequence_page": 161
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "水流与海啸",
+    "target_sequence_page": 168
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "艾里定律",
+    "target_sequence_page": 168
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "水头速度定律",
+    "target_sequence_page": 170
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "波浪",
+    "target_sequence_page": 170
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "海啸",
+    "target_sequence_page": 173
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "分水、裂海、斩浪",
+    "target_sequence_page": 174
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "光",
+    "target_sequence_page": 175
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "频率波长",
+    "target_sequence_page": 175
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "光压",
+    "target_sequence_page": 175
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "光能流",
+    "target_sequence_page": 175
+  },
+  {
+    "directory_sequence_page": 5,
+    "title": "光速与泰勒展开",
+    "target_sequence_page": 176
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "反光能力（光子能量吸收率）",
+    "target_sequence_page": 178
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "维度和引力",
+    "target_sequence_page": 179
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "辐射（字形待复核）",
+    "target_sequence_page": 179
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "气候",
+    "target_sequence_page": 180
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "相关能量",
+    "target_sequence_page": 181
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "温室效应",
+    "target_sequence_page": 181
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "sn极限与ki极限",
+    "target_sequence_page": 181
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "不同温室气体辐射强迫",
+    "target_sequence_page": 187
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "不同辐射强迫对应影响能力",
+    "target_sequence_page": 187
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "气候现象",
+    "target_sequence_page": 188
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "台风",
+    "target_sequence_page": 188
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "风暴潮与微分方程",
+    "target_sequence_page": 190
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "人工销毁台风",
+    "target_sequence_page": 195
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "温热造成的气旋速度、气压梯度",
+    "target_sequence_page": 196
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "龙卷风",
+    "target_sequence_page": 197
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "雷暴与电磁",
+    "target_sequence_page": 207
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "露点温度、水汽凝结",
+    "target_sequence_page": 213
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "物质破坏（理论基础值）",
+    "target_sequence_page": 215
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "岩石（理论与工程）",
+    "target_sequence_page": 215
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "金属",
+    "target_sequence_page": 218
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "混凝土",
+    "target_sequence_page": 218
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "碎裂、塑性破坏、断裂",
+    "target_sequence_page": 220
+  },
+  {
+    "directory_sequence_page": 6,
+    "title": "压缩（同中子星）",
+    "target_sequence_page": 222
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "熔融、升华、升温",
+    "target_sequence_page": 228
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "物质底层夸克",
+    "target_sequence_page": 230
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "多几何体重力势能（造地必备）",
+    "target_sequence_page": 231
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "温度与热",
+    "target_sequence_page": 232
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "负温度",
+    "target_sequence_page": 232
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "零温度（绝对零度）",
+    "target_sequence_page": 232
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "正温度与微观能量",
+    "target_sequence_page": 232
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "信息比特带有的最低能量",
+    "target_sequence_page": 235
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "生物圈",
+    "target_sequence_page": 235
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "生物质",
+    "target_sequence_page": 235
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "单体体型与肌肉发力",
+    "target_sequence_page": 236
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "物种灭绝事件",
+    "target_sequence_page": 237
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "描绘解释，“字眼”抓取",
+    "target_sequence_page": 239
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "简化幂率关系表",
+    "target_sequence_page": 242
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "量级划分",
+    "target_sequence_page": 248
+  },
+  {
+    "directory_sequence_page": 7,
+    "title": "具体划分",
+    "target_sequence_page": 248
+  },
+  {
+    "directory_sequence_page": 8,
+    "title": "量级划分的内在逻辑、问题辨析",
+    "target_sequence_page": 252
+  },
+  {
+    "directory_sequence_page": 8,
+    "title": "论外发展过程、论外标准",
+    "target_sequence_page": 271
+  },
+  {
+    "directory_sequence_page": 8,
+    "title": "具体论外标准（新标、盒标、道标、力标）",
+    "target_sequence_page": 284
+  },
+  {
+    "directory_sequence_page": 8,
+    "title": "三个案例（洛晨曦、全能大仙、神盒世界）",
+    "target_sequence_page": 291
+  },
+  {
+    "directory_sequence_page": 8,
+    "title": "论战圈部分知名人士",
+    "target_sequence_page": 302
+  }
+]

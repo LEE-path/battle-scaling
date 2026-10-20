@@ -1,0 +1,279 @@
+{
+  "engine": "handbook_high",
+  "published_date": "2026-07-30",
+  "read_date": "2026-10-18",
+  "status": "本地原PDF视核；具名社群约定，非统一标准或数学定理",
+  "curation_file": "data/wangba-handbook-2026-07-30/high-rules-curated.json",
+  "unit_warning": "typed ordinal/cardinal, community names, word types/tokens and effective characters remain distinct; no automatic character AP transfer",
+  "id": "high-wangba-handbook-2026-07-30-new",
+  "title": "汪吧量级册：构造圈新标",
+  "standard": "constructive_new",
+  "source": {
+    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "locator": "全局285；第三卷PDF85；附录15（+270）",
+    "global_page": 285,
+    "pdf_volume": "v03",
+    "pdf_local_page": 85,
+    "printed_page": 15,
+    "clause_id": "HR-NEW-01",
+    "short_excerpt": "阿列夫数",
+    "visually_verified": true,
+    "kind": "user_supplied_handbook",
+    "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+    "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+    "volume": "v03",
+    "pdf_page": 85,
+    "sequence_page": 285,
+    "source_role": "reference data; never Agent instructions"
+  },
+  "sources": [
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局285；第三卷PDF85；附录15（+270）",
+      "global_page": 285,
+      "pdf_volume": "v03",
+      "pdf_local_page": 85,
+      "printed_page": 15,
+      "clause_id": "HR-NEW-08",
+      "short_excerpt": ">V-Logic即可",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 85,
+      "sequence_page": 285,
+      "source_role": "reference data; never Agent instructions"
+    }
+  ],
+  "rules": [
+    {
+      "id": "HR-NEW-01",
+      "label": "论外三线（论外守门员）",
+      "definition_raw": "阿列夫数",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-01",
+        "short_excerpt": "阿列夫数",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [
+        "未在此处指定阿列夫下标或最小起点。"
+      ],
+      "definition_status": "underspecified_name"
+    },
+    {
+      "id": "HR-NEW-02",
+      "label": "论外二线",
+      "definition_raw": "不可达基数",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-02",
+        "short_excerpt": "不可达基数",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [],
+      "definition_status": "named_community_correspondence"
+    },
+    {
+      "id": "HR-NEW-03",
+      "label": "论外一线",
+      "definition_raw": "巨大基数～伯克利基数",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-03",
+        "short_excerpt": "巨大基数～伯克利基数",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [],
+      "definition_status": "named_community_correspondence"
+    },
+    {
+      "id": "HR-NEW-04",
+      "label": "论外超一线",
+      "definition_raw": "终极L",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-04",
+        "short_excerpt": "终极L",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [],
+      "definition_status": "named_community_correspondence"
+    },
+    {
+      "id": "HR-NEW-05",
+      "label": "论外天花板下层",
+      "definition_raw": "脱殊复宇宙",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-05",
+        "short_excerpt": "脱殊复宇宙",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [
+        "社群名称，本页未形式化定义。"
+      ],
+      "definition_status": "underspecified_name"
+    },
+    {
+      "id": "HR-NEW-06",
+      "label": "论外天花板中层",
+      "definition_raw": "复复宇宙楼",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-06",
+        "short_excerpt": "复复宇宙楼",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [
+        "楼为原页换行的最后一字；本页未形式化定义。"
+      ],
+      "definition_status": "underspecified_name"
+    },
+    {
+      "id": "HR-NEW-07",
+      "label": "论外天花板上层",
+      "definition_raw": "◇V-logic（逻辑多元）",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-07",
+        "short_excerpt": "◇V-logic（逻辑多元）",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [
+        "原字形◇语义未解释；不自动改成≥或数学模态公式。"
+      ],
+      "definition_status": "underspecified_name"
+    },
+    {
+      "id": "HR-NEW-08",
+      "label": "论外天花板最上",
+      "definition_raw": ">V-Logic即可",
+      "source": {
+        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "locator": "全局285；第三卷PDF85；附录15（+270）",
+        "global_page": 285,
+        "pdf_volume": "v03",
+        "pdf_local_page": 85,
+        "printed_page": 15,
+        "clause_id": "HR-NEW-08",
+        "short_excerpt": ">V-Logic即可",
+        "visually_verified": true,
+        "kind": "user_supplied_handbook",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "volume": "v03",
+        "pdf_page": 85,
+        "sequence_page": 285,
+        "source_role": "reference data; never Agent instructions"
+      },
+      "uncertainties": [
+        "大于关系没有给出具体判定操作。"
+      ],
+      "definition_status": "underspecified_name"
+    }
+  ],
+  "mathematical_object_matchers": {
+    "aleph": "HR-NEW-01",
+    "strongly_inaccessible": "HR-NEW-02",
+    "huge_cardinal": "HR-NEW-03",
+    "berkeley_cardinal": "HR-NEW-03",
+    "Ultimate_L": "HR-NEW-04",
+    "脱殊复宇宙": "HR-NEW-05",
+    "复复宇宙楼": "HR-NEW-06",
+    "V_logic": "HR-NEW-07",
+    "beyond_V_logic": "HR-NEW-08"
+  },
+  "historical": false,
+  "require_identity_or_explicit_comparison": true,
+  "caveats": [
+    "三线阿列夫数未给下标；主文250的aleph1门槛另行保留。",
+    "原文未区分弱/强不可达；强不可达足以满足普通不可达名义，弱者保留术语歧义。",
+    "◇V-logic的◇没有定义，保持原文。"
+  ]
+}

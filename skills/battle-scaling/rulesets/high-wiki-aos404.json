@@ -1,0 +1,33 @@
+{
+  "id": "wiki-battle-setting-2-aos404-snapshot-20261018",
+  "title": "抖音论战维基《战设标准2.0》所引AOS/404锚点",
+  "status": "第三方站点具名历史规则快照；非已核验的当前汪吧官方规范",
+  "read_date": "2026-10-18",
+  "source": {
+    "url": "https://vsbattles-wiki-cn.wikidot.com/comment-tools",
+    "locator": "关于论外：旧标准（自创圈）（AOS）与（404）",
+    "kind": "community_site_rule"
+  },
+  "anchors": [
+    {"id": "old_godbox_stage4", "system": "AOS", "label": "论外一线", "identity": {"work": "神盒世界", "version": "旧版", "stage": "4"}},
+    {"id": "old_godbox_stage5", "system": "AOS", "label": "论外超一线", "identity": {"work": "神盒世界", "version": "旧版", "stage": "5"}},
+    {"id": "old_godbox_stage6", "system": "AOS", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "6"}},
+    {"id": "old_godbox_stage7", "system": "AOS", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "7"}},
+    {"id": "old_godbox_stage8", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "8"}},
+    {"id": "old_godbox_stage9", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "9"}},
+    {"id": "old_godbox_stage10", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "10"}},
+    {"id": "old_godbox_stage11", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "11"}},
+    {"id": "old_godbox_stage12", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "12"}},
+    {"id": "old_godbox_infinite_stage", "system": "AOS", "label": "论外天花板上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "infinite"}},
+    {"id": "old_godbox_abyss", "system": "404", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "深渊之底"}},
+    {"id": "old_godbox_eternal_core", "system": "404", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "永恒之核新形式"}},
+    {"id": "old_godbox_primal", "system": "404", "label": "论外天花板上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "原始无极天"}},
+    {"id": "old_godbox_supreme", "system": "404", "label": "论外天花板最上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "太上超然界"}}
+  ],
+  "ordering_note": "以上是具名锚点与标签索引；不同system的同名标签不直接比较，也不将阶段编号当数值强度。",
+  "caveats": [
+    "最高模式可提出跨作品比较；无同一锚点身份时执行器仅登记candidate，比较必须附逐项证据。",
+    "旧神盒备份部分字符损坏，当前作者原章受限；身份映射始终以版本与来源成立为条件。",
+    "创建、支配、摧毁或承受这些结构的角色需要独立的属性继承证据。"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "synthetic-tired-strike",
+  "mode": "normal",
+  "sources": [
+    {"id": "fixture", "title": "纯合成：疲劳状态下击打预损墙体", "origin": "synthetic", "access": "provided", "locator": "本夹具 E1，非真实作品证据"}
+  ],
+  "requested_uses": ["observed_output", "material_model", "full_effort", "state_transfer", "upper_bound"],
+  "event": {
+    "actor_id": "fixture-A", "version": "synthetic-v1", "state": "疲劳、普通形态",
+    "locator": "E1", "description": "角色击打已有裂纹的墙体，接触处出现一条新裂纹；墙体未整体倒塌。",
+    "observed_output": {"status": true, "basis": "observed", "reason": "只记录接触后新裂纹，不把全部既有破坏归给这一击。", "source_ids": ["fixture"]}
+  },
+  "causal_chain": {
+    "action": "一次拳击", "transmission": "拳与墙体接触", "target_response": "接触处出现局部新裂纹",
+    "attribution": {"status": true, "basis": "estimated", "reason": "只对局部新裂纹作暂定归因，尚无逐帧核对。", "source_ids": ["fixture"], "assumptions": ["接触瞬间无其它新载荷介入。"]},
+    "confounders": [
+      {"kind": "pre_damage", "description": "墙体先前已有裂纹；其对这次断裂门槛的影响未量化。", "accounted_for": {"status": true, "basis": "documented", "reason": "归属命题仅为新增局部裂纹，未归入既有裂纹或总破坏功。", "source_ids": ["fixture"]}}
+    ],
+    "incremental_effect_isolated": {"status": true, "basis": "estimated", "reason": "新裂纹属于可区分的局部变化，规模尚待核。", "source_ids": ["fixture"], "assumptions": ["记录中的新裂纹确实在接触后产生。"]}
+  },
+  "actor_state": {
+    "fatigue": {"status": true, "basis": "documented", "reason": "本合成情景明确设为疲劳。", "source_ids": ["fixture"]},
+    "prime_condition": {"status": false, "basis": "documented", "reason": "当时不是健康全盛状态；没有设定数值折扣。", "source_ids": ["fixture"]}
+  },
+  "combat_intent": {
+    "killing_intent": {"status": false, "basis": "documented", "reason": "目标是物体，不由此推定半力或留手。", "source_ids": ["fixture"]},
+    "will_to_fight": {"status": true, "basis": "documented", "reason": "仍主动尝试击破目标。", "source_ids": ["fixture"]}
+  },
+  "effort": {
+    "actual_output": "疲劳状态下的一次拳击，仅造成局部新裂纹。",
+    "full_effort": {"status": null, "basis": "character_statement", "reason": "角色声称已经尽力，但缺少独立印证。", "source_ids": ["fixture"], "evidence_claim_ids": ["boast"]}
+  },
+  "evidence_claims": [
+    {"id": "boast", "kind": "character_statement", "source_ids": ["fixture"], "reason": "角色说自己尽力了，其知情与真实性仍待审。", "checks": {}}
+  ],
+  "state_transfer": {
+    "target_state": "健康全盛、普通形态",
+    "compatible": {"status": null, "basis": "unknown", "reason": "尚无疲劳与全盛输出的定量或不等式桥接证据。", "source_ids": ["fixture"]}
+  },
+  "upper_bound": {
+    "scope": "能否以此次未击倒墙体，约束健康全盛状态的拳击上限",
+    "failure_observed": {"status": true, "basis": "observed", "reason": "此次墙体未倒。", "source_ids": ["fixture"]},
+    "opportunity": {"status": null, "basis": "unknown", "reason": "尚不清楚击打位置、时机与作用时间是否足够。", "source_ids": ["fixture"]},
+    "same_configuration": {"status": false, "basis": "documented", "reason": "事件是疲劳状态，所评却是健康全盛状态。", "source_ids": ["fixture"]},
+    "mechanism_applicable": {"status": null, "basis": "unknown", "reason": "未识别材料、结构与失效机制。", "source_ids": ["fixture"]}
+  }
+}

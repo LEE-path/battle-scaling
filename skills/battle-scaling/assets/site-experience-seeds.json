@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "event_id": "seed-hetushu-lanshen-ch2-20261019",
+      "url": "https://www.hetushu.com/book/3145/2227223.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "懒神附体"
+      ],
+      "issues": [
+        "paragraph_order_may_be_scrambled",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "已读镜像第2章《不看广告看疗效》；原台账明确段落抽取可能乱序，适合定位措辞，关键先后与因果需第二来源复核。",
+        "已见路径 /book/3145/2227223.html；这是具体访问页，不代表该站整本、全站或模板生成的新URL已验证。",
+        "同书关键因果可查 yqxs360 的有序镜像；转载不等于官方VIP全文或正版校勘。"
+      ],
+      "query_examples": [
+        "\"懒神附体\" \"不看广告看疗效\" site:hetushu.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\CASE.json#/sources/0",
+        "sha256": "2b02e70b0a395d01c651ca2cccfa4414d9073ea8423d01827355cb538fce9cd1",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-yqxs360-lanshen-ch1254-20261019",
+      "url": "https://www.yqxs360.com/lanshenfuti/1968936.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "懒神附体"
+      ],
+      "issues": [
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "历史审计用于复核动作顺序：初始拳头石/石子群被挡；公里巨石施术被打断，没有完成发射记载。",
+        "作为和图书乱序正文的替代核对来源，能支持此页顺序校核，不保证其他页同样完整。"
+      ],
+      "query_examples": [
+        "\"懒神附体\" \"你就叫我大魔王吧\" site:yqxs360.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/4",
+        "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-yqxs360-lanshen-ending1-20261019",
+      "url": "https://www.yqxs360.com/lanshenfuti/1968954.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "懒神附体"
+      ],
+      "issues": [
+        "pagination",
+        "later_direct_access_unavailable_reported",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "终章第一页曾经实际核读；原台账另提示部分后续 web 直开不可用，未保留该失败的精确日期或回执，不能将其伪造成另一次失败事件。",
+        "本页 URL 为 /lanshenfuti/1968954.html；已另有第二页1968954_2.html的独立历史记录。"
+      ],
+      "query_examples": [
+        "\"懒神附体\" \"终章\" site:yqxs360.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/24",
+        "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-yqxs360-lanshen-ending2-20261019",
+      "url": "https://www.yqxs360.com/lanshenfuti/1968954_2.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "懒神附体"
+      ],
+      "issues": [
+        "pagination",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "独立核读终章第二页 /lanshenfuti/1968954_2.html，含五年后及若干年后；应与第一页合并核对结尾时点。",
+        "仅记录已实际核读的分页URL；不据 _2 命名自动宣称 _3 等存在。"
+      ],
+      "query_examples": [],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/25",
+        "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-piaotia-naodong-bai-20261019",
+      "url": "https://www.piaotia.com/html/8/8743/6327368.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "脑洞大爆炸"
+      ],
+      "issues": [
+        "chapter_number_mismatch",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "章名《孔雀山上蓝白洞》，台账定位为飘天609；跨站章节号可能不同，先核章名再核内容。",
+        "已读公开转载原作文本；未取得官方VIP全文，转载不等于正版校勘。",
+        "已见路径 /html/8/8743/6327368.html；可用小说狂人同书相关终局章交叉核对，不把双方不同章当同一正文。"
+      ],
+      "query_examples": [
+        "\"脑洞大爆炸\" \"孔雀山上蓝白洞\" site:piaotia.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/0",
+        "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-czbooks-naodong-interface-20261019",
+      "url": "https://czbooks.net/n/s6ll5c/s6l25plj?chapterNumber=613",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "脑洞大爆炸"
+      ],
+      "issues": [
+        "chapter_number_mismatch",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "章名《无限超越》；URL query为chapterNumber=613，原台账定位为小说狂人612，查询参数和正文编号不能混用。",
+        "以章名、动作主体和正文对应定位；已读公开转载文本，非官方VIP校勘。",
+        "已见路径 /n/s6ll5c/s6l25plj?chapterNumber=613，不推断新slug对应章节。"
+      ],
+      "query_examples": [
+        "\"脑洞大爆炸\" \"无限超越\" site:czbooks.net"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/1",
+        "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-quanben-tiandao-afterword-20261019",
+      "url": "https://www.quanben.io/n/tiandaojintianbushangban/684.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "天道今天不上班"
+      ],
+      "issues": [
+        "chapter_number_mismatch",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "已读《完本感言》，用于作者五帝排序等；台账明确不同站点章号有差异，后记也须以题名定位。",
+        "正文转载的作者发言可作为原文内容证据，但站点本身不是作者官方发言渠道，重要措辞应交叉核对。",
+        "已见路径 /n/tiandaojintianbushangban/684.html；同站另有《蓝白社》终局镜像经验，可检索账本补充。"
+      ],
+      "query_examples": [
+        "\"天道今天不上班\" \"完本感言\" site:quanben.io"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/17",
+        "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-ilwxs-xinxi-terminal-20261019",
+      "url": "https://m.ilwxs.com/shu/11463/124405599.html",
+      "method": "host_web_read",
+      "outcome": "readable",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "信息全知者"
+      ],
+      "issues": [
+        "chapter_number_mismatch",
+        "unofficial_mirror"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "已读《举世无双的温柔》，台账定位1031；用于黄极归来、跨界面变化等终局表现。",
+        "已见移动站 /shu/11463/124405599.html；不要据数字尾码倒推章号。",
+        "已读公开转载原作文本，非官方VIP全文；可结合小说狂人同书跨篇与本书后记核对。"
+      ],
+      "query_examples": [
+        "\"信息全知者\" \"举世无双的温柔\" site:ilwxs.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/11",
+        "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-hongxiu-lanshen-vip-preview-20261019",
+      "url": "https://www.hongxiu.com/chapter/25068964000127802/16640099509606865",
+      "method": "host_web_read",
+      "outcome": "partial",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "novel"
+      ],
+      "works": [
+        "懒神附体"
+      ],
+      "issues": [
+        "vip_paywall",
+        "preview_only"
+      ],
+      "notes": [
+        "历史来源账本记录为 verified_preview_only；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "红袖1063章只核读到公开首段，后续为VIP墙；不能记为全文可读，也不能用未取得的后半段推论。",
+        "官方公开首段与转载全文分别标注来源；需要后段时改查合法可访问材料或由用户提供全文，不声称越过登录/付费限制。"
+      ],
+      "query_examples": [
+        "\"懒神附体\" \"1063\" site:hongxiu.com"
+      ],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\CASE.json#/sources/38",
+        "sha256": "2b02e70b0a395d01c651ca2cccfa4414d9073ea8423d01827355cb538fce9cd1",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-vsb-vision-forum403-20261018",
+      "url": "https://vsbattles.com/threads/mcu-vision-upgrade.181179/",
+      "method": "host_web_read",
+      "outcome": "blocked",
+      "observed_at": "2026-10-18T00:00:00+08:00",
+      "categories": [
+        "community_discussion"
+      ],
+      "works": [
+        "Marvel Cinematic Universe",
+        "Vision"
+      ],
+      "issues": [
+        "cloudflare_403",
+        "body_not_retrieved"
+      ],
+      "notes": [
+        "历史来源账本记录为 blocked；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "历史账本明确 Cloudflare 403，未取得正文；仅留入口，不建立角色锚点。",
+        "该记录来自历史复核来源账本，不是本次访问结果；不能外推整个 vsbattles.com 永久不可读。"
+      ],
+      "query_examples": [],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\vision-mcu-20261019\\deepseek-audit\\rerun\\sources.json#/4",
+        "sha256": "a64c6be024fd92d33933f576f7e6ad33f7e9a109b28ac07c1bfa01779d80bc0b",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    },
+    {
+      "event_id": "seed-vsb-mcu-indexed-20261019",
+      "url": "https://vsbattles.fandom.com/wiki/Marvel_Cinematic_Universe",
+      "method": "host_web_read",
+      "outcome": "indexed_only",
+      "observed_at": "2026-10-19T00:00:00+08:00",
+      "categories": [
+        "community_wiki"
+      ],
+      "works": [
+        "Marvel Cinematic Universe"
+      ],
+      "issues": [
+        "direct_read_restricted",
+        "search_index_only",
+        "unverified_external_calculation"
+      ],
+      "notes": [
+        "历史来源账本记录为 indexed；本次只导入历史经验，未联网复测。",
+        "历史账本仅保留日期；observed_at 的 00:00:00 为日期归一化占位，不是实际访问时刻。",
+        "原台账只取得搜索索引中的数值摘要，直连 robots 限制，未取得原算法；不能升级为原页全文核验。",
+        "站点经验与战力结论独立：搜索摘要可以帮助找入口，但该外部数值不是已确认角色锚点。"
+      ],
+      "query_examples": [],
+      "evidence": {
+        "kind": "historical_ledger",
+        "locator": "D:\\Codex\\research\\battle-scaling\\vision-mcu-20261019\\CASE.json#/sources/8",
+        "sha256": "a6ab56440372cff51a3cbac8bae679a1993a9f9b9b5d7df0d80e35d991c522d9",
+        "checked_by": "historical_host_record"
+      },
+      "observed_precision": "day"
+    }
+  ]
+}

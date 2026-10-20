@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "case_id": "captain-wood-single-feat-conditional-20261018",
+  "fixture_kind": "research",
+  "characters": [
+    {
+      "id": "cap-scene",
+      "name": "MCU美队：掰木头单次表现",
+      "version": "第三方电影GIF重现，非官方原片取证；原片版本未独立核验",
+      "state": "该镜头所示双手掰开木段；不是完整角色评级"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gif",
+      "title": "KYM托管电影片段GIF",
+      "url": "https://i.kym-cdn.com/photos/images/newsfeed/001/524/177/5ce.gif",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "origin": "measurement",
+      "access": "provided",
+      "locator": "500x250 GIF，27帧；0整体、4-7分开、8转场；复核 first-nine-contact.png 及 review-frame-*.png",
+      "provenance_note": "Third-party reproduction; not an official film upload. GIF frame durations do not prove original movie timing."
+    },
+    {
+      "id": "visual-review",
+      "title": "本轮视觉复核记录",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "origin": "measurement",
+      "access": "verified",
+      "locator": "实际view_image读取first-nine-contact.png与review-frame-6.png；详见独立说明",
+      "measurement_scope": "定性事件和图像像素尺寸；没有绝对长度测量",
+      "path": "references/captain-wood-case.md",
+      "image_path": "assets/cases/captain-contact.png"
+    },
+    {
+      "id": "usda-blocked",
+      "title": "USDA Wood Handbook 1999 官方PDF抓取阻断",
+      "url": "https://research.fs.usda.gov/download/treesearch/5734.pdf",
+      "origin": "primary",
+      "access": "blocked",
+      "locator": "Table 4-10，印刷页4-26；两官方入口HTTP403，包见usda-source/",
+      "use": "仅记录欲核对的原作入口，不作为本次已读取正文"
+    },
+    {
+      "id": "material-candidates",
+      "title": "USDA Wood Handbook 2010，Table5-10 ModeI TL材料候选",
+      "url": "https://www.intrans.iastate.edu/wp-content/uploads/2018/08/fpl_gtr190.pdf",
+      "origin": "primary",
+      "access": "verified",
+      "locator": "原始USDA文档的大学镜像；PDF文件页127/509、印刷页5-28、Table5-10，ModeI TL列：Western white250、Douglas-fir320、Yellow-poplar517 kPa sqrt(m)",
+      "warning": "已下载全文字节并提取、实际view表格页；只核对该表，未声称通读509页。场景树种和裂纹取向未确认。",
+      "sha256": "dec06ab1ad9c97fbb4092779cd5d367a4d7fc4e3585f00b9e65f18b080ada2ec",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot."
+    },
+    {
+      "id": "scenario",
+      "title": "明确给定的裂纹、几何及有效面积工况",
+      "origin": "assumption",
+      "access": "provided",
+      "locator": "requests/physics-central.json 与两端工况；a0.01-0.04m，Y1.0-1.5，Aeff0.002-0.010m2；Eeff1GPa,nu0.3为说明性标量近似"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "conditional-nominal-force",
+      "subject": "cap-scene",
+      "attribute": "条件等效标称开裂载荷（非实测手力）",
+      "kind": "calculation",
+      "bound": "estimate",
+      "quantity": {
+        "min": 940.3159725795938,
+        "best": 5699.17543430618,
+        "max": 29168.601469419,
+        "unit": "N"
+      },
+      "evidence_ids": [
+        "gif",
+        "visual-review",
+        "material-candidates",
+        "scenario"
+      ],
+      "context": "仅为等效I型开裂近似。区间是同一估计的假设敏感性，不能分别当作扒下限/最高战绩。",
+      "assumptions": [
+        "Most likely observed mechanism: along-grain Mode-I opening/crack propagation; exact grain plane cannot be established from the low-resolution GIF.",
+        "The conditional model outputs nominal remote stress/force, not measured force in either hand.",
+        "No original movie timing, absolute log scale, crack opening displacement or total fracture work is established.",
+        "The sampled scenario interval is neither an observed lower bound nor a confidence interval; actual geometry/model uncertainty can extend beyond it.",
+        "K候选而非确证树种；a、Y、Aeff均未由像素量出；需要匹配正交各向异性模型才能改善物理归属。"
+      ]
+    }
+  ],
+  "edges": [],
+  "computations": [
+    {
+      "id": "fracture-central",
+      "type": "physics",
+      "request": {
+        "model": "fracture_I",
+        "applicability": {
+          "linear_elastic": true,
+          "small_scale_yielding": true,
+          "isotropic_approximation": true,
+          "plane_condition": "plane_stress",
+          "justification": "Explicit hypothetical scalar isotropic surrogate only; wood is orthotropic and applicability is not established by the GIF"
+        },
+        "inputs": {
+          "toughness": {
+            "value": 320000,
+            "unit": "Pa sqrt(m)",
+            "source": "USDA Wood Handbook 2010, Table 5-10 Mode I TL; PDF file page 127, printed 5-28; Iowa State mirror downloaded and fitz extraction plus view_image table verified",
+            "assumption": "Species and grain/crack orientation are unconfirmed; candidate material, not identified scene wood"
+          },
+          "crack_length": {
+            "value": 0.02,
+            "unit": "m",
+            "source": "researcher-selected centimetre-scale effective flaw scenario",
+            "assumption": "Effective crack/flaw a=0.01-0.04 m is hypothetical, not measured in the image"
+          },
+          "geometry_factor": {
+            "value": 1.12,
+            "unit": "1",
+            "source": "researcher-selected idealized crack geometry scenario",
+            "assumption": "Y=1.0-1.5 is a geometry sensitivity scenario; hand-prying geometry is not calibrated"
+          },
+          "young_modulus": {
+            "value": 1000000000.0,
+            "unit": "Pa",
+            "source": "explicit illustrative scalar effective modulus",
+            "assumption": "Not a measured species modulus and not E_L combined with transverse K; G output is not validated wood fracture energy"
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "1",
+            "source": "illustrative isotropic surrogate",
+            "assumption": "Not a matched orthotropic compliance tensor"
+          },
+          "area": {
+            "value": 0.005,
+            "unit": "m^2",
+            "source": "researcher-selected effective loaded section scenario",
+            "assumption": "A_eff=0.002-0.010 m^2 is not a pixel measurement or proven hand-force transmission area"
+          }
+        },
+        "assumptions": [
+          "Most likely observed mechanism: along-grain Mode-I opening/crack propagation; exact grain plane cannot be established from the low-resolution GIF.",
+          "The conditional model outputs nominal remote stress/force, not measured force in either hand.",
+          "No original movie timing, absolute log scale, crack opening displacement or total fracture work is established.",
+          "The sampled scenario interval is neither an observed lower bound nor a confidence interval; actual geometry/model uncertainty can extend beyond it."
+        ]
+      }
+    },
+    {
+      "id": "fracture-low_scenario",
+      "type": "physics",
+      "request": {
+        "model": "fracture_I",
+        "applicability": {
+          "linear_elastic": true,
+          "small_scale_yielding": true,
+          "isotropic_approximation": true,
+          "plane_condition": "plane_stress",
+          "justification": "Explicit hypothetical scalar isotropic surrogate only; wood is orthotropic and applicability is not established by the GIF"
+        },
+        "inputs": {
+          "toughness": {
+            "value": 250000,
+            "unit": "Pa sqrt(m)",
+            "source": "USDA Wood Handbook 2010, Table 5-10 Mode I TL; PDF file page 127, printed 5-28; Iowa State mirror downloaded and fitz extraction plus view_image table verified",
+            "assumption": "Species and grain/crack orientation are unconfirmed; candidate material, not identified scene wood"
+          },
+          "crack_length": {
+            "value": 0.04,
+            "unit": "m",
+            "source": "researcher-selected centimetre-scale effective flaw scenario",
+            "assumption": "Effective crack/flaw a=0.01-0.04 m is hypothetical, not measured in the image"
+          },
+          "geometry_factor": {
+            "value": 1.5,
+            "unit": "1",
+            "source": "researcher-selected idealized crack geometry scenario",
+            "assumption": "Y=1.0-1.5 is a geometry sensitivity scenario; hand-prying geometry is not calibrated"
+          },
+          "young_modulus": {
+            "value": 1000000000.0,
+            "unit": "Pa",
+            "source": "explicit illustrative scalar effective modulus",
+            "assumption": "Not a measured species modulus and not E_L combined with transverse K; G output is not validated wood fracture energy"
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "1",
+            "source": "illustrative isotropic surrogate",
+            "assumption": "Not a matched orthotropic compliance tensor"
+          },
+          "area": {
+            "value": 0.002,
+            "unit": "m^2",
+            "source": "researcher-selected effective loaded section scenario",
+            "assumption": "A_eff=0.002-0.010 m^2 is not a pixel measurement or proven hand-force transmission area"
+          }
+        },
+        "assumptions": [
+          "Most likely observed mechanism: along-grain Mode-I opening/crack propagation; exact grain plane cannot be established from the low-resolution GIF.",
+          "The conditional model outputs nominal remote stress/force, not measured force in either hand.",
+          "No original movie timing, absolute log scale, crack opening displacement or total fracture work is established.",
+          "The sampled scenario interval is neither an observed lower bound nor a confidence interval; actual geometry/model uncertainty can extend beyond it."
+        ]
+      }
+    },
+    {
+      "id": "fracture-high_scenario",
+      "type": "physics",
+      "request": {
+        "model": "fracture_I",
+        "applicability": {
+          "linear_elastic": true,
+          "small_scale_yielding": true,
+          "isotropic_approximation": true,
+          "plane_condition": "plane_stress",
+          "justification": "Explicit hypothetical scalar isotropic surrogate only; wood is orthotropic and applicability is not established by the GIF"
+        },
+        "inputs": {
+          "toughness": {
+            "value": 517000,
+            "unit": "Pa sqrt(m)",
+            "source": "USDA Wood Handbook 2010, Table 5-10 Mode I TL; PDF file page 127, printed 5-28; Iowa State mirror downloaded and fitz extraction plus view_image table verified",
+            "assumption": "Species and grain/crack orientation are unconfirmed; candidate material, not identified scene wood"
+          },
+          "crack_length": {
+            "value": 0.01,
+            "unit": "m",
+            "source": "researcher-selected centimetre-scale effective flaw scenario",
+            "assumption": "Effective crack/flaw a=0.01-0.04 m is hypothetical, not measured in the image"
+          },
+          "geometry_factor": {
+            "value": 1.0,
+            "unit": "1",
+            "source": "researcher-selected idealized crack geometry scenario",
+            "assumption": "Y=1.0-1.5 is a geometry sensitivity scenario; hand-prying geometry is not calibrated"
+          },
+          "young_modulus": {
+            "value": 1000000000.0,
+            "unit": "Pa",
+            "source": "explicit illustrative scalar effective modulus",
+            "assumption": "Not a measured species modulus and not E_L combined with transverse K; G output is not validated wood fracture energy"
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "1",
+            "source": "illustrative isotropic surrogate",
+            "assumption": "Not a matched orthotropic compliance tensor"
+          },
+          "area": {
+            "value": 0.01,
+            "unit": "m^2",
+            "source": "researcher-selected effective loaded section scenario",
+            "assumption": "A_eff=0.002-0.010 m^2 is not a pixel measurement or proven hand-force transmission area"
+          }
+        },
+        "assumptions": [
+          "Most likely observed mechanism: along-grain Mode-I opening/crack propagation; exact grain plane cannot be established from the low-resolution GIF.",
+          "The conditional model outputs nominal remote stress/force, not measured force in either hand.",
+          "No original movie timing, absolute log scale, crack opening displacement or total fracture work is established.",
+          "The sampled scenario interval is neither an observed lower bound nor a confidence interval; actual geometry/model uncertainty can extend beyond it."
+        ]
+      }
+    }
+  ],
+  "qualitative_claims": [
+    {
+      "modes": [
+        "normal"
+      ],
+      "assessment": "单次可信视觉结果为木段被双手分开，最可能沿纹I型裂纹扩展；仅给条件载荷估算。单条战绩无法建立同版本同状态多数表现。",
+      "evidence_ids": [
+        "gif",
+        "visual-review",
+        "scenario"
+      ]
+    },
+    {
+      "modes": [
+        "highest"
+      ],
+      "assessment": "本次没有额外极端战绩或最强/同级声明可叠加；保留同一条件工况范围，不能把未知树种、无预裂或最不利几何当已发生事实。高工况约29kN仅是假设算例。",
+      "evidence_ids": [
+        "gif",
+        "scenario"
+      ]
+    },
+    {
+      "modes": [
+        "lowball"
+      ],
+      "assessment": "本镜头未见失败、虚弱或破防；不能把0.94kN假设端点充作anti_feat。反向评级未形成，保留同一表现及其不确定性。",
+      "evidence_ids": [
+        "gif",
+        "scenario"
+      ]
+    }
+  ],
+  "coverage": {
+    "scope": "一段第三方电影GIF中的单次掰木头表现",
+    "actual_visual_review": true,
+    "actual_media_tool_calls": true,
+    "absolute_scale_measured": false,
+    "material_identified": false,
+    "mechanism": "most likely along-grain Mode-I crack opening/propagation",
+    "force_scenario_N": {
+      "central": 5699.17543430618,
+      "low_scenario": 940.3159725795938,
+      "high_scenario": 29168.601469419
+    },
+    "energy_or_TNT_rating": null
+  },
+  "limitations": [
+    "不是美队完整角色评级；没有证明多数表现、最大力量或打击能量。",
+    "未知树种/含水率/节疤/初始裂纹/动态速度及真实受力几何。",
+    "GIF重编码、模糊与转场不能提供原片精确时间或可靠同平面标尺。",
+    "fracture_I为条件性各向同性近似；不使用纵向E_L冒充匹配横向K的正交各向异性数据。其G结果不作为真实木材能量或TNT映射。",
+    "N不能转成J或TNT；缺位移与完整力-位移路径。",
+    "Bundled 2026-10-18 research snapshot. This package includes derived evidence and URLs, not every original copyrighted work or the external raw validation cache. A new character assessment must verify relevant original sources."
+  ]
+}

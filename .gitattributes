@@ -1,0 +1,5 @@
+# Preserve bytes: package manifests bind exact hashes across Windows and Linux.
+* -text
+*.png binary
+*.jpg binary
+*.pdf binary

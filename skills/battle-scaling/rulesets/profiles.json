@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "default_profile": "wangba-handbook-2026-07-30",
+  "profiles": {
+    "wangba-handbook-2026-07-30": {
+      "title": "用户提供2026.7.30汪峰在吧量级参考册快照",
+      "finite_ruleset": "wangba-handbook-2026-07-30-finite.json",
+      "high_default": "high-wangba-handbook-2026-07-30",
+      "high_by_kind": {
+        "li": "high-wangba-handbook-2026-07-30-li",
+        "dao": "high-wangba-handbook-2026-07-30-dao",
+        "handbook_constructive": "high-wangba-handbook-2026-07-30-new"
+      },
+      "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
+      "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate."
+    },
+    "legacy-2024-2025": {
+      "title": "1.0.0历史粗略能量表与显式具名高层表",
+      "finite_ruleset": "wangba-energy-2024-03-18.json",
+      "high_default": null,
+      "high_by_kind": {},
+      "policy": "Explicit historical recomputation; not the installed default."
+    }
+  }
+}

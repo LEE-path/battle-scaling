@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "case_id": "anh-deathstar-alderaan-20261018-forward",
+  "fixture_kind": "research",
+  "characters": [
+    {
+      "id": "deathstar-anh",
+      "name": "第一死星超级激光",
+      "work": "Star Wars: A New Hope (Episode IV)",
+      "continuity": "ANH on-screen events only; current official sources used to locate and corroborate those events",
+      "version": "First Death Star, Battle of Yavin period; no Death Star II, Legends or Rogue One feats imported",
+      "period": "Alderaan destruction and Battle of Yavin",
+      "state": "Operational station; planet-destruction firing setting at Alderaan",
+      "equipment": "Superlaser; other weapons not equated"
+    },
+    {
+      "id": "luke-anh",
+      "name": "卢克·天行者（雅文战役）",
+      "work": "Star Wars: A New Hope (Episode IV)",
+      "continuity": "ANH only",
+      "version": "Young Luke before later training/films",
+      "period": "Battle of Yavin",
+      "state": "X-wing pilot relying on Force-guided precision shot",
+      "equipment": "X-wing and two proton torpedoes"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-ds",
+      "title": "Death Star | Star Wars Databank | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/databank/death-star",
+      "locator": "Databank biography: paragraphs beginning The Empire completed construction; In a display; After the Princess rescue. ANH event only.",
+      "checked_at": "2026-10-18T13:43:00.440021Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "2739f1e5e73c41bf085cc15603ce564c1ee3274fd4b3fab8425c5c548fa1f39e"
+    },
+    {
+      "id": "s-alderaan",
+      "title": "Alderaan | Star Wars Databank | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/databank/alderaan",
+      "locator": "Alderaan History Gallery last entry and Databank biography: destruction and remaining asteroid field.",
+      "checked_at": "2026-10-18T13:43:22.135832Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "723aed0532d8e4dc8866cd121a0f1728284bf1de4b06c3a41f82f5d4a05e3f10"
+    },
+    {
+      "id": "s-shot",
+      "title": "One in a Million Shot | Star Wars: A New Hope (Episode IV) | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/video/one-in-a-million-shot",
+      "locator": "Official clip title and description; two proton torpedoes into reactor core causing a chain reaction. Video pixels not read.",
+      "checked_at": "2026-10-18T13:43:37.809165Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "99773930c933f59a97e2dbcb861ffedc20503e90d8ef6c72cdc5cbe62a0e1f3a"
+    },
+    {
+      "id": "s-destruction",
+      "title": "Destruction of Alderaan | Star Wars: A New Hope (Episode IV) | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/video/destruction-of-alderaan",
+      "locator": "Official clip title and description; Tarkin decides to destroy Alderaan. Video pixels not read.",
+      "checked_at": "2026-10-18T13:43:36.459008Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "9cf25d94af685d17451c5d45fce04beb5392e469d64022f58f45ea210285ee3e"
+    },
+    {
+      "id": "s-inside",
+      "title": "Star Wars Inside Intel: The Death Star | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/news/star-wars-inside-intel-the-death-star",
+      "locator": "2021-08-17 article; paragraphs on intentional weak point and full power turning Alderaan into chunks of rock; other works excluded from scaling.",
+      "checked_at": "2026-10-18T13:43:39.284755Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "8320a60680c57d05a3c83104e33f1cb544eb3527bb1517b7346202b65ecfee44"
+    },
+    {
+      "id": "s-luke",
+      "title": "Luke Skywalker | Star Wars Databank | StarWars.com",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.starwars.com/databank/luke-skywalker",
+      "locator": "ANH biography paragraphs: Tusken Raiders knocked Luke unconscious; Yavin attack.",
+      "checked_at": "2026-10-18T13:46:01.287921Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "5949fac085f3f6f5600f1b8b68b0916bca323fc2b6f22c8d76c00ef6eb986d98"
+    },
+    {
+      "id": "s-earth",
+      "title": "Earth Fact Sheet",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "locator": "Bulk parameters: Mass (10^24 kg)=5.9722; Volumetric mean radius (km)=6371.000.",
+      "checked_at": "2026-10-18T13:43:17.742701Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "1b06e3ec31249d063d40d1b38837fac89ddcd2f4b25268b38e8a6d5f413e70ef"
+    },
+    {
+      "id": "s-G",
+      "title": "CODATA Value: Newtonian constant of gravitation",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg",
+      "locator": "Numerical value G=6.67430e-11 m^3 kg^-1 s^-2; 2022 CODATA.",
+      "checked_at": "2026-10-18T13:45:15.793200Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "8fce933bea2e39e407c98de21ff817724f7bbfdb11e5ca20c3e091c97902c49f"
+    },
+    {
+      "id": "s-MIT",
+      "title": "binding-derivation-full",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.mit.edu/~iancross/8901_2019A/notes_midterm.pdf",
+      "locator": "PDF page 74 / printed page 74, equation 224, uniform-density sphere; host PyMuPDF extraction and inspected rendered page. Fetch retained needs_extractor status; host extraction completed.",
+      "checked_at": "2026-10-18T13:44:33.978943Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "needs_extractor",
+      "sha256": "b06973177b9b8a314f13ee131d27f05e056e56bed7aad6ca896ab4533804c9f0"
+    },
+    {
+      "id": "s-rule-web",
+      "title": "【图片】【评定组】目前能量对应量级标准粗略参考【汪峰在吧】_百度贴吧",
+      "origin": "community",
+      "access": "verified",
+      "url": "https://tieba.baidu.com/p/8940142616",
+      "locator": "First floor 2024-03-18 10:52; extracted text lines 88-89: Earth destruction reference 2.24e32 J. Replacement-character warning preserved; cited numbers visibly intact.",
+      "checked_at": "2026-10-18T13:46:23.721775Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "ok",
+      "sha256": "6ed7c4cec0dda6e362f9c9797d7d597b0372b5e6dfa4f0ef056b91334093ec8b"
+    },
+    {
+      "id": "s-still",
+      "title": "official-still",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://lumiere-a.akamaihd.net/v1/images/alderaan-3-retina_45d076ff.jpeg?region=0%2C0%2C1200%2C544",
+      "locator": "Image linked from Alderaan Databank caption The Death Star preparing to destroy Alderaan. Host view_image actually inspected. Does not show explosion/duration/physical scale.",
+      "checked_at": "2026-10-18T13:45:33.983928Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "fetch_status": "needs_extractor",
+      "sha256": "4c3272ed7bb40e228c16ca2e0eb767497dedd0e26ecab4f990da939ee4ebfec8"
+    },
+    {
+      "id": "s-rule-local",
+      "title": "Bundled wangba-energy-2024-03-18 reference mapping",
+      "origin": "community",
+      "access": "provided",
+      "path": "rulesets/wangba-energy-2024-03-18.json",
+      "locator": "reference point named 标准爆星, energy_j=2.24e32; community reference, not universal standard",
+      "checked_at": "2026-10-18"
+    },
+    {
+      "id": "s-assumption",
+      "title": "Explicit Earthlike uniform-sphere dispersal scenario",
+      "origin": "assumption",
+      "access": "provided",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "locator": "mass/radius imported from Earth, uniform sphere, complete unbinding, no natural energy release dominating; not measured Alderaan parameters"
+    }
+  ],
+  "anchors": [],
+  "edges": [
+    {
+      "id": "edge-rejected-victory-to-luke-ap",
+      "from": {
+        "subject": "deathstar-anh",
+        "attribute": "attack_energy_conditional_dispersal"
+      },
+      "to": {
+        "subject": "luke-anh",
+        "attribute": "attack_energy"
+      },
+      "relation": "defeated",
+      "evidence_ids": [
+        "s-ds",
+        "s-shot"
+      ],
+      "conditions": {
+        "direct_power": false,
+        "matched_state": true
+      },
+      "context": "Rejected candidate scaling: station destroyed by exhaust-port/reactor chain reaction; not overpowering the superlaser or hull by comparable direct force. Even a direct-power victory would separately require target durability evidence.",
+      "assumptions": []
+    },
+    {
+      "id": "edge-rejected-victory-to-luke-body",
+      "from": {
+        "subject": "deathstar-anh",
+        "attribute": "attack_energy_conditional_dispersal"
+      },
+      "to": {
+        "subject": "luke-anh",
+        "attribute": "body_durability"
+      },
+      "relation": "tanked",
+      "evidence_ids": [
+        "s-ds",
+        "s-shot"
+      ],
+      "conditions": {
+        "actual_scale": false,
+        "effective_hit": false,
+        "body_only": false
+      },
+      "context": "Luke did not bodily tank the Alderaan shot or the full Death Star explosion; equipment/escape is not body durability.",
+      "assumptions": []
+    }
+  ],
+  "computations": [
+    {
+      "id": "c-earthlike",
+      "type": "physics",
+      "request": {
+        "model": "gravitational_binding",
+        "inputs": {
+          "mass": {
+            "value": 5.9722e+24,
+            "unit": "kg",
+            "source": "NASA Earth Fact Sheet bulk parameters, Mass (10^24 kg)=5.9722",
+            "assumption": "Alderaan assumed Earth-mass for this conditional estimate"
+          },
+          "radius": {
+            "value": 6371000,
+            "unit": "m",
+            "source": "NASA Earth Fact Sheet, volumetric mean radius=6371.000 km; multiply by 1000",
+            "assumption": "Alderaan assumed Earth-radius"
+          }
+        },
+        "assumptions": [
+          "Newtonian uniform sphere; not a precise layered-Earth model",
+          "Alderaan assumed Earth-like only for the numerical scenario",
+          "The destruction is provisionally treated as gravitational unbinding to infinity; an asteroid field alone does not prove this terminal state",
+          "Result is energy deposited into dispersal; not force, power, speed or body durability"
+        ]
+      },
+      "attach": {
+        "id": "a-earthlike-dispersal",
+        "subject": "deathstar-anh",
+        "attribute": "attack_energy_conditional_dispersal",
+        "kind": "calculation",
+        "bound": "lower",
+        "evidence_ids": [
+          "s-ds",
+          "s-alderaan",
+          "s-earth",
+          "s-G",
+          "s-MIT",
+          "s-assumption"
+        ],
+        "assumptions": [
+          "Alderaan mass and volumetric mean radius are assumed equal to Earth; not claimed canon values",
+          "Uniform-density Newtonian sphere, isolated gravitational system",
+          "Conditional complete dispersal to infinity rather than merely fragmentation into bound rubble",
+          "Weapon supplies dispersal energy; internal natural energy release is not assumed to do most of the work",
+          "J result is a conditional equivalent; it does not prove N, W, speed, shields, hull or Luke body durability"
+        ],
+        "context": "First Death Star superlaser shot at Alderaan; Earthlike complete-unbinding scenario only. One event, insufficient to infer all common weapons or firing states.",
+        "result_path": "result.value",
+        "unit": "J"
+      }
+    },
+    {
+      "id": "c-sensitivity-0.9",
+      "type": "physics",
+      "request": {
+        "model": "gravitational_binding",
+        "inputs": {
+          "mass": {
+            "value": 4.353733800000001e+24,
+            "unit": "kg",
+            "source": "NASA Earth Fact Sheet bulk parameters, Mass (10^24 kg)=5.9722",
+            "assumption": "Alderaan assumed Earth-mass for this conditional estimate"
+          },
+          "radius": {
+            "value": 5733900.0,
+            "unit": "m",
+            "source": "NASA Earth Fact Sheet, volumetric mean radius=6371.000 km; multiply by 1000",
+            "assumption": "Alderaan assumed Earth-radius"
+          }
+        },
+        "assumptions": [
+          "Newtonian uniform sphere; not a precise layered-Earth model",
+          "Alderaan assumed Earth-like only for the numerical scenario",
+          "The destruction is provisionally treated as gravitational unbinding to infinity; an asteroid field alone does not prove this terminal state",
+          "Result is energy deposited into dispersal; not force, power, speed or body durability",
+          "Sensitivity-only homologous sphere: radius scale=0.9, same density implies mass scale=0.7290000000000001; not a measured uncertainty bound or extra feat"
+        ]
+      }
+    },
+    {
+      "id": "c-sensitivity-1.1",
+      "type": "physics",
+      "request": {
+        "model": "gravitational_binding",
+        "inputs": {
+          "mass": {
+            "value": 7.948998200000003e+24,
+            "unit": "kg",
+            "source": "NASA Earth Fact Sheet bulk parameters, Mass (10^24 kg)=5.9722",
+            "assumption": "Alderaan assumed Earth-mass for this conditional estimate"
+          },
+          "radius": {
+            "value": 7008100.000000001,
+            "unit": "m",
+            "source": "NASA Earth Fact Sheet, volumetric mean radius=6371.000 km; multiply by 1000",
+            "assumption": "Alderaan assumed Earth-radius"
+          }
+        },
+        "assumptions": [
+          "Newtonian uniform sphere; not a precise layered-Earth model",
+          "Alderaan assumed Earth-like only for the numerical scenario",
+          "The destruction is provisionally treated as gravitational unbinding to infinity; an asteroid field alone does not prove this terminal state",
+          "Result is energy deposited into dispersal; not force, power, speed or body durability",
+          "Sensitivity-only homologous sphere: radius scale=1.1, same density implies mass scale=1.3310000000000004; not a measured uncertainty bound or extra feat"
+        ]
+      }
+    }
+  ],
+  "qualitative_claims": [
+    {
+      "id": "q-normal",
+      "mode": "normal",
+      "claim": "死星该次超级激光确认有行星整体毁灭战果；数值仅地球类完全解体条件估计，约2.24e32 J。样本为ANH一次行星毁灭，常态结论暂定；不能扩张到日常炮塔、所有开火状态或耐久。卢克有利用弱点毁站战果，不能据此叠同级AP或肉体耐久。",
+      "evidence_ids": [
+        "s-ds",
+        "s-alderaan",
+        "s-shot"
+      ],
+      "counterevidence": [
+        "s-shot"
+      ],
+      "unknowns": [
+        "Alderaan actual mass/radius",
+        "fragment trajectories and final bound state"
+      ]
+    },
+    {
+      "id": "q-highest",
+      "mode": "highest",
+      "claim": "允许采纳完整物理解体的强解释时，以2.24e32 J作条件模型下限，映射具名社区地球爆星参考。没有可核验的更高能量、效率、碎片速度或持续时间，无法另给有限峰值上界。最高模式仍不能推翻明确的链式反应机制；卢克仅取得装备与目标特定条件下的毁站成功。",
+      "evidence_ids": [
+        "s-inside",
+        "s-shot",
+        "s-earth",
+        "s-rule-local"
+      ],
+      "rejected_expansions": [
+        "incinerated does not prove complete vaporization",
+        "one victory does not prove direct_power",
+        "Death Star attack energy does not establish its hull durability"
+      ]
+    },
+    {
+      "id": "q-lowball",
+      "mode": "lowball",
+      "claim": "严格扒下限保留官方已确认的行星被毁并留下碎石；不把解除全部引力束缚当作已实测事实，所以撤销该模型前提后不能给死星无条件焦耳下限。弱点可被鱼雷引发毁站，说明特定内部故障链脆弱，不能反向证明整体外壳或超级激光低至鱼雷量级；鱼雷本身当量未知。卢克在同片被Tusken Raiders击昏是身体脆弱性反例，缺冲击参数不能强填焦耳上界。",
+      "evidence_ids": [
+        "s-alderaan",
+        "s-shot",
+        "s-luke"
+      ],
+      "state_notes": "Tusken incident and X-wing mission separated; no injury-state value mixed into firing output."
+    },
+    {
+      "id": "q-attributes",
+      "modes": [
+        "normal",
+        "highest",
+        "lowball"
+      ],
+      "attributes": {
+        "energy_J": "Conditional superlaser dispersal equivalent only",
+        "force_N": "Underdetermined; no force-time/displacement/contact model",
+        "power_W": "Underdetermined; no trusted world-time energy deposition duration",
+        "movement_speed": "Not calculated; no trajectory/time measurement",
+        "reaction_speed": "Not inferred from cinematographic cuts or Force-assisted targeting",
+        "body_hull_shield_resistance": "Separate; no inherited planetary durability or shielding value",
+        "range": "Can target Alderaan from station location; no measured range assigned",
+        "world_structure": "No infinite or narrative transcendence evidence in scoped task"
+      }
+    }
+  ],
+  "coverage": {
+    "scope": "ANH Alderaan feat and Luke exhaust-port attack, corroborated by current official Lucasfilm pages",
+    "primary_text_access": "Official clip descriptions and Databank prose read; complete audiovisual film/clip not read. Browser entry timed out and reset. No timestamps, speeds or pixels of the explosion invented.",
+    "actual_visual_inspection": [
+      "Official 1200x544 preparatory still only",
+      "MIT PDF p74 equation224 rendered at 1.5x and inspected"
+    ],
+    "assumption_retraction": "Remove s-assumption or c-earthlike to withdraw all numerical energy conclusions; rejected Luke transfers remain rejected qualitatively.",
+    "sensitivity": "0.9 and1.1 radius scales with fixed mean density are illustrative homologous-model scenarios; not observational error bars.",
+    "source_statuses": "MIT first fetch partial; full fetch needs_extractor then host PyMuPDF succeeded. Official still needs_extractor then host view_image succeeded. Raw statuses retained."
+  },
+  "limitations": [
+    "No canon Alderaan mass/radius established; terrestrial assumptions are declared",
+    "Asteroid field is not proof that all mass reaches infinity; numerical binding-energy lower bound is conditional",
+    "A single feat supports a provisional scoped setting, not majority cross-version common performance",
+    "The two proton torpedoes total yield, reactor energy release and coupling efficiency are unknown",
+    "No body/hull/shield/AP equivalence or move/reaction speed inherited",
+    "Current official clip edit is not verified against 1977 theatrical cut; no duration-based calculation",
+    "Generated report is a schema/explicit-rule presentation; host semantic review and human-readable synthesis remain required",
+    "Bundled 2026-10-18 research snapshot. This package includes derived evidence and URLs, not every original copyrighted work or the external raw validation cache. A new character assessment must verify relevant original sources."
+  ]
+}

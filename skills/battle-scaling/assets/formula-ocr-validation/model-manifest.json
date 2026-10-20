@@ -1,0 +1,42 @@
+[
+  {
+    "name": "decoder.onnx",
+    "path": "D:\\Codex\\tools\\rapid-latex-ocr\\models\\decoder.onnx",
+    "url": "https://github.com/RapidAI/RapidLaTeXOCR/releases/download/v0.0.0/decoder.onnx",
+    "official_release_asset_id": 139457211,
+    "official_expected_bytes": 50952726,
+    "actual_bytes": 50952726,
+    "sha256": "bd695497bf1b22279b7626f5916c79226e1e244c84355f8da7edfd2d921d0072",
+    "download_or_verify_seconds": 41.35869779996574
+  },
+  {
+    "name": "encoder.onnx",
+    "path": "D:\\Codex\\tools\\rapid-latex-ocr\\models\\encoder.onnx",
+    "url": "https://github.com/RapidAI/RapidLaTeXOCR/releases/download/v0.0.0/encoder.onnx",
+    "official_release_asset_id": 139457232,
+    "official_expected_bytes": 89008136,
+    "actual_bytes": 89008136,
+    "sha256": "01bf5dc25539ca0cd5b1bd29296ea495977a6ba5f629dc4178277809d26e5e7d",
+    "download_or_verify_seconds": 69.76684130000649
+  },
+  {
+    "name": "image_resizer.onnx",
+    "path": "D:\\Codex\\tools\\rapid-latex-ocr\\models\\image_resizer.onnx",
+    "url": "https://github.com/RapidAI/RapidLaTeXOCR/releases/download/v0.0.0/image_resizer.onnx",
+    "official_release_asset_id": 139457248,
+    "official_expected_bytes": 38967751,
+    "actual_bytes": 38967751,
+    "sha256": "e0b075c39700f64d50400f39c8fc186bbb3b5d84d31864008313f376603aca9d",
+    "download_or_verify_seconds": 32.189906700048596
+  },
+  {
+    "name": "tokenizer.json",
+    "path": "D:\\Codex\\tools\\rapid-latex-ocr\\models\\tokenizer.json",
+    "url": "https://github.com/RapidAI/RapidLaTeXOCR/releases/download/v0.0.0/tokenizer.json",
+    "official_release_asset_id": 139457265,
+    "official_expected_bytes": 24174,
+    "actual_bytes": 24174,
+    "sha256": "1dc27b18d6a518d0d5ff3f4bb7bd98521fe80ad39e5b2a246d4109f1bb9d5019",
+    "download_or_verify_seconds": 0.0006551999831572175
+  }
+]

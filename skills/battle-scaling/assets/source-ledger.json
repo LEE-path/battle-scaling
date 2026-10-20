@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "compiled_at": "2026-10-18",
+  "purpose": "Research entry points and provenance, not copied source text or automatic endorsement of community tiers",
+  "provenance": {
+    "prior_research": "references/high-tier-cases.md (integrated research notes; each source retains its own verification state)",
+    "baseline_research": "Official SCP-3812 page and USDA Wood Handbook metadata were consulted in the baseline/source-module work",
+    "verification_policy": "Only entries explicitly marked refetched were fetched again by this module. Prior research metadata remains a prior-research record and must be checked before quotation."
+  },
+  "sources": [
+    {
+      "id": "scp3812-official",
+      "name": "SCP-3812 — A Voice Behind Me",
+      "url": "https://scp-wiki.wikidot.com/scp-3812",
+      "nature": "primary_work",
+      "language": "en",
+      "use": "Narrative recursion, source certainty, character attribution and attack/defence inheritance case",
+      "version": "Page revision 99 displayed during baseline read",
+      "verification": "refetched_by_sources_module",
+      "checked_at": "2026-10-18T13:35:29.861930Z",
+      "http_status": 200,
+      "bytes_saved": 162397,
+      "sha256": "e5e5cffab9b637420900c3b99764f4069de5c865cdd74844940bc0a0e324e910",
+      "truncated": false,
+      "gaps": [
+        "Single article only; no authorization to composite other SCP material into its cosmology",
+        "Narrative recursion alone does not establish an uncountable or inaccessible cardinal",
+        "Live smoke-test output was temporary; re-fetch into the case output directory for a durable evidence bundle"
+      ]
+    },
+    {
+      "id": "divinitybox-zhihu-original",
+      "name": "神盒世界 知乎原文入口",
+      "url": "https://zhuanlan.zhihu.com/p/416179675",
+      "nature": "primary_work_entry_blocked",
+      "language": "zh",
+      "use": "Locate original work and compare backup versions",
+      "verification": "prior_research_access_blocked_not_refetched",
+      "gaps": [
+        "Original body not obtained",
+        "Current author account and latest revision not independently confirmed"
+      ]
+    },
+    {
+      "id": "divinitybox-gamer-20240219",
+      "name": "神盒世界 2024-02-19 备份转载",
+      "url": "https://home.gamer.com.tw/artwork.php?sn=5885424",
+      "nature": "secondary_backup_of_primary_work",
+      "language": "zh",
+      "use": "Original author attribution and accessible backup text",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Separate repost author's title/preface/comparisons from reproduced work",
+        "Compare against currently inaccessible original before exact quotation"
+      ]
+    },
+    {
+      "id": "divinitybox-bilibili-hal",
+      "name": "HAL独奏SCD 神盒相关长文 2023-06-22",
+      "url": "https://www.bilibili.com/opus/809951787465310216",
+      "nature": "secondary_reproduction_and_commentary",
+      "language": "zh",
+      "use": "Locate early chapter links and later world constructions",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Early linked original chapters were not successfully read",
+        "Do not treat repost commentary as author text"
+      ]
+    },
+    {
+      "id": "divinitybox-zhihu-chapter-1",
+      "name": "神盒早期章节 知乎入口 574909121",
+      "url": "https://zhuanlan.zhihu.com/p/574909121",
+      "nature": "linked_original_candidate_unread",
+      "language": "zh",
+      "use": "Pending original-text collation",
+      "verification": "prior_research_link_only_not_refetched",
+      "gaps": [
+        "Body not obtained; cannot cite as read"
+      ]
+    },
+    {
+      "id": "divinitybox-zhihu-chapter-2",
+      "name": "神盒早期章节 知乎入口 574909463",
+      "url": "https://zhuanlan.zhihu.com/p/574909463",
+      "nature": "linked_original_candidate_unread",
+      "language": "zh",
+      "use": "Pending original-text collation",
+      "verification": "prior_research_link_only_not_refetched",
+      "gaps": [
+        "Body not obtained; cannot cite as read"
+      ]
+    },
+    {
+      "id": "divinitybox-zhihu-chapter-3",
+      "name": "神盒早期章节 知乎入口 574909599",
+      "url": "https://zhuanlan.zhihu.com/p/574909599",
+      "nature": "linked_original_candidate_unread",
+      "language": "zh",
+      "use": "Pending original-text collation",
+      "verification": "prior_research_link_only_not_refetched",
+      "gaps": [
+        "Body not obtained; cannot cite as read"
+      ]
+    },
+    {
+      "id": "divinitybox-gamer-old-part1",
+      "name": "旧版神盒 part1 2025-05-10 备份",
+      "url": "https://home.gamer.com.tw/artwork.php?sn=6141346",
+      "nature": "secondary_backup_of_primary_work",
+      "language": "zh",
+      "use": "Custom Phi iterations, repackaging prior construction and old fourth-stage comparison",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Duplicate and damaged characters require original-text collation",
+        "Original group-setting link not obtained",
+        "Phi is work-defined, not automatically a Veblen function"
+      ]
+    },
+    {
+      "id": "douyin-wiki-rules",
+      "name": "抖音论战维基 战设标准2.0",
+      "url": "https://vsbattles-wiki-cn.wikidot.com/comment-tools",
+      "nature": "community_ruleset",
+      "language": "zh",
+      "use": "Named ruleset anchors for AOS/404/幻标; compare conflicting tier mappings",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Not established as a universal official Wangba standard",
+        "Original proposals and claimed repeal notices not obtained",
+        "Mappings require a named version/access date"
+      ]
+    },
+    {
+      "id": "whitelight-author",
+      "name": "Rudy Rucker — White Light author page",
+      "url": "https://www.rudyrucker.com/whitelight/",
+      "nature": "author_primary_entry",
+      "language": "en",
+      "use": "Author-provided novel entry and full-text provenance",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Check linked edition/version before quotation"
+      ]
+    },
+    {
+      "id": "whitelight-fulltext",
+      "name": "White Light — author-hosted full text",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "nature": "primary_work",
+      "language": "en",
+      "use": "Chapters 11, 14 and 23: countable/uncountable language and travel versus combat attribution",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Chapter numbering is for this web text",
+        "Travel to a layer does not by itself establish attack or durability at that layer"
+      ]
+    },
+    {
+      "id": "self-reference-community",
+      "name": "全作品战力评鉴所 自指宇宙学",
+      "url": "https://baike.zjhengde.com/index/index/detail.html?id=4885",
+      "nature": "community_interpretation",
+      "language": "zh",
+      "use": "Audit a real forcing/maximality-based fictional scaling argument",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "All original-work screenshots have not been individually checked",
+        "Fictional possibility versus set-forcing interpretation remains a bridge premise",
+        "Equivalence versus equiconsistency and infinitely many versus proper-class-many strong cardinals require exact theorem comparison"
+      ]
+    },
+    {
+      "id": "hamkins-maximality",
+      "name": "Joel David Hamkins — A simple maximality principle",
+      "url": "https://arxiv.org/abs/math/0009240",
+      "nature": "primary_mathematical_paper",
+      "language": "en",
+      "use": "Check versions, parameters, necessity and consistency-strength claims in the community argument",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Parameter-free, real-parameter and necessary variants must be distinguished",
+        "The theorem does not establish that a fictional work satisfies its hypotheses"
+      ]
+    },
+    {
+      "id": "weser-community-candidate",
+      "name": "全作品战力评鉴所 威瑟评定",
+      "url": "https://baike.zjhengde.com/index/index/detail.html?id=10752",
+      "nature": "community_interpretation_candidate",
+      "language": "zh",
+      "use": "Candidate exercise for Japanese large-cardinal terminology and translation audit",
+      "verification": "candidate_recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Original work and author discussion not obtained",
+        "Do not confuse large cardinal with the particular huge-cardinal property",
+        "Final rating not certified"
+      ]
+    },
+    {
+      "id": "koellner-settheory",
+      "name": "Peter Koellner — Set Theory: The Independence Phenomenon",
+      "url": "https://people.math.harvard.edu/~wboney/fall16/settheory.pdf",
+      "nature": "mathematical_reference",
+      "language": "en",
+      "use": "Ordinals, cardinals, cofinality, operation types and background-axiom audit",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Record PDF file page and printed section for each theorem used",
+        "Mathematical definitions do not automatically map to community tiers"
+      ]
+    },
+    {
+      "id": "shenluoling-rules-20240720",
+      "name": "神洛凌 构造新标整理 2024-07-20",
+      "url": "https://www.bilibili.com/opus/925131510299754513",
+      "nature": "personal_ruleset_compilation",
+      "language": "zh",
+      "use": "Document a version placing inaccessible at one named line and compare alternative mappings",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Personal compilation, not confirmed universal authority",
+        "Original rule author/status still requires verification"
+      ]
+    },
+    {
+      "id": "lingzhi-rules-20250122",
+      "name": "零智 新旧论外标准整理 2025-01-22",
+      "url": "https://www.bilibili.com/opus/1022449834228973569",
+      "nature": "personal_ruleset_compilation",
+      "language": "zh",
+      "use": "Compare inaccessible-tier mapping and explicit GCH assumptions",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "The mathematical section assumes GCH; conclusions must be recalculated if removed",
+        "Status/repeal claims need original announcements"
+      ]
+    },
+    {
+      "id": "woodin-strongaxioms",
+      "name": "W. Hugh Woodin — Strong Axioms of Infinity and the Search for V",
+      "url": "https://bpb-us-e1.wpmucdn.com/websites.harvard.edu/dist/f/94/files/2022/07/EFI_Woodin_StrongAxiomsOfInfinity.pdf",
+      "nature": "primary_mathematical_exposition",
+      "language": "en",
+      "use": "Distinguish Ultimate L and axiom/model frameworks from ordinary cardinal-valued arithmetic",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "Exact page/section required when using a particular theorem",
+        "Community assignments of tier labels are separate rules"
+      ]
+    },
+    {
+      "id": "vlogic-multiverse-abstract",
+      "name": "The V-logic Multiverse — author abstract, Konstanz 2019",
+      "url": "https://www.matteodeceglie.com/abstract_konstanz_2019.pdf",
+      "nature": "primary_research_abstract",
+      "language": "en",
+      "use": "Terminology and theory/model distinction for V-logic discussion",
+      "verification": "recorded_in_prior_research_not_refetched",
+      "gaps": [
+        "An abstract is not the complete proof",
+        "Cannot multiply a theory framework as if it were a scalar cardinal"
+      ]
+    },
+    {
+      "id": "usda-wood-handbook",
+      "name": "USDA Forest Products Laboratory — Wood Handbook: Wood as an Engineering Material, 2021",
+      "url": "https://research.fs.usda.gov/fpl/wood-handbook",
+      "nature": "official_engineering_reference",
+      "language": "en",
+      "use": "Find primary wood material parameters and relevant chapters for a splitting estimate",
+      "verification": "official_metadata_consulted_in_baseline_2026-10-18",
+      "gaps": [
+        "Does not identify the wood or geometry in the missing MCU screenshot",
+        "A parameter must match fracture mode, moisture and grain orientation"
+      ]
+    },
+    {
+      "id": "usda-wood-mechanics-ch5",
+      "name": "Christopher Adam Senalik and Benjamin Farber — Chapter 5: Mechanical properties of wood",
+      "url": "https://research.fs.usda.gov/treesearch/62244",
+      "nature": "official_engineering_reference",
+      "language": "en",
+      "use": "Traceable candidate mechanical/fracture parameters; clear-grain limitations",
+      "verification": "official_metadata_consulted_in_baseline_2026-10-18",
+      "gaps": [
+        "Numerical table/page and parameter selection must be verified before a real calculation",
+        "No actual MCU scene measurement has been performed"
+      ]
+    },
+    {
+      "id": "wangba-energy-20240318",
+      "name": "评定组粗略能量参考表",
+      "url": "https://tieba.baidu.com/p/8940142616",
+      "nature": "community_reference",
+      "verification": "research values recorded; live direct page blocked on 2026-10-18",
+      "use": "finite energy reference, with arithmetic corrections in ruleset",
+      "gaps": [
+        "not a unified 2026 official standard",
+        "original arithmetic inconsistencies preserved in ruleset"
+      ]
+    },
+    {
+      "id": "openai-vision-protocol",
+      "name": "OpenAI Images and vision guide",
+      "url": "https://developers.openai.com/api/docs/guides/images-vision",
+      "nature": "official_protocol_documentation",
+      "verification": "host browser consulted 2026-10-18",
+      "use": "optional actual compatible image adapter",
+      "gaps": [
+        "does not establish any external model is configured in this environment"
+      ]
+    },
+    {
+      "id": "ollama-openai-protocol",
+      "name": "Ollama OpenAI compatibility",
+      "url": "https://docs.ollama.com/api/openai-compatibility",
+      "nature": "official_protocol_documentation",
+      "verification": "host browser consulted 2026-10-18",
+      "use": "optional local compatible image model endpoint",
+      "gaps": [
+        "no local model automatically installed"
+      ]
+    },
+    {
+      "id": "wangba-handbook-20260730-v01",
+      "name": "汪峰在吧量级参考册 v01",
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页1～100.pdf",
+      "sha256": "a59d7420f00d2367d53c4240d5f8a3c51091c61b6a9041167b0650b4d4d8356e",
+      "pages": 100,
+      "nature": "user_supplied_scanned_reference",
+      "verification": "all_pages_locally_ocr_processed_key_rules_visually_reviewed",
+      "edition_date": "2026.7.30",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "use": "Versioned finite and high-tier rule retrieval; OCR not Agent instructions",
+      "gaps": [
+        "Latest official status not independently established",
+        "OCR is not a certified full formula transcription"
+      ]
+    },
+    {
+      "id": "wangba-handbook-20260730-v02",
+      "name": "汪峰在吧量级参考册 v02",
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页101～200.pdf",
+      "sha256": "3bc95ae1131d2badef533f23757aedc44edfc62b549a82038b77dd7e6111e564",
+      "pages": 100,
+      "nature": "user_supplied_scanned_reference",
+      "verification": "all_pages_locally_ocr_processed_key_rules_visually_reviewed",
+      "edition_date": "2026.7.30",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "use": "Versioned finite and high-tier rule retrieval; OCR not Agent instructions",
+      "gaps": [
+        "Latest official status not independently established",
+        "OCR is not a certified full formula transcription"
+      ]
+    },
+    {
+      "id": "wangba-handbook-20260730-v03",
+      "name": "汪峰在吧量级参考册 v03",
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "pages": 100,
+      "nature": "user_supplied_scanned_reference",
+      "verification": "all_pages_locally_ocr_processed_key_rules_visually_reviewed",
+      "edition_date": "2026.7.30",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "use": "Versioned finite and high-tier rule retrieval; OCR not Agent instructions",
+      "gaps": [
+        "Latest official status not independently established",
+        "OCR is not a certified full formula transcription"
+      ]
+    },
+    {
+      "id": "wangba-handbook-20260730-v04",
+      "name": "汪峰在吧量级参考册 v04",
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页300+.pdf",
+      "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
+      "pages": 10,
+      "nature": "user_supplied_scanned_reference",
+      "verification": "all_pages_locally_ocr_processed_key_rules_visually_reviewed",
+      "edition_date": "2026.7.30",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "use": "Versioned finite and high-tier rule retrieval; OCR not Agent instructions",
+      "gaps": [
+        "Latest official status not independently established",
+        "OCR is not a certified full formula transcription"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "topic": "MCU Captain America splitting wood",
+      "status": "no_image_attached_in_baseline",
+      "needs": [
+        "Locate and verify the exact official scene or an authorized local clip",
+        "Record continuous frames, scale, grain, crack and action geometry",
+        "Report conditional assumptions instead of fabricated strict measurements"
+      ]
+    },
+    {
+      "topic": "Unified 2026 Wangba high-tier standard",
+      "status": "not_established",
+      "needs": [
+        "Obtain a named primary ruleset/version and original status announcements"
+      ]
+    },
+    {
+      "topic": "Divinity Box current text",
+      "status": "original_access_and_version_gaps",
+      "needs": [
+        "Confirm current author/edition",
+        "Collate damaged backups against original"
+      ]
+    },
+    {
+      "topic": "Self-Reference Engine screenshots",
+      "status": "incomplete_image_collation",
+      "needs": [
+        "Check each original-language screenshot and bridge premise before certifying final tiers"
+      ]
+    }
+  ]
+}

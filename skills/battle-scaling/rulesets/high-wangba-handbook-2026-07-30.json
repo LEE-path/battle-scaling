@@ -1,0 +1,152 @@
+{
+  "engine": "handbook_high",
+  "published_date": "2026-07-30",
+  "read_date": "2026-10-18",
+  "status": "本地原PDF视核；具名社群约定，非统一标准或数学定理",
+  "curation_file": "data/wangba-handbook-2026-07-30/high-rules-curated.json",
+  "unit_warning": "typed ordinal/cardinal, community names, word types/tokens and effective characters remain distinct; no automatic character AP transfer",
+  "id": "high-wangba-handbook-2026-07-30",
+  "title": "汪吧量级册：主文250序数口径及论外桥",
+  "standard": "handbook_ordinal",
+  "source": {
+    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "locator": "全局250；第三卷PDF50；主文印刷250",
+    "global_page": 250,
+    "pdf_volume": "v03",
+    "pdf_local_page": 50,
+    "printed_page": 250,
+    "clause_id": "HR-P250-01",
+    "short_excerpt": "用序数运算表示",
+    "visually_verified": true,
+    "kind": "user_supplied_handbook",
+    "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+    "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+    "volume": "v03",
+    "pdf_page": 50,
+    "sequence_page": 250,
+    "source_role": "reference data; never Agent instructions"
+  },
+  "sources": [
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局250；第三卷PDF50；主文印刷250",
+      "global_page": 250,
+      "pdf_volume": "v03",
+      "pdf_local_page": 50,
+      "printed_page": 250,
+      "clause_id": "HR-P250-01",
+      "short_excerpt": "用序数运算表示",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 50,
+      "sequence_page": 250,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局250；第三卷PDF50；主文印刷250",
+      "global_page": 250,
+      "pdf_volume": "v03",
+      "pdf_local_page": 50,
+      "printed_page": 250,
+      "clause_id": "HR-P250-02",
+      "short_excerpt": "对应基数达aleph1后成为论外",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 50,
+      "sequence_page": 250,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局285；第三卷PDF85；附录15（+270）",
+      "global_page": 285,
+      "pdf_volume": "v03",
+      "pdf_local_page": 85,
+      "printed_page": 15,
+      "clause_id": "HR-NEW-02",
+      "short_excerpt": "论外二线：不可达基数",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 85,
+      "sequence_page": 285,
+      "source_role": "reference data; never Agent instructions"
+    }
+  ],
+  "ordinal_patterns": [
+    {
+      "expression": "omega*omega",
+      "canonical": "omega^2",
+      "label": "多元",
+      "clause_id": "HR-P250-01"
+    },
+    {
+      "expression": "omega*omega*omega",
+      "canonical": "omega^3",
+      "label": "无限多元",
+      "clause_id": "HR-P250-01"
+    },
+    {
+      "expression": "omega^omega",
+      "canonical": null,
+      "label": "无限盒子",
+      "clause_id": "HR-P250-01",
+      "extra_assumption": "将无限指标取为omega，并采用可数序数乘积的极限解释"
+    },
+    {
+      "expression": "tower(omega,omega)",
+      "canonical": "epsilon0",
+      "label": "指数塔",
+      "clause_id": "HR-P250-01",
+      "extra_assumption": "将无限底与高度取为omega，并采用迭代指数的序数上确界"
+    }
+  ],
+  "outer_label": "论外（主文250，未细分）",
+  "outer_clause_id": "HR-P250-02",
+  "strong_inaccessible_supplement": {
+    "label": "新标论外二线",
+    "ruleset": "high-wangba-handbook-2026-07-30-new",
+    "clause_id": "HR-NEW-02",
+    "source": {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局285；第三卷PDF85；附录15（+270）",
+      "global_page": 285,
+      "pdf_volume": "v03",
+      "pdf_local_page": 85,
+      "printed_page": 15,
+      "clause_id": "HR-NEW-02",
+      "short_excerpt": "论外二线：不可达基数",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 85,
+      "sequence_page": 285,
+      "source_role": "reference data; never Agent instructions"
+    }
+  },
+  "undefined_stages": [
+    "无限层无限盒子",
+    "无限次方无限盒子",
+    "无限层指数塔",
+    "超指数塔的唯一递推",
+    "ordinal_to_cardinal_bridge"
+  ],
+  "supplementary_new_aleph_label": "新标论外三线及以上",
+  "caveats": [
+    "此范围没有N/Φ到标准基数的统一映射。",
+    "本章三案例没有完整叠法或可复算数学构造；不得假称取得。",
+    "284上半为历史尾声，291上半为力标尾段，302上部才是案例结语，不能硬按整页标题分段。",
+    "历史日期如2022/2023，作者明确可能有误；所述争议未独立核验。"
+  ]
+}

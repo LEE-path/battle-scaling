@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "case_id": "forward-franx-white-light-2016-author-web",
+  "fixture_kind": "research",
+  "characters": [
+    {
+      "id": "franx-beetle",
+      "name": "Franx",
+      "work": "White Light",
+      "continuity": "novel only",
+      "version": "2016 author-site online browsing edition",
+      "state": "Cimön beetle; chapters 9–16",
+      "equipment": "none assumed"
+    },
+    {
+      "id": "franx-white-transient",
+      "name": "Franx（短暂白光融合）",
+      "work": "White Light",
+      "continuity": "novel only",
+      "version": "2016 author-site online browsing edition",
+      "state": "chapter 14 retrospective transient transformation",
+      "equipment": "none assumed"
+    },
+    {
+      "id": "franx-human",
+      "name": "Franx（人形再凝聚）",
+      "work": "White Light",
+      "continuity": "novel only",
+      "version": "2016 author-site online browsing edition",
+      "state": "chapter 20 human recorporation",
+      "equipment": "broken bottle only in self-injury scene"
+    }
+  ],
+  "sources": [
+    {
+      "id": "P4",
+      "title": "White Light · Chapter 4 Bernco",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Any continuous piece of space; alef-null and next larger degree",
+      "version": "2016 author-site online browsing edition",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P11",
+      "title": "White Light · Chapter 11 Epsilon-Zero",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "folding speed-ups; countably many stages; cannot reach alef-one",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P14",
+      "title": "White Light · Chapter 14 At Alef-one",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Franx account of White Light; Reflection Principle; uncountable cliff sequence",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P15",
+      "title": "White Light · Chapter 15 High Tea",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Narrator recounts Franx merged in and Reflection Principle",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P16",
+      "title": "White Light · Part III Inflatable Love Doll",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Final paragraphs before 17 Urban Terror; gunshot then short-club head injury; extracted title misprinted 6: Inflatable Love Doll",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P20",
+      "title": "White Light · Chapter 20 Talking Cars",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Human recorporation; fear of White Light; self-inflicted broken-bottle throat injury; green light caught by flame",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "P23",
+      "title": "White Light · Chapter 23 Research",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+      "locator": "Narrator tentatively assumes Cimön objects consist of aether; white lights perhaps essence",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task."
+    },
+    {
+      "id": "RULE-OLD",
+      "title": "零智2025个人整理的旧论外门槛",
+      "origin": "community",
+      "access": "verified_via_host_browser",
+      "url": "https://www.bilibili.com/opus/1022449834228973569",
+      "locator": "一、论外旧门槛；二、默认GCH；四、旧汪吧三线为阿列夫一",
+      "version": "2025-01-22 article, read 2026-10-18",
+      "note": "sources.py获取验证码页，本文内容由宿主web阅读；工具ok不代表取得正文。"
+    },
+    {
+      "id": "RULE-AOS",
+      "title": "抖音论战维基战设标准2.0",
+      "origin": "community",
+      "access": "verified",
+      "url": "https://vsbattles-wiki-cn.wikidot.com/comment-tools",
+      "locator": "关于论外，旧标准AOS/404；页面版本96",
+      "version": "revision 96, 2026-02-24; read 2026-10-18"
+    },
+    {
+      "id": "MATH-YALE",
+      "title": "James Aspnes · HowToCount",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://www.cs.yale.edu/homes/aspnes/pinewiki/HowToCount.html",
+      "locator": "1.2 Counting infinitely large sets; CH and power sets"
+    },
+    {
+      "id": "MATH-HARVARD",
+      "title": "Peter Koellner · Set Theory: The Independence Phenomenon",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://people.math.harvard.edu/~wboney/fall16/settheory.pdf",
+      "locator": "2.3 Ordinal Arithmetic; 3 Cardinals; host-fitz file pages 24 and 28–31",
+      "note": "sources tool needs_extractor; existing fitz host fallback succeeded."
+    }
+  ],
+  "anchors": [],
+  "edges": [],
+  "computations": [
+    {
+      "id": "franx-native",
+      "type": "high",
+      "request": {
+        "kind": "native",
+        "axioms": [
+          "ZF"
+        ],
+        "ruleset": "high-zerozhi2025-old",
+        "nodes": [
+          {
+            "id": "cimon",
+            "operation": "base",
+            "depends_on": [],
+            "description": "作者官网2016在线浏览版中的Cimön及Mount On；仅本书连续性。",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Part II, chapters 9–11, Hilbert hotel and Mount On",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "id": "epsilon_named",
+            "operation": "iteration",
+            "depends_on": [
+              "cimon"
+            ],
+            "description": "第11章角色称到达Epsilon-Zero，随后明确仍是可数过程；原作混用alef-null幂及序数名称，不能照字面当作基数幂等式。",
+            "definition": "原作逐层折叠speed-ups的旅行阶段；未宣称其文字完整定义标准序数递推。",
+            "scope": "第11章合力攀升、无限阶段及其可数性限制",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 11 Epsilon-Zero, paragraphs beginning We started up again and Is this alef-one",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "id": "alef_one",
+            "operation": "typed_structure",
+            "depends_on": [
+              "cimon"
+            ],
+            "description": "alef-one cliffs：第4章定义next larger degree、第14章明确well-ordered uncountable collections。",
+            "scope": "悬崖集合的势及旅程终点；非可换算的J或m/s",
+            "typed_object": {
+              "kind": "cardinal",
+              "expression": "aleph1",
+              "axioms": [
+                "ZF"
+              ],
+              "interpretation": "依第4章alef-one定义与第14章不可数悬崖上下文，将原作alef-one解释为标准首个不可数基数；仅结构与到达范围。"
+            },
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 4 Bernco, paragraph Any continuous piece; Chapter 14 At Alef-one, paragraph But it wasn’t so easy",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "id": "white_light",
+            "operation": "base",
+            "depends_on": [],
+            "description": "White Light／the One／Absolute是作品原生神秘一体关系；原作未在此给出唯一标准基数。",
+            "scope": "第14章短暂融入与重新凝聚；不绑定基数或J",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 14 At Alef-one, paragraphs I became and That’s called the Reflection Principle",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "id": "strong_absolute",
+            "operation": "adjective",
+            "depends_on": [
+              "white_light"
+            ],
+            "description": "最高模式保留短暂与Absolute同一的强解释，但只描述该瞬间的身份状态。",
+            "assumptions": [
+              "将角色所述becoming/the One与主角确认按字面接受为短暂融合同一；不把短暂同一改成持久支配或创造/毁灭能力。"
+            ],
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 14 At Alef-one, I became / I saw the One / narrator’s response",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          }
+        ],
+        "anchor_claims": [],
+        "character_relations": [
+          {
+            "character": "franx-beetle",
+            "node": "alef_one",
+            "relation": "reaches",
+            "mechanism": "继续飞行、短暂成为白光后再凝聚；不是凭普通可数加速直接走到不可数终点。",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 14 At Alef-one, account of flight and rematerialization; Chapter 15 High Tea recollection",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "character": "franx-beetle",
+            "node": "white_light",
+            "relation": "perceives",
+            "mechanism": "第14章自述感知the One、随后重新凝聚；与融合同一的声明分别保存。",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 14 At Alef-one, White Light account",
+              "kind": "primary_work",
+              "access": "verified"
+            }
+          },
+          {
+            "character": "franx-white-transient",
+            "node": "white_light",
+            "relation": "becomes",
+            "mechanism": "短暂融入并重新凝聚",
+            "source": {
+              "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+              "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL for a new research task.",
+              "locator": "Chapter 14 At Alef-one, White Light account",
+              "kind": "primary_work",
+              "access": "verified"
+            },
+            "state": "Chapter 14 narrated transient White Light identity before rematerializing at alef-one",
+            "duration": "Transient episode only; exact elapsed time is unspecified; ends on rematerialization at alef-one",
+            "scope": "Self-reported temporary identity/fusion; no persistent control, AP or durability inheritance"
+          }
+        ]
+      }
+    }
+  ],
+  "qualitative_claims": [
+    {
+      "subject": "franx-beetle",
+      "attribute": "range",
+      "conclusion": "有来源支持抵达alef-one及再次经隧道前往；其中首次攀升自述由后续主角回顾支持。属旅行/状态转换范围，常态可复现性仍有限。",
+      "evidence_ids": [
+        "P4",
+        "P11",
+        "P14",
+        "P15"
+      ],
+      "mapping": "若按该2025个人整理的历史ℵ1门槛，结构及到达范围可条件映射为论外三线及以上；不是角色全属性总评。",
+      "does_not_establish": [
+        "攻击能量",
+        "毁灭整个alef-one结构",
+        "肉身耐久",
+        "可测m/s",
+        "常态支配White Light"
+      ],
+      "modes": [
+        "normal"
+      ]
+    },
+    {
+      "subject": "franx-white-transient",
+      "attribute": "transient_identity_and_range",
+      "conclusion": "接受第14章成为White Light及the One的强解释，可记录短暂融合/同一及随后在alef-one重新凝聚；没有独立证据使其继承Absolute的创造、毁灭或支配能力。",
+      "evidence_ids": [
+        "P14",
+        "P15",
+        "P20"
+      ],
+      "assumptions": [
+        "按字面接受Franx自述和主角确认的融合关系；不补出具体大基数或AOS锚点"
+      ],
+      "does_not_establish": [
+        "White Light等于唯一可算基数",
+        "Franx常态等于Absolute",
+        "任意AP/耐久扩张",
+        "不可达/巨大基数战斗属性"
+      ],
+      "modes": [
+        "highest"
+      ]
+    },
+    {
+      "subject": "franx-beetle",
+      "attribute": "mobility_and_specific_vulnerability",
+      "conclusion": "保留第11章身体行动限制、合力可数加速无法单靠该过程到alef-one；Inflatable Love Doll章末，外壳先弹开踩踏者，随后枪击坠落并被短棍打坏头部。第14章仍支持首次抵达，不因限制而抹去。",
+      "evidence_ids": [
+        "P11",
+        "P14",
+        "P16",
+        "P20"
+      ],
+      "counterevidence": [
+        "第14章说明独自继续飞行后不再需要蹬崖，故第11章行动限制不能当永久绝对上限。",
+        "第20章明确害怕融入白光，不能只靠先前话语断言绝对无法保持；缺少已尽力且愿意停留的测试。"
+      ],
+      "does_not_establish": [
+        "确定的J上界",
+        "全状态同一耐久",
+        "最高白光状态受普通刀伤"
+      ],
+      "modes": [
+        "lowball"
+      ]
+    },
+    {
+      "subject": "franx-human",
+      "attribute": "human_recorporation_vulnerability",
+      "conclusion": "人形再凝聚状态能被碎瓶割喉，随后绿光被火焰捕获；只建立该身体/灵魂机制的脆弱性，不给精确焦耳值。",
+      "evidence_ids": [
+        "P20"
+      ],
+      "assumptions": [],
+      "does_not_establish": [
+        "甲虫状态耐久等同人形",
+        "白光融合状态耐久等同人形",
+        "火焰攻击必为普通热能"
+      ],
+      "modes": [
+        "lowball"
+      ]
+    },
+    {
+      "subject": "franx-beetle",
+      "attribute": "source_boundaries",
+      "conclusion": "第23章大部分Cimön物体由aleph-one aether-monads组成是主角假设；白光也许由essence组成亦是猜想。二者均不足以建立Franx耐久或White Light唯一基数。",
+      "evidence_ids": [
+        "P23"
+      ],
+      "assumptions": [],
+      "modes": [
+        "normal",
+        "highest",
+        "lowball"
+      ]
+    }
+  ],
+  "coverage": {
+    "scope": "author XHTML acquired complete; reviewed target chapters 4, 9, 11, 14, 15, 16, 17, 20, 23 and keyword context",
+    "full_book_close_read": false,
+    "checked_at": "2026-10-18",
+    "novel_sha256": "fbb75d1818ffff2d51938fd5ec374d261c3e5f1b4d8c7545dced1c76a2af625d",
+    "rules": "具名历史规则；不声称2026统一官方汪吧规范"
+  },
+  "limitations": [
+    "未做数值物理建模，不编造焦耳、m/s或角色攻击量级。",
+    "同一第14章回顾在第15章复述不是独立发生两次的战绩；范围结论仍有样本覆盖限制。",
+    "native工具已支持becomes/merges，短暂身份关系按state与duration保存；融合不自动继承AP或耐久。",
+    "analyze all 原mode注入缺口由根Agent修复后，本包改为一份native请求并实际复核三种输出。",
+    "B站sources脚本返回验证码页且误报ok；规则正文由宿主web验证，原错误元数据保留。",
+    "Bundled 2026-10-18 research snapshot; derived evidence and URLs included, original raw validation cache not copied. Recheck relevant original sources for a new assessment."
+  ]
+}

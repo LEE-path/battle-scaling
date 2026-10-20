@@ -1,0 +1,225 @@
+{
+  "engine": "handbook_high",
+  "published_date": "2026-07-30",
+  "read_date": "2026-10-18",
+  "status": "本地原PDF视核；具名社群约定，非统一标准或数学定理",
+  "curation_file": "data/wangba-handbook-2026-07-30/high-rules-curated.json",
+  "unit_warning": "typed ordinal/cardinal, community names, word types/tokens and effective characters remain distinct; no automatic character AP transfer",
+  "id": "high-wangba-handbook-2026-07-30-li",
+  "title": "汪吧量级册：现行力标",
+  "standard": "li",
+  "canonical_name": "力标",
+  "search_aliases": [
+    "理标"
+  ],
+  "source": {
+    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "locator": "全局289；第三卷PDF89；附录19（+270）",
+    "global_page": 289,
+    "pdf_volume": "v03",
+    "pdf_local_page": 89,
+    "printed_page": 19,
+    "clause_id": "HR-LI-02",
+    "short_excerpt": "A/B，注意：是按词划分",
+    "visually_verified": true,
+    "kind": "user_supplied_handbook",
+    "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+    "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+    "volume": "v03",
+    "pdf_page": 89,
+    "sequence_page": 289,
+    "source_role": "reference data; never Agent instructions"
+  },
+  "sources": [
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局289；第三卷PDF89；附录19（+270）",
+      "global_page": 289,
+      "pdf_volume": "v03",
+      "pdf_local_page": 89,
+      "printed_page": 19,
+      "clause_id": "HR-LI-01",
+      "short_excerpt": "人工逐句浓缩，应给批注，说明理由。",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 89,
+      "sequence_page": 289,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局289；第三卷PDF89；附录19（+270）",
+      "global_page": 289,
+      "pdf_volume": "v03",
+      "pdf_local_page": 89,
+      "printed_page": 19,
+      "clause_id": "HR-LI-02",
+      "short_excerpt": "A/B，注意：是按词划分",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 89,
+      "sequence_page": 289,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局290；第三卷PDF90；附录20（+270）",
+      "global_page": 290,
+      "pdf_volume": "v03",
+      "pdf_local_page": 90,
+      "printed_page": 20,
+      "clause_id": "HR-LI-01",
+      "short_excerpt": "人工与计算机交叉验证",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 90,
+      "sequence_page": 290,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局291；第三卷PDF91；附录21（+270）",
+      "global_page": 291,
+      "pdf_volume": "v03",
+      "pdf_local_page": 91,
+      "printed_page": 21,
+      "clause_id": "HR-LI-05",
+      "short_excerpt": "那时的力标没有引入脱水概念",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 91,
+      "sequence_page": 291,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局289；第三卷PDF89；附录19（+270）",
+      "global_page": 289,
+      "pdf_volume": "v03",
+      "pdf_local_page": 89,
+      "printed_page": 19,
+      "clause_id": "HR-LI-03",
+      "short_excerpt": "超越数学=论外三线、超越哲学=论外二线。",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 89,
+      "sequence_page": 289,
+      "source_role": "reference data; never Agent instructions"
+    },
+    {
+      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "locator": "全局289；第三卷PDF89；附录19（+270）",
+      "global_page": 289,
+      "pdf_volume": "v03",
+      "pdf_local_page": 89,
+      "printed_page": 19,
+      "clause_id": "HR-LI-04",
+      "short_excerpt": "有效字数500=一线，1000=强一线",
+      "visually_verified": true,
+      "kind": "user_supplied_handbook",
+      "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "volume": "v03",
+      "pdf_page": 89,
+      "sequence_page": 289,
+      "source_role": "reference data; never Agent instructions"
+    }
+  ],
+  "small_A_boundary": 4000,
+  "large_A_boundary": 10000,
+  "ambiguous_A_boundaries": [
+    4000,
+    10000
+  ],
+  "large_A_floor": "论天下",
+  "large_A_floor_score": 4000,
+  "mid_negative_label": "一线",
+  "mathematics_label": "论外三线",
+  "philosophy_label": "论外二线",
+  "score_thresholds": [
+    {
+      "minimum": 500,
+      "label": "一线"
+    },
+    {
+      "minimum": 1000,
+      "label": "强一线"
+    },
+    {
+      "minimum": 2000,
+      "label": "超一线"
+    },
+    {
+      "minimum": 4000,
+      "label": "论天下"
+    },
+    {
+      "minimum": 6000,
+      "label": "论天中"
+    },
+    {
+      "minimum": 8000,
+      "label": "论天上"
+    },
+    {
+      "minimum": 10000,
+      "label": "最上"
+    }
+  ],
+  "manual_thresholds": [
+    {
+      "minimum": 500,
+      "label": "一线"
+    },
+    {
+      "minimum": 1000,
+      "label": "强一线"
+    },
+    {
+      "minimum": 2000,
+      "label": "超一线"
+    },
+    {
+      "minimum": 4000,
+      "label": "论天下"
+    },
+    {
+      "minimum": 6000,
+      "label": "论天中"
+    },
+    {
+      "minimum": 8000,
+      "label": "论天上"
+    },
+    {
+      "minimum": 10000,
+      "label": "最上"
+    }
+  ],
+  "scope_wording_gap": "机评步骤1称声明包含哲学或数学即可；手评基础称超越数学/哲学。实现采用显式scope_facts加证据，仍只条件化。",
+  "inter_anchor_policy": "按达到的最高已列锚点作为条件下界，区间归属为实现约定并标注",
+  "caveats": [
+    "A=4000和A=10000未分配分支。",
+    "A>10000时E=4000的估测分支未指定；保底论天下仍有原文依据。",
+    "E=0及未到最小字数锚点时的完整档位范围未明确。",
+    "不得把字符数填进A/B。",
+    "包含和超越不可悄悄视为同义；不证明其超越标准数学。",
+    "机评E参照该表时与手评字数单位的关系原文未作严格说明。",
+    "任意夹在锚点之间的计数如何归档，须实现显式说明所采用解释。"
+  ]
+}

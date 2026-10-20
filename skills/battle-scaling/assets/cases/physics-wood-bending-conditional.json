@@ -1,0 +1,21 @@
+{
+  "model": "bending",
+  "inputs": {
+    "width": {"value": 0.1, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Solid rectangular beam with width 10 cm"},
+    "height": {"value": 0.2, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Bending-axis cross-section height 20 cm"},
+    "length": {"value": 2, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Clear support span 2 m"},
+    "failure_stress": {
+      "value": 30000000,
+      "unit": "Pa",
+      "source": "Scenario assumption of 30 MPa, not an extracted species-specific measurement. Material variability and required test conditions: USDA Wood Handbook Ch. 5, https://research.fs.usda.gov/treesearch/62244",
+      "assumption": "30 MPa is a conditional demonstration parameter; 20 to 60 MPa sensitivity range is illustrative and is not a statistical confidence interval. For a real log identify species, moisture, defects, grain and load rate before assigning a value."
+    }
+  },
+  "geometry": {"section": "rectangular", "loading": "simply_supported_center"},
+  "intervals": {"failure_stress": [20000000, 60000000]},
+  "assumptions": [
+    "Central transverse point load on a simply supported beam; all other failure mechanisms ignored for this conditional calculation.",
+    "This is not a measured Captain America feat. Along-grain splitting, different grip geometry or pre-existing cracks require different models.",
+    "Output is a conditional failure force in newtons; there is no displacement history or damage energy and thus no TNT/tier claim."
+  ]
+}

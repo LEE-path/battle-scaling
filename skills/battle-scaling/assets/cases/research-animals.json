@@ -1,0 +1,479 @@
+{
+  "schema_version": 1,
+  "case_id": "forward-animals-gorilla-vs-ten-spotted-hyenas",
+  "fixture_kind": "research",
+  "characters": [
+    {
+      "id": "gorilla",
+      "name": "一只成年雄性银背西部低地大猩猩",
+      "version": "Gorilla gorilla gorilla；当代生物学资料",
+      "state": "健康成年，愿意战斗，无工具",
+      "equipment": "none",
+      "period": "adult silverback",
+      "count": 1
+    },
+    {
+      "id": "hyena",
+      "name": "十只成年斑鬣狗",
+      "version": "Crocuta crocuta；当代生物学资料",
+      "state": "健康成年，雌雄未指定，愿意战斗，无工具",
+      "equipment": "none",
+      "count": 10
+    }
+  ],
+  "sources": [
+    {
+      "id": "G",
+      "title": "Western lowland gorilla — Smithsonian National Zoo",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://nationalzoo.si.edu/animals/western-lowland-gorilla",
+      "locator": "Physical Description; Size paragraph beginning Gorillas are the largest; Social Structure paragraphs beginning The western lowland gorilla and If this elaborate display",
+      "accessed_at": "2026-10-18T13:48:45.928110Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "sha256": "df6a161b29916b3fc9566b94c8d97f34dfdbb283b6648db809fc61f5fd30939a"
+    },
+    {
+      "id": "H",
+      "title": "Spotted Hyena — San Diego Zoo Wildlife Alliance",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://animals.sandiegozoo.org/animals/spotted-hyena",
+      "locator": "HABITAT AND DIET paragraphs beginning In a large group, Spotted hyenas often pick out, and A hyena can eat; SIZE / Weight",
+      "accessed_at": "2026-10-18T13:48:45.928110Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "sha256": "7941184b8241e6bf0650d35c892592411701fd001e49d524bfe9b863c102e769"
+    },
+    {
+      "id": "C",
+      "title": "Montgomery et al. (2023), Determinants of hyena participation in risky collective action",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10685128/",
+      "locator": "Results and discussion 3(a), paragraphs beginning We built a series and In our model; 3(b), paragraphs beginning In 33% and In our overall participation model",
+      "accessed_at": "2026-10-18T13:48:45.929728Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "sha256": "fdcf460ce72282b3490773fc998023b066390dfe36e1862470343f60f47a0ab0"
+    },
+    {
+      "id": "I",
+      "title": "Potel et al. (2024), Lethal combats in the forest among wild western gorillas",
+      "origin": "primary",
+      "access": "verified",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10960106/",
+      "locator": "Introduction paragraph beginning Here, we present records; Discussion paragraphs beginning While disease and During our 26-year long-term monitoring",
+      "accessed_at": "2026-10-18T13:48:45.931061Z",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot.",
+      "sha256": "be3121ea8914fb85b86271e6c889d982c8557d5ec326202a4ec2080c1d3ecec1"
+    },
+    {
+      "id": "A",
+      "title": "本题规则与显式建模假设",
+      "origin": "assumption",
+      "access": "provided",
+      "locator": "case.json / matchup.conditions; qualitative_claims / mode_reviews",
+      "archive_note": "Original raw cache retained in the dated validation run; re-fetch the cited URL before using as a new research source. See embedded parameters and observed-image hashes for this snapshot."
+    }
+  ],
+  "anchors": [
+    {
+      "id": "M-G-scenario",
+      "subject": "gorilla",
+      "attribute": "body_mass_scenario",
+      "kind": "calculation",
+      "quantity": {
+        "min": 136.1,
+        "best": 160,
+        "max": 180,
+        "unit": "kg"
+      },
+      "bound": "estimate",
+      "evidence_ids": [
+        "G",
+        "I",
+        "A"
+      ],
+      "context": "非战斗输出；文献范围内的示例及敏感性参数",
+      "assumptions": [
+        "160 kg由宿主选定，不是称量或种群均值；范围不是统计置信区间"
+      ]
+    },
+    {
+      "id": "M-H-scenario",
+      "subject": "hyena",
+      "attribute": "individual_body_mass_scenario",
+      "kind": "calculation",
+      "quantity": {
+        "min": 40,
+        "best": 60,
+        "max": 86,
+        "unit": "kg"
+      },
+      "bound": "estimate",
+      "evidence_ids": [
+        "H",
+        "A"
+      ],
+      "context": "每只鬣狗的示例；不把十只攻击相加",
+      "assumptions": [
+        "60 kg由宿主选定，不是本群实测均值；40–86 kg为物种概览范围"
+      ]
+    }
+  ],
+  "edges": [],
+  "computations": [
+    {
+      "id": "mass-description",
+      "type": "host_arithmetic",
+      "output": {
+        "model": "descriptive_mass_sensitivity",
+        "executor": "build_case.py, standard Python arithmetic; not battle.py physics and not a combat model",
+        "inputs": {
+          "gorilla_nominal_kg": 160,
+          "hyena_nominal_kg": 60,
+          "hyena_count": 10,
+          "gorilla_sensitivity_kg": [
+            136.1,
+            180
+          ],
+          "hyena_sensitivity_kg": [
+            40,
+            86
+          ]
+        },
+        "steps": [
+          {
+            "formula": "individual_mass_ratio = M_g / M_h",
+            "substitution": "160 / 60",
+            "value": 2.6666666666666665,
+            "unit": "1"
+          },
+          {
+            "formula": "team_mass = n * M_h",
+            "substitution": "10 * 60",
+            "value": 600,
+            "unit": "kg"
+          },
+          {
+            "formula": "team_to_gorilla_mass_ratio = n * M_h / M_g",
+            "substitution": "10 * 60 / 160",
+            "value": 3.75,
+            "unit": "1"
+          },
+          {
+            "formula": "low endpoint = 10 * 40 / 180; high endpoint = 10 * 86 / 136.1",
+            "value": [
+              2.2222222222222223,
+              6.318883174136665
+            ],
+            "unit": "1"
+          }
+        ],
+        "limitations": [
+          "160和60 kg为范围内明确选定的示例，不声称是人群均值。",
+          "质量和人数不推出咬合力、动能、AP或胜率；总质量只描述人员构成。",
+          "端点为敏感性情景，不是概率分布或三种论战口径。"
+        ],
+        "evidence_ids": [
+          "G",
+          "H",
+          "I",
+          "A"
+        ]
+      }
+    }
+  ],
+  "qualitative_claims": [
+    {
+      "id": "E-G-size",
+      "evidence_ids": [
+        "G"
+      ],
+      "category": "biological_fact",
+      "claim": "官方页给出成年雄性平均136.1 kg及最高226.8 kg、臂展2.4 m；这些是概览数据，非本题个体实测。",
+      "does_not_establish": [
+        "力量是人类的某倍",
+        "拳击能量",
+        "每次抓握均能致死"
+      ]
+    },
+    {
+      "id": "E-H-size",
+      "evidence_ids": [
+        "H"
+      ],
+      "category": "biological_fact",
+      "claim": "官方页给物种体重40–86 kg，雌性通常较雄性重约10%；雌雄及地区分布未在题目指定。",
+      "does_not_establish": [
+        "十只总质量能够同时转为一记攻击",
+        "40–86 kg是95%置信区间"
+      ]
+    },
+    {
+      "id": "E-H-group",
+      "evidence_ids": [
+        "H",
+        "C"
+      ],
+      "category": "biological_fact",
+      "claim": "斑鬣狗能群猎大型有蹄类并集群驱赶狮子；原始观察研究发现参与行为依情境及社会关系变化，成员在场不保证实际参与。",
+      "does_not_establish": [
+        "对大猩猩的实测胜率",
+        "十只必定同步咬中",
+        "狮子与大猩猩有相同防守机制"
+      ]
+    },
+    {
+      "id": "E-G-injury",
+      "evidence_ids": [
+        "I"
+      ],
+      "category": "biological_fact_with_inference_in_source",
+      "claim": "论文记录三只死亡银背及一只受伤雌性，作者按伤型推断部分事件可能来自同类冲突；致伤事件没有直接目击。",
+      "does_not_establish": [
+        "健康银背被单只豹杀死",
+        "鬣狗对银背具体致伤阈值",
+        "本题个体原本受伤"
+      ]
+    },
+    {
+      "id": "mode_reviews",
+      "evidence_ids": [
+        "G",
+        "H",
+        "C",
+        "I",
+        "A"
+      ],
+      "modes": {
+        "normal": {
+          "most_likely_winner": "hyenas",
+          "epistemic_status": "mechanistic_inference_not_calibrated_probability",
+          "reasoning": "在同群熟悉、持续愿战的默认下，十个可独立接近和再次加入的咬合威胁使银背难以同时防守；银背单体体型和抓咬反击仍是重大反制。",
+          "assumptions": [
+            "十只来自同一熟悉群体；非随机互不相识个体",
+            "愿战不等于失去自保或永不后退",
+            "撤退须持续脱离，不把战术回避计为败北"
+          ]
+        },
+        "highest": {
+          "most_likely_winner": "hyenas_under_cohesive_attack_branch",
+          "epistemic_status": "conditional_mechanistic_inference",
+          "reasoning": "强协调且能从侧后持续接近时，群体优势更明显；银背的大体型、及时抓住近身者并使其退出，只能另建其有利分支，不能视为已实测的一击必杀。",
+          "assumptions": [
+            "协调与承担反击风险均为强解释，非默认全部十只同刻接触",
+            "226.8 kg银背与40 kg小体型鬣狗是另一条件情景，不是三模式自动端点选择"
+          ]
+        },
+        "lowball": {
+          "most_likely_winner": "hyenas_tentatively",
+          "epistemic_status": "weak_qualitative_preference_with_unresolved_counters",
+          "reasoning": "剔除完美包围、必断骨、一击一个和传闻力量倍数后，仍有数量与群体攻击机制优势；若多数成员保持距离且早期受伤者引发集体退却，银背可胜。",
+          "assumptions": [
+            "不得把现有伤病带入健康个体",
+            "不得把最低体重端点当作扒下限",
+            "双方快速致伤和恐惧阈值均未测定"
+          ]
+        }
+      }
+    },
+    {
+      "id": "probability",
+      "claim": "无真实本对战统计及可迁移校准模型，因此不输出任何数值胜率。",
+      "category": "epistemic_boundary",
+      "evidence_ids": [
+        "A"
+      ]
+    }
+  ],
+  "matchup": {
+    "teams": [
+      {
+        "id": "gorilla_team",
+        "members": [
+          {
+            "subject": "gorilla",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "id": "hyenas",
+        "members": [
+          {
+            "subject": "hyena",
+            "count": 10
+          }
+        ]
+      }
+    ],
+    "mode_assessments": {
+      "normal": {
+        "winner": "hyenas",
+        "status": "reasoned_estimate",
+        "reasoning": "在同群熟悉、持续愿战的默认下，十个可独立接近和再次加入的咬合威胁使银背难以同时防守；银背单体体型和抓咬反击仍是重大反制。",
+        "evidence_ids": [
+          "G",
+          "H",
+          "C",
+          "I",
+          "A"
+        ],
+        "critical_assumptions": [
+          "十只来自同一熟悉群体；非随机互不相识个体",
+          "愿战不等于失去自保或永不后退",
+          "撤退须持续脱离，不把战术回避计为败北"
+        ]
+      },
+      "highest": {
+        "winner": "hyenas",
+        "status": "conditional",
+        "reasoning": "强协调且能从侧后持续接近时，群体优势更明显；银背的大体型、及时抓住近身者并使其退出，只能另建其有利分支，不能视为已实测的一击必杀。",
+        "evidence_ids": [
+          "G",
+          "H",
+          "C",
+          "I",
+          "A"
+        ],
+        "critical_assumptions": [
+          "协调与承担反击风险均为强解释，非默认全部十只同刻接触",
+          "226.8 kg银背与40 kg小体型鬣狗是另一条件情景，不是三模式自动端点选择"
+        ]
+      },
+      "lowball": {
+        "winner": "hyenas",
+        "status": "conditional",
+        "reasoning": "剔除完美包围、必断骨、一击一个和传闻力量倍数后，仍有数量与群体攻击机制优势；若多数成员保持距离且早期受伤者引发集体退却，银背可胜。",
+        "evidence_ids": [
+          "G",
+          "H",
+          "C",
+          "I",
+          "A"
+        ],
+        "critical_assumptions": [
+          "不得把现有伤病带入健康个体",
+          "不得把最低体重端点当作扒下限",
+          "双方快速致伤和恐惧阈值均未测定"
+        ]
+      }
+    },
+    "conditions": {
+      "terrain": "开阔干燥平地，无可背靠障碍、树或狭口；空间足够绕行，白天",
+      "initial_distance": "10 m，可互相察觉；无预先咬住或伏击",
+      "preparation": "none",
+      "tools": "none",
+      "motivation": "双方愿战；允许战斗中受伤或畏惧后退",
+      "familiarity": "默认十只同群相熟；陌生拼组另列削弱协调分支",
+      "victory": "一方失去战斗能力或持续撤离战斗；鬣狗队胜负按整队能否继续有效作战，单只退出不等于全队失败",
+      "simultaneous_contact": "人数不等于同时接触人数；不给没有测量依据的固定值",
+      "exhaustion": "定性承认累计成本；不虚构对战持续时间、耐力倍率或流血速率"
+    },
+    "win_paths": [
+      {
+        "id": "H-multi-angle",
+        "winner": "hyenas",
+        "evidence_ids": [
+          "H",
+          "C",
+          "A"
+        ],
+        "requirements": [
+          {
+            "claim": "开阔地允许多名个体从不同方向接近",
+            "status": "supported",
+            "evidence_ids": [
+              "A"
+            ]
+          },
+          {
+            "claim": "保持足够协调和实际参战成员以产生持续威胁",
+            "status": "conditional",
+            "evidence_ids": [
+              "C",
+              "A"
+            ]
+          },
+          {
+            "claim": "咬中未被保护部位并形成妨碍防守或移动的伤害",
+            "status": "conditional",
+            "evidence_ids": [
+              "H",
+              "A"
+            ]
+          },
+          {
+            "claim": "在成员退出前迫使银背失能或持续撤离",
+            "status": "conditional",
+            "evidence_ids": [
+              "C",
+              "A"
+            ]
+          }
+        ],
+        "unresolved_counters": [
+          "银背可转身、冲撞、抓咬近身者；快速伤亡可能改变鬣狗参与行为",
+          "没有银背—十斑鬣狗直接对抗的致伤率、阈值和协同统计"
+        ]
+      },
+      {
+        "id": "G-early-deterrence",
+        "winner": "gorilla_team",
+        "evidence_ids": [
+          "G",
+          "I",
+          "C",
+          "A"
+        ],
+        "requirements": [
+          {
+            "claim": "具有比单只代表性鬣狗更大体型及可抓握上肢、牙齿",
+            "status": "supported",
+            "evidence_ids": [
+              "G",
+              "H"
+            ]
+          },
+          {
+            "claim": "在持续多向咬合形成前，成功命中并重创近身鬣狗",
+            "status": "conditional",
+            "evidence_ids": [
+              "G",
+              "I",
+              "A"
+            ]
+          },
+          {
+            "claim": "反击诱发全队持续撤离，而非只使一只个体回避",
+            "status": "conditional",
+            "evidence_ids": [
+              "C",
+              "A"
+            ]
+          }
+        ],
+        "unresolved_counters": [
+          "抓住一个方向时其余方向仍有威胁",
+          "不能用同种伤型直接证明单击可使鬣狗失能，更不能假定连续十次成功"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "scope": "四个新检索并完整抓取的官方/原始来源；只回答指定物种与状态",
+    "source_selection": "先官方物种数据，再原始群体行为与伤型研究；未读 tests 或 assets/cases",
+    "media": "本题不要求画面量尺；未调用视觉模型，不声称已读论文图",
+    "mechanics": "无合适实测力、接触面积、速度或伤害阈值，不生成拳击J、咬合N或压强Pa",
+    "engines": "三模式数值传播；模式定性判断由宿主另述，matchup引擎仅做路径条件审计"
+  },
+  "limitations": [
+    "most_likely_winner是宿主机制推断；机器 insufficient_evidence 表示尚无全部supported的获胜路径，两者不矛盾。",
+    "未发现本对战可靠统计；狮—鬣狗研究证明机制及条件性，不提供跨物种胜率。",
+    "成年鬣狗性别、精确体重、熟悉程度、经验和成员受伤后的参与行为均有不确定性。",
+    "最高模式不合并互斥有利参数；扒下限不使用违反题目健康状态的受伤个体。",
+    "排除官方页面 strongest bite of any mammal 修辞，未据此设咬合数值；也不采用该页互相冲突的50/60 km/h速度。",
+    "Smithsonian页面含其他栏目明显英制/公制笔误，本题不使用雌性质量或每日食物换算；成年雄性质量记录只按对应Size栏且区分代表值与极端值。",
+    "Bundled 2026-10-18 research snapshot. This package includes derived evidence and URLs, not every original copyrighted work or the external raw validation cache. A new character assessment must verify relevant original sources."
+  ]
+}
