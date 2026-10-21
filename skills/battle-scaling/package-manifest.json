@@ -1,7 +1,7 @@
 {
   "skill": "battle-scaling",
-  "version": "1.7.0",
-  "updated": "2026-10-20",
+  "version": "1.7.4",
+  "updated": "2026-10-21",
   "scope": "Public source distribution: static package excluding self, bytecode and mutable site-experience. Original 310-page OCR corpus and images are not distributed; default rule profile is unchanged.",
   "mutable_paths": [
     "data/site-experience/**"
@@ -92,8 +92,8 @@
       "sha256": "e62e174f9d1a9a559e08889986a4eafa78bf8799d0bc205b2750b26c989e8f53"
     },
     "assets/templates/novel-evidence-card.md": {
-      "bytes": 6846,
-      "sha256": "b45dd12eccb9aac43abea3db21f51e722f68a70799e06a24d5842ec490ba9229"
+      "bytes": 8718,
+      "sha256": "1cc457dc86befe17134938cf7604d43bb0b57ab4778ba1b8a1e3a02c2fd4f0a4"
     },
     "data/wangba-handbook-2026-07-30/directory.json": {
       "bytes": 16336,
@@ -115,6 +115,10 @@
       "bytes": 177415,
       "sha256": "0ed5daa532f61dbdb369578a099d9de0e376fcd71ad4470658b5365f08811848"
     },
+    "references/ability-feats-and-combos.md": {
+      "bytes": 6320,
+      "sha256": "91088772a3c8e1592ec1e60d72c92d0d1ad28344efcc9f30964b65eecf6ddfc4"
+    },
     "references/captain-wood-case.md": {
       "bytes": 7309,
       "sha256": "1d953461079fb85c30533223f59e22d0f42b36eeeaab4a009da0e609c64f86cb"
@@ -132,20 +136,20 @@
       "sha256": "7f8d5a7775dcefd8814955695c03a6bd03073bc781e46a31083223d5f0b5b77f"
     },
     "references/combat-process.md": {
-      "bytes": 14804,
-      "sha256": "0a3ffadbb3e69bc28c4be257da7859f660ef38cbbfe50911f1adaa2ec689128d"
+      "bytes": 17123,
+      "sha256": "ee51ad43fce4ff6bcd8318966108ed7b4422b66bcef8c663adb67e6ea61a5b40"
     },
     "references/derivation-workflow.md": {
       "bytes": 13361,
       "sha256": "404c52efd628cb54b5d3e75a6e3a5295df22fcebf0b85ce0e5825f1ee1276543"
     },
     "references/discovery-dossiers.md": {
-      "bytes": 9130,
-      "sha256": "5a7ab4281f8fbb69545a03554c4667e485bedb13651a4e676c9c4f95d80c309f"
+      "bytes": 10016,
+      "sha256": "bd543bcaa70abfc7b13ac37f7979817f2407f8eb94a8c1978977f51f448577b6"
     },
     "references/evidence.md": {
-      "bytes": 8097,
-      "sha256": "fc1f53bbca70c24f171e38be7806a58fc3983a2ad6e6eac68dd6fb9d4835645f"
+      "bytes": 11735,
+      "sha256": "d6fc3c6dde0ec732665e1633194d7ad19dcb166f458c056f264a4ee264e7b8e9"
     },
     "references/external-ideas.md": {
       "bytes": 4008,
@@ -156,8 +160,8 @@
       "sha256": "489d237a0838a7c448df0e621b7115be39eac3f4cdf36630b237cafc904c4245"
     },
     "references/formula-ocr-validation.md": {
-      "bytes": 6209,
-      "sha256": "16665dc3c89a54021cd9b7d04433db84d2ce2ac9e20dc40d41b65dcfa83b032f"
+      "bytes": 6335,
+      "sha256": "dd3fb0a6f4e52116414fd7d52fe0866d52c00be3f729c28e5fa99e41aea46e26"
     },
     "references/handbook-finite-review.md": {
       "bytes": 14428,
@@ -168,8 +172,8 @@
       "sha256": "0b61f8004140e38c03c3f754ad5f9099b3da5a175ea98c6810574ac99ae26eda"
     },
     "references/handbook.md": {
-      "bytes": 8285,
-      "sha256": "dd4809b3d6757a661c552e0aea73ef793add2902b3772c936a08297f03efdd7a"
+      "bytes": 10473,
+      "sha256": "ac6c504822a20ff93f45436f10d722f06cbb04f1756762b70d98291e555e25fb"
     },
     "references/hax-ceiling.md": {
       "bytes": 8682,
@@ -184,8 +188,8 @@
       "sha256": "186adee4fe4e84a7441ecfe4ccc4f18b898bf82106c2473befd828f420d8d0d0"
     },
     "references/matchups.md": {
-      "bytes": 6803,
-      "sha256": "3918386f28807019b0aa87a2fb12c278473cb3298364605df776d80c44d79e97"
+      "bytes": 8118,
+      "sha256": "c75ea77fb5b4c2e2cd259e859637cb262f9990ad076930da3ba68d1557a30597"
     },
     "references/media-reading.md": {
       "bytes": 10244,
@@ -196,16 +200,16 @@
       "sha256": "4ef3aca4e642f592f979fa1bd84346514fcddf8da82634d5b89e4d9cd0fd48a9"
     },
     "references/novel-ending-state.md": {
-      "bytes": 4097,
-      "sha256": "a3957f7d7d8ce6a3a21766fc5813f6bb043e8495b997d6e572ce3d479317b916"
+      "bytes": 4956,
+      "sha256": "550471f790a8681509c00aa224bc8c17605533aca68d2127741b82aa24394ebf"
     },
     "references/novel-evidence.md": {
-      "bytes": 16383,
-      "sha256": "5c9e2345179b071116f8e2c1f510c93f9d724f67df319775848adc134351fcfd"
+      "bytes": 17278,
+      "sha256": "08d0f3383e9557c9f66bba11103338304c60d41b3d15f6640ad6ae1041774dde"
     },
     "references/novel-refpack-pipeline.md": {
-      "bytes": 11707,
-      "sha256": "e530963ee7dbe94115bb815ac36d6074d9e63c6142e3e0fd33ac72e4e9e2211b"
+      "bytes": 13579,
+      "sha256": "b6679853ed6e9daaa4ab88edb85883f57aeb7ed6ee2eba2d886a53187d9a4aab"
     },
     "references/ocr-projects.md": {
       "bytes": 18727,
@@ -220,16 +224,20 @@
       "sha256": "809939820cf4ed14ca0ee0830cfded8e26a69e01e3d19f905aa22748f8ccf4d0"
     },
     "references/research-workflow.md": {
-      "bytes": 11225,
-      "sha256": "b1a575881584ec974b9533dd50274b7c38c0f45f15c62c9d7f58458304352bf9"
+      "bytes": 13313,
+      "sha256": "62d41e5c2f69c49d98d7c252c533fbcdda5b96d01418c86bb7d1c542d98f6166"
     },
     "references/site-experience.md": {
       "bytes": 7934,
       "sha256": "fe75c00c92392d378c83b81d40d1a9ee3d81293eb7a1a742bbb7cedbb97ccb96"
     },
+    "references/tieba-reading.md": {
+      "bytes": 9322,
+      "sha256": "60d0f21226d86068bb20cc68e84a0a1c6a8107c6aff99f0d08a9e55224ebbb3c"
+    },
     "references/tier-map.md": {
-      "bytes": 4582,
-      "sha256": "91dd12ea39ca5ee66c1e4dfb9333add9d6cacf85d2914592afa9ba4d19cba877"
+      "bytes": 4727,
+      "sha256": "817f7e9e121e30db367aa7b73c3f2a9383a4db94001b0a600579ede773471c00"
     },
     "references/tool-contracts.md": {
       "bytes": 10158,
@@ -292,8 +300,8 @@
       "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
     },
     "scripts/battle.py": {
-      "bytes": 31723,
-      "sha256": "4d9faa05244b37128db290900ae80a22bf19952af5a0cd62a8f403563fd9724c"
+      "bytes": 31841,
+      "sha256": "1ca60a371fd208c160f835162900060c2524a7f283792344da6eb5a5a6f90ada"
     },
     "scripts/combat_refpack/__init__.py": {
       "bytes": 103,
@@ -304,8 +312,8 @@
       "sha256": "1301f557a1b15cf932cbf38f08e3d28c570ccd316435552279bfcc2afa799209"
     },
     "scripts/combat_refpack/core.py": {
-      "bytes": 40091,
-      "sha256": "a67c02a94d8ab06cdc9702466d07698e34e4f120c6bf4611c00f0f5d76c5cae5"
+      "bytes": 42569,
+      "sha256": "cbcf8fba6daaea28937d2731a5570ee355186f4f60c34a27b05581c547bfa0f0"
     },
     "scripts/combat_refpack/extraction.py": {
       "bytes": 6156,
@@ -332,8 +340,8 @@
       "sha256": "ee776ea39da1b7c9dd5087fe6b5e23b87a11cd1af329baf2b8b78e3c3e8bba2d"
     },
     "scripts/handbook.py": {
-      "bytes": 11285,
-      "sha256": "8a2e491e9133e251bf4059c9cf9037b6898fa7296bedaad7f268872b0f7c7b02"
+      "bytes": 11558,
+      "sha256": "1c2b161097526ae9fde453338ca25f05cd3e4d4f070122d3066dcb10007f2b03"
     },
     "scripts/handbook_finite.py": {
       "bytes": 17590,
@@ -392,20 +400,32 @@
       "sha256": "699ecdec53fe83838e2de7b755059676fd90a729cfb234c690ec2a2ba2a0f92d"
     },
     "scripts/site_registry.py": {
-      "bytes": 19764,
-      "sha256": "b18ed670619e9beb4f8e1ee6c0471139bb969c482555146dfb914c3f8d3a9120"
+      "bytes": 20200,
+      "sha256": "a90bb909fa91bf8d8e3e2fa0816b4ee05f7238134faa43d9d6789bbeac36daed"
     },
     "scripts/sources.py": {
       "bytes": 19856,
       "sha256": "0248352bd8c08cae700ece9af5026ea3aa7fdee8ad9631e04608e8b5b7342052"
+    },
+    "scripts/tieba.py": {
+      "bytes": 23582,
+      "sha256": "d8df9d53655f8658037077b2a05107ed5bee6f24d2c5159492b7955e6a6ee875"
+    },
+    "scripts/tieba_aiotieba.py": {
+      "bytes": 15282,
+      "sha256": "cdd2833928eada3a16477ae72d2168bd19222ae06209b088ea01c035231bf837"
     },
     "scripts/vision_adapter.py": {
       "bytes": 6382,
       "sha256": "b7cb16226dc3f55397d4cd0289cc5d1f1b685ccc76d6219243b817c86f54ade3"
     },
     "SKILL.md": {
-      "bytes": 12854,
-      "sha256": "7277a27353f33e466e7a238440c3aed046934e350374bb6064b022794e5754fc"
+      "bytes": 15282,
+      "sha256": "4e4f5cc74a0a82e10d05c6d963b6526b4ec04e74e602f052a0fcc8c1730ffa93"
+    },
+    "tests/test_combat_refpack.py": {
+      "bytes": 10196,
+      "sha256": "4c588a6bc4365c2a9fd1e336ceb7ccc3b0d261d532597499992b00fc68c77024"
     },
     "tests/test_combat_trace.py": {
       "bytes": 17415,
@@ -512,12 +532,16 @@
       "sha256": "71592e37450c7965486ad7038a39e925298752c573b4359fc971be51c2daefa7"
     },
     "tests/test_site_registry.py": {
-      "bytes": 13613,
-      "sha256": "a07375532d5d4b1df0e78ccaf74344c3b55f54d6d907794de36e7e882143ad88"
+      "bytes": 15329,
+      "sha256": "197da517ae81ce59505823fd16ed31ff6d68648957620b64808c553f3b7a0403"
     },
     "tests/test_sources.py": {
       "bytes": 13804,
       "sha256": "c3f13bf228fd031d855ab59ff80084ed5b7ee102c8afd146d0a2167fa3e507d7"
+    },
+    "tests/test_tieba.py": {
+      "bytes": 9470,
+      "sha256": "3d1c15b0fc4928a937de4d9b6ae72052450fcf58c7e86b025b414e52e3a4b1ea"
     },
     "tests/test_vision_adapter.py": {
       "bytes": 3560,

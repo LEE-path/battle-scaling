@@ -74,7 +74,7 @@ class Handbook:
         p = self.by_sequence[sequence]
         return {'status': 'ok', 'locator': self.locator(p), 'text': p['text'], 'lines': p['lines'],
                 'render': p['render'], 'preprocessing': p.get('preprocessing'),
-                'warning': 'Machine OCR is not a verified transcription of formulas, exponents, tables or negation. Read the original page for decisive claims.'}
+                'warning': 'Machine OCR is not a verified transcription of formulas, exponents, tables or negation. Reuse applicable reviewed clauses and compiled rules first. Reopen handbook images only for content not yet visually reviewed; decisive use, a new character or a conflict among reviewed rules does not by itself require reopening. Preserve unresolved conflicts instead of reclassifying reviewed content as unreviewed.'}
 
     def search(self, query, limit=8):
         self.require_corpus()

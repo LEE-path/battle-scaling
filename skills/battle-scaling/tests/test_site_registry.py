@@ -140,6 +140,31 @@ class SiteRegistryTests(unittest.TestCase):
         self.assertEqual(saved['url'], 'https://example.org/book?chapterNumber=613&page=2')
         self.assertNotIn('secret', json.dumps(saved))
 
+    def test_tieba_numeric_locators_preserve_pagination_on_real_hosts(self):
+        for host in ('tieba.baidu.com', 'm.tieba.baidu.com', 'WAP.TIEBA.BAIDU.COM.'):
+            with self.subTest(host=host):
+                url, domain = site_registry.normalize_url(
+                    f'https://{host}/p/8940142616?pn=2&tid=8940142616&fid=123&pid=456&page=3')
+                self.assertEqual(url, f'https://{domain}/p/8940142616?pn=2&tid=8940142616&fid=123&pid=456&page=3')
+                first, unused = site_registry.normalize_url(f'https://{host}/p/8940142616?pn=1')
+                second, unused = site_registry.normalize_url(f'https://{host}/p/8940142616?pn=2')
+                self.assertNotEqual(first, second)
+
+    def test_tieba_locator_exception_does_not_apply_to_other_or_lookalike_hosts(self):
+        for host in ('example.org', 'baidu.com', 'nottieba.baidu.com', 'tieba.baidu.com.attacker.org'):
+            with self.subTest(host=host):
+                url, unused = site_registry.normalize_url(
+                    f'https://{host}/p/1?pn=2&tid=3&fid=4&pid=5&page=6')
+                self.assertEqual(url, f'https://{host}/p/1?page=6')
+
+    def test_tieba_drops_nonnumeric_locators_and_credentials_without_expanding_generic_rules(self):
+        saved = self.call('record', event=event(url=(
+            'https://tieba.baidu.com/p/1?pn=-1&pn=1.5&pn=1e3&pn=%EF%BC%92&pn=2%20'
+            '&tid=abc&fid=3x&pid=4%0A&pn=2&tid=123&chapterNumber=613'
+            '&Cookie=secret&token=secret&sign=secret&BDUSS=secret&kw=secret&q=secret')))['event']
+        self.assertEqual(saved['url'], 'https://tieba.baidu.com/p/1?pn=2&tid=123&chapterNumber=613')
+        self.assertNotIn('secret', json.dumps(saved))
+
     def test_public_ipv6_and_idna_hosts_are_canonical(self):
         a = self.call('record', event=event(url='https://[2606:4700:4700::1111]/x'))['event']
         b = self.call('record', event=event(url='https://例子.中国/x'))['event']

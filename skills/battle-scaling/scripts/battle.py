@@ -18,7 +18,7 @@ from rule_profiles import resolve as resolve_profile, snapshot_content
 from pk_modes import PRESENTATIONS,select_presentation,format_estimate
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_VERSION = '1.7.0'
+SKILL_VERSION = '1.7.4'
 
 
 def load_json(path):
@@ -54,7 +54,7 @@ def doctor():
             'core_tools': {'evidence': True, 'physics': (ROOT/'scripts/physics.py').exists(),
                            'high_tier': (ROOT/'scripts/high_tier.py').exists(), 'sources': (ROOT/'scripts/sources.py').exists(),
                            'media': (ROOT/'scripts/media.py').exists(),
-                           **{name:(ROOT/'scripts'/f'{name}.py').exists() for name in ('research','derivation_audit','combat_trace','feat_audit','hax_policy','hax_gate','site_registry','novel_evidence')}},
+                           **{name:(ROOT/'scripts'/f'{name}.py').exists() for name in ('research','derivation_audit','combat_trace','feat_audit','hax_policy','hax_gate','site_registry','novel_evidence','tieba')}},
             'site_experience':{'default_db':os.environ.get('BATTLE_SITE_DB') or str(ROOT/'data/site-experience/registry.sqlite3'),
                                'source_cli_auto_records':'transport receipt; readable content requires host confirmation',
                                'reuse_policy':'lookup experience, then recheck current target page'},
@@ -366,7 +366,7 @@ def main(argv=None):
     subs = parser.add_subparsers(dest='command', required=True)
     subs.add_parser('doctor')
     subs.add_parser('rules')
-    for command in ('physics', 'high', 'finite', 'validate', 'vision', 'handbook', 'formula','research','derivation','process','feat','hax','sites','novel'):
+    for command in ('physics', 'high', 'finite', 'validate', 'vision', 'handbook', 'formula','research','derivation','process','feat','hax','sites','novel','tieba'):
         p = subs.add_parser(command)
         p.add_argument('--input', required=True)
         p.add_argument('--output')
@@ -392,7 +392,7 @@ def main(argv=None):
             if args.command == 'analyze':
                 if source in [output/name for name in ('analysis.json', 'sources.json', 'derivations.json', 'report.md', 'manifest.json','rules-snapshot.json','CASE.json','run-ledger.json','feat-reviews.json','hax-checks.json')]:
                     raise ValueError('report output would overwrite the input case; choose another output directory')
-            elif args.command in ('physics', 'high', 'finite', 'validate', 'media', 'vision','handbook','formula','research','derivation','process','feat','hax','sites','novel') and source == output:
+            elif args.command in ('physics', 'high', 'finite', 'validate', 'media', 'vision','handbook','formula','research','derivation','process','feat','hax','sites','novel','tieba') and source == output:
                 raise ValueError('output must not overwrite the input request')
         if args.command == 'doctor':
             data = doctor()
@@ -434,7 +434,7 @@ def main(argv=None):
                 try:validate_output(request,args.output)
                 except AdapterError as exc:raise ValueError(str(exc)) from exc
             data = run(request)
-        elif args.command in ('research','derivation','process','feat','hax','sites','novel'):
+        elif args.command in ('research','derivation','process','feat','hax','sites','novel','tieba'):
             if args.command=='research':
                 from research import run
             elif args.command=='derivation':
@@ -447,6 +447,8 @@ def main(argv=None):
                 from site_registry import run
             elif args.command=='novel':
                 from novel_evidence import run
+            elif args.command=='tieba':
+                from tieba import run
             else:
                 from combat_trace import run
             data=run(load_json(args.input))
@@ -466,7 +468,7 @@ def main(argv=None):
             result=analyze_case(case, args.mode, profile=profile)
             result['rule_snapshot']=snapshot_content(profile,case.get('computations',[]))
             data = export_case(result, args.output,args.input,raw_bytes)
-        if getattr(args, 'output', None) and args.command in ('physics', 'high', 'finite', 'validate', 'media', 'vision','handbook','formula','research','derivation','process','feat','hax','sites','novel'):
+        if getattr(args, 'output', None) and args.command in ('physics', 'high', 'finite', 'validate', 'media', 'vision','handbook','formula','research','derivation','process','feat','hax','sites','novel','tieba'):
             write_json(args.output, data)
         print(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False))
         if args.command == 'sources':

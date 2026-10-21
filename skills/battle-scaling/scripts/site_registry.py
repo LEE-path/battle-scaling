@@ -24,6 +24,7 @@ OUTCOMES = {'readable', 'partial', 'blocked', 'error', 'fetched_unreviewed', 'no
 EVIDENCE_KINDS = {'local_receipt', 'host_tool_result', 'historical_ledger'}
 PUBLIC_QUERY_KEYS = {'chapternumber', 'chapter', 'chapterid', 'page', 'p', 'id', 'sn', 'book', 'bookid',
     'volume', 'vol', 'cid', 'aid', 'index', 'part', 'episode', 'ep', 'v'}
+TIEBA_NUMERIC_QUERY_KEYS = {'pn', 'tid', 'fid', 'pid'}
 EVENT_KEYS = {'event_id', 'url', 'method', 'outcome', 'observed_at', 'observed_precision', 'categories',
     'works', 'issues', 'notes', 'query_examples', 'path_pattern', 'evidence'}
 LIST_KEYS = ('categories', 'works', 'issues', 'notes', 'query_examples')
@@ -102,10 +103,15 @@ def normalize_url(value: Any) -> tuple[str, str]:
     if port is not None and port != (443 if parsed.scheme.lower() == 'https' else 80):
         netloc += ':' + str(port)
     public = []
+    is_tieba = domain == 'tieba.baidu.com' or domain.endswith('.tieba.baidu.com')
     for key, val in parse_qsl(parsed.query, keep_blank_values=False, max_num_fields=200):
         # Known locator keys are the only retained fields. Tokens, session IDs,
         # search strings, signatures and unfamiliar fields are not persisted.
         if key.lower() in PUBLIC_QUERY_KEYS and 0 < len(val) <= 128 and re.fullmatch(r'[\w.,:@~-]+', val, re.UNICODE):
+            public.append((key, val))
+        elif is_tieba and key.lower() in TIEBA_NUMERIC_QUERY_KEYS and re.fullmatch(r'[0-9]{1,128}', val):
+            # Keep public thread/floor/page locators only on the actual Tieba
+            # host family; this does not expand the generic query allowlist.
             public.append((key, val))
     return urlunsplit((parsed.scheme.lower(), netloc, parsed.path or '/', urlencode(public), '')), domain
 
