@@ -4,7 +4,7 @@
 
 # Battle Scaling
 
-**给 Agent 使用的原作取证、综合量级评定、VS 推演与战斗写作 Skill · v1.12.2**
+**给 Agent 使用的原作取证、综合量级评定、VS 推演与战斗写作 Skill · v1.12.3**
 
 把“角色有多强、根据什么、如何获胜”整理成可追溯的证据和推导。默认采用汪吧标准，也可切换到完整 VSB 规则。宿主 Agent 负责搜索、阅读与判断；配套 Python 工具负责定位、计算、约束检查和归档。
 
@@ -102,4 +102,4 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book
 
 特别感谢 [novel-refpack](https://github.com/scp3500/novel-refpack) 的拆书工作流参考。流程与研究还参考了 [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill)、[OmniBattle](https://github.com/Zerhal/omnibattle-ai)、[vskill](https://github.com/GentleClash/vskill)、[Fictional Ranking](https://github.com/BenCantCode/fictional-ranking)、[Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats)、[QuantiPhy](https://github.com/Paulineli/QuantiPhy) 和 [MangaLMM](https://github.com/manga109/MangaLMM)。[Cited Feats](https://citedfeats.com/data/) 与 [ManGo](https://arxiv.org/abs/2608.29865) 使用其已核官网／论文入口；没有虚构实现仓库。
 
-这些研究项目不是默认运行依赖，也不表示其模型已被本包安装或复现。公开包不分发原作截图、整本小说、完整参考册 OCR、第三方模型权重或私有运行记录；写作教学使用独立原创人物范例。本次只审计当前发布包，不追溯 Git 历史，也不作无侵权或任意评级必然正确的保证。
+这些研究项目不是默认运行依赖，也不表示其模型已被本包安装或复现。公开包不分发原作截图、整本小说、完整参考册 OCR、第三方模型权重或私有运行记录；写作参考使用[可复用写作经验](skills/battle-scaling/references/writing-experience.md)，不附教学故事或故事原文摘录。本次只审计当前发布包，不追溯 Git 历史，也不作无侵权或任意评级必然正确的保证。

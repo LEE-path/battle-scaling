@@ -1,8 +1,8 @@
 {
   "skill": "battle-scaling",
-  "version": "1.12.2",
-  "updated": "2026-10-23",
-  "scope": "Public static Skill; original MIT with explicit third-party license exceptions. Excludes this manifest, bytecode, private runtime data and optional original corpus/media. Full scaling, research, novel and writing workflows preserved.",
+  "version": "1.12.3",
+  "updated": "2026-10-24",
+  "scope": "Public static Skill with reusable writing methods, no tutorial story texts. Original MIT with explicit third-party exceptions; private data and optional original corpus/media excluded. Independent ratings and executable capabilities unchanged.",
   "mutable_paths": [
     "data/site-experience/**"
   ],
@@ -299,22 +299,6 @@
       "bytes": 8729,
       "sha256": "a7fe290f86cc5c6f64590e3288808b04ec806dcaf516bc973036b6782ed36742"
     },
-    "assets/writing-examples/original-comic-causality.md": {
-      "bytes": 4394,
-      "sha256": "408d09496bf6f2f4382460ef0154f57e68992c855b75cbb6f5c5a4682f598d8d"
-    },
-    "assets/writing-examples/original-feedback-and-disable.md": {
-      "bytes": 4115,
-      "sha256": "b4b4d3d99f952521ac6ae09900620875b31cf11bc25f1662d070cf0bb06c93c7"
-    },
-    "assets/writing-examples/original-load-path.md": {
-      "bytes": 4182,
-      "sha256": "d0bfa177659c3f01937c75662ea7f93dbf721d42a7dc1e28b852a9bacff4c2e4"
-    },
-    "assets/writing-examples/original-role-control.md": {
-      "bytes": 5262,
-      "sha256": "7ab0c9274d8a1f2c5e0a96aedc64ad983a4ce38bca497d609cdaa57666052b9d"
-    },
     "data/wangba-handbook-2026-07-30/directory.json": {
       "bytes": 16336,
       "sha256": "f70112834fa5f31da6232ad9f865c99329cae6fb28ea2e07dd30df930a71797b"
@@ -524,16 +508,16 @@
       "sha256": "193a2ee31927d8a5233239ffb147513319a972b8705e7b42b0737d3b15034c15"
     },
     "references/writing-battle.md": {
-      "bytes": 40094,
-      "sha256": "0a37649706c9241b287c72e9a1afb2f4134f6630d8dfef08fb80c80f27ae8be2"
+      "bytes": 40065,
+      "sha256": "7db3ea35acabfd4c447122ccb8653a81245792c2da61fd3a23ca2c780689b6eb"
     },
     "references/writing-canon-and-systems.md": {
       "bytes": 21178,
       "sha256": "057c2bce5bfef4b5597e7980c6c49ddd92cf271c7df805601afd18aee0feefcc"
     },
-    "references/writing-excellent-examples.md": {
-      "bytes": 3224,
-      "sha256": "7ef90afac654924239b110f05753298641c69dec728f339768d97db498f6573c"
+    "references/writing-experience.md": {
+      "bytes": 15600,
+      "sha256": "dfb01b56dff17940f37eb6845fd76de54662f577dc7e251b70ce3429fce416a3"
     },
     "references/writing-rating-baseline.md": {
       "bytes": 10072,
@@ -764,8 +748,8 @@
       "sha256": "49d9c502e736526ac2c38af17148798fdcb930e5226d947a3669d0bcdd97fb32"
     },
     "SKILL.md": {
-      "bytes": 30010,
-      "sha256": "22ae913c99d6a68eeef99286d04a279678c29048e3b79c98f2bc3d873aa3dc7f"
+      "bytes": 30065,
+      "sha256": "15221a8096a06e1499282f15a0001a21c4d748113ba8068800e9bd891ed277fe"
     },
     "tests/rating_fixtures.py": {
       "bytes": 12135,

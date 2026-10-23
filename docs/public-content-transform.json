@@ -572,5 +572,38 @@
     "rebuild or rehash synthetic rating fixture metadata",
     "run public-package tests"
   ],
-  "legal_boundary": "Risk reduction and provenance review, not a warranty of non-infringement"
+  "legal_boundary": "Risk reduction and provenance review, not a warranty of non-infringement",
+  "current_release": "1.12.3",
+  "follow_up": {
+    "date": "2026-10-24",
+    "removed": [
+      {
+        "path": "skills/battle-scaling/assets/writing-examples/original-load-path.md",
+        "bytes": 4182,
+        "sha256": "d0bfa177659c3f01937c75662ea7f93dbf721d42a7dc1e28b852a9bacff4c2e4"
+      },
+      {
+        "path": "skills/battle-scaling/assets/writing-examples/original-feedback-and-disable.md",
+        "bytes": 4115,
+        "sha256": "b4b4d3d99f952521ac6ae09900620875b31cf11bc25f1662d070cf0bb06c93c7"
+      },
+      {
+        "path": "skills/battle-scaling/assets/writing-examples/original-role-control.md",
+        "bytes": 5262,
+        "sha256": "7ab0c9274d8a1f2c5e0a96aedc64ad983a4ce38bca497d609cdaa57666052b9d"
+      },
+      {
+        "path": "skills/battle-scaling/assets/writing-examples/original-comic-causality.md",
+        "bytes": 4394,
+        "sha256": "408d09496bf6f2f4382460ef0154f57e68992c855b75cbb6f5c5a4682f598d8d"
+      },
+      {
+        "path": "skills/battle-scaling/references/writing-excellent-examples.md",
+        "bytes": 3224,
+        "sha256": "7ef90afac654924239b110f05753298641c69dec728f339768d97db498f6573c"
+      }
+    ],
+    "replacement": "skills/battle-scaling/references/writing-experience.md",
+    "policy": "Reusable independently worded writing methods only; no tutorial stories, story excerpts or dialogue. Private local originals unchanged."
+  }
 }

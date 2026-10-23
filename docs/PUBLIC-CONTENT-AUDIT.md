@@ -1,6 +1,6 @@
 # Current-package content and provenance audit / 当前发布包内容审计
 
-审计日期：2026-10-23，Asia/Shanghai。范围：拟发布的 battle-scaling 1.12.2 当前内容及其独立拆书工具；不涵盖 Git 历史，不是法律意见或无侵权保证。
+首次审计：2026-10-23；当前内容更新：2026-10-24，Asia/Shanghai。范围：battle-scaling 1.12.3 当前内容及其独立拆书工具；不涵盖 Git 历史，不是法律意见或无侵权保证。
 
 ## 核查结果与发布处理
 
@@ -8,7 +8,7 @@
 |---|---|---|
 | 原作图片、影视片段、参考册 PDF／完整 OCR | 本地 Skill 存在电影接触表、参考册裁图及完整 `pages.jsonl`；不是公开再分发授权 | 不随公开包分发。必要来源链接、页码、哈希、已核规则与独立条件算例保留。 |
 | 私有运行资料 | 累计站点 SQLite、主机验收与可选工具路径 | 排除运行库和本机回执；运行时可按用户授权新建本地档案。脱敏发布副本中的工作区路径，原始来源哈希不变。 |
-| 四篇既有角色交叉同人全文 | 原先在本地获用户肯定的创作文稿；涉及第三方商业人物，部分还涉及 SCP 衍生许可 | 本地原稿不改动、不删除。公开副本采用四篇独立原创合成教学全文与新索引，不逐字换名，也不冒称新稿已获原有文笔认可。物理、未知反馈、身份控制、喜剧四类方法完整保留。 |
+| 四篇既有角色交叉同人全文 | 原先在本地获用户肯定的创作文稿；涉及第三方商业人物，部分还涉及 SCP 衍生许可 | 本地原稿不改动、不删除。1.12.2 曾用四篇原创教学故事替代；1.12.3 按用户要求撤下替代故事及全文索引，公开包仅提供独立表述的可复用写作经验，不附故事全文、对白或情节摘录。 |
 | 汪吧参考册 | 有版本、原件哈希、实际阅读页号与短引；未见整册整体再授权证据 | 保留功能所需的数值、公式、具名档位、条件、必要短引与独立规则解释；排除完整原册、原图和非功能性的圈史／聊天／账号争议叙述。署名不被解释为取得整册版权。 |
 | VSB 等公开规则说明 | 有原始链接、部分 revision 和读取范围 | 由仓库第三方许可说明分别披露实际来源、改编与适用许可；不能把所有外部来源统一套成软件 MIT，也不能以第三方规则代替原作核证。 |
 | 外部项目目的与流程 | 包内已有九项公开来源与方法吸收边界 | 保留公开链接及独立实现边界，不要求已经清理的本机外部源码、模型或档案存在。实际依赖与仅参考来源在第三方说明分别列出。 |
@@ -17,14 +17,11 @@
 
 原册结构化 JSON 的引文元数据在清理前有 437 处、含重复合计 5,483 字符；165 个不同引句合计 2,098 字符，最长 83 字。统计覆盖三个校勘 JSON 与八个汪吧 ruleset，不含已排除的完整 OCR。公开转换去除页级圈史引文以及超过 25 字的重复 `short_quote/short_excerpt` 元数据；运行条件、数字、公式、档名、页号、源哈希和独立解释不因删重复引文而改变。25 字是此次工程精简阈值，不是法律上的通用安全线；保留短引仍须结合引用目的与范围。
 
-## 范例替换的具体目的
+## 当前写作资料的边界
 
-- `original-load-path.md`：持续拉力与冲击吸能分开、支点与关节控制、明确非致命结果。
-- `original-feedback-and-disable.md`：从当场失败获得线索，资源和时间有代价，确认失能而不冒称死亡。
-- `original-role-control.md`：自设控制机制先明确，受控身份内保留性格与反抗，线索及现实拘束清楚闭合。
-- `original-comic-causality.md`：自设纸偶的媒介认知与幽默实际影响事件，但不获得全知、控稿或不败。
+公开版只保留[可复用写作经验](../skills/battle-scaling/references/writing-experience.md)，覆盖人物声线、合理入场、动作空间、反馈变招、强弱差、未知信息、身份控制、幽默、对白与结局收束。写作经验使用独立表述，不复述原篇情节，不附原句、对白或换名故事；也不作为既有角色的量级、抗性或胜负证据。独立评级与原作人设核查继续执行。
 
-这些教学文本是原创设定示范，不是任何第三方作品的表现、评级、抗性或胜负证据。既有作品角色在实际任务中仍须使用完整独立评级与原作人设核查，不能拿教学设定替代。
+本地私有版的四篇原稿及其索引均保留。此次仅更新当前公开内容与最新发布包，不改写历史版本。方法整理不能自动证明未来文笔与旧范例等同，具体创作仍须按本场人物和结果核稿。
 
 ## 可复核的官方许可入口
 
@@ -41,4 +38,4 @@
 
 ## English summary
 
-This review covers the current 1.12.2 distribution, not Git history. Original book scans, full OCR, film contact sheets, private databases and host-only artifacts are excluded. Functional rules, mathematical methods, source locators and hashes remain. Four crossover fanfiction samples are replaced in the public copy by independently written original teaching stories; the private originals are untouched. Nonfunctional community-history and account/chat summaries are omitted. Attribution and the actual terms of each reused component are documented separately; acknowledgement alone is not copyright clearance. No claim of non-infringement or comprehensive legal review is made. Rebuild the public manifest and synthetic-fixture fingerprints after transformation.
+This review covers the current 1.12.3 distribution, not Git history. The original review was conducted on 2026-10-23 and this content update on 2026-10-24. Original book scans, full OCR, film contact sheets, private databases and host-only artifacts are excluded. Functional rules, mathematical methods, source locators and hashes remain. The four replacement teaching stories and their full-text index have now been removed. Public writing guidance consists of independently worded reusable methods, without story texts, dialogue excerpts or plot retellings; private originals are untouched. Nonfunctional community-history and account/chat summaries are omitted. Attribution and the actual terms of each reused component are documented separately; acknowledgement alone is not copyright clearance. No claim of non-infringement or comprehensive legal review is made. Rebuild the public manifest and synthetic-fixture fingerprints after transformation.

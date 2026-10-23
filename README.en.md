@@ -4,7 +4,7 @@
 
 # Battle Scaling
 
-**An Agent Skill for canonical evidence, integrated character ratings, VS analysis and battle writing · v1.12.2**
+**An Agent Skill for canonical evidence, integrated character ratings, VS analysis and battle writing · v1.12.3**
 
 Turn “how strong is this character, why, and how could they win?” into traceable evidence and reasoning. Wangba is the default standard; a complete VSB rule mode is also available. The host Agent searches, reads and judges. Python tools handle source locations, calculations, constraints and artifacts.
 
@@ -102,4 +102,4 @@ Unread material remains partial. Programmatic `complete` does not replace host s
 
 Special thanks to [novel-refpack](https://github.com/scp3500/novel-refpack) for the extraction-workflow design. Workflow/research references include [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill), [OmniBattle](https://github.com/Zerhal/omnibattle-ai), [vskill](https://github.com/GentleClash/vskill), [Fictional Ranking](https://github.com/BenCantCode/fictional-ranking), [Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats), [QuantiPhy](https://github.com/Paulineli/QuantiPhy) and [MangaLMM](https://github.com/manga109/MangaLMM). [Cited Feats](https://citedfeats.com/data/) and [ManGo](https://arxiv.org/abs/2608.29865) link to verified websites/papers; no implementation repository has been invented.
 
-These research projects are not default runtime dependencies, and their models are not installed or reproduced by this package. Original-work screenshots, complete novels, complete handbook OCR, third-party weights and private runtime records are excluded. Writing tutorials use independently created characters. This review covers only the current release package, not Git history, and is not a guarantee of non-infringement or arbitrary rating accuracy.
+These research projects are not default runtime dependencies, and their models are not installed or reproduced by this package. Original-work screenshots, complete novels, complete handbook OCR, third-party weights and private runtime records are excluded. Writing guidance uses [reusable writing methods](skills/battle-scaling/references/writing-experience.md), with no tutorial stories or story excerpts. This review covers only the current release package, not Git history, and is not a guarantee of non-infringement or arbitrary rating accuracy.

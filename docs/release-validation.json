@@ -1,28 +1,48 @@
 {
-  "release": "v1.12.2",
-  "date": "2026-10-23",
-  "scope": "Current public package; Git history excluded",
+  "release": "v1.12.3",
+  "date": "2026-10-24",
+  "scope": "Current public package; private originals and historical versions unchanged",
   "checks": {
-    "skill_unittest": {
-      "run": 848,
-      "skipped": 2,
-      "failures": 0,
-      "errors": 0
-    },
-    "novel_refpack_unittest": {
-      "run": 24,
+    "writing_unittest": {
+      "run": 67,
       "skipped": 0,
       "failures": 0,
       "errors": 0
     },
     "skill_frontmatter": "valid",
-    "static_privacy_secret_signature_scan": "no hits",
-    "markdown_file_targets": "no missing targets",
-    "forbidden_source_media_models_private_db": "none included"
+    "public_package_manifest": "valid",
+    "public_story_files_remaining": 0,
+    "retired_index_removed": true,
+    "new_methods_document": true,
+    "missing_markdown_file_targets": 0,
+    "local_original_files_unchanged": 6,
+    "executable_changes": 0,
+    "manifest_files": 236
+  },
+  "reused_baseline": {
+    "release": "v1.12.2",
+    "checks": {
+      "skill_unittest": {
+        "run": 848,
+        "skipped": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "novel_refpack_unittest": {
+        "run": 24,
+        "skipped": 0,
+        "failures": 0,
+        "errors": 0
+      },
+      "skill_frontmatter": "valid",
+      "static_privacy_secret_signature_scan": "no hits",
+      "markdown_file_targets": "no missing targets",
+      "forbidden_source_media_models_private_db": "none included"
+    },
+    "reason": "All executable scripts remain byte-identical; documentation and writing-reference replacement only. Full suite not rerun for this documentation update."
   },
   "notes": [
-    "Optional original OCR and handbook-source integration tests remain skipped without user-supplied authorized originals.",
-    "Tests check implementation behavior; they do not certify every future character rating or legal clearance.",
-    "Public synthetic writing fixtures were rebuilt through the production compute/analyze/export/assemble path after sanitization; no admission gate was weakened."
+    "Automated checks validate routing and implementation behavior, not literary equivalence.",
+    "No tutorial story texts, source-story quotations, dialogue excerpts or renamed stories are included in the new writing methods document."
   ]
 }
