@@ -14,10 +14,10 @@ The entrypoint, integrated ratings and nine attributes, both standards, calculat
 
 - 完整小说、用户书包、参考册PDF与310页完整OCR、原作或参考册截图。
 - 第三方模型权重、虚拟环境、外部项目源码全库、机器配置、私人访问数据库和验收日志。
-- 权利边界未核清的完整交叉同人娱乐作品；本地原稿保留，公开包仅提供独立表述的写作经验，不附故事全文或故事摘录。
+- 权利边界未核清的完整交叉同人娱乐作品；写作参考提供独立表述的方法指导，不附故事全文或故事摘录。
 - 非功能性的圈史、聊天、账号争议叙述。规则事实、必要短引、页号、哈希及数学桥保留。
 
-Complete works and OCR, source screenshots, third-party weights, private environments/databases and clearance-unresolved crossover stories are excluded. Private originals remain unchanged; public guidance contains independently worded writing methods, without story texts or story excerpts. Nonfunctional account/chat narratives are omitted while functional rules, locations and hashes remain.
+Complete works and OCR, source screenshots, third-party weights, private environments/databases and clearance-unresolved crossover stories are excluded. Writing guidance contains independently worded methods, without story texts or story excerpts. Nonfunctional account/chat narratives are omitted while functional rules, locations and hashes remain.
 
 ## 可选手册语料 / Optional local handbook corpus
 

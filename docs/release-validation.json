@@ -1,7 +1,7 @@
 {
   "release": "v1.12.3",
   "date": "2026-10-24",
-  "scope": "Current public package; private originals and historical versions unchanged",
+  "scope": "Current distribution package",
   "checks": {
     "writing_unittest": {
       "run": 67,
@@ -15,7 +15,6 @@
     "retired_index_removed": true,
     "new_methods_document": true,
     "missing_markdown_file_targets": 0,
-    "local_original_files_unchanged": 6,
     "executable_changes": 0,
     "manifest_files": 236
   },
