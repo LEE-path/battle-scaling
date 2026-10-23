@@ -15,8 +15,9 @@ from pathlib import Path
 import sys
 from pk_modes import READABLE
 
-MODES = {'normal', 'highest', 'lowball', 'all'}
-MODE_ALIASES = {'常态': 'normal', '最高': 'highest', '扒下限': 'lowball'}
+from rating_modes import MODES as RATING_MODES, metadata as mode_metadata
+MODES = (*RATING_MODES, 'all')
+MODE_ALIASES = {'综合': 'integrated', '常态': 'normal', '最高': 'highest', '扒下限': 'lowball'}
 RAW_ATTRIBUTES = {'raw_energy', 'raw_force', 'raw_torque', 'raw_work',
                   'raw_quantity', 'raw_speed', 'raw_pressure'}
 ENERGY_ATTRIBUTES = {'AP', 'DC', 'attack', 'attack_potency', 'destructive_capacity',
@@ -27,7 +28,7 @@ RAW_UNITS = {'raw_energy': {'J', 'kg TNT'}, 'raw_work': {'J'},
 
 
 class Audit:
-    def __init__(self, operation, mode='normal'):
+    def __init__(self, operation, mode='integrated'):
         self.out = {'schema_version': 1, 'engine': 'battle-scaling.derivation_audit',
                     'operation': operation, 'mode': mode, 'status': 'supported_by_packet',
                     'issues': [], 'research_tasks': [],
@@ -559,10 +560,11 @@ def run(request: dict) -> dict:
     try:
         request = copy.deepcopy(_object(request, 'request'))
         operation = request.get('operation')
-        mode = MODE_ALIASES.get(request.get('mode', 'normal'), request.get('mode', 'normal'))
+        mode = MODE_ALIASES.get(request.get('mode', 'integrated'), request.get('mode', 'integrated'))
         if mode not in MODES:
-            raise ValueError('mode must be normal/highest/lowball/all or a Chinese alias')
+            raise ValueError('mode must be integrated or explicit legacy normal/highest/lowball/all or a Chinese alias')
         audit = Audit(operation, mode)
+        audit.out.update(mode_metadata(mode))
         if operation == 'bundle':
             results = {}
             for key in ('physical', 'chain', 'high'):

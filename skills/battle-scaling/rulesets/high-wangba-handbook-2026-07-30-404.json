@@ -9,7 +9,7 @@
   "title": "汪吧量级册：历史盒标404",
   "standard": "box_404",
   "source": {
-    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
     "locator": "全局286；第三卷PDF86；附录16（+270）",
     "global_page": 286,
     "pdf_volume": "v03",
@@ -28,7 +28,7 @@
   },
   "sources": [
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局286；第三卷PDF86；附录16（+270）",
       "global_page": 286,
       "pdf_volume": "v03",
@@ -52,7 +52,7 @@
       "label": "论外守门员",
       "definition_raw": "阿列夫1～阿列夫无限",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -77,7 +77,7 @@
       "label": "论外三线下层",
       "definition_raw": "阿列夫不动点",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -102,7 +102,7 @@
       "label": "论外三线中层",
       "definition_raw": "世界基数～不可描述基数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -127,7 +127,7 @@
       "label": "论外三线高层",
       "definition_raw": "可迭代基数～伍丁基数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -152,7 +152,7 @@
       "label": "论外三线巅峰",
       "definition_raw": "超强基数～莱因哈特基数/伯克利基数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -177,7 +177,7 @@
       "label": "论外二线守门员",
       "definition_raw": "终极L",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -202,7 +202,7 @@
       "label": "论外二线下层",
       "definition_raw": "一阶现实无穷/绝对无限……",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -229,7 +229,7 @@
       "label": "论外二线中层～巅峰",
       "definition_raw": "小于旧神盒第四阶段的自创",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -254,7 +254,7 @@
       "label": "论外一线",
       "definition_raw": "旧神盒第四阶段",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -279,7 +279,7 @@
       "label": "论外强一线",
       "definition_raw": "旧神盒第五阶段～旧神盒第十二阶段",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -304,7 +304,7 @@
       "label": "论外超一线",
       "definition_raw": "旧神盒第无限阶段",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -329,7 +329,7 @@
       "label": "论外天花板下层",
       "definition_raw": "旧神盒深渊之底",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -354,7 +354,7 @@
       "label": "论外天花板中层",
       "definition_raw": "旧神盒永恒之核",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -379,7 +379,7 @@
       "label": "论外天花板上层",
       "definition_raw": "旧神盒原始无极天",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",
@@ -404,7 +404,7 @@
       "label": "论外天花板最上层",
       "definition_raw": "旧神盒太上超然界",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局286；第三卷PDF86；附录16（+270）",
         "global_page": 286,
         "pdf_volume": "v03",

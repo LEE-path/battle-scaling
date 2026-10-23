@@ -9,17 +9,18 @@ from __future__ import annotations
 import json
 from pathlib import Path
 import re
+from rating_modes import metadata as mode_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_ID = "high-wangba-handbook-2026-07-30"
 KINDS = {"li", "dao", "handbook_constructive", "handbook_standard", "handbook_case", "standard"}
-MODE_ALIASES = {"常态": "normal", "最高": "highest", "扒下限": "lowball"}
+MODE_ALIASES = {"综合": "integrated", "常态": "normal", "最高": "highest", "扒下限": "lowball"}
 
 
 def _blank(request, rule):
-    mode = MODE_ALIASES.get(request.get("mode", "normal"), request.get("mode", "normal"))
-    if mode not in {"normal", "highest", "lowball"}:
+    mode = MODE_ALIASES.get(request.get("mode", "integrated"), request.get("mode", "integrated"))
+    if mode not in {"integrated", "normal", "highest", "lowball"}:
         raise ValueError("invalid mode")
     assumptions = request.get("assumptions", [])
     if not isinstance(assumptions, list):
@@ -39,7 +40,7 @@ def _blank(request, rule):
             if item not in provenance:
                 provenance.append(item)
     return {"schema_version": "1.0", "engine": "battle-scaling.handbook_high",
-            "status": "underdetermined", "mode": mode, "result": {}, "steps": [],
+            "status": "underdetermined", "mode": mode, **mode_metadata(mode), "result": {}, "steps": [],
             "assumptions": list(assumptions), "mappings": [], "provenance": provenance,
             "warnings": [], "limits": [rule.get("unit_warning", "Source-specific community convention."),
                 "Source IDs and supplied facts are checked structurally, not authenticated by this offline engine."],

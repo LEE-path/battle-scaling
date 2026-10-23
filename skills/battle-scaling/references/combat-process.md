@@ -1,12 +1,18 @@
 # 有证据状态轨迹：具体战斗过程
 
+这是论战研究的 `process`。作者要求去掉报告措辞、按设定创作完整打斗并指定过程或结局时，转 [战斗写作辅助](writing-battle.md) 和 `battle.py writing`；不要通过关闭本模块证据门槛实现写作。创作正文与原作战绩分开保存。
+
+**先完成独立角色定档，再运行过程。** 各方先走[共用单人评定流程](character-rating-workflow.md)，具体综合主档与适用属性完成选档，九维卡与完整推导经宿主验收；已证下限只是依据，不能替代综合主档。输入携带`independent_ratings`和匹配配置；直接调用process也不绕过此门。缺档返回`needs_independent_rating`，不结算步骤、胜者或胜率。[完成性审核](rating-completion.md)同时约束本入口：局部下限、重要候选未审或已撤回评级均不放行。已定档后跨作品作用未决才使用下文的条件分支，不能让角色未定档混入。
+
+`standard` 独立于证据口径和呈现，默认汪吧。VSB过程改用对应特能门槛及[SBA胜利条件](vsb-combat.md)；`victory.vsb_checks` 按败方角色ID给条件／时长与来源，BFR至少一周、昏迷至少一小时、失能超过一天，死亡还需最终满足其一。步骤数不作秒数；缺证保留未决。
+
 本工具执行宿主 Agent 已写出的行动、机制判断与条件分支，检查来源可读性并结算声明的有限效果。它不自动理解原作，不预测下一招，不从攻击力推导命中率，不执行自动物理战斗仿真。输出是 `hypothetical_process`，始终 `canon_evidence=false`。本模块仅使用 Python 标准库，自行实现，未复用外部战斗项目代码。
 
 ## 先选呈现，再选证据口径
 
 - `overview` 是默认呈现：宏观获胜路径、合理胜率估计及关键条件。已有 `mode_processes` 数据并不意味着用户要求观看过程。
 - 只有用户明确要求具体行动、命中、防御、伤势和后续时才选 `process`。内部先完成宏观胜负分析及逐步机制判断，再按下述默认格式向用户展示。
-- `normal/highest/lowball` 是独立的取证口径。分别读取 `case.matchup.mode_processes[mode]`，不把最高口径等同于过程，也不把过程等同于最高口径。
+- 新任务统一使用 `mode:integrated`，读取 `case.matchup.mode_processes.integrated`。高光、通常、低谷只作为动作、状态、失误及交互条件参考，不分别生成三套角色评级或默认三局；权威规则见[综合评级](modes-scaling.md)。
 
 ## 详细打斗的默认输出：优势方的一局胜局
 
@@ -15,7 +21,7 @@
 面向用户的正文依次为：
 
 1. 简要交代双方配置、开局条件和会改变结局的必要假设。
-2. **优势方获胜的一局完整战斗过程**：用连贯战况呈现行动→发动/命中→防御/反制→伤势与状态变化→下一步，直到满足本场胜利条件；对手按其能力、已知信息与性格合理反击，不能为成全指定胜局而站桩、降智或遗忘有效能力。
+2. **优势方获胜的一局完整战斗过程**：用连贯战况呈现行动→发动/命中→防御/反制→伤势与状态变化→下一步，直到满足本场胜利条件；对手按其能力、已知信息与性格合理反击，不能为成全指定胜局而站桩、降智或遗忘有效能力。控制与抗性先按所选标准及证据结算；聪明不自带识破或抵抗改写的能力，被完全控制者只在实际残留的认知与行动范围内反应，不强制有效反击或互伤。
 3. **总体胜率或优势程度及理由**：说明双方在相同开局下的获胜倾向与关键机制，和刚才展示的这一局分开；有合理依据才给粗粒度数值或区间，不能合理量化时明确说明。
 4. **另一方是否可能获胜、如何翻盘**：交代最强可行反击路线及使主判翻转的最少条件；默认简要分析，不再展开第二篇完整战斗。
 5. 附可追溯来源、叠法及关键假设；战况内可用来源编号关联，完整轨迹表、JSON和工具审查另存供核查。
@@ -38,17 +44,19 @@
 
 ## 调用
 
-`scripts/combat_trace.py` 提供 `run(request: dict) -> dict`，不修改输入。宿主将当前模式的过程包与来源表一起传入：
+`scripts/combat_trace.py` 提供 `run(request: dict) -> dict`，不修改输入。宿主将当前综合配置的过程包与来源表一起传入：
 
 ```python
 import copy
 from combat_trace import run
 
-mode = 'normal'
+mode = 'integrated'
 request = copy.deepcopy(case['matchup']['mode_processes'][mode])
 request['sources'] = case['sources']
 request['mode'] = mode
 request['hax_checks'] = case.get('hax_checks', [])
+request['independent_ratings'] = case.get('independent_ratings', [])
+request['rating_subjects'] = case['characters']
 result = run(request)
 ```
 
@@ -58,8 +66,10 @@ result = run(request)
 
 | 字段 | 含义 |
 |---|---|
-| `mode` | normal / highest / lowball，缺省normal |
+| `mode` | integrated（默认）；旧normal / highest / lowball只兼容历史读取，不代替综合评级 |
 | `sources` | 来源对象列表或以ID为键的来源字典；需唯一ID和读取状态 |
+| `independent_ratings` | 必需：各方匹配标准、口径与配置的独立定档包，见[共用流程](character-rating-workflow.md)；不能用步骤中的胜果反过来补主档 |
+| `rating_subjects` | 可选：从CASE携带角色的id/version/state/equipment供actors匹配；直接过程也可在各actor显式给这些配置 |
 | `hax_checks` | [双上限检查](hax-ceiling.md)的`[{id,request,modes?}]`；CASE由analyze注入顶层共用检查，独立过程请求自行提供 |
 | `actors` | 至少两个角色，各有唯一id、initial，HP和恢复规则按需提供 |
 | `teams` | 可选的actor ID到team ID映射，例如`{"a":"left","ally":"left","b":"right"}`；未列角色各自独立，不将人数合成单次攻击 |
@@ -74,6 +84,9 @@ result = run(request)
 ```json
 {
   "id": "a",
+  "version": "本篇游戏版本1",
+  "state": "本场健康可战配置",
+  "equipment": [],
   "initial": {"state": "active", "hp": 10, "max_hp": 10, "resources": {"ammo": 1}},
   "hp_model": {
     "kind": "game", "zero_state": "incapacitated", "evidence_ids": ["s-game"],
@@ -118,7 +131,7 @@ activation和hit都需通过；defense也需通过且outcome=`not_prevented`。�
 
 ## 特殊能力的上限门槛
 
-特殊能力默认取自身表现内影响上限，任何模式最高不超过原世界观最强角色已达量级，详见 [规则与检查输入](hax-ceiling.md)。动作本体、activation/hit/defense、cost、counterevidence、effect和recoveries均可声明 `is_hax:true,hax_requirements:["检查ID"]`；实际依赖该特能的每层判断均绑定。动作本体无普通status仍会先做特能检查，不能仅把受阻能力改写成assumed继续执行。
+特殊能力默认取自身表现内影响上限，无论表现视角或交手条件，均不超过原世界观最强角色已达量级，详见 [规则与检查输入](hax-ceiling.md)。动作本体、activation/hit/defense、cost、counterevidence、effect和recoveries均可声明 `is_hax:true,hax_requirements:["检查ID"]`；实际依赖该特能的每层判断均绑定。动作本体无普通status仍会先做特能检查，不能仅把受阻能力改写成assumed继续执行。
 
 request的检查写明 `actor_id` 与 `target_id`。攻击动作/效果默认归属行动actor、作用于实际target；防御与反例判断默认归属防守方、作用于进攻方，需要其他归属时显式写 `ability_owner`、`affected_target`。实际动作/效果目标不能被metadata改名成低档对象来通过检查。恢复默认由本人维持并影响本人；外援、物品等在actors与配置中明确归属后独立审查。
 

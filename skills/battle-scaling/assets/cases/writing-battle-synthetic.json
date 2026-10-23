@@ -1,0 +1,573 @@
+{
+  "purpose": "writing",
+  "operation": "review",
+  "standard": "wangba",
+  "fixture_kind": "synthetic_author_settings_not_character_evidence",
+  "fighters": [
+    {
+      "id": "lan",
+      "name": "岚",
+      "persona": "谨慎的信使，优先完成任务，不为面子硬拼；不愿杀死守门人。",
+      "state": "左臂受伤，仍可奔跑；仅余三枚折光片。",
+      "ratings": {
+        "输出": "标准爆砖",
+        "体防": "普通人级",
+        "智力": "善于路线规划",
+        "战斗智商": "善于诱导目标注意",
+        "经验": "三年逃生任务",
+        "特殊技能": "折光与短距离牵引",
+        "破坏": "标准爆砖",
+        "速度": "运动员级",
+        "体量": "人类成人"
+      },
+      "skills": [
+        {
+          "id": "prism",
+          "name": "折光幕",
+          "effect": "制造持续两秒的三个可见残像，残像没有实体与伤害。",
+          "activation": "右手投出一枚折光片。",
+          "cost": "消耗一枚折光片。",
+          "range": "本人周围五米。",
+          "limits": "不能遮挡声音，不能令使用者隐形；残像位置不得超过五米。"
+        },
+        {
+          "id": "tether",
+          "name": "银线牵引",
+          "effect": "将一件可见且不超过两公斤的松散物品拉到手中。",
+          "activation": "右手瞄准，专注一秒。",
+          "cost": "一次后须间隔五秒。",
+          "range": "直线六米。",
+          "limits": "不能穿透遮挡，不能移动固定物体或活人。"
+        }
+      ],
+      "version": "synthetic-v1",
+      "equipment": []
+    },
+    {
+      "id": "shuo",
+      "name": "烁",
+      "persona": "守规矩的守门人，必须阻止信标被带出东门；不会摧毁信标或攻击已离场者。",
+      "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+      "ratings": {
+        "输出": "标准爆墙",
+        "体防": "弱爆墙",
+        "智力": "普通成人",
+        "战斗智商": "熟悉正面压制",
+        "经验": "十年守门与决斗",
+        "特殊技能": "近程冲击波",
+        "破坏": "标准爆墙",
+        "速度": "短程冲刺快于岚，重甲下转向较慢",
+        "体量": "人类成人加重甲"
+      },
+      "skills": [
+        {
+          "id": "arc",
+          "name": "赤弧斩",
+          "effect": "重剑挥出可震碎砖墙的近程弧形冲击。",
+          "activation": "站稳后双手蓄力半秒并挥剑。",
+          "cost": "挥出后须收剑回位一秒。",
+          "range": "前方三米。",
+          "limits": "不能拐弯，不能同时覆盖身后；每次仅一次挥击。"
+        }
+      ],
+      "version": "synthetic-v1",
+      "equipment": []
+    }
+  ],
+  "scene": {
+    "description": "灯光明亮的试炼厅，东门距信标底座五米。比赛目标为携信标穿过东门；双方事先同意不追击离场者。",
+    "entities": [
+      {
+        "id": "beacon",
+        "name": "信标",
+        "description": "一公斤，未固定在底座上。"
+      },
+      {
+        "id": "east_gate",
+        "name": "东门",
+        "description": "保持敞开；信标离座后有三秒铃声，铃声结束前不能封门。"
+      }
+    ]
+  },
+  "constraints": {
+    "required_skills": [
+      {
+        "fighter_id": "lan",
+        "skill_id": "prism"
+      },
+      {
+        "fighter_id": "lan",
+        "skill_id": "tether"
+      },
+      {
+        "fighter_id": "shuo",
+        "skill_id": "arc"
+      }
+    ],
+    "required_events": [
+      {
+        "id": "counter",
+        "description": "守门人识破残像的无实体性质并做出有效应对。"
+      },
+      {
+        "id": "claim",
+        "description": "岚利用银线牵引拿到未固定的信标。"
+      }
+    ],
+    "required_event_order": [
+      "counter",
+      "claim"
+    ],
+    "ending": {
+      "winner": "lan",
+      "result": "岚携信标离场，完成试炼任务。",
+      "method": "利用既定回位窗口取物并跨门；不破甲、不击倒守门人。"
+    },
+    "forbidden_changes": [
+      "不得增加技能或外援。",
+      "不得让赤弧斩无理由失准。",
+      "不得把任务获胜写成正面击败。"
+    ]
+  },
+  "draft": {
+    "text": "赤弧在石地上掀出一道火亮的裂纹。岚没有用伤臂架剑，侧身退出那三米锋线，鞋底擦着剑风划向东侧。烁的剑势落尽，立刻把剑横在信标前：他没有追逐第一道晃动的人影。\n\n岚在五米外抛起折光片。三个身影同时向门口偏转，烁听见真实脚步，转身以剑身逼住中间那一道。残像从剑上滑过，丝毫不能阻挡他的判断，却也让他的重甲必须再转半步。岚向门侧踏出，趁回位的短隙，右指已经对准那枚尚未固定的信标。\n\n银线在灯下绷亮。岚整整专注了一秒，信标跃入掌心，离座的铃声随即响起。烁向东冲出，直线冲刺比他更快；岚没有回头比试剑刃，只沿原先贴近门框的位置跨出最后两步。铃声仍在第二次回响，信标和信使已经越过东门。\n\n烁收住剑，不再跨过比赛边界。岚扶住伤臂，向他举起信标：这一局完成的是运送，不是击倒。",
+    "beats": [
+      {
+        "id": "opening",
+        "actions": [
+          {
+            "actor": "shuo",
+            "target": "lan",
+            "skill_id": "arc"
+          },
+          {
+            "actor": "lan",
+            "target": "east_gate"
+          }
+        ]
+      },
+      {
+        "id": "counter",
+        "actions": [
+          {
+            "actor": "lan",
+            "target": "shuo",
+            "skill_id": "prism"
+          },
+          {
+            "actor": "shuo",
+            "target": "lan"
+          }
+        ],
+        "fulfills": [
+          "counter"
+        ]
+      },
+      {
+        "id": "claim",
+        "actions": [
+          {
+            "actor": "lan",
+            "target": "beacon",
+            "skill_id": "tether"
+          },
+          {
+            "actor": "shuo",
+            "target": "lan"
+          }
+        ],
+        "fulfills": [
+          "claim"
+        ]
+      },
+      {
+        "id": "exit",
+        "actions": [
+          {
+            "actor": "lan",
+            "target": "east_gate"
+          },
+          {
+            "actor": "shuo",
+            "target": "east_gate"
+          }
+        ]
+      }
+    ],
+    "outcome": {
+      "winner": "lan",
+      "result": "岚携信标离场，完成试炼任务。",
+      "method": "利用既定回位窗口取物并跨门；不破甲、不击倒守门人。"
+    }
+  },
+  "sources": [
+    {
+      "id": "independent-rating-fixture",
+      "title": "Explicit invented independent rating fixture",
+      "origin": "author_settings",
+      "access": "provided",
+      "locator": "tests/rating_fixtures.py: invented fixture definitions, not canon",
+      "completion_scope": "This authored synthetic test universe consists only of the explicitly supplied participant configurations and independent ratings; their fixed attribute levels fully describe this fixture. There are no undisclosed feats or cross-version chains."
+    }
+  ],
+  "independent_ratings": [
+    {
+      "character_id": "lan",
+      "standard": "wangba",
+      "mode": "normal",
+      "version": "synthetic-v1",
+      "state": "左臂受伤，仍可奔跑；仅余三枚折光片。",
+      "equipment": [],
+      "basis_type": "author_settings",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆砖",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体防": {
+          "label": "普通人级",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "智力": {
+          "label": "善于路线规划",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "战斗智商": {
+          "label": "善于诱导目标注意",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "经验": {
+          "label": "三年逃生任务",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "特殊技能": {
+          "label": "折光与短距离牵引",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "破坏": {
+          "label": "标准爆砖",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "速度": {
+          "label": "运动员级",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体量": {
+          "label": "人类成人",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-test-author",
+        "dossier_ref": "tests/rating_fixtures.py#independent-fixture-not-canon",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "shuo",
+      "standard": "wangba",
+      "mode": "normal",
+      "version": "synthetic-v1",
+      "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+      "equipment": [],
+      "basis_type": "author_settings",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体防": {
+          "label": "弱爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "智力": {
+          "label": "普通成人",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "战斗智商": {
+          "label": "熟悉正面压制",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "经验": {
+          "label": "十年守门与决斗",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "特殊技能": {
+          "label": "近程冲击波",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "速度": {
+          "label": "短程冲刺快于岚，重甲下转向较慢",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体量": {
+          "label": "人类成人加重甲",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-test-author",
+        "dossier_ref": "tests/rating_fixtures.py#independent-fixture-not-canon",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "candidates": []
+      }
+    }
+  ],
+  "rating_execution": {
+    "schema_version": 1,
+    "standard": "wangba",
+    "mode": "normal",
+    "rating_policy": "legacy_mode_replay",
+    "legacy_mode": true,
+    "legacy_is_integrated_reassessment": false,
+    "performance_contexts": [
+      "high_showing",
+      "typical_showing",
+      "low_showing"
+    ],
+    "semantic_rating_verified": false,
+    "rules_fingerprint": "1dc514ae2045fa9304ae8518fb7e942f6dd748750d74285e9fb6f4b89673308a",
+    "artifacts": [
+      {
+        "character_id": "lan",
+        "artifact_dir": "assets/rating-fixtures/writing-battle-synthetic/1-lan",
+        "files": {
+          "report.md": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/report.md",
+            "sha256": "333f2b48d12eecc49a1343ffaa693cad06df2bb76dd945a2836fbdbb025e677b"
+          },
+          "rating.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/rating.json",
+            "sha256": "a6ee7647334ef69d745d3902dd23e86c8fbd4140760d2ef1970c77282debca0f"
+          },
+          "sources.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/sources.json",
+            "sha256": "8639b729122003a7480f50e3b606167df0e1820c25bdce236379f075bae0db43"
+          },
+          "CASE.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/CASE.json",
+            "sha256": "b364c5ba249484f36a854f264f577fb3489da0943f5d5129ea3883b0fab2cf07"
+          },
+          "analysis.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/analysis.json",
+            "sha256": "29555aa788c4bc935f99b5f54fd5feff9fbf2867c9a41eb80da0856d2ac21de4"
+          },
+          "derivations.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/derivations.json",
+            "sha256": "f09ff305fa5753849e32021a3a2e7513d138a69c86ecad0f51820d3471baa1ca"
+          },
+          "rules-snapshot.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/rules-snapshot.json",
+            "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+          },
+          "host-acceptance.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/host-acceptance.json",
+            "sha256": "2cd5e866df365e1553c2773deb045ac251c30c9e7640901aedd018ad4d3082cd"
+          }
+        },
+        "source_files": [],
+        "scope_sha256": "c5b006afb4c8429995755cba40604d70b45d3844962307dcdde812507e64fa8a",
+        "rating_sha256": "5ebd7e51cdb3e805c7ec39340592627bc612e29b355ecde7829080a6ad70dd62",
+        "sources_sha256": "c78dc2b2f512027898cbb2adf37dfa3d1d3f3e71ed5d35189291d798259a9e84",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      {
+        "character_id": "shuo",
+        "artifact_dir": "assets/rating-fixtures/writing-battle-synthetic/2-shuo",
+        "files": {
+          "report.md": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/report.md",
+            "sha256": "884ae9f5f04c4c47c69d5e8b384694026f392f510aa86fc885c9e9982e71b57a"
+          },
+          "rating.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/rating.json",
+            "sha256": "b75f1bdb3eac84c94e9d2cdb89b1330a6490eda99a0bc34b78dc0b55d5657209"
+          },
+          "sources.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/sources.json",
+            "sha256": "8639b729122003a7480f50e3b606167df0e1820c25bdce236379f075bae0db43"
+          },
+          "CASE.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/CASE.json",
+            "sha256": "916dd0c117d1c9ff27a54031822e81758000b52d955f0deeac5822751e3270c0"
+          },
+          "analysis.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/analysis.json",
+            "sha256": "bf92f07c245e015bfd9b2cc53006d4a9968bd49b4c5f553df6e22a39aec95e02"
+          },
+          "derivations.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/derivations.json",
+            "sha256": "b50eda8e73fc0835b468d0c04f1b0fdacb472fb10c0ca15485a1adada8ae5ac0"
+          },
+          "rules-snapshot.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/rules-snapshot.json",
+            "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+          },
+          "host-acceptance.json": {
+            "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/host-acceptance.json",
+            "sha256": "3a58a1b383a8cf99f8b79c2579564809840bc105d8c5894025270b6d5c13bcd6"
+          }
+        },
+        "source_files": [],
+        "scope_sha256": "e31b86e078f717819260d8320d5e93cf88f6e6688880e19b33f9e9e33f76696f",
+        "rating_sha256": "06089412b0c0e8ce219f9715d746ea03a8a4120c154781f0f17e4df7429bee3b",
+        "sources_sha256": "c78dc2b2f512027898cbb2adf37dfa3d1d3f3e71ed5d35189291d798259a9e84",
+        "reviewed_revision": "synthetic-scope-v2"
+      }
+    ],
+    "source_ids": [
+      "independent-rating-fixture"
+    ],
+    "import_sha256": "eb441eeff590d4f197cc299bcfbb8d8ec294fa7e04f9bf4c92fa8aa8ddb41fa9",
+    "validation_scope": "Local file reading, hashes, scope, source/rating import and reproducible analysis are checked. Host research, source truth, report entailment and semantic completeness remain the named host reviewer's responsibility."
+  }
+}

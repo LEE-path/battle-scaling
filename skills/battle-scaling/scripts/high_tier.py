@@ -14,8 +14,8 @@ import re
 import sys
 from typing import Any
 
-MODES = {"normal", "highest", "lowball"}
-MODE_ALIASES = {"常态": "normal", "最高": "highest", "扒下限": "lowball"}
+from rating_modes import MODES, applies, metadata as mode_metadata
+MODE_ALIASES = {"综合": "integrated", "常态": "normal", "最高": "highest", "扒下限": "lowball"}
 MATH_SOURCE = {"url": "https://people.math.harvard.edu/~wboney/fall16/settheory.pdf", "locator": "ordinal/cardinal arithmetic, cofinality", "kind": "mathematical_reference"}
 MAX_BITS = 32768
 
@@ -456,7 +456,7 @@ def _native(request: dict, out: dict, rule: dict | None):
             out["warnings"].append("unsourced_node:" + node["id"])
         op = node["operation"]
         aggressive = op == "adjective" or node.get("aggressive") is True
-        admitted = (not aggressive or out["mode"] == "highest" and bool(assumptions)) and all(eligibility[d] for d in node.get("depends_on", []))
+        admitted = (not aggressive or out["mode"] in ("integrated", "highest") and bool(assumptions)) and all(eligibility[d] for d in node.get("depends_on", []))
         eligibility[node["id"]] = admitted
         if aggressive and not admitted:
             out["warnings"].append("unadmitted_aggressive_node:" + node["id"])
@@ -564,14 +564,15 @@ def analyze(request: dict, ruleset: dict | None = None) -> dict:
     Exact means the bundled arithmetic covered the expression; conditional
     mappings remain community conventions, not mathematical combat theorems.
     """
-    out = {"schema_version": "1.0", "engine": "battle-scaling.high_tier", "status": "invalid", "mode": "normal", "result": {}, "steps": [], "assumptions": [], "mappings": [], "provenance": [], "warnings": [], "limits": []}
+    out = {"schema_version": "1.0", "engine": "battle-scaling.high_tier", "status": "invalid", "mode": "integrated", "result": {}, "steps": [], "assumptions": [], "mappings": [], "provenance": [], "warnings": [], "limits": []}
     try:
         if not isinstance(request, dict):
             raise InputError("request must be a JSON object")
-        mode = MODE_ALIASES.get(request.get("mode", "normal"), request.get("mode", "normal"))
+        mode = MODE_ALIASES.get(request.get("mode", "integrated"), request.get("mode", "integrated"))
         if mode not in MODES:
-            raise InputError("mode must be normal/highest/lowball or 常态/最高/扒下限")
+            raise InputError("mode must be integrated or explicit legacy normal/highest/lowball or 常态/最高/扒下限")
         out["mode"] = mode
+        out.update(mode_metadata(mode))
         assumptions = request.get("assumptions", [])
         if not isinstance(assumptions, list):
             raise InputError("assumptions must be a list")

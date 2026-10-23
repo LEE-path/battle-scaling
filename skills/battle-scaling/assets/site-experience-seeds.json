@@ -29,7 +29,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\CASE.json#/sources/0",
+        "locator": "LOCAL_RESEARCH_ROOT/nanming-20261019/CASE.json#/sources/0",
         "sha256": "2b02e70b0a395d01c651ca2cccfa4414d9073ea8423d01827355cb538fce9cd1",
         "checked_by": "historical_host_record"
       },
@@ -61,7 +61,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/4",
+        "locator": "LOCAL_RESEARCH_ROOT/nanming-20261019/ending-r4/run-all/sources.json#/4",
         "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
         "checked_by": "historical_host_record"
       },
@@ -95,7 +95,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/24",
+        "locator": "LOCAL_RESEARCH_ROOT/nanming-20261019/ending-r4/run-all/sources.json#/24",
         "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
         "checked_by": "historical_host_record"
       },
@@ -126,7 +126,7 @@
       "query_examples": [],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\ending-r4\\run-all\\sources.json#/25",
+        "locator": "LOCAL_RESEARCH_ROOT/nanming-20261019/ending-r4/run-all/sources.json#/25",
         "sha256": "ef502c7005728cc2baa25035285ed4e65fe88b1b2f037d692bc17d1a18870d9b",
         "checked_by": "historical_host_record"
       },
@@ -160,7 +160,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/0",
+        "locator": "LOCAL_RESEARCH_ROOT/cangyue-five-20261019/CASE.json#/sources/0",
         "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
         "checked_by": "historical_host_record"
       },
@@ -194,7 +194,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/1",
+        "locator": "LOCAL_RESEARCH_ROOT/cangyue-five-20261019/CASE.json#/sources/1",
         "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
         "checked_by": "historical_host_record"
       },
@@ -228,7 +228,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/17",
+        "locator": "LOCAL_RESEARCH_ROOT/cangyue-five-20261019/CASE.json#/sources/17",
         "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
         "checked_by": "historical_host_record"
       },
@@ -262,7 +262,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\cangyue-five-20261019\\CASE.json#/sources/11",
+        "locator": "LOCAL_RESEARCH_ROOT/cangyue-five-20261019/CASE.json#/sources/11",
         "sha256": "b47e3ea383eb82ec7200f497fd45702d71ce3b1e19df278dbda90999623a1b6f",
         "checked_by": "historical_host_record"
       },
@@ -295,7 +295,7 @@
       ],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\nanming-20261019\\CASE.json#/sources/38",
+        "locator": "LOCAL_RESEARCH_ROOT/nanming-20261019/CASE.json#/sources/38",
         "sha256": "2b02e70b0a395d01c651ca2cccfa4414d9073ea8423d01827355cb538fce9cd1",
         "checked_by": "historical_host_record"
       },
@@ -327,7 +327,7 @@
       "query_examples": [],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\vision-mcu-20261019\\deepseek-audit\\rerun\\sources.json#/4",
+        "locator": "LOCAL_RESEARCH_ROOT/vision-mcu-20261019/deepseek-audit/rerun/sources.json#/4",
         "sha256": "a64c6be024fd92d33933f576f7e6ad33f7e9a109b28ac07c1bfa01779d80bc0b",
         "checked_by": "historical_host_record"
       },
@@ -359,7 +359,7 @@
       "query_examples": [],
       "evidence": {
         "kind": "historical_ledger",
-        "locator": "D:\\Codex\\research\\battle-scaling\\vision-mcu-20261019\\CASE.json#/sources/8",
+        "locator": "LOCAL_RESEARCH_ROOT/vision-mcu-20261019/CASE.json#/sources/8",
         "sha256": "a6ab56440372cff51a3cbac8bae679a1993a9f9b9b5d7df0d80e35d991c522d9",
         "checked_by": "historical_host_record"
       },

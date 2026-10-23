@@ -16,7 +16,7 @@
 
 这些是读取策略，不是从路径推断真实身份的自动分级。原作本身若含附录、设定或后记，仍分别审查来源身份、声明性质与适用范围。用户明确指定自设/续写版本时新建版本键，不混入原版。
 
-本次 2026-10-20 实机核查的 `D:/Deepseek工作区/novel-refpack/work/我在基金会当异常/` 中，项目 `canon/00_正典边界.md` 明示工作版本仅保留第 1–37 章，原第 38 章被剔除；原 `source/raw/chunks` 仍有 38 章，部分结局纪要按 37 章重写，另有新写第 38 章。`book.py verify` 仍报告文件齐全。此例说明：**文件齐全检查通过，不等于原作结尾正确，也不等于原版已被读完。** 该书包只是本次本地审计样本，不能从此推断其他包都经过同样改写。
+本次 2026-10-20 实机核查的 `LOCAL_UPSTREAM_ROOT/novel-refpack/work/我在基金会当异常/` 中，项目 `canon/00_正典边界.md` 明示工作版本仅保留第 1–37 章，原第 38 章被剔除；原 `source/raw/chunks` 仍有 38 章，部分结局纪要按 37 章重写，另有新写第 38 章。`book.py verify` 仍报告文件齐全。此例说明：**文件齐全检查通过，不等于原作结尾正确，也不等于原版已被读完。** 该书包只是本次本地审计样本，不能从此推断其他包都经过同样改写。
 
 ## 阅读顺序与证据链
 
@@ -31,14 +31,14 @@ refpack 的 manifest `start/end` 可作为导航跨度，但 chunk 重组与 `st
 
 ## 四张内部工作表
 
-表用于本次工作文件或附录，按证据充分性展开，不要求固定条数；四表不是聊天默认全部展示。聊天按 [九属性量级卡](rating-card.md) 先给“角色（版本）量级：具体常态主档”，再给常态九维卡，最高和扒下限只在其后分析中提及；内部仍独立保留三模式审计。
+表用于本次工作文件或附录，按证据充分性展开，不要求固定条数；四表不是聊天默认全部展示。聊天按 [九属性量级卡](rating-card.md) 先给“角色（版本）量级：具体综合主档”，再给综合九维卡；高光、通常、低谷的表现和交手条件只在依据与限制中分析，不再内部另造三套角色档位，按[综合选档](modes-scaling.md)统一审查。
 
 | 表 | 记录内容 | 对接 |
 |---|---|---|
 | 破坏/作用 | 事件、实际对象与受作用部分、几何/材料/状态、机制候选、公式和参数来源、结果范围、AP/AOE/破坏范围归属、替代解释 | `sources` → `feat_reviews` → `computations/anchors`；不适用物理换算的作用保留机制描述 |
 | 能力 | 归属与配置、发动/接触/射程/持续、目标与抗性、已证影响上限、原世界最强角色已达上限、代价与失败、原文位置 | `hax_checks/hax_requirements` 及定性主张；世界观结构不替代角色已达量级 |
 | 交战 | 双方当次版本/状态/出力、动作→传递→防御→结果、伤势/恢复、克制/偷袭/环境/伙伴、可传与不可传属性 | `feat_reviews`、具体 `edges`、条件与反例；胜败不自动换成倍数或固定升降档 |
-| 最终九属性 | 输出、体防、智力、战斗智商、经验、特殊技能、破坏、速度、体量；每项常态/最高/扒下限独立，主档/来源/叠法/条件 | 同一结尾配置的量级卡；智力/经验无已核爆×口径时用有据等级，不能编造档名 |
+| 最终九属性 | 输出、体防、智力、战斗智商、经验、特殊技能、破坏、速度、体量；每项给一个综合主判，记录来源／叠法／条件和相关高光、通常、低谷表现 | 同一结尾配置的量级卡；智力/经验无已核爆×口径时用有据等级，不能编造档名 |
 
 可复制 [小说证据卡与四表模板](../assets/templates/novel-evidence-card.md)，所有占位由真实读取填写；模板本身不是原文、真实角色案例或可执行 CASE。
 
@@ -53,8 +53,8 @@ refpack 的 manifest `start/end` 可作为导航跨度，但 chunk 重组与 `st
 下面在唯一的新目录创建**合成短文夹具**，与真实书及 Skill 安装目录分开；只演示接口，不是角色取证或评级。本次升级已在隔离目录实际跑过同样五个操作：倒序搜索命中第 6、3 行，读取第 4–6 行，快照校验通过，`original_verified` 仍为 false。
 
 ```powershell
-$skillRoot = 'C:/Users/17978/.codex/skills/battle-scaling'
-$demoRoot = Join-Path 'D:/Codex/research/battle-scaling' ('novel-demo-' + [guid]::NewGuid().ToString('N'))
+$skillRoot = 'SKILL_ROOT'
+$demoRoot = Join-Path 'LOCAL_RESEARCH_ROOT' ('novel-demo-' + [guid]::NewGuid().ToString('N'))
 $inputDir = Join-Path $demoRoot 'input'
 New-Item -ItemType Directory -Path $inputDir -Force | Out-Null
 $sourcePath = Join-Path $inputDir '合成短文.md'
@@ -128,7 +128,7 @@ python -X utf8 "$skillRoot/scripts/battle.py" novel --input request.json --outpu
 已有可读正文或 refpack 时优先读取，完整论战任务包优先使用上面的自包含新库，不重跑写作流水线。以下原工程命令仅用于用户明确要求操作该工程时的兼容说明，`<...>` 必须替换，不是已执行回执：
 
 ```powershell
-# 在现有 D:/Deepseek工作区/novel-refpack 工程目录；新建写入独立书包。
+# 在现有 LOCAL_UPSTREAM_ROOT/novel-refpack 工程目录；新建写入独立书包。
 python -X utf8 tools/book.py new --source "<正文绝对路径>"
 # 上一步实际生成的 book.json 路径用于下面两步。
 python -X utf8 scripts/00_extract.py --config "<work/书包/book.json的实际路径>"
@@ -148,6 +148,6 @@ python -X utf8 tools/book.py verify --slug "<实际书包slug>"
 
 ## 吸收来源与边界
 
-借鉴用户提供的 [combat-scaling 第18章](C:/Users/17978/.dsh/skills/combat-scaling/references/18-novel-refpack.md) 的“结构拆书→关键词→回原文→四表”思想，并结合本机 [novel-refpack 审计](D:/Codex/research/battle-scaling/combat-absorption-20261020/audit/novel-refpack-audit.md) 修正正文与项目 canon 的关系。该本地审计链接只用于追溯本次升级，不是 Skill 运行依赖。
+借鉴用户提供的 combat-scaling 第18章（本地研究档案，不随公开包分发） 的“结构拆书→关键词→回原文→四表”思想，并结合本机 novel-refpack 审计（本地研究档案，不随公开包分发） 修正正文与项目 canon 的关系。该本地审计链接只用于追溯本次升级，不是 Skill 运行依赖。
 
-不移植固定证据条数、被秒降两档、被压制差一档、hax 一数量级容差、固定媒介优先级和源方量级表；保留用户确认的三模式、九属性、结尾倒查、表现优先及特能双上限。1.6.0轻量模块未复制写作流水线；1.7.0新增独立论战拆书库，保留MIT来源通知并替换摘要压缩、写作和文风验收用途，未引入上游模型。源码审查差异、许可与实际边界见 [完整流水线](novel-refpack-pipeline.md)。
+不移植固定证据条数、被秒降两档、被压制差一档、hax 一数量级容差、固定媒介优先级和源方量级表；按用户最新确认保留统一综合主档、三类表现参考、九属性、结尾倒查、表现优先及特能双上限。1.6.0轻量模块未复制写作流水线；1.7.0新增独立论战拆书库，保留MIT来源通知并替换摘要压缩、写作和文风验收用途，未引入上游模型。源码审查差异、许可与实际边界见 [完整流水线](novel-refpack-pipeline.md)。

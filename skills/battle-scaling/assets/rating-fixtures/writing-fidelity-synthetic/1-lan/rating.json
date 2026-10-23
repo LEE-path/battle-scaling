@@ -1,0 +1,125 @@
+{
+  "character_id": "lan",
+  "standard": "wangba",
+  "mode": "normal",
+  "version": "synthetic-v1",
+  "state": "左臂受伤，仍可奔跑；仅余三枚折光片。",
+  "equipment": [],
+  "basis_type": "author_settings",
+  "main_tier": {
+    "label": "标准爆墙",
+    "kind": "tier",
+    "basis": "lower_bound",
+    "evidence_ids": [
+      "independent-rating-fixture"
+    ],
+    "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+  },
+  "dimensions": {
+    "输出": {
+      "label": "标准爆砖",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "体防": {
+      "label": "普通人级",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "智力": {
+      "label": "善于路线规划",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "战斗智商": {
+      "label": "善于诱导目标注意",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "经验": {
+      "label": "三年逃生任务",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "特殊技能": {
+      "label": "折光与短距离牵引",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "破坏": {
+      "label": "标准爆砖",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "速度": {
+      "label": "运动员级",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "体量": {
+      "label": "人类成人",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    }
+  },
+  "host_review": {
+    "status": "accepted",
+    "reviewer": "synthetic-test-author",
+    "dossier_ref": "tests/rating_fixtures.py#independent-fixture-not-canon",
+    "reviewed_revision": "synthetic-scope-v2"
+  },
+  "completion_review": {
+    "status": "complete",
+    "revision": "synthetic-scope-v2",
+    "selected_basis": "mode_representative",
+    "scope_findings": {
+      "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ]
+    },
+    "selection_findings": {
+      "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ]
+    },
+    "candidates": []
+  }
+}

@@ -14,7 +14,7 @@
 | [MangaLMM／MangaVQA](https://github.com/manga109/MangaLMM) | 漫画文本、框和语境接口 | 宿主读图记录、上下文与框校核 | 运行外部模型、OCR结果直接当正确剧情 |
 | [ManGo](https://arxiv.org/abs/2608.29865) | 按问题主动选格、存线索、再决定继续/停止 | 媒体协议的主动取证循环 | 冒称自动分格或复现论文训练收益 |
 
-上表保留各项目的来源链接、吸收目的与边界。公开仓库不提供原始审计、外部源码、环境或数据归档，也不要求读者本机存在历史文件夹；确需上游材料时，按表中链接重新获取并核验其当前版本、提交号与许可。Skill只打包独立实现与必要许可，不包含社区全库、视频基准、漫画权重或全部原始数据。
+外部项目通过本页公开来源链接重新获取；不要求本机历史轻量档案存在，也不把早期下载、测试数量或complete标记当作当前安装事实。仅借鉴目的与流程，运行时不依赖它们的源码、环境、模型、权重或社区全库；许可与依赖披露以仓库的第三方说明为准。
 
 ## 按需工作链
 
@@ -25,8 +25,8 @@
 双模式可执行格式见 `assets/cases/pk-dual-presentation-synthetic.json`；它是合成规则测试，不含真实角色评级。可以对同一个文件运行：
 
 ```text
-python scripts/battle.py analyze --input assets/cases/pk-dual-presentation-synthetic.json --mode all --output RUN_DIR/overview
-python scripts/battle.py analyze --input assets/cases/pk-dual-presentation-synthetic.json --mode all --pk process --output RUN_DIR/process
+python scripts/battle.py analyze --input assets/cases/pk-dual-presentation-synthetic.json --mode integrated --output RUN_DIR/overview
+python scripts/battle.py analyze --input assets/cases/pk-dual-presentation-synthetic.json --mode integrated --pk process --output RUN_DIR/process
 ```
 
 测试能证明程序对指定输入的结算与来源约束，不能证明任意作品都已搜尽、任意物理模型都适用，或主观胜率已被实战校准。实际搜证覆盖范围必须随每次报告披露。

@@ -9,7 +9,7 @@
   "title": "汪吧量级册：主文250序数口径及论外桥",
   "standard": "handbook_ordinal",
   "source": {
-    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
     "locator": "全局250；第三卷PDF50；主文印刷250",
     "global_page": 250,
     "pdf_volume": "v03",
@@ -28,7 +28,7 @@
   },
   "sources": [
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局250；第三卷PDF50；主文印刷250",
       "global_page": 250,
       "pdf_volume": "v03",
@@ -46,7 +46,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局250；第三卷PDF50；主文印刷250",
       "global_page": 250,
       "pdf_volume": "v03",
@@ -64,7 +64,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局285；第三卷PDF85；附录15（+270）",
       "global_page": 285,
       "pdf_volume": "v03",
@@ -117,7 +117,7 @@
     "ruleset": "high-wangba-handbook-2026-07-30-new",
     "clause_id": "HR-NEW-02",
     "source": {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局285；第三卷PDF85；附录15（+270）",
       "global_page": 285,
       "pdf_volume": "v03",

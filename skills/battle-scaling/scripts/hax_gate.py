@@ -1,6 +1,7 @@
 """Shared dependency gate for sourced special-ability checks, never a tier solver."""
 from __future__ import annotations
 import copy,hashlib,json
+from rating_modes import applies
 
 STATUSES={'supported_by_packet','conditional','blocked','undetermined'}
 RANK={'not_declared':-1,'supported_by_packet':0,'conditional':1,'undetermined':2,'blocked':3}
@@ -10,21 +11,29 @@ def ids(value,name='hax_requirements'):
         raise ValueError(name+' must be a list of nonempty check IDs')
     return list(dict.fromkeys(value))
 
-def build_checks(entries,sources,mode):
-    if mode not in ('normal','highest','lowball'):raise ValueError('invalid hax evidence mode')
+def build_checks(entries,sources,mode,standard='wangba'):
+    from standards import normalize
+    standard=normalize(standard)
+    if mode not in ('integrated','normal','highest','lowball'):raise ValueError('invalid hax evidence mode')
     if not isinstance(entries,list) or len(entries)>2048:raise ValueError('hax_checks must be a bounded list')
     outputs={};seen=set()
     for entry in entries:
         if not isinstance(entry,dict) or not isinstance(entry.get('id'),str) or not entry['id'] or entry['id'] in seen:
             raise ValueError('hax checks need unique nonempty IDs')
         seen.add(entry['id'])
-        modes=entry.get('modes',['normal','highest','lowball'])
-        if not isinstance(modes,list) or not modes or any(m not in ('normal','highest','lowball') for m in modes):
-            raise ValueError('hax check modes must select normal/highest/lowball')
+        modes=entry.get('modes',['integrated','normal','highest','lowball'])
+        if not isinstance(modes,list) or not modes or any(m not in ('integrated','normal','highest','lowball') for m in modes):
+            raise ValueError('hax check modes must select integrated or explicit legacy lenses')
         if not isinstance(entry.get('request'),dict):raise ValueError('hax check needs a request object')
-        if mode not in modes:continue
-        from hax_policy import run
+        if not applies(entry, mode):continue
+        if standard=='vsb':
+            from vsb_hax_policy import run
+        else:
+            from hax_policy import run
         request={**copy.deepcopy(entry['request']),'sources':copy.deepcopy(sources),'mode':mode}
+        if request.get('standard') is not None and normalize(request['standard'])!=standard:
+            raise ValueError('A nested hax request cannot change the selected standard')
+        request['standard']=standard
         output=run(request)
         if output.get('status') not in STATUSES:raise ValueError('invalid hax policy output')
         outputs[entry['id']]={**output,'scope':{key:request.get(key) for key in ('actor_id','target_id','ability_id')},

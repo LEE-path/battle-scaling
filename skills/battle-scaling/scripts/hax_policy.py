@@ -7,7 +7,7 @@ import math
 from pk_modes import READABLE
 
 POLICY_ID = 'user_confirmed_hax_ceiling_20261020'
-MODES = {'normal', 'highest', 'lowball'}
+from rating_modes import MODES, applies, metadata as mode_metadata
 CHECKS = ('object', 'compatibility', 'activation', 'resistance')
 AXIS = 'affected_entity_tier'
 VALIDATION_SCOPE = (
@@ -29,7 +29,7 @@ def _number(value):
 class _Audit:
     def __init__(self, request):
         self.request = request
-        self.mode = request.get('mode', 'normal')
+        self.mode = request.get('mode', 'integrated')
         self.source_map = {}
         self.used = set()
         self.reasons = []
@@ -78,7 +78,7 @@ class _Audit:
                 any(not isinstance(mode, str) or mode not in MODES for mode in modes)):
             self.gap(path + '.modes', 'Provide a nonempty list of valid evidence modes.')
             return False
-        if self.mode not in modes:
+        if not applies(node, self.mode):
             self.gap(path + '.modes', f'Provide evidence admitted in mode {self.mode}.')
             return False
         return True
@@ -256,7 +256,7 @@ def run(request) -> dict:
         request = {}
     audit = _Audit(request)
     if not isinstance(audit.mode, str) or audit.mode not in MODES:
-        audit.gap('mode', 'Use normal, highest, or lowball; evidence modes never override a known ceiling.')
+        audit.gap('mode', 'Use integrated (or explicit legacy replay); no lens overrides a known ceiling.')
     if not _text(request.get('ability_id')):
         audit.gap('ability_id', 'Identify the exact ability whose own supported effect ceiling is being tested.')
     assumptions = request.get('assumptions', [])
@@ -280,7 +280,7 @@ def run(request) -> dict:
         'within_world_ceiling': within_world,
         'assumptions': list(dict.fromkeys(audit.assumptions)), 'reasons': audit.reasons,
         'source_ids': used, 'research_tasks': audit.tasks, 'policy_id': POLICY_ID,
-        'policy_identity': 'user_confirmed_policy', 'mode': audit.mode,
+        'policy_identity': 'user_confirmed_policy', 'mode': audit.mode, **mode_metadata(audit.mode),
         'ability_id': request.get('ability_id'), 'validation_scope': VALIDATION_SCOPE,
         'source_access_checked': True, 'original_source_verified': False,
         'input_declares_primary_verified': bool(used) and all(

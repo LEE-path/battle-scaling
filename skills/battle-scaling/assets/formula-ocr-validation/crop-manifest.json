@@ -19,7 +19,7 @@
       1628
     ],
     "native_page_image_sha256": "e5f450e9e0c317f022f71c9f09a6cc24f18882fe5b330d4069117dbfd37ee119",
-    "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\inertia-p021-crop.png",
+    "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/inertia-p021-crop.png",
     "crop_sha256": "0c3a2113bc9f477709d023fff8216f736c993fa87f2ebfa4c9597e144c62bcca",
     "crop_dimensions_px": [
       240,
@@ -47,7 +47,7 @@
       1628
     ],
     "native_page_image_sha256": "d4661837c887489fc8eea0dc81e89072ecec04d30e904bc4e0e511e48067ba97",
-    "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\adiabatic-p150-crop.png",
+    "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/adiabatic-p150-crop.png",
     "crop_sha256": "3b4487775aba480e4a26e4c70c5c698aad651d4f6d50bc4df99174f4c3cbb4b0",
     "crop_dimensions_px": [
       630,
@@ -75,7 +75,7 @@
       1726
     ],
     "native_page_image_sha256": "4d2a76c471a5ed60b00dc76e05b202d07621e95d9d0cb615ea8e341bb87b1ec9",
-    "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\tke-p200-crop.png",
+    "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/tke-p200-crop.png",
     "crop_sha256": "1255b3ee13ba1b9be63e9671e8fa1149d648371c34265cf0d87aa7ef8dfa08f8",
     "crop_dimensions_px": [
       790,

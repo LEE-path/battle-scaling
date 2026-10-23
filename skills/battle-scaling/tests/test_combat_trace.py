@@ -5,6 +5,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from combat_trace import run
+from rating_fixtures import rated_fixture, rated_call
+
+# Explicit synthetic independent dossiers precede unrelated combat regressions.
+run = rated_call(run)
 
 
 def fact(**extra):
@@ -27,6 +31,7 @@ def attack(who='a', target='b', amount=10, **extra):
             'effects': [fact(type='damage', target=target, amount=amount)], **extra}
 
 
+@rated_fixture
 def request(actions=None, steps=None):
     return {'mode': 'normal',
             'sources': [{'id': 's-game', 'origin': 'synthetic', 'access': 'provided',

@@ -211,6 +211,7 @@ class StructureTests(unittest.TestCase):
         self.assertEqual(r["result"]["combat_properties"]["fusion_state"][0]["status"], "candidate_unsourced")
         req = self.identity_case()
         req["nodes"][0].update(operation="adjective", aggressive=True, assumptions=["strong interpretation"])
+        req["mode"] = "normal"  # Explicit historical filtering regression
         r = ht.analyze(req)
         self.assertEqual(r["result"]["combat_properties"]["state_identity"][0]["status"], "candidate_unsourced")
 

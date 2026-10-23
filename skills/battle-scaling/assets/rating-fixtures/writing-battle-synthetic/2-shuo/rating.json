@@ -1,0 +1,125 @@
+{
+  "character_id": "shuo",
+  "standard": "wangba",
+  "mode": "normal",
+  "version": "synthetic-v1",
+  "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+  "equipment": [],
+  "basis_type": "author_settings",
+  "main_tier": {
+    "label": "标准爆墙",
+    "kind": "tier",
+    "basis": "lower_bound",
+    "evidence_ids": [
+      "independent-rating-fixture"
+    ],
+    "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+  },
+  "dimensions": {
+    "输出": {
+      "label": "标准爆墙",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "体防": {
+      "label": "弱爆墙",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "智力": {
+      "label": "普通成人",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "战斗智商": {
+      "label": "熟悉正面压制",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "经验": {
+      "label": "十年守门与决斗",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "特殊技能": {
+      "label": "近程冲击波",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "破坏": {
+      "label": "标准爆墙",
+      "kind": "tier",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "速度": {
+      "label": "短程冲刺快于岚，重甲下转向较慢",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    },
+    "体量": {
+      "label": "人类成人加重甲",
+      "kind": "level",
+      "basis": "lower_bound",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+    }
+  },
+  "host_review": {
+    "status": "accepted",
+    "reviewer": "synthetic-test-author",
+    "dossier_ref": "tests/rating_fixtures.py#independent-fixture-not-canon",
+    "reviewed_revision": "synthetic-scope-v2"
+  },
+  "completion_review": {
+    "status": "complete",
+    "revision": "synthetic-scope-v2",
+    "selected_basis": "mode_representative",
+    "scope_findings": {
+      "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ]
+    },
+    "selection_findings": {
+      "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ]
+    },
+    "candidates": []
+  }
+}

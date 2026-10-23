@@ -325,7 +325,7 @@
     {
       "id": "wangba-handbook-20260730-v01",
       "name": "汪峰在吧量级参考册 v01",
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页1～100.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页1～100.pdf",
       "sha256": "a59d7420f00d2367d53c4240d5f8a3c51091c61b6a9041167b0650b4d4d8356e",
       "pages": 100,
       "nature": "user_supplied_scanned_reference",
@@ -341,7 +341,7 @@
     {
       "id": "wangba-handbook-20260730-v02",
       "name": "汪峰在吧量级参考册 v02",
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页101～200.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页101～200.pdf",
       "sha256": "3bc95ae1131d2badef533f23757aedc44edfc62b549a82038b77dd7e6111e564",
       "pages": 100,
       "nature": "user_supplied_scanned_reference",
@@ -357,7 +357,7 @@
     {
       "id": "wangba-handbook-20260730-v03",
       "name": "汪峰在吧量级参考册 v03",
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
       "pages": 100,
       "nature": "user_supplied_scanned_reference",
@@ -373,7 +373,7 @@
     {
       "id": "wangba-handbook-20260730-v04",
       "name": "汪峰在吧量级参考册 v04",
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页300+.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页300+.pdf",
       "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
       "pages": 10,
       "nature": "user_supplied_scanned_reference",

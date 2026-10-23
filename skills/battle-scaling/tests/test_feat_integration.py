@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from evidence import analyze_case,validate_case
 from battle import main,export_case
+from rating_fixtures import legacy_analyze_case as analyze_case  # Explicit legacy regression
 
 
 def case():

@@ -9,7 +9,7 @@
   "title": "汪吧量级册：构造圈新标",
   "standard": "constructive_new",
   "source": {
-    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
     "locator": "全局285；第三卷PDF85；附录15（+270）",
     "global_page": 285,
     "pdf_volume": "v03",
@@ -28,7 +28,7 @@
   },
   "sources": [
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局285；第三卷PDF85；附录15（+270）",
       "global_page": 285,
       "pdf_volume": "v03",
@@ -52,7 +52,7 @@
       "label": "论外三线（论外守门员）",
       "definition_raw": "阿列夫数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -79,7 +79,7 @@
       "label": "论外二线",
       "definition_raw": "不可达基数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -104,7 +104,7 @@
       "label": "论外一线",
       "definition_raw": "巨大基数～伯克利基数",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -129,7 +129,7 @@
       "label": "论外超一线",
       "definition_raw": "终极L",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -154,7 +154,7 @@
       "label": "论外天花板下层",
       "definition_raw": "脱殊复宇宙",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -181,7 +181,7 @@
       "label": "论外天花板中层",
       "definition_raw": "复复宇宙楼",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -208,7 +208,7 @@
       "label": "论外天花板上层",
       "definition_raw": "◇V-logic（逻辑多元）",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",
@@ -235,7 +235,7 @@
       "label": "论外天花板最上",
       "definition_raw": ">V-Logic即可",
       "source": {
-        "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
         "locator": "全局285；第三卷PDF85；附录15（+270）",
         "global_page": 285,
         "pdf_volume": "v03",

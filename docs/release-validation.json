@@ -1,0 +1,28 @@
+{
+  "release": "v1.12.2",
+  "date": "2026-10-23",
+  "scope": "Current public package; Git history excluded",
+  "checks": {
+    "skill_unittest": {
+      "run": 848,
+      "skipped": 2,
+      "failures": 0,
+      "errors": 0
+    },
+    "novel_refpack_unittest": {
+      "run": 24,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0
+    },
+    "skill_frontmatter": "valid",
+    "static_privacy_secret_signature_scan": "no hits",
+    "markdown_file_targets": "no missing targets",
+    "forbidden_source_media_models_private_db": "none included"
+  },
+  "notes": [
+    "Optional original OCR and handbook-source integration tests remain skipped without user-supplied authorized originals.",
+    "Tests check implementation behavior; they do not certify every future character rating or legal clearance.",
+    "Public synthetic writing fixtures were rebuilt through the production compute/analyze/export/assemble path after sanitization; no admission gate was weakened."
+  ]
+}

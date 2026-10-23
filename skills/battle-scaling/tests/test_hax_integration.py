@@ -3,8 +3,14 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from evidence import analyze_case,validate_case
+from rating_fixtures import rated_fixture, rated_call
+analyze_case = rated_call(analyze_case)
 from battle import main,render_report,export_case,compute_case
+from rating_fixtures import legacy_analyze_case
+analyze_case = rated_call(legacy_analyze_case)  # Historical mode with real fixture ratings
+from rating_fixtures import legacy_compute_case as compute_case
 
+@rated_fixture
 def case(rank=2):
     request=json.loads((ROOT/'assets/cases/hax-ceiling-synthetic.json').read_text(encoding='utf-8'))
     request.update(actor_id='a',target_id='b')

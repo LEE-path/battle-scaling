@@ -1,0 +1,225 @@
+{
+  "normal": {
+    "conclusions": [],
+    "excluded": [],
+    "processed_derivations": 0,
+    "search_truncated": false,
+    "rating_policy": "legacy_mode_replay",
+    "legacy_mode": true,
+    "legacy_is_integrated_reassessment": false,
+    "performance_contexts": [
+      "high_showing",
+      "typical_showing",
+      "low_showing"
+    ],
+    "semantic_rating_verified": false,
+    "selection": "highest_of_repeated_credible_showings",
+    "hax_reviews": {},
+    "hax_review_coverage": {
+      "checked_ids": [],
+      "unreviewed_ids": [
+        "rating-0",
+        "rating-1",
+        "rating-2",
+        "rating-3",
+        "rating-4",
+        "rating-5",
+        "rating-6",
+        "rating-7",
+        "rating-8",
+        "rating-9"
+      ],
+      "scope": "Only explicitly marked/dependent entries reviewed; undeclared abilities are not certified."
+    },
+    "feat_reviews": {},
+    "feat_review_coverage": {
+      "reviewed_anchor_ids": [],
+      "unreviewed_anchor_ids": [],
+      "scope": "Only declared review dependencies checked; no semantic source authentication"
+    },
+    "hax_computations": [],
+    "high_results": [],
+    "qualitative_claims": [
+      {
+        "id": "rating-0",
+        "subject": "lan",
+        "attribute": "main_tier",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-1",
+        "subject": "lan",
+        "attribute": "输出",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "标准爆砖",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-2",
+        "subject": "lan",
+        "attribute": "体防",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "普通人级",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-3",
+        "subject": "lan",
+        "attribute": "智力",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "善于路线规划",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-4",
+        "subject": "lan",
+        "attribute": "战斗智商",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "善于诱导目标注意",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-5",
+        "subject": "lan",
+        "attribute": "经验",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "三年逃生任务",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-6",
+        "subject": "lan",
+        "attribute": "特殊技能",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "折光与短距离牵引",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-7",
+        "subject": "lan",
+        "attribute": "破坏",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "标准爆砖",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-8",
+        "subject": "lan",
+        "attribute": "速度",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "运动员级",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      {
+        "id": "rating-9",
+        "subject": "lan",
+        "attribute": "体量",
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "assessment": {
+          "label": "人类成人",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      }
+    ]
+  }
+}

@@ -7,13 +7,15 @@
       "id": "a",
       "name": "合成角色A",
       "version": "规则测试v1",
-      "state": "满游戏HP"
+      "state": "满游戏HP",
+      "equipment": []
     },
     {
       "id": "b",
       "name": "合成角色B",
       "version": "规则测试v1",
-      "state": "满游戏HP"
+      "state": "满游戏HP",
+      "equipment": []
     }
   ],
   "sources": [
@@ -24,6 +26,15 @@
       "access": "provided",
       "locator": "本CASE内自创规则1-3",
       "exact_text": "规则1：双方各10游戏HP，普通有效攻击造成10HP伤害，0HP失能。规则2：本测试无恢复与外援。规则3：对方失能且自己可行动即胜，双方同时失能算互败。先手和命中未给定。"
+    },
+    {
+      "id": "demo-independent-ratings",
+      "title": "本演示新增的明确独立角色设定",
+      "origin": "synthetic",
+      "access": "provided",
+      "locator": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+      "text": "为演示1.10.8前置接口，明确双方三模式独立主档和输出、体防、破坏均为标准爆墙，其他九维按包中标签给定。此为新增合成设定，没有由游戏HP换算能量，不是原作事实或真实角色评级。",
+      "completion_scope": "This authored synthetic test universe consists only of the explicitly supplied participant configurations and independent ratings; their fixed attribute levels fully describe this fixture. There are no undisclosed feats or cross-version chains."
     }
   ],
   "anchors": [],
@@ -420,5 +431,757 @@
   "limitations": [
     "不能将游戏HP换为焦耳、肉身承伤或汪吧量级",
     "单条过程分支不产生胜率"
+  ],
+  "independent_ratings": [
+    {
+      "character_id": "a",
+      "standard": "wangba",
+      "mode": "normal",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "a",
+      "standard": "wangba",
+      "mode": "highest",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For highest mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "a",
+      "standard": "wangba",
+      "mode": "lowball",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For lowball mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "b",
+      "standard": "wangba",
+      "mode": "normal",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "b",
+      "standard": "wangba",
+      "mode": "highest",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For highest mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    },
+    {
+      "character_id": "b",
+      "standard": "wangba",
+      "mode": "lowball",
+      "version": "规则测试v1",
+      "state": "满游戏HP",
+      "equipment": [],
+      "basis_type": "canon",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "demo-independent-ratings"
+        ],
+        "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体防": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "智力": {
+          "label": "普通智力",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "战斗智商": {
+          "label": "基础战斗训练",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "经验": {
+          "label": "具有一次规则测试交锋经验",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "特殊技能": {
+          "label": "无特殊技能，仅有合成普通攻击",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "速度": {
+          "label": "普通成年人的移动与反应",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        },
+        "体量": {
+          "label": "成年男性尺度",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ],
+          "reasoning": "本演示的明确合成独立设定；与后续PK结果无关，未从HP、胜负或速度反推。"
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-example-author",
+        "dossier_ref": "assets/cases/pk-dual-presentation-synthetic.json#independent_ratings",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For lowball mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "demo-independent-ratings"
+          ]
+        },
+        "candidates": []
+      }
+    }
   ]
 }

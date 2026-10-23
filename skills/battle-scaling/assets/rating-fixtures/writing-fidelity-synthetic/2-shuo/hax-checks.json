@@ -1,0 +1,24 @@
+{
+  "normal": {
+    "checks": {},
+    "rating_coverage": {
+      "checked_ids": [],
+      "unreviewed_ids": [
+        "rating-0",
+        "rating-1",
+        "rating-2",
+        "rating-3",
+        "rating-4",
+        "rating-5",
+        "rating-6",
+        "rating-7",
+        "rating-8",
+        "rating-9"
+      ],
+      "scope": "Only explicitly marked/dependent entries reviewed; undeclared abilities are not certified."
+    },
+    "matchup_coverage": {},
+    "process_admissions": [],
+    "process_coverage": {}
+  }
+}

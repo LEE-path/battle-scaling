@@ -1,0 +1,101 @@
+{
+  "case_id": "authored-fixture-lan",
+  "files": {
+    "analysis.json": {
+      "bytes": 177499,
+      "sha256": "29555aa788c4bc935f99b5f54fd5feff9fbf2867c9a41eb80da0856d2ac21de4"
+    },
+    "sources.json": {
+      "bytes": 537,
+      "sha256": "8639b729122003a7480f50e3b606167df0e1820c25bdce236379f075bae0db43"
+    },
+    "derivations.json": {
+      "bytes": 7421,
+      "sha256": "f09ff305fa5753849e32021a3a2e7513d138a69c86ecad0f51820d3471baa1ca"
+    },
+    "report.md": {
+      "bytes": 2097,
+      "sha256": "333f2b48d12eecc49a1343ffaa693cad06df2bb76dd945a2836fbdbb025e677b"
+    },
+    "run-ledger.json": {
+      "bytes": 696,
+      "sha256": "24c0d044aa3f5694405494bdcbba19535167ae202e10c6bfe440b42fdd8d323e"
+    },
+    "hax-checks.json": {
+      "bytes": 548,
+      "sha256": "2a72d40e79b266462b488f38c2872d3f88e85e06b9f1fcb8b4d60d0a2c1f4a09"
+    },
+    "rules-snapshot.json": {
+      "bytes": 153325,
+      "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+    },
+    "CASE.json": {
+      "bytes": 11783,
+      "sha256": "b364c5ba249484f36a854f264f577fb3489da0943f5d5129ea3883b0fab2cf07"
+    },
+    "rating.json": {
+      "bytes": 4213,
+      "sha256": "a6ee7647334ef69d745d3902dd23e86c8fbd4140760d2ef1970c77282debca0f"
+    },
+    "host-acceptance.json": {
+      "bytes": 812,
+      "sha256": "2cd5e866df365e1553c2773deb045ac251c30c9e7640901aedd018ad4d3082cd"
+    }
+  },
+  "ruleset_profile": {
+    "standard": "wangba",
+    "title": "用户提供2026.7.30汪峰在吧量级参考册快照",
+    "finite_ruleset": "wangba-handbook-2026-07-30-finite.json",
+    "high_default": "high-wangba-handbook-2026-07-30",
+    "high_by_kind": {
+      "li": "high-wangba-handbook-2026-07-30-li",
+      "dao": "high-wangba-handbook-2026-07-30-dao",
+      "handbook_constructive": "high-wangba-handbook-2026-07-30-new"
+    },
+    "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
+    "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
+    "id": "wangba-handbook-2026-07-30",
+    "selection_source": "explicit_standard",
+    "profile_configuration": {
+      "path": "SKILL_ROOT/rulesets/profiles.json",
+      "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
+      "bytes": 1846
+    },
+    "finite_rule_snapshot": {
+      "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
+      "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
+      "bytes": 131945
+    },
+    "document_snapshot": {
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "combined_source_sha256": "9d9440127d33496ef2f9c2c7323755aa9ca6a62b937bdf3c8ff24525e6a0741a",
+      "corpus_sha256": "df0f64e7320e83d39338aff996475e041642a341ff4f768191564eaf35c8119a",
+      "sources": [
+        {
+          "volume": "v01",
+          "filename": "汪峰在吧量级册，页1～100.pdf",
+          "sha256": "a59d7420f00d2367d53c4240d5f8a3c51091c61b6a9041167b0650b4d4d8356e",
+          "pages": 100
+        },
+        {
+          "volume": "v02",
+          "filename": "汪峰在吧量级册，页101～200.pdf",
+          "sha256": "3bc95ae1131d2badef533f23757aedc44edfc62b549a82038b77dd7e6111e564",
+          "pages": 100
+        },
+        {
+          "volume": "v03",
+          "filename": "汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "pages": 100
+        },
+        {
+          "volume": "v04",
+          "filename": "汪峰在吧量级册，页300+.pdf",
+          "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
+          "pages": 10
+        }
+      ]
+    }
+  }
+}

@@ -2,6 +2,10 @@
 
 以下协议是宿主适配约定，不声称当前对话已经提供了同名工具。适配器必须把真实工具名、实际能力和调用结果写入记录；工具不存在时返回缺口。脚本不能直接调用模型对话工具，也不能靠写一个端点名就获得搜索或视觉能力。
 
+## 调用与输出
+
+按[执行效率规则](execution-efficiency.md)按需调用，复用未变化的成功分析；不为每个语义判断启动命令。有`--output`的统一CLI默认打印短摘要，完整结果保存到文件；需要原始完整stdout时加`--full-output`，无`--output`时保持完整输出。摘要不代替读取相关错误详情、关键来源或宿主实际验收。
+
 ## 通用封套
 
 ```json
@@ -89,9 +93,9 @@ HTTP(S)要求公网且不含URL凭据；每次跳转重新校验，最多5次。
 
 ## high：高层结构与规则映射
 
-输入契约：原作构造节点、`number_domain/background_axioms/base_object/successor_rule/limit_rule/operation_scope/native_transcendence`、角色归属、具名规则与版本、模式、证据及假设。输出契约：类型检查、作品内关系、可证明数学结论、条件桥接、规则映射、未定项与反例。
+新请求使用`mode:integrated`；旧模式只作兼容读取，不自动升级综合完成。输入契约：原作构造节点、`number_domain/background_axioms/base_object/successor_rule/limit_rule/operation_scope/native_transcendence`、角色归属、具名规则与版本、模式、证据及假设。输出契约：类型检查、作品内关系、可证明数学结论、条件桥接、规则映射、未定项与反例。
 
-当前统一入口为 `python scripts/battle.py high --input INPUT.json`，规则清单为 `python scripts/battle.py rules`。不承诺把所有自定义构造化成单一数字。序数、基数、真类、理论/模型和作品自定义对象不能无类型混算；持续递归不能自动推出阿列夫一或不可达。最高模式允许强解释并展示前提，扒下限允许反向链但仍要声明适用状态。
+当前统一入口为 `python scripts/battle.py high --input INPUT.json`，规则清单为 `python scripts/battle.py rules`。不承诺把所有自定义构造化成单一数字。序数、基数、真类、理论/模型和作品自定义对象不能无类型混算；持续递归不能自动推出阿列夫一或不可达。按[综合选档](modes-scaling.md)同时审查有据强解释和反向限制链，声明适用状态与具体条件；不再分别输出最高／常态／扒下限角色档位。
 
 ## graph：证据与属性归属
 
@@ -101,6 +105,6 @@ HTTP(S)要求公网且不含URL凭据；每次跳转重新校验，最多5次。
 
 ## report：复核报告
 
-输入契约：固定任务范围、规则版本、三模式纳入表、来源包、计算/构造结果、证据图、假设及阻断状态。输出：可阅读报告及机器可读清单，包含结论、支持链、反例、撤销假设后的变化、文件链接和未完成项。
+输入契约：固定任务范围、规则版本、统一综合候选采纳表、来源包、计算/构造结果、证据图、假设及阻断状态。输出：可阅读报告及机器可读清单，包含结论、支持链、反例、撤销假设后的变化、文件链接和未完成项。
 
-当前统一报告入口为 `python scripts/battle.py analyze --input CASE.json --mode all --output DIR`；预检使用 `python scripts/battle.py doctor`，媒体能力使用 `python scripts/battle.py media --input INPUT.json`，来源也可经 `python scripts/battle.py sources --url URL --output DIR` 或 `--file PATH` 调用。正文必须区分“原作已确认”“有依据的估计”“指定规则下的映射”“待核验”。自动报告只呈现已取得的数据，不能补造缺失场景或把 `blocked/partial/needs_extractor` 改写成完整核验。
+当前统一报告入口为 `python scripts/battle.py analyze --input CASE.json --mode integrated --output DIR`；预检使用 `python scripts/battle.py doctor`，媒体能力使用 `python scripts/battle.py media --input INPUT.json`，来源也可经 `python scripts/battle.py sources --url URL --output DIR` 或 `--file PATH` 调用。正文必须区分“原作已确认”“有依据的估计”“指定规则下的映射”“待核验”。自动报告只呈现已取得的数据，不能补造缺失场景或把 `blocked/partial/needs_extractor` 改写成完整核验。

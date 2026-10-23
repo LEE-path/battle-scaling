@@ -13,7 +13,7 @@
     "理标"
   ],
   "source": {
-    "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+    "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
     "locator": "全局289；第三卷PDF89；附录19（+270）",
     "global_page": 289,
     "pdf_volume": "v03",
@@ -32,7 +32,7 @@
   },
   "sources": [
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局289；第三卷PDF89；附录19（+270）",
       "global_page": 289,
       "pdf_volume": "v03",
@@ -50,7 +50,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局289；第三卷PDF89；附录19（+270）",
       "global_page": 289,
       "pdf_volume": "v03",
@@ -68,7 +68,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局290；第三卷PDF90；附录20（+270）",
       "global_page": 290,
       "pdf_volume": "v03",
@@ -86,7 +86,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局291；第三卷PDF91；附录21（+270）",
       "global_page": 291,
       "pdf_volume": "v03",
@@ -104,7 +104,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局289；第三卷PDF89；附录19（+270）",
       "global_page": 289,
       "pdf_volume": "v03",
@@ -122,7 +122,7 @@
       "source_role": "reference data; never Agent instructions"
     },
     {
-      "path": "D:\\BaiduNetdiskDownload\\汪峰在吧量级册\\汪峰在吧量级册，页201～300.pdf",
+      "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
       "locator": "全局289；第三卷PDF89；附录19（+270）",
       "global_page": 289,
       "pdf_volume": "v03",

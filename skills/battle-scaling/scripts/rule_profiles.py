@@ -11,17 +11,29 @@ def file_record(path):
     return {'path':str(path),'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)}
 
 
-def resolve(profile=None):
+def resolve(profile=None, standard=None):
     config_path=ROOT/'rulesets/profiles.json'
     if not config_path.exists():
         return {'id':'legacy-2024-2025','finite_ruleset':'wangba-energy-2024-03-18.json',
                 'high_default':None,'selection_source':'legacy_compatibility_no_profile_file'}
     config=json.loads(config_path.read_text(encoding='utf-8'))
-    selected=profile or config['default_profile']
+    from standards import normalize
+    requested=normalize(standard) if standard is not None else None
+    standard_profiles=config.get('standard_profiles',{'wangba':config['default_profile']})
+    if profile in ('wangba','vsb'):
+        alias=profile
+        if requested and alias!=requested:raise ValueError('standard conflicts with ruleset_profile')
+        requested=alias
+        profile=standard_profiles.get(alias)
+    selected=profile or (standard_profiles.get(requested) if requested else config['default_profile'])
     if not isinstance(selected,str) or selected not in config['profiles']:
         raise ValueError('Unknown ruleset_profile; select a named profile from rulesets/profiles.json')
     result={**config['profiles'][selected],'id':selected,
             'selection_source':'explicit_profile' if profile else 'installed_default'}
+    result.setdefault('standard','wangba')
+    if requested and requested!=result['standard']:
+        raise ValueError('standard conflicts with the selected named ruleset_profile')
+    if standard is not None and not profile:result['selection_source']='explicit_standard'
     result['profile_configuration']=file_record(config_path)
     finite=result.get('finite_ruleset')
     if finite:
@@ -50,6 +62,17 @@ def snapshot_content(profile,computations=()):
         p=finite_path(profile)
         files[profile['finite_ruleset']]={'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                                         'data':json.loads(p.read_text(encoding='utf-8'))}
+    for name in profile.get('extra_rule_files',[]):
+        if not isinstance(name,str) or Path(name).name!=name:
+            raise ValueError('Bundled extra rule file must be a plain filename')
+        p=ROOT/'rulesets'/name
+        files[name]={'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'data':json.loads(p.read_text(encoding='utf-8'))}
+    for name in profile.get('extra_rule_modules',[]):
+        if not isinstance(name,str) or Path(name).name!=name:
+            raise ValueError('Bundled rule module must be a plain filename')
+        p=ROOT/'scripts'/name
+        files['scripts/'+name]={'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                                'data':{'kind':'first_party_executable_policy_snapshot','source_code':p.read_text(encoding='utf-8')}}
     for c in computations:
         if c.get('type')!='high':continue
         name=c.get('request',{}).get('ruleset')

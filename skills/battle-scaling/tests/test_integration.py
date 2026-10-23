@@ -13,8 +13,13 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from battle import compute_case, main, render_report
 from evidence import analyze_case
+from rating_fixtures import rated_fixture
+from rating_fixtures import legacy_analyze_case as analyze_case  # Explicit legacy regression
+from rating_fixtures import legacy_compute_case as compute_case
 
 
+
+@rated_fixture
 def packet():
     return {'schema_version': 1, 'case_id': 'integration-synthetic', 'fixture_kind': 'synthetic',
             'characters': [{'id': 'a', 'name': 'A', 'version': 'one', 'state': 'base'}],

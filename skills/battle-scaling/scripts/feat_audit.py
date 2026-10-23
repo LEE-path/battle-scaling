@@ -8,7 +8,7 @@ import json
 from pk_modes import READABLE
 
 USES = ('observed_output', 'material_model', 'full_effort', 'state_transfer', 'upper_bound')
-MODES = {'normal', 'highest', 'lowball'}
+from rating_modes import MODES, applies, metadata as mode_metadata
 BASES = {'observed', 'measured', 'documented', 'estimated', 'assumed',
          'host_interpretation', 'author_statement', 'narrator_statement',
          'character_statement', 'reasonable_inference', 'unknown'}
@@ -58,9 +58,9 @@ def _merge(*items):
 class _Review:
     def __init__(self, request):
         self.request = copy.deepcopy(_object(request, 'request'))
-        self.mode = request.get('mode', 'normal')
+        self.mode = request.get('mode', 'integrated')
         if not isinstance(self.mode, str) or self.mode not in MODES:
-            raise ValueError('mode must be normal, highest or lowball')
+            raise ValueError('mode must be integrated (legacy normal/highest/lowball are replay only)')
         self.uses = _strings(request.get('requested_uses', ['observed_output']), 'requested_uses')
         if not self.uses or any(x not in USES for x in self.uses):
             raise ValueError('requested_uses must name at least one supported use')
@@ -334,7 +334,7 @@ class _Review:
         for use in self.uses:
             result = handlers[use]()
             admissions[use] = {key: value for key, value in result.items() if not key.startswith('_')}
-            if self.mode == 'highest' and result['status'] == 'undetermined' and result['_unknown']:
+            if self.mode in ('integrated', 'highest') and result['status'] == 'undetermined' and result['_unknown']:
                 branches.append({'use': use, 'status': 'conditional', 'admitted': False,
                                  'requires': result['_unknown'],
                                  'assumptions': ['Assume ' + path + ' is established in the stated scope.'
@@ -342,7 +342,7 @@ class _Review:
                                  'reason': 'Separate hypothetical branch; does not replace the admission or any known false premise.'})
         status = max((item['status'] for item in admissions.values()), key=RANK.get)
         return {'schema_version': 1, 'engine': 'battle-scaling.feat_audit',
-                'operation': 'feat_review', 'id': self.request.get('id'), 'mode': self.mode,
+                'operation': 'feat_review', 'id': self.request.get('id'), 'mode': self.mode, **mode_metadata(self.mode),
                 'status': status, 'requested_uses': self.uses, 'admissions': admissions,
                 'event': self.request.get('event', {}), 'ledger': self.ledger,
                 'recorded_context': {key: self.request[key] for key in

@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "reviewer": "synthetic-test-author",
+  "reviewed_revision": "synthetic-scope-v2",
+  "fixture_kind": "explicit_authored_test_acceptance_not_canon",
+  "report_sha256": "333f2b48d12eecc49a1343ffaa693cad06df2bb76dd945a2836fbdbb025e677b",
+  "rating_sha256": "a6ee7647334ef69d745d3902dd23e86c8fbd4140760d2ef1970c77282debca0f",
+  "sources_sha256": "8639b729122003a7480f50e3b606167df0e1820c25bdce236379f075bae0db43",
+  "case_sha256": "b364c5ba249484f36a854f264f577fb3489da0943f5d5129ea3883b0fab2cf07",
+  "analysis_sha256": "29555aa788c4bc935f99b5f54fd5feff9fbf2867c9a41eb80da0856d2ac21de4",
+  "derivations_sha256": "f09ff305fa5753849e32021a3a2e7513d138a69c86ecad0f51820d3471baa1ca",
+  "rules_snapshot_sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+}

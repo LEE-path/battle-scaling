@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "case_id": "wangba-vsb-switch-synthetic",
+  "fixture_kind": "synthetic",
+  "characters": [
+    {
+      "id": "a",
+      "name": "合成角色A",
+      "version": "标准切换测试v1",
+      "state": "通常可战合成状态"
+    },
+    {
+      "id": "b",
+      "name": "合成角色B",
+      "version": "标准切换测试v1",
+      "state": "通常可战合成状态"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fixture",
+      "title": "自创测试条件，不是任何原作表现",
+      "origin": "synthetic",
+      "access": "provided",
+      "locator": "本CASE规则1至4",
+      "exact_text": "合成规则1：A单次2000J，B单次1500J。规则2：A战斗速度343m/s、等效举起1000kg，彼此不推导。规则3：本分支指定A成功发动并击中，B未防住而昏迷3600秒，无恢复或延迟反击。规则4：规则3只定义所示单局，不证明总体胜率。"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a-output",
+      "subject": "a",
+      "attribute": "attack_energy",
+      "kind": "repeated_feat",
+      "quantity": {
+        "value": 2000,
+        "unit": "J"
+      },
+      "evidence_ids": [
+        "fixture"
+      ]
+    },
+    {
+      "id": "b-output",
+      "subject": "b",
+      "attribute": "attack_energy",
+      "kind": "repeated_feat",
+      "quantity": {
+        "value": 1500,
+        "unit": "J"
+      },
+      "evidence_ids": [
+        "fixture"
+      ]
+    },
+    {
+      "id": "a-speed",
+      "subject": "a",
+      "attribute": "combat_speed",
+      "kind": "repeated_feat",
+      "quantity": {
+        "value": 343,
+        "unit": "m/s"
+      },
+      "evidence_ids": [
+        "fixture"
+      ]
+    },
+    {
+      "id": "a-lifting",
+      "subject": "a",
+      "attribute": "lifting_strength",
+      "kind": "repeated_feat",
+      "quantity": {
+        "value": 1000,
+        "unit": "kg"
+      },
+      "evidence_ids": [
+        "fixture"
+      ]
+    }
+  ],
+  "edges": [],
+  "matchup": {
+    "teams": [
+      "a",
+      "b"
+    ],
+    "win_paths": [
+      {
+        "id": "given-ko-branch",
+        "winner": "a",
+        "evidence_ids": [
+          "fixture"
+        ],
+        "requirements": [
+          {
+            "status": "supported",
+            "evidence_ids": [
+              "fixture"
+            ]
+          }
+        ],
+        "vsb_victory": {
+          "condition": "knockout",
+          "status": "supported",
+          "duration_seconds": 3600,
+          "evidence_ids": [
+            "fixture"
+          ]
+        }
+      }
+    ],
+    "mode_assessments": {
+      "normal": {
+        "status": "conditional",
+        "winner": "a",
+        "reasoning": "仅合成规则给定的A获胜分支；不是对总体胜率的证明。",
+        "evidence_ids": [
+          "fixture"
+        ],
+        "critical_assumptions": [
+          "分支已指定成功发动、命中及失能3600秒；没有真实角色语义。"
+        ],
+        "vsb_victory": {
+          "condition": "knockout",
+          "status": "supported",
+          "duration_seconds": 3600,
+          "evidence_ids": [
+            "fixture"
+          ]
+        }
+      },
+      "highest": {
+        "status": "conditional",
+        "winner": "a",
+        "reasoning": "仅合成规则给定的A获胜分支；不是对总体胜率的证明。",
+        "evidence_ids": [
+          "fixture"
+        ],
+        "critical_assumptions": [
+          "分支已指定成功发动、命中及失能3600秒；没有真实角色语义。"
+        ],
+        "vsb_victory": {
+          "condition": "knockout",
+          "status": "supported",
+          "duration_seconds": 3600,
+          "evidence_ids": [
+            "fixture"
+          ]
+        }
+      },
+      "lowball": {
+        "status": "conditional",
+        "winner": "a",
+        "reasoning": "仅合成规则给定的A获胜分支；不是对总体胜率的证明。",
+        "evidence_ids": [
+          "fixture"
+        ],
+        "critical_assumptions": [
+          "分支已指定成功发动、命中及失能3600秒；没有真实角色语义。"
+        ],
+        "vsb_victory": {
+          "condition": "knockout",
+          "status": "supported",
+          "duration_seconds": 3600,
+          "evidence_ids": [
+            "fixture"
+          ]
+        }
+      }
+    },
+    "mode_processes": {
+      "normal": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active"
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "single-synthetic-event-not-one-second",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "合成规则指定的一次击倒",
+                "activation": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "hit": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "defense": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "status": "supported",
+                    "evidence_ids": [
+                      "fixture"
+                    ],
+                    "type": "state",
+                    "target": "b",
+                    "state": "incapacitated"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "vsb_checks": {
+            "b": {
+              "condition": "knockout",
+              "status": "supported",
+              "duration_seconds": 3600,
+              "evidence_ids": [
+                "fixture"
+              ]
+            }
+          }
+        },
+        "include_narrative": true
+      },
+      "highest": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active"
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "single-synthetic-event-not-one-second",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "合成规则指定的一次击倒",
+                "activation": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "hit": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "defense": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "status": "supported",
+                    "evidence_ids": [
+                      "fixture"
+                    ],
+                    "type": "state",
+                    "target": "b",
+                    "state": "incapacitated"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "vsb_checks": {
+            "b": {
+              "condition": "knockout",
+              "status": "supported",
+              "duration_seconds": 3600,
+              "evidence_ids": [
+                "fixture"
+              ]
+            }
+          }
+        },
+        "include_narrative": true
+      },
+      "lowball": {
+        "actors": [
+          {
+            "id": "a",
+            "initial": {
+              "state": "active"
+            }
+          },
+          {
+            "id": "b",
+            "initial": {
+              "state": "active"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "id": "single-synthetic-event-not-one-second",
+            "actions": [
+              {
+                "actor": "a",
+                "target": "b",
+                "intent": "合成规则指定的一次击倒",
+                "activation": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "hit": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ]
+                },
+                "defense": {
+                  "status": "supported",
+                  "evidence_ids": [
+                    "fixture"
+                  ],
+                  "outcome": "not_prevented"
+                },
+                "effects": [
+                  {
+                    "status": "supported",
+                    "evidence_ids": [
+                      "fixture"
+                    ],
+                    "type": "state",
+                    "target": "b",
+                    "state": "incapacitated"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "victory": {
+          "defeated_states": [
+            "incapacitated"
+          ],
+          "vsb_checks": {
+            "b": {
+              "condition": "knockout",
+              "status": "supported",
+              "duration_seconds": 3600,
+              "evidence_ids": [
+                "fixture"
+              ]
+            }
+          }
+        },
+        "include_narrative": true
+      }
+    }
+  },
+  "limitations": [
+    "仅验证规则路由、属性定档和过程审核；不能作原作证据或真实角色胜率。"
+  ]
+}

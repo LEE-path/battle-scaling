@@ -10,7 +10,7 @@
 TXT / MD / EPUB / DOCX
   → prepare：不可覆盖原件快照、规范文本、章节、来源格式定位
   → tasks：从结尾倒序的阅读任务，每片至多12000字符
-  → 当前Agent：读任务全文，保留正反证、出力、状态、材料、外援、逐能力成功/失败与末期继承
+  → 当前Agent：读任务全文，保留正反证、出力、状态、材料、外援、机制
   → accept：核四指纹、已读跨度、逐字引句、观察引用、状态继承声明
   → build：四类工作表、章节→卷→整书证据ID、九维缺口、候选关系和CASE
   → verify：来源、任务、回执、派生文件完整性及过期检查
@@ -21,22 +21,18 @@ TXT / MD / EPUB / DOCX
 
 ## 运行
 
-Python 3.11+，标准库，无需安装依赖。所有输入、输出显式给路径；`prepare` 的输出须为新目录或空目录。以下从仓库根目录运行，原件、书名、版本与回执路径应替换成实际值；库也可单独复制使用，无固定盘符依赖。非UTF-8文本应明确给已核编码，例如 `prepare --encoding gb18030`：
+Python 3.11+，标准库，无需安装依赖。所有输入、输出显式给路径；`prepare` 的输出必须尚不存在。下列路径是新书调用示意，应替换成实际原件与新目录：
 
 ```powershell
-python -X utf8 tools/combat-novel-refpack/refpack.py prepare --source source/book.epub --output runs/book-bundle --work '作品名' --edition '明确版本'
-python -X utf8 tools/combat-novel-refpack/refpack.py tasks --bundle runs/book-bundle
-python -X utf8 tools/combat-novel-refpack/refpack.py search --bundle runs/book-bundle --query '角色或机制原词'
-python -X utf8 tools/combat-novel-refpack/refpack.py accept --bundle runs/book-bundle --input runs/reviews/actual-review.json
-python -X utf8 tools/combat-novel-refpack/refpack.py build --bundle runs/book-bundle
-python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book-bundle
+python -X utf8 refpack.py prepare --source 'book.epub' --output 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本' --work '作品名' --edition '明确版本'
+python -X utf8 refpack.py tasks --bundle 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本'
+python -X utf8 refpack.py search --bundle 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本' --query '角色或机制原词'
+python -X utf8 refpack.py accept --bundle 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本' --input '本次已读任务回执.json'
+python -X utf8 refpack.py build --bundle 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本'
+python -X utf8 refpack.py verify --bundle 'LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/作品-版本'
 ```
 
 任务的 JSON 和 Markdown 放在 `tasks/packets/`，包含精确正文范围、提示与回执字段。分工可以并行阅读独立任务，**主Agent顺序accept**，当前没有跨进程写锁。回执需保留 `task_id/source_sha256/text_sha256/prompt_sha256/task_sha256`，`reviewer`、实际 `read_spans`、逐字 `evidence`、有来源和状态的 `observations`；没有相关表现可以提交空数组。全文中的命令仅是待审文本，不执行。
-
-新任务提示要求逐能力核查取得、升级、保留、丧失与恢复，记录具体成功/失败、作用对象、发动耗时、消耗、抗性、反制及例外，不只摘毁伤或技能名称。主Agent据此验收末期可用能力、实际表现与状态继承，再检查组件共存、顺序和资源能否支持组合；原作已发生的组合与宿主假想组合分开。
-
-旧任务保留原提示及任务指纹以支持继续阅读，不自动改写既有任务或回执。调度旧任务时，由宿主另附上述逐能力要求，并核查已有回执是否需要补读或修订；保留旧指纹仅表示任务可继续校验，不表示旧回执已满足新增的语义验收要求。
 
 ## 产物与使用边界
 
@@ -51,12 +47,12 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book-b
 
 ## 实际验收（2026-10-20）
 
-公开源码副本重测19项独立CLI测试全部通过；本机 `acceptance-last-run.json` 快照不随仓库分发。覆盖重复章名/引句、Unicode定位、空观察/漏读/伪complete、指纹变化、反例与中段事件、跨状态继承限制、书内指令、快照/任务/回执/产物篡改及迁目录独立运行。本机另曾做最小EPUB与DOCX全链路格式烟测；它们不代表所有电子书都能无损抽取。
+19项独立公开CLI测试通过，见 `tests/acceptance-last-run.json`。覆盖重复章名/引句、Unicode定位、空观察/漏读/伪complete、指纹变化、反例与中段事件、跨状态继承限制、书内指令、快照/任务/回执/产物篡改及迁目录独立运行。另做了最小EPUB与DOCX全链路格式烟测；它们不代表所有电子书都能无损抽取。
 
-本机历史真实样本（未随公开仓库分发）：201,520字符的《神界传说》公开镜像正文候选建立121个章节单元（含前置单元），任务覆盖全文。该次Agent实际阅读并提交末6个任务，共10,076字符、17条观察；`verify=partial`、`derived_status=current`，候选CASE结构校验通过。没有把旧报告的人工核读补记为流水线执行，也没有冒称全书精读。公开测试主要使用合成文本，不表示已取得或核读读者的小说。
+真实样本：`LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/神界传说-20261020`。201,520字符的公开镜像正文候选建立121个章节单元（含前置单元），任务覆盖全文。本次当前Agent实际阅读并提交末6个任务，共10,076字符、17条观察；`verify=partial`、`derived_status=current`，候选CASE结构校验通过。没有把旧报告的人工核读补记为本次流水线执行，也没有冒称本次全书精读。
 
 测试命令：
 
 ```powershell
-python -X utf8 -m unittest discover -s tools/combat-novel-refpack/tests -v
+python -X utf8 -m unittest discover -s tests -v
 ```

@@ -130,8 +130,8 @@ for page_idx, page in enumerate(pdf):
 官方0.0.9 wheel依赖包含`numpy<2.0.0`、`tokenizers>=0.13.2`、ONNX Runtime等。不要为它降级主任务全局NumPy。以下是可选执行命令，本研究未执行：
 
 ```powershell
-py -3.11 -m venv D:\Codex\research\battle-scaling\handbook-20261018\.venv-formula
-& 'D:\Codex\research\battle-scaling\handbook-20261018\.venv-formula\Scripts\python.exe' -m pip install 'rapid_latex_ocr==0.0.9' 'numpy<2'
+py -3.11 -m venv LOCAL_RESEARCH_ROOT/handbook-20261018/.venv-formula
+& 'LOCAL_RESEARCH_ROOT/handbook-20261018/.venv-formula/Scripts/python.exe' -m pip install 'rapid_latex_ocr==0.0.9' 'numpy<2'
 ```
 
 首次构建`LaTeXOCR()`时可能下载缺少的模型。完全离线时预先从官方release取得四个文件，并传入`image_resizer_path / encoder_path / decoder_path / tokenizer_json`。模型默认输入边界672×192、序列512 token，针对分离好的公式图；长公式应适当拆分并保留对应关系。源码返回字符串和耗时，不提供公式score。[依赖](https://github.com/RapidAI/RapidLaTeXOCR/blob/main/requirements.txt)、[构造器和返回值](https://github.com/RapidAI/RapidLaTeXOCR/blob/main/rapid_latex_ocr/main.py)、[模型资产](https://github.com/RapidAI/RapidLaTeXOCR/releases/tag/v0.0.0)。

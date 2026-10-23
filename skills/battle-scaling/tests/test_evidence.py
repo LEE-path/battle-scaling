@@ -4,8 +4,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from evidence import analyze_case, validate_case, classify_energy
+from rating_fixtures import rated_fixture
+from rating_fixtures import legacy_analyze_case as analyze_case  # Explicit legacy regression
 
 
+
+@rated_fixture
 def packet():
     return {
         'schema_version': 1, 'case_id': 'regression-only', 'fixture_kind': 'synthetic',

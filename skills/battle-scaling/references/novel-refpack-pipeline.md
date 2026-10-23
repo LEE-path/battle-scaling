@@ -127,16 +127,16 @@ assumptions: 字符串数组，省略时[]
 2. 需要物理计算时才按 [物理模型](physics-models.md) 查参数、写公式与误差；力不直接变能量，自由观察不静默变焦耳。
 3. 特能按 [双上限](hax-ceiling.md) 另审对象、机制、表现上限及原世界最强角色已达上限。
 4. 关系叠法核实际交锋、属性与状态桥，再生成合法anchors/edges；高层结构按具名规则审查。
-5. 默认先给“角色（版本）量级：弱/标准/超＋爆X”的**常态**主档，再给九维及出处和叠法；最高和扒下限放后续分析。候选CASE结构通过不表示量级已证。
+5. 默认先给“角色（版本）量级：弱/标准/超＋爆X”的**统一综合主档**，再给综合九维及出处和叠法；高光、通常、低谷表现及条件差异放后续依据和限制中，不再分别生成角色档位。完整对象、外层关系及重要候选须按[综合流程](modes-scaling.md)处理，局部已证地板不能冒充综合主档。候选CASE结构通过不表示量级已证。
 
 ## 覆盖与实测边界
 
 `coverage`分别给 `indexed_characters/read_characters/read_fraction/task_count/accepted_task_count/complete_task_count/read_spans/chapters`。只有全部任务有complete回执、声明跨度覆盖全文才返回complete；完整包仍标 `semantic_read_verified:false`，因为程序无法验证理解。每层覆盖以真实回执为准，不用关键词命中、摘要长度或生成文件数代替。
 
-2026-10-20真实样本《神界传说》本地正文候选201,520字符，121任务；宿主实际接受末尾6任务、10,076字符、17条观察。build及CASE结构验证通过，verify为 **partial/current**，`semantic_read_verified:false`。这是尾段实测，**不是全书精读完成，也不是对前次唐三量级的自动认证**。实书记录在 `D:/论战专用/03_作品与原始证据/小说证据库/神界传说-20261020/`，该本机路径只作追溯，不是工具运行依赖。
+2026-10-20真实样本《神界传说》本地正文候选201,520字符，121任务；宿主实际接受末尾6任务、10,076字符、17条观察。build及CASE结构验证通过，verify为 **partial/current**，`semantic_read_verified:false`。这是尾段实测，**不是全书精读完成，也不是对前次唐三量级的自动认证**。实书记录在 `LOCAL_BATTLE_WORKSPACE/03_作品与原始证据/小说证据库/神界传说-20261020/`，该本机路径只作追溯，不是工具运行依赖。
 
 ## 上游与许可
 
-借鉴原novel-refpack的单书隔离、结构抽取、边界切片和独立任务思想；替换写作摘要压缩、文风例子及“文件齐全即完成”用途。主参考工程保持原样。本地源码逐项审查及来源指纹见 `D:/论战专用/05_工具源码/combat-novel-refpack/UPSTREAM.md`；该归档只用于来源追踪，正常运行只依赖本Skill内的脚本和显式输入。
+借鉴原novel-refpack的单书隔离、结构抽取、边界切片和独立任务思想；替换写作摘要压缩、文风例子及“文件齐全即完成”用途。主参考工程保持原样。本地源码逐项审查及来源指纹见 `LOCAL_BATTLE_WORKSPACE/05_工具源码/combat-novel-refpack/UPSTREAM.md`；该归档只用于来源追踪，正常运行只依赖本Skill内的脚本和显式输入。
 
 保留 [novel-refpack MIT通知](../assets/licenses/novel-refpack-MIT.txt)。软件许可证不覆盖所处理小说的著作权。未移植上游工作canon、私有书包、凭据、命令配置、续写或模型，不改变既有汪吧规则。

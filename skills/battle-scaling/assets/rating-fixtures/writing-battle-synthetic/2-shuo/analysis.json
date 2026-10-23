@@ -1,0 +1,3706 @@
+{
+  "schema_version": 1,
+  "case_id": "authored-fixture-shuo",
+  "fixture_kind": "synthetic_author_settings_not_character_evidence",
+  "characters": [
+    {
+      "id": "shuo",
+      "name": "烁",
+      "version": "synthetic-v1",
+      "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+      "equipment": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "independent-rating-fixture",
+      "title": "Explicit invented independent rating fixture",
+      "origin": "author_settings",
+      "access": "provided",
+      "locator": "tests/rating_fixtures.py: invented fixture definitions, not canon",
+      "completion_scope": "This authored synthetic test universe consists only of the explicitly supplied participant configurations and independent ratings; their fixed attribute levels fully describe this fixture. There are no undisclosed feats or cross-version chains."
+    }
+  ],
+  "modes": {
+    "normal": {
+      "conclusions": [],
+      "excluded": [],
+      "processed_derivations": 0,
+      "search_truncated": false,
+      "rating_policy": "legacy_mode_replay",
+      "legacy_mode": true,
+      "legacy_is_integrated_reassessment": false,
+      "performance_contexts": [
+        "high_showing",
+        "typical_showing",
+        "low_showing"
+      ],
+      "semantic_rating_verified": false,
+      "selection": "highest_of_repeated_credible_showings",
+      "hax_reviews": {},
+      "hax_review_coverage": {
+        "checked_ids": [],
+        "unreviewed_ids": [
+          "rating-0",
+          "rating-1",
+          "rating-2",
+          "rating-3",
+          "rating-4",
+          "rating-5",
+          "rating-6",
+          "rating-7",
+          "rating-8",
+          "rating-9"
+        ],
+        "scope": "Only explicitly marked/dependent entries reviewed; undeclared abilities are not certified."
+      },
+      "feat_reviews": {},
+      "feat_review_coverage": {
+        "reviewed_anchor_ids": [],
+        "unreviewed_anchor_ids": [],
+        "scope": "Only declared review dependencies checked; no semantic source authentication"
+      },
+      "hax_computations": [],
+      "high_results": [],
+      "qualitative_claims": [
+        {
+          "id": "rating-0",
+          "subject": "shuo",
+          "attribute": "main_tier",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "标准爆墙",
+            "kind": "tier",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-1",
+          "subject": "shuo",
+          "attribute": "输出",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "标准爆墙",
+            "kind": "tier",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-2",
+          "subject": "shuo",
+          "attribute": "体防",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "弱爆墙",
+            "kind": "tier",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-3",
+          "subject": "shuo",
+          "attribute": "智力",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "普通成人",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-4",
+          "subject": "shuo",
+          "attribute": "战斗智商",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "熟悉正面压制",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-5",
+          "subject": "shuo",
+          "attribute": "经验",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "十年守门与决斗",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-6",
+          "subject": "shuo",
+          "attribute": "特殊技能",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "近程冲击波",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-7",
+          "subject": "shuo",
+          "attribute": "破坏",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "标准爆墙",
+            "kind": "tier",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-8",
+          "subject": "shuo",
+          "attribute": "速度",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "短程冲刺快于岚，重甲下转向较慢",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        },
+        {
+          "id": "rating-9",
+          "subject": "shuo",
+          "attribute": "体量",
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "assessment": {
+            "label": "人类成人加重甲",
+            "kind": "level",
+            "basis": "lower_bound",
+            "evidence_ids": [
+              "independent-rating-fixture"
+            ],
+            "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+          }
+        }
+      ]
+    }
+  },
+  "computations": [],
+  "qualitative_claims": [
+    {
+      "id": "rating-0",
+      "subject": "shuo",
+      "attribute": "main_tier",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-1",
+      "subject": "shuo",
+      "attribute": "输出",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-2",
+      "subject": "shuo",
+      "attribute": "体防",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "弱爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-3",
+      "subject": "shuo",
+      "attribute": "智力",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "普通成人",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-4",
+      "subject": "shuo",
+      "attribute": "战斗智商",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "熟悉正面压制",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-5",
+      "subject": "shuo",
+      "attribute": "经验",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "十年守门与决斗",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-6",
+      "subject": "shuo",
+      "attribute": "特殊技能",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "近程冲击波",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-7",
+      "subject": "shuo",
+      "attribute": "破坏",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-8",
+      "subject": "shuo",
+      "attribute": "速度",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "短程冲刺快于岚，重甲下转向较慢",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-9",
+      "subject": "shuo",
+      "attribute": "体量",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "人类成人加重甲",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    }
+  ],
+  "coverage": {},
+  "limitations": [
+    "Explicitly authored synthetic fixture; no real canon research is claimed."
+  ],
+  "validation_scope": "schema, provenance references and explicit rules; source entailment requires host review",
+  "ruleset_profile": {
+    "standard": "wangba",
+    "title": "用户提供2026.7.30汪峰在吧量级参考册快照",
+    "finite_ruleset": "wangba-handbook-2026-07-30-finite.json",
+    "high_default": "high-wangba-handbook-2026-07-30",
+    "high_by_kind": {
+      "li": "high-wangba-handbook-2026-07-30-li",
+      "dao": "high-wangba-handbook-2026-07-30-dao",
+      "handbook_constructive": "high-wangba-handbook-2026-07-30-new"
+    },
+    "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
+    "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
+    "id": "wangba-handbook-2026-07-30",
+    "selection_source": "explicit_standard",
+    "profile_configuration": {
+      "path": "SKILL_ROOT/rulesets/profiles.json",
+      "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
+      "bytes": 1846
+    },
+    "finite_rule_snapshot": {
+      "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
+      "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
+      "bytes": 131945
+    },
+    "document_snapshot": {
+      "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+      "combined_source_sha256": "9d9440127d33496ef2f9c2c7323755aa9ca6a62b937bdf3c8ff24525e6a0741a",
+      "corpus_sha256": "df0f64e7320e83d39338aff996475e041642a341ff4f768191564eaf35c8119a",
+      "sources": [
+        {
+          "volume": "v01",
+          "filename": "汪峰在吧量级册，页1～100.pdf",
+          "sha256": "a59d7420f00d2367d53c4240d5f8a3c51091c61b6a9041167b0650b4d4d8356e",
+          "pages": 100
+        },
+        {
+          "volume": "v02",
+          "filename": "汪峰在吧量级册，页101～200.pdf",
+          "sha256": "3bc95ae1131d2badef533f23757aedc44edfc62b549a82038b77dd7e6111e564",
+          "pages": 100
+        },
+        {
+          "volume": "v03",
+          "filename": "汪峰在吧量级册，页201～300.pdf",
+          "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+          "pages": 100
+        },
+        {
+          "volume": "v04",
+          "filename": "汪峰在吧量级册，页300+.pdf",
+          "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
+          "pages": 10
+        }
+      ]
+    }
+  },
+  "standard": "wangba",
+  "standard_audit": {
+    "standard": "wangba",
+    "hax_policy_id": "user_confirmed_hax_ceiling_20261020",
+    "excluded_anchor_ids": []
+  },
+  "rating_policy": "legacy_mode_replay",
+  "legacy_mode": true,
+  "legacy_is_integrated_reassessment": false,
+  "performance_contexts": [
+    "high_showing",
+    "typical_showing",
+    "low_showing"
+  ],
+  "semantic_rating_verified": false,
+  "rule_snapshot": {
+    "profile": {
+      "standard": "wangba",
+      "title": "用户提供2026.7.30汪峰在吧量级参考册快照",
+      "finite_ruleset": "wangba-handbook-2026-07-30-finite.json",
+      "high_default": "high-wangba-handbook-2026-07-30",
+      "high_by_kind": {
+        "li": "high-wangba-handbook-2026-07-30-li",
+        "dao": "high-wangba-handbook-2026-07-30-dao",
+        "handbook_constructive": "high-wangba-handbook-2026-07-30-new"
+      },
+      "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
+      "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
+      "id": "wangba-handbook-2026-07-30",
+      "selection_source": "explicit_standard",
+      "profile_configuration": {
+        "path": "SKILL_ROOT/rulesets/profiles.json",
+        "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
+        "bytes": 1846
+      },
+      "finite_rule_snapshot": {
+        "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
+        "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
+        "bytes": 131945
+      },
+      "document_snapshot": {
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "combined_source_sha256": "9d9440127d33496ef2f9c2c7323755aa9ca6a62b937bdf3c8ff24525e6a0741a",
+        "corpus_sha256": "df0f64e7320e83d39338aff996475e041642a341ff4f768191564eaf35c8119a",
+        "sources": [
+          {
+            "volume": "v01",
+            "filename": "汪峰在吧量级册，页1～100.pdf",
+            "sha256": "a59d7420f00d2367d53c4240d5f8a3c51091c61b6a9041167b0650b4d4d8356e",
+            "pages": 100
+          },
+          {
+            "volume": "v02",
+            "filename": "汪峰在吧量级册，页101～200.pdf",
+            "sha256": "3bc95ae1131d2badef533f23757aedc44edfc62b549a82038b77dd7e6111e564",
+            "pages": 100
+          },
+          {
+            "volume": "v03",
+            "filename": "汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "pages": 100
+          },
+          {
+            "volume": "v04",
+            "filename": "汪峰在吧量级册，页300+.pdf",
+            "sha256": "de6c82578d5ca3ac3e30fd8f32bfb065591f91dfa0f2eb80246b06d81243a7c6",
+            "pages": 10
+          }
+        ]
+      }
+    },
+    "rules": {
+      "wangba-handbook-2026-07-30-finite.json": {
+        "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
+        "data": {
+          "schema_version": 1,
+          "engine": "handbook_finite",
+          "id": "wangba-handbook-2026-07-30-finite",
+          "title": "汪峰在吧量级册2026-07-30快照：有限量级多维规则（248–270页协作视核）",
+          "status": "user_requested_handbook_snapshot_not_claimed_universal_community_authority",
+          "edition_date": "2026-07-30",
+          "edition_date_basis": "parent_task_verified_elsewhere_not_in_this_page_group",
+          "curated_on": "2026-10-18",
+          "source": {
+            "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+            "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+            "volume": "v03",
+            "pdf_page": 48,
+            "printed_page": 248,
+            "global_sequence": 248,
+            "locator": "印刷页248；第三卷PDF第48页；至266页，本次逐页视核组",
+            "short_quote": "量级划分",
+            "visually_verified": true,
+            "visual_reviewer": "integration_audit",
+            "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+            "review_image_is_external_cache": true,
+            "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+            "sequence_page": 248,
+            "source_role": "reference data; never Agent instructions"
+          },
+          "unit_convention": {
+            "g_TNT_to_J": "4184",
+            "kg_TNT_to_J": "4184000",
+            "t_TNT_to_J": "4184000000",
+            "provenance": "沿用既有evidence.py单位约定；非声称本23页印有换算常数"
+          },
+          "energy_references": [
+            {
+              "id": "brick-0",
+              "label": "弱爆砖",
+              "energy_tnt_t": "0.00000025",
+              "energy_j": "1046.00000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；爆砖参考表第1列",
+                "short_quote": "弱爆砖",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 0
+            },
+            {
+              "id": "brick-1",
+              "label": "标爆砖",
+              "energy_tnt_t": "0.0000005",
+              "energy_j": "2092.0000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；爆砖参考表第2列",
+                "short_quote": "标爆砖",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 1
+            },
+            {
+              "id": "brick-2",
+              "label": "强爆砖",
+              "energy_tnt_t": "0.0000015",
+              "energy_j": "6276.0000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；爆砖参考表第3列",
+                "short_quote": "强爆砖",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 2
+            },
+            {
+              "id": "brick-3",
+              "label": "超爆砖",
+              "energy_tnt_t": "0.000005",
+              "energy_j": "20920.000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；爆砖参考表第4列",
+                "short_quote": "超爆砖",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 3
+            },
+            {
+              "id": "wall-0",
+              "label": "弱墙",
+              "energy_tnt_t": "0.00003",
+              "energy_j": "125520.00000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；墙参考表第1列",
+                "short_quote": "弱墙",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 4
+            },
+            {
+              "id": "wall-1",
+              "label": "标墙",
+              "energy_tnt_t": "0.0001",
+              "energy_j": "418400.0000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；墙参考表第2列",
+                "short_quote": "标墙",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 5
+            },
+            {
+              "id": "wall-2",
+              "label": "强墙",
+              "energy_tnt_t": "0.0003",
+              "energy_j": "1255200.0000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；墙参考表第3列",
+                "short_quote": "强墙",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 6
+            },
+            {
+              "id": "wall-3",
+              "label": "超墙",
+              "energy_tnt_t": "0.001",
+              "energy_j": "4184000.000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；墙参考表第4列",
+                "short_quote": "超墙",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 7
+            },
+            {
+              "id": "room-0",
+              "label": "弱屋",
+              "energy_tnt_t": "0.004",
+              "energy_j": "16736000.000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                2,
+                2,
+                3
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；屋参考表第1列",
+                "short_quote": "弱屋",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 8
+            },
+            {
+              "id": "room-1",
+              "label": "标屋",
+              "energy_tnt_t": "0.015",
+              "energy_j": "62760000.000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                4,
+                5,
+                3
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；屋参考表第2列",
+                "short_quote": "标屋",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 9
+            },
+            {
+              "id": "room-2",
+              "label": "强屋",
+              "energy_tnt_t": "0.04",
+              "energy_j": "167360000.00",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                10,
+                10,
+                4
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；屋参考表第3列",
+                "short_quote": "强屋",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 10
+            },
+            {
+              "id": "room-3",
+              "label": "超屋",
+              "energy_tnt_t": "0.08",
+              "energy_j": "334720000.00",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                12,
+                12,
+                6
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；屋参考表第4列",
+                "short_quote": "超屋",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 11
+            },
+            {
+              "id": "building-0",
+              "label": "弱楼",
+              "energy_tnt_t": "0.5",
+              "energy_j": "2092000000.0",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                15,
+                15,
+                15
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；楼参考表第1列",
+                "short_quote": "弱楼",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 12
+            },
+            {
+              "id": "building-1",
+              "label": "标楼",
+              "energy_tnt_t": "1",
+              "energy_j": "4184000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": [
+                30,
+                30,
+                30
+              ],
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；楼参考表第2列",
+                "short_quote": "标楼",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 13
+            },
+            {
+              "id": "building-2",
+              "label": "强楼",
+              "energy_tnt_t": "3",
+              "energy_j": "12552000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；楼参考表第3列",
+                "short_quote": "强楼",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 14
+            },
+            {
+              "id": "building-3",
+              "label": "超楼",
+              "energy_tnt_t": "10",
+              "energy_j": "41840000000",
+              "reference_kind": "named_energy_reference",
+              "clause_id": "F248-SMALL",
+              "object_dimensions_m": null,
+              "conditions": [
+                "same_material_and_destruction_mechanism",
+                "fictional_scale_must_be_established"
+              ],
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；楼参考表第4列",
+                "short_quote": "超楼",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "rank": 15
+            },
+            {
+              "id": "weak-street",
+              "label": "弱爆街",
+              "energy_tnt_t": "200",
+              "area_m2": "125000",
+              "volume_m3": "1250000",
+              "requirement": "RC民房近乎全坏",
+              "energy_j": "836800000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆街 行",
+                "short_quote": "RC民房近乎全坏",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 16
+            },
+            {
+              "id": "weak-city",
+              "label": "弱爆城",
+              "energy_tnt_t": "1400000",
+              "area_m2": "70000000",
+              "volume_m3": "2200000000",
+              "requirement": "RC住宅楼大多倒塌",
+              "energy_j": "5857600000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆城 行",
+                "short_quote": "RC住宅楼大多倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 20
+            },
+            {
+              "id": "weak-country",
+              "label": "弱爆国",
+              "energy_tnt_t": "10000000000",
+              "area_m2": "50000000000",
+              "volume_m3": "5000000000000",
+              "requirement": "砖混凝土住宅楼大多倒塌",
+              "energy_j": "41840000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆国 行",
+                "short_quote": "砖混凝土住宅楼大多倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 24
+            },
+            {
+              "id": "weak-continent",
+              "label": "弱大陆",
+              "energy_tnt_t": "70000000000000",
+              "area_m2": "8000000000000",
+              "volume_m3": "8000000000000000",
+              "requirement": "显著影响板块运动",
+              "energy_j": "292880000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱大陆 行",
+                "short_quote": "显著影响板块运动",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 28
+            },
+            {
+              "id": "weak-surface",
+              "label": "弱地表",
+              "energy_tnt_t": "500000000000000000",
+              "area_m2": "500000000000000",
+              "volume_m3": "16000000000000000000",
+              "requirement": "板块完全替换",
+              "energy_j": "2092000000000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱地表 行",
+                "short_quote": "板块完全替换",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 29
+            },
+            {
+              "id": "weak-planet",
+              "label": "弱爆星",
+              "energy_tnt_t": "3500000000000000000000",
+              "solid_sphere_diameter_m": "5000000",
+              "requirement": "克服引力结合",
+              "energy_j": "1.464400000000000000000000000E+31",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆星 行",
+                "short_quote": "克服引力结合",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 30
+            }
+          ],
+          "weak_scale_rows": [
+            {
+              "id": "weak-street",
+              "label": "弱爆街",
+              "energy_tnt_t": "200",
+              "area_m2": "125000",
+              "volume_m3": "1250000",
+              "requirement": "RC民房近乎全坏",
+              "energy_j": "836800000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆街 行",
+                "short_quote": "RC民房近乎全坏",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 16
+            },
+            {
+              "id": "weak-city",
+              "label": "弱爆城",
+              "energy_tnt_t": "1400000",
+              "area_m2": "70000000",
+              "volume_m3": "2200000000",
+              "requirement": "RC住宅楼大多倒塌",
+              "energy_j": "5857600000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆城 行",
+                "short_quote": "RC住宅楼大多倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 20
+            },
+            {
+              "id": "weak-country",
+              "label": "弱爆国",
+              "energy_tnt_t": "10000000000",
+              "area_m2": "50000000000",
+              "volume_m3": "5000000000000",
+              "requirement": "砖混凝土住宅楼大多倒塌",
+              "energy_j": "41840000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆国 行",
+                "short_quote": "砖混凝土住宅楼大多倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 24
+            },
+            {
+              "id": "weak-continent",
+              "label": "弱大陆",
+              "energy_tnt_t": "70000000000000",
+              "area_m2": "8000000000000",
+              "volume_m3": "8000000000000000",
+              "requirement": "显著影响板块运动",
+              "energy_j": "292880000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱大陆 行",
+                "short_quote": "显著影响板块运动",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 28
+            },
+            {
+              "id": "weak-surface",
+              "label": "弱地表",
+              "energy_tnt_t": "500000000000000000",
+              "area_m2": "500000000000000",
+              "volume_m3": "16000000000000000000",
+              "requirement": "板块完全替换",
+              "energy_j": "2092000000000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱地表 行",
+                "short_quote": "板块完全替换",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 29
+            },
+            {
+              "id": "weak-planet",
+              "label": "弱爆星",
+              "energy_tnt_t": "3500000000000000000000",
+              "solid_sphere_diameter_m": "5000000",
+              "requirement": "克服引力结合",
+              "energy_j": "1.464400000000000000000000000E+31",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆星 行",
+                "short_quote": "克服引力结合",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "weak_major_threshold",
+              "threshold_inclusive": true,
+              "rank": 30
+            }
+          ],
+          "scale_references": [
+            {
+              "id": "weak-street",
+              "label": "弱爆街",
+              "area_m2": "125000",
+              "volume_m3": "1250000",
+              "depth_m": "10",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；弱爆街尺度行",
+                "short_quote": "弱爆街",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 16
+            },
+            {
+              "id": "standard-street",
+              "label": "标爆街",
+              "area_m2": "200000",
+              "volume_m3": "2000000",
+              "depth_m": "10",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；标爆街尺度行",
+                "short_quote": "标爆街",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 17
+            },
+            {
+              "id": "strong-street",
+              "label": "强爆街",
+              "area_m2": "500000",
+              "volume_m3": "5000000",
+              "depth_m": "10",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；强爆街尺度行",
+                "short_quote": "强爆街",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 18
+            },
+            {
+              "id": "super-street",
+              "label": "超爆街",
+              "area_m2": "1000000",
+              "volume_m3": "32000000",
+              "depth_m": "32",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；超爆街尺度行",
+                "short_quote": "超爆街",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 19
+            },
+            {
+              "id": "weak-city",
+              "label": "弱爆城",
+              "area_m2": "70000000",
+              "volume_m3": "2240000000",
+              "alternate_volume_m3": "2200000000",
+              "depth_m": "32",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；弱爆城尺度行",
+                "short_quote": "弱爆城",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 20
+            },
+            {
+              "id": "standard-city",
+              "label": "标爆城",
+              "area_m2": "400000000",
+              "volume_m3": "12800000000",
+              "depth_m": "32",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；标爆城尺度行",
+                "short_quote": "标爆城",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 21
+            },
+            {
+              "id": "strong-city",
+              "label": "强爆城",
+              "area_m2": "1000000000",
+              "volume_m3": "100000000000",
+              "depth_m": "100",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；强爆城尺度行",
+                "short_quote": "强爆城",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 22
+            },
+            {
+              "id": "super-city",
+              "label": "超爆城",
+              "area_m2": "6000000000",
+              "volume_m3": "600000000000",
+              "depth_m": "100",
+              "clause_id": "F267-SCALEDETAIL",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；超爆城尺度行",
+                "short_quote": "超爆城",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "suggested_scale_threshold",
+              "rank": 23
+            },
+            {
+              "id": "weak-country",
+              "label": "弱爆国",
+              "area_m2": "50000000000",
+              "volume_m3": "5000000000000",
+              "depth_m": "100",
+              "clause_id": "F268-COUNTRYSCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；弱爆国尺度行",
+                "short_quote": "弱爆国",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "scale_threshold",
+              "rank": 24
+            },
+            {
+              "id": "standard-country",
+              "label": "标爆国",
+              "volume_m3": "121600000000000",
+              "clause_id": "F268-COUNTRYSCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；标爆国尺度行",
+                "short_quote": "标爆国",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "scale_threshold",
+              "rank": 25
+            },
+            {
+              "id": "strong-country",
+              "label": "强爆国",
+              "volume_m3": "320000000000000",
+              "clause_id": "F268-COUNTRYSCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；强爆国尺度行",
+                "short_quote": "强爆国",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "scale_threshold",
+              "rank": 26
+            },
+            {
+              "id": "super-country",
+              "label": "超爆国",
+              "volume_m3": "3000000000000000",
+              "clause_id": "F268-COUNTRYSCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；超爆国尺度行",
+                "short_quote": "超爆国",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "threshold_inclusive": true,
+              "reference_kind": "scale_threshold",
+              "rank": 27
+            },
+            {
+              "id": "weak-continent",
+              "label": "弱大陆",
+              "energy_tnt_t": "70000000000000",
+              "area_m2": "8000000000000",
+              "volume_m3": "8000000000000000",
+              "requirement": "显著影响板块运动",
+              "energy_j": "292880000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱大陆 行",
+                "short_quote": "显著影响板块运动",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "scale_threshold",
+              "threshold_inclusive": true,
+              "rank": 28
+            },
+            {
+              "id": "weak-surface",
+              "label": "弱地表",
+              "energy_tnt_t": "500000000000000000",
+              "area_m2": "500000000000000",
+              "volume_m3": "16000000000000000000",
+              "requirement": "板块完全替换",
+              "energy_j": "2092000000000000000000000000",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱地表 行",
+                "short_quote": "板块完全替换",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "scale_threshold",
+              "threshold_inclusive": true,
+              "rank": 29
+            },
+            {
+              "id": "weak-planet",
+              "label": "弱爆星",
+              "energy_tnt_t": "3500000000000000000000",
+              "solid_sphere_diameter_m": "5000000",
+              "requirement": "克服引力结合",
+              "energy_j": "1.464400000000000000000000000E+31",
+              "clause_id": "F249-SCALE",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表 弱爆星 行",
+                "short_quote": "克服引力结合",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "scale_threshold",
+              "threshold_inclusive": true,
+              "rank": 30
+            }
+          ],
+          "rank_ids": [
+            "brick-0",
+            "brick-1",
+            "brick-2",
+            "brick-3",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "room-0",
+            "room-1",
+            "room-2",
+            "room-3",
+            "building-0",
+            "building-1",
+            "building-2",
+            "building-3",
+            "weak-street",
+            "standard-street",
+            "strong-street",
+            "super-street",
+            "weak-city",
+            "standard-city",
+            "strong-city",
+            "super-city",
+            "weak-country",
+            "standard-country",
+            "strong-country",
+            "super-country",
+            "weak-continent",
+            "weak-surface",
+            "weak-planet",
+            "standard-star"
+          ],
+          "astronomical_references": [
+            {
+              "id": "standard-star",
+              "label": "标准恒星",
+              "rank": 31,
+              "energy_j": "1e41",
+              "clause_id": "F250-ASTRO",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；标准恒星段",
+                "short_quote": "10^41J",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "reference_kind": "astronomical_point_not_interval"
+            }
+          ],
+          "qualitative_astronomical_references": [
+            {
+              "id": "standard-galaxy",
+              "label": "标准星系",
+              "clause_id": "F250-ASTRO",
+              "reference_kind": "qualitative_astronomical_definition",
+              "definition": "银河系全部正发光恒星引力结合能总和，不计白矮星/中子星/黑洞。",
+              "energy_only_mapping_allowed": false,
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；标准恒星、星系、结构、单体四段",
+                "short_quote": "标准恒星：太阳引力结合能为标准，10^41J",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              }
+            },
+            {
+              "id": "single-universe",
+              "label": "单体宇宙",
+              "name": "单体",
+              "clause_id": "F250-ASTRO",
+              "reference_kind": "qualitative_infinite_universe_definition",
+              "definition": "一个无限大的宇宙。",
+              "requires_actual_infinite_extent": true,
+              "energy_only_mapping_allowed": false,
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；标准恒星、星系、结构、单体四段",
+                "short_quote": "标准恒星：太阳引力结合能为标准，10^41J",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              }
+            }
+          ],
+          "clauses": [
+            {
+              "id": "F248-CONE",
+              "kind": "conditional_estimate",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；页首上段",
+                "short_quote": "直径×n，能量×n²。高度×n，能量×n²",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "地球上密度2t/m³、底面直径10km、高10km圆锥，重力势能46亿t TNT；在其模型内直径与高度分别平方缩放。",
+              "parameters": {
+                "density_kg_m3": "2000",
+                "diameter_m": "10000",
+                "height_m": "10000",
+                "energy_tnt_t": "4600000000"
+              },
+              "formulas": [
+                "E/E0=(D/D0)^2*(H/H0)^2"
+              ],
+              "scope": "续前页的估算，不是统一量级阈值"
+            },
+            {
+              "id": "F248-UNITS",
+              "kind": "unit_scope",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；具体划分第一行",
+                "short_quote": "下文g、kg、t…均指TNT当量",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "此节g/kg/t均为TNT当量单位，不是目标质量；J换算采用工具现有单位约定。"
+            },
+            {
+              "id": "F248-SMALL",
+              "kind": "energy_reference",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；砖墙屋楼四行参考表及尺寸段",
+                "short_quote": "砖统一为240*115*53mm红砖",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "保留16个离散能量参考值及实读目标尺寸；不是破坏机理通用的连续区间。"
+            },
+            {
+              "id": "F248-MECHANISM",
+              "kind": "mechanism",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 48,
+                "printed_page": 248,
+                "global_sequence": 248,
+                "locator": "印刷页248；第三卷PDF第48页；页下部三段",
+                "short_quote": "用炸药内爆冲击的数值，作为参考能量",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p048-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 248,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "砖墙参考能量=单位能耗×墙体体积；屋为钢筋混凝土空心房间，采用内爆冲击参考，楼的续述见249。",
+              "formulas": [
+                "E_brick_or_wall=unit_destruction_energy*material_volume"
+              ]
+            },
+            {
+              "id": "F249-SCALE",
+              "kind": "multidimensional_threshold",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；五列表，表头至弱爆星行",
+                "short_quote": "RC民房近乎全坏",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "分别保留TNT能量、面积、体积/球直径与破坏要求；不能仅按J值定虚拟作品档。"
+            },
+            {
+              "id": "F249-7000",
+              "kind": "approximate_progression",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；表下六行换档说明",
+                "short_quote": "弱街×7000=弱爆城",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "7000是大档间近似记忆关系；显示表值和严格连乘存在舍入，不覆盖表内实写数值。",
+              "multiplier": "7000",
+              "rounding_conflicts": [
+                {
+                  "from": "140万t",
+                  "times": "7000",
+                  "exact_tnt_t": "9800000000",
+                  "displayed": "100亿t"
+                },
+                {
+                  "from": "70万亿t",
+                  "times": "7000",
+                  "exact_tnt_t": "490000000000000000",
+                  "displayed": "50亿亿t"
+                }
+              ]
+            },
+            {
+              "id": "F249-SUBTIERS",
+              "kind": "non_numeric_subdivision",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 49,
+                "printed_page": 249,
+                "global_sequence": 249,
+                "locator": "印刷页249；第三卷PDF第49页；末段",
+                "short_quote": "适当取标爆x、强爆x、超爆x",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p049-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 249,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "达到弱档即为弱；远超但不到下一大档时可酌分标/强/超，本组没有给出这些中间档的数字切点。",
+              "automatic_cut_points": null
+            },
+            {
+              "id": "F250-MIN",
+              "kind": "decision",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；页首三段",
+                "short_quote": "能量达标，破坏范围不达标的，取破坏范围标",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "虚拟作品同时受能量与尺度限制，取可支持的较低档；范围达标而能量不达标也不升级。夷平建筑用面积，坑用体积；非虚拟按实计能量。"
+            },
+            {
+              "id": "F250-RELEASE",
+              "kind": "temporal_policy",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；页首第四段",
+                "short_quote": "剧烈破坏取当前能量，缓慢释放则降一格",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "慢释放降一格，但一格是大档还是弱/标/强/超小格及慢的时间界线未定义，自动执行需返回歧义，不能猜。",
+              "ambiguity": [
+                "slow_duration_threshold_unspecified",
+                "one_grade_size_unspecified"
+              ]
+            },
+            {
+              "id": "F250-ASTRO",
+              "kind": "astronomical_reference",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；标准恒星、星系、结构、单体四段",
+                "short_quote": "标准恒星：太阳引力结合能为标准，10^41J",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "标准恒星参考10^41J；标准星系为银河系全部正发光恒星引力结合能总和，不计白矮星/中子星/黑洞；弱宇宙结构一般取拉尼亚凯亚超星系团；单体定义一个无限大宇宙且提醒作品常伪无限。",
+              "parameters": {
+                "standard_star_energy_j": "1e41"
+              },
+              "gaps": [
+                "星系没有本页数值",
+                "结构不是统一J阈值",
+                "单体与高层不作为有限J表可算项"
+              ]
+            },
+            {
+              "id": "F250-HIGH",
+              "kind": "scope_boundary",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 50,
+                "printed_page": 250,
+                "global_sequence": 250,
+                "locator": "印刷页250；第三卷PDF第50页；单体以上枚举及末段",
+                "short_quote": "论外有多个标准，难以一概而论",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 250,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "保留册内序数/基数及无限叠层原文作为高层待审入口，不将其混成有限能量表。"
+            },
+            {
+              "id": "F251-REFS",
+              "kind": "source_leads",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 51,
+                "printed_page": 251,
+                "global_sequence": 251,
+                "locator": "印刷页251；第三卷PDF第51页；全页链接列表",
+                "short_quote": "标准爆屋，内爆炸对RC（钢筋混凝土）房间破坏",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p051-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 251,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "七项参考链接/条件是册内所引研究入口，本次未打开外链，不声称论文已外部核验。",
+              "leads": [
+                {
+                  "description": "标准爆屋，内爆对RC房间",
+                  "url": "https://www.bzycj.cn/cn/article/pdf/preview/10.11883/bzycj-2025-0071.pdf"
+                },
+                {
+                  "description": "超屋至弱楼",
+                  "url": "https://www.bzycj.cn/article/doi/10.11883/bzycj-2024-0053"
+                },
+                {
+                  "description": "1kgTNT对标准屋形成裂纹",
+                  "url": "https://jvs.sjtu.edu.cn/CN/Y2014/V33/12/128"
+                },
+                {
+                  "description": "100/200kg",
+                  "url": "https://jvs.sjtu.edu.cn/CN/Y2025/V44/15/289"
+                },
+                {
+                  "description": "20kg，略强于标准爆屋，RC框架双层建筑",
+                  "url": "https://www.bzycj.cn/cn/article/doi/10.11883/bzycj-2025-0378"
+                },
+                {
+                  "description": "1.5×1.5×3m RC隔间，200gTNT",
+                  "url": "https://www.bzycj.cn/article/id/9602"
+                },
+                {
+                  "description": "2×2.4×3.2m RC隔间，1kgTNT",
+                  "url": "http://hdxbzkb.cnjournals.net/hndxzr/article/pdf/20250310"
+                }
+              ]
+            },
+            {
+              "id": "F252-BUILDINGS",
+              "kind": "mechanism_caution",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 52,
+                "printed_page": 252,
+                "global_sequence": 252,
+                "locator": "印刷页252；第三卷PDF第52页；页上半段",
+                "short_quote": "外爆炸比内爆炸损伤更轻",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p052-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 252,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "大多数外爆损伤小于内爆；同材高楼更易失稳，整体坍塌不保证局部构件毁伤更深。俄克拉荷马案与3.2tTNT距5m倒塌500m建筑为说明性案例。",
+              "examples": [
+                {
+                  "tnt_t": "3.2",
+                  "distance_m": "5",
+                  "building_height_m": "500",
+                  "external_lead": "https://engineeringmechanics.cn/cn/article/Y2024/14/106"
+                }
+              ]
+            },
+            {
+              "id": "F252-POWER",
+              "kind": "power_not_energy",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 52,
+                "printed_page": 252,
+                "global_sequence": 252,
+                "locator": "印刷页252；第三卷PDF第52页；辨析首例",
+                "short_quote": "全球大气流动功率3.7×10^13瓦",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p052-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 252,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "广泛影响的直觉尺度不直接对应同档攻击能量；功率与按年累积能量必须分开。",
+              "source_values": {
+                "atmosphere_power_W": "3.7e13",
+                "year_energy_tnt_t": "270000000000"
+              },
+              "audit_note": "本条只记录册例，未复核年长/换算及大气功率原始来源。"
+            },
+            {
+              "id": "F253-MECHANISMS",
+              "kind": "mechanism_order",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 53,
+                "printed_page": 253,
+                "global_sequence": 253,
+                "locator": "印刷页253；第三卷PDF第53页；全页，尤其粗略比较四项",
+                "short_quote": "冲击波摧毁每一块物质 > 冲击波超压倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p053-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 253,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "同样建筑废墟结果不能证明相同能量；册内一般粗略顺序为冲击波逐块摧毁>冲击波超压倒塌>硬冲逐块摧毁>硬冲倒塌，不提供定量倍率。",
+              "ordering": [
+                "shockwave_full_material_destruction",
+                "shockwave_overpressure_collapse",
+                "direct_full_material_destruction",
+                "direct_collapse"
+              ],
+              "restriction": "一般粗略对比，不是可传递的普适物理定理；推/拳示例说明效果不同不等于能量更高。"
+            },
+            {
+              "id": "F254-MINIMUM",
+              "kind": "mechanism_unknown",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 54,
+                "printed_page": 254,
+                "global_sequence": 254,
+                "locator": "印刷页254；第三卷PDF第54页；页首三段",
+                "short_quote": "一般按照理论能达成该效果的能量最小值",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p054-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 254,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "机理未知或虚构、仅有摧毁画面时按可达成效果的理论最小能量；岩石等理论下限反直觉时可用常见经验参考，例1kg TNT爆破2m³矿石为小块。",
+              "parameters": {
+                "example_tnt_kg": "1",
+                "example_rock_volume_m3": "2"
+              },
+              "restriction": "这是常用参考例，不等于所有岩性/破坏程度固定2m³/kg。"
+            },
+            {
+              "id": "F254-DEPTH",
+              "kind": "depth_requirement",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 54,
+                "printed_page": 254,
+                "global_sequence": 254,
+                "locator": "印刷页254；第三卷PDF第54页；中下段至跨页255",
+                "short_quote": "尺度的旧有定义是不确切的",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p054-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 254,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "面积不足以体现深浅；国及以下厚度人为定义且难公认；不把农业/浅表影响等同深坑或板块破坏。"
+            },
+            {
+              "id": "F255-OBSERVED",
+              "kind": "observed_extent",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 55,
+                "printed_page": 255,
+                "global_sequence": 255,
+                "locator": "印刷页255；第三卷PDF第55页；陨石坑与升华山体例",
+                "short_quote": "原因很简单，因为没有画其他影响",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p055-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 255,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "虚拟坑仅能计实际描绘影响，不能脑补现实伴随破坏；若确有坑外地质/冲击等影响，应计实际范围。现实K-Pg例说明坑径不是全部影响。"
+            },
+            {
+              "id": "F256-FLOW",
+              "kind": "decision",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 56,
+                "printed_page": 256,
+                "global_sequence": 256,
+                "locator": "印刷页256；第三卷PDF第56页；中下部最终流程",
+                "short_quote": "计算能量→观察尺度（夷平城市用面积/坑用体积）",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p056-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 256,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "先核能量再核尺度，两者均达标才通过，范围不能反过来绕过低能量；没给出的附加表现不可假定。"
+            },
+            {
+              "id": "F256-DEPTHS",
+              "kind": "suggested_depths",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 56,
+                "printed_page": 256,
+                "global_sequence": 256,
+                "locator": "印刷页256；第三卷PDF第56页；流程下方建议深度三行",
+                "short_quote": "街/城：厚度十米～百米",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p056-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 256,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "仅建议深度对照：街/城10–100m，国100–1000m，大陆/地表千米至数万米。与264板块岩石圈要求并存；不能取建议最浅值覆盖明确地质要求。",
+              "parameters": {
+                "street_city_m": [
+                  "10",
+                  "100"
+                ],
+                "country_m": [
+                  "100",
+                  "1000"
+                ],
+                "continent_surface_m": [
+                  "1000",
+                  "数万"
+                ]
+              }
+            },
+            {
+              "id": "F257-EQUIVALENT",
+              "kind": "equivalent_volume",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 57,
+                "printed_page": 257,
+                "global_sequence": 257,
+                "locator": "印刷页257；第三卷PDF第57页；等效体积段",
+                "short_quote": "一般取1000kg/m³",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p057-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 257,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "空虚物体先按原密度×体积求质量，再除常见实体密度；通常取1000kg/m³。",
+              "parameters": {
+                "reference_density_kg_m3": "1000"
+              },
+              "formulas": [
+                "mass_kg=density_kg_m3*volume_m3",
+                "equivalent_volume_m3=mass_kg/reference_density_kg_m3"
+              ]
+            },
+            {
+              "id": "F257-CLOUDS",
+              "kind": "cloud_mass_scope",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 57,
+                "printed_page": 257,
+                "global_sequence": 257,
+                "locator": "印刷页257；第三卷PDF第57页；后半三段",
+                "short_quote": "只取水滴们的总质量",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p057-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 257,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "云消散同时有强对流/疾风/空气流动时，计受影响空气与水滴；仅云消失且无这些表现时，只取水滴质量。热/相变能不能直接等同同能量子弹威力。",
+              "branches": {
+                "airflow_observed": "water_droplets_plus_affected_air",
+                "only_cloud_disappears": "water_droplets_only"
+              }
+            },
+            {
+              "id": "F258-HEADING",
+              "kind": "heading_only",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 58,
+                "printed_page": 258,
+                "global_sequence": 258,
+                "locator": "印刷页258；第三卷PDF第58页；全页标题",
+                "short_quote": "辨析：建成区与行政区、建筑类型",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p058-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 258,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "本页只有下一节标题，无另加阈值。"
+            },
+            {
+              "id": "F259-BUILT",
+              "kind": "city_scope",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 59,
+                "printed_page": 259,
+                "global_sequence": 259,
+                "locator": "印刷页259；第三卷PDF第59页；页上半城市定义及混合材质段",
+                "short_quote": "爆城一般以摧毁城市建成区为标准",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p059-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 259,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "用建成区，不用行政辖区；70km²/140万t弱城是RC住宅边界，砖混/砖木抗爆不同，混合城市不可按行政面积或简单同材假定。"
+            },
+            {
+              "id": "F259-CITIES",
+              "kind": "context_examples",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 59,
+                "printed_page": 259,
+                "global_sequence": 259,
+                "locator": "印刷页259；第三卷PDF第59页；典型城市数据至260上半",
+                "short_quote": "上海：行政区6340km²，建成区1242km²",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p059-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 259,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "册内城市例仅作旧表/建成区辨析，本次未外部核验城市数据，不可当永久城市参数。",
+              "parameters": {
+                "Shanghai": {
+                  "administrative_km2": "6340",
+                  "built_km2": "1242",
+                  "RC_fraction": "0.8"
+                },
+                "Shenzhen": {
+                  "built_km2": "987"
+                },
+                "Chongqing": {
+                  "built_total_km2": "1641",
+                  "central_built_km2": "947"
+                },
+                "Paris": {
+                  "old_administrative_km2": "100",
+                  "note": "石砌/都市圈范围差异"
+                },
+                "Yokohama": {
+                  "old_administrative_km2": "437",
+                  "urbanized_km2": "337"
+                },
+                "Tokyo23": {
+                  "area_km2": "628",
+                  "wooden_fraction": "0.2"
+                },
+                "TokyoMetropolis": {
+                  "administrative_km2": "2194",
+                  "built_km2": "1080"
+                }
+              }
+            },
+            {
+              "id": "F260-TOKYO",
+              "kind": "context_examples",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 60,
+                "printed_page": 260,
+                "global_sequence": 260,
+                "locator": "印刷页260；第三卷PDF第60页；全页正文",
+                "short_quote": "东京都市圈不是行政区划",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p060-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 260,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "接259东京范围区分，市圈包含多个城市；即便23区也有木制建筑。"
+            },
+            {
+              "id": "F261-STATISTICS",
+              "kind": "reference_image",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 61,
+                "printed_page": 261,
+                "global_sequence": 261,
+                "locator": "印刷页261；第三卷PDF第61页；日文家屋统计截图",
+                "short_quote": "Wooden buildings",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p061-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 261,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "东京都家屋统计截图：令和2–6年，木造家屋栋数与床面积，含专用/并用住宅、区部与市部；本次看完截图但不把各市统计格转成量级规则。",
+              "image_scope": "整张统计截图已视核其主题/表头；所有细小数格未逐项二次复算"
+            },
+            {
+              "id": "F261-CITYDEFAULT",
+              "kind": "fallback_context",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 61,
+                "printed_page": 261,
+                "global_sequence": 261,
+                "locator": "印刷页261；第三卷PDF第61页；统计截图下两行",
+                "short_quote": "县级城市10～20km²",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p061-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 261,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "2020s现代城市一般建成面积估计：县级10–20km²，国内地区级100km²，国内超一线/世界级都市约1000km²；有作品具体范围须用具体值。",
+              "parameters": {
+                "county_city_km2": [
+                  "10",
+                  "20"
+                ],
+                "prefecture_city_km2": "100",
+                "world_city_km2": "1000"
+              }
+            },
+            {
+              "id": "F261-PLANET",
+              "kind": "world_geometry",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 61,
+                "printed_page": 261,
+                "global_sequence": 261,
+                "locator": "印刷页261；第三卷PDF第61页；页末星球大小首段",
+                "short_quote": "若出现行星，默认大小为地球",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p061-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 261,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "明确是行星时可暂默认地球，需多片宏大大陆等观感，并受剧情具体大小修正。"
+            },
+            {
+              "id": "F262-MAP",
+              "kind": "world_geometry",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 62,
+                "printed_page": 262,
+                "global_sequence": 262,
+                "locator": "印刷页262；第三卷PDF第62页；页上半三段",
+                "short_quote": "不可默认为星球，视为平板世界",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p062-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 262,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "具体画面推翻地球默认时重新估计；地图大小不明用剧情最大已出现地图距离；未说明星球且无整体球形图时按平板。平板厚度未知取地壳厚度；明确数值优先，明确最大深度大于地壳时取最大深度。",
+              "restriction": "地壳厚度未在本组给统一数值，不能硬填一个常数。"
+            },
+            {
+              "id": "F262-GEOLOGY",
+              "kind": "geological_scope",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 62,
+                "printed_page": 262,
+                "global_sequence": 262,
+                "locator": "印刷页262；第三卷PDF第62页；细谈大陆级最终结论及余文",
+                "short_quote": "应纳含完整板块，而非拘泥浅表",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p062-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 262,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "大陆/地表以地质和完整板块定义；单点TNT空爆经验受大气厚度/地球曲率限制，不能仅按推平建筑面积外推；大陆漂移、俯冲、陆沉等是不同机制。"
+            },
+            {
+              "id": "F263-PLATE",
+              "kind": "conditional_estimate",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 63,
+                "printed_page": 263,
+                "global_sequence": 263,
+                "locator": "印刷页263；第三卷PDF第63页；页上半板片拉力算例",
+                "short_quote": "10^13N/m的板片拉力",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p063-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 263,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "板片拉力算例：5000km边界×10^13N/m=5×10^19N，移动2000km为10^26J，册写约2.5亿亿t TNT；实际整板块影响不止边界扫过面积。",
+              "parameters": {
+                "traction_N_m": "1e13",
+                "boundary_m": "5000000",
+                "force_N": "5e19",
+                "displacement_m": "2000000",
+                "energy_j": "1e26",
+                "source_energy_tnt_t": "25000000000000000"
+              },
+              "formulas": [
+                "F=traction*boundary_length",
+                "W=F*displacement"
+              ],
+              "audit_note": "原页板片拉力的13为清楚上标；算例行写5×1019N、1026J为基线排字。此处5e19/1e26由所列参数F=10^13*5e6及W=F*2e6独立复算规范化，未声称原页19/26为已读上标。1e26J/4.184e9=2.390057...e16t，册内2.5e16t为约数；完整板块替换另写125亿亿t，非弱大陆门槛。",
+              "raw_numeric_notation": [
+                "10^13N/m（13视核为上标）",
+                "5×1019N（原行19未以上标排版）",
+                "1026J（原行26未以上标排版）"
+              ],
+              "normalized_numbers_basis": "force_N/energy_j are independently derived from the verified traction, boundary and displacement parameters, not guessed OCR exponents"
+            },
+            {
+              "id": "F263-CONTINENT",
+              "kind": "threshold_rationale",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 63,
+                "printed_page": 263,
+                "global_sequence": 263,
+                "locator": "印刷页263；第三卷PDF第63页；下半弱大陆阈值与K-Pg论证",
+                "short_quote": "70万亿吨TNT，作为弱大陆的能量标准",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p063-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 263,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "弱大陆70万亿t，要求大陆规模板块构造受影响；K-Pg/地幔柱/俯冲/洋脊响应是册内论据，存在争议说明不当作已在此独立验证的科学事实。"
+            },
+            {
+              "id": "F264-LITHOSPHERE",
+              "kind": "geological_requirement",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 64,
+                "printed_page": 264,
+                "global_sequence": 264,
+                "locator": "印刷页264；第三卷PDF第64页；上半最后段",
+                "short_quote": "数十公里至一百公里的岩石圈",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p064-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 264,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "大陆/地表直观尺度至少完整板块/岩石圈，厚数十至100km，不是海平面以上大洲；威尔克斯地撞击的强大陆及数十倍K-Pg仅作例，没有精确强档切点。"
+            },
+            {
+              "id": "F264-COUNTRY",
+              "kind": "threshold_rationale",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 64,
+                "printed_page": 264,
+                "global_sequence": 264,
+                "locator": "印刷页264；第三卷PDF第64页；下半末行",
+                "short_quote": "一百亿吨TNT当量",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p064-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 264,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "弱爆国准入100亿t TNT是人为实用定义；不能靠看似国级面积绕过能量/深度。"
+            },
+            {
+              "id": "F265-RATIONALE",
+              "kind": "rationale_not_new_threshold",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 65,
+                "printed_page": 265,
+                "global_sequence": 265,
+                "locator": "印刷页265；第三卷PDF第65页；上半整数/7000关系段",
+                "short_quote": "符合简便易记原则",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p065-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 265,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "100亿t以10万km²/400m山体重力势能与7000链作近似解释；保留近似，不把连乘当精确另一阈值。"
+            },
+            {
+              "id": "F265-BLAST",
+              "kind": "mechanism_caution",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 65,
+                "printed_page": 265,
+                "global_sequence": 265,
+                "locator": "印刷页265；第三卷PDF第65页；下半TNT对应与空气冲击波解释",
+                "short_quote": "所释放冲击波能使x发生倒塌",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p065-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 265,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "国以下能量标多源于空气中TNT冲击波导致倒塌；不表示同样结果的所有攻击都花同样能量，也不表示固定机械能利用率。"
+            },
+            {
+              "id": "F266-SWORD",
+              "kind": "mechanism_specific_calculation",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 66,
+                "printed_page": 266,
+                "global_sequence": 266,
+                "locator": "印刷页266；第三卷PDF第66页；上半剑气例",
+                "short_quote": "城市建筑体积×单位体积破坏能耗",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p066-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 266,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "平放剑气毁城按实际受破坏建筑材料体积×单位体积破坏能耗计算，不能套同面积TNT空爆值。",
+              "formulas": [
+                "E=affected_building_material_volume*unit_destruction_energy"
+              ]
+            },
+            {
+              "id": "F266-WATER",
+              "kind": "mechanism_caution",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 66,
+                "printed_page": 266,
+                "global_sequence": 266,
+                "locator": "印刷页266；第三卷PDF第66页；中段水下爆炸及图",
+                "short_quote": "弱爆楼标准的能量，是超爆楼的效果",
+                "visually_verified": true,
+                "visual_reviewer": "integration_audit",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p066-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 266,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "环境/引爆方式改变效果；水下爆炸图是例证，不是把全部水下攻击统一乘20的规则。"
+            },
+            {
+              "id": "F267-SCALEDETAIL",
+              "kind": "suggested_scale_thresholds",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 67,
+                "printed_page": 267,
+                "global_sequence": 267,
+                "locator": "印刷页267；第三卷PDF第67页；页下方街城八行建议表",
+                "short_quote": "标街20万平方米，或200万立方米",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p067-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 267,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "详细街城尺度建议，能量仍须另达标；本页弱城2.24km³与249表2.2km³差0.04km³，保留精度/舍入差，不静默覆盖。",
+              "conflict": {
+                "weak_city_volume_249_km3": "2.2",
+                "weak_city_volume_267_km3": "2.24",
+                "policy": "both retained; values in [2.2,2.24) km³ need explicit branch"
+              }
+            },
+            {
+              "id": "F268-COUNTRYSCALE",
+              "kind": "country_scale_thresholds",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；页首四行及后续括号段",
+                "short_quote": "弱爆国以上，基本淘汰面积标准，只有体积标准",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "弱国5万km²/5000km³；标国121600km³、强国320000km³、超国3000000km³；高于弱国用体积，国以下面积需RC建筑倒塌，弱国需砖混。"
+            },
+            {
+              "id": "F268-MATERIAL",
+              "kind": "material_equivalence",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；首括号末段",
+                "short_quote": "按这个爆炸能破坏的钢混/砖混面积定等效范围",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "非钢混/砖混建筑先换算同一假想爆炸所能破坏的RC/砖混等效面积；缺等效模型不得原面积直接判。"
+            },
+            {
+              "id": "F268-GIANTCRATER",
+              "kind": "conditional_scale_exception",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；大陆/地表段",
+                "short_quote": "取“面积标准×厚度1km”做门槛",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "明显大陆级巨坑可降低体积门槛，用对应面积×1km；仅大陆例外，不自动推广地表，也不是任意坑深都套1km。",
+              "parameters": {
+                "crater_depth_m": "1000"
+              },
+              "formulas": [
+                "continent_crater_threshold_volume=continent_area_threshold*1000"
+              ]
+            },
+            {
+              "id": "F268-COLLAPSE",
+              "kind": "conditional_energy_exception",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；多击标题前两段",
+                "short_quote": "直观到了就认楼级",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "破坏物质/砸坑/刨沟须能量后尺度；撞塌、压塌、击塌大楼可在能量不足时凭直观认楼级，不推广为街/城或物质粉碎。"
+            },
+            {
+              "id": "F268-MULTI",
+              "kind": "attack_pattern",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 68,
+                "printed_page": 268,
+                "global_sequence": 268,
+                "locator": "印刷页268；第三卷PDF第68页；多击定义和两类",
+                "short_quote": "多击=可以分散攻击",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p068-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 268,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "分散多击分为逐次花时间攻击，及一次技能同时多枚独立伤害；后续需处理分散与单点效率差。"
+            },
+            {
+              "id": "F269-DISTRIBUTED",
+              "kind": "attack_pattern_caution",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 69,
+                "printed_page": 269,
+                "global_sequence": 269,
+                "locator": "印刷页269；第三卷PDF第69页；全页论证",
+                "short_quote": "分散攻击，可以在同能量下增加破坏面积",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p069-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 269,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "多击范围不能等同单次空爆；册例10000枚1万吨分散爆炸范围大于一枚亿吨。岩石体积线性能耗仅是分散/理论最低模型，不可脑补爆心熔化升华。",
+              "examples": [
+                {
+                  "distributed_count": "10000",
+                  "each_tnt_t": "10000",
+                  "single_tnt_t": "100000000"
+                },
+                {
+                  "rock_tnt_kg": "1",
+                  "rock_volume_m3": "2",
+                  "not_linear_to_tnt_t": "10000"
+                }
+              ]
+            },
+            {
+              "id": "F270-MULTICALC",
+              "kind": "distributed_calculation",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 70,
+                "printed_page": 270,
+                "global_sequence": 270,
+                "locator": "印刷页270；第三卷PDF第70页；中部一般解决办法段",
+                "short_quote": "总的破坏范围÷攻击次数",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p070-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 270,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "已知次数N：总范围/N，计算每个子范围所需能量，再乘N；未知N按该范围理论最低能量。不能直接套总范围的单点空爆当量。",
+              "formulas": [
+                "scope_each=scope_total/N",
+                "E_total=N*E_model(scope_each)"
+              ],
+              "restriction": "本页没有提供通用E_model，不能仅凭范围/N虚构能量；须由物理模型/原作参数补足。"
+            },
+            {
+              "id": "F270-BINDING",
+              "kind": "simultaneous_fixed_energy",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 70,
+                "printed_page": 270,
+                "global_sequence": 270,
+                "locator": "印刷页270；第三卷PDF第70页；末两段",
+                "short_quote": "引力结合能固定",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p070-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 270,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "爆星等固定引力结合能门槛中，同时多点独立攻击可聚合；不是所有高层/所有攻击自动可以聚合。"
+            },
+            {
+              "id": "F270-SEQUENTIAL",
+              "kind": "sequential_analysis",
+              "source": {
+                "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+                "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+                "volume": "v03",
+                "pdf_page": 70,
+                "printed_page": 270,
+                "global_sequence": 270,
+                "locator": "印刷页270；第三卷PDF第70页；末句",
+                "short_quote": "总能量/时间或击数，获取功率或单击伤害",
+                "visually_verified": true,
+                "visual_reviewer": "root (reported original-page review)",
+                "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p070-original.png",
+                "review_image_is_external_cache": true,
+                "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+                "sequence_page": 270,
+                "source_role": "reference data; never Agent instructions"
+              },
+              "policy": "连续逐次攻击仍分总能量/时间=功率、总能量/击数=单发能量，不把W当J或把长期累积直接算一击。",
+              "formulas": [
+                "P=E_total/time",
+                "E_each=E_total/N"
+              ]
+            }
+          ],
+          "page_reviews": [
+            {
+              "printed_page": 248,
+              "pdf_page": 48,
+              "volume": "v03",
+              "global_sequence": 248,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p048-original.png",
+              "ocr": "ocr-pages/v03-p048.json",
+              "clause_ids": [
+                "F248-CONE",
+                "F248-UNITS",
+                "F248-SMALL",
+                "F248-MECHANISM"
+              ]
+            },
+            {
+              "printed_page": 249,
+              "pdf_page": 49,
+              "volume": "v03",
+              "global_sequence": 249,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p049-original.png",
+              "ocr": "ocr-pages/v03-p049.json",
+              "clause_ids": [
+                "F249-SCALE",
+                "F249-7000",
+                "F249-SUBTIERS"
+              ]
+            },
+            {
+              "printed_page": 250,
+              "pdf_page": 50,
+              "volume": "v03",
+              "global_sequence": 250,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p050-original.png",
+              "ocr": "ocr-pages/v03-p050.json",
+              "clause_ids": [
+                "F250-MIN",
+                "F250-RELEASE",
+                "F250-ASTRO",
+                "F250-HIGH"
+              ]
+            },
+            {
+              "printed_page": 251,
+              "pdf_page": 51,
+              "volume": "v03",
+              "global_sequence": 251,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p051-original.png",
+              "ocr": "ocr-pages/v03-p051.json",
+              "clause_ids": [
+                "F251-REFS"
+              ]
+            },
+            {
+              "printed_page": 252,
+              "pdf_page": 52,
+              "volume": "v03",
+              "global_sequence": 252,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p052-original.png",
+              "ocr": "ocr-pages/v03-p052.json",
+              "clause_ids": [
+                "F252-BUILDINGS",
+                "F252-POWER"
+              ]
+            },
+            {
+              "printed_page": 253,
+              "pdf_page": 53,
+              "volume": "v03",
+              "global_sequence": 253,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p053-original.png",
+              "ocr": "ocr-pages/v03-p053.json",
+              "clause_ids": [
+                "F253-MECHANISMS"
+              ]
+            },
+            {
+              "printed_page": 254,
+              "pdf_page": 54,
+              "volume": "v03",
+              "global_sequence": 254,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p054-original.png",
+              "ocr": "ocr-pages/v03-p054.json",
+              "clause_ids": [
+                "F254-MINIMUM",
+                "F254-DEPTH"
+              ]
+            },
+            {
+              "printed_page": 255,
+              "pdf_page": 55,
+              "volume": "v03",
+              "global_sequence": 255,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p055-original.png",
+              "ocr": "ocr-pages/v03-p055.json",
+              "clause_ids": [
+                "F255-OBSERVED"
+              ]
+            },
+            {
+              "printed_page": 256,
+              "pdf_page": 56,
+              "volume": "v03",
+              "global_sequence": 256,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p056-original.png",
+              "ocr": "ocr-pages/v03-p056.json",
+              "clause_ids": [
+                "F256-FLOW",
+                "F256-DEPTHS"
+              ]
+            },
+            {
+              "printed_page": 257,
+              "pdf_page": 57,
+              "volume": "v03",
+              "global_sequence": 257,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p057-original.png",
+              "ocr": "ocr-pages/v03-p057.json",
+              "clause_ids": [
+                "F257-EQUIVALENT",
+                "F257-CLOUDS"
+              ]
+            },
+            {
+              "printed_page": 258,
+              "pdf_page": 58,
+              "volume": "v03",
+              "global_sequence": 258,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p058-original.png",
+              "ocr": "ocr-pages/v03-p058.json",
+              "clause_ids": [
+                "F258-HEADING"
+              ]
+            },
+            {
+              "printed_page": 259,
+              "pdf_page": 59,
+              "volume": "v03",
+              "global_sequence": 259,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p059-original.png",
+              "ocr": "ocr-pages/v03-p059.json",
+              "clause_ids": [
+                "F259-BUILT",
+                "F259-CITIES"
+              ]
+            },
+            {
+              "printed_page": 260,
+              "pdf_page": 60,
+              "volume": "v03",
+              "global_sequence": 260,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p060-original.png",
+              "ocr": "ocr-pages/v03-p060.json",
+              "clause_ids": [
+                "F260-TOKYO"
+              ]
+            },
+            {
+              "printed_page": 261,
+              "pdf_page": 61,
+              "volume": "v03",
+              "global_sequence": 261,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p061-original.png",
+              "ocr": "ocr-pages/v03-p061.json",
+              "clause_ids": [
+                "F261-STATISTICS",
+                "F261-CITYDEFAULT",
+                "F261-PLANET"
+              ]
+            },
+            {
+              "printed_page": 262,
+              "pdf_page": 62,
+              "volume": "v03",
+              "global_sequence": 262,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p062-original.png",
+              "ocr": "ocr-pages/v03-p062.json",
+              "clause_ids": [
+                "F262-MAP",
+                "F262-GEOLOGY"
+              ]
+            },
+            {
+              "printed_page": 263,
+              "pdf_page": 63,
+              "volume": "v03",
+              "global_sequence": 263,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p063-original.png",
+              "ocr": "ocr-pages/v03-p063.json",
+              "clause_ids": [
+                "F263-PLATE",
+                "F263-CONTINENT"
+              ]
+            },
+            {
+              "printed_page": 264,
+              "pdf_page": 64,
+              "volume": "v03",
+              "global_sequence": 264,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p064-original.png",
+              "ocr": "ocr-pages/v03-p064.json",
+              "clause_ids": [
+                "F264-LITHOSPHERE",
+                "F264-COUNTRY"
+              ]
+            },
+            {
+              "printed_page": 265,
+              "pdf_page": 65,
+              "volume": "v03",
+              "global_sequence": 265,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p065-original.png",
+              "ocr": "ocr-pages/v03-p065.json",
+              "clause_ids": [
+                "F265-RATIONALE",
+                "F265-BLAST"
+              ]
+            },
+            {
+              "printed_page": 266,
+              "pdf_page": 66,
+              "volume": "v03",
+              "global_sequence": 266,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "integration_audit",
+              "image": "review-images/v03-p066-original.png",
+              "ocr": "ocr-pages/v03-p066.json",
+              "clause_ids": [
+                "F266-SWORD",
+                "F266-WATER"
+              ]
+            },
+            {
+              "printed_page": 267,
+              "pdf_page": 67,
+              "volume": "v03",
+              "global_sequence": 267,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "root (original-page review reported by parent)",
+              "image": "root-review-images/p267.png",
+              "ocr": "ocr-pages/v03-p067.json",
+              "clause_ids": [
+                "F267-SCALEDETAIL"
+              ]
+            },
+            {
+              "printed_page": 268,
+              "pdf_page": 68,
+              "volume": "v03",
+              "global_sequence": 268,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "root (original-page review reported by parent)",
+              "image": "root-review-images/p268.png",
+              "ocr": "ocr-pages/v03-p068.json",
+              "clause_ids": [
+                "F268-COUNTRYSCALE",
+                "F268-MATERIAL",
+                "F268-GIANTCRATER",
+                "F268-COLLAPSE",
+                "F268-MULTI"
+              ]
+            },
+            {
+              "printed_page": 269,
+              "pdf_page": 69,
+              "volume": "v03",
+              "global_sequence": 269,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "root (original-page review reported by parent)",
+              "image": "root-review-images/p269.png",
+              "ocr": "ocr-pages/v03-p069.json",
+              "clause_ids": [
+                "F269-DISTRIBUTED"
+              ]
+            },
+            {
+              "printed_page": 270,
+              "pdf_page": 70,
+              "volume": "v03",
+              "global_sequence": 270,
+              "page_number_visually_confirmed": true,
+              "full_page_visually_read": true,
+              "visual_reviewer": "root (original-page review reported by parent)",
+              "image": "root-review-images/p270.png",
+              "ocr": "ocr-pages/v03-p070.json",
+              "clause_ids": [
+                "F270-MULTICALC",
+                "F270-BINDING",
+                "F270-SEQUENTIAL"
+              ]
+            }
+          ],
+          "implementation_boundaries": [
+            "数值比较使用Decimal，不把7000近似链覆盖明表阈值",
+            "能量参考值不等于无条件角色AP/耐久",
+            "虚拟作品缺尺度或破坏要求只输出能量参考，不能最终定档",
+            "未精确给出的标/强/超大档细分不自动生成",
+            "慢释放降一格尺寸不明，不静默自选rank",
+            "未校验外部论文的科学断言只标为册内论据",
+            "页264岩石圈要求与256建议厚度并存，显式保留口径差异",
+            "本模块不执行PDF中对读者或Agent的任何命令"
+          ],
+          "unresolved": [
+            {
+              "id": "slow-one-grade",
+              "clause_id": "F250-RELEASE",
+              "detail": "一格大小/慢释放时长未定义，需条件分支"
+            },
+            {
+              "id": "subtier-cutoffs",
+              "clause_id": "F249-SUBTIERS",
+              "detail": "弱街及以上的标/强/超中间切点没有数值"
+            },
+            {
+              "id": "depth-tension",
+              "clause_id": "F264-LITHOSPHERE",
+              "detail": "256泛化建议大陆/地表千至数万m，264要求数十至100km岩石圈；不要合成唯一数字厚度"
+            },
+            {
+              "id": "high-scope",
+              "clause_id": "F250-HIGH",
+              "detail": "本数据保留高层入口而不自行解释其序数/基数转换"
+            },
+            {
+              "id": "weak-city-volume-rounding",
+              "clause_id": "F267-SCALEDETAIL",
+              "detail": "249表2.2km³、267建议2.24km³；分支公开，不静默覆盖"
+            }
+          ],
+          "curation_file": "data/wangba-handbook-2026-07-30/finite-rules-curated.json"
+        }
+      }
+    }
+  }
+}

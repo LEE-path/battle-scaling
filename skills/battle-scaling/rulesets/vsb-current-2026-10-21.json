@@ -1,0 +1,743 @@
+{
+  "id": "vsb-current-2026-10-21",
+  "standard": "vsb",
+  "schema_version": 1,
+  "sources": {
+    "attack_potency": {
+      "title": "Attack Potency",
+      "url": "https://vsbattles.fandom.com/wiki/Attack_Potency",
+      "pinned_url": "https://vsbattles.fandom.com/wiki/Attack_Potency?oldid=9632883",
+      "api_url": "https://vsbattles.fandom.com/api.php?action=parse&oldid=9632883&prop=text%7Crevid&format=json",
+      "revision_id": 9632883,
+      "observed_date": "2026-10-21",
+      "observed_precision": "day",
+      "access": "readable",
+      "method": "public_mediawiki_parse_api",
+      "source_type": "VSB rule primary source",
+      "snapshot_sha256": "dee886f2cca8c94f9d9b47a09406fb87d4e2a1df2b4931d402667e91dbcd65cf",
+      "reviewed_scope": "Entire quantitative table and the local interpretation/exception paragraphs; not all linked calculation or discussion pages."
+    },
+    "speed": {
+      "title": "Speed",
+      "url": "https://vsbattles.fandom.com/wiki/Speed",
+      "pinned_url": "https://vsbattles.fandom.com/wiki/Speed?oldid=9439168",
+      "api_url": "https://vsbattles.fandom.com/api.php?action=parse&oldid=9439168&prop=text%7Crevid&format=json",
+      "revision_id": 9439168,
+      "observed_date": "2026-10-21",
+      "observed_precision": "day",
+      "access": "readable",
+      "method": "public_mediawiki_parse_api",
+      "source_type": "VSB rule primary source",
+      "snapshot_sha256": "c59d4fa20117c1f7dfc946c2ffc127c18eeb38f00e196afe56dcb44213301d89",
+      "reviewed_scope": "Entire quantitative table and the local interpretation/exception paragraphs; not all linked calculation or discussion pages."
+    },
+    "lifting_strength": {
+      "title": "Lifting Strength",
+      "url": "https://vsbattles.fandom.com/wiki/Lifting_Strength",
+      "pinned_url": "https://vsbattles.fandom.com/wiki/Lifting_Strength?oldid=9680934",
+      "api_url": "https://vsbattles.fandom.com/api.php?action=parse&oldid=9680934&prop=text%7Crevid&format=json",
+      "revision_id": 9680934,
+      "observed_date": "2026-10-21",
+      "observed_precision": "day",
+      "access": "readable",
+      "method": "public_mediawiki_parse_api",
+      "source_type": "VSB rule primary source",
+      "snapshot_sha256": "6858a415b3102fda0300097ae1b126542b40d72a4d6c54337712fbb425d2f857",
+      "reviewed_scope": "Entire quantitative table and the local interpretation/exception paragraphs; not all linked calculation or discussion pages."
+    }
+  },
+  "coverage": {
+    "energy": "All 37 finite energy rows, 10-C through 3-A; current printed Joule column.",
+    "speed": "All 24 finite speed intervals plus exact zero and lightspeed singletons; separate five speed attributes.",
+    "lifting": "All 25 finite lifted-mass intervals; qualitative labels recorded but not inferred from finite input.",
+    "not_implemented_by_numeric_module": [
+      "Semantic feat acceptance",
+      "Tier 11, High 3-A, Tier 2, Tier 1 and Tier 0 structural qualifications",
+      "Infinity/immeasurable/omnipresence semantic proofs",
+      "Reaction/perception time classification without a justified distance model",
+      "Automated acceptance of linked calculation/staff discussion pages"
+    ]
+  },
+  "boundary_policy": {
+    "energy": "Lower-inclusive and upper-exclusive deterministic table convention; printed Joule numbers retained even when rounded TNT equivalents differ. This convention is an implementation decision, not separately stated AP endpoint prose.",
+    "speed": "Source explicitly uses lower-inclusive/upper-exclusive. Zero and exact c are special singleton labels. Default canonical ratios use exact c=299792458 m/s and chart Mach=343 m/s; printed_m_s option reproduces rounded m/s column.",
+    "lifting": "Lower-inclusive, upper-exclusive deterministic convention; source ranges overlap at displayed endpoints. Values are Earth-equivalent lifted mass, not damage energy.",
+    "plus": "Strictly above arithmetic mean qualifies numerically; exact equality is flagged because AP prose says greater than, while its example repeats the shared endpoint."
+  },
+  "limitations": [
+    "This is a pinned rules snapshot read on 2026-10-21, not an assertion that future VSB rules cannot change.",
+    "A numerical classification is not an accepted character profile or proof that the proposed feat/physical model/scaling is valid.",
+    "Decimal operations preserve supplied precision; source display rounding and empirical input uncertainty remain.",
+    "No Wangba tier, hax cap, evidence mode or dimension conversion is silently applied."
+  ],
+  "attack_potency": {
+    "finite_tiers": [
+      {
+        "tier": "10-C",
+        "label": "Below Average Human",
+        "lower": "0",
+        "upper": "60"
+      },
+      {
+        "tier": "10-B",
+        "label": "Human",
+        "lower": "60",
+        "upper": "106"
+      },
+      {
+        "tier": "10-A",
+        "label": "Athlete",
+        "lower": "106",
+        "upper": "300"
+      },
+      {
+        "tier": "9-C",
+        "label": "Street",
+        "lower": "300",
+        "upper": "1.5e4"
+      },
+      {
+        "tier": "9-B",
+        "label": "Wall",
+        "lower": "1.5e4",
+        "upper": "2.092e7"
+      },
+      {
+        "tier": "9-A",
+        "label": "Small Building",
+        "lower": "2.092e7",
+        "upper": "1.046e9"
+      },
+      {
+        "tier": "8-C",
+        "label": "Building",
+        "lower": "1.046e9",
+        "upper": "8.368e9"
+      },
+      {
+        "tier": "High 8-C",
+        "label": "Large Building",
+        "lower": "8.368e9",
+        "upper": "4.6024e10"
+      },
+      {
+        "tier": "8-B",
+        "label": "City Block",
+        "lower": "4.6024e10",
+        "upper": "4.184e11"
+      },
+      {
+        "tier": "8-A",
+        "label": "Multi-City Block",
+        "lower": "4.184e11",
+        "upper": "4.184e12"
+      },
+      {
+        "tier": "Low 7-C",
+        "label": "Small Town",
+        "lower": "4.184e12",
+        "upper": "2.42672e13"
+      },
+      {
+        "tier": "7-C",
+        "label": "Town",
+        "lower": "2.42672e13",
+        "upper": "4.184e14"
+      },
+      {
+        "tier": "High 7-C",
+        "label": "Large Town",
+        "lower": "4.184e14",
+        "upper": "4.184e15"
+      },
+      {
+        "tier": "Low 7-B",
+        "label": "Small City",
+        "lower": "4.184e15",
+        "upper": "2.63592e16"
+      },
+      {
+        "tier": "7-B",
+        "label": "City",
+        "lower": "2.63592e16",
+        "upper": "4.184e17"
+      },
+      {
+        "tier": "7-A",
+        "label": "Mountain",
+        "lower": "4.184e17",
+        "upper": "4.184e18"
+      },
+      {
+        "tier": "High 7-A",
+        "label": "Large Mountain",
+        "lower": "4.184e18",
+        "upper": "1.79912e19"
+      },
+      {
+        "tier": "6-C",
+        "label": "Island",
+        "lower": "1.79912e19",
+        "upper": "4.184e20"
+      },
+      {
+        "tier": "High 6-C",
+        "label": "Large Island",
+        "lower": "4.184e20",
+        "upper": "4.184e21"
+      },
+      {
+        "tier": "Low 6-B",
+        "label": "Small Country",
+        "lower": "4.184e21",
+        "upper": "2.9288e22"
+      },
+      {
+        "tier": "6-B",
+        "label": "Country",
+        "lower": "2.9288e22",
+        "upper": "4.184e23"
+      },
+      {
+        "tier": "High 6-B",
+        "label": "Large Country",
+        "lower": "4.184e23",
+        "upper": "3.17984e24"
+      },
+      {
+        "tier": "6-A",
+        "label": "Continent",
+        "lower": "3.17984e24",
+        "upper": "1.855604e25"
+      },
+      {
+        "tier": "High 6-A",
+        "label": "Multi-Continent",
+        "lower": "1.855604e25",
+        "upper": "1.24e29"
+      },
+      {
+        "tier": "5-C",
+        "label": "Moon",
+        "lower": "1.24e29",
+        "upper": "1.81e30"
+      },
+      {
+        "tier": "Low 5-B",
+        "label": "Small Planet",
+        "lower": "1.81e30",
+        "upper": "2.487e32"
+      },
+      {
+        "tier": "5-B",
+        "label": "Planet",
+        "lower": "2.487e32",
+        "upper": "1.59e34"
+      },
+      {
+        "tier": "5-A",
+        "label": "Large Planet",
+        "lower": "1.59e34",
+        "upper": "6.906e37"
+      },
+      {
+        "tier": "High 5-A",
+        "label": "Brown Dwarf",
+        "lower": "6.906e37",
+        "upper": "3.139e40"
+      },
+      {
+        "tier": "Low 4-C",
+        "label": "Small Star",
+        "lower": "3.139e40",
+        "upper": "5.693e41"
+      },
+      {
+        "tier": "4-C",
+        "label": "Star",
+        "lower": "5.693e41",
+        "upper": "3.182e42"
+      },
+      {
+        "tier": "High 4-C",
+        "label": "Large Star",
+        "lower": "3.182e42",
+        "upper": "2.923e45"
+      },
+      {
+        "tier": "4-B",
+        "label": "Solar System",
+        "lower": "2.923e45",
+        "upper": "2.008e57"
+      },
+      {
+        "tier": "4-A",
+        "label": "Multi-Solar System",
+        "lower": "2.008e57",
+        "upper": "1.053e66"
+      },
+      {
+        "tier": "3-C",
+        "label": "Galaxy",
+        "lower": "1.053e66",
+        "upper": "8.593e68"
+      },
+      {
+        "tier": "3-B",
+        "label": "Multi-Galaxy",
+        "lower": "8.593e68",
+        "upper": "2.825e92"
+      },
+      {
+        "tier": "3-A",
+        "label": "Universe",
+        "lower": "2.825e92",
+        "upper": null
+      }
+    ],
+    "limitations": [
+      "Any larger finite energy remains 3-A; finite numbers never establish an infinite or higher-dimensional tier.",
+      "Use energy of one relevant attack, not accumulated unrelated hits, superficial area labels, force (N), power (W) or unconverted mass.",
+      "AP can be supported through damaging a target with independently established durability; destructive area is not an automatic AP ceiling.",
+      "9-A through 3-B generally need accepted calculations/multipliers/precise statements, with source-listed standard celestial-destruction exceptions. The module does not certify VSB acceptance.",
+      "Printed Joule and rounded TNT columns can differ; this snapshot consistently uses printed Joules for classification."
+    ]
+  },
+  "speed": {
+    "constants": {
+      "c_m_s": "299792458",
+      "chart_mach_m_s": "343"
+    },
+    "finite_tiers": [
+      {
+        "label": "Below Average Human",
+        "lower": "0",
+        "upper": "5",
+        "source_anchor": {
+          "value": "0",
+          "unit": "m/s"
+        },
+        "printed_lower_m_s": "0",
+        "printed_upper_m_s": "5"
+      },
+      {
+        "label": "Average Human",
+        "lower": "5",
+        "upper": "7.7",
+        "source_anchor": {
+          "value": "5",
+          "unit": "m/s"
+        },
+        "printed_lower_m_s": "5",
+        "printed_upper_m_s": "7.7"
+      },
+      {
+        "label": "Athletic Human",
+        "lower": "7.7",
+        "upper": "10.03",
+        "source_anchor": {
+          "value": "7.7",
+          "unit": "m/s"
+        },
+        "printed_lower_m_s": "7.7",
+        "printed_upper_m_s": "10.03"
+      },
+      {
+        "label": "Peak Human",
+        "lower": "10.03",
+        "upper": "12.43",
+        "source_anchor": {
+          "value": "10.03",
+          "unit": "m/s"
+        },
+        "printed_lower_m_s": "10.03",
+        "printed_upper_m_s": "12.43"
+      },
+      {
+        "label": "Superhuman",
+        "lower": "12.43",
+        "upper": "34.3",
+        "source_anchor": {
+          "value": "12.43",
+          "unit": "m/s"
+        },
+        "printed_lower_m_s": "12.43",
+        "printed_upper_m_s": "34.3"
+      },
+      {
+        "label": "Subsonic (Faster than the Eye)",
+        "lower": "34.3",
+        "upper": "171.5",
+        "source_anchor": {
+          "value": "0.1",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "34.3",
+        "printed_upper_m_s": "171.5"
+      },
+      {
+        "label": "Subsonic+",
+        "lower": "171.5",
+        "upper": "308.7",
+        "source_anchor": {
+          "value": "0.5",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "171.5",
+        "printed_upper_m_s": "308.7"
+      },
+      {
+        "label": "Transonic",
+        "lower": "308.7",
+        "upper": "377.3",
+        "source_anchor": {
+          "value": "0.9",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "308.7",
+        "printed_upper_m_s": "377.3"
+      },
+      {
+        "label": "Supersonic",
+        "lower": "377.3",
+        "upper": "857.5",
+        "source_anchor": {
+          "value": "1.1",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "377.3",
+        "printed_upper_m_s": "857.5"
+      },
+      {
+        "label": "Supersonic+",
+        "lower": "857.5",
+        "upper": "1715",
+        "source_anchor": {
+          "value": "2.5",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "857.5",
+        "printed_upper_m_s": "1715"
+      },
+      {
+        "label": "Hypersonic",
+        "lower": "1715",
+        "upper": "3430",
+        "source_anchor": {
+          "value": "5",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "1715",
+        "printed_upper_m_s": "3430"
+      },
+      {
+        "label": "Hypersonic+",
+        "lower": "3430",
+        "upper": "8575",
+        "source_anchor": {
+          "value": "10",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "3430",
+        "printed_upper_m_s": "8575"
+      },
+      {
+        "label": "High Hypersonic",
+        "lower": "8575",
+        "upper": "17150",
+        "source_anchor": {
+          "value": "25",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "8575",
+        "printed_upper_m_s": "17150"
+      },
+      {
+        "label": "High Hypersonic+",
+        "lower": "17150",
+        "upper": "34300",
+        "source_anchor": {
+          "value": "50",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "17150",
+        "printed_upper_m_s": "34300"
+      },
+      {
+        "label": "Massively Hypersonic",
+        "lower": "34300",
+        "upper": "343000",
+        "source_anchor": {
+          "value": "100",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "34300",
+        "printed_upper_m_s": "343000"
+      },
+      {
+        "label": "Massively Hypersonic+",
+        "lower": "343000",
+        "upper": "2997924.58",
+        "source_anchor": {
+          "value": "1000",
+          "unit": "Mach"
+        },
+        "printed_lower_m_s": "343000",
+        "printed_upper_m_s": "2997925"
+      },
+      {
+        "label": "Sub-Relativistic",
+        "lower": "2997924.58",
+        "upper": "14989622.90",
+        "source_anchor": {
+          "value": "0.01",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "2997925",
+        "printed_upper_m_s": "14989621.4"
+      },
+      {
+        "label": "Sub-Relativistic+",
+        "lower": "14989622.90",
+        "upper": "29979245.8",
+        "source_anchor": {
+          "value": "0.05",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "14989621.4",
+        "printed_upper_m_s": "2.998e7"
+      },
+      {
+        "label": "Relativistic",
+        "lower": "29979245.8",
+        "upper": "149896229.0",
+        "source_anchor": {
+          "value": "0.1",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "2.998e7",
+        "printed_upper_m_s": "1.499e8"
+      },
+      {
+        "label": "Relativistic+",
+        "lower": "149896229.0",
+        "upper": "299792458",
+        "source_anchor": {
+          "value": "0.5",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "1.499e8",
+        "printed_upper_m_s": "299792458"
+      },
+      {
+        "label": "FTL",
+        "lower": "299792458",
+        "upper": "2997924580",
+        "source_anchor": {
+          "value": "1",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "299792458",
+        "printed_upper_m_s": "2.998e9"
+      },
+      {
+        "label": "FTL+",
+        "lower": "2997924580",
+        "upper": "29979245800",
+        "source_anchor": {
+          "value": "10",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "2.998e9",
+        "printed_upper_m_s": "2.998e10"
+      },
+      {
+        "label": "Massively FTL",
+        "lower": "29979245800",
+        "upper": "299792458000",
+        "source_anchor": {
+          "value": "100",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "2.998e10",
+        "printed_upper_m_s": "2.998e11"
+      },
+      {
+        "label": "Massively FTL+",
+        "lower": "299792458000",
+        "upper": null,
+        "source_anchor": {
+          "value": "1000",
+          "unit": "c"
+        },
+        "printed_lower_m_s": "2.998e11",
+        "printed_upper_m_s": null
+      }
+    ],
+    "qualitative_categories": [
+      "Infinite",
+      "Immeasurable",
+      "Omnipresent (state of being; scope must be specified)"
+    ],
+    "limitations": [
+      "Mach and SoL anchors are used for exact canonical boundaries because printed m/s figures are rounded/inconsistent at several relativistic boundaries.",
+      "A Mach number uses the VSB chart convention of 343 m/s here, not a claim about local atmospheric sound speed.",
+      "Travel/flight does not automatically establish reactions/combat; attack speed does not automatically establish user movement.",
+      "Teleportation, time stop, timeless voids and unquantified cross-universe travel do not independently grant Infinite/Immeasurable speed.",
+      "Massively FTL+ starts at 1000c and includes arbitrarily larger finite speeds; equal labels do not imply comparable numerical speeds."
+    ]
+  },
+  "lifting_strength": {
+    "finite_tiers": [
+      {
+        "label": "Below Average Human",
+        "lower": "0",
+        "upper": "50"
+      },
+      {
+        "label": "Average Human",
+        "lower": "50",
+        "upper": "80"
+      },
+      {
+        "label": "Above Average Human",
+        "lower": "80",
+        "upper": "120"
+      },
+      {
+        "label": "Athletic Human",
+        "lower": "120",
+        "upper": "227"
+      },
+      {
+        "label": "Peak Human",
+        "lower": "227",
+        "upper": "545.2"
+      },
+      {
+        "label": "Class 1",
+        "lower": "545.2",
+        "upper": "1000"
+      },
+      {
+        "label": "Class 5",
+        "lower": "1000",
+        "upper": "5000"
+      },
+      {
+        "label": "Class 10",
+        "lower": "5000",
+        "upper": "1e4"
+      },
+      {
+        "label": "Class 25",
+        "lower": "1e4",
+        "upper": "2.5e4"
+      },
+      {
+        "label": "Class 50",
+        "lower": "2.5e4",
+        "upper": "5e4"
+      },
+      {
+        "label": "Class 100",
+        "lower": "5e4",
+        "upper": "1e5"
+      },
+      {
+        "label": "Class K",
+        "lower": "1e5",
+        "upper": "1e6"
+      },
+      {
+        "label": "Class M",
+        "lower": "1e6",
+        "upper": "1e9"
+      },
+      {
+        "label": "Class G",
+        "lower": "1e9",
+        "upper": "1e12"
+      },
+      {
+        "label": "Class T",
+        "lower": "1e12",
+        "upper": "1e15"
+      },
+      {
+        "label": "Class P",
+        "lower": "1e15",
+        "upper": "1e18"
+      },
+      {
+        "label": "Class E",
+        "lower": "1e18",
+        "upper": "1e21"
+      },
+      {
+        "label": "Class Z",
+        "lower": "1e21",
+        "upper": "1e24"
+      },
+      {
+        "label": "Class Y",
+        "lower": "1e24",
+        "upper": "1e27"
+      },
+      {
+        "label": "Pre-Stellar",
+        "lower": "1e27",
+        "upper": "2e29"
+      },
+      {
+        "label": "Stellar",
+        "lower": "2e29",
+        "upper": "3.977e32"
+      },
+      {
+        "label": "Multi-Stellar",
+        "lower": "3.977e32",
+        "upper": "1.6e42"
+      },
+      {
+        "label": "Galactic",
+        "lower": "1.6e42",
+        "upper": "6e43"
+      },
+      {
+        "label": "Multi-Galactic",
+        "lower": "6e43",
+        "upper": "1.5e53"
+      },
+      {
+        "label": "Universal",
+        "lower": "1.5e53",
+        "upper": null
+      }
+    ],
+    "qualitative_categories": [
+      "Insubstantial",
+      "Superhuman (uncalculated placeholder)",
+      "Infinite",
+      "Immeasurable",
+      "Inapplicable"
+    ],
+    "limitations": [
+      "Lifting/force and striking/AP are different physical quantities and require independent feats.",
+      "Telekinesis or comparable mechanisms must be separated from physical lifting strength.",
+      "Pushing/pulling/tearing require a force/geometry/friction model; moving a mass is not automatically lifting that full mass.",
+      "Threefold LS grappling rule is only a matchup heuristic for pre-existing statistics, subject to AP/size/skill/leverage; it is not an in-universe scaling multiplier.",
+      "Infinite/Immeasurable/Inapplicable need qualitative proof; arbitrarily large finite mass remains Universal."
+    ]
+  },
+  "engine": "vsb_rules",
+  "standard_name": "VS Battles Wiki",
+  "licensing": {
+    "license": "CC-BY-SA-3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "VS Battles Wiki contributors",
+    "changes": "Translated, summarized and structured for independent rule execution; source pages and reviewed revisions are retained.",
+    "copyright_policy": "https://vsbattles.fandom.com/wiki/VS_Battles_Wiki:Copyrights",
+    "scope": "This adapted reference data, not the independently written general-purpose program code or third-party images."
+  }
+}

@@ -128,6 +128,84 @@ class ResearchTests(unittest.TestCase):
         self.assertEqual(item['source_access'], 'indexed')
         self.assertFalse(item['original_source_verified'])
         self.assertEqual(item['citations'][0]['locator'], 'ch 7')
+        self.assertEqual(item['license'], 'CC-BY-4.0')
+        self.assertEqual(item['license_url'], 'https://creativecommons.org/licenses/by/4.0/')
+        self.assertIn('Changes:', item['attribution'])
+        self.assertIn(item['source_url'], item['attribution'])
+        self.assertFalse(item['attribution_details']['source_authenticity_verified'])
+        self.assertEqual(result['import_license_summary']['counts'], {'CC-BY-4.0': 1})
+
+    def cited_index(self, entries):
+        source = Path(self.temp.name) / 'cited-rights.json'
+        source.write_text(json.dumps(entries), encoding='utf-8')
+        return research.run({'op': 'index', 'db': self.db, 'import_cited': str(source)})
+
+    def test_cited_scp_exception_is_share_alike_even_if_row_claims_general_license(self):
+        entry = {'franchise': 'scp', 'id': 'scp-096', 'name': 'SCP-096',
+            'feat': 'community description', 'license': 'CC BY 4.0',
+            'discovery_url': 'https://citedfeats.com/scp/#scp-096',
+            'citations': [{'url': 'https://scp-wiki.wikidot.com/scp-096', 'locator': 'Description'}]}
+        result = self.cited_index([entry])
+        self.assertEqual(result['status'], 'ok')
+        item = self.search()['results'][0]
+        self.assertEqual(item['license'], 'CC-BY-SA-3.0')
+        self.assertEqual(item['license_url'], 'https://creativecommons.org/licenses/by-sa/3.0/')
+        self.assertEqual(item['license_basis'], 'scp_row_exception')
+        self.assertIn('CC-BY-SA-3.0', item['attribution'])
+        self.assertIn('no rights in the cited original works', item['license_scope'])
+        self.assertEqual(item['foreign_record'], entry)
+        self.assertEqual(item['citations'], entry['citations'])
+        self.assertEqual(result['import_license_summary']['counts'], {'CC-BY-SA-3.0': 1})
+
+    def test_cited_mixed_import_keeps_per_row_licenses_and_summary(self):
+        result = self.cited_index([
+            {'franchise': 'marvel', 'id': 'hero', 'discovery_url': 'https://citedfeats.com/marvel/#hero'},
+            {'franchise': 'SCP Foundation', 'franchise_slug': 'scp', 'id': 'scp-096',
+             'discovery_url': 'https://citedfeats.com/scp/#scp-096'}])
+        self.assertEqual(result['status'], 'ok')
+        summary = result['import_license_summary']
+        self.assertTrue(summary['mixed_license'])
+        self.assertEqual(summary['counts'], {'CC-BY-4.0': 1, 'CC-BY-SA-3.0': 1})
+        rows = self.search()['results']
+        self.assertEqual({item['license'] for item in rows}, {'CC-BY-4.0', 'CC-BY-SA-3.0'})
+
+    def test_cited_missing_source_keeps_clue_but_does_not_invent_reuse_permission(self):
+        result = self.cited_index([
+            {'franchise': 'test', 'id': 'one', 'feat': 'a clue'},
+            {'franchise': 'scp', 'id': 'two', 'feat': 'another clue', 'discovery_url': None}])
+        self.assertEqual(result['status'], 'ok')
+        self.assertEqual(result['added'], 2)
+        self.assertEqual(result['import_license_summary']['counts'], {'unresolved': 2})
+        self.assertEqual(len(result['import_license_summary']['unresolved_records']), 2)
+        for item in self.search()['results']:
+            self.assertIsNone(item['license'])
+            self.assertIsNone(item['license_url'])
+            self.assertEqual(item['license_status'], 'unresolved')
+            self.assertTrue(item['rights_needs'])
+            self.assertIn('no reuse permission inferred', item['attribution'])
+        self.assertTrue(result['warnings'])
+
+    def test_cited_lookalike_domain_does_not_receive_site_license(self):
+        result = self.cited_index([{'franchise': 'test', 'id': 'hero',
+            'discovery_url': 'https://citedfeats.com.example.org/test/#hero'}])
+        self.assertEqual(result['status'], 'ok')
+        self.assertIsNone(self.search()['results'][0]['license'])
+
+    def test_cited_scp_source_scope_conflict_is_unresolved_in_both_directions(self):
+        result = self.cited_index([
+            {'franchise': 'test', 'id': 'one', 'discovery_url': 'https://citedfeats.com/scp/#one'},
+            {'franchise': 'scp', 'id': 'two', 'discovery_url': 'https://citedfeats.com/test/#two'}])
+        self.assertEqual(result['status'], 'ok')
+        for item in self.search()['results']:
+            self.assertIsNone(item['license'])
+            self.assertIn('SCP franchise and source URL disagree', ' '.join(item['rights_needs']))
+
+    def test_non_cited_records_are_not_given_cited_license_or_attribution(self):
+        item = record()
+        result = self.index(item)
+        self.assertEqual(result['status'], 'ok')
+        self.assertIsNone(result['import_license_summary'])
+        self.assertEqual(self.search()['results'][0], item)
 
     def test_cited_anonymous_footer_is_quarantined_not_invented_as_character(self):
         source = Path(self.temp.name) / 'cited-mixed.json'

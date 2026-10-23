@@ -1,0 +1,538 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-23",
+  "review_timezone": "Asia/Shanghai",
+  "release_target": "v1.12.2",
+  "scope": "Current release package only; no Git history audit",
+  "receipt_policy": "Summaries of actual tool or HTTP accesses. A missing hash means no raw-response hash was retained; it does not imply one. Day-level dates are used when the exact access time was not retained. Blocked pages are not represented as read. No current legal findings are inferred from an unvisited URL.",
+  "sources": [
+    {
+      "name": "AutoSkill",
+      "url": "https://github.com/ECNU-ICALK/AutoSkill",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": null,
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/ECNU-ICALK/AutoSkill/license",
+      "license_api_status": 404,
+      "note": "No complete root license found; AutoSkill MIT README badge alone was not treated as resolved permission."
+    },
+    {
+      "name": "OmniBattle AI",
+      "url": "https://github.com/Zerhal/omnibattle-ai",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "MIT",
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/Zerhal/omnibattle-ai/license",
+      "license_api_status": 200,
+      "note": "License file read from the upstream repository."
+    },
+    {
+      "name": "vskill",
+      "url": "https://github.com/GentleClash/vskill",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": null,
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/GentleClash/vskill/license",
+      "license_api_status": 404,
+      "note": "No complete root license found; AutoSkill MIT README badge alone was not treated as resolved permission."
+    },
+    {
+      "name": "Fictional Character Ranking",
+      "url": "https://github.com/BenCantCode/fictional-ranking",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": null,
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/BenCantCode/fictional-ranking/license",
+      "license_api_status": 404,
+      "note": "No complete root license found; AutoSkill MIT README badge alone was not treated as resolved permission."
+    },
+    {
+      "name": "Animal Battle Stats",
+      "url": "https://github.com/RamiNoodle733/animal-battle-stats",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "MIT",
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/RamiNoodle733/animal-battle-stats/license",
+      "license_api_status": 200,
+      "note": "License file read from the upstream repository."
+    },
+    {
+      "name": "QuantiPhy",
+      "url": "https://github.com/Paulineli/QuantiPhy",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "MIT",
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/Paulineli/QuantiPhy/license",
+      "license_api_status": 200,
+      "note": "License file read from the upstream repository."
+    },
+    {
+      "name": "MangaLMM",
+      "url": "https://github.com/manga109/MangaLMM",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "MIT",
+      "relationship": "research_workflow_only",
+      "method": "official GitHub page and official repository metadata API",
+      "license_api_url": "https://api.github.com/repos/manga109/MangaLMM/license",
+      "license_api_status": 200,
+      "note": "License file read from the upstream repository."
+    },
+    {
+      "name": "OmniBattle AI license",
+      "url": "https://raw.githubusercontent.com/Zerhal/omnibattle-ai/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": "2025 OmniBattle AI Contributors",
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "Animal Battle Stats license",
+      "url": "https://raw.githubusercontent.com/RamiNoodle733/animal-battle-stats/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": "2025 Animal Battle Stats Team",
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "QuantiPhy license",
+      "url": "https://raw.githubusercontent.com/Paulineli/QuantiPhy/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": "2025 Puyin Li",
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "MangaLMM license",
+      "url": "https://raw.githubusercontent.com/manga109/MangaLMM/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": "2025 manga109 team",
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "Pillow license",
+      "url": "https://raw.githubusercontent.com/python-pillow/Pillow/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT-CMU",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "NumPy license",
+      "url": "https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "BSD-3-Clause",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "ONNX Runtime license",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "RapidLaTeXOCR license",
+      "url": "https://raw.githubusercontent.com/RapidAI/RapidLaTeXOCR/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "RapidOCR license",
+      "url": "https://raw.githubusercontent.com/RapidAI/RapidOCR/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "PyMuPDF license",
+      "url": "https://raw.githubusercontent.com/pymupdf/PyMuPDF/main/COPYING",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "AGPL-3.0",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "jieba license",
+      "url": "https://raw.githubusercontent.com/fxsjy/jieba/master/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "MIT",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "aiotieba license",
+      "url": "https://raw.githubusercontent.com/lumina37/aiotieba/master/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "Unlicense",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "FFmpeg license",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/master/LICENSE.md",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "build-dependent: usually LGPL-2.1-or-later; GPL options can change terms",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "pypdf license",
+      "url": "https://raw.githubusercontent.com/py-pdf/pypdf/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "BSD-3-Clause",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "PyPDF2 license",
+      "url": "https://raw.githubusercontent.com/py-pdf/PyPDF2/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "license": "BSD-3-Clause",
+      "copyright_notice": null,
+      "method": "actual urllib request; full license text read; no dependency binary redistributed"
+    },
+    {
+      "name": "novel-refpack LICENSE",
+      "url": "https://raw.githubusercontent.com/scp3500/novel-refpack/main/LICENSE",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "ccb9eb4a40e1bbccd09555ed5bad1b532729c67eac349022735ee53eba7f425f",
+      "method": "actual download and byte comparison against original local reference copies",
+      "match": "Exact match to both original copies",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "novel-refpack README.md",
+      "url": "https://raw.githubusercontent.com/scp3500/novel-refpack/main/README.md",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "16df958a3e3913c0fb97f8e776b028cb8914e58b3cabbf72e5e9be4b89b77ec5",
+      "method": "actual download and byte comparison against original local reference copies",
+      "match": "Exact match to early unmodified local copy; later locally extended edition differs",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "novel-refpack scripts/00_extract.py",
+      "url": "https://raw.githubusercontent.com/scp3500/novel-refpack/main/scripts/00_extract.py",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "1edf94dfd4f78c054be0c5eba0200efea1f0c387e645418576a1600191bfa0bb",
+      "method": "actual download and byte comparison against original local reference copies",
+      "match": "Exact match to both original copies",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "novel-refpack scripts/01_split.py",
+      "url": "https://raw.githubusercontent.com/scp3500/novel-refpack/main/scripts/01_split.py",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "a03ee7895c3d06ebe3f348fb6acfc93bf795363a6e65e49cd8c3b63d72d53023",
+      "method": "actual download and byte comparison against original local reference copies",
+      "match": "Exact match to both original copies",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "novel-refpack lib/textio.py",
+      "url": "https://raw.githubusercontent.com/scp3500/novel-refpack/main/lib/textio.py",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "a6d780018821853e878bd78a2ace882650998e8773a2621899ecfc902e2d571c",
+      "method": "actual download and byte comparison against original local reference copies",
+      "match": "Exact match to both original copies",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "novel-refpack repository",
+      "url": "https://github.com/scp3500/novel-refpack",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "MIT",
+      "method": "official repository page plus matching original-file fingerprints",
+      "historical_checkout_commit": null
+    },
+    {
+      "name": "Cited Feats data license",
+      "url": "https://citedfeats.com/data/",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "CC-BY-4.0 except SCP rows CC-BY-SA-3.0",
+      "relationship": "optional user-supplied data import; no complete upstream dataset bundled",
+      "method": "official data page read",
+      "requirements": [
+        "attribution",
+        "source link",
+        "indicate changes",
+        "SCP rows preserve applicable ShareAlike terms"
+      ],
+      "official_github": null
+    },
+    {
+      "name": "Cited Feats site",
+      "url": "https://citedfeats.com/",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "footer states data CC BY 4.0; dedicated data page supplies SCP exception",
+      "method": "official site and raw HTML read"
+    },
+    {
+      "name": "ManGo paper",
+      "url": "https://arxiv.org/abs/2608.29865",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "CC-BY-4.0",
+      "relationship": "research_workflow_only",
+      "method": "official abstract, HTML paper and raw license hyperlink read",
+      "official_implementation_repository": null,
+      "note": "No author implementation repository found in the inspected primary paper. Search failure is not proof of global absence."
+    },
+    {
+      "name": "ManGo HTML",
+      "url": "https://arxiv.org/html/2608.29865v1",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "CC-BY-4.0 for paper; third-party media not automatically covered",
+      "method": "official paper HTML read; no implementation GitHub link in paper located"
+    },
+    {
+      "name": "VSB copyright API",
+      "url": "https://vsbattles.fandom.com/api.php?action=parse&page=VS_Battles_Wiki%3ACopyrights&prop=wikitext&format=json",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "08bbe2e1841553d991691ac6879ddeee8b012aa40248be8a87139399f1c1306e",
+      "license": "CC-BY-SA-3.0",
+      "method": "actual official MediaWiki API request; wikitext license statement read",
+      "page_id": 1452,
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "name": "VSB copyright latest revision API",
+      "url": "https://vsbattles.fandom.com/api.php?action=query&titles=VS_Battles_Wiki%3ACopyrights&prop=revisions&rvprop=ids%7Ctimestamp&rvlimit=1&format=json",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "d80baa9d8d6a4a92576279e389d1bc5b3bcfe61b8cbc06fa5391d3696f28b943",
+      "method": "actual official MediaWiki API request",
+      "revision_id": 3728,
+      "revision_timestamp": "2010-10-24T02:55:21Z",
+      "note": "Old revision timestamp, but the current API returned this as the latest copyright-page revision on the observed date."
+    },
+    {
+      "name": "VSB site rights API",
+      "url": "https://vsbattles.fandom.com/api.php?action=query&meta=siteinfo&siprop=rightsinfo&format=json",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "2eb1fb9a495dcc79af20a7851d66739850b0c3db7cd6465a177b6653eb0e0e35",
+      "method": "actual official MediaWiki API request",
+      "rightsinfo": {
+        "text": "CC-BY-SA",
+        "url": "https://www.fandom.com/licensing"
+      }
+    },
+    {
+      "name": "Fandom official licensing help API",
+      "url": "https://community.fandom.com/api.php?action=parse&page=Help%3ALicensing&prop=wikitext&format=json",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "http_status": 200,
+      "sha256": "32914154f4b371dd42004e4463946705e875f0453732d904806bed95bbef2615",
+      "license": "CC-BY-SA-3.0 default text unless otherwise stated",
+      "method": "actual official MediaWiki API request; default-license and attribution requirements read"
+    },
+    {
+      "name": "Blocked direct Fandom webpage",
+      "url": "https://vsbattles.fandom.com/wiki/Tiering_System",
+      "observed_date": "2026-10-23",
+      "status": "blocked",
+      "method": "direct web/urllib request",
+      "observed_errors": [
+        "web tool returned 402 or robots exclusion for direct pages",
+        "urllib direct webpage requests returned 403; API responses listed separately succeeded"
+      ]
+    },
+    {
+      "name": "Blocked direct Fandom webpage",
+      "url": "https://www.fandom.com/licensing",
+      "observed_date": "2026-10-23",
+      "status": "blocked",
+      "method": "direct web/urllib request",
+      "observed_errors": [
+        "web tool returned 402 or robots exclusion for direct pages",
+        "urllib direct webpage requests returned 403; API responses listed separately succeeded"
+      ]
+    },
+    {
+      "name": "Blocked direct Fandom webpage",
+      "url": "https://www.fandom.com/terms-of-use",
+      "observed_date": "2026-10-23",
+      "status": "blocked",
+      "method": "direct web/urllib request",
+      "observed_errors": [
+        "web tool returned 402 or robots exclusion for direct pages",
+        "urllib direct webpage requests returned 403; API responses listed separately succeeded"
+      ]
+    },
+    {
+      "name": "Blocked direct Fandom webpage",
+      "url": "https://vsbattles.fandom.com/wiki/Project:Copyrights",
+      "observed_date": "2026-10-23",
+      "status": "blocked",
+      "method": "direct web/urllib request",
+      "observed_errors": [
+        "web tool returned 402 or robots exclusion for direct pages",
+        "urllib direct webpage requests returned 403; API responses listed separately succeeded"
+      ]
+    },
+    {
+      "name": "Blocked direct Fandom webpage",
+      "url": "https://community.fandom.com/wiki/Help:Licensing",
+      "observed_date": "2026-10-23",
+      "status": "blocked",
+      "method": "direct web/urllib request",
+      "observed_errors": [
+        "web tool returned 402 or robots exclusion for direct pages",
+        "urllib direct webpage requests returned 403; API responses listed separately succeeded"
+      ]
+    },
+    {
+      "name": "PyMuPDF license explanation",
+      "url": "https://pymupdf.readthedocs.io/en/latest/about.html#license-and-copyright",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "license": "AGPL or commercial agreement",
+      "method": "official documentation license section read",
+      "note": "Separate installation and acknowledgement do not determine compliance for combined programs, distribution or network use."
+    },
+    {
+      "name": "Manga109 download terms",
+      "url": "https://www.manga109.org/en/download_s.html",
+      "observed_date": "2026-10-23",
+      "status": "timeout",
+      "method": "direct web request",
+      "note": "MangaLMM official README was successfully read and explicitly states that Manga109 redistribution is not permitted; this direct download-terms page timed out."
+    },
+    {
+      "name": "MangaLMM README",
+      "url": "https://github.com/manga109/MangaLMM",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "method": "official README read",
+      "note": "Explicitly separates MIT code from Manga109 dataset and says Manga109 redistribution is not permitted."
+    },
+    {
+      "name": "CC BY-SA 3.0 deed",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "method": "Creative Commons primary deed read",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "CC BY 4.0 deed",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "observed_date": "2026-10-23",
+      "status": "read",
+      "method": "Creative Commons primary deed read",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "vsb_package_source_links": {
+    "status": "existing package citations, not all individually re-fetched in this release audit",
+    "urls": [
+      "https://vsbattles.fandom.com/api.php?action=parse&page=",
+      "https://vsbattles.fandom.com/api.php?action=parse&page=Tiering_System&prop=wikitext%7Crevid&format=json",
+      "https://vsbattles.fandom.com/wiki/Attack_Potency",
+      "https://vsbattles.fandom.com/wiki/Attack_Potency?oldid=9632883",
+      "https://vsbattles.fandom.com/wiki/Beyond-Dimensional_Existence",
+      "https://vsbattles.fandom.com/wiki/Calculations?oldid=9632893",
+      "https://vsbattles.fandom.com/wiki/Calculations_Introduction_and_References?oldid=7978302",
+      "https://vsbattles.fandom.com/wiki/Creation_Feats?oldid=8400132",
+      "https://vsbattles.fandom.com/wiki/Durability?oldid=9632884",
+      "https://vsbattles.fandom.com/wiki/Fallacies?oldid=9363140#16._No_Limits_Fallacy_(NLF",
+      "https://vsbattles.fandom.com/wiki/Game_Mechanics?oldid=9666253",
+      "https://vsbattles.fandom.com/wiki/Hax?oldid=9692470",
+      "https://vsbattles.fandom.com/wiki/Higher-Dimensional_Existence",
+      "https://vsbattles.fandom.com/wiki/Intelligence?oldid=9703377",
+      "https://vsbattles.fandom.com/wiki/Kinetic_Energy_Feats?oldid=9342768",
+      "https://vsbattles.fandom.com/wiki/Laser/Light_Beam_Dodging_Feats?oldid=9093267",
+      "https://vsbattles.fandom.com/wiki/Mass-energy_conversion_feats?oldid=9448480",
+      "https://vsbattles.fandom.com/wiki/Omnipotence",
+      "https://vsbattles.fandom.com/wiki/Outliers?oldid=9660702",
+      "https://vsbattles.fandom.com/wiki/Paraconsistent_Physiology",
+      "https://vsbattles.fandom.com/wiki/Powerscaling?oldid=9566433",
+      "https://vsbattles.fandom.com/wiki/Range?oldid=9709169",
+      "https://vsbattles.fandom.com/wiki/Reality-Fiction_Transcendence",
+      "https://vsbattles.fandom.com/wiki/Reality_Equalization?oldid=9019162",
+      "https://vsbattles.fandom.com/wiki/Resistance?oldid=9313371",
+      "https://vsbattles.fandom.com/wiki/Set_Theory_Explanation_Page",
+      "https://vsbattles.fandom.com/wiki/Stamina?oldid=9439513",
+      "https://vsbattles.fandom.com/wiki/Standard_Battle_Assumptions",
+      "https://vsbattles.fandom.com/wiki/Standard_Battle_Assumptions?oldid=9377396",
+      "https://vsbattles.fandom.com/wiki/Striking_Strength?oldid=8752362",
+      "https://vsbattles.fandom.com/wiki/Tiering_System",
+      "https://vsbattles.fandom.com/wiki/Tiering_System_FAQ",
+      "https://vsbattles.fandom.com/wiki/Versus_Thread_Rules?oldid=9123844"
+    ]
+  },
+  "limits": [
+    "Repository license metadata alone does not prove permission for third-party data or media.",
+    "No comprehensive transitive dependency binary audit was performed because optional runtimes and model assets are not bundled.",
+    "No claim of absolute absence of infringement or third-party endorsement is made.",
+    "No historical upstream download commit was invented."
+  ]
+}

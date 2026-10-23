@@ -1,6 +1,6 @@
 {
   "status": "completed_and_visually_compared",
-  "python_executable": "D:\\Codex\\tools\\rapid-latex-ocr\\.venv\\Scripts\\python.exe",
+  "python_executable": "LOCAL_WORKSPACE/tools/rapid-latex-ocr/.venv/Scripts/python.exe",
   "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
   "platform": "Windows-10-10.0.26200-SP0",
   "versions": {
@@ -66,14 +66,14 @@
         1628
       ],
       "native_page_image_sha256": "e5f450e9e0c317f022f71c9f09a6cc24f18882fe5b330d4069117dbfd37ee119",
-      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\inertia-p021-crop-threshold160.png",
+      "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/inertia-p021-crop-threshold160.png",
       "crop_sha256": "34f33a89aba3c7d5cce2635c215ec83052c0e2b78b059379ef3c68e28f70a9fc",
       "crop_dimensions_px": [
         240,
         78
       ],
       "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
-      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\inertia-p021-crop.png",
+      "parent_crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/inertia-p021-crop.png",
       "parent_crop_sha256": "0c3a2113bc9f477709d023fff8216f736c993fa87f2ebfa4c9597e144c62bcca",
       "output_latex": "\\bar{\\cal T}\\stackrel{\\lbrack\\star}{\\longrightarrow}\\stackrel{\\iota\\star}{\\frac{\\iota}{\\partial\\bar{\\cal S}}}\\bar{\\cal S}\\bar{\\cal Q}^{\\underline{{\\alpha}}}",
       "reported_inference_seconds": 1.6949653000338003,
@@ -104,14 +104,14 @@
         1628
       ],
       "native_page_image_sha256": "d4661837c887489fc8eea0dc81e89072ecec04d30e904bc4e0e511e48067ba97",
-      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\adiabatic-p150-crop-threshold160.png",
+      "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/adiabatic-p150-crop-threshold160.png",
       "crop_sha256": "88a449b214f01a1e158d52002032fbf874f06d0eb63698387ae0164ffcc7b678",
       "crop_dimensions_px": [
         630,
         220
       ],
       "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
-      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\adiabatic-p150-crop.png",
+      "parent_crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/adiabatic-p150-crop.png",
       "parent_crop_sha256": "3b4487775aba480e4a26e4c70c5c698aad651d4f6d50bc4df99174f4c3cbb4b0",
       "output_latex": "T_{2}=T_{1}\\cdot\\left({\\frac{P_{2}}{P_{1}}}\\right)^{\\frac{\\gamma-1}{\\gamma}}",
       "reported_inference_seconds": 2.4506475999951363,
@@ -142,14 +142,14 @@
         1726
       ],
       "native_page_image_sha256": "4d2a76c471a5ed60b00dc76e05b202d07621e95d9d0cb615ea8e341bb87b1ec9",
-      "crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\tke-p200-crop-threshold160.png",
+      "crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/tke-p200-crop-threshold160.png",
       "crop_sha256": "93484cd2c49e58baf63e523de237af4374579b3b0fdbf8bcf16025614723cadc",
       "crop_dimensions_px": [
         790,
         140
       ],
       "preprocessing": "One fixed optional derivative: convert grayscale, values <160 ->0 else255; convert RGB; no resize. Original raw crop retained. Compare all three cases, no sample-specific tuning.",
-      "parent_crop_path": "D:\\Codex\\research\\battle-scaling\\handbook-20261018\\formula-ocr-test\\tke-p200-crop.png",
+      "parent_crop_path": "LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/tke-p200-crop.png",
       "parent_crop_sha256": "1255b3ee13ba1b9be63e9671e8fa1149d648371c34265cf0d87aa7ef8dfa08f8",
       "output_latex": "T K E={\\frac{1}{2}}\\ \\rho H A\\sum f_{i}v_{i}^{2}",
       "reported_inference_seconds": 1.1758018999826163,

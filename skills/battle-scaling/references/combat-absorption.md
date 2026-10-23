@@ -4,9 +4,9 @@
 
 ## 来源与版本
 
-- 主源：`C:\Users\17978\.dsh\skills\combat-scaling\`，含主文、references、templates、scripts及data。
-- 补充规则：`D:\Deepseek工作区\论战\汪吧口径规则.md`。
-- 本次快照、逐文件SHA-256及详细行号审计：[input-manifest.json](D:/Codex/research/battle-scaling/combat-absorption-20261020/input-manifest.json)、[规则/物理审计](D:/Codex/research/battle-scaling/combat-absorption-20261020/audit/rules-physics-audit.md)。这些是输入资料指纹，不是对其引用网页或角色结论的重新认证。
+- 主源：`LOCAL_USER_ROOT/.dsh/skills/combat-scaling/`，含主文、references、templates、scripts及data。
+- 补充规则：`LOCAL_UPSTREAM_ROOT/论战/汪吧口径规则.md`。
+- 本次快照、逐文件SHA-256及详细行号审计：input-manifest.json（本地研究档案，不随公开包分发）、规则/物理审计（本地研究档案，不随公开包分发）。这些是输入资料指纹，不是对其引用网页或角色结论的重新认证。
 
 | 输入 | SHA-256 |
 |---|---|
@@ -25,7 +25,7 @@
 | 正反能力矩阵、反方最强论证 | 列攻击效果、条件、可比影响上限、抗性、弱点与具体反制；宏观PK写对方最可行的翻转路径，具体过程仍只在用户要求时展开 |
 | 有效特殊规则杀伤也应明确写输出 | 在既有“输出”行增加**规则有效输出**机制子项；写已证作用对象档、结果、发动与失效条件，与能量AP分列。没有J不因此降级；成功杀伤某目标不自动复制其AP、体防、速度、范围等全部属性，也不等于同J拳力。继续执行[Hax双上限](hax-ceiling.md) |
 
-这些方法用于帮助宿主Agent读原作、找缺口和形成可复核结论。保留常态/最高/扒下限独立、固定九属性、2026.7.30量级册默认、表现优先、主动合理主判；不因外部流程要求而延迟给出已有证据支持的暂定档。
+这些方法用于帮助宿主Agent读原作、找缺口和形成可复核结论。按[统一综合评级](modes-scaling.md)保留高光／通常／低谷的表现与状态审查、固定九属性、2026.7.30量级册默认、表现优先、主动合理综合主判；不因外部流程要求而延迟给出已有证据支持的暂定档。
 
 ## 只登记差异，不执行的源约定
 

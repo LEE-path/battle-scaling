@@ -1,0 +1,10 @@
+[
+  {
+    "id": "independent-rating-fixture",
+    "title": "Explicit invented independent rating fixture",
+    "origin": "author_settings",
+    "access": "provided",
+    "locator": "tests/rating_fixtures.py: invented fixture definitions, not canon",
+    "completion_scope": "This authored synthetic test universe consists only of the explicitly supplied participant configurations and independent ratings; their fixed attribute levels fully describe this fixture. There are no undisclosed feats or cross-version chains."
+  }
+]

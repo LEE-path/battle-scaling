@@ -10,8 +10,9 @@ from collections import defaultdict, deque
 from pathlib import Path
 from pk_modes import READABLE, select_presentation, validate_estimate, review_estimate
 from hax_gate import build_checks as build_hax_checks, review as review_hax, ids as hax_ids, RANK as HAX_RANK
+from rating_preflight import review as review_ratings
 
-MODES = ('normal', 'highest', 'lowball')
+from rating_modes import MODES, LEGACY_MODES, applies, selected_modes, metadata as mode_metadata
 REVIEW_USES = {'observed_output','material_model','full_effort','state_transfer','upper_bound'}
 KINDS = {'repeated_feat', 'credible_feat', 'calculation', 'statement', 'outlier', 'anti_feat'}
 REQUIREMENTS = {
@@ -67,6 +68,8 @@ def validate_case(case):
     errors = []
     if not isinstance(case, dict):
         return ['case must be a JSON object']
+    if case.get('purpose')=='writing':
+        errors.append('Writing requests belong to battle.py writing; an author-directed scene is not a powerscaling evidence case')
     if case.get('schema_version') != 1:
         errors.append('schema_version must be 1')
     if not case.get('case_id'):
@@ -261,18 +264,30 @@ def validate_case(case):
 
 
 def classify_energy(quantity, ruleset_path=None, tier_context=None):
-    numeric={k:(float(v) if k in ('value','min','best','max') and isinstance(v,str) else v) for k,v in quantity.items()}
-    q = normalize_quantity(numeric)
-    if q['unit'] != 'J':
-        return None
     if ruleset_path:
         path=Path(ruleset_path)
     else:
         from rule_profiles import resolve,finite_path
         path=finite_path(resolve())
     if not path.exists():
-        return {'status': 'no_ruleset', 'energy_j': q}
+        return {'status': 'no_ruleset', 'quantity': quantity}
     rules = json.loads(path.read_text(encoding='utf-8'))
+    if rules.get('engine')=='vsb_rules':
+        if quantity.get('kind')=='tier' or quantity.get('unit') not in ENERGY_UNITS:
+            return None
+        from vsb_rules import run
+        original=copy.deepcopy(quantity)
+        original['unit']=original['unit'].replace(' TNT','_TNT')
+        assessment=run({'operation':'energy','quantity':original})
+        tier=assessment.get('classification')
+        label=(tier['tier']+' ('+tier['label']+')') if tier else 'VSB finite reference unavailable'
+        return {'ruleset_id':rules['id'],'standard':'vsb','status':'vsb_numerical_mapping',
+                'best_reference':label,'qualifier':'VSB energy-based reference only; establish the feat, AP/DC ownership and applicable mechanics separately.',
+                'vsb_assessment':assessment}
+    numeric={k:(float(v) if k in ('value','min','best','max') and isinstance(v,str) else v) for k,v in quantity.items()}
+    q = normalize_quantity(numeric)
+    if q['unit'] != 'J':
+        return None
     if rules.get('engine')=='handbook_finite':
         from handbook_finite import classify
         context=tier_context or {}
@@ -325,7 +340,7 @@ def _hax_scoped_case(case,checks,mode):
     for field in ('anchors','edges','qualitative_claims','computations'):
         accepted=[]
         for item in case.get(field,[]):
-            if not isinstance(item,dict) or mode not in item.get('modes',MODES):accepted.append(item);continue
+            if not isinstance(item,dict) or not applies(item, mode):accepted.append(item);continue
             if field=='computations' and item.get('mode',mode)!=mode:continue
             result=_hax_combined([item,item.get('attach',{})],checks,
                     owner=item.get('ability_owner',item.get('subject',item.get('attach',{}).get('subject'))))
@@ -350,7 +365,7 @@ def _review_case(case,mode):
     scoped=copy.deepcopy(case)
     outputs={};requests={};excluded=[]
     for review in case.get('feat_reviews',[]):
-        if mode not in review.get('modes',MODES):continue
+        if not applies(review, mode):continue
         from feat_audit import run
         request={**copy.deepcopy(review['request']),'sources':copy.deepcopy(case['sources']),'mode':mode}
         output=run(request)
@@ -366,7 +381,7 @@ def _review_case(case,mode):
         for original in case.get(field,[]):
             if not isinstance(original,dict):accepted.append(original);continue
             item=copy.deepcopy(original)
-            if mode not in item.get('modes',MODES):accepted.append(item);continue
+            if not applies(item, mode):accepted.append(item);continue
             requirements=item.get('review_requirements',[])
             if field=='anchors':coverage['reviewed_anchor_ids' if requirements else 'unreviewed_anchor_ids'].append(item['id'])
             failure=None
@@ -426,7 +441,7 @@ def _mode_analysis(case, mode,profile=None):
     sources = {s['id']: s for s in case['sources']}
     excluded, grouped = [], defaultdict(list)
     for a in case.get('anchors', []):
-        if mode not in a.get('modes', MODES):
+        if not applies(a, mode):
             continue
         key = (a['subject'], a['attribute'], normalize_quantity(a['quantity'])['unit'], a.get('bound', 'estimate'))
         grouped[key].append(a)
@@ -475,6 +490,8 @@ def _mode_analysis(case, mode,profile=None):
         item = queue.popleft()
         processed += 1
         key = (item['subject'], item['attribute'], item['quantity']['unit'], item['bound'])
+        if mode == 'integrated':
+            key += (item['anchor_id'], tuple(item['trace']))
         old = best.get(key)
         better = old is None or (item['quantity']['best'] < old['quantity']['best'] if mode == 'lowball'
                                 else item['quantity']['best'] > old['quantity']['best'])
@@ -486,7 +503,7 @@ def _mode_analysis(case, mode,profile=None):
             excluded.append({'id': item['trace'][-1], 'reason': 'depth_limit'})
             continue
         for e in edges[(item['subject'], item['attribute'])]:
-            if mode not in e.get('modes', MODES):
+            if not applies(e, mode):
                 continue
             if not _usable(e['evidence_ids']+e.get('multiplier_evidence_ids', []), sources):
                 excluded.append({'id': e['id'], 'reason': 'unavailable_evidence'})
@@ -503,7 +520,7 @@ def _mode_analysis(case, mode,profile=None):
                 excluded.append({'id': e['id'], 'reason': 'observed_counterfact', 'conditions': contradicted})
                 continue
             missing = [r for r in REQUIREMENTS[e['relation']] if e.get('conditions', {}).get(r) is not True]
-            if missing and mode == 'normal':
+            if missing and mode in ('integrated', 'normal') and not (mode == 'integrated' and e.get('assumptions')):
                 excluded.append({'id': e['id'], 'reason': 'unproven_transfer_conditions', 'missing': missing})
                 continue
             assumptions = item['assumptions'] + list(e.get('assumptions', []))
@@ -542,16 +559,36 @@ def _mode_analysis(case, mode,profile=None):
         # Reconstructible decimal inputs are preserved for threshold decisions;
         # the legacy constraint graph uses finite floats for path selection.
         mapping_q=c.get('mapping_quantity',c['quantity'])
-        c['mapping'] = classify_energy(mapping_q,finite_path(profile) if profile else None,c.get('tier_context'))
+        if profile and profile.get('standard')=='vsb':
+            from vsb_attributes import map_quantity
+            c['mapping']=map_quantity(c['attribute'],mapping_q,c.get('tier_context'))
+        else:
+            c['mapping'] = classify_energy(mapping_q,finite_path(profile) if profile else None,c.get('tier_context'))
         c['status'] = 'conditional' if c['assumptions'] else 'supported_by_packet'
+        if mode == 'integrated':
+            c['role'] = 'supporting_evidence_candidate'
+            c['is_character_main_tier'] = False
         conclusions.append(c)
     unique_excluded = list({json.dumps(x, sort_keys=True): x for x in excluded}.values())
     return {'conclusions': conclusions, 'excluded': unique_excluded, 'processed_derivations': processed,
-            'search_truncated': bool(queue), 'selection': {'normal': 'highest_of_repeated_credible_showings',
+            'search_truncated': bool(queue), **mode_metadata(mode), 'selection': {'integrated': 'all_contexts_as_candidates_host_integrated_selection_required', 'normal': 'highest_of_repeated_credible_showings',
              'highest': 'maximum_with_explicit_aggressive_premises', 'lowball': 'lowest_observed_or_reverse_scaled_context'}[mode]}
 
 
-def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_requests=None,actor_ids=None):
+def analyze_matchup(matchup, sources, mode='integrated',hax_reviews=None,hax_requests=None,actor_ids=None,standard='wangba',rating_context=None):
+    context = rating_context or {}
+    rating_gate = review_ratings(context.get('characters', []), context.get('independent_ratings', []),
+                                sources, standard=standard, mode=mode,
+                                **({'rating_status': context['rating_status']} if 'rating_status' in context else {}))
+    if rating_gate['status'] != 'ready':
+        blocked = {'mode':mode, 'standard':standard, 'presentation':select_presentation(matchup),
+                   'status':'needs_independent_rating', 'verdict':'needs_independent_rating',
+                   'rating_preflight':rating_gate, 'assessment':None, 'win_paths':[],
+                   'needs':rating_gate['needs'], 'combat_analysis_started':False}
+        if blocked['presentation'] == 'process':
+            blocked['process'] = {'status':'needs_independent_rating', 'trace':[],
+                                  'needs':rating_gate['needs'], 'combat_analysis_started':False}
+        return blocked
     hax_reviews=hax_reviews or {}
     paths = []
     def scope(node):
@@ -562,7 +599,7 @@ def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_request
             target=next(actor for actor in actor_ids if actor!=owner)
         return owner,target
     for p in matchup.get('win_paths', []):
-        if mode not in p.get('modes', MODES):
+        if not applies(p, mode):
             continue
         reqs = p.get('requirements', [])
         evidence_ok = _usable(p.get('evidence_ids', []), sources)
@@ -574,8 +611,14 @@ def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_request
         owner,target=scope(p)
         hax=_macro_hax([p,*reqs],hax_reviews,owner,target)
         if hax['status']=='blocked':status='blocked'
-        elif hax['status'] in ('conditional','undetermined'):status='conditional'
-        paths.append({**p, 'reviewed_status': status,'hax_review':hax})
+        elif status!='blocked' and hax['status'] in ('conditional','undetermined'):status='conditional'
+        victory=None
+        if standard=='vsb':
+            from standards import victory_review
+            victory=victory_review(p.get('vsb_victory'),sources)
+            if victory['status']=='blocked':status='blocked'
+            elif status!='blocked' and victory['status'] in ('conditional','undetermined'):status='conditional'
+        paths.append({**p, 'reviewed_status': status,'hax_review':hax,**({'vsb_victory_review':victory} if victory else {})})
     winners = {p.get('winner') for p in paths if p['reviewed_status'] == 'supported' and p.get('winner')}
     verdict = next(iter(winners)) if len(winners) == 1 else 'contested' if winners else 'insufficient_evidence'
     assessment = matchup.get('mode_assessments', {}).get(mode)
@@ -588,9 +631,18 @@ def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_request
         hax=_macro_hax([assessment,assessment.get('win_estimate',{})],hax_reviews,owner,target)
         assessment['hax_review']=hax
         if hax['status'] in ('blocked','undetermined'):assessment.update(status='undetermined',winner=None)
-        elif hax['status']=='conditional':
+        elif assessment['status']!='undetermined' and hax['status']=='conditional':
             assessment['status']='conditional'
             assessment['critical_assumptions']=list(dict.fromkeys(assessment.get('critical_assumptions',[])+hax['assumptions']))
+        if standard=='vsb':
+            from standards import victory_review
+            victory=victory_review(assessment.get('vsb_victory'),sources)
+            assessment['vsb_victory_review']=victory
+            if victory['status'] in ('blocked','undetermined'):
+                assessment.update(status='undetermined',winner=None)
+            elif assessment['status']!='undetermined' and victory['status']=='conditional':
+                assessment['status']='conditional'
+                assessment['critical_assumptions']=list(dict.fromkeys(assessment.get('critical_assumptions',[])+victory['assumptions']))
         if 'win_estimate' in assessment:
             assessment['win_estimate']=review_estimate(assessment['win_estimate'],sources)
             if assessment['status']=='conditional' and assessment['win_estimate'].get('status')=='reasoned_estimate':
@@ -604,7 +656,8 @@ def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_request
     display_fields=('teams','conditions','description','victory_conditions','compatibility',
                     'critical_assumptions','unresolved_counters')
     reviewed={k:copy.deepcopy(v) for k,v in matchup.items() if k in display_fields}
-    reviewed.update(mode=mode,assessment=assessment,win_paths=paths,verdict=verdict,presentation=presentation,
+    reviewed.update(mode=mode,standard=standard,assessment=assessment,win_paths=paths,verdict=verdict,presentation=presentation,
+                    rating_preflight=rating_gate,
                     method='host-authored causal assessment; subjective ranges are not measured win frequencies',
                     hax_review_coverage={'checked_win_path_ids':[p.get('id') for p in paths if p['hax_review']['status']!='not_declared'],
                         'unreviewed_win_path_ids':[p.get('id') for p in paths if p['hax_review']['status']=='not_declared'],
@@ -618,19 +671,24 @@ def analyze_matchup(matchup, sources, mode='normal',hax_reviews=None,hax_request
         else:
             from combat_trace import run
             reviewed['process']=run({**copy.deepcopy(request),'sources':list(sources.values()),'mode':mode,
-                                    'hax_checks':copy.deepcopy(hax_requests or [])})
+                                    'standard':standard,'hax_checks':copy.deepcopy(hax_requests or []),
+                                    'rating_subjects':copy.deepcopy(context.get('characters', [])),
+                                    'independent_ratings':copy.deepcopy(context.get('independent_ratings', [])),
+                                    **({'rating_status':copy.deepcopy(context['rating_status'])} if 'rating_status' in context else {})})
     return reviewed
 
 
-def analyze_case(case, mode='normal',profile=None):
+def analyze_case(case, mode='integrated',profile=None):
     if mode not in MODES + ('all',):
-        raise ValueError('mode must be normal, highest, lowball or all')
+        raise ValueError('mode must be integrated; normal/highest/lowball/all are explicit legacy replay')
     errors = validate_case(case)
     if errors:
         raise ValueError('Invalid case:\n' + '\n'.join(errors))
     if profile is None:
         from rule_profiles import resolve
-        profile=resolve(case.get('ruleset_profile'))
+        profile=resolve(case.get('ruleset_profile'),case.get('standard'))
+    from standards import prepare_case,family
+    case,standard_audit=prepare_case(case,profile)
     result = {'schema_version': 1, 'case_id': case['case_id'], 'fixture_kind': case.get('fixture_kind', 'research'),
               'characters': case['characters'], 'sources': case['sources'], 'modes': {},
               'computations': [c for c in case.get('computations',[]) if not (
@@ -640,10 +698,33 @@ def analyze_case(case, mode='normal',profile=None):
               'coverage': case.get('coverage', {}), 'limitations': case.get('limitations', []),
               'validation_scope': 'schema, provenance references and explicit rules; source entailment requires host review'}
     result['ruleset_profile']=profile
+    result['standard']=family(profile)
+    result['standard_audit']=standard_audit
+    result.update(mode_metadata(mode))
+    if mode == 'integrated':
+        # A standalone derivation may retain reference characters in its graph.
+        # Only its declared target(s) need complete cards; actual PK participants
+        # still all pass analyze_matchup's separate, unchanged participant gate.
+        rating_subjects = case['characters']
+        if not case.get('matchup'):
+            target = case.get('rating_target_id')
+            if target is not None:
+                rating_subjects = [character for character in case['characters'] if character['id'] == target]
+            elif case.get('independent_ratings'):
+                targets = {row.get('character_id') for row in case['independent_ratings'] if isinstance(row, dict)}
+                rating_subjects = [character for character in case['characters'] if character['id'] in targets]
+        completion = review_ratings(rating_subjects, case.get('independent_ratings', []), case['sources'],
+                                    standard=result['standard'], mode=mode,
+                                    **({'rating_status': case['rating_status']} if 'rating_status' in case else {}))
+        completion['rating_subject_ids'] = [character['id'] for character in rating_subjects]
+        result['rating_completion'] = completion
+        result['integrated_ratings'] = copy.deepcopy([row for row in case.get('independent_ratings', [])
+            if row.get('character_id') in completion['accepted_subject_ids']
+            and row.get('standard') == result['standard'] and row.get('mode') == mode])
     for field in ('derivation_audits','research_results','run_metadata'):
         if field in case:result[field]=copy.deepcopy(case[field])
-    for m in MODES if mode == 'all' else (mode,):
-        hax=build_hax_checks(case.get('hax_checks',[]),case['sources'],m)
+    for m in selected_modes(mode):
+        hax=build_hax_checks(case.get('hax_checks',[]),case['sources'],m,standard=result['standard'])
         scoped,reviews,excluded,coverage=_review_case(case,m)
         scoped,hax_excluded,hax_coverage=_hax_scoped_case(scoped,hax,m)
         result['modes'][m] = _mode_analysis(scoped, m,profile)
@@ -654,9 +735,9 @@ def analyze_case(case, mode='normal',profile=None):
         result['modes'][m]['feat_review_coverage']=coverage
         result['modes'][m]['hax_computations'] = [c for c in scoped.get('computations',[]) if c.get('hax_trace')]
         result['modes'][m]['high_results'] = [c for c in scoped.get('computations', [])
-            if c.get('type') == 'high' and c.get('mode', c.get('request', {}).get('mode', 'normal')) == m]
+            if c.get('type') == 'high' and c.get('mode', c.get('request', {}).get('mode', 'integrated')) == m]
         result['modes'][m]['qualitative_claims'] = [c for c in scoped.get('qualitative_claims', [])
-            if not isinstance(c, dict) or m in c.get('modes', MODES)]
+            if not isinstance(c, dict) or applies(c, m)]
     if case.get('matchup'):
         result['process_input_sha256']={m:hashlib.sha256(json.dumps(
             {k:v for k,v in request.items() if k not in ('sources','mode')},sort_keys=True,ensure_ascii=False,
@@ -664,7 +745,8 @@ def analyze_case(case, mode='normal',profile=None):
             if m in result['modes']}
         result['matchups'] = {m: analyze_matchup(case['matchup'], {s['id']: s for s in case['sources']}, m,
                                               result['modes'][m]['hax_reviews'],case.get('hax_checks',[]),
-                                              {character['id'] for character in case['characters']})
+                                              {character['id'] for character in case['characters']},standard=result['standard'],
+                                              rating_context=case)
                               for m in result['modes']}
         result['matchup'] = result['matchups']['normal' if mode == 'all' else mode]
     return result

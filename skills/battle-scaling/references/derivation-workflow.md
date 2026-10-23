@@ -1,6 +1,6 @@
 # 表现计算与叠链的绑定审查
 
-在已有公式计算、三模式传播和高层类型分析上增加一层调度：把“算得出来”与“这项表现能否归属于该角色、该属性”分开。需要从画面参数推算、审核长叠链或复核高层映射时按需调用；普通有明确原作数值的评级不必先填完整物理表。
+在已有公式计算、综合传播和高层类型分析上增加一层调度：把“算得出来”与“这项表现能否归属于该角色、该属性”分开。需要从画面参数推算、审核长叠链或复核高层映射时按需调用；普通有明确原作数值的评级不必先填完整物理表。
 
 本层不装载九个外部项目的模型。吸收的实现目的：
 
@@ -23,7 +23,7 @@ result = run(request)
 python scripts/derivation_audit.py --input request.json --output audit.json
 ```
 
-支持 `operation: physical | chain | high | bundle`；通用 `mode: normal | highest | lowball | all`，前三项接受中文别名。`all` 用于有限叠链三模式同时审查；高层请求沿用 `high_request.mode`，不把一次高层推导伪装成三模式均已验证。
+支持 `operation: physical | chain | high | bundle`；新任务通用 `mode: integrated`（默认），高层子请求同步该综合口径。旧 `normal/highest/lowball/all` 仅用于历史读取或旧结果复算，不证明综合选档完成；三类表现按[统一综合规则](modes-scaling.md)进入同一推导账本。
 
 结果共有 `issues`、`research_tasks` 和 `validation_scope`。状态含义：
 
@@ -34,7 +34,7 @@ python scripts/derivation_audit.py --input request.json --output audit.json
 | blocked | 有明确反例/假前提/物理量类型冲突，该路径不能纳入；原始情景数值可保留供审计 |
 | invalid | 输入格式、引用或底层类型计算无效；CLI 退出码 2 |
 
-社区摘要、索引和转述可参与明示的暂定估计，不因尚未核到 primary 一律丢弃。它们不会升级为已核原作。最高模式允许激进的未知前提分支，不能把已知 `false` 改成 `true`。缺参不填零，数值区间不充当三模式战绩。
+社区摘要、索引和转述可参与明示的暂定估计，不因尚未核到 primary 一律丢弃。它们不会升级为已核原作。综合分析可保留有据但未证的条件分支，不能把已知 `false` 改成 `true`。缺参不填零，数值区间不充当高光、通常或低谷战绩。
 
 可读元数据与 PK 共用 `pk_modes.READABLE`：verified、provided、indexed、read、verified_via_host_browser。community/indexed 可做条件参考，不要求所有参考都为 primary；downloaded 只表示下载，blocked/not_found/unread/unknown 或缺访问状态不能支持可导入锚点、有效继承边或 admitted_mappings。仍返回情景计算、原始高层分析和补证任务，不把未读资料中用户填下的 true 升级为已采纳前提。
 
@@ -46,7 +46,7 @@ python scripts/derivation_audit.py --input request.json --output audit.json
 {
   "operation": "physical",
   "id": "work-version-event",
-  "mode": "normal",
+  "mode": "integrated",
   "sources": [
     {"id": "scene", "title": "原作场景", "origin": "primary", "access": "verified",
      "locator": {"chapter": 10, "page": 8, "panel": 2}},
@@ -122,11 +122,11 @@ python scripts/derivation_audit.py --input request.json --output audit.json
 }
 ```
 
-`from/to` 的 subject 与 attribute 不可悄悄改成另一个对象；若要新关系，应新建 CASE edge。状态、版本、装备变化需要连续性/可比性的证据。`counterexamples.status` 为 confirmed/unresolved/resolved，resolved 另给有来源的 resolution；最高模式也不能绕过已确认反例。
+`from/to` 的 subject 与 attribute 不可悄悄改成另一个对象；若要新关系，应新建 CASE edge。状态、版本、装备变化需要连续性/可比性的证据。`counterexamples.status` 为 confirmed/unresolved/resolved，resolved 另给有来源的 resolution；激进解释也不能绕过已确认反例。
 
-输出 `hop_ledger` 展示每跳源/目标属性、各自状态、来源、条件、机制、范围和反例；`effective_case` 是去掉明确受阻路径、把未知桥接写入假设后的 CASE；`chain_analysis` 调用既有传播器，三模式仍分别运行；`cycles` 指出循环并要求独立锚点。
+输出 `hop_ledger` 展示每跳源/目标属性、各自状态、来源、条件、机制、范围和反例；`effective_case` 是去掉明确受阻路径、把未知桥接写入假设后的 CASE；`chain_analysis` 调用综合传播器，证据视角与条件分别保留但角色主判统一；`cycles` 指出循环并要求独立锚点。
 
-一个受阻分支不会抹掉角色已独立成立的表现。未知桥接保留条件分支；有限传播器自身常态/最高/扒下限选择规则仍有效，本层不强迫其把证据不足的边变成常态事实。最强声明的领域、属性覆盖、阶段、反例需逐项保留，不能“打赢某人”就继承其体量、智力、速度和全部能力。
+一个受阻分支不会抹掉角色已独立成立的表现。未知桥接保留条件分支；传播仍须按[综合选档](modes-scaling.md)比较全部重要候选，本层不强迫其把证据不足的边变成已证事实，也不能把最高数值或最低地板直接当成完整主档。最强声明的领域、属性覆盖、阶段、反例需逐项保留，不能“打赢某人”就继承其体量、智力、速度和全部能力。
 
 ## 高层证明账本：high
 
@@ -161,7 +161,7 @@ python scripts/derivation_audit.py --input request.json --output audit.json
 
 ## 已验证与实际边界
 
-新测试覆盖真实公式的 2 kg、3 m/s → 9 J 恒等式与区间角点、来源不明的暂定保留、缺参任务、False 在最高模式仍受阻、力矩不能充能量、属性桥接、逐跳反例与循环、既有旧神盒案例的条件规则映射及旅行不转 AP。测试夹具只验软件，不充当角色原作。
+新测试覆盖真实公式的 2 kg、3 m/s → 9 J 恒等式与区间角点、来源不明的暂定保留、缺参任务、False 在条件推导中仍受阻、力矩不能充能量、属性桥接、逐跳反例与循环、既有旧神盒案例的条件规则映射及旅行不转 AP。测试夹具只验软件，不充当角色原作。
 
 既有案例演示应同时保存请求与输出：地球均匀球引力束缚能只是物理参照；美队掰木头的条件断裂载荷仍不是输出能量；旧神盒的具名历史规则映射仍不替未指明角色授予 AP。旧案例只有 archived/free-text访问说明而无可读元数据时，原始情景仍保留，admitted 输出暂空，待实际回读或显式标注已读索引后再审；不能为了让旧演示通过而自动改成 verified。能正确提示这些边界，比无条件给三者同一条数值档位更符合用户的可追溯目标。
 

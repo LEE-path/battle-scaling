@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "case_id": "authored-fixture-shuo",
+  "fixture_kind": "synthetic_author_settings_not_character_evidence",
+  "standard": "wangba",
+  "ruleset_profile": "wangba-handbook-2026-07-30",
+  "rating_target_id": "shuo",
+  "characters": [
+    {
+      "id": "shuo",
+      "name": "烁",
+      "version": "synthetic-v1",
+      "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+      "equipment": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "independent-rating-fixture",
+      "title": "Explicit invented independent rating fixture",
+      "origin": "author_settings",
+      "access": "provided",
+      "locator": "tests/rating_fixtures.py: invented fixture definitions, not canon",
+      "completion_scope": "This authored synthetic test universe consists only of the explicitly supplied participant configurations and independent ratings; their fixed attribute levels fully describe this fixture. There are no undisclosed feats or cross-version chains."
+    }
+  ],
+  "independent_ratings": [
+    {
+      "character_id": "shuo",
+      "standard": "wangba",
+      "mode": "normal",
+      "version": "synthetic-v1",
+      "state": "全盛，重甲限制转身；明知岚会制造无实体残像，但不知道其投片时机。",
+      "equipment": [],
+      "basis_type": "author_settings",
+      "main_tier": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      },
+      "dimensions": {
+        "输出": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体防": {
+          "label": "弱爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "智力": {
+          "label": "普通成人",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "战斗智商": {
+          "label": "熟悉正面压制",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "经验": {
+          "label": "十年守门与决斗",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "特殊技能": {
+          "label": "近程冲击波",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "破坏": {
+          "label": "标准爆墙",
+          "kind": "tier",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "速度": {
+          "label": "短程冲刺快于岚，重甲下转向较慢",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        },
+        "体量": {
+          "label": "人类成人加重甲",
+          "kind": "level",
+          "basis": "lower_bound",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ],
+          "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+        }
+      },
+      "host_review": {
+        "status": "accepted",
+        "reviewer": "synthetic-test-author",
+        "dossier_ref": "tests/rating_fixtures.py#independent-fixture-not-canon",
+        "reviewed_revision": "synthetic-scope-v2"
+      },
+      "completion_review": {
+        "status": "complete",
+        "revision": "synthetic-scope-v2",
+        "selected_basis": "mode_representative",
+        "scope_findings": {
+          "reasoning": "The authored synthetic fixture fixes the entire supplied version, state, equipment and nine-dimensional ability configuration. No additional canon or higher feat exists in this invented fixture.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "selection_findings": {
+          "reasoning": "For normal mode the explicitly fixed synthetic ability configuration is its independent representative rating, with no alternative higher or lower candidate supplied. This is not inferred from HP or matchup outcome.",
+          "evidence_ids": [
+            "independent-rating-fixture"
+          ]
+        },
+        "candidates": []
+      }
+    }
+  ],
+  "anchors": [],
+  "edges": [],
+  "qualitative_claims": [
+    {
+      "id": "rating-0",
+      "subject": "shuo",
+      "attribute": "main_tier",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-1",
+      "subject": "shuo",
+      "attribute": "输出",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-2",
+      "subject": "shuo",
+      "attribute": "体防",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "弱爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-3",
+      "subject": "shuo",
+      "attribute": "智力",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "普通成人",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-4",
+      "subject": "shuo",
+      "attribute": "战斗智商",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "熟悉正面压制",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-5",
+      "subject": "shuo",
+      "attribute": "经验",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "十年守门与决斗",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-6",
+      "subject": "shuo",
+      "attribute": "特殊技能",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "近程冲击波",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-7",
+      "subject": "shuo",
+      "attribute": "破坏",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "标准爆墙",
+        "kind": "tier",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-8",
+      "subject": "shuo",
+      "attribute": "速度",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "短程冲刺快于岚，重甲下转向较慢",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    },
+    {
+      "id": "rating-9",
+      "subject": "shuo",
+      "attribute": "体量",
+      "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome.",
+      "evidence_ids": [
+        "independent-rating-fixture"
+      ],
+      "assessment": {
+        "label": "人类成人加重甲",
+        "kind": "level",
+        "basis": "lower_bound",
+        "evidence_ids": [
+          "independent-rating-fixture"
+        ],
+        "reasoning": "Explicit fixture lower bound, established independently of the matchup outcome."
+      }
+    }
+  ],
+  "limitations": [
+    "Explicitly authored synthetic fixture; no real canon research is claimed."
+  ]
+}

@@ -1,6 +1,6 @@
 interface:
   display_name: "全自动论战"
-  short_description: "角色与群战评定，三种取证口径，默认宏观判胜，按需推演战斗过程"
-  default_prompt: "使用 $battle-scaling，按需搜证、物理推算和叠盒审查；角色默认先给“角色（版本）量级：具体常态主档”，再列常态九维，最高和扒下限放后续分析；对战默认宏观判胜，明确请求时展示具体过程，交付可复核报告。"
+  short_description: "汪吧／VSB战力评定与战斗写作，支持作者限定技能、过程和结局"
+  default_prompt: "使用 $battle-scaling，默认汪吧、按同一配置给单一综合主档与九维，三态仅作表现及交手参考；明确要求时切换VSB；普通VS按需给优势方胜局及总体胜率。要求写作版时，按作者人设、状态、技能和量级写完整战斗，遵守指定过程与结局，不擅加设定。"
 policy:
   allow_implicit_invocation: true

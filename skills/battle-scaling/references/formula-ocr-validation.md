@@ -4,7 +4,7 @@
 
 ## 环境与调用
 
-- 目录：`D:\Codex\tools\rapid-latex-ocr`；独立venv：`.venv`；`include-system-site-packages = false`。未执行全局pip安装或降级。
+- 目录：`LOCAL_WORKSPACE/tools/rapid-latex-ocr`；独立venv：`.venv`；`include-system-site-packages = false`。未执行全局pip安装或降级。
 - 版本：RapidLaTeXOCR 0.0.9；Python 3.11；NumPy 1.26.4；ONNX Runtime 1.20.1；tokenizers 0.15.2；OpenCV 4.11.0.86；Pillow 10.4.0。依赖无torch；`pip check`通过。完整版本表保存在结果JSON。
 - 官方接口为 `LaTeXOCR(image_resizer_path, encoder_path, decoder_path, tokenizer_json)(crop_path)`，返回`(latex, elapsed_seconds)`，没有公式置信度分数。[官方源码](https://github.com/RapidAI/RapidLaTeXOCR/blob/main/rapid_latex_ocr/main.py)
 - 3个模型Session实测均只使用`CPUExecutionProvider`。测试脚本仅在内存中把官方SessionOptions约束为intra/inter线程各1及顺序执行，未修改已安装包；避免与主任务3个OCR worker争抢全部线程。
@@ -82,7 +82,7 @@ T K E={\frac{1}{2}}\ \rho H A\sum f_{i}v_{i}^{2}
 复跑同3个原始裁图：
 
 ```powershell
-& 'D:\Codex\tools\rapid-latex-ocr\.venv\Scripts\python.exe' 'D:\Codex\research\battle-scaling\handbook-20261018\formula-ocr-test\run_samples.py'
+& 'LOCAL_WORKSPACE/tools/rapid-latex-ocr/.venv/Scripts/python.exe' 'LOCAL_RESEARCH_ROOT/handbook-20261018/formula-ocr-test/run_samples.py'
 ```
 
 原始组数据：`formula-results.json`；阈值组数据：`formula-results-threshold160.json`；环境与源码hash：`environment-and-source.json`。复跑会覆盖该组JSON并恢复待视觉复核状态，勿将重跑结果当原先已核对的结果。

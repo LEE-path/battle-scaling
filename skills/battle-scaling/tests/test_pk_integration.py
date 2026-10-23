@@ -9,9 +9,13 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from evidence import analyze_case,validate_case
+from rating_fixtures import rated_fixture, rated_call
+analyze_case = rated_call(analyze_case)
 from battle import render_report
+from rating_fixtures import legacy_analyze_case as analyze_case  # Explicit legacy regression
 
 
+@rated_fixture
 def sample():
     estimate={'method':'reasoned_estimate','basis':'同速且胜负条件对称，未证明先手优势。',
               'evidence_ids':['rule'],'assumptions':['双方采用同一随机先手规则'],

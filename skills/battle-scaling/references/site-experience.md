@@ -65,7 +65,7 @@ python -X utf8 <SKILL_ROOT>/scripts/battle.py sites --input request.json
 `evidence.kind` 只接受 `local_receipt`、`host_tool_result`、`historical_ledger`：分别用于本地回执文件、宿主工具返回标识、历史来源账本。`locator` 必须指向所选类型的实际证据；本地文件可附 `sha256`。不要填写未实现的种类名称。
 
 ```json
-{"op":"export","output":"D:/Codex/case/site-experience-snapshot.json"}
+{"op":"export","output":"LOCAL_WORKSPACE/case/site-experience-snapshot.json"}
 ```
 
 `export` 导出 JSON 快照供案例归档、迁移和审查；它不把历史来源晋升为当前已验证，也不自动写入 CASE 的正文来源。

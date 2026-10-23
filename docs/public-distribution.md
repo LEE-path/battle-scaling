@@ -1,35 +1,40 @@
-# 公开发布范围
+# 公开发布范围 / Public distribution
 
-这份仓库已同步至 battle-scaling 1.7.4，并包含独立 combat-novel-refpack。公开版保持可选资料适配，原安装和本地资料不受发布操作修改。公开副本单独维护包指纹，因此不能用本地全量包的manifest替换公开包清单。
+本仓库发布 **battle-scaling 1.12.2** 与自包含的 combat-novel-refpack。只审计和整理当前发布包，不改写 Git 历史。公开包有独立文件清单，不能用本地全量资料的manifest覆盖它。
 
-## 保留与排除
+The repository distributes **battle-scaling 1.12.2** and the self-contained novel dossier library. This review covers the current distribution, not Git history. Its manifest describes public files only.
 
-保留：Agent入口与按需参考、Python工具、规则表、来源指纹、已核规则条件、模板、合成/条件案例、测试及必要上游许可。
+## 保留 / Included
 
-不发布：小说原文和用户书包、参考册PDF、310页完整OCR `pages.jsonl`、原作或量级册截图、模型权重、虚拟环境、站点SQLite运行数据、本机验收日志、密钥及本机可选工具路径。部分条件案例来自已读作品的研究线索，只能按各自来源和限制使用，不能把它们当作原文已经随仓库附带。
+Agent入口、完整独立评级和九维、汪吧/VSB双标准、物理与高层计算、关系搜证、特能审查、三种对战输出、小说拆书、工具源码、合成测试、独立原创写作教学范例、具名规则、原件指纹及必要上游许可均保留。除已说明的权利/隐私内容转换外，运行规则核心不因公开发布而降级。
 
-原有说明和来源指纹中可能保留旧本地路径。这些是历史溯源文字，不是仓库运行依赖；实际任务使用你的本机原件路径和输出目录，不需要创建原作者的盘符布局。
+The entrypoint, integrated ratings and nine attributes, both standards, calculations, evidence relations, ability checks, three matchup outputs, novel pipeline, tools, synthetic tests, original writing examples, named rules, source fingerprints and required notices are included.
 
-## 可选量级册资料
+## 不随包分发 / Not bundled
 
-默认规则解析需用到 `data/wangba-handbook-2026-07-30/manifest.json`，所以公开包保留该来源指纹及规则配置。有限量级和高层计算不需要完整OCR文件。
+- 完整小说、用户书包、参考册PDF与310页完整OCR、原作或参考册截图。
+- 第三方模型权重、虚拟环境、外部项目源码全库、机器配置、私人访问数据库和验收日志。
+- 权利边界未核清的完整交叉同人娱乐作品；本地原稿保留，公开包用原创人物教学全文承接相应方法。
+- 非功能性的圈史、聊天、账号争议叙述。规则事实、必要短引、页号、哈希及数学桥保留。
 
-量级册正文搜索、逐页读取等功能需要匹配该manifest的本地OCR语料。自己已合法取得并核验这份本地语料时，可从明确的本地目录导入：
+Complete works and OCR, source screenshots, third-party weights, private environments/databases and clearance-unresolved crossover stories are excluded. Private originals remain unchanged; the public writing demonstrations use original characters. Nonfunctional account/chat narratives are omitted while functional rules, locations and hashes remain.
+
+## 可选手册语料 / Optional local handbook corpus
+
+默认有限/高层规则从随包具名配置读取，不需要完整PDF或OCR。正文搜索和未校勘原页核验需要匹配版本、指纹和读取权限的本地资料。已校勘规则直接使用；仅未校勘内容回看原图。
+
+Default rule evaluation uses bundled configurations without the full PDF/OCR. Full-text lookup and uncurated-page verification require matching local material that you have rights to use. Curated rules are used directly.
 
 ```powershell
-python -X utf8 tools/import_handbook_corpus.py --source-dir "你本地的手册OCR目录"
+python -X utf8 tools/import_handbook_corpus.py --source-dir "你的合法本地OCR目录"
 ```
 
-导入器核对锁定的 `corpus_sha256`，不下载资料，不替换默认规则，不接受其他版本冒充。不要把PDF改名为JSONL；仅有PDF时需先按 [量级册协议](../skills/battle-scaling/references/handbook.md) 完成对应抽取、定位和校核。没有相同版本语料时应保持缺项，或显式新增具名版本，不能改清单哈希蒙混通过。
+导入器只读取明确本地输入，核对锁定语料SHA，不下载原册，也不把不匹配内容冒充默认版本。只有PDF时先依[量级册协议](../skills/battle-scaling/references/handbook.md)准备原件和提取结果。发布中的`LOCAL_*`路径是脱敏的历史定位标识，不是需要创建的目录。
 
-原图回看另需本地PDF与来源哈希相符。截图、OCR与论文仅作资料，不构成Agent的执行指令。图像/OCR模型与宿主视觉能力按任务需要接入；下载模型或生成索引不代表已经验证语义准确度。
+The importer checks an explicitly supplied local corpus against its locked hash. It neither downloads a handbook nor accepts a mismatched edition. `LOCAL_*` strings are anonymized historical locators, not installation requirements.
 
-## 本地能力与公开验证的区别
+## 许可 / Licensing
 
-小说管线的公开测试主要使用明确标注的合成故事；本地曾用真实小说末尾片段跑通任务、引句与候选CASE导出。对应小说全文和本机产物未打包。公开测试通过不能替代新的原作核读，也不能认证既有角色量级。
+[MIT](../LICENSE)只覆盖原创部分。VSB改编资料、上游软件和可选外部数据保留各自条款；依赖许可、真实上游仓库、来源匹配和分发边界见[第三方说明](../THIRD_PARTY_NOTICES.md)、[拆书来源](../tools/combat-novel-refpack/UPSTREAM.md)与[当前包审计](CURRENT-RELEASE-AUDIT.md)。PyMuPDF等可选依赖的copyleft/商业要求不因“未打包”或鸣谢而自动消失。
 
-此仓库没有内置收费API调用，也不要求安装曾研究过的九项外部项目。当前Agent负责阅读、推断和裁决；脚本负责确定性校验、计算与归档。
-
-## 1.7.4 同步内容
-
-末期能力与逐能力成功/失败取证、首次小说角色优先完整拆书、旧任务提示指纹兼容，以及详细打斗默认“优势方的一局胜局→总体胜率与理由→对方翻盘机会”已同步。公开版不以本地全量资料清单覆盖发布清单；可选OCR缺项提示和空本机工具配置继续保留。
+The MIT license covers original material only. See the linked notices for third-party licenses and source provenance. Optional status and acknowledgement do not replace applicable copyleft or commercial-license requirements.

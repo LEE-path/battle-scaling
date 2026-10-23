@@ -8,6 +8,8 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from combat_trace import _Trace, run
+from rating_fixtures import rated_call
+run = rated_call(run)
 from test_combat_trace import actor, attack, fact, request
 
 
@@ -17,8 +19,11 @@ class HaxCombatTests(unittest.TestCase):
         self.build_calls = []
         helper = types.ModuleType('hax_gate')
 
-        def build(entries, sources, mode):
-            self.build_calls.append((copy.deepcopy(entries), copy.deepcopy(sources), mode))
+        def build(entries, sources, mode, standard='wangba'):
+            # This helper supplies synthetic legacy checks only. VSB routing is
+            # exercised against the real VSB policy in test_standards.py.
+            self.assertEqual(standard, 'wangba')
+            self.build_calls.append((copy.deepcopy(entries), copy.deepcopy(sources), mode, standard))
             return {entry['id']: {'request': copy.deepcopy(entry['request']),
                     'scope': {key: entry['request'].get(key) for key in ('actor_id', 'target_id')},
                     'status': entry['request'].get('test_status', 'supported_by_packet')}
@@ -80,6 +85,7 @@ class HaxCombatTests(unittest.TestCase):
         out = run(req)
         self.assertEqual(self.build_calls[0][1], req['sources'])
         self.assertEqual(self.build_calls[0][2], 'normal')
+        self.assertEqual(self.build_calls[0][3], 'wangba')
         self.assertIn('ability', out['hax_reviews'])
 
     def test_action_has_hax_only_gate_without_requiring_status(self):

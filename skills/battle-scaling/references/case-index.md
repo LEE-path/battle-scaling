@@ -4,10 +4,10 @@
 
 | 案例 | 文件 | 实际学习点／运行入口 |
 |---|---|---|
-| 死星毁奥德朗、卢克命中反应堆弱点 | `assets/cases/research-deathstar.json` | `battle.py analyze --mode all`；官方作品说明、条件均匀球结合能与弱点连锁反应隔离 |
-| MCU美队双手分开木段 | `assets/cases/research-captain-wood.json` | `battle.py analyze --mode all`；[完整读图与模型说明](captain-wood-case.md)、随包接触表、材料表核对、线弹性条件近似，N不转TNT |
-| 银背西部低地大猩猩vs十只斑鬣狗 | `assets/cases/research-animals.json` | `battle.py analyze --mode all`；数量、行为、获胜路径、最可能判断及未校准部分 |
-| Franx短暂白光状态与alef-one到达 | `assets/cases/research-franx.json` | `battle.py analyze --mode all`；三模式、高层请求、受伤反例与版本／形态分离 |
+| 死星毁奥德朗、卢克命中反应堆弱点 | `assets/cases/research-deathstar.json` | `battle.py analyze --mode integrated`；官方作品说明、条件均匀球结合能与弱点连锁反应隔离 |
+| MCU美队双手分开木段 | `assets/cases/research-captain-wood.json` | `battle.py analyze --mode integrated`；[完整读图与模型说明](captain-wood-case.md)、随包接触表、材料表核对、线弹性条件近似，N不转TNT |
+| 银背西部低地大猩猩vs十只斑鬣狗 | `assets/cases/research-animals.json` | `battle.py analyze --mode integrated`；数量、行为、获胜路径、最可能判断及未校准部分 |
+| Franx短暂白光状态与alef-one到达 | `assets/cases/research-franx.json` | `battle.py analyze --mode integrated`；历史三视角材料、高层请求、受伤反例与版本／形态分离 |
 | 旧神盒第四阶段 | `assets/cases/high-godbox-stage4.json` | `battle.py high`；Φ构造、闭包、整体重设及具名AOS锚点，原章校勘缺口明确 |
 | White Light结构映射 | `assets/cases/high-whitelight.json` | `battle.py high`；可数ε₀与不可数基数分开；范围不自动传攻击 |
 | 单篇SCP-3812 | `assets/cases/high-scp3812.json` | `battle.py high`；原生叙事超越与特殊作用范围；不虚构具体基数 |
@@ -17,7 +17,7 @@
 例如：
 
 ```powershell
-python scripts/battle.py analyze --input assets/cases/research-deathstar.json --mode all --output D:/case/deathstar
+python scripts/battle.py analyze --input assets/cases/research-deathstar.json --mode integrated --output D:/case/deathstar
 python scripts/battle.py high --input assets/cases/high-godbox-stage4.json --output D:/case/godbox.json
 ```
 

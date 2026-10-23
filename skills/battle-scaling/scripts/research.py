@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 import re
 import sqlite3
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 
 import sources
 
@@ -24,6 +24,11 @@ SOURCE_ACCESS = {'verified', 'read', 'provided', 'indexed', 'unread', 'blocked',
 TEXT_KINDS = {'verbatim_source', 'community_summary', 'model_paraphrase', 'host_observation', 'unknown'}
 MAX_RECORDS = 5000
 MAX_IMPORT_BYTES = 16 * 1024 * 1024
+CITED_DATA_URL = 'https://citedfeats.com/data/'
+CITED_LICENSES = {
+    'CC-BY-4.0': 'https://creativecommons.org/licenses/by/4.0/',
+    'CC-BY-SA-3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
+}
 
 
 def _base(op, status='ok', **values):
@@ -96,9 +101,9 @@ def plan(request):
     if not isinstance(target, dict):
         raise ValueError('target must be an object')
     missing = [field for field in SCOPE_FIELDS if not target.get(field)]
-    modes = request.get('modes', ['normal', 'highest', 'lowball'])
-    if not isinstance(modes, list) or not modes or any(x not in ('normal', 'highest', 'lowball') for x in modes):
-        raise ValueError('modes must select normal, highest and/or lowball')
+    modes = request.get('modes', ['integrated'])
+    if not isinstance(modes, list) or not modes or any(x not in ('integrated', 'normal', 'highest', 'lowball') for x in modes):
+        raise ValueError('modes must select integrated; legacy lenses require an explicit historical request')
     name = _text(target.get('name', target.get('entity_id', 'unresolved character')), 'name')
     is_novel = target.get('medium') == 'novel' or target.get('continuity') == 'novel'
     discovery_routes=_discovery_routes(target,name,is_novel)
@@ -124,6 +129,9 @@ def plan(request):
                 'scope': dict(target), 'activation_condition': 'physical_or_biological_parameter_needed'})
     return _base('plan', 'needs_scope' if missing else 'ok', target=target, modes=modes,
         dimensions=list(DIMENSIONS), dimension_labels=LABELS, tasks=tasks,
+        rating_policy=('integrated_main_tier' if modes == ['integrated'] else 'explicit_legacy_context_research'),
+        performance_contexts=['high_showing','typical_showing','low_showing'],
+        legacy_mode=any(mode != 'integrated' for mode in modes),
         discovery_routes=discovery_routes,
         reading_order='ending_backward_per_attribute' if is_novel else 'locked_version_timeline',
         search_executed=False, needs=[f'Lock {field}; names alone do not establish identity or same state' for field in missing],
@@ -199,6 +207,74 @@ def _connect(db, *, create=False):
     return connection
 
 
+def _cited_rights(entry):
+    """Apply the site's row exception, without certifying an arbitrary local file.
+
+    Policy: https://citedfeats.com/data/ (checked 2026-10-23). SCP rows use
+    CC BY-SA 3.0; the general CC BY 4.0 notice is not a whole-dataset licence.
+    A retained row URL establishes the claimed source, not its authenticity or
+    the rights to any original work named in the row.
+    """
+    source_url = entry.get('discovery_url')
+    claimed_source = False
+    url_scp = None
+    if isinstance(source_url, str):
+        try:
+            parsed = urlsplit(source_url)
+            parts = [part.casefold() for part in parsed.path.split('/') if part]
+            claimed_source = (parsed.scheme in ('http', 'https') and
+                parsed.hostname in ('citedfeats.com', 'www.citedfeats.com') and
+                not parsed.username and not parsed.password and bool(parts) and
+                parts[0] not in ('about', 'data', 'rules'))
+            if claimed_source:
+                url_scp = parts[0] == 'scp'
+        except ValueError:
+            pass
+    franchise = entry.get('franchise_slug', entry.get('franchise'))
+    normalized = re.sub(r'[\s_-]+', '', franchise.casefold()) if isinstance(franchise, str) else ''
+    row_scp = normalized in ('scp', 'scpfoundation')
+    conflict = claimed_source and row_scp != url_scp
+    license_id = ('CC-BY-SA-3.0' if row_scp else 'CC-BY-4.0') if claimed_source and not conflict else None
+    reasons = []
+    if not claimed_source:
+        reasons.append('Missing or unrecognized Cited Feats entry URL; confirm provenance before licensed redistribution')
+    if conflict:
+        reasons.append('SCP franchise and source URL disagree; resolve the row identity and share-alike exception before redistribution')
+    changes = 'Normalized into the battle-scaling discovery schema; the submitted source row is retained unchanged in foreign_record.'
+    credit = f'Data: Cited Feats ({CITED_DATA_URL})'
+    if license_id:
+        credit += f', licensed {license_id} ({CITED_LICENSES[license_id]}).'
+    else:
+        credit += '; licence unresolved for this submitted row; no reuse permission inferred.'
+    if isinstance(source_url, str) and source_url:
+        credit += f' Submitted source: {source_url}.'
+    credit += ' Changes: ' + changes
+    return {
+        'license': license_id, 'license_url': CITED_LICENSES.get(license_id),
+        'license_status': 'upstream_policy_applied_to_claimed_source' if license_id else 'unresolved',
+        'license_scope': "Cited Feats' own data and wording only; no rights in the cited original works are granted or verified.",
+        'license_policy_source': CITED_DATA_URL,
+        'license_basis': 'scp_row_exception' if license_id == 'CC-BY-SA-3.0' else 'general_data_policy' if license_id else 'provenance_or_scope_unresolved',
+        'attribution': credit,
+        'attribution_details': {'publisher': 'Cited Feats', 'data_url': CITED_DATA_URL,
+            'submitted_entry_url': source_url, 'changes': changes,
+            'source_authenticity_verified': False},
+        'rights_needs': reasons,
+    }
+
+
+def _cited_license_summary(records):
+    counts = {}
+    for record in records:
+        key = record.get('license') or 'unresolved'
+        counts[key] = counts.get(key, 0) + 1
+    return {'scope': 'this_batch_imported_cited_rows_only', 'counts': counts,
+        'mixed_license': len([key for key in counts if key != 'unresolved']) > 1,
+        'unresolved_records': [row['record_id'] for row in records if not row.get('license')],
+        'policy_source': CITED_DATA_URL,
+        'notice': 'Retain each row attribution and licence; SCP rows are CC-BY-SA-3.0, not CC-BY-4.0. Unresolved rows carry no inferred reuse permission. This does not license the original fictional works.'}
+
+
 def _cited_records(path, limit):
     source = Path(path).expanduser().resolve(strict=True)
     if not source.is_file() or source.stat().st_size > MAX_IMPORT_BYTES:
@@ -215,17 +291,18 @@ def _cited_records(path, limit):
                 'reason': 'Missing foreign id/franchise; retained for review, not invented as a character'})
             continue
         key = f"citedfeats:{entry['franchise']}:{entry['id']}"
+        rights = _cited_rights(entry)
         result.append({'record_id': key, 'entity_id': 'external:' + key,
             'name': entry.get('name'), 'work_id': 'external:citedfeats:' + entry['franchise'],
             'continuity': entry.get('continuity'), 'period': None, 'state': None, 'equipment': [], 'attributes': [],
-            'source_id': 'citedfeats:' + entry.get('discovery_url', key),
+            'source_id': 'citedfeats:' + (entry.get('discovery_url') or key),
             'source_url': entry.get('discovery_url'), 'source_origin': 'community', 'source_access': 'indexed',
             'text_kind': 'community_summary', 'exact_text': entry.get('feat') or '',
             'locator': {'community_url': entry.get('discovery_url'), 'original_locators': [x.get('locator') for x in entry.get('citations', [])]},
             'snapshot_sha256': sha, 'snapshot_scope': 'explicit_import_file', 'original_source_sha256': None,
             'original_source_verified': False, 'citations': entry.get('citations', []), 'foreign_record': entry,
-            'attribution': 'Cited Feats, https://citedfeats.com/, data CC BY 4.0',
-            'needs': ['Resolve original identity/state and verify original cited work before upgrading evidence']})
+            **rights,
+            'needs': ['Resolve original identity/state and verify original cited work before upgrading evidence'] + rights['rights_needs']})
     return result, len(data), quarantined
 
 
@@ -234,6 +311,7 @@ def index(request):
     if not isinstance(records, list):
         raise ValueError('records must be a list')
     available, quarantined, imported_count, import_limit = None, [], 0, None
+    imported = []
     if request.get('import_cited'):
         import_limit = _positive_int(request.get('limit', 100), 'limit', MAX_RECORDS)
         imported, available, quarantined = _cited_records(request['import_cited'], import_limit)
@@ -277,9 +355,12 @@ def index(request):
     return _base('index', added=added, supplied=len(records), total_records=count,
         import_available=available, import_limit_applied=available is not None and available > import_limit,
         imported_records=imported_count, quarantined=quarantined,
+        import_license_summary=_cited_license_summary(imported) if request.get('import_cited') else None,
         backend='sqlite_fts5' if fts else 'sqlite_like_fallback',
         warnings=([] if fts else ['FTS5 unavailable; bounded parameterized LIKE search is used']) +
-                 (['Malformed external rows were quarantined, not merged or promoted'] if quarantined else []),
+                 (['Malformed external rows were quarantined, not merged or promoted'] if quarantined else []) +
+                 (['Some imported Cited Feats rows have unresolved provenance or licence scope; review their rights_needs before redistribution']
+                  if any(not item.get('license') for item in imported) else []),
         truth_verified=False, identity_merged=False,
         provenance_policy='Stored labels describe submitted provenance; indexing neither verifies sources nor upgrades discovery clues')
 

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import copy
 import math
+from rating_modes import metadata as mode_metadata
 from collections import defaultdict
 
 
@@ -64,8 +65,10 @@ class _Trace:
         if not isinstance(request, dict):
             raise ValueError('request must be an object')
         self.request = copy.deepcopy(request)
-        self.mode = request.get('mode', 'normal')
-        if self.mode not in ('normal', 'highest', 'lowball'):
+        from standards import normalize
+        self.standard=normalize(request.get('standard','wangba'))
+        self.mode = request.get('mode', 'integrated')
+        if self.mode not in ('integrated', 'normal', 'highest', 'lowball'):
             raise ValueError('mode is an evidence mode, not a presentation selector')
         self.max_steps = _integer(request.get('max_steps', 100), 'max_steps', 1)
         self.needs, self.assumptions, self.pending, self.trace = [], [], [], []
@@ -81,7 +84,7 @@ class _Trace:
         if 'hax_results' in request:
             raise ValueError('hax_results is computed output; submit hax_checks requests')
         from hax_gate import build_checks, review
-        self.hax_reviews = build_checks(request.get('hax_checks', []), sources, self.mode)
+        self.hax_reviews = build_checks(request.get('hax_checks', []), sources, self.mode,standard=self.standard)
         self._review_hax = review
         self.hax_admissions = []
         self.hax_review_coverage = {'declared_locations': [], 'unreviewed_locations': [],
@@ -464,6 +467,26 @@ class _Trace:
         row['outcome'] = 'effects_submitted'
         return row, effects
 
+    def review_vsb_defeat(self, actors):
+        from standards import victory_review
+        packets=self.victory.get('vsb_checks',{})
+        if not isinstance(packets,dict):
+            raise ValueError('victory.vsb_checks must map defeated actor IDs to sourced SBA condition packets')
+        valid=True
+        expected={'bfr':{'withdrawn','sealed'},'knockout':{'incapacitated'},'incapacitation':{'incapacitated','sealed'},'death':{'dead'}}
+        for who in actors:
+            packet=packets.get(who)
+            review=victory_review(packet,self.sources)
+            if review['status'] in ('blocked','undetermined'):
+                self.need('victory.vsb_checks.'+who,'; '.join(review['reasons']))
+                valid=False
+            elif self.actors[who]['state'] not in expected[packet['condition']]:
+                self.need('victory.vsb_checks.'+who,'The stated SBA condition does not match the recorded defeated state.')
+                valid=False
+            elif review['status']=='conditional':
+                self.add_assumptions(review['assumptions'])
+        return valid
+
     def terminal(self):
         active = [a for a, state in self.actors.items() if state['state'] == 'active']
         active_teams = {self.teams[a] for a in active}
@@ -483,6 +506,11 @@ class _Trace:
         elif self.unresolved_recovery or self.needs:
             result['kind'] = 'undetermined'
         elif not active and all(s['state'] != 'unknown' for s in self.actors.values()):
+            if self.standard=='vsb':
+                self.review_vsb_defeat(list(self.actors))
+                self.need('victory.timing','Both actors being inactive does not establish which SBA condition was satisfied first; a sourced temporal adjudication is required.')
+                result['kind']='undetermined'
+                return result
             result.update(is_terminal=True, kind='mutual_defeat')
             if self.victory.get('mutual_outcome'):
                 result['adjudication'] = self.victory['mutual_outcome']
@@ -491,6 +519,10 @@ class _Trace:
             surviving_team = next(iter(active_teams))
             opposition = [a for a in self.actors if self.teams[a] != surviving_team]
             if defeated and opposition and all(self.actors[a]['state'] in defeated for a in opposition):
+                if self.standard=='vsb':
+                    if not self.review_vsb_defeat(opposition):
+                        result['kind']='undetermined'
+                        return result
                 result.update(is_terminal=True, kind='victory', winner=surviving_team, adjudication='specified_conditions')
             else:
                 result['kind'] = 'undetermined'
@@ -533,7 +565,7 @@ class _Trace:
         if truncated:
             terminal.update(kind='truncated', winner=None, adjudication='undetermined')
         status = 'truncated' if truncated else 'needs_information' if self.needs else 'conditional' if self.assumptions else 'recorded'
-        result = {'schema_version': 1, 'mode': self.mode, 'presentation': 'process', 'status': status,
+        result = {'schema_version': 1, 'mode': self.mode, 'standard':self.standard, 'presentation': 'process', 'status': status,
                   'record_kind': 'hypothetical_process', 'canon_evidence': False,
                   'trace': self.trace, 'initial_changes': initial_changes,
                   'final_state': copy.deepcopy(self.actors), 'pending': copy.deepcopy(self.pending),
@@ -562,4 +594,21 @@ def run(request: dict) -> dict:
     effects. ``supported`` refers only to the supplied packet, never canon truth.
     See references/combat-process.md for the input contract and time semantics.
     """
-    return _Trace(request).execute()
+    if isinstance(request,dict) and request.get('purpose')=='writing':
+        raise ValueError('Use battle.py writing for author-directed fiction; process remains the evidence-constrained PK trace')
+    if not isinstance(request, dict):
+        raise ValueError('request must be an object')
+    from rating_preflight import review as review_ratings, process_subjects
+    rating_gate = review_ratings(process_subjects(request), request.get('independent_ratings', []),
+                                request.get('sources', []), standard=request.get('standard', 'wangba'),
+                                mode=request.get('mode', 'integrated'),
+                                **({'rating_status':request['rating_status']} if 'rating_status' in request else {}))
+    if rating_gate['status'] != 'ready':
+        return {'schema_version':1, 'presentation':'process', 'status':'needs_independent_rating',
+                'mode':request.get('mode', 'integrated'), 'standard':request.get('standard', 'wangba'),
+                'rating_preflight':rating_gate, 'trace':[], 'needs':rating_gate['needs'],
+                'combat_analysis_started':False, 'canon_evidence':False}
+    result = _Trace(request).execute()
+    result.update(mode_metadata(request.get('mode', 'integrated')))
+    result['rating_preflight'] = rating_gate
+    return result

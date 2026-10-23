@@ -4,9 +4,19 @@
 
 离线入口：`python scripts/battle.py feat --input PACKET.json`；也可直接运行 `python scripts/feat_audit.py --input PACKET.json --output REVIEW.json`。例子见 [纯合成审查包](../assets/cases/feat-review-synthetic.json)，不代表任何真实作品。
 
+## 单次发动与作用前后分层
+
+先按[通用原则](scaling-principles.md)确定待证命题。此模块审事件因果，不要求所有身份、静态构成和可靠能力定义都伪造一次发动；下列动作与例子均非封闭能力列表，条件只在相应推论中使用。
+
+本页的单次输出指一次行动、一次主动能力发动或一次可辨识被动触发及其有效结果，包括物理攻击、装备、创造、修复、重建、控制、转化、删除、因果／信息／叙事改写等；不限一拳、一次物理爆炸或焦耳值。`event.observed_output`、`effort.actual_output`及因果链同样记录非伤害、非能量效果；按[非伤害作用定档](rating-card.md#创造修复与全域转化)核完整对象与实现程度，材料无关时不强填材料或虚构能量换算。
+
+存在拉入、降格、封印、改写属性或编排结局时，按实际因果拆开：**作用前的对象／本体与状态 → 发动、纳入及权限变化 → 作用后的身份与属性 → 内部动作和最终结果**。逐段标明施术者、装备／外援归属、目标的独立定档、抗性、持续和解除／回投条件。复合发动的多个环节分别核证，不将每一环都假定无限或同档。
+
+例如，高档对象先被纳入故事、限制或重写属性，再以嫌疑人身份被子弹杀死：前段纳入／降格／编排须按原对象及其被突破的抗性评机制输出；后段枪击记录故事内身份下的结果。不能只据最终“枪杀”画面把施术者综合定成普通人，也不能据此证明原态肉身被普通枪口动能击穿。要核死亡能否回投本体、是否仅投影／暂时形象、是否确实由该角色编排；可见表象不代替这些桥。
+
 ## 输入契约
 
-`mode` 取 `normal` / `highest` / `lowball`，默认 `normal`。`requested_uses` 默认只含 `observed_output`；只补实际需要的用途，不能为了普通直接表现而强制填写全部材料、全力和全盛条件。未知不填零，暂缺材料不清空已记录输出。
+新请求 `mode` 使用 `integrated`（默认）；旧 `normal/highest/lowball` 只兼容读取历史资料，三类表现依[综合规则](modes-scaling.md)记录，不分别定角色档位。`requested_uses` 默认只含 `observed_output`；只补实际需要的用途，不能为了普通直接表现而强制填写全部材料、全力和全盛条件。未知不填零，暂缺材料不清空已记录输出。
 
 统一 claim：
 
@@ -51,7 +61,7 @@
 | `character_statement` | 上一行三项加 `independent_corroboration`；角色说“我尽全力了”本身不客观证明全力。 |
 | `reasonable_inference` | `premises` 数组列统一 claim；`checks.alternatives_considered` 记录已考虑替代解释；可另列 `assumptions`。即使全部前提获包内支持，推测仍为 `conditional`。 |
 
-作者身份未核的截图可以作为待核线索，不能获得作者权威，连给 `identity_verified` 填假设也不行。若原文内容本身有推测价值，另建非权威的 `reasonable_inference`，写明前提和替代解释；不能把作者认证缺口藏进最高口径。已知与原作表现冲突的权威/陈述前提为 false 时，依赖它的用途阻断，遵守表现高于冲突设定。
+作者身份未核的截图可以作为待核线索，不能获得作者权威，连给 `identity_verified` 填假设也不行。若原文内容本身有推测价值，另建非权威的 `reasonable_inference`，写明前提和替代解释；不能把作者认证缺口藏进激进解释。已知与原作表现冲突的权威/陈述前提为 false 时，依赖它的用途阻断，遵守表现高于冲突设定。
 
 ## 输出与用途准入
 
@@ -73,13 +83,13 @@
 | `undetermined` | 关键前提尚未知，不能静默当真。补证任务给出目标路径、待查问题、完成标准及宿主执行者。 |
 | `blocked` | 所需前提明确 false，或依赖来源不可读。任何模式不能改写。 |
 
-`observed_output` 是当次状态的输出归属；`material_model` 是特定材性/工况能否用于计算；`full_effort` 是这一次是否尽力；`state_transfer` 是向所评状态迁移；`upper_bound` 是失败能否约束所评配置。它们分别判定，例如材料失配会阻断 `material_model`，同时保留已观察的裂纹。总 `status` 是已请求用途中最受限制的状态，不应取代各用途判定。
+`observed_output` 是当次状态的物理或机制输出归属；`material_model` 是特定材性/工况能否用于计算；`full_effort` 是这一次是否尽力；`state_transfer` 是向所评状态迁移；`upper_bound` 是失败能否约束所评配置。它们分别判定，例如材料失配会阻断 `material_model`，同时保留已观察的裂纹或机制效果。总 `status` 是已请求用途中最受限制的状态，不应取代各用途判定。
 
-最高口径对未知另外列 `conditional_branches`，`admitted:false`，只说明未来须成立的假设；不替换主 admission。已有 false 或不可读来源的用途不会生成越过它的最高分支。常态、最高和扒下限均不从一次失败补出上界前提。
+未知可另列 `conditional_branches`，`admitted:false`，只说明未来须成立的假设；不替换主 admission，也不形成另一套角色最高档。已有 false 或不可读来源的用途不会生成越过它的条件分支；高光、通常、低谷任何视角都不从一次失败补出上界前提。
 
 ## 与 CASE 的绑定
 
-CASE 在 `feat_reviews` 中存 `{id,modes?,request}`；分析器逐模式注入 CASE 的 `sources` 与 `mode`，本模块本身不修改 CASE 传播。锚点、传播边和定性主张用 `review_requirements:[{review_id,use}]` 绑定具体审查用途，不能仅把审查结果附在报告里却不约束结论。
+CASE 在 `feat_reviews` 中存 `{id,modes?,request}`；分析器按本次综合请求注入 CASE 的 `sources` 与 `mode`，本模块本身不修改 CASE 传播。锚点、传播边和定性主张用 `review_requirements:[{review_id,use}]` 绑定具体审查用途，不能仅把审查结果附在报告里却不约束结论。
 
 CASE 中角色 ID 必须匹配 `event.actor_id`。锚点的版本/状态文字与事件不同，须额外引用同一 review 的 `state_transfer` 用途；不能依靠字符串相似或同义词猜测兼容。若真实等价，由宿主写明并以 `compatible` 论证。能力上限 `upper` 锚点必须约束相应 `upper_bound`；仅表示单次测量上界时显式用 `claim_scope:"event"`，不升为状态最大能力。材料反算须约束相应 `material_model`。CASE 默认为未判定用途关闸；宿主要保留未证分支，须在 requirement 中明确 `allow_unproven:true` 并附具体 `assumptions`，形成可见的条件路径。`blocked` 始终禁止。
 
