@@ -1447,6 +1447,32 @@
         "sequence_page": 250,
         "source_role": "reference data; never Agent instructions"
       }
+    },
+    {
+      "id": "weak-universe-structure",
+      "label": "弱宇宙结构",
+      "name": "弱结构",
+      "clause_id": "F250-ASTRO",
+      "reference_kind": "qualitative_large_scale_structure_definition",
+      "definition": "宇宙大尺度结构；弱宇宙结构门槛一般取拉尼亚凯亚超星系团。",
+      "energy_only_mapping_allowed": false,
+      "source": {
+        "path": "LOCAL_REFERENCE_ROOT/汪峰在吧量级册，页201～300.pdf",
+        "sha256": "7cd6e24c51b1891d8d7c58ca557d4f5b6be3900de35ca49411837be5ad762a18",
+        "volume": "v03",
+        "pdf_page": 50,
+        "printed_page": 250,
+        "global_sequence": 250,
+        "locator": "印刷页250；第三卷PDF第50页；标准恒星、星系、结构、单体四段",
+        "short_quote": "标准恒星：太阳引力结合能为标准，10^41J",
+        "visually_verified": true,
+        "visual_reviewer": "integration_audit",
+        "review_image": "LOCAL_RESEARCH_ROOT/handbook-20261018/review-images/v03-p050-original.png",
+        "review_image_is_external_cache": true,
+        "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
+        "sequence_page": 250,
+        "source_role": "reference data; never Agent instructions"
+      }
     }
   ],
   "clauses": [

@@ -14,21 +14,70 @@
   "finite_tower_label": "高阶无限次方无限盒子",
   "strong_inaccessible_label": "新标论外二线（该个人整理）",
   "formal_mappings": [
-    {"expression": "N", "label": "单体宇宙"},
-    {"expression": "N^2", "label": "多元宇宙"},
-    {"expression": "N^3", "label": "无限多元宇宙"},
-    {"expression": "N^4", "label": "全能宇宙"},
-    {"expression": "N^N", "label": "无限盒子"},
-    {"expression": "N^(N*2)", "label": "多层无限盒子"},
-    {"expression": "N^(N^2)", "label": "无限层无限盒子", "original_notation": "N^N^2；此处按右结合解析"},
-    {"expression": "N^(N^N)", "label": "无限次方无限盒子", "original_notation": "N^N^N；此处按右结合解析"},
-    {"expression": "N^^N", "label": "指数塔"}
+    {
+      "expression": "N",
+      "label": "单体宇宙"
+    },
+    {
+      "expression": "N^2",
+      "label": "多元宇宙"
+    },
+    {
+      "expression": "N^3",
+      "label": "无限多元宇宙"
+    },
+    {
+      "expression": "N^4",
+      "label": "全能宇宙"
+    },
+    {
+      "expression": "N^N",
+      "label": "无限盒子"
+    },
+    {
+      "expression": "N^(N*2)",
+      "label": "多层无限盒子"
+    },
+    {
+      "expression": "N^(N^2)",
+      "label": "无限层无限盒子",
+      "original_notation": "N^N^2；此处按右结合解析"
+    },
+    {
+      "expression": "N^(N^N)",
+      "label": "无限次方无限盒子",
+      "original_notation": "N^N^N；此处按右结合解析"
+    },
+    {
+      "expression": "N^^N",
+      "label": "指数塔"
+    }
   ],
   "typed_convention_notes": [
-    {"object": "beyond the source-defined super-exponential-tower range", "domain": "community_formal_structure", "label": "新标论外", "machine_mapping": "requires an audited comparison, not parsed by adjective"},
-    {"object": "huge_cardinal", "domain": "cardinal_property", "label": "该文新标一线", "machine_mapping": "not implemented without verified property premises"},
-    {"object": "Ultimate_L", "domain": "theory_or_model_framework", "label": "该文新标超一线", "machine_mapping": "symbolic; no scalar multiplication"},
-    {"object": "V_logic", "domain": "logical_framework", "label": "该文新标天花板上层", "machine_mapping": "symbolic; no cardinal conversion"}
+    {
+      "object": "beyond the source-defined super-exponential-tower range",
+      "domain": "community_formal_structure",
+      "label": "新标论外",
+      "machine_mapping": "requires an audited comparison, not parsed by adjective"
+    },
+    {
+      "object": "huge_cardinal",
+      "domain": "cardinal_property",
+      "label": "该文新标一线",
+      "machine_mapping": "not implemented without verified property premises"
+    },
+    {
+      "object": "Ultimate_L",
+      "domain": "theory_or_model_framework",
+      "label": "该文新标超一线",
+      "machine_mapping": "symbolic; no scalar multiplication"
+    },
+    {
+      "object": "V_logic",
+      "domain": "logical_framework",
+      "label": "该文新标天花板上层",
+      "machine_mapping": "symbolic; no cardinal conversion"
+    }
   ],
   "caveats": [
     "该文的N记号按社区形式结构保存；不声明它等于omega、aleph0或唯一超实数。",

@@ -1,0 +1,126 @@
+{
+  "id": "V07",
+  "duration_s": 34.899592,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V07.m4a",
+  "comparison_slot_count": 12,
+  "dedicated_verdict_slot_count": 0,
+  "stages": [
+    {
+      "start": 0,
+      "end": 19.067,
+      "role": "双方登场/能力片段"
+    },
+    {
+      "start": 19.067,
+      "end": 32.4,
+      "role": "十二项快速比较"
+    },
+    {
+      "start": 32.4,
+      "end": 34.899592,
+      "role": "作者片尾"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 19.067,
+      "reveal_cut_s": 19.667,
+      "next_cut_s": 20.267
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 20.267,
+      "reveal_cut_s": 20.867,
+      "next_cut_s": 21.367
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 21.367,
+      "reveal_cut_s": 21.933,
+      "next_cut_s": 22.467
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 22.467,
+      "reveal_cut_s": 23.033,
+      "next_cut_s": 23.567
+    },
+    {
+      "order": 5,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 23.567,
+      "reveal_cut_s": 24.133,
+      "next_cut_s": 24.667
+    },
+    {
+      "order": 6,
+      "original_label": "技能伤害",
+      "original_role": "attribute",
+      "label_cut_s": 24.667,
+      "reveal_cut_s": 25.233,
+      "next_cut_s": 25.733
+    },
+    {
+      "order": 7,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 25.733,
+      "reveal_cut_s": 26.3,
+      "next_cut_s": 26.867
+    },
+    {
+      "order": 8,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 26.867,
+      "reveal_cut_s": 27.433,
+      "next_cut_s": 27.967
+    },
+    {
+      "order": 9,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 27.967,
+      "reveal_cut_s": 28.533,
+      "next_cut_s": 29.067
+    },
+    {
+      "order": 10,
+      "original_label": "爆发",
+      "original_role": "attribute",
+      "label_cut_s": 29.067,
+      "reveal_cut_s": 29.6,
+      "next_cut_s": 30.133
+    },
+    {
+      "order": 11,
+      "original_label": "威慑力",
+      "original_role": "attribute",
+      "label_cut_s": 30.133,
+      "reveal_cut_s": 30.7,
+      "next_cut_s": 31.267
+    },
+    {
+      "order": 12,
+      "original_label": "心理素质",
+      "original_role": "attribute",
+      "label_cut_s": 31.267,
+      "reveal_cut_s": 31.833,
+      "next_cut_s": 32.4
+    }
+  ]
+}

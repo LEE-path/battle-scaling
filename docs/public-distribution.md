@@ -1,8 +1,8 @@
 # 公开发布范围 / Public distribution
 
-本仓库发布 **battle-scaling 1.12.3** 与自包含的 combat-novel-refpack。只审计和整理当前发布包，不改写 Git 历史。公开包有独立文件清单，不能用本地全量资料的manifest覆盖它。
+本仓库发布 **battle-scaling 1.21.0** 、自包含的 combat-novel-refpack 与 Battle Video Studio。只审计和整理当前发布包，不改写 Git 历史。公开包有独立文件清单，不能用本地全量资料的manifest覆盖它。
 
-The repository distributes **battle-scaling 1.12.3** and the self-contained novel dossier library. This review covers the current distribution, not Git history. Its manifest describes public files only.
+The repository distributes **battle-scaling 1.21.0** with the self-contained novel dossier library and Battle Video Studio. This review covers the current distribution, not Git history. Its manifest describes public files only.
 
 ## 保留 / Included
 
@@ -38,3 +38,16 @@ The importer checks an explicitly supplied local corpus against its locked hash.
 [MIT](../LICENSE)只覆盖原创部分。VSB改编资料、上游软件和可选外部数据保留各自条款；依赖许可、真实上游仓库、来源匹配和分发边界见[第三方说明](../THIRD_PARTY_NOTICES.md)、[拆书来源](../tools/combat-novel-refpack/UPSTREAM.md)与[当前包审计](CURRENT-RELEASE-AUDIT.md)。PyMuPDF等可选依赖的copyleft/商业要求不因“未打包”或鸣谢而自动消失。
 
 The MIT license covers original material only. See the linked notices for third-party licenses and source provenance. Optional status and acknowledgement do not replace applicable copyleft or commercial-license requirements.
+
+
+## 视频工具与自行导入 / Video and user imports
+
+视频工程只附核心代码、九方案时序/动效参数、原创可复用 VS/branding 和有许可字体；不含参考歌曲、角色图片、视频、用户工程或参考研究成片。使用者自行取得有权使用的、与方案剪切版一致的音轨和角色素材，按[视频工具说明](../tools/battle-video-studio/README.md)导入。Remotion 使用自己的许可，字体使用 OFL1.1，不因项目采用 MIT 而改变。
+
+The video project contains production code, nine timing/effect presets, reusable original graphics and the licensed font. Supply your own permitted matching audio edit and character media. Remotion and font terms remain separate from the original project MIT license.
+
+SCP 语义题集中的短摘录、中文改述及改编题目保留作者、原条目和作者页链接，按 CC BY-SA3.0 提供。独立通用程序代码的 MIT 不覆盖这些改编内容。
+
+## 可重复同步 / Repeatable synchronization
+
+维护者可用[同步工具](PUBLICATION-SYNC.md)先向独立目标生成分发副本，再核对边界与静态文件清单。默认只规划，显式 --apply 才写目标；相同输入可重复运行。工具不覆盖站点库或安装源，不执行 Git 提交、推送或发布。整包静态字节由 docs/distribution-manifest.json 描述，Skill 仍有独立 package-manifest.json。

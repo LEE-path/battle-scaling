@@ -1,9 +1,5 @@
 # VSB：特殊能力、抗性与 NLF
 
-<!-- VSB-LICENSE-NOTICE -->
-> 改编资料 / Adapted reference: © VS Battles Wiki contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 本项目作中文翻译、摘要与执行适配 / Project changes: translation, summarization and execution guidance. 原页／修订见本页引用，作者记录见原页历史 / Sources and revisions appear below; contributors are credited through the source-page histories. [许可与署名](../THIRD_PARTY_NOTICES.md#5-vsb-模式改编资料的许可例外--vsb-mode-adapted-reference-material)。
-
-
 仅 `standard: "vsb"` 使用本规则；默认汪吧仍使用 [双上限](hax-ceiling.md)。VSB 不是换档名：**不机械套用“不得超过原世界最强角色”上限，也不拿施术者 AP 给每种特能封顶**。低 AP 的能力可以有依据地影响高 AP 目标；同时，高 AP 目标也不自动抵抗一切特能。是否奏效由能力本身的机制、强度、射程、作用尺度、目标性质及对应抗性决定。[Hax](https://vsbattles.fandom.com/wiki/Hax?oldid=9692470)、[Resistance](https://vsbattles.fandom.com/wiki/Resistance?oldid=9313371)
 
 ## 必查项

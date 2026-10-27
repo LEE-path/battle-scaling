@@ -1,0 +1,13 @@
+node_modules/
+.cache/
+outputs/
+public/projects/
+public/music/
+public/uploads/
+public/references/
+public/motion-lab/
+public/motion-full/
+projects/
+data/active-job.json
+data/*.local.json
+*.log

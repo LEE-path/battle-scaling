@@ -1,0 +1,165 @@
+{
+  "id": "V05",
+  "reference": "V05 music timing preset",
+  "duration_s": 56.599313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V05.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 12,
+  "original_slot_roles": {
+    "attribute": 9,
+    "summary": 1,
+    "theme": 2,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.133,
+  "median_label_to_reveal_s": 0.567,
+  "stages": [
+    [
+      0,
+      9,
+      "双方全屏轮流登场",
+      "祖国人表情、超人黑衣/日照/战斗镜头轮流展示；开头不固定上下分屏。"
+    ],
+    [
+      9,
+      22.53,
+      "属性与主题项",
+      "上祖国人下黑衣超人，分屏后切单人全屏；大多数复用超人太空悬浮，真实和明显弱点用祖国人激光近景。"
+    ],
+    [
+      22.53,
+      23.13,
+      "总判",
+      "胜，随后进入超人实际战斗画面。"
+    ],
+    [
+      23.13,
+      54.1,
+      "赢家原作高光附加段",
+      "黑衣超人对尖刺装甲敌人连续近身打击、击飞与热视线；全屏竖裁原横画面，动作声画是否同原片未听辨。"
+    ],
+    [
+      54.1,
+      56.6,
+      "收尾标识",
+      "回到上下人物，叠JCYZR。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 9,
+      "reveal_cut_s": 9.6,
+      "next_cut_s": 10.167
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 10.167,
+      "reveal_cut_s": 10.7,
+      "next_cut_s": 11.267
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 11.267,
+      "reveal_cut_s": 11.833,
+      "next_cut_s": 12.4
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 12.4,
+      "reveal_cut_s": 13,
+      "next_cut_s": 13.533
+    },
+    {
+      "order": 5,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 13.533,
+      "reveal_cut_s": 14.1,
+      "next_cut_s": 14.633
+    },
+    {
+      "order": 6,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 14.633,
+      "reveal_cut_s": 15.2,
+      "next_cut_s": 15.733
+    },
+    {
+      "order": 7,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 15.733,
+      "reveal_cut_s": 16.3,
+      "next_cut_s": 16.9
+    },
+    {
+      "order": 8,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 16.9,
+      "reveal_cut_s": 17.5,
+      "next_cut_s": 18.033
+    },
+    {
+      "order": 9,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 18.033,
+      "reveal_cut_s": 18.633,
+      "next_cut_s": 19.167
+    },
+    {
+      "order": 10,
+      "original_label": "真实",
+      "original_role": "theme",
+      "label_cut_s": 19.167,
+      "reveal_cut_s": 19.767,
+      "next_cut_s": 20.3
+    },
+    {
+      "order": 11,
+      "original_label": "正义",
+      "original_role": "theme",
+      "label_cut_s": 20.3,
+      "reveal_cut_s": 20.833,
+      "next_cut_s": 21.4
+    },
+    {
+      "order": 12,
+      "original_label": "明显弱点",
+      "original_role": "attribute",
+      "label_cut_s": 21.4,
+      "reveal_cut_s": 21.933,
+      "next_cut_s": 22.533
+    },
+    {
+      "order": 13,
+      "original_label": "胜",
+      "original_role": "verdict",
+      "label_cut_s": 22.533,
+      "reveal_cut_s": 23.133,
+      "next_cut_s": null
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V05/分段研究.md"
+}

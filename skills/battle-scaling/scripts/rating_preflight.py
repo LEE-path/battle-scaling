@@ -69,6 +69,7 @@ def _tiers(standard, ruleset=None):
                 collect(item)
     finite = json.loads((root / 'wangba-handbook-2026-07-30-finite.json').read_text(encoding='utf-8'))
     collect(finite.get('energy_references', []))
+    collect(finite.get('scale_references', []))
     collect(finite.get('astronomical_references', []))
     collect(finite.get('qualitative_astronomical_references', []))
     base_name = 'high-wangba-handbook-2026-07-30'
@@ -92,9 +93,9 @@ def _tier(value, standard, ruleset=None):
     if not _concrete(value):
         return False
     if standard == 'vsb':
-        # Accept the code or the code followed by the official display label.
-        match = re.fullmatch(r'((?:(?:Low|High) )?\d+(?:-[ABC])?)(?: \([^()]+\))?', value.strip())
-        return bool(match and match.group(1) in _tiers(standard, ruleset))
+        # The bundled rules own the code vocabulary, including supported '+'.
+        code = re.sub(r' \([^()]+\)$', '', value.strip())
+        return code in _tiers(standard, ruleset)
     label = value.strip().replace('标准', '标')
     # Handbook rows abbreviate e.g. 标墙; user-facing cards use 标准爆墙.
     names = _tiers(standard, ruleset)
@@ -109,12 +110,13 @@ def process_subjects(request):
     if not isinstance(actors, list):
         return []
     return [{**copy.deepcopy(identities.get(item.get('id'), {}) if _text(item.get('id')) else {}),
-             **{key: copy.deepcopy(item[key]) for key in ('id', 'version', 'state', 'equipment') if key in item}}
+             **{key: copy.deepcopy(item[key]) for key in ('id', 'name', 'version', 'state', 'equipment',
+                                                          'author_rating_overrides') if key in item}}
             for item in actors if isinstance(item, dict)]
 
 
 def review(subjects, ratings, sources, *, standard='wangba', mode='integrated', writing=False,
-           rating_status=STATUS_UNSET):
+           rating_status=STATUS_UNSET, qualitative_claims=()):
     """Return ready/needs_research; missing evidence never becomes a draw.
 
     ratings=[{character_id,standard,mode,version,state,equipment,basis_type,
@@ -319,6 +321,11 @@ def review(subjects, ratings, sources, *, standard='wangba', mode='integrated', 
                 needs.append(prefix + '.dimensions.' + field + ' must use an ability level, never an explosive tier.')
         if status_valid and len(needs) == before:
             accepted.append(sid)
+    from rating_dossier import consistency_needs
+    conflicts = consistency_needs({'independent_ratings': ratings, 'qualitative_claims': qualitative_claims}, standard, mode)
+    if conflicts:
+        needs.extend(conflicts)
+        accepted = []
     return {'status': 'needs_research' if needs else 'ready', 'standard': standard, 'mode': mode, **mode_metadata(mode),
             'accepted_subject_ids': accepted, 'needs': list(dict.fromkeys(needs)),
             'research_tasks': ['Complete each integrated dossier scope, material outer relationships, candidate and selection review, refresh its current validity, and bind host acceptance to the reviewed revision before combat planning. Preserve local floors as evidence, not substitutes for representative selection; missing ratings do not imply a draw.'] if needs else [],

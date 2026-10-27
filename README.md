@@ -4,7 +4,7 @@
 
 # Battle Scaling
 
-**给 Agent 使用的原作取证、综合量级评定、VS 推演与战斗写作 Skill · v1.12.3**
+**给 Agent 使用的原作取证、综合量级评定、VS 推演、战斗写作与视频工具 · v1.21.0**
 
 把“角色有多强、根据什么、如何获胜”整理成可追溯的证据和推导。默认采用汪吧标准，也可切换到完整 VSB 规则。宿主 Agent 负责搜索、阅读与判断；配套 Python 工具负责定位、计算、约束检查和归档。
 
@@ -21,6 +21,11 @@
 | 对战推演 | 宏观胜负、优势与翻转条件；按需写优势方获胜的一局完整战况，区分单局示例与总体胜率。 |
 | 战斗写作 | 先独立评级，再按原作能力、人设、语言和世界观设计真实交锋、清楚的胜负手与结局；支持作者指定过程与胜者。 |
 | 小说拆书 | 自包含的快照、分章任务、原文定位、逐能力表现、状态继承、顺序验收和末期档案；首次缺完整档案时优先拆书。 |
+| 海报与一图流 | 原生透明 VS 模板与多款变体、人物选图方法、Pillow 拼贴和随包得意黑字体；接收既有结果，独立制作。 |
+| 素材搜寻 | 多平台站点库与关键词、yt-dlp/gallery-dl、B站扫码高清下载、页面资源提取与裁切；按实际用途筛选素材。 |
+| 稀缺角色与生成接入 | 原作外貌、能力和装备支撑统一形象；可绑定图像／视频 API、MCP、CLI 或本地模型，并提供图片动效兜底。 |
+| 视频模板复刻 | 从参考视频的音轨、完整结构、入场、维度揭晓、动效到片尾，形成可换人物的可编辑模板。 |
+| 属性卡点视频 | 九套独立音乐时序、可编辑 Remotion 工程、角色素材区间编排、双高光轮换和 MP4 导出；使用者自行提供有权使用的音轨及素材。 |
 
 九维固定包含：**输出、体防、智力、战斗智商、经验、特殊技能、破坏、速度、体量**。速度等可继续分项；智力、经验使用适合该属性的能力等级，不硬套爆炸能量档。
 
@@ -47,9 +52,13 @@
 
 ```powershell
 git clone https://github.com/LEE-path/battle-scaling.git
+cd battle-scaling
+python -X utf8 tools/setup.py install --profile full
 ```
 
-将 `skills/battle-scaling` **整个目录**安装到 Agent 的技能目录，例如 Codex 的 `~/.codex/skills/battle-scaling`。已有安装时先比较／备份，保留自己的运行数据库和资料；其他支持 `SKILL.md` 的 Agent 按其规则安装。
+推荐下载 Release 的 **完整包**或克隆整个仓库，再用上述安装命令。它创建隔离 Python 环境、安装轻量媒体／研究依赖与视频 npm 依赖，将完整 Skill 安装到 Codex 默认目录并绑定本次视频工程。需要预先安装 Python 3.11+；视频还需 Node.js 22.18+、npm、FFmpeg/ffprobe 和 Chrome/Edge。已有安装追加 `--upgrade`，被替换的静态文件先备份，运行数据保留。其他 Agent 用 `--skill-dir` 指定位置。详细步骤、能力对应关系及缺项检查见[完整安装指南](docs/INSTALL.md)。
+
+也可手动将 `skills/battle-scaling` **整个目录**安装到 Agent 的技能目录；只复制这个文件夹不会复制视频项目或安装它的依赖。
 
 也可用支持 GitHub 路径的 Skill 安装器：
 
@@ -73,12 +82,15 @@ A vs B，故事版：保留人设与能力，补合理前因，写完整交锋�
 
 Agent 从 [SKILL.md](skills/battle-scaling/SKILL.md)路由到所需资料。脚本不包含独立聊天模型，不会因生成索引、哈希或 JSON 就自动读懂原作。
 
+完整包提供相同的方法、工具代码、模板与可复用资产。搜索／图像／视频生成能力由宿主或使用者配置的后端提供；账号、API Key、素材授权与音轨由使用者自行准备，不绑定某台电脑的会话或路径。
+
 ## 本地验证与小说工具
 
 在仓库根目录运行：
 
 ```powershell
 python -X utf8 skills/battle-scaling/scripts/battle.py doctor
+python -X utf8 tools/setup.py check
 python -X utf8 tools/verify_package.py
 python -X utf8 skills/battle-scaling/scripts/battle.py physics --input skills/battle-scaling/assets/cases/physics-earth-binding.json
 ```
@@ -96,9 +108,26 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book
 
 未读原文保持部分覆盖，程序 `complete` 不替代宿主语义验收；候选 CASE 仍需正式定档。详见[独立拆书库](tools/combat-novel-refpack/README.md)与[完整拆书协议](skills/battle-scaling/references/novel-refpack-pipeline.md)。
 
+## 视频工具
+
+[`tools/battle-video-studio`](tools/battle-video-studio/README.md) 需要 Node.js 22.18+、npm、FFmpeg/ffprobe 和 Chrome/Edge。进入该目录运行 `npm ci`、`npm start`，访问 <http://127.0.0.1:3210>。从工作台导入双方素材，或提供任务 JSON。
+
+```powershell
+node scripts/select-template.mjs
+node scripts/import-music.mjs --template V05 --file "你的音轨.wav"
+npm run prepare-job -- 你的任务.json
+npm run render -- --job 工程ID
+```
+
+先选模板，再提供与该模板剪切版及时点一致的音轨；相近 BPM 或足够时长不能证明匹配。随包保留时间参数、原创可复用 VS/品牌图及有许可字体，不附参考歌曲、人物图、视频或原研究成片。正式视频读取已有研究结论；素材语义由实际看片的宿主判断，编排器按已赋用途、精彩程度和原片区间安排，不按赢项数重新判胜。
+
+本机维护同步工具及分发边界见[公开分发说明](docs/public-distribution.md)。同步只读取显式来源，排除运行库与用户素材，不执行提交、推送或 Release 操作。
+
+完整安装器会写入私有视频路径，仓库内的包装器也可自动发现随包工程。手动安装时可设置 `BATTLE_VIDEO_STUDIO_ROOT` 或运行指针；`python tools/setup.py run <脚本名> ...` 可直接使用隔离环境运行素材和评级工具。
+
 ## 许可与鸣谢
 
-**原创代码及原创文档：MIT。第三方资料保留各自许可。** VSB 改编资料为 CC BY-SA 3.0；Cited Feats 普通数据为 CC BY 4.0、SCP 数据为 CC BY-SA 3.0。完整依赖、来源、许可和适用范围见 [第三方说明](THIRD_PARTY_NOTICES.md)、[NOTICE](NOTICE.md)及[当前发布包审计](docs/CURRENT-RELEASE-AUDIT.md)。
+**原创代码及原创文档：MIT。第三方资料保留各自许可。** VSB 改编资料和语义题集中 SCP 的短摘录/改述为 CC BY-SA 3.0；Cited Feats 普通数据为 CC BY 4.0、SCP 数据为 CC BY-SA 3.0。视频依赖 Remotion 使用其自己的 Remotion License，得意黑字体使用 SIL OFL 1.1，均不能冒称 MIT。完整依赖、来源、许可和适用范围见 [第三方说明](THIRD_PARTY_NOTICES.md)、[NOTICE](NOTICE.md)及[当前发布包审计](docs/CURRENT-RELEASE-AUDIT.md)。
 
 特别感谢 [novel-refpack](https://github.com/scp3500/novel-refpack) 的拆书工作流参考。流程与研究还参考了 [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill)、[OmniBattle](https://github.com/Zerhal/omnibattle-ai)、[vskill](https://github.com/GentleClash/vskill)、[Fictional Ranking](https://github.com/BenCantCode/fictional-ranking)、[Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats)、[QuantiPhy](https://github.com/Paulineli/QuantiPhy) 和 [MangaLMM](https://github.com/manga109/MangaLMM)。[Cited Feats](https://citedfeats.com/data/) 与 [ManGo](https://arxiv.org/abs/2608.29865) 使用其已核官网／论文入口；没有虚构实现仓库。
 

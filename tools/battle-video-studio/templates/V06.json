@@ -1,0 +1,129 @@
+{
+  "id": "V06",
+  "reference": "V06 music timing preset",
+  "duration_s": 45.566313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V06.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 10,
+  "original_slot_roles": {
+    "attribute": 9,
+    "summary": 1,
+    "theme": 0,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 0,
+  "median_comparison_cycle_s": 1.633,
+  "median_label_to_reveal_s": 0.8,
+  "stages": [
+    [
+      0,
+      27.033,
+      "双方登场/气势展示",
+      "火车头入场、列车与奔跑；休伊室内近景及林中片段；上下双方与姓名/状态、VS。"
+    ],
+    [
+      27.033,
+      43.8,
+      "十项比较与单人揭晓",
+      "相同分屏比较底板与火车头双拇指/休伊近景反复交替。最后一项为“优势”，没有额外“胜者”标签。"
+    ],
+    [
+      43.8,
+      45.566313,
+      "作者标识与淡出",
+      "分屏上的特效及JCYZR标识后暗场。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 27.033,
+      "reveal_cut_s": 27.833,
+      "next_cut_s": 28.733
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 28.733,
+      "reveal_cut_s": 29.533,
+      "next_cut_s": 30.233
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 30.233,
+      "reveal_cut_s": 31.033,
+      "next_cut_s": 31.867
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 31.867,
+      "reveal_cut_s": 32.667,
+      "next_cut_s": 33.5
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 33.5,
+      "reveal_cut_s": 34.3,
+      "next_cut_s": 35.133
+    },
+    {
+      "order": 6,
+      "original_label": "反应力",
+      "original_role": "attribute",
+      "label_cut_s": 35.133,
+      "reveal_cut_s": 35.867,
+      "next_cut_s": 36.6
+    },
+    {
+      "order": 7,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 36.6,
+      "reveal_cut_s": 37.367,
+      "next_cut_s": 38.2
+    },
+    {
+      "order": 8,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 38.2,
+      "reveal_cut_s": 39,
+      "next_cut_s": 39.833
+    },
+    {
+      "order": 9,
+      "original_label": "勇气",
+      "original_role": "attribute",
+      "label_cut_s": 39.833,
+      "reveal_cut_s": 40.533,
+      "next_cut_s": 41.4
+    },
+    {
+      "order": 10,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 41.4,
+      "reveal_cut_s": 42.233,
+      "next_cut_s": 43.8
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V06/分段研究.md"
+}

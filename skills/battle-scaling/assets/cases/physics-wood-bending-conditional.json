@@ -1,9 +1,24 @@
 {
   "model": "bending",
   "inputs": {
-    "width": {"value": 0.1, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Solid rectangular beam with width 10 cm"},
-    "height": {"value": 0.2, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Bending-axis cross-section height 20 cm"},
-    "length": {"value": 2, "unit": "m", "source": "Explicit hypothetical test geometry, not measured from film", "assumption": "Clear support span 2 m"},
+    "width": {
+      "value": 0.1,
+      "unit": "m",
+      "source": "Explicit hypothetical test geometry, not measured from film",
+      "assumption": "Solid rectangular beam with width 10 cm"
+    },
+    "height": {
+      "value": 0.2,
+      "unit": "m",
+      "source": "Explicit hypothetical test geometry, not measured from film",
+      "assumption": "Bending-axis cross-section height 20 cm"
+    },
+    "length": {
+      "value": 2,
+      "unit": "m",
+      "source": "Explicit hypothetical test geometry, not measured from film",
+      "assumption": "Clear support span 2 m"
+    },
     "failure_stress": {
       "value": 30000000,
       "unit": "Pa",
@@ -11,8 +26,16 @@
       "assumption": "30 MPa is a conditional demonstration parameter; 20 to 60 MPa sensitivity range is illustrative and is not a statistical confidence interval. For a real log identify species, moisture, defects, grain and load rate before assigning a value."
     }
   },
-  "geometry": {"section": "rectangular", "loading": "simply_supported_center"},
-  "intervals": {"failure_stress": [20000000, 60000000]},
+  "geometry": {
+    "section": "rectangular",
+    "loading": "simply_supported_center"
+  },
+  "intervals": {
+    "failure_stress": [
+      20000000,
+      60000000
+    ]
+  },
   "assumptions": [
     "Central transverse point load on a simply supported beam; all other failure mechanisms ignored for this conditional calculation.",
     "This is not a measured Captain America feat. Along-grain splitting, different grip geometry or pre-existing cracks require different models.",

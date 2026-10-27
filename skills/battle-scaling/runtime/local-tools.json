@@ -1,7 +1,0 @@
-{
-  "nlp_python": null,
-  "formula_python": null,
-  "formula_model_dir": null,
-  "policy": "Local optional tools; validate existence. Never install or download models implicitly.",
-  "tieba_python": null
-}

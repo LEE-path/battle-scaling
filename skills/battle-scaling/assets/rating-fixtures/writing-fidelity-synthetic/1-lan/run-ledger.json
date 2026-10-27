@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "skill_version": "1.12.0",
-  "generated_at_utc": "2026-10-23T14:37:03.728612+00:00",
+  "skill_version": "1.11.2",
+  "generated_at_utc": "2026-10-22T21:24:01.137468+00:00",
   "case_id": "authored-fixture-lan",
   "input_sha256": "b364c5ba249484f36a854f264f577fb3489da0943f5d5129ea3883b0fab2cf07",
   "evidence_modes": [

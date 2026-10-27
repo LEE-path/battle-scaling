@@ -4,7 +4,7 @@
 
 # Battle Scaling
 
-**An Agent Skill for canonical evidence, integrated character ratings, VS analysis and battle writing · v1.12.3**
+**An Agent Skill for canonical evidence, integrated ratings, VS analysis, battle writing and video tools · v1.21.0**
 
 Turn “how strong is this character, why, and how could they win?” into traceable evidence and reasoning. Wangba is the default standard; a complete VSB rule mode is also available. The host Agent searches, reads and judges. Python tools handle source locations, calculations, constraints and artifacts.
 
@@ -21,6 +21,11 @@ Turn “how strong is this character, why, and how could they win?” into trace
 | Matchup analysis | Win paths, counters and reversal conditions; optionally show one complete battle won by the favored side, separately from the overall estimate. |
 | Battle writing | Complete independent ratings first, then design real combat with version-appropriate abilities, characterization, dialogue, causality and a clear result. Author-specified events and winners are supported. |
 | Novel dossiers | Self-contained snapshots, chapter tasks, exact quotations, ability feats, state inheritance, sequential acceptance and ending-state dossiers. Use the full pipeline when no qualified dossier exists. |
+| Posters and comparison images | Native transparent VS templates and alternatives, character-selection guidance, Pillow collage and bundled Smiley Sans. Media consumes existing results independently. |
+| Media discovery | Multiplatform catalog and queries, yt-dlp/gallery-dl, Bilibili QR/HD download, HTML asset extraction and clip/frame helpers with purpose-specific selection. |
+| Scarce characters and generation | Canon-grounded appearance, ability and equipment design; connect image/video APIs, MCPs, CLIs or local models, with image-motion fallbacks. |
+| Template replication | Analyze a reference video's audio, complete structure, entrances, reveals, effects and ending into an editable template with replaceable characters. |
+| Comparison videos | Nine independent music-timing presets, editable Remotion projects, source-interval planning, character-specific highlight rotation and MP4 export; users supply licensed audio and character media. |
 
 The nine attributes are **output, durability, intelligence, battle IQ, experience, special abilities, destruction, speed and body scale**. Relevant attributes can be subdivided. Intelligence and experience use suitable evidence-based levels, not explosive-energy labels.
 
@@ -47,9 +52,13 @@ Requires **Python 3.11+** and a host Agent that can research, read files and exe
 
 ```powershell
 git clone https://github.com/LEE-path/battle-scaling.git
+cd battle-scaling
+python -X utf8 tools/setup.py install --profile full
 ```
 
-Install the **entire** `skills/battle-scaling` directory into the Agent's skill directory, for example `~/.codex/skills/battle-scaling` in Codex. Compare or back up an existing installation and preserve your runtime databases and sources. Other Agents supporting `SKILL.md` follow their own installation conventions.
+Use the **full Release ZIP** or clone the whole repository, then run the installer above. It creates an isolated Python environment, installs lightweight media/research packages and the pinned video npm dependencies, installs the complete Skill into Codex's default directory and binds the extracted video project. Python 3.11+ is required; video also needs Node.js 22.18+, npm, FFmpeg/ffprobe and Chrome/Edge. Add `--upgrade` for an existing installation: replaced static files are backed up and runtime data is retained. Use `--skill-dir` for another Agent. See the [complete setup guide](docs/INSTALL.md) for capability coverage and diagnostics.
+
+Manual installation of the **entire** `skills/battle-scaling` folder is also supported, but copying only that folder does not install or copy the video project and its dependencies.
 
 A GitHub-path-aware skill installer can use:
 
@@ -73,12 +82,15 @@ Analyze this single feat, including materials, forces, state and ability mechani
 
 The Agent routes from [SKILL.md](skills/battle-scaling/SKILL.md). The CLI contains no standalone chat model; indexes, hashes and JSON generation do not amount to understanding or validating canon.
 
+The full distribution provides the same maintained workflows, tool code, templates and reusable assets. Search, image and video generation depend on the host or a configured backend. Users supply their own accounts, API credentials and permitted media/audio; no particular machine's sessions or private paths are required.
+
 ## Local verification and novel tools
 
 Run from the repository root:
 
 ```powershell
 python -X utf8 skills/battle-scaling/scripts/battle.py doctor
+python -X utf8 tools/setup.py check
 python -X utf8 tools/verify_package.py
 python -X utf8 skills/battle-scaling/scripts/battle.py physics --input skills/battle-scaling/assets/cases/physics-earth-binding.json
 ```
@@ -96,9 +108,26 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book
 
 Unread material remains partial. Programmatic `complete` does not replace host semantic review, and candidate CASEs still need a formal rating. See the [standalone library](tools/combat-novel-refpack/README.md) and [full novel protocol](skills/battle-scaling/references/novel-refpack-pipeline.md).
 
+## Video tool
+
+[`tools/battle-video-studio`](tools/battle-video-studio/README.md) requires Node.js 22.18+, npm, FFmpeg/ffprobe and Chrome/Edge. Run `npm ci` and `npm start` in that directory, then open <http://127.0.0.1:3210>. Import character media through the workbench or provide a job JSON.
+
+```powershell
+node scripts/select-template.mjs
+node scripts/import-music.mjs --template V05 --file "your-audio.wav"
+npm run prepare-job -- your-job.json
+npm run render -- --job project-id
+```
+
+Choose the preset before supplying the matching audio edit; similar BPM or adequate duration does not verify a match. The distribution contains timing parameters, reusable original VS/branding graphics and a licensed font, without reference songs, character art or videos. Production edits consume researched results. The host watches and annotates media; the compiler plans from those semantics and source intervals, without deciding winners by attribute vote counts.
+
+See [public distribution](docs/public-distribution.md) for the repeatable synchronization tool. It reads explicit sources, excludes runtime libraries and user media, and performs no Git commit, push or release action.
+
+The full installer writes a private video-project pointer, and the repository wrapper auto-discovers the bundled project. For manual installations, configure `BATTLE_VIDEO_STUDIO_ROOT`. Use `python tools/setup.py run <script-name> ...` to run rating/media tools through the isolated Python environment.
+
 ## Licensing and credits
 
-**Original code and original documentation: MIT. Third-party material retains its own terms.** Adapted VSB references use CC BY-SA 3.0. General Cited Feats data uses CC BY 4.0, with SCP rows under CC BY-SA 3.0. See [third-party notices](THIRD_PARTY_NOTICES.md), [NOTICE](NOTICE.md) and the [current release audit](docs/CURRENT-RELEASE-AUDIT.md) for scope, attribution and applicable terms.
+**Original code and original documentation: MIT. Third-party material retains its own terms.** Adapted VSB references and SCP-derived benchmark excerpts/paraphrases use CC BY-SA 3.0. General Cited Feats data uses CC BY 4.0, with SCP rows under CC BY-SA 3.0. Remotion uses the Remotion License and Smiley Sans uses SIL OFL 1.1; neither is relicensed as MIT. See [third-party notices](THIRD_PARTY_NOTICES.md), [NOTICE](NOTICE.md) and the [current release audit](docs/CURRENT-RELEASE-AUDIT.md) for scope, attribution and applicable terms.
 
 Special thanks to [novel-refpack](https://github.com/scp3500/novel-refpack) for the extraction-workflow design. Workflow/research references include [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill), [OmniBattle](https://github.com/Zerhal/omnibattle-ai), [vskill](https://github.com/GentleClash/vskill), [Fictional Ranking](https://github.com/BenCantCode/fictional-ranking), [Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats), [QuantiPhy](https://github.com/Paulineli/QuantiPhy) and [MangaLMM](https://github.com/manga109/MangaLMM). [Cited Feats](https://citedfeats.com/data/) and [ManGo](https://arxiv.org/abs/2608.29865) link to verified websites/papers; no implementation repository has been invented.
 

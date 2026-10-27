@@ -5,10 +5,66 @@
   "ruleset": "high-zerozhi2025-old",
   "scope": "SCP-3812英文原条目这一连续性；不自动拼入全站其他canon",
   "nodes": [
-    {"id": "local_reality", "operation": "base", "description": "条目记载现实改写及多次规避收容；这些事件与叙事层说明分别登记。", "source": {"url": "https://scp-wiki.wikidot.com/scp-3812", "locator": "Description；Addendum 3812.4", "kind": "official_work_page"}},
-    {"id": "narrative_creator", "operation": "narrative", "depends_on": ["local_reality"], "description": "作中研究者提出层叠叙事模型；B的消息自称创造下层叙事。区分研究假说与来信自述。", "scope": "该条目所述叙事层", "source": {"url": "https://scp-wiki.wikidot.com/scp-3812", "locator": "Addenda 3812.2、3812.5、3812.6", "kind": "official_work_page"}},
-    {"id": "supersession", "operation": "transcends", "depends_on": ["narrative_creator"], "description": "B报告自己无法撤销其创造物；原文继续讨论超越自身和更高层的机制。最高模式采用持续有效的强解释。", "aggressive": true, "assumptions": ["把B的自述作为此原条目最高模式的可信设定；持续超越规则可继续适用。", "没有把潜在未来完成态直接当作已实现的具体基数。"], "scope": "原条目叙事超越机制", "source": {"url": "https://scp-wiki.wikidot.com/scp-3812", "locator": "Addendum 3812.5中B的消息；3812.6及结尾对话", "kind": "official_work_page"}}
+    {
+      "id": "local_reality",
+      "operation": "base",
+      "description": "条目记载现实改写及多次规避收容；这些事件与叙事层说明分别登记。",
+      "source": {
+        "url": "https://scp-wiki.wikidot.com/scp-3812",
+        "locator": "Description；Addendum 3812.4",
+        "kind": "official_work_page"
+      }
+    },
+    {
+      "id": "narrative_creator",
+      "operation": "narrative",
+      "depends_on": [
+        "local_reality"
+      ],
+      "description": "作中研究者提出层叠叙事模型；B的消息自称创造下层叙事。区分研究假说与来信自述。",
+      "scope": "该条目所述叙事层",
+      "source": {
+        "url": "https://scp-wiki.wikidot.com/scp-3812",
+        "locator": "Addenda 3812.2、3812.5、3812.6",
+        "kind": "official_work_page"
+      }
+    },
+    {
+      "id": "supersession",
+      "operation": "transcends",
+      "depends_on": [
+        "narrative_creator"
+      ],
+      "description": "B报告自己无法撤销其创造物；原文继续讨论超越自身和更高层的机制。最高模式采用持续有效的强解释。",
+      "aggressive": true,
+      "assumptions": [
+        "把B的自述作为此原条目最高模式的可信设定；持续超越规则可继续适用。",
+        "没有把潜在未来完成态直接当作已实现的具体基数。"
+      ],
+      "scope": "原条目叙事超越机制",
+      "source": {
+        "url": "https://scp-wiki.wikidot.com/scp-3812",
+        "locator": "Addendum 3812.5中B的消息；3812.6及结尾对话",
+        "kind": "official_work_page"
+      }
+    }
   ],
-  "character_relations": [{"character": "SCP-3812", "node": "supersession", "relation": "affects", "source": {"url": "https://scp-wiki.wikidot.com/scp-3812", "locator": "Addendum 3812.5及结尾对话", "kind": "official_work_page"}}],
-  "expected": {"native_mechanism": "source_conditioned narrative supersession", "numeric_threshold": "not established by this chain alone", "old_aleph1_mapping": "none", "pending": "如采用将叙事差映射层级的其他规则，先取得该规则及桥接证据。"}
+  "character_relations": [
+    {
+      "character": "SCP-3812",
+      "node": "supersession",
+      "relation": "affects",
+      "source": {
+        "url": "https://scp-wiki.wikidot.com/scp-3812",
+        "locator": "Addendum 3812.5及结尾对话",
+        "kind": "official_work_page"
+      }
+    }
+  ],
+  "expected": {
+    "native_mechanism": "source_conditioned narrative supersession",
+    "numeric_threshold": "not established by this chain alone",
+    "old_aleph1_mapping": "none",
+    "pending": "如采用将叙事差映射层级的其他规则，先取得该规则及桥接证据。"
+  }
 }

@@ -426,7 +426,7 @@ def _native(request: dict, out: dict, rule: dict | None):
         deps = node.get("depends_on", [])
         if not isinstance(deps, list) or any(not isinstance(x, str) for x in deps):
             raise InputError("depends_on must contain node IDs")
-        if node["operation"] != "base" and not deps:
+        if node["operation"] not in {"base", "anchor", "typed_structure"} and not deps:
             out["warnings"].append("node " + node["id"] + " lacks an input; operation scope is not established")
         by_id[node["id"]] = node
     for node in nodes:
@@ -445,26 +445,73 @@ def _native(request: dict, out: dict, rule: dict | None):
     out["status"] = "conditional"
     out["limits"] += ["Native phi/Φ is not Veblen phi unless the work explicitly supplies that definition.", "DAG checks validate dependency/provenance structure; semantic entailment of prose still requires source reading.", "Fictional transcendence does not independently prove a cardinal, ordinal or consistency-strength value."]
     eligibility: dict[str, bool] = {}
+    supports: dict[str, dict] = {}
     for node in order:
         _provenance(out, node)
         assumptions = node.get("assumptions", [])
         if not isinstance(assumptions, list):
             raise InputError("node assumptions must be a list")
         out["assumptions"].extend({"node": node["id"], "text": x, "type": "native_interpretation"} for x in assumptions)
-        sourced = _source_present(node)
+        # Source completeness belongs to the premise chain, not merely the last
+        # edge. A separately sourced full definition can establish this node
+        # without using a cited-but-unproved parent comparison. This remains a
+        # supplied semantic interpretation, not an offline source certificate.
+        independent = node if node["operation"] == "anchor" else node.get("independent_anchor")
+        independent_ok = (isinstance(independent, dict) and _source_present(independent)
+                          and all(isinstance(independent.get(k), str) and independent[k].strip()
+                                  for k in ("definition", "scope")))
+        if independent is not None and not independent_ok and independent is not node:
+            out["warnings"].append("incomplete_independent_anchor:" + node["id"])
+        if independent_ok:
+            _provenance(out, independent)
+        sourced = _source_present(node) or independent_ok
         if not sourced:
             out["warnings"].append("unsourced_node:" + node["id"])
         op = node["operation"]
         aggressive = op == "adjective" or node.get("aggressive") is True
-        admitted = (not aggressive or out["mode"] in ("integrated", "highest") and bool(assumptions)) and all(eligibility[d] for d in node.get("depends_on", []))
+        interpretation_ok = not aggressive or out["mode"] in ("integrated", "highest") and bool(assumptions)
+        dependencies = [] if independent_ok else node.get("depends_on", [])
+        established, gaps, conditions = [], [], []
+        for dep in dependencies:
+            for target, values in ((established, supports[dep]["established_premises"]),
+                                   (gaps, supports[dep]["unresolved_premises"]),
+                                   (conditions, supports[dep]["conditions"])):
+                target.extend(x for x in values if x not in target)
+        if not sourced:
+            gaps.append({"node": node["id"], "code": "unsourced_node"})
+        if not interpretation_ok:
+            gaps.append({"node": node["id"], "code": "unadmitted_aggressive_node"})
+        admitted = sourced and interpretation_ok and all(eligibility[d] for d in dependencies)
         eligibility[node["id"]] = admitted
-        if aggressive and not admitted:
+        if admitted:
+            established.append(node["id"])
+        for text in assumptions:
+            conditions.append({"node": node["id"], "text": text, "type": "native_interpretation"})
+        for owner, values in ((node, node.get("conditions", [])),
+                              (independent or {}, independent.get("assumptions", []) if independent_ok and independent is not node else [])):
+            values = [values] if isinstance(values, str) else values
+            if not isinstance(values, list):
+                raise InputError("native conditions/independent anchor assumptions must be strings or lists")
+            for text in values:
+                item = {"node": node["id"], "text": text, "type": "independent_anchor_assumption" if owner is independent else "native_condition"}
+                if item not in conditions:
+                    conditions.append(item)
+        support = {"admitted": admitted, "source_present": sourced,
+                   "basis": "independent_complete_anchor" if independent_ok else "declared_dependencies",
+                   "active_dependencies": dependencies, "established_premises": established,
+                   "unresolved_premises": gaps, "conditions": conditions}
+        if independent_ok:
+            support["anchor_definition"] = {k: independent[k] for k in ("definition", "scope")}
+            support["anchor_source"] = independent.get("source", independent.get("sources", []))
+            support["unused_dependencies"] = node.get("depends_on", [])
+        supports[node["id"]] = support
+        if aggressive and not interpretation_ok:
             out["warnings"].append("unadmitted_aggressive_node:" + node["id"])
         if op == "base_reset" and not node.get("scope"):
             out["warnings"].append("base_reset lacks explicit packed scope:" + node["id"])
         if op in {"closure", "iteration"} and not node.get("definition"):
             out["warnings"].append("operation domain/iteration rule needs definition:" + node["id"])
-        _step(out, "native_" + op, node.get("description", node["id"]), node=node["id"], depends_on=node.get("depends_on", []), source_present=sourced, aggressive=aggressive, admitted=admitted, assumptions=assumptions, definition=node.get("definition"), scope=node.get("scope"))
+        _step(out, "native_" + op, node.get("description", node["id"]), node=node["id"], depends_on=node.get("depends_on", []), aggressive=aggressive, assumptions=assumptions, definition=node.get("definition"), scope=node.get("scope"), **support)
     indexed_anchors = {a["id"]: a for a in (rule or {}).get("anchors", [])}
     claims = request.get("anchor_claims", [])
     if not isinstance(claims, list):
@@ -482,7 +529,7 @@ def _native(request: dict, out: dict, rule: dict | None):
         if relation not in {"equal", "at_least", "less_than", "analogous"}:
             raise InputError("unsupported anchor relation")
         identity_ok = bool(anchor.get("identity")) and all(str(node.get("identity", {}).get(k)) == str(v) for k, v in anchor["identity"].items())
-        if claim.get("basis") == "identity" and identity_ok and _source_present(node) and eligibility[node["id"]]:
+        if claim.get("basis") == "identity" and identity_ok and eligibility[node["id"]]:
             status = "conditional_on_anchor_identity_and_source"
             basis = "named_anchor_identity"
         else:
@@ -498,7 +545,7 @@ def _native(request: dict, out: dict, rule: dict | None):
             label = "与" + label + "锚点类比（候选）"
         if relation in {"less_than", "analogous"}:
             status = "candidate"
-        _mapping(out, rule, label, status, basis, node=node["id"], anchor_id=aid, relation=relation, comparison=claim.get("comparison", []), scope="world construction; no automatic transfer to character AP")
+        _mapping(out, rule, label, status, basis, node=node["id"], anchor_id=aid, relation=relation, comparison=claim.get("comparison", []), scope="world construction; no automatic transfer to character AP", premise_support=supports[node["id"]])
         _provenance(out, claim)
         out["assumptions"].extend({"anchor": aid, "text": a, "type": "anchor_comparison"} for a in claim.get("assumptions", []))
     properties: dict[str, list] = {}
@@ -510,7 +557,12 @@ def _native(request: dict, out: dict, rule: dict | None):
             raise InputError("character relation references an unknown node")
         _provenance(out, link)
         relation = link.get("relation")
-        source_ok = _source_present(link) and _source_present(by_id[link["node"]]) and eligibility[link["node"]]
+        event_sourced = _source_present(link)
+        support = supports[link["node"]]
+        source_ok = event_sourced and eligibility[link["node"]]
+        gaps = list(support["unresolved_premises"])
+        if not event_sourced:
+            gaps.append({"node": link["node"], "character": link.get("character"), "code": "unsourced_character_relation"})
         if relation in {"becomes", "merges"}:
             # Identity/fusion is an ontological state claim, not an action that
             # controls or destroys the whole target. Preserve its time scope.
@@ -530,7 +582,7 @@ def _native(request: dict, out: dict, rule: dict | None):
             default = {"affects": "special_effect_scope", "creates": "creation_scope", "destroys": "destructive_capacity", "controls": "control_scope", "withstands": "specific_resistance"}[relation]
             props = [default]
             if link.get("properties"):
-                if link.get("mechanism") and link.get("bridge") and source_ok:
+                if link.get("mechanism") and link.get("bridge") and event_sourced:
                     props = link["properties"]
                     out["assumptions"].append({"text": link["bridge"], "type": "property_transfer", "character": link.get("character")})
                 else:
@@ -539,7 +591,7 @@ def _native(request: dict, out: dict, rule: dict | None):
             out["warnings"].append("unrecognized_character_relation:" + str(relation))
             continue
         for prop in props:
-            properties.setdefault(prop, []).append({"character": link.get("character"), "node": link["node"], "relation": relation, "status": "source_conditioned" if source_ok else "candidate_unsourced", "mechanism": link.get("mechanism"), "source": link.get("source", link.get("sources", [])), **{field: link[field] for field in ("state", "duration", "scope", "conditions", "timeframe", "phase", "start", "end", "version", "continuity", "form") if field in link}})
+            properties.setdefault(prop, []).append({"character": link.get("character"), "node": link["node"], "relation": relation, "status": "source_conditioned" if source_ok else "candidate_unsourced", "event_status": "source_conditioned" if event_sourced else "candidate_unsourced", "established_premises": support["established_premises"], "unresolved_premises": gaps, "inherited_conditions": support["conditions"], "mechanism": link.get("mechanism"), "source": link.get("source", link.get("sources", [])), **{field: link[field] for field in ("state", "duration", "scope", "conditions", "timeframe", "phase", "start", "end", "version", "continuity", "form") if field in link}})
     # Typed facts are surfaced as supplied claims, not converted into scalar energy.
     typed = [{"node": n["id"], **n["typed_object"]} for n in nodes if isinstance(n.get("typed_object"), dict)]
     checks = []
@@ -551,9 +603,9 @@ def _native(request: dict, out: dict, rule: dict | None):
         checks.append({"node": obj["node"], "mathematical_check": check, "interpretation": obj.get("interpretation")})
         if check["status"] == "invalid":
             out["warnings"].append("invalid_typed_object:" + obj["node"])
-        if rule and rule.get("old_uncountable_threshold") and _aleph1_lower_bound(check.get("result", {}), check.get("axioms", [])) and eligibility[obj["node"]] and _source_present(by_id[obj["node"]]):
-            _mapping(out, rule, rule["old_uncountable_threshold"], "conditional_on_source_semantics_and_ruleset", "typed_source_interpretation", node=obj["node"], scope="typed structure; character property follows only its separate relation")
-    out["result"] = {"domain": "fiction_native", "node_order": [n["id"] for n in order], "nodes": order, "typed_objects": typed, "typed_checks": checks, "cardinal": None, "ordinal": None, "scalar_value": None, "combat_properties": properties}
+        if rule and rule.get("old_uncountable_threshold") and _aleph1_lower_bound(check.get("result", {}), check.get("axioms", [])) and eligibility[obj["node"]]:
+            _mapping(out, rule, rule["old_uncountable_threshold"], "conditional_on_source_semantics_and_ruleset", "typed_source_interpretation", node=obj["node"], scope="typed structure; character property follows only its separate relation", premise_support=supports[obj["node"]])
+    out["result"] = {"domain": "fiction_native", "node_order": [n["id"] for n in order], "nodes": order, "node_support": supports, "typed_objects": typed, "typed_checks": checks, "cardinal": None, "ordinal": None, "scalar_value": None, "combat_properties": properties}
 
 
 def analyze(request: dict, ruleset: dict | None = None) -> dict:

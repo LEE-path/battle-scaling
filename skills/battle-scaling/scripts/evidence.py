@@ -11,6 +11,7 @@ from pathlib import Path
 from pk_modes import READABLE, select_presentation, validate_estimate, review_estimate
 from hax_gate import build_checks as build_hax_checks, review as review_hax, ids as hax_ids, RANK as HAX_RANK
 from rating_preflight import review as review_ratings
+from rating_pipeline import handoff_scoped
 
 from rating_modes import MODES, LEGACY_MODES, applies, selected_modes, metadata as mode_metadata
 REVIEW_USES = {'observed_output','material_model','full_effort','state_transfer','upper_bound'}
@@ -579,7 +580,18 @@ def analyze_matchup(matchup, sources, mode='integrated',hax_reviews=None,hax_req
     context = rating_context or {}
     rating_gate = review_ratings(context.get('characters', []), context.get('independent_ratings', []),
                                 sources, standard=standard, mode=mode,
+                                qualitative_claims=context.get('qualitative_claims', []),
                                 **({'rating_status': context['rating_status']} if 'rating_status' in context else {}))
+    if rating_gate['status'] == 'ready':
+        from rating_pipeline import review_handoff
+        handoff = review_handoff({**context, 'sources': list(sources.values())},
+                                 standard=standard, mode=mode, allow_synthetic=True)
+        rating_gate['dossier_contents_read_by_checker'] = handoff['dossier_contents_read_by_checker']
+        rating_gate['research_handoff'] = handoff
+        if handoff['status'] != 'ready':
+            rating_gate['status'] = 'needs_research'
+            rating_gate['accepted_subject_ids'] = []
+            rating_gate['needs'].extend(handoff['needs'])
     if rating_gate['status'] != 'ready':
         blocked = {'mode':mode, 'standard':standard, 'presentation':select_presentation(matchup),
                    'status':'needs_independent_rating', 'verdict':'needs_independent_rating',
@@ -674,10 +686,13 @@ def analyze_matchup(matchup, sources, mode='integrated',hax_reviews=None,hax_req
                                     'standard':standard,'hax_checks':copy.deepcopy(hax_requests or []),
                                     'rating_subjects':copy.deepcopy(context.get('characters', [])),
                                     'independent_ratings':copy.deepcopy(context.get('independent_ratings', [])),
+                                    **{key:copy.deepcopy(context[key]) for key in
+                                       ('rating_execution', 'fixture_kind', 'ruleset_profile', 'qualitative_claims') if key in context},
                                     **({'rating_status':copy.deepcopy(context['rating_status'])} if 'rating_status' in context else {})})
     return reviewed
 
 
+@handoff_scoped
 def analyze_case(case, mode='integrated',profile=None):
     if mode not in MODES + ('all',):
         raise ValueError('mode must be integrated; normal/highest/lowball/all are explicit legacy replay')
@@ -689,6 +704,9 @@ def analyze_case(case, mode='integrated',profile=None):
         profile=resolve(case.get('ruleset_profile'),case.get('standard'))
     from standards import prepare_case,family
     case,standard_audit=prepare_case(case,profile)
+    # The caller/CLI may explicitly select another edition. Combat admission
+    # must bind that same edition rather than re-resolving the raw CASE default.
+    case['ruleset_profile'] = profile['id']
     result = {'schema_version': 1, 'case_id': case['case_id'], 'fixture_kind': case.get('fixture_kind', 'research'),
               'characters': case['characters'], 'sources': case['sources'], 'modes': {},
               'computations': [c for c in case.get('computations',[]) if not (
@@ -715,6 +733,7 @@ def analyze_case(case, mode='integrated',profile=None):
                 rating_subjects = [character for character in case['characters'] if character['id'] in targets]
         completion = review_ratings(rating_subjects, case.get('independent_ratings', []), case['sources'],
                                     standard=result['standard'], mode=mode,
+                                    qualitative_claims=case.get('qualitative_claims', []),
                                     **({'rating_status': case['rating_status']} if 'rating_status' in case else {}))
         completion['rating_subject_ids'] = [character['id'] for character in rating_subjects]
         result['rating_completion'] = completion
@@ -749,4 +768,10 @@ def analyze_case(case, mode='integrated',profile=None):
                                               rating_context=case)
                               for m in result['modes']}
         result['matchup'] = result['matchups']['normal' if mode == 'all' else mode]
+        # Use the same reviewed object for the PK character presentation. The
+        # independent row remains authoritative; labels here are only a view.
+        if mode != 'all' and result['matchup']['rating_preflight']['status'] == 'ready':
+            from rating_dossier import subject_views
+            result['characters'], _ = subject_views(case['characters'], case.get('independent_ratings', []),
+                                                    result['standard'], mode)
     return result

@@ -1,0 +1,173 @@
+{
+  "id": "V04",
+  "reference": "V04 music timing preset",
+  "duration_s": 51.766313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V04.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 13,
+  "original_slot_roles": {
+    "attribute": 11,
+    "summary": 1,
+    "theme": 1,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.1,
+  "median_label_to_reveal_s": 0.566,
+  "stages": [
+    [
+      0,
+      8.97,
+      "对视到能力介绍",
+      "上祖国人下临时五号屠夫，从坐姿对白画面切到红/黄色热视线、表情特写。"
+    ],
+    [
+      8.97,
+      23.53,
+      "属性轮播",
+      "固定暖色分屏比较；给祖国人的项切红眼近景，给屠夫的项切深色近景。"
+    ],
+    [
+      23.53,
+      26.73,
+      "总判及赢家展示",
+      "胜，切祖国人站姿；海报背景字样不是延续的属性字幕。"
+    ],
+    [
+      26.73,
+      48.77,
+      "原作打斗附加段",
+      "屠夫与祖国人近身拳脚、穿插正反打，随后热视线对轰；宽画面保留黑边，镜头速度不再沿用每半秒属性节奏。"
+    ],
+    [
+      48.77,
+      51.77,
+      "作者片尾",
+      "黑底JCYZR。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 8.967,
+      "reveal_cut_s": 9.533,
+      "next_cut_s": 10.133
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 10.133,
+      "reveal_cut_s": 10.667,
+      "next_cut_s": 11.233
+    },
+    {
+      "order": 3,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 11.233,
+      "reveal_cut_s": 11.767,
+      "next_cut_s": 12.333
+    },
+    {
+      "order": 4,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 12.333,
+      "reveal_cut_s": 12.933,
+      "next_cut_s": 13.5
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 13.5,
+      "reveal_cut_s": 14.067,
+      "next_cut_s": 14.6
+    },
+    {
+      "order": 6,
+      "original_label": "体质",
+      "original_role": "attribute",
+      "label_cut_s": 14.6,
+      "reveal_cut_s": 15.167,
+      "next_cut_s": 15.733
+    },
+    {
+      "order": 7,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 15.733,
+      "reveal_cut_s": 16.267,
+      "next_cut_s": 16.833
+    },
+    {
+      "order": 8,
+      "original_label": "心理素质",
+      "original_role": "attribute",
+      "label_cut_s": 16.833,
+      "reveal_cut_s": 17.4,
+      "next_cut_s": 17.933
+    },
+    {
+      "order": 9,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 17.933,
+      "reveal_cut_s": 18.467,
+      "next_cut_s": 19.033
+    },
+    {
+      "order": 10,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 19.033,
+      "reveal_cut_s": 19.6,
+      "next_cut_s": 20.167
+    },
+    {
+      "order": 11,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 20.167,
+      "reveal_cut_s": 20.7,
+      "next_cut_s": 21.267
+    },
+    {
+      "order": 12,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 21.267,
+      "reveal_cut_s": 21.833,
+      "next_cut_s": 22.4
+    },
+    {
+      "order": 13,
+      "original_label": "野心",
+      "original_role": "theme",
+      "label_cut_s": 22.4,
+      "reveal_cut_s": 22.967,
+      "next_cut_s": 23.533
+    },
+    {
+      "order": 14,
+      "original_label": "胜",
+      "original_role": "verdict",
+      "label_cut_s": 23.533,
+      "reveal_cut_s": 24.067,
+      "next_cut_s": null
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V04/分段研究.md"
+}

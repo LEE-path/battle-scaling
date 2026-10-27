@@ -466,16 +466,7 @@
     "schema_version": 1,
     "standard": "wangba",
     "mode": "normal",
-    "rating_policy": "legacy_mode_replay",
-    "legacy_mode": true,
-    "legacy_is_integrated_reassessment": false,
-    "performance_contexts": [
-      "high_showing",
-      "typical_showing",
-      "low_showing"
-    ],
-    "semantic_rating_verified": false,
-    "rules_fingerprint": "1dc514ae2045fa9304ae8518fb7e942f6dd748750d74285e9fb6f4b89673308a",
+    "rules_fingerprint": "607359806c0665debbed333f659e1e081260482e66c9dbf360d0a258c1fdfb6a",
     "artifacts": [
       {
         "character_id": "lan",
@@ -499,19 +490,19 @@
           },
           "analysis.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/analysis.json",
-            "sha256": "29555aa788c4bc935f99b5f54fd5feff9fbf2867c9a41eb80da0856d2ac21de4"
+            "sha256": "aa301789817870116db0433458f7736b28d4b074a2e3a529a8d6377ea6f2b6cb"
           },
           "derivations.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/derivations.json",
-            "sha256": "f09ff305fa5753849e32021a3a2e7513d138a69c86ecad0f51820d3471baa1ca"
+            "sha256": "2ff08b769dfda595e73b81cb6e77a20dab4d570e176db8c8e3ea25dc4db3037f"
           },
           "rules-snapshot.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/rules-snapshot.json",
-            "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+            "sha256": "4eaa989dae354cd8d891e93d8bc8ae9423af26a6e5636cc68be32d2a221e194a"
           },
           "host-acceptance.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/1-lan/host-acceptance.json",
-            "sha256": "2cd5e866df365e1553c2773deb045ac251c30c9e7640901aedd018ad4d3082cd"
+            "sha256": "a747354b50e994ddc8b60a2c275df1a61f0227f8c28493c0f907327481e721c4"
           }
         },
         "source_files": [],
@@ -542,19 +533,19 @@
           },
           "analysis.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/analysis.json",
-            "sha256": "bf92f07c245e015bfd9b2cc53006d4a9968bd49b4c5f553df6e22a39aec95e02"
+            "sha256": "1ae83195954788145eb42bfa33cc8aab2cf156e9809ab62be8ed45f122168e65"
           },
           "derivations.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/derivations.json",
-            "sha256": "b50eda8e73fc0835b468d0c04f1b0fdacb472fb10c0ca15485a1adada8ae5ac0"
+            "sha256": "a347fe0eec91a7093872a69c06fb60deb7e2275c9df22390d6834fef730d33fd"
           },
           "rules-snapshot.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/rules-snapshot.json",
-            "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+            "sha256": "4eaa989dae354cd8d891e93d8bc8ae9423af26a6e5636cc68be32d2a221e194a"
           },
           "host-acceptance.json": {
             "path": "assets/rating-fixtures/writing-battle-synthetic/2-shuo/host-acceptance.json",
-            "sha256": "3a58a1b383a8cf99f8b79c2579564809840bc105d8c5894025270b6d5c13bcd6"
+            "sha256": "f7bd84ff0841d2becba3735ad5e350668873d930eaccf62d4e7b01049ef249c7"
           }
         },
         "source_files": [],
@@ -568,6 +559,7 @@
       "independent-rating-fixture"
     ],
     "import_sha256": "eb441eeff590d4f197cc299bcfbb8d8ec294fa7e04f9bf4c92fa8aa8ddb41fa9",
+    "semantic_rating_verified": false,
     "validation_scope": "Local file reading, hashes, scope, source/rating import and reproducible analysis are checked. Host research, source truth, report entailment and semantic completeness remain the named host reviewer's responsibility."
   }
 }

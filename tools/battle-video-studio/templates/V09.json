@@ -1,0 +1,159 @@
+{
+  "id": "V09",
+  "reference": "V09 music timing preset",
+  "duration_s": 42.599313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V09.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 12,
+  "original_slot_roles": {
+    "attribute": 11,
+    "summary": 1,
+    "theme": 0,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.3,
+  "median_label_to_reveal_s": 0.634,
+  "stages": [
+    [
+      0,
+      20.367,
+      "上下双人入场与承伤/能力高光",
+      "祖国人暗处走近、热视线、飞行；金刚狼攀爬、亮爪、承受光束及爆炸后行走。"
+    ],
+    [
+      20.367,
+      36.2,
+      "十二项比较",
+      "红色属性字，固定双方近景分屏；给分使用祖国人仰视近景或金刚狼双爪交叉。"
+    ],
+    [
+      36.2,
+      39.733,
+      "胜者揭晓",
+      "“胜”之后祖国人笑脸，画面下方HOMELANDER。"
+    ],
+    [
+      39.733,
+      42.599313,
+      "作者标识/闭幕",
+      "回双人分屏，JCYZR及倾斜遮罩退场至黑。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 20.367,
+      "reveal_cut_s": 21.033,
+      "next_cut_s": 21.667
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 21.667,
+      "reveal_cut_s": 22.367,
+      "next_cut_s": 23.067
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 23.067,
+      "reveal_cut_s": 23.667,
+      "next_cut_s": 24.367
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 24.367,
+      "reveal_cut_s": 24.967,
+      "next_cut_s": 25.6
+    },
+    {
+      "order": 5,
+      "original_label": "体质",
+      "original_role": "attribute",
+      "label_cut_s": 25.6,
+      "reveal_cut_s": 26.3,
+      "next_cut_s": 26.9
+    },
+    {
+      "order": 6,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 26.9,
+      "reveal_cut_s": 27.533,
+      "next_cut_s": 28.267
+    },
+    {
+      "order": 7,
+      "original_label": "心理素质",
+      "original_role": "attribute",
+      "label_cut_s": 28.267,
+      "reveal_cut_s": 28.867,
+      "next_cut_s": 29.567
+    },
+    {
+      "order": 8,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 29.567,
+      "reveal_cut_s": 30.233,
+      "next_cut_s": 30.833
+    },
+    {
+      "order": 9,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 30.833,
+      "reveal_cut_s": 31.533,
+      "next_cut_s": 32.233
+    },
+    {
+      "order": 10,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 32.233,
+      "reveal_cut_s": 32.867,
+      "next_cut_s": 33.533
+    },
+    {
+      "order": 11,
+      "original_label": "近战格斗",
+      "original_role": "attribute",
+      "label_cut_s": 33.533,
+      "reveal_cut_s": 34.233,
+      "next_cut_s": 34.967
+    },
+    {
+      "order": 12,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 34.967,
+      "reveal_cut_s": 35.5,
+      "next_cut_s": 36.2
+    },
+    {
+      "order": 13,
+      "original_label": "胜",
+      "original_role": "verdict",
+      "label_cut_s": 36.2,
+      "reveal_cut_s": 36.833,
+      "next_cut_s": 39.733
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V09/分段研究.md"
+}

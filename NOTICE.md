@@ -11,3 +11,15 @@ Original software and original documentation use the root [MIT license](LICENSE)
 - 原作全文、参考册 PDF／完整 OCR、第三方截图、模型权重和私人运行数据不随公开包分发。
 
 本次审计只覆盖当前发布包，不覆盖 Git 历史，也不构成无侵权保证。/ This audit covers the current distribution, not Git history, and is not a warranty of non-infringement.
+
+## Video dependencies and reusable assets
+
+Battle Video Studio uses [Remotion 4.0.539](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md) under the Remotion License, with Free/Company eligibility conditions; it is not MIT. Its installed-version notice is retained in `tools/battle-video-studio/licenses/Remotion-LICENSE.md`. The unchanged Smiley Sans font is copyright atelierAnchor (2022–2024), under [SIL OFL 1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE), including reserved font names; the notice accompanies the font. Original reusable VS/branding graphics use the project MIT license. No underlying reference audio, source footage or character art is included.
+
+## SCP-derived semantic benchmark material
+
+The short excerpts, Chinese paraphrases and adapted questions/rubrics for SCP cases in `skills/battle-scaling/benchmarks/semantic-boundaries/` are based on [SCP-3143](https://scp-wiki.wikidot.com/scp-3143) by [The Great Hippo](https://www.wikidot.com/user:info/the-great-hippo) and [SCP-3812](https://scp-wiki.wikidot.com/scp-3812) by [djkaktus](https://scp-wiki.wikidot.com/djkaktus). These SCP-derived portions and their adaptations use [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), not MIT. Changes: short selection, Chinese paraphrase, contextual summaries, adversarial inferences and review criteria. Authors, source URLs and license declarations remain with the source records. No complete SCP story or associated image is bundled.
+
+## Optional DEATH BATTLE! cover variant
+
+`skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-1920x1080.png` is an optional generated layout example bearing the **DEATH BATTLE!** wording. Its generation instructions are preserved in the adjacent `template-prompt.txt`; it was generated with that text, rather than supplied as an official brand asset. The underlying show/brand is [DEATH BATTLE](https://deathbattle.gg/en-usd). The brand wording and any associated trademark rights are **not** represented as project-owned or granted under MIT. This package has no affiliation, sponsorship or endorsement from DEATH BATTLE. No license to a third-party brand is granted by this example. The default original cover designs and the video's silver VS remain available independently.

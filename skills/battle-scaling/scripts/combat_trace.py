@@ -10,6 +10,8 @@ import copy
 import math
 from rating_modes import metadata as mode_metadata
 from collections import defaultdict
+from rating_pipeline import handoff_scoped, review_handoff
+from rating_dossier import subject_views
 
 
 STATES = {'active', 'incapacitated', 'dead', 'sealed', 'withdrawn', 'unknown'}
@@ -587,6 +589,7 @@ class _Trace:
         return result
 
 
+@handoff_scoped
 def run(request: dict) -> dict:
     """Return an auditable hypothetical trace; raises ValueError for invalid structures.
 
@@ -598,17 +601,47 @@ def run(request: dict) -> dict:
         raise ValueError('Use battle.py writing for author-directed fiction; process remains the evidence-constrained PK trace')
     if not isinstance(request, dict):
         raise ValueError('request must be an object')
+    request = copy.deepcopy(request)
     from rating_preflight import review as review_ratings, process_subjects
-    rating_gate = review_ratings(process_subjects(request), request.get('independent_ratings', []),
+    subjects = process_subjects(request)
+    standard, mode = request.get('standard', 'wangba'), request.get('mode', 'integrated')
+    rating_gate = review_ratings(subjects, request.get('independent_ratings', []),
                                 request.get('sources', []), standard=request.get('standard', 'wangba'),
                                 mode=request.get('mode', 'integrated'),
+                                qualitative_claims=request.get('qualitative_claims', []),
                                 **({'rating_status':request['rating_status']} if 'rating_status' in request else {}))
+    execution_gate = None
+    if rating_gate['status'] == 'ready':
+        execution_gate = review_handoff({**request, 'purpose': 'rating', 'characters': subjects},
+                                        standard=standard, mode=mode, allow_synthetic=True)
+        rating_gate['dossier_contents_read_by_checker'] = execution_gate['dossier_contents_read_by_checker']
+        if execution_gate['status'] != 'ready':
+            rating_gate['status'] = 'needs_research'
+            rating_gate['accepted_subject_ids'] = []
+            rating_gate['needs'].extend(execution_gate['needs'])
     if rating_gate['status'] != 'ready':
         return {'schema_version':1, 'presentation':'process', 'status':'needs_independent_rating',
                 'mode':request.get('mode', 'integrated'), 'standard':request.get('standard', 'wangba'),
-                'rating_preflight':rating_gate, 'trace':[], 'needs':rating_gate['needs'],
+                'rating_preflight':rating_gate, 'rating_execution':execution_gate,
+                'trace':[], 'needs':rating_gate['needs'],
                 'combat_analysis_started':False, 'canon_evidence':False}
+    views, view_needs = subject_views(subjects, request.get('independent_ratings', []), standard, mode,
+                                      sources=request.get('sources', []))
+    if view_needs:
+        rating_gate['status'] = 'needs_research'
+        rating_gate['accepted_subject_ids'] = []
+        rating_gate['needs'].extend(view_needs)
+        return {'schema_version':1, 'presentation':'process', 'status':'needs_independent_rating',
+                'mode':mode, 'standard':standard, 'rating_preflight':rating_gate,
+                'rating_execution':execution_gate, 'trace':[], 'needs':view_needs,
+                'combat_analysis_started':False, 'canon_evidence':False}
+    by_id = {view['id']: view for view in views}
+    request['actors'] = [{**actor, **{key: copy.deepcopy(by_id[actor['id']][key])
+                          for key in ('name', 'version', 'state', 'equipment', 'ratings', 'main_tier', 'rating_ref')
+                          if key in by_id[actor['id']]}} for actor in request['actors']]
     result = _Trace(request).execute()
     result.update(mode_metadata(request.get('mode', 'integrated')))
     result['rating_preflight'] = rating_gate
+    result['rating_execution'] = execution_gate
+    result['rating_subjects'] = views
     return result

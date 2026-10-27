@@ -16,7 +16,7 @@
 
 这些是读取策略，不是从路径推断真实身份的自动分级。原作本身若含附录、设定或后记，仍分别审查来源身份、声明性质与适用范围。用户明确指定自设/续写版本时新建版本键，不混入原版。
 
-本次 2026-10-20 实机核查的 `LOCAL_UPSTREAM_ROOT/novel-refpack/work/我在基金会当异常/` 中，项目 `canon/00_正典边界.md` 明示工作版本仅保留第 1–37 章，原第 38 章被剔除；原 `source/raw/chunks` 仍有 38 章，部分结局纪要按 37 章重写，另有新写第 38 章。`book.py verify` 仍报告文件齐全。此例说明：**文件齐全检查通过，不等于原作结尾正确，也不等于原版已被读完。** 该书包只是本次本地审计样本，不能从此推断其他包都经过同样改写。
+**文件齐全检查通过，不等于原作结尾正确，也不等于原版已被读完。** 对任何书包都应核对原件目录、末章、派生摘要与所选版本；发现删改、续写或结局冲突时分别记录，不能把工作版本当成原版。
 
 ## 阅读顺序与证据链
 
@@ -53,8 +53,9 @@ refpack 的 manifest `start/end` 可作为导航跨度，但 chunk 重组与 `st
 下面在唯一的新目录创建**合成短文夹具**，与真实书及 Skill 安装目录分开；只演示接口，不是角色取证或评级。本次升级已在隔离目录实际跑过同样五个操作：倒序搜索命中第 6、3 行，读取第 4–6 行，快照校验通过，`original_verified` 仍为 false。
 
 ```powershell
-$skillRoot = 'SKILL_ROOT'
-$demoRoot = Join-Path 'LOCAL_RESEARCH_ROOT' ('novel-demo-' + [guid]::NewGuid().ToString('N'))
+# 从仓库根目录执行；独立安装者把这一行改为自己的Skill目录。
+$skillRoot = (Resolve-Path -LiteralPath './skills/battle-scaling').Path
+$demoRoot = Join-Path ([System.IO.Path]::GetTempPath()) ('novel-demo-' + [guid]::NewGuid().ToString('N'))
 $inputDir = Join-Path $demoRoot 'input'
 New-Item -ItemType Directory -Path $inputDir -Force | Out-Null
 $sourcePath = Join-Path $inputDir '合成短文.md'
@@ -148,6 +149,6 @@ python -X utf8 tools/book.py verify --slug "<实际书包slug>"
 
 ## 吸收来源与边界
 
-借鉴用户提供的 combat-scaling 第18章（本地研究档案，不随公开包分发） 的“结构拆书→关键词→回原文→四表”思想，并结合本机 novel-refpack 审计（本地研究档案，不随公开包分发） 修正正文与项目 canon 的关系。该本地审计链接只用于追溯本次升级，不是 Skill 运行依赖。
+借鉴用户提供的 combat-scaling 第18章（来源定位标识） 的“结构拆书→关键词→回原文→四表”思想，并结合本机 novel-refpack 审计（来源定位标识） 修正正文与项目 canon 的关系。该本地审计链接只用于追溯本次升级，不是 Skill 运行依赖。
 
 不移植固定证据条数、被秒降两档、被压制差一档、hax 一数量级容差、固定媒介优先级和源方量级表；按用户最新确认保留统一综合主档、三类表现参考、九属性、结尾倒查、表现优先及特能双上限。1.6.0轻量模块未复制写作流水线；1.7.0新增独立论战拆书库，保留MIT来源通知并替换摘要压缩、写作和文风验收用途，未引入上游模型。源码审查差异、许可与实际边界见 [完整流水线](novel-refpack-pipeline.md)。

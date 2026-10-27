@@ -95,3 +95,31 @@ The current text returned by the official MediaWiki APIs for the [copyright page
 Wangba standards, assessment discussions and other community sources are named and linked for standards identification and research. Without an explicit grant, the original handbook or posts are not represented as MIT-licensed; their authors and original-work rights holders retain their respective rights. Full handbooks, books, comic pages and film screenshots are not bundled. Use of facts, mathematical relations and independently written explanations does not grant unlimited redistribution rights over protected source wording or arrangement.
 
 Europe PMC、百度贴吧、GitHub、arXiv、OpenAI 兼容服务等是按需资料／协议来源，不是被本仓库再许可的内容或模型。实际访问、素材上传和输出再分发还须服从对应服务条款与素材许可。 / Europe PMC, Baidu Tieba, GitHub, arXiv and OpenAI-compatible services are optional research or protocol sources, not content or models relicensed by this repository. Their service terms and the source material's license continue to apply to actual access, uploads and redistribution.
+
+
+## Semantic benchmark SCP adaptations
+
+`benchmarks/semantic-boundaries/` includes short excerpts, Chinese paraphrases and adapted questions based on [SCP-3143](https://scp-wiki.wikidot.com/scp-3143) by [The Great Hippo](https://www.wikidot.com/user:info/the-great-hippo) and [SCP-3812](https://scp-wiki.wikidot.com/scp-3812) by [djkaktus](https://scp-wiki.wikidot.com/djkaktus). These SCP-derived portions and their adaptations use [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/); they are not MIT. Changes: short selection, Chinese paraphrase, contextual summary and adversarial question/rubric design. No SCP images or complete stories are bundled.
+
+## Optional third-party brand wording
+
+The optional `assets/media/pk-cover/variants/cosmic-death-battle/template-1920x1080.png` contains **DEATH BATTLE!** wording. Its adjacent `template-prompt.txt` records generation with that text; it is not supplied as an official brand asset. The underlying [DEATH BATTLE](https://deathbattle.gg/en-usd) brand and associated rights are not represented as project-owned or granted under MIT. This project has no affiliation, sponsorship or endorsement from DEATH BATTLE. The original default cover designs remain available independently.
+
+
+## Media and research installation profiles
+
+The full installer downloads these dependencies into the user's isolated environment; their source/binaries are not vendored into this distribution. Versions are recorded in `tools/requirements/constraints-tested.txt`. Declared licenses were checked from the successfully installed package metadata on 2026-10-28.
+
+| Dependency | Use | Declared license / upstream |
+|---|---|---|
+| [requests](https://github.com/psf/requests) | HTTP and platform requests | Apache-2.0 |
+| [python-qrcode](https://github.com/lincolnloop/python-qrcode) | User-confirmed QR login | BSD; its dependencies retain their own terms |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Video format resolution and downloads | Unlicense; optional bundled or linked components have separate terms |
+| [gallery-dl](https://github.com/mikf/gallery-dl), [upstream](https://codeberg.org/mikf/gallery-dl) | Image galleries and supported media sites | GPL-2.0-only |
+| [bilibili-api-python](https://github.com/Nemo2011/bilibili-api) | Optional direct Bilibili clip resolver in `media_acquire.py` | GPL-3.0-or-later |
+| [SymPy](https://github.com/sympy/sympy) | Optional symbolic mathematics | BSD |
+| [Pint](https://github.com/hgrecco/pint) | Optional physical units | BSD |
+
+GPL dependencies are not relicensed as MIT. If redistributing them or a combined program, evaluate and meet the applicable GPL terms; installing them separately or describing them as optional is not a blanket license exemption. The root MIT license covers original project portions only.
+
+The unchanged Smiley Sans font and its OFL notice are also supplied in `skills/battle-scaling/assets/media/fonts/` for portable collage output, in addition to the video project's `public/fonts/`. Keep each font with its notice.

@@ -199,7 +199,7 @@ class DerivationTests(unittest.TestCase):
         request['hop_audits'][0]['from'] = {'subject': 'another-character'}
         self.assertEqual(run(request)['status'], 'invalid')
 
-    def test_dependency_cycle_surfaces_with_research_task(self):
+    def test_rooted_dependency_cycle_does_not_request_another_anchor(self):
         request = chain_packet()
         request['case']['edges'].append({'id': 'back',
             'from': {'subject': 'B', 'attribute': 'durability'},
@@ -207,7 +207,9 @@ class DerivationTests(unittest.TestCase):
             'conditions': {'explicit_relation': True}, 'evidence_ids': ['s']})
         result = run(request)
         self.assertTrue(result['cycles'])
-        self.assertTrue(any(t['kind'] == 'independent_anchor' for t in result['research_tasks']))
+        self.assertFalse(any(t['kind'] == 'independent_anchor' for t in result['research_tasks']))
+        conclusions = result['chain_analysis']['modes']['highest']['conclusions']
+        self.assertTrue(any(c['subject'] == 'A' and c['quantity']['best'] == 9 for c in conclusions))
 
     def test_existing_godbox_case_stays_qualified_and_grants_no_character_ap(self):
         request = json.loads((ROOT / 'assets/cases/high-godbox-stage4.json').read_text(encoding='utf-8'))

@@ -27,15 +27,6 @@
       "excluded": [],
       "processed_derivations": 0,
       "search_truncated": false,
-      "rating_policy": "legacy_mode_replay",
-      "legacy_mode": true,
-      "legacy_is_integrated_reassessment": false,
-      "performance_contexts": [
-        "high_showing",
-        "typical_showing",
-        "low_showing"
-      ],
-      "semantic_rating_verified": false,
       "selection": "highest_of_repeated_credible_showings",
       "hax_reviews": {},
       "hax_review_coverage": {
@@ -447,7 +438,7 @@
     "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
     "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
     "id": "wangba-handbook-2026-07-30",
-    "selection_source": "explicit_standard",
+    "selection_source": "explicit_profile",
     "profile_configuration": {
       "path": "SKILL_ROOT/rulesets/profiles.json",
       "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
@@ -455,8 +446,8 @@
     },
     "finite_rule_snapshot": {
       "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
-      "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
-      "bytes": 131945
+      "sha256": "3a58a3eef284855396a1d9c49758db1a41ebcf5e906817d76dd7dde91064669f",
+      "bytes": 136457
     },
     "document_snapshot": {
       "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
@@ -496,15 +487,6 @@
     "hax_policy_id": "user_confirmed_hax_ceiling_20261020",
     "excluded_anchor_ids": []
   },
-  "rating_policy": "legacy_mode_replay",
-  "legacy_mode": true,
-  "legacy_is_integrated_reassessment": false,
-  "performance_contexts": [
-    "high_showing",
-    "typical_showing",
-    "low_showing"
-  ],
-  "semantic_rating_verified": false,
   "rule_snapshot": {
     "profile": {
       "standard": "wangba",
@@ -519,7 +501,7 @@
       "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
       "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
       "id": "wangba-handbook-2026-07-30",
-      "selection_source": "explicit_standard",
+      "selection_source": "explicit_profile",
       "profile_configuration": {
         "path": "SKILL_ROOT/rulesets/profiles.json",
         "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
@@ -527,8 +509,8 @@
       },
       "finite_rule_snapshot": {
         "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
-        "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
-        "bytes": 131945
+        "sha256": "3a58a3eef284855396a1d9c49758db1a41ebcf5e906817d76dd7dde91064669f",
+        "bytes": 136457
       },
       "document_snapshot": {
         "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
@@ -564,7 +546,7 @@
     },
     "rules": {
       "wangba-handbook-2026-07-30-finite.json": {
-        "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
+        "sha256": "3a58a3eef284855396a1d9c49758db1a41ebcf5e906817d76dd7dde91064669f",
         "data": {
           "schema_version": 1,
           "engine": "handbook_finite",

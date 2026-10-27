@@ -1,0 +1,145 @@
+{
+  "id": "V07",
+  "reference": "V07 music timing preset",
+  "duration_s": 34.899592,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V07.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 12,
+  "original_slot_roles": {
+    "attribute": 12,
+    "summary": 0,
+    "theme": 0,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 0,
+  "median_comparison_cycle_s": 1.1,
+  "median_label_to_reveal_s": 0.566,
+  "stages": [
+    [
+      0,
+      19.067,
+      "双方登场/能力片段",
+      "上下双人；祖国人室外、悬空热视线，士兵男孩胸口发光、爆炸与持盾片段；后转固定比较底板。"
+    ],
+    [
+      19.067,
+      32.4,
+      "十二项快速比较",
+      "黄字分屏与祖国人红色电梯/士兵男孩暖色室内镜头交替；约0.55秒换一次版式。"
+    ],
+    [
+      32.4,
+      34.899592,
+      "作者片尾",
+      "双人比较底板上显示JCYZR并退场。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 19.067,
+      "reveal_cut_s": 19.667,
+      "next_cut_s": 20.267
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 20.267,
+      "reveal_cut_s": 20.867,
+      "next_cut_s": 21.367
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 21.367,
+      "reveal_cut_s": 21.933,
+      "next_cut_s": 22.467
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 22.467,
+      "reveal_cut_s": 23.033,
+      "next_cut_s": 23.567
+    },
+    {
+      "order": 5,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 23.567,
+      "reveal_cut_s": 24.133,
+      "next_cut_s": 24.667
+    },
+    {
+      "order": 6,
+      "original_label": "技能伤害",
+      "original_role": "attribute",
+      "label_cut_s": 24.667,
+      "reveal_cut_s": 25.233,
+      "next_cut_s": 25.733
+    },
+    {
+      "order": 7,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 25.733,
+      "reveal_cut_s": 26.3,
+      "next_cut_s": 26.867
+    },
+    {
+      "order": 8,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 26.867,
+      "reveal_cut_s": 27.433,
+      "next_cut_s": 27.967
+    },
+    {
+      "order": 9,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 27.967,
+      "reveal_cut_s": 28.533,
+      "next_cut_s": 29.067
+    },
+    {
+      "order": 10,
+      "original_label": "爆发",
+      "original_role": "attribute",
+      "label_cut_s": 29.067,
+      "reveal_cut_s": 29.6,
+      "next_cut_s": 30.133
+    },
+    {
+      "order": 11,
+      "original_label": "威慑力",
+      "original_role": "attribute",
+      "label_cut_s": 30.133,
+      "reveal_cut_s": 30.7,
+      "next_cut_s": 31.267
+    },
+    {
+      "order": 12,
+      "original_label": "心理素质",
+      "original_role": "attribute",
+      "label_cut_s": 31.267,
+      "reveal_cut_s": 31.833,
+      "next_cut_s": 32.4
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V07/分段研究.md"
+}

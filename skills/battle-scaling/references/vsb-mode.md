@@ -1,9 +1,5 @@
 # 汪吧／VSB 标准切换
 
-<!-- VSB-LICENSE-NOTICE -->
-> 改编资料 / Adapted reference: © VS Battles Wiki contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 本项目作中文翻译、摘要与执行适配 / Project changes: translation, summarization and execution guidance. 原页／修订见本页引用，作者记录见原页历史 / Sources and revisions appear below; contributors are credited through the source-page histories. [许可与署名](../THIRD_PARTY_NOTICES.md#5-vsb-模式改编资料的许可例外--vsb-mode-adapted-reference-material)。
-
-
 默认 `wangba`。用户明确说“VSB／VSBW／VS Battles Wiki 口径”才切换到 `vsb`，或在本次案例中沿用用户已经指定的标准。切换的是定档、属性定义、叠链采纳及对战规则，不能只换档名。VSB 配置快照为 `vsb-current-2026-10-21`；汪吧已有规则与配置继续保留。
 
 ## 四个独立选择

@@ -454,6 +454,128 @@ def accept(bundle, input_path):
             "review_status": review["status"], "semantic_validation": "reviewer_attestation_not_machine_proof"}
 
 
+def next_batch(bundle, limit=3, max_chars=24000):
+    """Return a bounded next reading batch without marking anything as read."""
+    if not 1 <= _integer(limit, 'limit') <= 100 or not 1 <= _integer(max_chars, 'max_chars') <= 1000000:
+        raise ValueError('Use limit 1..100 and a positive source-character budget <=1000000')
+    root, manifest, text, chapters = load_bundle(bundle)
+    packets = load_tasks(root, manifest, text, chapters)
+    if not packets:
+        raise ValueError('Generate tasks before requesting the next reading batch')
+    reviews = {r['task_id']: r for r in load_reviews(root, packets, text)}
+    pending = [p for p in packets if reviews.get(p['task_id'], {}).get('status') != 'complete']
+    selected, used = [], 0
+    for packet in pending:
+        if len(selected) >= limit or used + len(packet['text']) > max_chars:
+            if not selected and len(packet['text']) > max_chars:
+                raise ValueError('Character budget is smaller than the next immutable task: '+str(len(packet['text'])))
+            break
+        previous = reviews.get(packet['task_id'])
+        covered = union([(s['start'], s['end']) for s in (previous or {}).get('read_spans', [])])
+        cursor, missing = packet['start'], []
+        for start, end in covered:
+            if cursor < start: missing.append({'start':cursor, 'end':start})
+            cursor = max(cursor, end)
+        if cursor < packet['end']: missing.append({'start':cursor, 'end':packet['end']})
+        selected.append({**packet, 'remaining_spans':missing, 'previous_review':previous,
+                         'needs_reader_finalization':bool(previous and not missing)})
+        used += len(packet['text'])
+    return {'status':'reading_pending' if pending else 'reading_attested_complete',
+            'bundle':str(root), 'tasks':selected, 'pending_task_count':len(pending),
+            'source_characters':used, 'reading_coverage':coverage(manifest, chapters, packets, list(reviews.values())),
+            'semantic_read_verified':False, 'reading_marked_by_this_call':False}
+
+
+def accept_batch(bundle, input_path):
+    """Validate a small batch first, merge partial progress, then commit its index."""
+    root, manifest, text, chapters = load_bundle(bundle)
+    packets = load_tasks(root, manifest, text, chapters)
+    previous = {r['task_id']:r for r in load_reviews(root, packets, text)}
+    packet_map = {p['task_id']:p for p in packets}
+    incoming = read_json(input_path)
+    if not isinstance(incoming, list) or not incoming or len(incoming) > 100:
+        raise ValueError('Batch input must contain 1..100 actual reader review objects')
+    prepared, seen = [], set()
+    for review in incoming:
+        if not isinstance(review, dict) or review.get('task_id') not in packet_map:
+            raise ValueError('Batch review must name an existing immutable task')
+        task_id = review['task_id']
+        if task_id in seen: raise ValueError('A batch cannot contain the same task twice')
+        seen.add(task_id)
+        old = previous.get(task_id)
+        merged = dict(review)
+        if old:
+            for key in ('evidence', 'observations'):
+                if not isinstance(review.get(key), list): raise ValueError(key+' must be an array')
+                if any(not isinstance(x, dict) or not isinstance(x.get('id'), str) for x in review[key]):
+                    raise ValueError(key+' entries require string IDs')
+                if len({x['id'] for x in review[key]}) != len(review[key]): raise ValueError('Duplicate local IDs in '+key)
+                merged[key] = list({x['id']:x for x in old[key]+review[key]}.values())
+            spans = old['read_spans'] + review.get('read_spans', [])
+            checked = [span(s, packet_map[task_id]['start'], packet_map[task_id]['end'], 'read_span') for s in spans]
+            merged['read_spans'] = [{'start':a, 'end':b} for a,b in union(checked)]
+        validate_review(merged, packet_map[task_id], text)
+        body = (json.dumps(merged, ensure_ascii=False, indent=2)+'\n').encode('utf-8')
+        prepared.append((merged, body, sha(body)))
+    # No accepted file/index is written until every submitted review is valid.
+    indexpath = root/'reviews/index.json'
+    index = read_json(indexpath) if indexpath.exists() else {'schema_version':SCHEMA, 'reviews':{}, 'history':[]}
+    outputs = []
+    for review, body, digest in prepared:
+        task_id = review['task_id']
+        relative = 'reviews/accepted/'+task_id+'-'+digest[:16]+'.json'
+        write_bytes(root/relative, body, immutable=True)
+        old = index['reviews'].get(task_id)
+        if old and old['sha256'] != digest: index.setdefault('history', []).append({'task_id':task_id, **old})
+        index['reviews'][task_id] = {'path':relative, 'sha256':digest, 'accepted_at':now()}
+        outputs.append({'task_id':task_id, 'review_status':review['status'], 'review_path':str(root/relative)})
+    write_json(indexpath, index)
+    return {'status':'accepted', 'reviews':outputs, 'semantic_validation':'reviewer_attestation_not_machine_proof'}
+
+
+def synthesize(bundle, subject, aliases=(), target_state=None):
+    """Join explicitly identified names and return evidence-led synthesis work."""
+    if not isinstance(subject, str) or not subject.strip(): raise ValueError('Provide the canonical subject name')
+    if not isinstance(aliases, (list, tuple)) or any(not isinstance(x, str) or not x.strip() for x in aliases):
+        raise ValueError('Aliases must be explicitly confirmed nonempty names')
+    root, manifest, text, chapters = load_bundle(bundle)
+    packets = load_tasks(root, manifest, text, chapters)
+    reviews = load_reviews(root, packets, text)
+    evidence, observations = _flatten(reviews, chapters, line_offsets(text))
+    names = {subject, *aliases}
+    selected = [o for o in observations if o['subject'] in names]
+    evidence_map = {e['id']:e for e in evidence}
+    selected.sort(key=lambda o:max(evidence_map[e]['start'] for e in o['evidence_ids']), reverse=True)
+    used = {e for o in selected for e in o['evidence_ids']+o.get('inheritance_evidence_ids', [])}
+    by_attribute = {key:[o for o in selected if o['attribute']==key] for key in DIMENSIONS}
+    work = []
+    for attribute, rows in by_attribute.items():
+        if not rows:
+            work.append({'kind':'attribute_gap','attribute':attribute,'observation_ids':[],
+                         'purpose':'Return to the source or remaining reading; no observation is not proof of zero ability.'})
+            continue
+        states = sorted({o['state'] for o in rows})
+        for state in states:
+            older = [o for o in rows if o['state']==state and state!=target_state and not (
+                o.get('inheritance')=='supported' and target_state is not None and o.get('target_state')==target_state)]
+            if older:
+                work.append({'kind':'state_transfer','attribute':attribute,'source_state':state,
+                    'target_state':target_state, 'observation_ids':[o['id'] for o in older],
+                    'purpose':'Read the cited acquisition, retention, loss and restoration context; establish what reaches the chosen configuration.'})
+        if {'positive','negative'} <= {o['polarity'] for o in rows}:
+            work.append({'kind':'cross_chapter_comparison','attribute':attribute,
+                'observation_ids':[o['id'] for o in rows],
+                'purpose':'Compare the actual mechanisms, abilities, effort and states before deciding whether these observations conflict; do not treat every opposite polarity as a contradiction.'})
+    return {'status':'synthesis_work_ready','bundle':str(root),'canonical_subject':subject,
+            'explicit_aliases':list(aliases),'source_names':sorted({o['subject'] for o in selected}),
+            'target_state':target_state,'ending_chapter':chapters[-1],
+            'observations':selected,'evidence':[e for e in evidence if e['id'] in used],
+            'dimensions':{key:[o['id'] for o in rows] for key,rows in by_attribute.items()},
+            'research_tasks':work,'reading_coverage':coverage(manifest, chapters, packets, reviews),
+            'semantic_complete':False,'tiers_generated':False,
+            'next_action':'Host resolves the cited cross-chapter relationships, fixes the end-state dossier, then performs the shared independent rating.'}
+
+
 def coverage(manifest, chapters, packets, reviews):
     spans = union([(s["start"], s["end"]) for r in reviews for s in r["read_spans"]])
     read_chars = sum(end-start for start, end in spans)

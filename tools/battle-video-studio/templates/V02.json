@@ -1,0 +1,183 @@
+{
+  "id": "V02",
+  "reference": "V02 music timing preset",
+  "duration_s": 44.605533,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V02.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 15,
+  "original_slot_roles": {
+    "attribute": 14,
+    "summary": 1,
+    "theme": 0,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.3,
+  "median_label_to_reveal_s": 0.667,
+  "stages": [
+    [
+      0,
+      13.67,
+      "上下分屏介绍",
+      "奥创初登场/红眼特写/装甲展开，上下配崔格站姿、面部与动作漫画图，中央VERSUS。"
+    ],
+    [
+      13.67,
+      33.03,
+      "属性轮播",
+      "每项分屏后切奥创或崔格单人全屏，重复少数辨识度强的镜头；体质、格斗、战斗智商、战斗经验给崔格。"
+    ],
+    [
+      33.03,
+      41.73,
+      "总判及赢家高光",
+      "无限奥创，难度：简单；面甲/面部连续镜头。"
+    ],
+    [
+      41.73,
+      44.61,
+      "作者片尾",
+      "黑底LZTBP标识。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 13.667,
+      "reveal_cut_s": 14.333,
+      "next_cut_s": 15
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 15,
+      "reveal_cut_s": 15.633,
+      "next_cut_s": 16.233
+    },
+    {
+      "order": 3,
+      "original_label": "攻击",
+      "original_role": "attribute",
+      "label_cut_s": 16.233,
+      "reveal_cut_s": 16.933,
+      "next_cut_s": 17.533
+    },
+    {
+      "order": 4,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 17.533,
+      "reveal_cut_s": 18.267,
+      "next_cut_s": 18.9
+    },
+    {
+      "order": 5,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 18.9,
+      "reveal_cut_s": 19.633,
+      "next_cut_s": 20.2
+    },
+    {
+      "order": 6,
+      "original_label": "爆发",
+      "original_role": "attribute",
+      "label_cut_s": 20.2,
+      "reveal_cut_s": 20.867,
+      "next_cut_s": 21.433
+    },
+    {
+      "order": 7,
+      "original_label": "体质",
+      "original_role": "attribute",
+      "label_cut_s": 21.433,
+      "reveal_cut_s": 22.1,
+      "next_cut_s": 22.733
+    },
+    {
+      "order": 8,
+      "original_label": "格斗体术",
+      "original_role": "attribute",
+      "label_cut_s": 22.733,
+      "reveal_cut_s": 23.4,
+      "next_cut_s": 23.967
+    },
+    {
+      "order": 9,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 23.967,
+      "reveal_cut_s": 24.633,
+      "next_cut_s": 25.233
+    },
+    {
+      "order": 10,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 25.233,
+      "reveal_cut_s": 25.933,
+      "next_cut_s": 26.567
+    },
+    {
+      "order": 11,
+      "original_label": "能力",
+      "original_role": "attribute",
+      "label_cut_s": 26.567,
+      "reveal_cut_s": 27.3,
+      "next_cut_s": 28.033
+    },
+    {
+      "order": 12,
+      "original_label": "破坏",
+      "original_role": "attribute",
+      "label_cut_s": 28.033,
+      "reveal_cut_s": 28.6,
+      "next_cut_s": 29.167
+    },
+    {
+      "order": 13,
+      "original_label": "战斗智商",
+      "original_role": "attribute",
+      "label_cut_s": 29.167,
+      "reveal_cut_s": 29.833,
+      "next_cut_s": 30.433
+    },
+    {
+      "order": 14,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 30.433,
+      "reveal_cut_s": 31.133,
+      "next_cut_s": 31.7
+    },
+    {
+      "order": 15,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 31.7,
+      "reveal_cut_s": 32.4,
+      "next_cut_s": 33.033
+    },
+    {
+      "order": 16,
+      "original_label": "胜者",
+      "original_role": "verdict",
+      "label_cut_s": 33.033,
+      "reveal_cut_s": 33.567,
+      "next_cut_s": null
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V02/分段研究.md"
+}

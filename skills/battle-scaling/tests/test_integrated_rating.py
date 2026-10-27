@@ -18,7 +18,7 @@ from combat_trace import run as process
 from evidence import analyze_case
 from hax_gate import build_checks
 from high_tier import analyze as high
-from rating_fixtures import with_independent_ratings
+from rating_fixtures import with_independent_ratings, with_executed_ratings
 from rating_pipeline import tasks_for, verify_execution
 from rating_preflight import review
 from research import plan
@@ -232,8 +232,25 @@ class IntegratedRatingTests(unittest.TestCase):
         self.assertEqual(verify_execution(altered)['status'], 'needs_research')
 
     def test_pre_upgrade_static_artifact_remains_explicit_legacy_only(self):
-        request = json.loads((ROOT / 'assets/cases/writing-fidelity-synthetic.json').read_text(encoding='utf-8'))
+        from rating_pipeline import digest, _profile_key
+        from rule_profiles import resolve
+        asset = ROOT / 'assets/cases/writing-fidelity-synthetic.json'
+        original_bytes = asset.read_bytes()
+        request = json.loads(original_bytes.decode('utf-8'))
         request['mode'] = 'normal'
+        # Keep the immutable static replay contract: old rule acceptance cannot
+        # silently become current merely to make a legacy fixture pass.
+        static = writing(request)
+        profile = resolve(request.get('ruleset_profile'), request.get('standard', 'wangba'))
+        if request['rating_execution']['rules_fingerprint'] != digest(_profile_key(profile)):
+            self.assertEqual(static['status'], 'needs_independent_rating')
+            self.assertTrue(any('rule source/profile has changed' in need for need in static['rating_preflight']['needs']))
+        else:
+            self.assertEqual(static['status'], 'structure_checked')
+        self.assertEqual(asset.read_bytes(), original_bytes)
+        # The current-mode behavior is exercised with newly materialized,
+        # explicitly invented temporary products, never by editing that archive.
+        request = with_executed_ratings(request)
         result = writing(request)
         self.assertEqual(result['status'], 'structure_checked')
         self.assertTrue(result['legacy_mode'])

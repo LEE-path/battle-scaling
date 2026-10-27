@@ -1,0 +1,228 @@
+{
+  "purpose": "角色图片与视频制作素材；不用于量级证据分级或裁决",
+  "updated": "2026-10-27",
+  "status_note": "结果只覆盖写明的样本和方法。downloaded=实际取得文件；page_only=仅读到网页；blocked=该方法受限；docs_only=仅核到项目文档，未实测该站下载。",
+  "sites": [
+    {
+      "id": "youtube",
+      "entry": "https://www.youtube.com/",
+      "media": [
+        "video"
+      ],
+      "queries": [
+        "角色原文名 作品原名 年份 official trailer",
+        "character film entrance fight scene scenepack no music"
+      ],
+      "method": "yt-dlp；不稳时下载源视频后本地裁切",
+      "sample": "https://www.youtube.com/watch?v=Go8nTmfrQd8",
+      "notes": "该样本远程分段曾返回成功但产物只有音频；改完整文件下载→本地裁切成功。片名不保证任意画面都是目标人物。"
+    },
+    {
+      "id": "bilibili",
+      "entry": "https://www.bilibili.com/",
+      "media": [
+        "video"
+      ],
+      "queries": [
+        "角色中文名／原名／别名 对手／招式／场景",
+        "出场影视／作品名 年份 片段／打戏／名场面",
+        "作品名 场景名（可暂时不带角色名）",
+        "角色名 CG／出场／变身／纯享／合集；画质和无水印词按结果放宽"
+      ],
+      "method": "bili_media.py search返回标题／链接／时长；按当前缺口换词→formats→download；用户扫码登录后复用当前加密会话",
+      "sample": "https://www.bilibili.com/video/BV1zp4y1A7ru",
+      "notes": "源水印与字幕若位于黑边／边缘，先裁后评：样本上下各280像素裁去后仍有3840×1600有效画面，可作高优先级连续展示。不能把低清放大当高清；下载器不保证每个视频无水印。 同等精彩才优先连续长段；不能以低信息密度长段慢放替代精彩短段。",
+      "additional_samples": [
+        "https://www.bilibili.com/video/BV1DgH7e1EDp"
+      ]
+    },
+    {
+      "id": "riot",
+      "entry": "https://www.leagueoflegends.com/en-us/champions/aatrox/",
+      "media": [
+        "image",
+        "video"
+      ],
+      "queries": [
+        "角色英文名 cinematic trailer entrance close-up",
+        "site:leagueoflegends.com 角色名 reference materials",
+        "site:leagueoflegends.com champions 角色英文名"
+      ],
+      "method": "优先官方CG／动画／参考图库；官网HTML／内嵌JSON与原CDN取得素材",
+      "sample": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+      "notes": "实际素材按用途评S/A/B/C；下载成功不自动成为推荐。CG含多个角色与时间段，先看再按段提取，普通峡谷不作为有高档候选时的默认。",
+      "additional_samples": [
+        "https://www.youtube.com/watch?v=ZHhqwBwmRkI",
+        "https://www.leagueoflegends.com/en-us/news/community/still-here-reference-materials/"
+      ]
+    },
+    {
+      "id": "scp-art",
+      "entry": "https://scp-wiki.wikidot.com/artwork-hub",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "site:scp-wiki.wikidot.com SCP-2845 artwork black white",
+        "SCP编号 别名 woodcut silhouette artist"
+      ],
+      "method": "艺术集→具体图片附件→wdfiles附件域",
+      "sample": "https://scp-wiki.wikidot.com/sunny-art-series-3",
+      "notes": "默认黑白版画，不限定画师。本次作者SunnyClockwork；部分附件Content-Type为octet-stream但可正常解码，不按MIME误判失败。"
+    },
+    {
+      "id": "artstation",
+      "entry": "https://www.artstation.com/",
+      "media": [
+        "image",
+        "video"
+      ],
+      "queries": [
+        "角色英文名 Riot splash art site:artstation.com/artwork",
+        "作品名 character concept artist portfolio"
+      ],
+      "method": "gallery-dl按具体作品限量取得原图候选",
+      "sample": "https://www.artstation.com/artwork/DAREN0",
+      "notes": "此图是腥红之月皮肤，不作基础亚托克斯外观；作者原帖可有多张成图、草图和过程稿，应挑选。"
+    },
+    {
+      "id": "pokemon",
+      "entry": "https://www.pokemon.com/us/pokedex/pikachu",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "site:pokemon.com pokedex 角色英文名",
+        "角色名 official artwork render"
+      ],
+      "method": "官方角色页定位已公开的官方图片CDN",
+      "sample": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+      "notes": "沿用页面已找到的图鉴编号和图片类型，不把编号规则推广到未查到的其他资产。"
+    },
+    {
+      "id": "marvel",
+      "entry": "https://www.marvel.com/",
+      "media": [
+        "image",
+        "video"
+      ],
+      "queries": [
+        "site:marvel.com/movies 片名 gallery",
+        "Marvel Entertainment 片名 official clip"
+      ],
+      "method": "官网图库/预告入口；目标页不可读时找发行方原频道或其他图库",
+      "sample": "https://www.marvel.com/movies/thor-love-and-thunder",
+      "notes": "官网受限不代表官方频道或所有图片CDN都失败。"
+    },
+    {
+      "id": "fandom",
+      "entry": "https://www.fandom.com/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "角色原文名 Gallery wiki 作品名",
+        "site:作品社区.fandom.com/wiki/ 角色名 Gallery"
+      ],
+      "method": "具体角色画廊→文件页→原始媒体；宿主可用时查MediaWiki文件信息",
+      "sample": "https://marvelcinematicuniverse.fandom.com/wiki/Thor/Gallery",
+      "notes": "小缩略图与原图分开，注意社区图片可能是同人或另一版本；浏览器当前可读性需另测。"
+    },
+    {
+      "id": "tmdb",
+      "entry": "https://www.themoviedb.org/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "电影原名 年份 backdrop poster TMDB",
+        "site:themoviedb.org 片名 images"
+      ],
+      "method": "电影图片页；已有API凭据时用配置与具体file_path构造所需尺寸",
+      "sample": "https://developer.themoviedb.org/docs/image-basics",
+      "notes": "不要把片名海报当角色近景；API所需认证及具体资源可用性另核。"
+    },
+    {
+      "id": "movie-screencaps",
+      "entry": "https://movie-screencaps.com/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "site:movie-screencaps.com 电影英文名 年份",
+        "film year screencaps"
+      ],
+      "method": "片名目录／电影截图集→选定帧→具体图片",
+      "sample": "https://movie-screencaps.com/",
+      "notes": "图片数量多，按场景和时间段筛选；先比较有效脸部像素，避免批量全片下载。"
+    },
+    {
+      "id": "fancaps",
+      "entry": "https://fancaps.net/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "site:fancaps.net 作品英文名 season episode images",
+        "film anime title screencaps"
+      ],
+      "method": "电影／剧集／动画目录→对应集数→具体截图",
+      "sample": "https://fancaps.net/",
+      "notes": "多个板块分开导航；广告和外围跳转不作素材入口。"
+    },
+    {
+      "id": "pixiv",
+      "entry": "https://www.pixiv.net/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "角色日文名 作品名 illustration",
+        "キャラ名 公式 原画 全身"
+      ],
+      "method": "原发布页；gallery-dl按当前官方支持表所需认证配置",
+      "sample": "https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md",
+      "notes": "图片作者与角色权利人区分；同人需标明，不自动作为官方定型。"
+    },
+    {
+      "id": "deviantart",
+      "entry": "https://www.deviantart.com/",
+      "media": [
+        "image"
+      ],
+      "queries": [
+        "character artist official concept art",
+        "SCP编号 black white artwork"
+      ],
+      "method": "作者具体作品页；gallery-dl按当前所需认证配置",
+      "sample": "https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md",
+      "notes": "优先回原发布页；认证、尺寸与可再使用条件按具体作品核对。"
+    }
+  ],
+  "tools": [
+    {
+      "name": "yt-dlp",
+      "upstream": "https://github.com/yt-dlp/yt-dlp"
+    },
+    {
+      "name": "gallery-dl",
+      "upstream": "https://github.com/mikf/gallery-dl"
+    },
+    {
+      "name": "bilibili-api-python",
+      "upstream": "https://github.com/Nemo2011/bilibili-api"
+    },
+    {
+      "name": "FFmpeg / ffprobe",
+      "upstream": "https://ffmpeg.org/"
+    },
+    {
+      "name": "N_m3u8DL-RE",
+      "upstream": "https://github.com/nilaoda/N_m3u8DL-RE"
+    },
+    {
+      "name": "bili_media.py",
+      "upstream": "https://github.com/yt-dlp/yt-dlp"
+    }
+  ]
+}

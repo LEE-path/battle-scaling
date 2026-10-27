@@ -1,0 +1,139 @@
+{
+  "id": "V09",
+  "duration_s": 42.599313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V09.m4a",
+  "comparison_slot_count": 12,
+  "dedicated_verdict_slot_count": 1,
+  "stages": [
+    {
+      "start": 0,
+      "end": 20.367,
+      "role": "上下双人入场与承伤/能力高光"
+    },
+    {
+      "start": 20.367,
+      "end": 36.2,
+      "role": "十二项比较"
+    },
+    {
+      "start": 36.2,
+      "end": 39.733,
+      "role": "胜者揭晓"
+    },
+    {
+      "start": 39.733,
+      "end": 42.599313,
+      "role": "作者标识/闭幕"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 20.367,
+      "reveal_cut_s": 21.033,
+      "next_cut_s": 21.667
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 21.667,
+      "reveal_cut_s": 22.367,
+      "next_cut_s": 23.067
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 23.067,
+      "reveal_cut_s": 23.667,
+      "next_cut_s": 24.367
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 24.367,
+      "reveal_cut_s": 24.967,
+      "next_cut_s": 25.6
+    },
+    {
+      "order": 5,
+      "original_label": "体质",
+      "original_role": "attribute",
+      "label_cut_s": 25.6,
+      "reveal_cut_s": 26.3,
+      "next_cut_s": 26.9
+    },
+    {
+      "order": 6,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 26.9,
+      "reveal_cut_s": 27.533,
+      "next_cut_s": 28.267
+    },
+    {
+      "order": 7,
+      "original_label": "心理素质",
+      "original_role": "attribute",
+      "label_cut_s": 28.267,
+      "reveal_cut_s": 28.867,
+      "next_cut_s": 29.567
+    },
+    {
+      "order": 8,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 29.567,
+      "reveal_cut_s": 30.233,
+      "next_cut_s": 30.833
+    },
+    {
+      "order": 9,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 30.833,
+      "reveal_cut_s": 31.533,
+      "next_cut_s": 32.233
+    },
+    {
+      "order": 10,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 32.233,
+      "reveal_cut_s": 32.867,
+      "next_cut_s": 33.533
+    },
+    {
+      "order": 11,
+      "original_label": "近战格斗",
+      "original_role": "attribute",
+      "label_cut_s": 33.533,
+      "reveal_cut_s": 34.233,
+      "next_cut_s": 34.967
+    },
+    {
+      "order": 12,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 34.967,
+      "reveal_cut_s": 35.5,
+      "next_cut_s": 36.2
+    },
+    {
+      "order": 13,
+      "original_label": "胜",
+      "original_role": "verdict",
+      "label_cut_s": 36.2,
+      "reveal_cut_s": 36.833,
+      "next_cut_s": 39.733
+    }
+  ]
+}

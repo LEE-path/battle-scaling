@@ -1,0 +1,7 @@
+# Video dependencies and assets
+
+- [Remotion](https://github.com/remotion-dev/remotion), pinned 4.0.539 packages: video preview, rendering, media loading and bundling under the **Remotion License**, not MIT. Review the actual Free/Company eligibility and use terms. The installed-version license copy is [licenses/Remotion-LICENSE.md](licenses/Remotion-LICENSE.md); dependency implementations are installed by npm, not bundled.
+- [Smiley Sans / 得意黑](https://github.com/atelier-anchor/smiley-sans): unchanged font by atelierAnchor, copyright 2022–2024, under **SIL Open Font License 1.1** with reserved names Smiley/得意黑. The font and complete [OFL notice](public/fonts/SmileySans-OFL.txt) stay together. The project MIT license does not relicense the font.
+- [React / React DOM](https://github.com/facebook/react): MIT dependencies. [TypeScript](https://github.com/microsoft/TypeScript): Apache-2.0 development dependency.
+- [FFmpeg / ffprobe](https://ffmpeg.org/): external system media tools whose actual LGPL/GPL build conditions apply. Chrome/Edge have their own browser distribution terms. These binaries are not bundled.
+- Original project code and reusable VS/branding graphics use the included project MIT license. Timing/layout/effect parameters do not include a song, character artwork, source footage or a license to such media. Users obtain permitted matching audio and character assets and import them through the documented commands/workbench.

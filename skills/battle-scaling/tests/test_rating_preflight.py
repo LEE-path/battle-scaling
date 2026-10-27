@@ -9,7 +9,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 sys.path.insert(0, str(ROOT / 'tests'))
-from rating_fixtures import with_independent_ratings
+from rating_fixtures import with_independent_ratings, with_executed_ratings
 from rating_preflight import review, _tier
 from evidence import analyze_case
 from writing_battle import run as writing
@@ -189,6 +189,7 @@ class RatingPreflightTests(unittest.TestCase):
     def test_authored_original_complete_ratings_preserve_writing_features(self):
         request=json.loads((ROOT/'assets/cases/writing-battle-synthetic.json').read_text(encoding='utf-8'))
         request.setdefault('mode', 'normal')  # Historical fixture, explicit replay
+        request = with_executed_ratings(request)
         result=writing(request)
         self.assertEqual(result['status'],'structure_checked')
         self.assertEqual(result['fixed_ending']['winner'],'lan')

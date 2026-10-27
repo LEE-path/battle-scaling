@@ -14,14 +14,14 @@
 
 逐任务阅读主动查能力的取得、升级、保留、丧失、恢复及其具体成功／失败；记录对象与结果、发动与耗时、消耗外援、实际突破的抗性、反制和例外，不只摘毁伤或能力名称。理论计划、设定陈述、当次表现、上限及宿主组合推断分开。新任务提示词包含这些要求；旧任务保留原指纹以便继续阅读，调度旧任务时另附[能力实绩协议](ability-feats-and-combos.md)要求，不改写既存任务或伪造旧回执。
 
-## 六个CLI
+## 核心CLI与小批续读
 
 以下从 `SKILL_ROOT` 运行；本次工作目录、书名和版本换成真实值。`prepare --output`必须是新目录或空目录，不能覆盖既有源快照。非UTF-8文本显式加 `--encoding gb18030` 等已核编码，不静默丢弃字节。
 
 ```text
 python -X utf8 scripts/novel_refpack.py prepare --source TASK_DIR/source/book.txt --output TASK_DIR/book-bundle --work 作品名 --edition 原著版本
 python -X utf8 scripts/novel_refpack.py search --bundle TASK_DIR/book-bundle --query 关键词 --limit 20
-python -X utf8 scripts/novel_refpack.py tasks --bundle TASK_DIR/book-bundle --max-chars 12000
+python -X utf8 scripts/novel_refpack.py tasks --bundle TASK_DIR/book-bundle --max-chars 12000 --summary
 python -X utf8 scripts/novel_refpack.py accept --bundle TASK_DIR/book-bundle --input TASK_DIR/reviews/实际回执.json
 python -X utf8 scripts/novel_refpack.py build --bundle TASK_DIR/book-bundle
 python -X utf8 scripts/novel_refpack.py verify --bundle TASK_DIR/book-bundle
@@ -37,6 +37,23 @@ python -X utf8 scripts/novel_refpack.py verify --bundle TASK_DIR/book-bundle
 | `verify` | 复核原件、规范全文、索引、JSON/MD任务、活动及历史回执、已构建派生产物；健康包返回 `status:partial|complete,errors:[],coverage,derived_status`。新回执令旧build变 `stale`，需重新build；篡改或失配报错。 |
 
 正常stdout为一个JSON文档，运行数据错误为stderr `{"status":"error","error":"原因"}`、退出2。`partial`是健康但未完成阅读，退出0；不能因为命令退出0就宣称全书已读。
+
+## 断点续读、批量接受与跨章综合
+
+长篇实际调度优先小批读取，不把全书任务正文一次灌入上下文：
+
+```text
+python -X utf8 scripts/novel_refpack.py next --bundle TASK_DIR/book-bundle --limit 3 --max-chars 24000 --output TASK_DIR/next.json
+宿主实读next.json中的任务，保存一份实际JSON回执数组
+python -X utf8 scripts/novel_refpack.py accept-batch --bundle TASK_DIR/book-bundle --input TASK_DIR/reviews-batch.json
+python -X utf8 scripts/novel_refpack.py synthesize --bundle TASK_DIR/book-bundle --subject 已核角色名 --alias 已核别名 --target-state 已定末期配置 --output TASK_DIR/synthesis.json
+```
+
+`next`按既有结尾倒序任务选尚未完成的小批；`max-chars`限制本批原文字符数，不能小于下一个不可改写任务。返回实际未读范围及previous_review，不写已读标记；中途停止后重新运行即可续读。仅声明读完而未实际阅读仍是无效操作。`accept-batch`先验证全批逐字引句/坐标和任务绑定，再顺序存不可覆盖版本并提交索引；累计此前局部阅读和证据，同ID新观察可修订，保留历史。撤销/替换整份旧解读仍可用原`accept`明确提交修订。
+
+`synthesize`只合并宿主明确核过的同一人名/别名，不按字符串相似自动拼角色。输出按原文倒序的全部观察、原引句、九维索引及需要处理的状态继承/跨章对照任务；正负记录共现只触发实读比较，不机械判矛盾。宿主据此处理获得、丧失、恢复、末期保留、能力限制和相关反例，再进入共用独立评级。程序不从聚合自动生成档位或声称语义完成。
+
+除prepare原有`--output`是新bundle目录外，命令的`--output`可保存完整结果并让stdout只给状态/路径；prepare用`--result-output`保存结果，避免混淆。结果文件置于bundle之外，不能覆盖规范原文/原件/任务；需要完整stdout可加`--full-output`。`tasks --summary`只显示任务数量和索引，正文从next或具体packet读，减少命令往返与大输出。
 
 ## 任务包与坐标
 

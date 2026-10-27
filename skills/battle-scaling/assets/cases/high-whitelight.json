@@ -5,9 +5,56 @@
   "ruleset": "high-zerozhi2025-old",
   "scope": "Rudy Rucker《White Light》Franx抵达Alef-one及作品的无限机制；不扩展到其他人物版本",
   "nodes": [
-    {"id": "countable_climb", "operation": "base", "description": "第11章的攀升先停留在作品称Epsilon-Zero的阶段，并明确区分与Alef-one的差别。小说的用词不自动等同严格序数定义。", "source": {"url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml", "locator": "11: Epsilon-Zero", "kind": "author_hosted_work"}},
-    {"id": "alef_one", "operation": "typed_structure", "depends_on": ["countable_climb"], "description": "第14章及回顾段落叙述Franx经另一机制到Alef-one；第23章给出物质与以太无限的区分。", "typed_object": {"kind": "cardinal", "expression": "aleph1", "interpretation": "按原作明确的aleph/alef基数语境解释目的地；仍需原文语义成立。"}, "assumptions": ["该处alef-one按作者使用的首个不可数基数语义，而非另造同名单位。"], "source": {"url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml", "locator": "14: At Alef-one；Franx与Reflection Principle回顾；23: Research", "kind": "author_hosted_work"}}
+    {
+      "id": "countable_climb",
+      "operation": "base",
+      "description": "第11章的攀升先停留在作品称Epsilon-Zero的阶段，并明确区分与Alef-one的差别。小说的用词不自动等同严格序数定义。",
+      "source": {
+        "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+        "locator": "11: Epsilon-Zero",
+        "kind": "author_hosted_work"
+      }
+    },
+    {
+      "id": "alef_one",
+      "operation": "typed_structure",
+      "depends_on": [
+        "countable_climb"
+      ],
+      "description": "第14章及回顾段落叙述Franx经另一机制到Alef-one；第23章给出物质与以太无限的区分。",
+      "typed_object": {
+        "kind": "cardinal",
+        "expression": "aleph1",
+        "interpretation": "按原作明确的aleph/alef基数语境解释目的地；仍需原文语义成立。"
+      },
+      "assumptions": [
+        "该处alef-one按作者使用的首个不可数基数语义，而非另造同名单位。"
+      ],
+      "source": {
+        "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+        "locator": "14: At Alef-one；Franx与Reflection Principle回顾；23: Research",
+        "kind": "author_hosted_work"
+      }
+    }
   ],
-  "character_relations": [{"character": "Franx", "node": "alef_one", "relation": "reaches", "properties": ["range"], "source": {"url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml", "locator": "14: At Alef-one及后续对Franx旅程的回顾", "kind": "author_hosted_work"}}],
-  "expected": {"range_structure": "所选历史门槛下可作论外结构范围的条件映射", "combat_attack": "not_established", "durability": "not_established"}
+  "character_relations": [
+    {
+      "character": "Franx",
+      "node": "alef_one",
+      "relation": "reaches",
+      "properties": [
+        "range"
+      ],
+      "source": {
+        "url": "https://www.rudyrucker.com/whitelight/sample/whitelight.xhtml",
+        "locator": "14: At Alef-one及后续对Franx旅程的回顾",
+        "kind": "author_hosted_work"
+      }
+    }
+  ],
+  "expected": {
+    "range_structure": "所选历史门槛下可作论外结构范围的条件映射",
+    "combat_attack": "not_established",
+    "durability": "not_established"
+  }
 }

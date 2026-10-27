@@ -6,6 +6,7 @@ Call run(request) or `python research.py --request request.json`.
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict, deque
 import hashlib
 import json
 from pathlib import Path
@@ -56,6 +57,130 @@ def _strings(value, name):
     return value
 
 
+def chain_tasks(case, subject_ids=None, mode='integrated', hop_audits=()):
+    """Backchain existing CASE relations into source work, not semantic approval.
+
+    Readability supplies a reusable starting candidate, not proof of its meaning.
+    No character names, nouns, tier labels or winner preferences are interpreted.
+    Tasks use existing anchors/edges/hop context; no new proof form is required.
+    """
+    from pk_modes import READABLE
+    from rating_modes import applies
+    from evidence import REQUIREMENTS
+
+    if not isinstance(case, dict):
+        raise ValueError('case must be an object for dependency-directed research')
+    characters = {c['id']: c for c in case.get('characters', [])}
+    sources_by_id = {s['id']: s for s in case.get('sources', [])}
+    selected = set(characters if subject_ids is None else subject_ids)
+    if selected - characters.keys():
+        raise ValueError('Research target must match an existing CASE character ID')
+    contexts = {h['edge_id']: h for h in hop_audits}
+
+    def readable(ids):
+        return bool(ids) and all(sources_by_id.get(i, {}).get('access') in READABLE for i in ids)
+
+    def point(row):
+        subject, attribute = row.get('subject'), row.get('attribute')
+        if subject not in characters or not isinstance(attribute, str) or not attribute:
+            raise ValueError('Research edges need existing character IDs and attributes')
+        return subject, attribute
+
+    incoming, outgoing = defaultdict(list), defaultdict(list)
+    edges = []
+    for edge in case.get('edges', []):
+        if not applies(edge, mode):
+            continue
+        if edge.get('relation') not in REQUIREMENTS:
+            raise ValueError('Unsupported numeric edge; retain native relations as qualitative claims')
+        conditions = edge.get('conditions', {})
+        # A refuted route is not a reason to research its ancestors again.
+        if any(conditions.get(k) is False for k in REQUIREMENTS[edge['relation']]):
+            continue
+        left, right = point(edge['from']), point(edge['to'])
+        edges.append((edge, left, right))
+        incoming[right].append(left)
+        outgoing[left].append(right)
+    needed = {p for _, left, right in edges for p in (left, right) if p[0] in selected}
+    pending = list(needed)
+    while pending:
+        for parent in incoming[pending.pop()]:
+            if parent not in needed:
+                needed.add(parent)
+                pending.append(parent)
+    edges = [(e, a, b) for e, a, b in edges if b in needed]
+    anchors = {point(a) for a in case.get('anchors', [])
+               if applies(a, mode) and readable(a.get('evidence_ids', []))}
+    reachable = anchors & needed
+    queue = deque(reachable)
+    while queue:
+        for child in outgoing[queue.popleft()]:
+            if child in needed and child not in reachable:
+                reachable.add(child)
+                queue.append(child)
+    tasks = []
+
+    def label(node):
+        return characters[node[0]].get('name', node[0]) + '/' + node[1]
+
+    def add(kind, identity, nodes, purpose, path, ids=()):
+        raw = json.dumps([kind, identity], ensure_ascii=False, sort_keys=True).encode('utf-8')
+        tasks.append({'task_id': 'chain-' + hashlib.sha256(raw).hexdigest()[:12],
+            'kind': kind, 'attribute': nodes[-1][1], 'source_family': 'original',
+            'polarity': 'context', 'status': 'pending', 'purpose': purpose,
+            'query_hint': '；'.join(label(n) for n in nodes) + '：' + purpose,
+            'query': purpose, 'target_path': path, 'source_ids': list(ids),
+            'scope': [dict(characters[n[0]], attribute=n[1]) for n in nodes],
+            'executor': 'host_research_or_vision',
+            'completion_criterion': 'Read the decisive original context and update the existing source, '
+                'anchor, edge or report reasoning; a completed task is not a truth certificate.'})
+
+    # Group unrooted components. A cycle, diamond or repeated reference produces
+    # one source assignment per actual root rather than one per downstream hop.
+    missing = needed - reachable
+    unseen = set(missing)
+    while unseen:
+        component, stack = set(), [min(unseen)]
+        while stack:
+            node = stack.pop()
+            if node in component:
+                continue
+            component.add(node)
+            stack.extend(n for n in incoming[node] + outgoing[node]
+                         if n in missing and n not in component)
+        unseen -= component
+        roots = sorted(n for n in component if not any(p in component for p in incoming[n]))
+        groups = [[n] for n in roots] if roots else [sorted(component)]
+        for nodes in groups:
+            add('independent_anchor', nodes, nodes,
+                '先查该参照的独立有效实绩、可靠设定或本体/机制定级依据及反证；'
+                '说明对象、规模与属性。相互交手和名称关联不能循环生成绝对档；'
+                '已有来源可复用，缺J不妨碍有据语义定级。', 'case.anchors')
+
+    for edge, left, right in edges:
+        conditions = edge.get('conditions', {})
+        missing_conditions = [k for k in REQUIREMENTS[edge['relation']] if conditions.get(k) is not True]
+        context = contexts.get(edge['id'], {})
+        reviewed_context = (context.get('mechanism') and context.get('scope') and
+            all(any(c.get('name') == k and c.get('status') is True and readable(c.get('source_ids', []))
+                    for c in context.get('conditions', []))
+                for k in ('state_compatible', 'scope_compatible')))
+        if edge['relation'] == 'explicit' and not reviewed_context:
+            purpose = ('分别核清来源对象为何具备所称规模/层级，以及这条关系为何能传给目标的指定属性；'
+                       '关联、依存或伴随后果不自动是实力等价。可靠本体定义、能力作用与比较设定照常有效，'
+                       '无需统一改写为物理破坏。')
+        elif missing_conditions or not readable(edge.get('evidence_ids', [])):
+            purpose = ('回读本次交互的状态、实际作用和结果，只补缺失的属性桥：' +
+                       ', '.join(missing_conditions or ['原始出处与上下文']) +
+                       '。区分武器/身体、硬防/格挡/吸收/恢复、瞬发/持续及个人/合击贡献；'
+                       '不要求逐个重演同规模破坏，也不复制全属性。')
+        else:
+            continue
+        add('scaling_bridge', edge['id'], [left, right], purpose,
+            'case.edges.' + edge['id'], edge.get('evidence_ids', []))
+    return tasks
+
+
 def _discovery_routes(target,name,is_novel):
     """Expand known source carriers and relations without inventing feats or allies."""
     related=target.get('related_entities',[])
@@ -87,6 +212,10 @@ def _discovery_routes(target,name,is_novel):
                     queries=[{'polarity':polarity,'query_hint':f'{work} {node["name"]} {words}',
                               'status':'planned','node_id':node['entity_id']}
                              for polarity,words in terms[node['relation']]])
+        if node['relation'] == 'opponent':
+            node['queries'].insert(0, {'polarity': 'context', 'status': 'planned',
+                'node_id': node['entity_id'],
+                'query_hint': f'{work} {node["name"]} 独立实绩 最强有效表现 设定 作用对象 规模 反证'})
     return {'nodes':nodes,'admission':'discovery_only','node_identity_verified':False,
         'carrier_order':(['ending_chapters','chapter_context','appendices_when_present','equipment_and_ability_entries']
                          if is_novel else ['original_scenes','official_entries','logs_and_appendices_when_present']),
@@ -107,7 +236,13 @@ def plan(request):
     name = _text(target.get('name', target.get('entity_id', 'unresolved character')), 'name')
     is_novel = target.get('medium') == 'novel' or target.get('continuity') == 'novel'
     discovery_routes=_discovery_routes(target,name,is_novel)
-    tasks = []
+    tasks = (chain_tasks(request['case'], [target['entity_id']], modes[0])
+             if request.get('case') is not None else [])
+    video_plan = {}
+    if request.get('video_dimensions'):
+        from video_dimensions import build_plan
+        video_plan = build_plan(request['video_dimensions'], target, request.get('dimension_definitions'))
+        tasks.extend(video_plan['tasks'])
     for attribute in DIMENSIONS:
         for family, polarity, purpose in (
             ('original', 'positive', '取得原作实际表现、定位、完整上下文与配置'),
@@ -129,6 +264,8 @@ def plan(request):
                 'scope': dict(target), 'activation_condition': 'physical_or_biological_parameter_needed'})
     return _base('plan', 'needs_scope' if missing else 'ok', target=target, modes=modes,
         dimensions=list(DIMENSIONS), dimension_labels=LABELS, tasks=tasks,
+        extra_dimension_ids=sorted({t['attribute'] for t in video_plan.get('tasks', [])} - set(DIMENSIONS)),
+        video_comparison_plan=video_plan or None,
         rating_policy=('integrated_main_tier' if modes == ['integrated'] else 'explicit_legacy_context_research'),
         performance_contexts=['high_showing','typical_showing','low_showing'],
         legacy_mode=any(mode != 'integrated' for mode in modes),
@@ -453,7 +590,7 @@ def coverage(request):
     gaps = [dict(task, gap='conditional_not_activated' if task.get('status') == 'conditional' else 'not_documented_as_checked')
             for task in tasks if task['task_id'] not in checked]
     rows = []
-    for attribute in plan_data.get('dimensions', DIMENSIONS):
+    for attribute in dict.fromkeys(list(plan_data.get('dimensions', DIMENSIONS)) + plan_data.get('extra_dimension_ids', [])):
         selected = [task for task in tasks if task.get('attribute') == attribute]
         rows.append({'attribute': attribute, 'planned_tasks': len(selected),
             'checked_tasks': sum(task['task_id'] in checked for task in selected),

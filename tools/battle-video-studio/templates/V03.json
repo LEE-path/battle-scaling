@@ -1,0 +1,151 @@
+{
+  "id": "V03",
+  "reference": "V03 music timing preset",
+  "duration_s": 39.404263,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V03.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 11,
+  "original_slot_roles": {
+    "attribute": 9,
+    "summary": 1,
+    "theme": 1,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.5,
+  "median_label_to_reveal_s": 0.766,
+  "stages": [
+    [
+      0,
+      15.33,
+      "上下分屏介绍",
+      "全能人降落/红色城市摧毁片段，对祖国人公开露面、激光与群众场面；名字+VS分层出现。"
+    ],
+    [
+      15.33,
+      31.67,
+      "属性及趣味项",
+      "全能人/祖国人固定比较画面；全屏赢家复用全能人城市悬浮，技能及月牙天冲给祖国人。"
+    ],
+    [
+      31.67,
+      35.7,
+      "总判及赢家高光",
+      "完胜后用全能人红色场面，叠全能人名称。"
+    ],
+    [
+      35.7,
+      39.4,
+      "作者片尾",
+      "黑底JCYZR。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 15.333,
+      "reveal_cut_s": 16.167,
+      "next_cut_s": 16.867
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 16.867,
+      "reveal_cut_s": 17.633,
+      "next_cut_s": 18.4
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 18.4,
+      "reveal_cut_s": 19.067,
+      "next_cut_s": 19.8
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 19.8,
+      "reveal_cut_s": 20.533,
+      "next_cut_s": 21.3
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 21.3,
+      "reveal_cut_s": 22,
+      "next_cut_s": 22.767
+    },
+    {
+      "order": 6,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 22.767,
+      "reveal_cut_s": 23.467,
+      "next_cut_s": 24.233
+    },
+    {
+      "order": 7,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 24.233,
+      "reveal_cut_s": 25,
+      "next_cut_s": 25.733
+    },
+    {
+      "order": 8,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 25.733,
+      "reveal_cut_s": 26.5,
+      "next_cut_s": 27.233
+    },
+    {
+      "order": 9,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 27.233,
+      "reveal_cut_s": 28,
+      "next_cut_s": 28.733
+    },
+    {
+      "order": 10,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 28.733,
+      "reveal_cut_s": 29.5,
+      "next_cut_s": 30.233
+    },
+    {
+      "order": 11,
+      "original_label": "月牙天冲",
+      "original_role": "theme",
+      "label_cut_s": 30.233,
+      "reveal_cut_s": 30.933,
+      "next_cut_s": 31.667
+    },
+    {
+      "order": 12,
+      "original_label": "完胜",
+      "original_role": "verdict",
+      "label_cut_s": 31.667,
+      "reveal_cut_s": 32.433,
+      "next_cut_s": null
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V03/分段研究.md"
+}

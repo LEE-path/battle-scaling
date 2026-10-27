@@ -1,0 +1,177 @@
+{
+  "id": "V01",
+  "reference": "V01 music timing preset",
+  "duration_s": 44.079375,
+  "frame_size": [
+    1080,
+    1920
+  ],
+  "audio_file": "music/V01.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 15,
+  "original_slot_roles": {
+    "attribute": 13,
+    "summary": 1,
+    "theme": 0,
+    "fact": 1
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 2.148,
+  "median_label_to_reveal_s": 1.074,
+  "stages": [
+    [
+      0,
+      10.08,
+      "上下分屏介绍",
+      "上方埼玉的蓝色血污脸、下方崔格漫画图；切近景并作推拉，中心角色名+VS。"
+    ],
+    [
+      10.08,
+      42.26,
+      "属性轮播",
+      "显示属性的分屏与该项被给分者全屏交替；前段反复用埼玉挥拳，智力/经验/年龄给崔格，后段用橙色埼玉片段。"
+    ],
+    [
+      42.26,
+      44.08,
+      "总结果/收尾",
+      "胜者标签后回埼玉全屏，尾端变黑；不附另段原作长打斗。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 10.163,
+      "reveal_cut_s": 11.196,
+      "next_cut_s": 12.228
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 12.228,
+      "reveal_cut_s": 13.344,
+      "next_cut_s": 14.377
+    },
+    {
+      "order": 3,
+      "original_label": "攻击/防御",
+      "original_role": "attribute",
+      "label_cut_s": 14.377,
+      "reveal_cut_s": 15.451,
+      "next_cut_s": 16.525
+    },
+    {
+      "order": 4,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 16.525,
+      "reveal_cut_s": 17.599,
+      "next_cut_s": 18.714
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 18.714,
+      "reveal_cut_s": 19.747,
+      "next_cut_s": 20.821
+    },
+    {
+      "order": 6,
+      "original_label": "战斗智商",
+      "original_role": "attribute",
+      "label_cut_s": 20.821,
+      "reveal_cut_s": 21.895,
+      "next_cut_s": 22.969
+    },
+    {
+      "order": 7,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 22.969,
+      "reveal_cut_s": 24.043,
+      "next_cut_s": 25.118
+    },
+    {
+      "order": 8,
+      "original_label": "年龄",
+      "original_role": "fact",
+      "label_cut_s": 25.118,
+      "reveal_cut_s": 26.192,
+      "next_cut_s": 27.224
+    },
+    {
+      "order": 9,
+      "original_label": "爆发力",
+      "original_role": "attribute",
+      "label_cut_s": 27.224,
+      "reveal_cut_s": 28.299,
+      "next_cut_s": 29.414
+    },
+    {
+      "order": 10,
+      "original_label": "敏捷/反应力",
+      "original_role": "attribute",
+      "label_cut_s": 29.414,
+      "reveal_cut_s": 30.447,
+      "next_cut_s": 31.521
+    },
+    {
+      "order": 11,
+      "original_label": "攻击速度",
+      "original_role": "attribute",
+      "label_cut_s": 31.521,
+      "reveal_cut_s": 32.595,
+      "next_cut_s": 33.669
+    },
+    {
+      "order": 12,
+      "original_label": "特殊能力",
+      "original_role": "attribute",
+      "label_cut_s": 33.669,
+      "reveal_cut_s": 34.743,
+      "next_cut_s": 35.817
+    },
+    {
+      "order": 13,
+      "original_label": "耐力/续航",
+      "original_role": "attribute",
+      "label_cut_s": 35.817,
+      "reveal_cut_s": 36.891,
+      "next_cut_s": 37.966
+    },
+    {
+      "order": 14,
+      "original_label": "杀伤力",
+      "original_role": "attribute",
+      "label_cut_s": 37.966,
+      "reveal_cut_s": 39.04,
+      "next_cut_s": 40.072
+    },
+    {
+      "order": 15,
+      "original_label": "全面/量级",
+      "original_role": "summary",
+      "label_cut_s": 40.072,
+      "reveal_cut_s": 41.188,
+      "next_cut_s": 42.262
+    },
+    {
+      "order": 16,
+      "original_label": "胜者",
+      "original_role": "verdict",
+      "label_cut_s": 42.262,
+      "reveal_cut_s": 43.336,
+      "next_cut_s": null
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V01/分段研究.md"
+}

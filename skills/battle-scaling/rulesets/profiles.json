@@ -33,7 +33,14 @@
       "finite_ruleset": "vsb-current-2026-10-21.json",
       "high_default": "vsb-high-current-2026-10-21",
       "high_by_kind": {},
-      "extra_rule_modules": ["vsb_rules.py", "vsb_attributes.py", "vsb_high.py", "vsb_hax_policy.py", "vsb_physics.py", "standards.py"],
+      "extra_rule_modules": [
+        "vsb_rules.py",
+        "vsb_attributes.py",
+        "vsb_high.py",
+        "vsb_hax_policy.py",
+        "vsb_physics.py",
+        "standards.py"
+      ],
       "policy": "VSB numerical tiers, structural high-tier criteria, mechanism-based hax and SBA are independent of Wangba. normal/highest/lowball remain evidence modes, never permission to bypass VSB admissibility."
     }
   }

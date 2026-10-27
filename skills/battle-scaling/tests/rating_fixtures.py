@@ -18,6 +18,7 @@ FIELDS = ('输出', '体防', '智力', '战斗智商', '经验', '特殊技能'
 
 def with_independent_ratings(request, *, writing=False, modes=None, standards=None):
     request = copy.deepcopy(request)
+    request.setdefault('fixture_kind', 'synthetic_explicit_invented_test')
     request.setdefault('mode', 'normal')  # Explicit historical fixture; production defaults to integrated.
     standard = request.get('standard', 'wangba')
     if standard not in ('wangba', 'vsb'):
@@ -34,6 +35,11 @@ def with_independent_ratings(request, *, writing=False, modes=None, standards=No
         'origin': 'author_settings' if writing else 'synthetic', 'access': 'provided',
         'locator': 'tests/rating_fixtures.py: invented fixture definitions, not canon',
     })
+    # Some historical tests use the word primary to exercise access semantics;
+    # explicitly identify those invented records instead of relaxing real-source
+    # admission or rewriting provenance in the production checker.
+    for source in request['sources']:
+        source['fixture_kind'] = 'synthetic_explicit_invented_test_source'
     rows = []
     for subject in subjects:
         if not isinstance(subject, dict) or not isinstance(subject.get('id'), str):

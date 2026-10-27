@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Battle Video Studio</title>
+<style>
+:root{font-family:Inter,"Microsoft YaHei",Arial,sans-serif;color:#eef1f5;background:#101114;color-scheme:dark;font-size:14px}*{box-sizing:border-box}body{margin:0}header{height:76px;padding:0 30px;border-bottom:1px solid #303138;display:flex;align-items:center;justify-content:space-between;background:#17181d}h1{font-size:22px;letter-spacing:-.5px;margin:0}h1 span{font-weight:400;color:#8e929d;font-size:14px;margin-left:12px}.local{font-size:11px;letter-spacing:2px;color:#d7f16c;border:1px solid #3b4624;border-radius:20px;padding:8px 12px}.layout{display:grid;grid-template-columns:minmax(420px,480px) 1fr;min-height:calc(100vh - 76px)}aside{padding:24px;border-right:1px solid #303138;max-height:calc(100vh - 76px);overflow:auto}main{padding:28px;min-width:0}h2{font-size:14px;font-weight:700;margin:0 0 18px;color:#dce0e6}section{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #303138}label{display:block;font-size:12px;color:#9ca1ad;margin:10px 0 7px}input,select,textarea{font:inherit;width:100%;background:#202127;border:1px solid #3a3c45;color:#eef1f5;border-radius:7px;padding:10px 12px;outline:none}input:focus,select:focus,textarea:focus{border-color:#c4e75b}textarea{resize:vertical}button,.button{font:inherit;font-size:13px;font-weight:650;background:#292b33;color:#e9ecf3;border:1px solid #3f424c;padding:11px 16px;border-radius:7px;cursor:pointer;display:inline-block;text-decoration:none}button:hover,.button:hover{background:#373a45}button:disabled{opacity:.45;cursor:wait}.primary{background:#d4ef72;color:#141810;border-color:#d4ef72}.primary:hover{background:#e4ff8a}.row{display:flex;gap:12px}.row>*{flex:1;min-width:0}.tiny{font-size:12px;color:#9095a2;line-height:1.7}.heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.heading h2{margin:0}.tag{background:#25272e;color:#bac0cc;padding:5px 8px;border-radius:4px;font-size:11px}.upload{border:1px dashed #494c56;padding:14px;margin:12px 0;border-radius:8px;background:#1b1d22}.upload label{margin:0 0 8px}.upload input{font-size:11px;padding:6px}.clip{background:#1d1e24;border:1px solid #343641;border-radius:7px;margin:8px 0;padding:10px}.clip-title{display:flex;align-items:center;gap:10px;justify-content:space-between;font-size:12px;overflow-wrap:anywhere}.clip-title button{padding:3px 8px}.clip input,.clip select{padding:7px;font-size:11px}.clip .row{gap:6px}.clip label{font-size:10px}.compare{display:grid;grid-template-columns:1fr 112px;gap:7px;margin:6px 0}.compare input,.compare select{padding:8px;font-size:12px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.frame{width:100%;height:min(72vh,820px);min-height:460px;border:1px solid #363944;border-radius:12px;background:#08090b;overflow:hidden;margin-top:22px}iframe{width:100%;height:100%;border:0}#previewEmpty{padding:50px;text-align:center;line-height:2;color:#858b99}#status{margin-top:18px;padding:14px 18px;background:#1b1d22;border-radius:8px;color:#bcc3cf;line-height:1.8;overflow-wrap:anywhere}progress{width:100%;height:7px;accent-color:#d4ef72;border:0;border-radius:4px}video{width:100%;max-height:640px;background:black;border-radius:8px}details{margin-top:18px}summary{cursor:pointer;color:#9da5b5}.subtitle{font-size:13px;color:#8f97a5;line-height:1.8;margin:10px 0 0}.error{color:#ff9c9c!important}.output{margin-top:20px}#musicInfo{margin-top:7px}input[type=range]{padding:0}#raw{font-family:Consolas,monospace;font-size:11px;line-height:1.7;min-height:260px}@media(max-width:1000px){.layout{grid-template-columns:1fr}aside{max-height:none;border-right:0}.frame{height:640px}header{padding:0 20px}h1 span{display:none}}
+</style>
+<style>@media(max-width:1000px){.layout{display:flex;flex-direction:column}main{order:0;padding:22px}aside{order:1;border-top:1px solid #303138}.frame{height:540px;min-height:400px}.heading{gap:12px}.toolbar button,.toolbar .button{padding:10px 12px;font-size:12px}}</style>
+</head>
+<body>
+<header><h1>BATTLE VIDEO <span>本地论战剪辑工作台</span></h1><span class="local">● LOCAL WORKSPACE</span></header>
+<div class="layout">
+<aside>
+<section><div class="heading"><h2>01 / 工程与音乐</h2><span class="tag">原音轨 · 已标定卡点</span></div>
+<div class="row"><select id="projects" aria-label="已保存工程"></select><button id="loadProject" style="flex:0 0 72px">载入</button></div>
+<label>工程名称</label><input id="title" placeholder="角色A vs 角色B">
+<label>工程ID</label><input id="jobId" placeholder="my-battle">
+<label>音乐 / 时序模板</label><select id="template"></select><div id="musicInfo" class="tiny"></div>
+<label>中央 VS</label><select id="vsVariant"><option value="silver">01 银白断锋（默认）</option><option value="ink">02 黑白墨裂</option><option value="prism">03 冷棱切面</option><option value="comic">04 赤白漫画</option></select>
+<div class="row"><div><label>输出画幅</label><select id="size"><option value="1080x1440">3:4 · 1080×1440</option><option value="1080x1920">9:16 · 1080×1920</option><option value="1920x1080">16:9 · 1920×1080</option></select></div><div><label>动效强度</label><input id="intensity" type="range" min="0" max="1" step="0.05" value="0.65"></div></div>
+<label>导入评级比较 / 已保存的任务JSON</label><input id="ratingFile" type="file" accept=".json">
+<p class="tiny">使用已经确定的属性结论与总判。可以把评级和素材交给 Agent，由它填好此工程。</p>
+</section>
+<section><h2>02 / 双方人物与素材</h2>
+<div class="row"><div><label>上方 / A</label><input id="aName"><label>时期 / 配置</label><input id="aVersion"></div><div><label>下方 / B</label><input id="bName"><label>时期 / 配置</label><input id="bVersion"></div></div>
+<div class="upload"><label>A的素材（可多选）</label><input id="aFiles" type="file" multiple accept="video/*,image/*"><div id="aClips"></div></div>
+<div class="upload"><label>B的素材（可多选）</label><input id="bFiles" type="file" multiple accept="video/*,image/*"><div id="bClips"></div></div>
+<p class="tiny">素材用途可分为开场、比较底板、单项高光和收尾。未分类时按可用素材轮换；入出点用秒，横/纵焦点用0–100。</p>
+</section>
+<section><div class="heading"><h2>03 / 维度与单项揭晓</h2><span id="slotCount" class="tag"></span></div><div id="comparisons"></div></section>
+<section><h2>04 / 最终结论</h2><label>严谨论战的总胜者</label><select id="winner"><option value="">请选择</option><option value="a">A获胜</option><option value="b">B获胜</option><option value="tie">相当（参考演示可用）</option></select><label>获胜难度（沿用上游分析）</label><select id="difficulty"><option value="">待评定</option><option value="no">无难度 / No Diff</option><option value="low">低难度 / Low Diff</option><option value="mid">中难度 / Mid Diff</option><option value="high">高难度 / High Diff</option><option value="extreme">极高难度 / Extreme Diff</option></select><label>可选补充文案</label><input id="verdictSubtitle" placeholder="补充文案不替代难度"></section>
+</aside>
+<main>
+<div class="heading"><div><h2 style="font-size:22px">把结论剪成节奏。</h2><p class="subtitle">选音乐、放素材、确定展示项。卡点、分屏、单项揭晓与胜者收尾交给模板。</p></div><span class="tag" id="savedBadge">尚未保存</span></div>
+<div class="toolbar"><button class="primary" id="prepare">保存工程并预览</button><button id="render">导出完整MP4</button><button id="renderPreview">导出半尺寸预览</button><button id="newProject">新建工程</button><button id="download">下载任务JSON</button><a class="button" id="studioLink" href="http://127.0.0.1:3211/BattleEdit" target="_blank">单独打开工程预览 ↗</a></div>
+<div id="status">载入本地工程中…</div><progress id="progress" max="1" value="0" hidden></progress>
+<div class="frame"><iframe id="studioFrame" title="Remotion工程预览" hidden></iframe><div id="previewEmpty">保存工程后，这里会显示可播放、可定位帧的工程预览。<br>素材与渲染均在本机处理。</div></div>
+<div class="output" id="output" hidden><h2>最新成片</h2><video id="movie" controls preload="metadata"></video><p><a id="downloadMovie" class="button" download>保存MP4</a></p></div>
+<details><summary>高级：查看 / 修改任务数据</summary><textarea id="raw"></textarea><button id="applyRaw" style="margin-top:10px">应用任务数据</button></details>
+</main>
+</div>
+<script type="module" src="/app.js"></script>
+</body></html>

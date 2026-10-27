@@ -1,0 +1,175 @@
+{
+  "id": "V08",
+  "reference": "V08 music timing preset",
+  "duration_s": 48.274286,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V08.m4a",
+  "audio_kind": "AAC原混音无重编码提取；未做人声/对白分离",
+  "audio_identity": "按本文件的具体音轨片段建档；曲名未听辨；不按相近BPM合并",
+  "source_audio_offset_s": 0,
+  "playback_rate": 1,
+  "comparison_slot_count": 14,
+  "original_slot_roles": {
+    "attribute": 12,
+    "summary": 1,
+    "theme": 1,
+    "fact": 0
+  },
+  "dedicated_verdict_slot_count": 1,
+  "median_comparison_cycle_s": 1.167,
+  "median_label_to_reveal_s": 0.533,
+  "stages": [
+    [
+      0,
+      18.433,
+      "双人能力/身份展示",
+      "祖国人黑白血污脸、红眼与热视线；恶灵骑士摩托、火焰、近景。字幕带“二代”。"
+    ],
+    [
+      18.433,
+      34.7,
+      "十四个比较展示位",
+      "白字分屏，随后给该项单人画面；后两项为“优势、人气”。"
+    ],
+    [
+      34.7,
+      40.5,
+      "胜者页/梗揭晓",
+      "胜者标签之后接恶灵骑士形象的街头骑行梗镜头；不将这一梗片段当电影本体表现。"
+    ],
+    [
+      40.5,
+      48.274286,
+      "原作风格摩托高光与淡出",
+      "转回恶灵骑士骑车、火线及离场镜头，末尾渐暗。"
+    ]
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 18.433,
+      "reveal_cut_s": 19,
+      "next_cut_s": 19.633
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 19.633,
+      "reveal_cut_s": 20.2,
+      "next_cut_s": 20.8
+    },
+    {
+      "order": 3,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 20.8,
+      "reveal_cut_s": 21.4,
+      "next_cut_s": 22.033
+    },
+    {
+      "order": 4,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 22.033,
+      "reveal_cut_s": 22.533,
+      "next_cut_s": 23.133
+    },
+    {
+      "order": 5,
+      "original_label": "体质",
+      "original_role": "attribute",
+      "label_cut_s": 23.133,
+      "reveal_cut_s": 23.7,
+      "next_cut_s": 24.3
+    },
+    {
+      "order": 6,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 24.3,
+      "reveal_cut_s": 24.8,
+      "next_cut_s": 25.4
+    },
+    {
+      "order": 7,
+      "original_label": "武器",
+      "original_role": "attribute",
+      "label_cut_s": 25.4,
+      "reveal_cut_s": 25.967,
+      "next_cut_s": 26.633
+    },
+    {
+      "order": 8,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 26.633,
+      "reveal_cut_s": 27.133,
+      "next_cut_s": 27.767
+    },
+    {
+      "order": 9,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 27.767,
+      "reveal_cut_s": 28.233,
+      "next_cut_s": 28.9
+    },
+    {
+      "order": 10,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 28.9,
+      "reveal_cut_s": 29.433,
+      "next_cut_s": 30.067
+    },
+    {
+      "order": 11,
+      "original_label": "技能伤害",
+      "original_role": "attribute",
+      "label_cut_s": 30.067,
+      "reveal_cut_s": 30.567,
+      "next_cut_s": 31.233
+    },
+    {
+      "order": 12,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 31.233,
+      "reveal_cut_s": 31.7,
+      "next_cut_s": 32.367
+    },
+    {
+      "order": 13,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 32.367,
+      "reveal_cut_s": 32.933,
+      "next_cut_s": 33.6
+    },
+    {
+      "order": 14,
+      "original_label": "人气",
+      "original_role": "theme",
+      "label_cut_s": 33.6,
+      "reveal_cut_s": 34.133,
+      "next_cut_s": 34.7
+    },
+    {
+      "order": 15,
+      "original_label": "胜者",
+      "original_role": "verdict",
+      "label_cut_s": 34.7,
+      "reveal_cut_s": 35.333,
+      "next_cut_s": 40.5
+    }
+  ],
+  "timing_note": "切换位置为视觉校读结合帧差的源时间轴约值；不等于所有图层的准确起止。最终需试听/回看。",
+  "reuse_note": "原始标签仅作示例；可替换内容并保持槽位/揭晓节奏。总判单列；不得按属性票数改判。",
+  "source_research": "LOCAL_BATTLE_WORKSPACE/07_影视制作/论战视频样本研究_20261026/V08/分段研究.md"
+}

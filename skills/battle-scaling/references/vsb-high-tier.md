@@ -1,9 +1,5 @@
 # VSB 高层结构与定性分级
 
-<!-- VSB-LICENSE-NOTICE -->
-> 改编资料 / Adapted reference: © VS Battles Wiki contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 本项目作中文翻译、摘要与执行适配 / Project changes: translation, summarization and execution guidance. 原页／修订见本页引用，作者记录见原页历史 / Sources and revisions appear below; contributors are credited through the source-page histories. [许可与署名](../THIRD_PARTY_NOTICES.md#5-vsb-模式改编资料的许可例外--vsb-mode-adapted-reference-material)。
-
-
 适用标准：`vsb`；配置快照：`vsb-current-2026-10-21`。这是按需调用的中文执行摘要，不是汪吧高层名词的换算表，也不宣称角色得到 VS Battles Wiki 官方审核。有限能量档位另由 VSB 数值表处理。
 
 `vsb_high` 的自动证据包审查覆盖 **3-A 至 0**；Tier 11 在本页给语义导航，由宿主查原作逐项评定，不能提交给自动高层审查或用零焦耳代替。有限数值工具只覆盖10-C至3-A。本包不把“列出档位”宣称为每档都有自动语义审核。

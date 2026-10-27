@@ -4,15 +4,6 @@
     "excluded": [],
     "processed_derivations": 0,
     "search_truncated": false,
-    "rating_policy": "legacy_mode_replay",
-    "legacy_mode": true,
-    "legacy_is_integrated_reassessment": false,
-    "performance_contexts": [
-      "high_showing",
-      "typical_showing",
-      "low_showing"
-    ],
-    "semantic_rating_verified": false,
     "selection": "highest_of_repeated_credible_showings",
     "hax_reviews": {},
     "hax_review_coverage": {

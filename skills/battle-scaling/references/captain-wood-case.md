@@ -6,7 +6,7 @@
 
 我实际使用宿主 `view_image` 读取了 `first-nine-contact.png` 与从真实 GIF 提取的 `review-frame-6.png`。frame0可见双手持木段；frames4—7可见两部分明显分开；frame8开始转场。低清、运动模糊和手掌遮挡使最初裂缝、纹理取向与精确受力点不能确定。`clip-reproduction.gif` 仅有前段，不能单独证明完整动作；本次采用包含分开结果的 `kym-reproduction.gif`。
 
-原作接触表不随公开包分发；来源GIF和哈希见下。文字与条件模型保留，新的视觉判断需实际取得并核对相应来源。
+连续画面见随包 `assets/cases/captain-contact.png`；其来源GIF和哈希见下。
 
 来源为 [KYM托管GIF](https://i.kym-cdn.com/photos/images/newsfeed/001/524/177/5ce.gif)，第三方电影重现，不是官方原片上传。实际文件500×250像素、27帧，SHA256 `26b3cdb320d773dc7154b8f94718428cc61bd659e24c49b8fb203ba3a355dd4a`。GIF播放时间与转场不能证明原电影帧率或真实动作持续时间。文件信息见 `gif-metadata.json`、`kym-source.json` 和 `tool-results/media-*.json`。
 
@@ -86,4 +86,4 @@
 
 ## 随包复算
 
-用 `battle.py analyze --input assets/cases/research-captain-wood.json --mode all --output RUN_DIR` 复算三个材料/几何情景。原始验证缓存不随包复制，需时按网址重新取得；原作接触表不随公开包分发；此条件复算不能提供缺失的绝对标尺，也不冒充本次重新读图。
+用 `battle.py analyze --input assets/cases/research-captain-wood.json --mode all --output RUN_DIR` 复算三个材料/几何情景。原始验证缓存不随包复制，需时按网址重新取得；随包接触表用于说明本轮已观察内容，不能提供缺失的绝对标尺。

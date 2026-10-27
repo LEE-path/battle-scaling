@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-23",
+  "review_date": "2026-10-27",
   "review_timezone": "Asia/Shanghai",
-  "release_target": "v1.12.2",
+  "release_target": "v1.21.0",
   "scope": "Current release package only; no Git history audit",
   "receipt_policy": "Summaries of actual tool or HTTP accesses. A missing hash means no raw-response hash was retained; it does not imply one. Day-level dates are used when the exact access time was not retained. Blocked pages are not represented as read. No current legal findings are inferred from an unvisited URL.",
   "sources": [
@@ -489,6 +489,58 @@
       "status": "read",
       "method": "Creative Commons primary deed read",
       "license": "CC-BY-4.0"
+    },
+    {
+      "name": "Remotion 4.0.539",
+      "url": "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md",
+      "observed_date": "2026-10-27",
+      "status": "read",
+      "license": "Remotion License",
+      "relationship": "video_runtime_dependency",
+      "method": "Installed package LICENSE.md and official upstream license page; installed-version notice copied with distribution."
+    },
+    {
+      "name": "Smiley Sans",
+      "url": "https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE",
+      "observed_date": "2026-10-27",
+      "status": "read",
+      "license": "SIL OFL 1.1",
+      "relationship": "bundled_unchanged_font",
+      "author": "atelierAnchor",
+      "method": "Bundled font license and official upstream license page."
+    },
+    {
+      "name": "SCP-3143",
+      "url": "https://scp-wiki.wikidot.com/scp-3143",
+      "author": "The Great Hippo",
+      "author_url": "https://www.wikidot.com/user:info/the-great-hippo",
+      "observed_date": "2026-10-27",
+      "status": "read",
+      "license": "CC BY-SA 3.0",
+      "relationship": "short_excerpt_and_paraphrase_in_semantic_benchmark",
+      "method": "Original article Info author link, author profile and site license notice."
+    },
+    {
+      "name": "SCP-3812",
+      "url": "https://scp-wiki.wikidot.com/scp-3812",
+      "author": "djkaktus",
+      "author_url": "https://scp-wiki.wikidot.com/djkaktus",
+      "observed_date": "2026-10-27",
+      "status": "read",
+      "license": "CC BY-SA 3.0",
+      "relationship": "short_excerpt_and_paraphrase_in_semantic_benchmark",
+      "method": "Original article license box and More by this Author link; official author page opened."
+    },
+    {
+      "name": "DEATH BATTLE! wording in optional generated cover variant",
+      "url": "https://deathbattle.gg/en-usd",
+      "observed_date": "2026-10-27",
+      "status": "official_site_search_result_read",
+      "license": null,
+      "relationship": "third_party_brand_wording_exception",
+      "asset": "skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-1920x1080.png",
+      "generation_record": "skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-prompt.txt",
+      "note": "The adjacent prompt records generated lettering. Not an official brand-asset download; brand rights are not represented as project-owned or granted by MIT. No affiliation or endorsement."
     }
   ],
   "vsb_package_source_links": {

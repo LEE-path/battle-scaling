@@ -1,0 +1,7 @@
+Edit this transparent VS poster template. Keep exactly the same 16:9 full canvas and normalized size/placement of the central black-and-dark-red hourglass divider, white distressed "VS" lettering, and tight black ink-splatter backing immediately around VS.
+
+REMOVE ALL the blue and red/orange light-flames, energy ribbons, lightning, glowing streaks, sparks and scattered debris that extend into the left or right character panels. Remove the blue luminous rim along the divider as well. Both portrait panels must now be completely clear transparent negative space, without ANY colored energy effect across the characters. Keep the divider's intentional BLACK CORE with its contained subdued dark-red gradient; this is not a flame and should remain. Preserve a compact, precisely irregular black ink-splatter contour around the VS, with transparent holes between separate droplets, no circular/oval/semicircular backing or geometric masking. No long radiating lines.
+
+The only opaque or translucent graphic elements left are the central black/dark-red hourglass, the centered white VS, and compact adjacent black ink details. Everywhere else is truly alpha-transparent. Native RGBA PNG, no painted checkerboard, no black/white backdrop. Do not add people, names or other text. Canvas 1920x1080, 16:9. Preserve transparent margins; don't crop down to the central graphic.
+
+Use native transparent image generation. Keep the alpha when normalizing proportionally to 1920x1080; overlay only once above full-bleed character panels. Do not reintroduce side flames or energy ribbons.

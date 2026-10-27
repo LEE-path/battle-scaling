@@ -10,7 +10,7 @@ import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from battle import doctor,main
+from battle import SKILL_VERSION,doctor,main
 from combat_trace import run as process
 from evidence import analyze_case,validate_case
 from pk_modes import PRESENTATIONS
@@ -43,7 +43,7 @@ def text_only_story_request():
 class WritingIntegrationTests(unittest.TestCase):
     def test_doctor_exposes_separate_task_without_changing_defaults(self):
         data=doctor()
-        self.assertEqual(data['skill_version'],'1.12.0')
+        self.assertEqual(data['skill_version'],SKILL_VERSION)
         self.assertEqual(data['rule_profile']['standard'],'wangba')
         self.assertEqual(data['pk_presentations']['default'],'overview')
         self.assertEqual(PRESENTATIONS,('overview','process'))
@@ -93,7 +93,7 @@ class WritingIntegrationTests(unittest.TestCase):
             self.assertEqual(original.read_bytes(),raw)
             data=json.loads(output.read_text(encoding='utf-8'))
             self.assertEqual(data['purpose'],'writing')
-            self.assertEqual(data['skill_version'],'1.12.0')
+            self.assertEqual(data['skill_version'],SKILL_VERSION)
             self.assertFalse(data['canon_evidence'])
             self.assertFalse((directory/'report.md').exists())
 
@@ -164,6 +164,7 @@ class WritingIntegrationTests(unittest.TestCase):
     def test_canon_extension_is_merged_and_retained_without_semantic_certification(self):
         request=json.loads((ROOT/'assets/cases/writing-fidelity-synthetic.json').read_text(encoding='utf-8'))
         request.setdefault('mode', 'normal')  # Historical fixture, explicit replay
+        request = with_executed_ratings(request)
         result=writing(request)
         self.assertEqual(result['status'],'structure_checked')
         self.assertTrue(result['canon_fidelity']['requested'])
@@ -184,6 +185,7 @@ class WritingIntegrationTests(unittest.TestCase):
     def test_unrealized_interaction_causes_main_revision_without_pretending_to_read_prose(self):
         request=json.loads((ROOT/'assets/cases/writing-fidelity-synthetic.json').read_text(encoding='utf-8'))
         request.setdefault('mode', 'normal')  # Historical fixture, explicit replay
+        request = with_executed_ratings(request)
         for beat in request['draft']['beats']:
             beat.pop('system_interactions',None)
         result=writing(request)

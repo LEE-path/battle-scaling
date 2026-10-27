@@ -731,13 +731,5 @@
     ]
   },
   "engine": "vsb_rules",
-  "standard_name": "VS Battles Wiki",
-  "licensing": {
-    "license": "CC-BY-SA-3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "attribution": "VS Battles Wiki contributors",
-    "changes": "Translated, summarized and structured for independent rule execution; source pages and reviewed revisions are retained.",
-    "copyright_policy": "https://vsbattles.fandom.com/wiki/VS_Battles_Wiki:Copyrights",
-    "scope": "This adapted reference data, not the independently written general-purpose program code or third-party images."
-  }
+  "standard_name": "VS Battles Wiki"
 }

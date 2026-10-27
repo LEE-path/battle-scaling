@@ -1,0 +1,158 @@
+{
+  "id": "V01",
+  "duration_s": 44.079375,
+  "frame_size": [
+    1080,
+    1920
+  ],
+  "audio_file": "music/V01.m4a",
+  "comparison_slot_count": 15,
+  "dedicated_verdict_slot_count": 1,
+  "stages": [
+    {
+      "start": 0,
+      "end": 10.08,
+      "role": "上下分屏介绍"
+    },
+    {
+      "start": 10.08,
+      "end": 42.26,
+      "role": "属性轮播"
+    },
+    {
+      "start": 42.26,
+      "end": 44.08,
+      "role": "总结果/收尾"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 10.163,
+      "reveal_cut_s": 11.196,
+      "next_cut_s": 12.228
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 12.228,
+      "reveal_cut_s": 13.344,
+      "next_cut_s": 14.377
+    },
+    {
+      "order": 3,
+      "original_label": "攻击/防御",
+      "original_role": "attribute",
+      "label_cut_s": 14.377,
+      "reveal_cut_s": 15.451,
+      "next_cut_s": 16.525
+    },
+    {
+      "order": 4,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 16.525,
+      "reveal_cut_s": 17.599,
+      "next_cut_s": 18.714
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 18.714,
+      "reveal_cut_s": 19.747,
+      "next_cut_s": 20.821
+    },
+    {
+      "order": 6,
+      "original_label": "战斗智商",
+      "original_role": "attribute",
+      "label_cut_s": 20.821,
+      "reveal_cut_s": 21.895,
+      "next_cut_s": 22.969
+    },
+    {
+      "order": 7,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 22.969,
+      "reveal_cut_s": 24.043,
+      "next_cut_s": 25.118
+    },
+    {
+      "order": 8,
+      "original_label": "年龄",
+      "original_role": "fact",
+      "label_cut_s": 25.118,
+      "reveal_cut_s": 26.192,
+      "next_cut_s": 27.224
+    },
+    {
+      "order": 9,
+      "original_label": "爆发力",
+      "original_role": "attribute",
+      "label_cut_s": 27.224,
+      "reveal_cut_s": 28.299,
+      "next_cut_s": 29.414
+    },
+    {
+      "order": 10,
+      "original_label": "敏捷/反应力",
+      "original_role": "attribute",
+      "label_cut_s": 29.414,
+      "reveal_cut_s": 30.447,
+      "next_cut_s": 31.521
+    },
+    {
+      "order": 11,
+      "original_label": "攻击速度",
+      "original_role": "attribute",
+      "label_cut_s": 31.521,
+      "reveal_cut_s": 32.595,
+      "next_cut_s": 33.669
+    },
+    {
+      "order": 12,
+      "original_label": "特殊能力",
+      "original_role": "attribute",
+      "label_cut_s": 33.669,
+      "reveal_cut_s": 34.743,
+      "next_cut_s": 35.817
+    },
+    {
+      "order": 13,
+      "original_label": "耐力/续航",
+      "original_role": "attribute",
+      "label_cut_s": 35.817,
+      "reveal_cut_s": 36.891,
+      "next_cut_s": 37.966
+    },
+    {
+      "order": 14,
+      "original_label": "杀伤力",
+      "original_role": "attribute",
+      "label_cut_s": 37.966,
+      "reveal_cut_s": 39.04,
+      "next_cut_s": 40.072
+    },
+    {
+      "order": 15,
+      "original_label": "全面/量级",
+      "original_role": "summary",
+      "label_cut_s": 40.072,
+      "reveal_cut_s": 41.188,
+      "next_cut_s": 42.262
+    },
+    {
+      "order": 16,
+      "original_label": "胜者",
+      "original_role": "verdict",
+      "label_cut_s": 42.262,
+      "reveal_cut_s": 43.336,
+      "next_cut_s": null
+    }
+  ]
+}

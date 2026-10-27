@@ -19,7 +19,7 @@ from rule_profiles import resolve as resolve_profile, snapshot_content
 from pk_modes import PRESENTATIONS,select_presentation,format_estimate
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_VERSION = '1.12.0'
+SKILL_VERSION = '1.17.1'
 
 
 def load_json(path):
@@ -636,7 +636,7 @@ def main(argv=None):
             request=load_json(args.input)
             if args.command in ('hax','process'):
                 profile=select_profile(request,args)
-                request={**request,'standard':profile['standard']}
+                request={**request,'standard':profile['standard'],'ruleset_profile':profile['id']}
             data=run(request)
             if args.command in ('hax','process'):data['ruleset_profile']=profile
         elif args.command == 'sources':

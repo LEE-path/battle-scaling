@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "corpus_version": "2026-10-27.1",
+  "frozen_at": "2026-10-27",
+  "scope": "六类真实文本与场景的推理边界；固定本题短摘录和定位，不声称固定整个持续更新的作品。",
+  "instructions": "逐题还原证据命题、对象、关系、属性和条件。分别解释可接受与越界推断，指出决定性缺口，允许多种有据解释。无需给唯一档位；如自行定档，先说明标准、版本和桥梁。不要把搜不到精确J当作否定原生能力的理由。题中待评推断为编写者制作的对抗性错误，不冒称历史报告的逐字原文。",
+  "sources": [
+    {
+      "id": "disney-stormbreaker",
+      "title": "Stormbreaker: cuáles son los poderes del hacha de Thor",
+      "url": "https://www.disneylatino.com/novedades/stormbreaker-cuales-son-los-poderes-del-hacha-de-thor",
+      "source_kind": "official_publisher_article",
+      "work_version": "MCU；2022-07-11官方文章",
+      "locator": "Stormbreaker: ¿Cúal es su importancia en las historias del UCM? 第二段",
+      "excerpt": "Thor consigue enterrar la Stormbreaker en el pecho de Thanos.",
+      "context_summary": "文章说明暴风战斧刺入灭霸胸口，灭霸仍以六颗宝石完成响指；武器能力一节另谈雷电和传送。",
+      "verification": "2026-10-27重新打开官方页面；短摘录与2026-10-24研究快照一致。",
+      "research_snapshot_sha256": "c7e23296a6fbbcd87314d7b7ef07843c541d23654677729767c38dae47e234ee"
+    },
+    {
+      "id": "ultron-dialogue",
+      "title": "Avengers: Age of Ultron — Sokovia spire plan",
+      "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=avengers-age-of-ultron",
+      "source_kind": "film_dialogue_transcribed_by_third_party",
+      "work_version": "MCU 2015院线电影；2026-10-24保存的台词转写",
+      "locator": "研究转写L2095-2098及L2173-2180；检索heat seal与supercharge the spire",
+      "excerpt": "Create a heat seal. I could supercharge the spire from below.",
+      "context_summary": "托尼和FRIDAY讨论单纯让索尔击打尖塔只会造成开裂；计划还涉及封住另一端，让作用折返及从下方加强尖塔。这里只摘台词，不由转写证明成片的全部视觉过程或能量分摊。",
+      "verification": "2026-10-27核对既有实际研究的本地转写；本轮未重新观影。决定细节有争议时回到电影索科维亚最后一击前后的连续场景。",
+      "research_snapshot_sha256": "cfa31d12d6347f7602b27799d5c284445ab7c3bdb6428179b648959cc94fed2f"
+    },
+    {
+      "id": "pantheon-bio",
+      "title": "Pantheon — The Unbreakable Spear",
+      "url": "https://universe.leagueoflegends.com/en_US/story/champion/pantheon/",
+      "original_data_url": "https://universe-meeps.leagueoflegends.com/v1/en_us/champions/pantheon/index.json",
+      "source_kind": "official_work_biography",
+      "work_version": "英雄联盟Universe潘森传记；2026-10-24官方数据快照",
+      "locator": "传记第7-9段；研究编号转写0007-0009",
+      "excerpt": "a blow that carved the constellation of War from the heavens.",
+      "context_summary": "亚托克斯的弑神之刃刺入战争星灵所占据的躯体，战争星座出现对应消失；随后星灵消逝而阿特瑞斯重新醒来，负伤存活。",
+      "verification": "2026-10-27核对本地官方数据快照及编号转写。当前网页壳可打开而正文未由网页工具读取，不将Wiki转述当新原作证据。",
+      "research_snapshot_sha256": "99c9a05bb48f3743b5589c6333715a2b2e1761f203f37c8c2f822872bb54c476"
+    },
+    {
+      "id": "scp-3143",
+      "title": "SCP-3143 — The Foundation Always Rings Twice!",
+      "url": "https://scp-wiki.wikidot.com/scp-3143",
+      "author": "The Great Hippo",
+      "license": "CC BY-SA 3.0；本题摘录和对原文的改述依相同许可使用。",
+      "source_kind": "official_work_page",
+      "work_version": "SCP-3143英文原条目；本题仅采用Description机制和首次访谈开场",
+      "locator": "Description前两段；Addendum 3143.1首次访谈办公室开场",
+      "excerpt": "temporarily 'flatten' portions of reality into a script-like narrative",
+      "context_summary": "描述区把受影响者的属性变化及叙事结束后事件投射回现实都纳入机制；首次访谈开场的侦探形象胸中有弹。不能只截取开场而忽略机制，或只读机制而把全部肉身属性无证复制。",
+      "verification": "2026-10-27重新打开原条目核对Description和访谈开场；短摘录和机制与2026-10-24研究快照一致。",
+      "research_snapshot_sha256": "660326506eb4ec262dbedcf83ddb82beeb7ed28712210e5a959a0011bd1be63a",
+      "author_url": "https://www.wikidot.com/user:info/the-great-hippo"
+    },
+    {
+      "id": "scp-3812",
+      "title": "SCP-3812 — A Voice Behind Me",
+      "url": "https://scp-wiki.wikidot.com/scp-3812",
+      "author": "djkaktus",
+      "license": "CC BY-SA 3.0；本题摘录和对原文的改述依相同许可使用。",
+      "source_kind": "official_work_page",
+      "work_version": "SCP-3812英文原条目；不拼接全站其他连续性",
+      "locator": "Addenda 3812.5、3812.6；后者研究者的层叠模型段",
+      "excerpt": "must supersede anything that supersedes it",
+      "context_summary": "条目区分研究者提出的叙事层叠假说、B的创造者自述，以及持续超越的讨论。原文未给一个可直接代入通用算术的唯一递推式。",
+      "verification": "2026-10-27重新打开官方原条目核对该短摘录和附录位置。",
+      "author_url": "https://scp-wiki.wikidot.com/djkaktus"
+    },
+    {
+      "id": "endgame-screenplay",
+      "title": "Avengers: Endgame — FYC adapted screenplay",
+      "url": "https://disneystudiosawards.s3.amazonaws.com/avengers-endgame/Avengers_Endgame.pdf",
+      "authors": "Christopher Markus and Stephen McFeely",
+      "source_kind": "official_screenplay",
+      "work_version": "官方颁奖季剧本；本题引用剧本，不假定每处与成片剪辑相同",
+      "locator": "PDF第112页（从1计），印刷页110；索尔要求戴手套与浩克解释伽马射线的同场对话",
+      "excerpt": "I’m the strongest Avenger.",
+      "context_summary": "索尔用自己的最强声明争取戴手套；托尼指出其当时状态不合适，浩克继而以辐射特征提出自己更适合，同时明确不能保证存活。",
+      "verification": "2026-10-27重新打开官方PDF，核对同页上下文。",
+      "research_snapshot_sha256": "0db2e1f32cc11bf7d835151388a69b9dedf5d4a8e965f8b7cf48a157e1b0d69f"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "SB-01",
+      "topic": "武器对波与身体体防",
+      "source_ids": [
+        "disney-stormbreaker"
+      ],
+      "fixed_context": "取MCU《复仇者联盟3》瓦坎达末尾的暴风战斧攻击。为隔离推理问题，本题给定已核镜头命题：被投出的斧头穿过灭霸发射的宝石光束后刺入其胸口；这不是索尔裸身承受光束。题目不提供宝石当次输出等于响指效果或最大输出的桥。",
+      "candidate_reasoning": "六石能影响宇宙；斧头穿过六石光束；因此索尔身体体防、普通拳头及任何状态的输出都等于六石全部效果。反过来，斧头有特殊性，所以这场景对索尔的武器配置完全无评级价值。",
+      "task": "分别审查两端推断。说明武器、投掷者、目标肉身、特定光束与宝石其他作用之间还能传什么；哪些独立证据可以补出身体属性桥。",
+      "variant": "若另给相同状态的身体承受同种、同等强度光束且机制相同的可靠证据，解释哪些结论可变化，哪些仍不能扩成全部六石能力。"
+    },
+    {
+      "case_id": "SB-02",
+      "topic": "阻止灾难的贡献",
+      "source_ids": [
+        "ultron-dialogue"
+      ],
+      "fixed_context": "取《复仇者联盟2》索科维亚计划。原计划让升空地块坠落造成灾难；英雄采用尖塔、索尔击打和托尼方案来破坏地块。仅给机制台词，未给能量分摊、地块模型或全部视觉参数。",
+      "candidate_reasoning": "他们阻止了灭绝灾难，所以索尔本人一次普通攻击必定等于整个灾难总能量。既然有尖塔和托尼参与，索尔也只能算启动开关，个人力量没有任何可评贡献。",
+      "task": "还原因果链并评两种极端。区分灾难若发生的后果、实际处理的对象、机制改变、输入能量与本人贡献。给出可继续计算或语义评定的路径，不强造均分比例。",
+      "variant": "若后续原始制作资料明确尖塔只改变能量传播方式而不放大输入，解释对贡献归属的影响；若明确含外部储能放大，则作相反分支。两分支都不能直接消除已发生的协同破坏。"
+    },
+    {
+      "case_id": "SB-03",
+      "topic": "星灵死亡与星座变化",
+      "source_ids": [
+        "pantheon-bio"
+      ],
+      "fixed_context": "仅使用该版本潘森传记；不将游戏内机制、其他星灵或所有天体默认同质。原文同时记载弑神攻击、战争星座变化和宿主负伤存活。",
+      "candidate_reasoning": "天空中的星座消失，所以亚托克斯必以普通热爆炸逐颗摧毁若干真实恒星，全部近战和自身体防都应相同。另一解释是星灵联系造成结果，因此星座消失和弑神效果都无需纳入评定。",
+      "task": "给出可接受的解释集合与各自需要的桥。分别审查天体物理破坏、星灵/概念联系、攻击的有效范围和身体属性，不把缺热能参数反推事件为假。",
+      "variant": "若后文能证明星座是实际恒星且其消失由存在联系抹除造成，说明可以支持哪些作用与范围，为什么不必先改写为逐星爆破。"
+    },
+    {
+      "case_id": "SB-04",
+      "topic": "叙事机制与故事内肉身",
+      "source_ids": [
+        "scp-3143"
+      ],
+      "fixed_context": "仅评本条目给出的叙事构造与侦探角色；不预借其他canon的整体宇宙论或额外武器。胸部有弹的情节和类型化机制均在审查范围内。",
+      "candidate_reasoning": "侦探会中弹，故其全部能力只能是普通人，叙事作用不算实力。或：既能把现实写成故事，其任何肉身、普通手枪、速度和体防都自动等于整个被影响结构。",
+      "task": "拆分角色在故事中的身体表现、使故事发生的机制、作用对象与恢复后投射的后果；说明两种极端分别遗漏了什么。给出能够影响综合主档的关系而不无证复制九维。",
+      "variant": "对另一个作品的陌生目标，说明需要比较哪些发动条件、目标适用性和抗性；不要因名为叙事就默认跨作品绝对有效，也不要因仍属虚构就否定作品内权限。"
+    },
+    {
+      "case_id": "SB-05",
+      "topic": "局部数学下限与整个结构",
+      "source_ids": [
+        "scp-3812"
+      ],
+      "fixed_context": "研究者用一个可数序数塔模型刻画已选出的内层子结构，正确算得该模型的极限仍可数；这是本题给定的分析模型，绝不冒称原作直接写了omega塔。B的自述和叙事超越关系尚未被这个模型覆盖。",
+      "candidate_reasoning": "已经精确算出内层可数，所以整个原生构造的综合主档也只能按可数模型封顶。或：模型漏了超越关系，因此自动补成幂集、阿列夫或任意大基数，具体门槛已经成立。",
+      "task": "说明这次计算实际证明什么，尚未处理什么；提出完成整体选档的下一步。评定可接受解释的共同边界，不要求某个固定档位；拒绝数学桥时仍须处置原生关系。",
+      "variant": "若外层实际仅容纳该模型、没有改变基底/迭代域/闭包/权限，有据审查后可能同档；若外层建立质差或权限，则解释为什么必须另行纳入候选，而非机械按层数换算。"
+    },
+    {
+      "case_id": "SB-06",
+      "topic": "最强声明的集合与属性范围",
+      "source_ids": [
+        "endgame-screenplay"
+      ],
+      "fixed_context": "剧本中的最强是索尔当场自述，语境为谁戴手套；同场存在状态和辐射适应讨论。它不是全知旁白对全部版本角色及九维能力所作的正式排序。",
+      "candidate_reasoning": "最强复仇者意味着索尔比任何过去未来复仇者、反派和宇宙实体都更快、更聪明、更抗任何能力，且必最适合戴手套。反过来，因为这是角色说的话，所有最强设定都毫无证据价值。",
+      "task": "还原说话者、比较集合、时间、状态及最强的属性语义，评两种极端；说明该句可作为何种强度的证据、哪些高权重补证可以改变采纳程度。",
+      "variant": "若改为可靠作者资料明确某状态角色是当时某集合内综合战力最强，允许据此建立相关比较；解释为什么仍不能无桥扩成所有特殊抗性或逐项九维第一。"
+    }
+  ]
+}

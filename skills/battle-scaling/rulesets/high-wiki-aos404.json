@@ -9,20 +9,146 @@
     "kind": "community_site_rule"
   },
   "anchors": [
-    {"id": "old_godbox_stage4", "system": "AOS", "label": "论外一线", "identity": {"work": "神盒世界", "version": "旧版", "stage": "4"}},
-    {"id": "old_godbox_stage5", "system": "AOS", "label": "论外超一线", "identity": {"work": "神盒世界", "version": "旧版", "stage": "5"}},
-    {"id": "old_godbox_stage6", "system": "AOS", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "6"}},
-    {"id": "old_godbox_stage7", "system": "AOS", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "7"}},
-    {"id": "old_godbox_stage8", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "8"}},
-    {"id": "old_godbox_stage9", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "9"}},
-    {"id": "old_godbox_stage10", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "10"}},
-    {"id": "old_godbox_stage11", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "11"}},
-    {"id": "old_godbox_stage12", "system": "AOS", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "12"}},
-    {"id": "old_godbox_infinite_stage", "system": "AOS", "label": "论外天花板上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "infinite"}},
-    {"id": "old_godbox_abyss", "system": "404", "label": "论外天花板下层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "深渊之底"}},
-    {"id": "old_godbox_eternal_core", "system": "404", "label": "论外天花板中层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "永恒之核新形式"}},
-    {"id": "old_godbox_primal", "system": "404", "label": "论外天花板上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "原始无极天"}},
-    {"id": "old_godbox_supreme", "system": "404", "label": "论外天花板最上层", "identity": {"work": "神盒世界", "version": "旧版", "stage": "太上超然界"}}
+    {
+      "id": "old_godbox_stage4",
+      "system": "AOS",
+      "label": "论外一线",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "4"
+      }
+    },
+    {
+      "id": "old_godbox_stage5",
+      "system": "AOS",
+      "label": "论外超一线",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "5"
+      }
+    },
+    {
+      "id": "old_godbox_stage6",
+      "system": "AOS",
+      "label": "论外天花板下层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "6"
+      }
+    },
+    {
+      "id": "old_godbox_stage7",
+      "system": "AOS",
+      "label": "论外天花板下层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "7"
+      }
+    },
+    {
+      "id": "old_godbox_stage8",
+      "system": "AOS",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "8"
+      }
+    },
+    {
+      "id": "old_godbox_stage9",
+      "system": "AOS",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "9"
+      }
+    },
+    {
+      "id": "old_godbox_stage10",
+      "system": "AOS",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "10"
+      }
+    },
+    {
+      "id": "old_godbox_stage11",
+      "system": "AOS",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "11"
+      }
+    },
+    {
+      "id": "old_godbox_stage12",
+      "system": "AOS",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "12"
+      }
+    },
+    {
+      "id": "old_godbox_infinite_stage",
+      "system": "AOS",
+      "label": "论外天花板上层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "infinite"
+      }
+    },
+    {
+      "id": "old_godbox_abyss",
+      "system": "404",
+      "label": "论外天花板下层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "深渊之底"
+      }
+    },
+    {
+      "id": "old_godbox_eternal_core",
+      "system": "404",
+      "label": "论外天花板中层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "永恒之核新形式"
+      }
+    },
+    {
+      "id": "old_godbox_primal",
+      "system": "404",
+      "label": "论外天花板上层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "原始无极天"
+      }
+    },
+    {
+      "id": "old_godbox_supreme",
+      "system": "404",
+      "label": "论外天花板最上层",
+      "identity": {
+        "work": "神盒世界",
+        "version": "旧版",
+        "stage": "太上超然界"
+      }
+    }
   ],
   "ordering_note": "以上是具名锚点与标签索引；不同system的同名标签不直接比较，也不将阶段编号当数值强度。",
   "caveats": [

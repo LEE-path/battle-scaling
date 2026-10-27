@@ -1,47 +1,75 @@
 {
-  "release": "v1.12.3",
-  "date": "2026-10-24",
-  "scope": "Current distribution package",
+  "release": "v1.21.0",
+  "date": "2026-10-28",
+  "scope": "Current full distribution; clean isolated installation on Windows. No account sessions, model weights or source media are distributed.",
   "checks": {
-    "writing_unittest": {
-      "run": 67,
+    "skill_unittest": {
+      "tests": 921,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "successful": true
+    },
+    "novel_refpack_unittest": {
+      "tests": 30,
+      "failures": 0,
+      "errors": 0,
       "skipped": 0,
+      "successful": true
+    },
+    "video_unittest": {
+      "tests": 20,
+      "failures": 0
+    },
+    "video_typecheck": "passed",
+    "full_clean_install": "passed",
+    "full_installed_media_ready": true,
+    "bundled_font_collage": {
+      "collage_rendered": true,
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bundled_font": true,
+      "bili_and_acquire_cli_import": true
+    },
+    "mp4_export_smoke": {
+      "rendered": true,
+      "requested_scale": 0.35,
+      "effective_scale": 0.34444444444444444,
+      "duration": 2.0,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 372,
+          "height": 496,
+          "side_data_list": [
+            {}
+          ]
+        }
+      ]
+    },
+    "upstream_npm_lockfile": "npm ci succeeded in fresh distribution",
+    "bilibili_account_login": "Not repeated with a borrowed account; QR/download code and CLI shipped, user must log in",
+    "generation_backends": "Connection workflows shipped; no provider/model silently installed",
+    "template_count": 9,
+    "publication_guard": "complete current upload inventory and redacted offline privacy scan; fixed fixtures narrowly fingerprinted",
+    "release_tools_unittest": {
+      "tests": 29,
       "failures": 0,
       "errors": 0
     },
-    "skill_frontmatter": "valid",
-    "public_package_manifest": "valid",
-    "public_story_files_remaining": 0,
-    "retired_index_removed": true,
-    "new_methods_document": true,
-    "missing_markdown_file_targets": 0,
-    "executable_changes": 0,
-    "manifest_files": 236
+    "fresh_python_without_Pillow_bootstrap": "passed",
+    "install_preserves_existing_video_runtime": "passed",
+    "python_dependency_constraints": {
+      "packages": 43,
+      "source": "successful clean isolated installation"
+    }
   },
-  "reused_baseline": {
-    "release": "v1.12.2",
-    "checks": {
-      "skill_unittest": {
-        "run": 848,
-        "skipped": 2,
-        "failures": 0,
-        "errors": 0
-      },
-      "novel_refpack_unittest": {
-        "run": 24,
-        "skipped": 0,
-        "failures": 0,
-        "errors": 0
-      },
-      "skill_frontmatter": "valid",
-      "static_privacy_secret_signature_scan": "no hits",
-      "markdown_file_targets": "no missing targets",
-      "forbidden_source_media_models_private_db": "none included"
-    },
-    "reason": "All executable scripts remain byte-identical; documentation and writing-reference replacement only. Full suite not rerun for this documentation update."
-  },
-  "notes": [
-    "Automated checks validate routing and implementation behavior, not literary equivalence.",
-    "No tutorial story texts, source-story quotations, dialogue excerpts or renamed stories are included in the new writing methods document."
+  "limitations": [
+    "Tests do not validate every canon judgment or guarantee host research/model quality.",
+    "Windows clean-install tested; other systems may require browser/system setup.",
+    "Audio, character assets and API/model accounts are supplied by the user."
   ]
 }

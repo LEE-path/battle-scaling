@@ -1,0 +1,110 @@
+{
+  "id": "V06",
+  "duration_s": 45.566313,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V06.m4a",
+  "comparison_slot_count": 10,
+  "dedicated_verdict_slot_count": 0,
+  "stages": [
+    {
+      "start": 0,
+      "end": 27.033,
+      "role": "双方登场/气势展示"
+    },
+    {
+      "start": 27.033,
+      "end": 43.8,
+      "role": "十项比较与单人揭晓"
+    },
+    {
+      "start": 43.8,
+      "end": 45.566313,
+      "role": "作者标识与淡出"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 27.033,
+      "reveal_cut_s": 27.833,
+      "next_cut_s": 28.733
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 28.733,
+      "reveal_cut_s": 29.533,
+      "next_cut_s": 30.233
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 30.233,
+      "reveal_cut_s": 31.033,
+      "next_cut_s": 31.867
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 31.867,
+      "reveal_cut_s": 32.667,
+      "next_cut_s": 33.5
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 33.5,
+      "reveal_cut_s": 34.3,
+      "next_cut_s": 35.133
+    },
+    {
+      "order": 6,
+      "original_label": "反应力",
+      "original_role": "attribute",
+      "label_cut_s": 35.133,
+      "reveal_cut_s": 35.867,
+      "next_cut_s": 36.6
+    },
+    {
+      "order": 7,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 36.6,
+      "reveal_cut_s": 37.367,
+      "next_cut_s": 38.2
+    },
+    {
+      "order": 8,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 38.2,
+      "reveal_cut_s": 39,
+      "next_cut_s": 39.833
+    },
+    {
+      "order": 9,
+      "original_label": "勇气",
+      "original_role": "attribute",
+      "label_cut_s": 39.833,
+      "reveal_cut_s": 40.533,
+      "next_cut_s": 41.4
+    },
+    {
+      "order": 10,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 41.4,
+      "reveal_cut_s": 42.233,
+      "next_cut_s": 43.8
+    }
+  ]
+}

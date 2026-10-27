@@ -239,13 +239,14 @@ def enrich(request, out, rule):
     if result.get("domain") == "fiction_native":
         nodes = {n["id"]: n for n in result.get("nodes", [])}
         admitted = {s.get("node"): s.get("admitted") is True for s in out.get("steps", []) if str(s.get("rule", "")).startswith("native_")}
+        support = result.get("node_support", {})
         for check in result.get("typed_checks", []):
             node_id = check["node"]
             node = nodes[node_id]
-            if admitted.get(node_id) and _source_present(node):
+            if admitted.get(node_id) and (support.get(node_id, {}).get("source_present") or _source_present(node)):
                 _mathematical_map(request, out, rule, check["mathematical_check"].get("result", {}), node=node_id)
         for node in nodes.values():
-            _historical_identity(request, out, rule, node.get("identity"), admitted.get(node["id"]) and _source_present(node), node=node["id"])
+            _historical_identity(request, out, rule, node.get("identity"), admitted.get(node["id"]) and (support.get(node["id"], {}).get("source_present") or _source_present(node)), node=node["id"])
         if not out["mappings"]:
             _gap(out, "native_no_mathematical_bridge", "The DAG/phi names alone do not prove ordinal/cardinal values or an applicable named standard criterion.")
     return out

@@ -53,14 +53,15 @@ class WritingBattleTests(unittest.TestCase):
             self.assertEqual(result['standard'], standard or 'wangba')
             self.assertEqual(result['status'], 'structure_checked')
 
-    def test_all_nine_dimensions_are_requested_without_inventing_missing_ratings(self):
+    def test_all_nine_display_dimensions_are_derived_from_the_real_accepted_rating(self):
         request = sample()
         del request['fighters'][0]['ratings']
         result = run(request)
-        self.assertEqual(result['status'], 'needs_input')
+        self.assertEqual(result['status'], 'structure_checked')
+        row = result['author_pack']['independent_ratings'][0]
         for field in RATING_FIELDS:
-            self.assertTrue(any('.ratings.' + field in item for item in result['needs']))
-        self.assertNotIn('ratings', result['author_pack']['fighters'][0])
+            self.assertEqual(result['author_pack']['fighters'][0]['ratings'][field], row['dimensions'][field]['label'])
+        self.assertNotIn('ratings', request['fighters'][0])
 
     def test_incomplete_skill_mechanism_becomes_a_need(self):
         request = sample()

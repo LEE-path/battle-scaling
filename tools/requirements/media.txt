@@ -1,0 +1,7 @@
+# Lightweight media acquisition and composition. No model weights.
+Pillow>=13,<14
+requests>=2.32,<3
+qrcode[pil]>=8,<9
+yt-dlp>=2026.8.19
+gallery-dl>=1.32.18
+bilibili-api-python>=17.4,<18

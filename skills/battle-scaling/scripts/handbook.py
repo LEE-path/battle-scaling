@@ -13,13 +13,13 @@ DATA = ROOT/'data/wangba-handbook-2026-07-30'
 
 
 class OptionalCorpusMissing(ValueError):
-    """A rule-table installation can operate without redistributing the OCR."""
+    """The compiled rule tables do not require redistribution of full OCR."""
 
 
 def corpus_install_hint():
-    return ('optional_handbook_corpus_missing: the public distribution excludes the '
-            '310-page original OCR corpus. Obtain your own authorized local corpus '
-            'matching manifest.json corpus_sha256, then run from the repository root: '
+    return ('optional_handbook_corpus_missing: obtain your authorized local corpus '
+            'matching manifest.json corpus_sha256. Put pages.jsonl in the Skill data/'
+            'wangba-handbook-2026-07-30/ directory. In the public repository, you can instead run: '
             'python tools/import_handbook_corpus.py --source-dir <local-corpus-directory> '
             '--skill-root <installed-battle-scaling-directory>. '
             'The selected rule version is unchanged; no automatic download or legacy fallback occurs.')
@@ -168,9 +168,7 @@ def run(request, data_dir=None):
     if operation == 'render':
         return store.render(request.get('sequence_page'),request['output'],request.get('source_dir'),request.get('crop'))
     if operation == 'info':
-        return {'status':'ok',**store.manifest,
-                'corpus_installed':store.corpus_installed,
-                'optional_corpus_help':None if store.corpus_installed else corpus_install_hint()}
+        return {'status':'ok',**store.manifest, 'corpus_installed':store.corpus_installed, 'optional_corpus_help':None if store.corpus_installed else corpus_install_hint()}
     if operation == 'rule':
         return store.clause(request.get('clause_id'))
     raise ValueError('operation must be info, search, page, rule, verify-sources or render')

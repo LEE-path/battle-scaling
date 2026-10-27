@@ -1,0 +1,1638 @@
+{
+  "version": "1.21.0",
+  "scope": "Static distribution; runtime libraries and user media excluded.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 127,
+      "sha256": "b1787733b743c22ff61f3a7c9edb866468f0698afa7db27c95c74a380e80a17d"
+    },
+    ".gitignore": {
+      "bytes": 986,
+      "sha256": "cbef663d1a6e03251b4f8ea94b331aa4664a59398bc95feccdb16e3f8f200c94"
+    },
+    "LICENSE": {
+      "bytes": 1086,
+      "sha256": "6a806a732581063b9d2764fa429ef617a3b65a0047939062ba084870a1b90d78"
+    },
+    "NOTICE.md": {
+      "bytes": 3693,
+      "sha256": "a6a416b46b86a87759ffe1b8cb5e93f5c6583d922f672b28fdf909f228ed9cbd"
+    },
+    "README.en.md": {
+      "bytes": 13526,
+      "sha256": "56af7644a2fa958c75028014c4346127d0a26ede69e9f08ccac44e9b7df8c48b"
+    },
+    "README.md": {
+      "bytes": 11942,
+      "sha256": "ce1fbdeb3208c560bc13816ae3fdc4609153443e6685071f302096dcc4c7e183"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 24786,
+      "sha256": "59100be2a6ca62b8cb6bcfdf361ff3724b3f932055c4b6401114ec4a2852d887"
+    },
+    "UPSTREAM-SOURCES.json": {
+      "bytes": 26667,
+      "sha256": "03eb9efa32978e64c7a22903102670ae7dc715c71b7cbba544ce43c005e6b4a2"
+    },
+    "docs/CURRENT-RELEASE-AUDIT.md": {
+      "bytes": 3447,
+      "sha256": "ff5015a3976ae2088f776ba4140f374fba6ac8c8cd01fcb787edb1aeeb50e98f"
+    },
+    "docs/INSTALL.md": {
+      "bytes": 8171,
+      "sha256": "1a82909277ea82dfabba60889a1a09ba61d22560af5253c1ecb6dd70046e23cb"
+    },
+    "docs/PUBLIC-CONTENT-AUDIT.md": {
+      "bytes": 1473,
+      "sha256": "115a2dc614e1c036e7e02b44a0dd20fa214d069f30a360978f63571ce0eaa23f"
+    },
+    "docs/PUBLICATION-SYNC.md": {
+      "bytes": 7375,
+      "sha256": "3f070fdf139a42b890f4bab701ae199a93ecf58488f225a852088e6dd150eea7"
+    },
+    "docs/RELEASE-v1.12.2.md": {
+      "bytes": 2815,
+      "sha256": "9e2337974ee5a980b288134707e0e2eceac5059d38c0df6a9ee39c5689ab8037"
+    },
+    "docs/RELEASE-v1.12.3.md": {
+      "bytes": 1372,
+      "sha256": "329cfbaf28023c356881fca980fc81e7a8abc3130ddebe4321b6a30edc976b63"
+    },
+    "docs/assets/hero-en.png": {
+      "bytes": 2778122,
+      "sha256": "9bd158d59490626cdc4651d953c727d6d2426b7711283f1f1dd32392c3327411"
+    },
+    "docs/assets/hero-zh.png": {
+      "bytes": 2944732,
+      "sha256": "7f1348876d94023b2384fa56f48f85b885c31d4498c21e0653c4560ff7fa692f"
+    },
+    "docs/branding.md": {
+      "bytes": 2042,
+      "sha256": "82795ad54f0703d2ad6e5bc790cf8ffd34519a23cf673e7f59bda59cea249c97"
+    },
+    "docs/public-content-transform.json": {
+      "bytes": 1008,
+      "sha256": "26091c1dfcdc6d41f41bfa00175a6704307c78aeeb63db8bb408a6f5b9653f82"
+    },
+    "docs/public-distribution.md": {
+      "bytes": 5397,
+      "sha256": "0edbbfcfae00d7d2b1ef0b343b873ec551827f2959d8d8b2b6efc61856b5f028"
+    },
+    "docs/release-validation.json": {
+      "bytes": 2388,
+      "sha256": "9a9399e78f7f1b1c5c13440ce7e5cbacb702fbe358991c419bcdb6ecdae15899"
+    },
+    "skills/battle-scaling/LICENSE": {
+      "bytes": 1086,
+      "sha256": "6a806a732581063b9d2764fa429ef617a3b65a0047939062ba084870a1b90d78"
+    },
+    "skills/battle-scaling/NOTICE.md": {
+      "bytes": 1751,
+      "sha256": "887793a9ca01ace6f62de8b8bc3d95feced5335707a10195a04e7a6abadb5810"
+    },
+    "skills/battle-scaling/SKILL.md": {
+      "bytes": 17629,
+      "sha256": "6126e70fe655731983a6d690cfd8941df7aa446c76f7f0ee0a40860faca52961"
+    },
+    "skills/battle-scaling/THIRD_PARTY_NOTICES.md": {
+      "bytes": 22003,
+      "sha256": "4af7f1cb461698d52ec44760d9da0e30f609382b21db609cc74df787efcc31c9"
+    },
+    "skills/battle-scaling/agents/openai.yaml": {
+      "bytes": 728,
+      "sha256": "cf70a87cc4ff450e3ca5ca3fb909fe245ffb748c8cebed3d532a32e247b20b17"
+    },
+    "skills/battle-scaling/assets/cases/feat-review-synthetic.json": {
+      "bytes": 4689,
+      "sha256": "160b167d68742b4498c846f214290b0aaf31a1037a78ec2c2331145c0740c32e"
+    },
+    "skills/battle-scaling/assets/cases/hax-ceiling-synthetic.json": {
+      "bytes": 2638,
+      "sha256": "1dd5f7af9d479cc920406db8f678d494e7e6e7a2a6a556d397123c233ea46dd3"
+    },
+    "skills/battle-scaling/assets/cases/high-godbox-stage4.json": {
+      "bytes": 5607,
+      "sha256": "54ff12baa56eebffaaf3dbca7a66de082b2b5fcd41532e54146649505ba96c4a"
+    },
+    "skills/battle-scaling/assets/cases/high-scp3812.json": {
+      "bytes": 2464,
+      "sha256": "db113dcada2a92b542b4ab136649a21010ca1717ee3ccc62f02bc4109c72a973"
+    },
+    "skills/battle-scaling/assets/cases/high-whitelight.json": {
+      "bytes": 2097,
+      "sha256": "80d61dee097dbc706a73bad0ab93a571641c0ccd21109a06b516fcabff96c50c"
+    },
+    "skills/battle-scaling/assets/cases/physics-earth-binding.json": {
+      "bytes": 1182,
+      "sha256": "2a482cf67e8c417fe9dc33664db4f425aea64db43570e13fe8bfff6e5bea80b2"
+    },
+    "skills/battle-scaling/assets/cases/physics-wood-bending-conditional.json": {
+      "bytes": 1807,
+      "sha256": "5913cb94face7f2d0cf3b68e863ba1ed42091d078bdedade19850a761f1302cc"
+    },
+    "skills/battle-scaling/assets/cases/pk-dual-presentation-synthetic.json": {
+      "bytes": 41098,
+      "sha256": "eec138ebde50d3ff7542a197643cc438cae55cf13830a98d5fa397e15cd7f057"
+    },
+    "skills/battle-scaling/assets/cases/pk-process-synthetic.json": {
+      "bytes": 35078,
+      "sha256": "c59e14791e3eb85cd76bfffa68f646ce91eaf5cc99fc9b205f450d7ecfcf39c4"
+    },
+    "skills/battle-scaling/assets/cases/research-animals.json": {
+      "bytes": 18347,
+      "sha256": "63ce0148f05ec2a7f6f27d797a6894e4d5b532b517968ce57519acd6ce7f45de"
+    },
+    "skills/battle-scaling/assets/cases/research-captain-wood.json": {
+      "bytes": 15823,
+      "sha256": "b7a42703d79b7cb19e15929e783e111990f00beac21adebdb6b967cb53085dba"
+    },
+    "skills/battle-scaling/assets/cases/research-deathstar.json": {
+      "bytes": 21696,
+      "sha256": "d85dd10a4c4ff9c4f8898755fbd76ee1b67fea265f27c8ff406d6e935844c0c9"
+    },
+    "skills/battle-scaling/assets/cases/research-franx.json": {
+      "bytes": 17831,
+      "sha256": "16dc9bb692e8c80291881de393e33ed098687733ce7822c6cb20aedf01b8f3f5"
+    },
+    "skills/battle-scaling/assets/cases/standards-switch-synthetic.json": {
+      "bytes": 10218,
+      "sha256": "0851f76d897ba62683093b60062d252392f2085fd0e4ea40566ca5874448fc44"
+    },
+    "skills/battle-scaling/assets/cases/writing-battle-synthetic.json": {
+      "bytes": 21849,
+      "sha256": "4d771a1d134281306658bb63d39c78270a88aa01c3a651fc9ad0fcf5535ae344"
+    },
+    "skills/battle-scaling/assets/cases/writing-fidelity-synthetic.json": {
+      "bytes": 26927,
+      "sha256": "be6f2048cf7ea370f1b0b3e7a840c6ae911edf9f207e4abbba815bd4425d8e9d"
+    },
+    "skills/battle-scaling/assets/formula-ocr-validation/crop-manifest.json": {
+      "bytes": 3073,
+      "sha256": "2668c4c4a32cb3382dda12680f40635283b8c896870a45cbce80d0181085edf8"
+    },
+    "skills/battle-scaling/assets/formula-ocr-validation/formula-results-threshold160.json": {
+      "bytes": 8331,
+      "sha256": "2213df9a4525614c666b51455e10510c48dd35304c18e14e0d8005c7e14bdda5"
+    },
+    "skills/battle-scaling/assets/formula-ocr-validation/formula-results.json": {
+      "bytes": 7523,
+      "sha256": "a89f3c8229ef116a82c63634ee22ec4a2e17266ffd559106c63ab1707cb18e35"
+    },
+    "skills/battle-scaling/assets/formula-ocr-validation/model-manifest.json": {
+      "bytes": 1834,
+      "sha256": "98d5d0d3743361ccd83dffa95ba542236f58e7fd101d0cc401fabde36ba4a412"
+    },
+    "skills/battle-scaling/assets/licenses/novel-refpack-MIT.txt": {
+      "bytes": 1083,
+      "sha256": "ccb9eb4a40e1bbccd09555ed5bad1b532729c67eac349022735ee53eba7f425f"
+    },
+    "skills/battle-scaling/assets/media/fonts/SmileySans-OFL.txt": {
+      "bytes": 4422,
+      "sha256": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72"
+    },
+    "skills/battle-scaling/assets/media/fonts/SmileySans-Oblique.ttf": {
+      "bytes": 2629764,
+      "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/center-overlay.png": {
+      "bytes": 448530,
+      "sha256": "f2b24c806c0d493b49cb471bc0ab4c1a66a1a731bed4cf564b5da4bc339f5c13"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/layout-guide.png": {
+      "bytes": 389723,
+      "sha256": "0ad471080f24ffa5fe9f963bfedc4b38cfd1376ebf7c6636f46bf6199ec449bd"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/template-1920x1080.png": {
+      "bytes": 448530,
+      "sha256": "f2b24c806c0d493b49cb471bc0ab4c1a66a1a731bed4cf564b5da4bc339f5c13"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/template-prompt.txt": {
+      "bytes": 2772,
+      "sha256": "b809170af76bb1bade017b84265b451518c677f7b29bfc43a69304bf22934b08"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/black-red-hourglass/layout-guide.png": {
+      "bytes": 2999729,
+      "sha256": "9a76a0968b68c40a90d9db4cfe95033f40e7ce1df2668a853534187c954481a6"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/black-red-hourglass/template-1920x1080.png": {
+      "bytes": 549103,
+      "sha256": "fd99799933b6413f61dff716c42cdf68639c262e68aba2e1e87a54c6e033d7de"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/black-red-hourglass/template-prompt.txt": {
+      "bytes": 1584,
+      "sha256": "bef207e2f3d2b5441385dfe258fadd3a1ef6798597a6966668eeef25f5839ca2"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-1920x1080.png": {
+      "bytes": 967790,
+      "sha256": "591cae3584f5dbc5af6a04a43bbac4372102b0eb1a43e32c6afa4dd2170b31ca"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-prompt.txt": {
+      "bytes": 1382,
+      "sha256": "ff0abcb72183d4cecddf9641639464a7308354c0accea646ea81a216dd722f4b"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/floating-vs/template-1920x1080.png": {
+      "bytes": 292194,
+      "sha256": "9cef6320719cd2abbb03c39cc064bee67828d0085a6ee8edd580567ebd64d1aa"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/floating-vs/template-prompt.txt": {
+      "bytes": 1019,
+      "sha256": "94fc50e4eaeeb542f1ef9080077db4e392b127dded7af8b3fbb5dc94454f58b4"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/ink-rift/template-1920x1080.png": {
+      "bytes": 561196,
+      "sha256": "0f208e8ef9f2a36031b0b7c6871f0c97c008fff1f581bf4443297ca503e9f485"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/ink-rift/template-prompt.txt": {
+      "bytes": 2685,
+      "sha256": "b09b9713dbb3a6b38f9a3e74292c5fbd4877033155e06f53126eb070fc030d06"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/prism-fault/template-1920x1080.png": {
+      "bytes": 391489,
+      "sha256": "64f6ed0610f1e0791777c83b82ea9a5d968ce3774cddb524b710dfb9c9b62a66"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/prism-fault/template-prompt.txt": {
+      "bytes": 2693,
+      "sha256": "859af7403538df8c2871c973778395f270244608bc330416370b0841c848478c"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/severed-edge/template-1920x1080.png": {
+      "bytes": 432744,
+      "sha256": "a1225271c499be03a44c8602445a7044b7010003529dbccef987012e067496f0"
+    },
+    "skills/battle-scaling/assets/media/pk-cover/variants/severed-edge/template-prompt.txt": {
+      "bytes": 2644,
+      "sha256": "4dd94e8340b6ded19a7bb005a5d4ab7f25b400a86a713e2ad85d94847374d685"
+    },
+    "skills/battle-scaling/assets/media/source-catalog.json": {
+      "bytes": 8927,
+      "sha256": "2a32ee71839699a125980e8ae2bceca187bf1305726c75c7eeeb8446c8dd3d0f"
+    },
+    "skills/battle-scaling/assets/media/video-branding/battle-scaling-watermark.png": {
+      "bytes": 17549,
+      "sha256": "29329493ed412aa9e06689abfb35e07ef7dfd3e4c68baf4d51ed3414ab0e7ca9"
+    },
+    "skills/battle-scaling/assets/media/video-presets/defaults.json": {
+      "bytes": 318,
+      "sha256": "6589239d6c674ef920b7da49dcb8b0079c2fa82d6331b4d8b8f780a65b09b4d3"
+    },
+    "skills/battle-scaling/assets/media/video-presets/presentation.json": {
+      "bytes": 37069,
+      "sha256": "d7133b3e404cd401543524ac26ab823f97f07f0be87a4baf5f77d3278f2a762b"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V01.json": {
+      "bytes": 3532,
+      "sha256": "84335f115b5aeb2b433dca1feefe8312e2726786a133e5ee711437b03f59f30f"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V02.json": {
+      "bytes": 3551,
+      "sha256": "69d934d61f657d386968301cab53582efc57cdf37403f6800b6422aadf010115"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V03.json": {
+      "bytes": 2800,
+      "sha256": "d16b29897e011b9370b8e67a9bdffa781c8df483d261a2311d518bdc3e257741"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V04.json": {
+      "bytes": 3272,
+      "sha256": "2bca83f887b15a91403c967f5e8aa102062cf34956f8d431ded59c38e86a6d46"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V05.json": {
+      "bytes": 3047,
+      "sha256": "baa900d7265ea32355cfc6606584a8741837559f4959f63f3321e2ecad53a5a5"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V06.json": {
+      "bytes": 2366,
+      "sha256": "c52f07a5e83244c13c41fccfecf09361b83ee3c86ccc1a8db479537b7a7f7f03"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V07.json": {
+      "bytes": 2760,
+      "sha256": "eb97ad359cf5ee8e41b6fd050aebcdabedf03bc1a1da7f7357147ff1cd0cdf73"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V08.json": {
+      "bytes": 3391,
+      "sha256": "0ef0262b1259644cba4210dc37d9a945a299cc0130a52d80c9d66fa8fdb90693"
+    },
+    "skills/battle-scaling/assets/media/video-presets/timelines/V09.json": {
+      "bytes": 3032,
+      "sha256": "86e26dd80c14ba4fbc74b75ccf4c1d3afbe825df167501189319ac1cfc431cb7"
+    },
+    "skills/battle-scaling/assets/media/video-presets/vs-layout.json": {
+      "bytes": 499,
+      "sha256": "972db86f78580d616efcec7b46e11b413208e71c25bf3658d046e9ee5d111031"
+    },
+    "skills/battle-scaling/assets/media/video-vs/prompts.json": {
+      "bytes": 6530,
+      "sha256": "01afb90fcf3ccd244eba6f6912270bf235509aeeb8e8ed1ef7c444a23d3f7cd4"
+    },
+    "skills/battle-scaling/assets/media/video-vs/vs-01-silver.png": {
+      "bytes": 1161695,
+      "sha256": "ae80eec120d97d199161e27e8dd2696bee57e9df71fd265a444245ab25441de6"
+    },
+    "skills/battle-scaling/assets/media/video-vs/vs-02-ink.png": {
+      "bytes": 811443,
+      "sha256": "3599f57b4057638e8390b5f7745794607760114b72ca322eba82668c8d9c1f65"
+    },
+    "skills/battle-scaling/assets/media/video-vs/vs-03-prism.png": {
+      "bytes": 816712,
+      "sha256": "45eeb9e7f7f0eae5c3b83a06cfaeb70eb184f38c93b7c7cc4f99921499bdc982"
+    },
+    "skills/battle-scaling/assets/media/video-vs/vs-04-comic.png": {
+      "bytes": 647775,
+      "sha256": "22f0318c27747695f958a3201417a9f0f651994d98fea8ba058aaa6c1dfea919"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/CASE.json": {
+      "bytes": 11442,
+      "sha256": "699a6392ccc9cc71d8290176f42b656cb90c38cf7f9ac6cb79861cbacaa2f1e4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/analysis.json": {
+      "bytes": 173273,
+      "sha256": "91359f806e6afd979561435d376617a95a35e8bba5560e383f456846d19fd213"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/derivations.json": {
+      "bytes": 6937,
+      "sha256": "9871d457cc45fc3a91b805b23d0414f8f252fed4518142211429e05a9a72d7cf"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/hax-checks.json": {
+      "bytes": 524,
+      "sha256": "4f38e72fd4b167d206ee629af6172e70adfeb0dd688333a905b61a6fd35d2aae"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/host-acceptance.json": {
+      "bytes": 799,
+      "sha256": "636fb687ac589f995514d09f5d50109bf553d0b63f6fb2a20a779c7a2248875b"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/manifest.json": {
+      "bytes": 3754,
+      "sha256": "4fcab0d25b56e331104f5372a99be51300685b4da909523cfecb983c6653414f"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/rating.json": {
+      "bytes": 4088,
+      "sha256": "ac8acbb7723d457aaa37875dd004ce3242c6f1a259d62625a347be0a876c2058"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/report.md": {
+      "bytes": 2098,
+      "sha256": "f8ca85ba99627f449b50d848825a69cfc606100383862a717f1a7487bcaba396"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/rules-snapshot.json": {
+      "bytes": 150126,
+      "sha256": "c52d24b23f3e3a943e3eefe8b1865058e16b1e86d91d7c653f2c9d3f0b1b4dbb"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/run-ledger.json": {
+      "bytes": 676,
+      "sha256": "1c8ce5b32cd847ff18661ff3977f366b7440fff9583323f48564184de36774ef"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/1-lan/sources.json": {
+      "bytes": 527,
+      "sha256": "36e91df04e20f8b451d5324a218601f202317fd4e21f388730dc0d3013b4ca36"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/CASE.json": {
+      "bytes": 11582,
+      "sha256": "b10a8eaf1a972944bc4cb2f954dfc69845b0f675c4d3eb4b52d2a3d72b80f00c"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/analysis.json": {
+      "bytes": 173379,
+      "sha256": "2ffbcd1af0baa07022787828d6a3526681558c0e67de187421827ed1bf63baed"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/derivations.json": {
+      "bytes": 6968,
+      "sha256": "872c042aec48574a1f623a52f3a85f9878f8ec48d6a5ee9ca4c956b3f38710ec"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/hax-checks.json": {
+      "bytes": 524,
+      "sha256": "4f38e72fd4b167d206ee629af6172e70adfeb0dd688333a905b61a6fd35d2aae"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/host-acceptance.json": {
+      "bytes": 799,
+      "sha256": "6497072c880168f16537ba4573caa5f11e093410956fb9efed2ee58aaee3d563"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/manifest.json": {
+      "bytes": 3755,
+      "sha256": "e855bff89bbbbc0d43239116abfc4d69d26732bfbde588bd3e0fe494f6b01c70"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/rating.json": {
+      "bytes": 4152,
+      "sha256": "34acd9c88c6dd7d7bf8ecaa0596bc99f1d97ab0d3ffc5a584f36fde40f4bdbe4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/report.md": {
+      "bytes": 2119,
+      "sha256": "3c950e46d9d9673a59aa742d4a0cab46606b4834122ef0eedfe9fe672c779184"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/rules-snapshot.json": {
+      "bytes": 150126,
+      "sha256": "c52d24b23f3e3a943e3eefe8b1865058e16b1e86d91d7c653f2c9d3f0b1b4dbb"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/run-ledger.json": {
+      "bytes": 677,
+      "sha256": "31ed951effeb66a7073f911e9a8daf9aaa5becea38e3fd36d5e4b529fc93200a"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/2-shuo/sources.json": {
+      "bytes": 527,
+      "sha256": "36e91df04e20f8b451d5324a218601f202317fd4e21f388730dc0d3013b4ca36"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/case-input-1.json": {
+      "bytes": 11442,
+      "sha256": "699a6392ccc9cc71d8290176f42b656cb90c38cf7f9ac6cb79861cbacaa2f1e4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-battle-synthetic/case-input-2.json": {
+      "bytes": 11582,
+      "sha256": "b10a8eaf1a972944bc4cb2f954dfc69845b0f675c4d3eb4b52d2a3d72b80f00c"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/CASE.json": {
+      "bytes": 11442,
+      "sha256": "699a6392ccc9cc71d8290176f42b656cb90c38cf7f9ac6cb79861cbacaa2f1e4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/analysis.json": {
+      "bytes": 173273,
+      "sha256": "91359f806e6afd979561435d376617a95a35e8bba5560e383f456846d19fd213"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/derivations.json": {
+      "bytes": 6937,
+      "sha256": "9871d457cc45fc3a91b805b23d0414f8f252fed4518142211429e05a9a72d7cf"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/hax-checks.json": {
+      "bytes": 524,
+      "sha256": "4f38e72fd4b167d206ee629af6172e70adfeb0dd688333a905b61a6fd35d2aae"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/host-acceptance.json": {
+      "bytes": 799,
+      "sha256": "636fb687ac589f995514d09f5d50109bf553d0b63f6fb2a20a779c7a2248875b"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/manifest.json": {
+      "bytes": 3754,
+      "sha256": "cb818313e03901d90d7791a53bee7ee9db820ab0ded508dcb893fa265e3a49b5"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/rating.json": {
+      "bytes": 4088,
+      "sha256": "ac8acbb7723d457aaa37875dd004ce3242c6f1a259d62625a347be0a876c2058"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/report.md": {
+      "bytes": 2098,
+      "sha256": "f8ca85ba99627f449b50d848825a69cfc606100383862a717f1a7487bcaba396"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/rules-snapshot.json": {
+      "bytes": 150126,
+      "sha256": "c52d24b23f3e3a943e3eefe8b1865058e16b1e86d91d7c653f2c9d3f0b1b4dbb"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/run-ledger.json": {
+      "bytes": 676,
+      "sha256": "b2cd5f46d3a59eb59fc6a6e47012d67cafe822cd8e2360c6e94d7c9468b10819"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/1-lan/sources.json": {
+      "bytes": 527,
+      "sha256": "36e91df04e20f8b451d5324a218601f202317fd4e21f388730dc0d3013b4ca36"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/CASE.json": {
+      "bytes": 11582,
+      "sha256": "b10a8eaf1a972944bc4cb2f954dfc69845b0f675c4d3eb4b52d2a3d72b80f00c"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/analysis.json": {
+      "bytes": 173379,
+      "sha256": "2ffbcd1af0baa07022787828d6a3526681558c0e67de187421827ed1bf63baed"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/derivations.json": {
+      "bytes": 6968,
+      "sha256": "872c042aec48574a1f623a52f3a85f9878f8ec48d6a5ee9ca4c956b3f38710ec"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/hax-checks.json": {
+      "bytes": 524,
+      "sha256": "4f38e72fd4b167d206ee629af6172e70adfeb0dd688333a905b61a6fd35d2aae"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/host-acceptance.json": {
+      "bytes": 799,
+      "sha256": "6497072c880168f16537ba4573caa5f11e093410956fb9efed2ee58aaee3d563"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/manifest.json": {
+      "bytes": 3755,
+      "sha256": "5d3c14eabae95a0e7abde2d955829b51d99f59c2fad46bbffe6f1607590653f4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/rating.json": {
+      "bytes": 4152,
+      "sha256": "34acd9c88c6dd7d7bf8ecaa0596bc99f1d97ab0d3ffc5a584f36fde40f4bdbe4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/report.md": {
+      "bytes": 2119,
+      "sha256": "3c950e46d9d9673a59aa742d4a0cab46606b4834122ef0eedfe9fe672c779184"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/rules-snapshot.json": {
+      "bytes": 150126,
+      "sha256": "c52d24b23f3e3a943e3eefe8b1865058e16b1e86d91d7c653f2c9d3f0b1b4dbb"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/run-ledger.json": {
+      "bytes": 677,
+      "sha256": "6a8324134ef7700a016db71015ab9b030c067fa04d3eb98f38b8ac101d8c4773"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/2-shuo/sources.json": {
+      "bytes": 527,
+      "sha256": "36e91df04e20f8b451d5324a218601f202317fd4e21f388730dc0d3013b4ca36"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/case-input-1.json": {
+      "bytes": 11442,
+      "sha256": "699a6392ccc9cc71d8290176f42b656cb90c38cf7f9ac6cb79861cbacaa2f1e4"
+    },
+    "skills/battle-scaling/assets/rating-fixtures/writing-fidelity-synthetic/case-input-2.json": {
+      "bytes": 11582,
+      "sha256": "b10a8eaf1a972944bc4cb2f954dfc69845b0f675c4d3eb4b52d2a3d72b80f00c"
+    },
+    "skills/battle-scaling/assets/site-experience-seeds.json": {
+      "bytes": 15639,
+      "sha256": "3370386292b5efb66bf66db59185eb9c04889f69988e5bb34f646c25c100b35f"
+    },
+    "skills/battle-scaling/assets/source-ledger.json": {
+      "bytes": 18598,
+      "sha256": "131ac1d218dc0e7b5f5d8044c369ecb6d2251a4533d3069af0bc1d3917a32ec1"
+    },
+    "skills/battle-scaling/assets/templates/novel-evidence-card.md": {
+      "bytes": 8704,
+      "sha256": "05c34c679b33bc94f12aa76b09bef7dc4dfea6c1914a81d963798513d8dee7d8"
+    },
+    "skills/battle-scaling/benchmarks/semantic-boundaries/README.md": {
+      "bytes": 4895,
+      "sha256": "009a1d31de3ec636a5c6d8394f3d07f6385852918240b8e61cd07c7fcc68a4fa"
+    },
+    "skills/battle-scaling/benchmarks/semantic-boundaries/answers.json": {
+      "bytes": 8750,
+      "sha256": "a772cac8dc8740ad9dbb44c1a4890c609c3d7eaf88b5122f930955a0b152b3cf"
+    },
+    "skills/battle-scaling/benchmarks/semantic-boundaries/prompts.json": {
+      "bytes": 13258,
+      "sha256": "9272ae727c5109afa48a9a90aadc130eb442b96cef413b98a611a7c2026450fc"
+    },
+    "skills/battle-scaling/data/wangba-handbook-2026-07-30/directory.json": {
+      "bytes": 15631,
+      "sha256": "43c48cc26e93d467d47e55b751d08e61bc9be0db0db103771e24227655a66542"
+    },
+    "skills/battle-scaling/data/wangba-handbook-2026-07-30/finite-rules-curated.json": {
+      "bytes": 129984,
+      "sha256": "3e782401d97f637f346252c8fdf09ff911a2ef01f2c858dfbc06c173deae4550"
+    },
+    "skills/battle-scaling/data/wangba-handbook-2026-07-30/high-rules-curated.json": {
+      "bytes": 115788,
+      "sha256": "37ca46ba23bd2176d064aa46b1995d56f61976799308afd6d0dc5a05c2eb8776"
+    },
+    "skills/battle-scaling/data/wangba-handbook-2026-07-30/manifest.json": {
+      "bytes": 5093,
+      "sha256": "fb02d30865266d6658d784d2eb8c3aa6dfb30dc3be35f6f1783e0f1ef7164bb9"
+    },
+    "skills/battle-scaling/data/wangba-handbook-2026-07-30/reviewed-clauses.json": {
+      "bytes": 168036,
+      "sha256": "ae274fdf8d4c1d4f257c01173ffdc52e47e45c2124f001c917c8e6c909ed98f3"
+    },
+    "skills/battle-scaling/package-manifest.json": {
+      "bytes": 49428,
+      "sha256": "5f8d2bcdc9c597c1c26f22e523810767f0c3e8ba58d4737f9285cef796f15d24"
+    },
+    "skills/battle-scaling/references/ability-feats-and-combos.md": {
+      "bytes": 7117,
+      "sha256": "cbb66b8e672638031d3613c410db9b888c1485d07d271d68f7e3f24d5e4ac170"
+    },
+    "skills/battle-scaling/references/bilibili-media.md": {
+      "bytes": 3572,
+      "sha256": "e90276be7b9bb622722bea06e7d5286e99f66b8c9d9f99ab7e2ae5db8e82be48"
+    },
+    "skills/battle-scaling/references/captain-wood-case.md": {
+      "bytes": 7308,
+      "sha256": "d03acbde240a3541f5df5d8a74b22dd0f4fb69ce6cc8cc6f240e1a639089eb23"
+    },
+    "skills/battle-scaling/references/case-format.md": {
+      "bytes": 13617,
+      "sha256": "5803cdafa6e004262c4ae7cd814d74ce92027532021969d952381c6b6442bd0b"
+    },
+    "skills/battle-scaling/references/case-index.md": {
+      "bytes": 2778,
+      "sha256": "7890625f1aa2c7989d0e3f5c2f7dd4cf05ed4c3c4aa2fd814b76db06879bd806"
+    },
+    "skills/battle-scaling/references/character-rating-worker.md": {
+      "bytes": 5471,
+      "sha256": "a61422ddce20afae542eb492d82591da824a965af6480f2fb73375d37516de58"
+    },
+    "skills/battle-scaling/references/character-rating-workflow.md": {
+      "bytes": 12759,
+      "sha256": "fb647ffe24d08e8027095d63895551a6c425a880464e9d522ecdf4564cf83485"
+    },
+    "skills/battle-scaling/references/combat-absorption.md": {
+      "bytes": 5253,
+      "sha256": "77f35b9ef8a4830e73ee5c742be85f811d46aeae27091cd9b2715fa355fe458f"
+    },
+    "skills/battle-scaling/references/combat-process.md": {
+      "bytes": 19570,
+      "sha256": "bf15ecdd1965d4932138419dd7277028ead786e11baa60f18533f3cf5673977d"
+    },
+    "skills/battle-scaling/references/derivation-workflow.md": {
+      "bytes": 13535,
+      "sha256": "bd83d1421873c6b70e657c93de801d50fa5611ac5d43a201d0f1314ff0d013d7"
+    },
+    "skills/battle-scaling/references/discovery-dossiers.md": {
+      "bytes": 11888,
+      "sha256": "e74208336a4e12c067151f28d29fa382dc008e9e5f74dbf4486a7ab94b16ab11"
+    },
+    "skills/battle-scaling/references/evidence-gap-recovery.md": {
+      "bytes": 7018,
+      "sha256": "999ba8a1423f4ee7d083905b4acd43e8568d5f0861f7f860a6bd5a878586225d"
+    },
+    "skills/battle-scaling/references/evidence.md": {
+      "bytes": 14298,
+      "sha256": "2f97358bc70fc0378c9a384ff1a810cd367f40b232186605e64f4a38465a4959"
+    },
+    "skills/battle-scaling/references/execution-efficiency.md": {
+      "bytes": 4198,
+      "sha256": "60c5a1d527d70a8ea3314c7dadb20ff3955149e59f25b37f04525c390b3fd636"
+    },
+    "skills/battle-scaling/references/external-ideas.md": {
+      "bytes": 4251,
+      "sha256": "c31fca800631c8deb28bb01648852b8a07452f952b8ee944db17da313dac59b5"
+    },
+    "skills/battle-scaling/references/feat-review.md": {
+      "bytes": 12146,
+      "sha256": "72b50647a10fab3f379e271d07e1bd6525e806c4768f9ad350a66217c1a73466"
+    },
+    "skills/battle-scaling/references/formula-ocr-validation.md": {
+      "bytes": 6335,
+      "sha256": "21e678d3942aa8637a4d468bc4dbb76b512a3c9618630d495423c047e1351430"
+    },
+    "skills/battle-scaling/references/handbook-finite-review.md": {
+      "bytes": 14403,
+      "sha256": "b5bfe5989439398102e94f3a524847f65a0d993a64dbdb4223f36782aa7539d5"
+    },
+    "skills/battle-scaling/references/handbook-high-review.md": {
+      "bytes": 9513,
+      "sha256": "2250ad301d8a175469b31cacc523f45fd884962937be7f975901d6546bcf89e9"
+    },
+    "skills/battle-scaling/references/handbook.md": {
+      "bytes": 10537,
+      "sha256": "403b7d355b33778a204dd6d046893e40f56b67f8de2431ee75635f16d644ed85"
+    },
+    "skills/battle-scaling/references/hax-ceiling.md": {
+      "bytes": 11760,
+      "sha256": "274644fe28c8f990dbd27d89e2e908ec1ef8bc698e7527d8a9129bd2757c60bc"
+    },
+    "skills/battle-scaling/references/high-tier-cases.md": {
+      "bytes": 6276,
+      "sha256": "c42f13f7a64497e05cede4790d66c81c83f4531cc5f69c5b5056299cc114677c"
+    },
+    "skills/battle-scaling/references/high-tier.md": {
+      "bytes": 19017,
+      "sha256": "0e25ac719e6069e65a65a131099d68c193f1ce4c7671f9a9d35e1adfa8ad7e92"
+    },
+    "skills/battle-scaling/references/matchups.md": {
+      "bytes": 10395,
+      "sha256": "d8a1435369ec06ad31d95162f3630ceeb3b505929cc91234998e26953b16e3da"
+    },
+    "skills/battle-scaling/references/media-integrations.md": {
+      "bytes": 5051,
+      "sha256": "e4ef765c3d1c7b76225894981c081e77ad3a1d9401a303477666c60cf1d3036d"
+    },
+    "skills/battle-scaling/references/media-output.md": {
+      "bytes": 8693,
+      "sha256": "eda34443d0bf226e2f5a75396f6de405cb0ab05f6e8bc026b5488867a5ad2738"
+    },
+    "skills/battle-scaling/references/media-reading.md": {
+      "bytes": 10633,
+      "sha256": "a873d3a18b88cb6dbaaaa58e8c6609605e45dcec6dda9c519d9f2956d3385062"
+    },
+    "skills/battle-scaling/references/media-selection.md": {
+      "bytes": 13479,
+      "sha256": "7332f4ca0f4a583b2140371b8bfa30810eb553a60925e2c574cb176f223b94c0"
+    },
+    "skills/battle-scaling/references/media-sourcing.md": {
+      "bytes": 14124,
+      "sha256": "3095895ee480206cd6e43178bab9f8d10f4ede96a7d51a097bca9e56caa89cde"
+    },
+    "skills/battle-scaling/references/modes-scaling.md": {
+      "bytes": 8055,
+      "sha256": "ca2394f405ef7c79fec97d2778395b163dd4d307600cc18654cc9ea8a7fe5ce9"
+    },
+    "skills/battle-scaling/references/novel-ending-state.md": {
+      "bytes": 5163,
+      "sha256": "38507b5cb4db52e9c3473c0c0aac4c6fe071c5c70d2eafe0770b73203b3d7ad4"
+    },
+    "skills/battle-scaling/references/novel-evidence.md": {
+      "bytes": 17117,
+      "sha256": "bff175f01e99bc60aa65078b18976003452bae6dd3dc77490bb76bb2940c1e1d"
+    },
+    "skills/battle-scaling/references/novel-refpack-pipeline.md": {
+      "bytes": 16105,
+      "sha256": "6f439a59c95699b3ac9cf0d9868f35c867feea8af437346d36988d02adcdd42d"
+    },
+    "skills/battle-scaling/references/ocr-projects.md": {
+      "bytes": 18700,
+      "sha256": "58f94766c252d5af12d3cbe7d30f924b50832adfa3baf29a3adb49553b0d404a"
+    },
+    "skills/battle-scaling/references/physics-models.md": {
+      "bytes": 12818,
+      "sha256": "0e3d5bf1c1cb2639db58b74d311471bacf3e93d908c2b7075bd227ac0ee2b1b2"
+    },
+    "skills/battle-scaling/references/pk-cover.md": {
+      "bytes": 10012,
+      "sha256": "7366fec25a649e79a0390e950ee8eec266eac986065c0a9eb280088ea59f5226"
+    },
+    "skills/battle-scaling/references/rating-card.md": {
+      "bytes": 11221,
+      "sha256": "f66e161cc4833eeb843a6d41a858f8059580c60e33f59955bb468564b894a445"
+    },
+    "skills/battle-scaling/references/rating-completion.md": {
+      "bytes": 13904,
+      "sha256": "459c2c280f9007cf7087bafc147a301dbee4e88141f142e5c4c944c4cae977f7"
+    },
+    "skills/battle-scaling/references/rating-handoff.md": {
+      "bytes": 4748,
+      "sha256": "f380d8501f7313b068591238fa48b5aad72a7cc83b4a0650770f822ceca31a63"
+    },
+    "skills/battle-scaling/references/relation-examples.md": {
+      "bytes": 4199,
+      "sha256": "a878b0b8f4cb9bb2b073a49d451401d80f3c5111ee9cbfaca350ea9bbbf286b3"
+    },
+    "skills/battle-scaling/references/research-workflow.md": {
+      "bytes": 15328,
+      "sha256": "923a51aa21bafb209da0e3ae472479f635f3f8dfe15998ae87a8021115676588"
+    },
+    "skills/battle-scaling/references/scaling-principles.md": {
+      "bytes": 9609,
+      "sha256": "2ee65f8ff8f530544be65bbf89a4dfae9f0cd2baba7e7c071c995e0623a70c6f"
+    },
+    "skills/battle-scaling/references/scarce-character-media.md": {
+      "bytes": 6560,
+      "sha256": "4d60f3476817aacf5ebc20d3e55876168044d6cb7caa5aef5b7f61f2adb54af1"
+    },
+    "skills/battle-scaling/references/site-experience.md": {
+      "bytes": 7941,
+      "sha256": "a03ca60c57f9474a558db850026908ed819820e4a42b87022e63081f37b862cf"
+    },
+    "skills/battle-scaling/references/story-rating-first.md": {
+      "bytes": 13592,
+      "sha256": "226d387f3164d66774db6fcd1b304394d3b2d59bd368892e8c205623c961bf36"
+    },
+    "skills/battle-scaling/references/tieba-reading.md": {
+      "bytes": 9338,
+      "sha256": "caa4d163deefbb8e126da323d15f631f42cc75f963b0b6a1476b817ee32bde43"
+    },
+    "skills/battle-scaling/references/tier-map.md": {
+      "bytes": 4991,
+      "sha256": "069708c2cbc7ab29ad33e4dea16c3e23b06e542b705cd2adbaa41c50e18e5901"
+    },
+    "skills/battle-scaling/references/tool-contracts.md": {
+      "bytes": 10748,
+      "sha256": "941e704e692533c001f7f64571e45d3ed15ea8d4bf1179b110c3bb42bf847f5a"
+    },
+    "skills/battle-scaling/references/validation.md": {
+      "bytes": 2474,
+      "sha256": "90552fc8349a5e7af22b150884fb1f1232b5a68402ae05c08b43cb16d469b9a0"
+    },
+    "skills/battle-scaling/references/video-dimensions.md": {
+      "bytes": 11349,
+      "sha256": "906b2a8f421294dc297fab01ad59832f1fc2f233d1db445d8d0758306f710089"
+    },
+    "skills/battle-scaling/references/video-editing.md": {
+      "bytes": 15784,
+      "sha256": "dded50e02d1b84db97f4fd95e07d0af10fa26957054a4a11c439feff5b2a908e"
+    },
+    "skills/battle-scaling/references/video-template-replication.md": {
+      "bytes": 8308,
+      "sha256": "b5425af167699c3a896f67e015f77834b08f9750ee91089d19f5a95587520411"
+    },
+    "skills/battle-scaling/references/vsb-attributes.md": {
+      "bytes": 14369,
+      "sha256": "913c99098b96496b1965eb490055af5416e0a401178efce96cf666ae67b1ebd3"
+    },
+    "skills/battle-scaling/references/vsb-combat.md": {
+      "bytes": 9552,
+      "sha256": "235fe2150b31380c3b5caf4afa818b8c686fd44fea71f0476667787ad4fad0a2"
+    },
+    "skills/battle-scaling/references/vsb-hax.md": {
+      "bytes": 5312,
+      "sha256": "9184e49cdb88246b7111f58a527ae9f64e35f3f9154f07ab522395bd4fe4ab2c"
+    },
+    "skills/battle-scaling/references/vsb-high-tier.md": {
+      "bytes": 15677,
+      "sha256": "cfb315ee48c769d165f1750e0884bbf2c8b015eec9d01584d0aef8a7d5310f42"
+    },
+    "skills/battle-scaling/references/vsb-mode.md": {
+      "bytes": 12902,
+      "sha256": "f3e57bbdbb51300e7783b3cbf26ec1817e7d2f60782ec83fbfd1d4a0cc99c87b"
+    },
+    "skills/battle-scaling/references/writing-battle.md": {
+      "bytes": 41869,
+      "sha256": "74c78c06a7ca45d75ddfc090c153bd759064a44f988c914db3fa1a08e860c534"
+    },
+    "skills/battle-scaling/references/writing-canon-and-systems.md": {
+      "bytes": 21688,
+      "sha256": "91fe85fe1b456ba0cdffd0a35073bb3e086eec59c16cf7c89e17ba2d6aa0c51b"
+    },
+    "skills/battle-scaling/references/writing-entry.md": {
+      "bytes": 6786,
+      "sha256": "9070ddbc31072870d6a9f4a94f553b8dc0ae267bbf49cf0a5aa954325444c0f3"
+    },
+    "skills/battle-scaling/references/writing-experience.md": {
+      "bytes": 16679,
+      "sha256": "6fd86a7407fa7a9fe95ff029b341d9f65098198c18e50afff20b5a677e09538b"
+    },
+    "skills/battle-scaling/references/writing-rating-baseline.md": {
+      "bytes": 10676,
+      "sha256": "58415ed71f27305cbbb6109fee65e63c32a43c8b18f711a85d06eef6bd48d14f"
+    },
+    "skills/battle-scaling/references/writing-tone-and-gags.md": {
+      "bytes": 4179,
+      "sha256": "724f4e255040852eb145290d1f7723cf4e65b5ca915cc1ada2d15ebb84c7d707"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30-404.json": {
+      "bytes": 17163,
+      "sha256": "258c0c5118415bc35c8a2717eaa1a87a83b8d7bb360b582df4dd0e3a2b43f670"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30-aos.json": {
+      "bytes": 10279,
+      "sha256": "f3be9ed73055da87ff424c5895fc796fb9c9c7c5fbec76cf51d2690277b5b67b"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30-dao.json": {
+      "bytes": 15770,
+      "sha256": "fc084a6ba3c9a388d8aa1a832592c7814ec7715f5d3417bff3b0d7b375497ead"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30-li.json": {
+      "bytes": 7677,
+      "sha256": "dc94eadb5b7a8610bf9666ff06c9a8227052a7b051a9766d7486997af3b3aeef"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30-new.json": {
+      "bytes": 10593,
+      "sha256": "0b4f8e49580112aeb9be9a4fde3000ab4dbd8eb81a9b067fff2b7037b1ce58b5"
+    },
+    "skills/battle-scaling/rulesets/high-wangba-handbook-2026-07-30.json": {
+      "bytes": 5801,
+      "sha256": "2d1991c9062372df6f44477f9a99c865e3da54b44354433e754e65b3356544c6"
+    },
+    "skills/battle-scaling/rulesets/high-wiki-aos404.json": {
+      "bytes": 4136,
+      "sha256": "b437a17ccb86dae624dc20eb5f0ca246e1da51f9a0c1b2217e8d9e7d589d376a"
+    },
+    "skills/battle-scaling/rulesets/high-zerozhi2025-new.json": {
+      "bytes": 2797,
+      "sha256": "bace84e041c5e91b403522e5fc97879a050d228977cc1945efe886475bf7ec43"
+    },
+    "skills/battle-scaling/rulesets/high-zerozhi2025-old.json": {
+      "bytes": 1071,
+      "sha256": "4a9252661bfb100aac070560985483da99483de6fca345ae9eee84a6e7ad9ba3"
+    },
+    "skills/battle-scaling/rulesets/profiles.json": {
+      "bytes": 1902,
+      "sha256": "e2dd773c01cdef1b900400ff200713cae6c64f83c84ef30fd0971821c7a9efed"
+    },
+    "skills/battle-scaling/rulesets/vsb-current-2026-10-21.json": {
+      "bytes": 20939,
+      "sha256": "6c4656ead8ac764fa6790e2a9950f289dc757cc2a055a4be8cf8696cffc8438e"
+    },
+    "skills/battle-scaling/rulesets/wangba-energy-2024-03-18.json": {
+      "bytes": 3354,
+      "sha256": "7fef7cd2a413e7ec8a8da302d99f220238da37b330dbeb87c74eae679c122ad8"
+    },
+    "skills/battle-scaling/rulesets/wangba-handbook-2026-07-30-finite.json": {
+      "bytes": 130064,
+      "sha256": "80383ee00cdb3ad7ea872c8096e7d2841928743c24b2a8f0fb4a21012a4fe8dd"
+    },
+    "skills/battle-scaling/scripts/battle.py": {
+      "bytes": 44306,
+      "sha256": "71244837ea4fc3c2706741aa1e8a3d2378d9d6c400aa4ed1596577f3b8cdbbae"
+    },
+    "skills/battle-scaling/scripts/bili_media.py": {
+      "bytes": 19514,
+      "sha256": "c3d72d86e0c748ed8b2a0436307ccce247d16b3ca5ea601a5f9f5642a24d32b7"
+    },
+    "skills/battle-scaling/scripts/combat_refpack/__init__.py": {
+      "bytes": 103,
+      "sha256": "01884822a4f2314087a2d21c6b9abe00339b9c4a6e7aa02d14ce116cd7250198"
+    },
+    "skills/battle-scaling/scripts/combat_refpack/cli.py": {
+      "bytes": 5278,
+      "sha256": "14c8ba1d7a930a2f27df66a36019801c004eb3aae42524d600bb660a018edd62"
+    },
+    "skills/battle-scaling/scripts/combat_refpack/core.py": {
+      "bytes": 50939,
+      "sha256": "4671dc895621ca9dfe9ef2b8a562a59a2f3799c9ad38b15927c0f32ba22e0f3e"
+    },
+    "skills/battle-scaling/scripts/combat_refpack/extraction.py": {
+      "bytes": 6156,
+      "sha256": "645d4137122f6e12dec344736cea2fc33a3540962a43efd89d56f05ec8fb4659"
+    },
+    "skills/battle-scaling/scripts/combat_trace.py": {
+      "bytes": 39391,
+      "sha256": "960af7860e7723ff925439a2b279fc478a687f8a204aa0641fbdb6ac38a3c4bc"
+    },
+    "skills/battle-scaling/scripts/derivation_audit.py": {
+      "bytes": 38648,
+      "sha256": "e39dc906e0583c1d7563eb34210af31f91c5e991a9506c6f5836b4062e764472"
+    },
+    "skills/battle-scaling/scripts/evidence.py": {
+      "bytes": 50968,
+      "sha256": "59c650f479c5030f0155bcbe8ae8745914d99075a9fa07e29ec1c1b1d9d5d8a3"
+    },
+    "skills/battle-scaling/scripts/feat_audit.py": {
+      "bytes": 22726,
+      "sha256": "092ba5657403bc284cce4081df79e62fd3a42dd415f0a115b96303aa72c6d27a"
+    },
+    "skills/battle-scaling/scripts/formula_adapter.py": {
+      "bytes": 16116,
+      "sha256": "ee776ea39da1b7c9dd5087fe6b5e23b87a11cd1af329baf2b8b78e3c3e8bba2d"
+    },
+    "skills/battle-scaling/scripts/handbook.py": {
+      "bytes": 11538,
+      "sha256": "0431b871dbde0421397750b92ade7975d76b008c4229f3b59735ecbdb4805064"
+    },
+    "skills/battle-scaling/scripts/handbook_finite.py": {
+      "bytes": 17590,
+      "sha256": "ae6f9e5d06500dee1da19a747d95f6102d9395da56c6bd59c99665a1991566e0"
+    },
+    "skills/battle-scaling/scripts/handbook_high.py": {
+      "bytes": 27289,
+      "sha256": "703b273e29fbf8ae6ba6620f3e5603398099ad011d8706027aafa18ad1233d7f"
+    },
+    "skills/battle-scaling/scripts/hax_gate.py": {
+      "bytes": 4695,
+      "sha256": "fe93451957de043ef261c313251e9531890639a11c53fab1b22888985376c37c"
+    },
+    "skills/battle-scaling/scripts/hax_policy.py": {
+      "bytes": 15333,
+      "sha256": "6b0aaf43d5e8a7be7098f66e6e7c570c89029bb21ba5fab85acf266d4dde74aa"
+    },
+    "skills/battle-scaling/scripts/high_tier.py": {
+      "bytes": 42420,
+      "sha256": "4f8d8fcd3a43937153807a6ce99fe70cf5f4f74a24abdf903446139f6cbc7de6"
+    },
+    "skills/battle-scaling/scripts/li_metrics.py": {
+      "bytes": 9296,
+      "sha256": "4b1e42bdf897f1916625e468dd096a5307bb51f5c026e3870c9a54f1260f97ab"
+    },
+    "skills/battle-scaling/scripts/media.py": {
+      "bytes": 20390,
+      "sha256": "674b8204c1a737a5068cc7eed48b18e9fc280e89f43cb8efdd954981e7702e12"
+    },
+    "skills/battle-scaling/scripts/media_acquire.py": {
+      "bytes": 12788,
+      "sha256": "a0a5ed222de9e9e3604e444861abc04b4efcb86cd6e8fa0d88d5c82ef2dc5c2f"
+    },
+    "skills/battle-scaling/scripts/novel_evidence.py": {
+      "bytes": 24217,
+      "sha256": "5f990ccd45059b947742e988900c7d5dda11355788a76ae5ee464d2fa59e192f"
+    },
+    "skills/battle-scaling/scripts/novel_refpack.py": {
+      "bytes": 198,
+      "sha256": "68ab405d2d0455bed904fe03e30741315d66b949739de43f848f1d8372359cec"
+    },
+    "skills/battle-scaling/scripts/ocr_pdf.py": {
+      "bytes": 4249,
+      "sha256": "8bdef99b66155fb7dd3b69c92ff186038bb7910b44c78fc6368cff8a4ffecf20"
+    },
+    "skills/battle-scaling/scripts/one_image.py": {
+      "bytes": 6634,
+      "sha256": "66c629c1b6767e9cc1ae666ba9afcea8c289f2e364605f2c7dd38769ef1c7273"
+    },
+    "skills/battle-scaling/scripts/physics.py": {
+      "bytes": 27601,
+      "sha256": "ec0b93b782ebc9ab3d7ed4bf6aecf5090194a05dbd20c551f9072fca5d7c0d04"
+    },
+    "skills/battle-scaling/scripts/pk_modes.py": {
+      "bytes": 4825,
+      "sha256": "fb242b8db127db46dd6031f2d8624395e633600d34f6d43af231bc1fefa63e90"
+    },
+    "skills/battle-scaling/scripts/rating_dossier.py": {
+      "bytes": 8349,
+      "sha256": "1e9248de1c1b173acc93fc0937bba43606535b6cc9b712ac83d3562c18c03ae1"
+    },
+    "skills/battle-scaling/scripts/rating_modes.py": {
+      "bytes": 1431,
+      "sha256": "814205d8b0af2a5c41720291c909b4223bb531c608437e3e401cdb2074ab67a1"
+    },
+    "skills/battle-scaling/scripts/rating_pipeline.py": {
+      "bytes": 48934,
+      "sha256": "7f3652a26edf92a19a8fc328f30242ef2520e0527b8bd1c935d4396734d87dec"
+    },
+    "skills/battle-scaling/scripts/rating_preflight.py": {
+      "bytes": 21354,
+      "sha256": "d1edc89cc8f2ac2d1c8ffd1c6314a7b200a6d028c223a398a07961f52915c7cc"
+    },
+    "skills/battle-scaling/scripts/research.py": {
+      "bytes": 41020,
+      "sha256": "80bb387d4fe57929d2a833d888a684ad5024a5404e14d58b1c9c1db8b9610212"
+    },
+    "skills/battle-scaling/scripts/rule_profiles.py": {
+      "bytes": 4415,
+      "sha256": "9430d1e8c93547d3b069344741d3ab7f26c734dc56f1cce87291267703a4db5d"
+    },
+    "skills/battle-scaling/scripts/semantic_benchmark.py": {
+      "bytes": 11454,
+      "sha256": "74388dec85f1f92efc18e8e4cf8926c778a0c9eb7dedaf8113d532e15ce28536"
+    },
+    "skills/battle-scaling/scripts/site_registry.py": {
+      "bytes": 20200,
+      "sha256": "a90bb909fa91bf8d8e3e2fa0816b4ee05f7238134faa43d9d6789bbeac36daed"
+    },
+    "skills/battle-scaling/scripts/sources.py": {
+      "bytes": 19856,
+      "sha256": "0248352bd8c08cae700ece9af5026ea3aa7fdee8ad9631e04608e8b5b7342052"
+    },
+    "skills/battle-scaling/scripts/standards.py": {
+      "bytes": 9908,
+      "sha256": "dbb3c34a7457b9c397660b60f423d5604b0e63ce0333164dd3b0bc33bfd75cce"
+    },
+    "skills/battle-scaling/scripts/tieba.py": {
+      "bytes": 23582,
+      "sha256": "d8df9d53655f8658037077b2a05107ed5bee6f24d2c5159492b7955e6a6ee875"
+    },
+    "skills/battle-scaling/scripts/tieba_aiotieba.py": {
+      "bytes": 15282,
+      "sha256": "cdd2833928eada3a16477ae72d2168bd19222ae06209b088ea01c035231bf837"
+    },
+    "skills/battle-scaling/scripts/video_dimensions.py": {
+      "bytes": 10279,
+      "sha256": "820eb60deff90c3397e5fd72b80d43f367b1526b90d8f95b41ca5f506834857b"
+    },
+    "skills/battle-scaling/scripts/video_studio.py": {
+      "bytes": 7202,
+      "sha256": "0f4205d2764e536e6144705f8239327d7979b2f2ddbe5f95763a55454759d282"
+    },
+    "skills/battle-scaling/scripts/vision_adapter.py": {
+      "bytes": 6382,
+      "sha256": "b7cb16226dc3f55397d4cd0289cc5d1f1b685ccc76d6219243b817c86f54ade3"
+    },
+    "skills/battle-scaling/scripts/vsb_attributes.py": {
+      "bytes": 7997,
+      "sha256": "2a1b47380bddf16f085576c1422c7f40e893c725f8c5e31372c2e5b7c98533d5"
+    },
+    "skills/battle-scaling/scripts/vsb_hax_policy.py": {
+      "bytes": 11599,
+      "sha256": "69e0a3c7a0b9006f9c691b0b3303b3b3790366ee56b923e23c9fa2e1973919f7"
+    },
+    "skills/battle-scaling/scripts/vsb_high.py": {
+      "bytes": 23356,
+      "sha256": "cdcb5365ad88406f72f50853081891065a81e8065325f46c45f6f791e2f40336"
+    },
+    "skills/battle-scaling/scripts/vsb_physics.py": {
+      "bytes": 11743,
+      "sha256": "28f8ecfccfb8fa3cf5063167381ba7c6b031695a516f99228c699cdca4517fec"
+    },
+    "skills/battle-scaling/scripts/vsb_rules.py": {
+      "bytes": 11413,
+      "sha256": "b95eef13755a65200abeb41242eebbe6a88e09ab32b6b86c9f7f526e71ef2d5b"
+    },
+    "skills/battle-scaling/scripts/writing_battle.py": {
+      "bytes": 32575,
+      "sha256": "26a9cf13e0a0b9309010c2e2bace2aa2ffb07913d1c7bc35f2b2dba61f8be7ae"
+    },
+    "skills/battle-scaling/scripts/writing_fidelity.py": {
+      "bytes": 14706,
+      "sha256": "49d9c502e736526ac2c38af17148798fdcb930e5226d947a3669d0bcdd97fb32"
+    },
+    "skills/battle-scaling/tests/rating_fixtures.py": {
+      "bytes": 12556,
+      "sha256": "12eb83e1dc4f6310c6d550dd7666c528647612a25e1796c2a453ce5c2a47fe39"
+    },
+    "skills/battle-scaling/tests/rebuild_static_rating_fixtures.py": {
+      "bytes": 4050,
+      "sha256": "6fd965add729621e5fb070f418451fc621b14ed749a8c286d219a9d7597250e3"
+    },
+    "skills/battle-scaling/tests/test_bili_media.py": {
+      "bytes": 2419,
+      "sha256": "a36dd2f704639ab11a26ce1bd1ba4afbcd28e024ce0869d2eb3e4648678e73b1"
+    },
+    "skills/battle-scaling/tests/test_chain_research.py": {
+      "bytes": 6771,
+      "sha256": "4dee27d0e664472f0d4b3ba71f69b3aeb6d7dee9dbc7e4cbb6d07db04954b0b4"
+    },
+    "skills/battle-scaling/tests/test_cli_output.py": {
+      "bytes": 8949,
+      "sha256": "fe98fad75e6d914b7b899aa92acf470d9596e165223cb1ced4951e3e874f48ed"
+    },
+    "skills/battle-scaling/tests/test_combat_refpack.py": {
+      "bytes": 10196,
+      "sha256": "4c588a6bc4365c2a9fd1e336ceb7ccc3b0d261d532597499992b00fc68c77024"
+    },
+    "skills/battle-scaling/tests/test_combat_trace.py": {
+      "bytes": 17928,
+      "sha256": "eeac75ea0a307de2e2dd66f5fd066a6a682c847576fe9d2107ab6a032a8be9aa"
+    },
+    "skills/battle-scaling/tests/test_derivation_audit.py": {
+      "bytes": 15119,
+      "sha256": "54f1a9586389f0b1d7ce33022e0c870049f77797648f8fdf61323300f40774f5"
+    },
+    "skills/battle-scaling/tests/test_discovery_plan.py": {
+      "bytes": 2572,
+      "sha256": "23ea5a817fe109522da2fea968dde7faa03a74b8596ff0b4dbb8a1d37d406163"
+    },
+    "skills/battle-scaling/tests/test_evidence.py": {
+      "bytes": 5786,
+      "sha256": "25cce7ef9b8892772c551597490069b080e09c76b8d9f45006828a37c36a9139"
+    },
+    "skills/battle-scaling/tests/test_feat_audit.py": {
+      "bytes": 16754,
+      "sha256": "f1d07243e7cdca812318e68c08b52fc2ec55dc55af1eecb1e29c8acb724d65b9"
+    },
+    "skills/battle-scaling/tests/test_feat_integration.py": {
+      "bytes": 11236,
+      "sha256": "f75afd12abfffb83f8d894c6e082622bca3b0f8cfe7721b6b31c9aa3220379fc"
+    },
+    "skills/battle-scaling/tests/test_formula_adapter.py": {
+      "bytes": 11088,
+      "sha256": "a2f17cb6f809fa0703f332ced1938fedab8971d43e3455135d14a0644fe811a3"
+    },
+    "skills/battle-scaling/tests/test_handbook.py": {
+      "bytes": 4811,
+      "sha256": "4e97951c0755d0c8e84a161f733d362db1bf80ebcf18e53d0a6841c7b7457b42"
+    },
+    "skills/battle-scaling/tests/test_handbook_finite.py": {
+      "bytes": 10066,
+      "sha256": "fb1c6f076109ffcb2ccdd96995af65e2281aff404f23025103030f2ac9dd228c"
+    },
+    "skills/battle-scaling/tests/test_handbook_high.py": {
+      "bytes": 12741,
+      "sha256": "2ffaf96180957b8ba0768921da657b1647d0a52bc82ef5c0d1533cf46ad818b4"
+    },
+    "skills/battle-scaling/tests/test_handbook_optional_corpus.py": {
+      "bytes": 2963,
+      "sha256": "d9aa500fa9f7545bb9b538ca31c1321760a5fede9043d31231ae3424fcf53c82"
+    },
+    "skills/battle-scaling/tests/test_hax_combat.py": {
+      "bytes": 15483,
+      "sha256": "2c14fcbcb163d78c15cf6edcbeec84e894d1bb3c4ffcfa1363fa4de7f28442c2"
+    },
+    "skills/battle-scaling/tests/test_hax_integration.py": {
+      "bytes": 10195,
+      "sha256": "e0108a365263ae3d4e2a5d9657b7043b05e7d9a351b4d1c8ddea41f94c72ed6c"
+    },
+    "skills/battle-scaling/tests/test_hax_policy.py": {
+      "bytes": 15998,
+      "sha256": "9783a4882fc3b4b32f8546e2aa5b19a16e394f8feef7ec8dbe47c6dfff36789c"
+    },
+    "skills/battle-scaling/tests/test_high_tier.py": {
+      "bytes": 16539,
+      "sha256": "e10456d31972561ef653942a674eb3f17be6ddbe8d0387b064e8f5324590c8ca"
+    },
+    "skills/battle-scaling/tests/test_high_tier_premises.py": {
+      "bytes": 7106,
+      "sha256": "1cf9b70198e68ad6faa817b06964fd51a250a989cacdb6f721bef1be1b68d750"
+    },
+    "skills/battle-scaling/tests/test_integrated_rating.py": {
+      "bytes": 15066,
+      "sha256": "0f245d9ab8ca1f3352f9cd58afb1b18396b3208cb95e6d0d493169f5b2a79e9a"
+    },
+    "skills/battle-scaling/tests/test_integration.py": {
+      "bytes": 7353,
+      "sha256": "c21a6e1cddcf23fbb008ae1b13ba6bd8c43ec51568042f03e5908e501f621819"
+    },
+    "skills/battle-scaling/tests/test_li_metrics.py": {
+      "bytes": 3419,
+      "sha256": "838d4b6a62a4456805a0d42b1bc56c5feab713f03043186b9bb3c90dc34b3b44"
+    },
+    "skills/battle-scaling/tests/test_media.py": {
+      "bytes": 7590,
+      "sha256": "182e9c38d7f0ea03ab67cb16c491cb91cb54edc344a73ed4d63f7d2c607a09ef"
+    },
+    "skills/battle-scaling/tests/test_media_portability.py": {
+      "bytes": 1775,
+      "sha256": "38060c6e09696fbdd5f9ce29cb26697948d71db6e4461c11c3fba24ddc684ff7"
+    },
+    "skills/battle-scaling/tests/test_novel_cli.py": {
+      "bytes": 3341,
+      "sha256": "abaf0b69eb8e8ba08b6b7b4ada9b050944d80e7c79c5e0ff47ad66524c1f3004"
+    },
+    "skills/battle-scaling/tests/test_novel_evidence.py": {
+      "bytes": 13901,
+      "sha256": "bd06f9f8f74cf61b214095ae08052209e7f0efbe889090f3bdf36aca8e647281"
+    },
+    "skills/battle-scaling/tests/test_optional_handbook.py": {
+      "bytes": 6013,
+      "sha256": "cd37212d192f2b29fcbbc6b17021ef1b826b59bc2a7ed2979d9040e82d4c03bc"
+    },
+    "skills/battle-scaling/tests/test_physics.py": {
+      "bytes": 7757,
+      "sha256": "ce01a089d40c2a2fe975ed05603cd6aaa2108e3a80b5c4139817d9bd9b50bcd2"
+    },
+    "skills/battle-scaling/tests/test_pk_integration.py": {
+      "bytes": 7686,
+      "sha256": "9b0d03f9641500b14104f2b0b63978310b959449671eeae3cc4c50c2cb3cf477"
+    },
+    "skills/battle-scaling/tests/test_pk_modes.py": {
+      "bytes": 3853,
+      "sha256": "637dd3e2bd813dc93a7cda93946c5f5f0631b8e59149dea34b3686392fdbae61"
+    },
+    "skills/battle-scaling/tests/test_process_rating_handoff.py": {
+      "bytes": 7725,
+      "sha256": "0de2c20ef55f1f563dabea5eb42a37b26d9c641a3845588517d3aa3b3a5d194f"
+    },
+    "skills/battle-scaling/tests/test_rating_astro_admission.py": {
+      "bytes": 9411,
+      "sha256": "9ae854a516848be71dd958c0e65193c35d8cad8b1835957c60bcd4e56be8615c"
+    },
+    "skills/battle-scaling/tests/test_rating_authority_handoff.py": {
+      "bytes": 16252,
+      "sha256": "4e5038a45c6190228a469969ea2b45281f2cc846f0ad8622cfb70622464a159a"
+    },
+    "skills/battle-scaling/tests/test_rating_completion.py": {
+      "bytes": 16635,
+      "sha256": "c29b757d3f618214faf82a897df45bde5dd60736cc584a51a03889cda6e948de"
+    },
+    "skills/battle-scaling/tests/test_rating_pipeline.py": {
+      "bytes": 15526,
+      "sha256": "bfde32d2a9483abd8d12a97a5a9312eb399ffd13f1c8c0a94d8fe7037c25867e"
+    },
+    "skills/battle-scaling/tests/test_rating_pipeline_reuse.py": {
+      "bytes": 11653,
+      "sha256": "b289068897fbc53c650f7e695f3a8b9eb180a2a66b58cd7202ef8215ddfc51da"
+    },
+    "skills/battle-scaling/tests/test_rating_preflight.py": {
+      "bytes": 13223,
+      "sha256": "c86b9c1f3f17e04ae472bc5ad56b5c3e22c3ec7eabc5d5d2553e63c69533f336"
+    },
+    "skills/battle-scaling/tests/test_refpack_batch.py": {
+      "bytes": 6215,
+      "sha256": "7e7d7a3bc04c084e04a896b7c44f52c1772fa21c7b744072dae0a02df8b6b4bc"
+    },
+    "skills/battle-scaling/tests/test_research.py": {
+      "bytes": 13384,
+      "sha256": "d7173d0bbecc62e9d9dc6695eb34fd0a87e8c78a44060509e63fc4c37235e5fb"
+    },
+    "skills/battle-scaling/tests/test_rule_profiles.py": {
+      "bytes": 1753,
+      "sha256": "2f22bc0cfb2f8e909460685960a909858a0e86b7f8d546aafd5cdecb63b27937"
+    },
+    "skills/battle-scaling/tests/test_semantic_benchmark.py": {
+      "bytes": 5563,
+      "sha256": "b5cc1d325eb898743815a954a86f5ceb4cabca1436e7eaedcd9feaf1747ef8b0"
+    },
+    "skills/battle-scaling/tests/test_shared_rating_research.py": {
+      "bytes": 4342,
+      "sha256": "deb41a37a45c752212f5f15b497f2a18fe6b212213323e7e9998d46b2a1b68f2"
+    },
+    "skills/battle-scaling/tests/test_site_integration.py": {
+      "bytes": 4959,
+      "sha256": "71592e37450c7965486ad7038a39e925298752c573b4359fc971be51c2daefa7"
+    },
+    "skills/battle-scaling/tests/test_site_registry.py": {
+      "bytes": 15329,
+      "sha256": "197da517ae81ce59505823fd16ed31ff6d68648957620b64808c553f3b7a0403"
+    },
+    "skills/battle-scaling/tests/test_sources.py": {
+      "bytes": 13804,
+      "sha256": "c3f13bf228fd031d855ab59ff80084ed5b7ee102c8afd146d0a2167fa3e507d7"
+    },
+    "skills/battle-scaling/tests/test_standards.py": {
+      "bytes": 28823,
+      "sha256": "76e2874638f13d26fe35fed701f7eaf4c54b38f4cc1be71dc4537ea6deb227b4"
+    },
+    "skills/battle-scaling/tests/test_tieba.py": {
+      "bytes": 9470,
+      "sha256": "3d1c15b0fc4928a937de4d9b6ae72052450fcf58c7e86b025b414e52e3a4b1ea"
+    },
+    "skills/battle-scaling/tests/test_video_studio_bridge.py": {
+      "bytes": 2618,
+      "sha256": "fb645c5dd5b410a35a9bbe7013b3e5b0689818adba27b08dba6b504fc9e0b216"
+    },
+    "skills/battle-scaling/tests/test_vision_adapter.py": {
+      "bytes": 3560,
+      "sha256": "f65502ea42386812db680d1ba0b2317684f06ce2b810201154f0927451046eca"
+    },
+    "skills/battle-scaling/tests/test_vsb_attributes.py": {
+      "bytes": 8330,
+      "sha256": "e3c3f87b9f7f376087c79084ce13d44b506c586352010ca178d86fe7b99b85e7"
+    },
+    "skills/battle-scaling/tests/test_vsb_hax_policy.py": {
+      "bytes": 9467,
+      "sha256": "b5dd382b0a672d303839e77e93df33ab43d9cd78c90828c6ee769cc9432d6d6e"
+    },
+    "skills/battle-scaling/tests/test_vsb_high.py": {
+      "bytes": 12622,
+      "sha256": "4627cf353080b63b91d77ca3eb69b626f815e2c858534e6057d0abcc5433caa2"
+    },
+    "skills/battle-scaling/tests/test_vsb_physics.py": {
+      "bytes": 11259,
+      "sha256": "ca4eccc9c6647c67e1a01d9e3c0be12ec73de16bd14d13efcf4d1e31f09c6be4"
+    },
+    "skills/battle-scaling/tests/test_vsb_rules.py": {
+      "bytes": 8409,
+      "sha256": "6a8c433b48f898ce6974aebe51231c2bba6c2e4214dbc7fa1229cd5af0313d95"
+    },
+    "skills/battle-scaling/tests/test_writing_battle.py": {
+      "bytes": 15032,
+      "sha256": "fb224fb07a6062751c5e450818c083bc22b53001f9acce1e1d235a54f8cce597"
+    },
+    "skills/battle-scaling/tests/test_writing_fidelity.py": {
+      "bytes": 11302,
+      "sha256": "c11f7daf8079b21e09b9780c4b2611501d57b4847473d40638e0a67a2193e66f"
+    },
+    "skills/battle-scaling/tests/test_writing_integration.py": {
+      "bytes": 12054,
+      "sha256": "ec1dbc07a768880a77484f95728fcea3df1385df8142cd9cebac383cbbf20342"
+    },
+    "tools/battle-video-studio/.gitignore": {
+      "bytes": 191,
+      "sha256": "3b3467d6231819ff6c6b482c36b8f962ed8007987023d206e81fafa6064e3e58"
+    },
+    "tools/battle-video-studio/LICENSE": {
+      "bytes": 1243,
+      "sha256": "eaf81be62a36aa8c355d98f6e4bb96c272f3844e521a6df50f7a2d324ffaf540"
+    },
+    "tools/battle-video-studio/README.md": {
+      "bytes": 3749,
+      "sha256": "3e504859dcdee761ea2848e34ddff49752fd269d9e62d405d2628a13c5ca746d"
+    },
+    "tools/battle-video-studio/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1471,
+      "sha256": "2e0fecbee32fb5fe9f6436ea7fd0faade4df2426635bb014fb7789afc1fc908d"
+    },
+    "tools/battle-video-studio/data/starter-job.json": {
+      "bytes": 952,
+      "sha256": "d08e0fa6a40632b597c3260d55de272d61c913445b2f136f455b54482114e8d6"
+    },
+    "tools/battle-video-studio/data/video-defaults.json": {
+      "bytes": 318,
+      "sha256": "6589239d6c674ef920b7da49dcb8b0079c2fa82d6331b4d8b8f780a65b09b4d3"
+    },
+    "tools/battle-video-studio/data/video-presets.json": {
+      "bytes": 36803,
+      "sha256": "afc618b0b675113e721164572c8b5ba6728aedd09dbd4e14fc30c252e0db41c7"
+    },
+    "tools/battle-video-studio/data/vs-layout.json": {
+      "bytes": 499,
+      "sha256": "972db86f78580d616efcec7b46e11b413208e71c25bf3658d046e9ee5d111031"
+    },
+    "tools/battle-video-studio/docs/media-planning-api.md": {
+      "bytes": 6057,
+      "sha256": "6b84d5d1a10497cb2848e40f24bcb164213254ff9282f308476cb75cc0757327"
+    },
+    "tools/battle-video-studio/examples/reference-demo.json": {
+      "bytes": 1084,
+      "sha256": "512cfe7025455ac364466fbba779754b97f692b383b48fc265eabf2373c2052e"
+    },
+    "tools/battle-video-studio/licenses/Remotion-LICENSE.md": {
+      "bytes": 2823,
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+    },
+    "tools/battle-video-studio/package-lock.json": {
+      "bytes": 145429,
+      "sha256": "f1e5e1c64242f14ae1acc343561247ba5d89e8722afe20f7730abb14d074b12e"
+    },
+    "tools/battle-video-studio/package.json": {
+      "bytes": 992,
+      "sha256": "2a80044c40bb01175f89e2fcf4f7d2863407916fd1cdd056288e7a4e96975a07"
+    },
+    "tools/battle-video-studio/public/fonts/SmileySans-OFL.txt": {
+      "bytes": 4422,
+      "sha256": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72"
+    },
+    "tools/battle-video-studio/public/fonts/SmileySans-Oblique.ttf": {
+      "bytes": 2629764,
+      "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4"
+    },
+    "tools/battle-video-studio/public/media/branding/battle-scaling-watermark.png": {
+      "bytes": 17549,
+      "sha256": "29329493ed412aa9e06689abfb35e07ef7dfd3e4c68baf4d51ed3414ab0e7ca9"
+    },
+    "tools/battle-video-studio/public/media/vs/vs-01-silver.png": {
+      "bytes": 1161695,
+      "sha256": "ae80eec120d97d199161e27e8dd2696bee57e9df71fd265a444245ab25441de6"
+    },
+    "tools/battle-video-studio/public/media/vs/vs-02-ink.png": {
+      "bytes": 811443,
+      "sha256": "3599f57b4057638e8390b5f7745794607760114b72ca322eba82668c8d9c1f65"
+    },
+    "tools/battle-video-studio/public/media/vs/vs-03-prism.png": {
+      "bytes": 816712,
+      "sha256": "45eeb9e7f7f0eae5c3b83a06cfaeb70eb184f38c93b7c7cc4f99921499bdc982"
+    },
+    "tools/battle-video-studio/public/media/vs/vs-04-comic.png": {
+      "bytes": 647775,
+      "sha256": "22f0318c27747695f958a3201417a9f0f651994d98fea8ba058aaa6c1dfea919"
+    },
+    "tools/battle-video-studio/scripts/bootstrap.mjs": {
+      "bytes": 544,
+      "sha256": "3fc1feb5765ecb20918935039dec16c213aff9263ffeb0c6a2cab239f47f8b17"
+    },
+    "tools/battle-video-studio/scripts/import-music.mjs": {
+      "bytes": 2018,
+      "sha256": "4723d2a8d05fb78340214e461fd4d65a1c21e6049b38a463a18d77253493ade6"
+    },
+    "tools/battle-video-studio/scripts/prepare-job.mjs": {
+      "bytes": 13126,
+      "sha256": "4a0d1a935748007c8e7559686761d442b2851848d1f9e31be603233af675fc6e"
+    },
+    "tools/battle-video-studio/scripts/render-job.mjs": {
+      "bytes": 5784,
+      "sha256": "75b2c97782e7ab06599f86c19a39eca29619900492d48e3aa2861fe688b5a18d"
+    },
+    "tools/battle-video-studio/scripts/select-template.mjs": {
+      "bytes": 2039,
+      "sha256": "811d36197230812b2e59500237f6839f4e257087086702dad980e76acd83741b"
+    },
+    "tools/battle-video-studio/scripts/server.mjs": {
+      "bytes": 8580,
+      "sha256": "f6efa618492a7fadfafe23f60d1f13e4e5dcefd8fc71531825f10a6f0ae42425"
+    },
+    "tools/battle-video-studio/src/BattleEdit.tsx": {
+      "bytes": 10712,
+      "sha256": "70930cd2335d9e17d24913e5a2db15b8e0e83faba3e38c19c50e05a6da6ed13f"
+    },
+    "tools/battle-video-studio/src/BattleTemplateEdit.tsx": {
+      "bytes": 8538,
+      "sha256": "47e61e4ab451e7fc4862cb3bbfd292804d3419dccf7eba5492ef4e4731320c17"
+    },
+    "tools/battle-video-studio/src/Root.tsx": {
+      "bytes": 1275,
+      "sha256": "34091ac019a54f37b6e4e256293a05de0dbf2b9fd272012b9c10eb463a7591ef"
+    },
+    "tools/battle-video-studio/src/index.ts": {
+      "bytes": 89,
+      "sha256": "a58f804bf74bab68b4549aa5c715eb4a89ec5835206d198fc79b462b4fc71ef9"
+    },
+    "tools/battle-video-studio/src/media-plan.d.mts": {
+      "bytes": 826,
+      "sha256": "1b1a5cd631a0967e2d632b2c0acbab3d0fd9072947fb88ce81b4610854be1558"
+    },
+    "tools/battle-video-studio/src/media-plan.mjs": {
+      "bytes": 12548,
+      "sha256": "73f5838ebc53310576bf647d54e2095355921f5858bfd122f95f8b0a0d934640"
+    },
+    "tools/battle-video-studio/src/media-selection.ts": {
+      "bytes": 1680,
+      "sha256": "b73548cffd2660f28cb35306fb243a5f036dccc7b625020d40c2024ab9140703"
+    },
+    "tools/battle-video-studio/src/template-presentation.tsx": {
+      "bytes": 11641,
+      "sha256": "561fb417974b233421529d60524293f31fc2ff4f977e09f6daa1428514ed980f"
+    },
+    "tools/battle-video-studio/src/types.ts": {
+      "bytes": 1929,
+      "sha256": "71bfb7876ea6e9a4956bb73c3593af3dc3c9e089afcb3949813421e00044762f"
+    },
+    "tools/battle-video-studio/templates/V01.json": {
+      "bytes": 4675,
+      "sha256": "2acc02b4c2144dfe158a203a7ea2781741ef7add085fc60a1a75d9254e04ec6a"
+    },
+    "tools/battle-video-studio/templates/V02.json": {
+      "bytes": 4681,
+      "sha256": "8dd2cb4ef5e55d4f6ba57d3be316ac8456f0e89f73b131633d81a5067685545c"
+    },
+    "tools/battle-video-studio/templates/V03.json": {
+      "bytes": 3904,
+      "sha256": "5c551ff24c27a66727ef4840968f446145b99662d87e65e3b98e363a045a35e9"
+    },
+    "tools/battle-video-studio/templates/V04.json": {
+      "bytes": 4488,
+      "sha256": "1a1d9fc9793d88a7cb3d4161e5d6aadf9d688b038b06a4821835788207af4b3e"
+    },
+    "tools/battle-video-studio/templates/V05.json": {
+      "bytes": 4286,
+      "sha256": "118db379ed2f7e77f74311095ff497db84c1695bde1083101535c25e74de6992"
+    },
+    "tools/battle-video-studio/templates/V06.json": {
+      "bytes": 3465,
+      "sha256": "73d95c23ef3ac96897746d0e53f2eeba8ee5c4f3eccdfc18030ff70416b4c0a3"
+    },
+    "tools/battle-video-studio/templates/V07.json": {
+      "bytes": 3849,
+      "sha256": "fcbd648ba1ab78d95ef6460510ca4fae4c0181659e00b21d2a162cf9952787e4"
+    },
+    "tools/battle-video-studio/templates/V08.json": {
+      "bytes": 4560,
+      "sha256": "c1d8ec85e9e764bf8fa76b69e22747da4c3ed48b322aeef2490b1a8acdd71b40"
+    },
+    "tools/battle-video-studio/templates/V09.json": {
+      "bytes": 4151,
+      "sha256": "c9fb5bcc85906b04d6d10defcf944459d672a694b2207d01af7286ce3469a6e1"
+    },
+    "tools/battle-video-studio/tests/bootstrap.test.mjs": {
+      "bytes": 1325,
+      "sha256": "9669ca4b6f718f5fa9b02094d1f343e7385cd451d96e40e47dde32481f6d52f5"
+    },
+    "tools/battle-video-studio/tests/media-planning.test.mjs": {
+      "bytes": 7782,
+      "sha256": "de94a6971b663c5c74c04995bc812e2d804b4e931baad992b2ca591fb9f6d527"
+    },
+    "tools/battle-video-studio/tests/render-output.test.mjs": {
+      "bytes": 1033,
+      "sha256": "4ca16bea38705ea34dd0809f697818f477dba5ca1b9e4e26af78ae0a2b75456f"
+    },
+    "tools/battle-video-studio/tsconfig.json": {
+      "bytes": 369,
+      "sha256": "c4761e90c74d56341b75f59b98a672377a2a63a014b730302cc898f2e8883606"
+    },
+    "tools/battle-video-studio/workbench/app.js": {
+      "bytes": 11933,
+      "sha256": "e6ac05f72f02e89b38a25a4c04483b42c46345629fa0b9d20e35aa5d6c234cb7"
+    },
+    "tools/battle-video-studio/workbench/index.html": {
+      "bytes": 8826,
+      "sha256": "929a616648b163656c20863f413f2fe0e310da238889da4375cba1b78281da38"
+    },
+    "tools/battle-video-studio/关闭剪辑工作台.ps1": {
+      "bytes": 623,
+      "sha256": "0aa76ae03220fdc61de25dfba682b66b1a8c158957d5cac5d7179cea86e7587a"
+    },
+    "tools/battle-video-studio/打开剪辑工作台.cmd": {
+      "bytes": 137,
+      "sha256": "9317d4a5706cc7137456a22a333ecb0446bc53bda66ecdfac7126fb6ca883fb0"
+    },
+    "tools/battle-video-studio/打开剪辑工作台.ps1": {
+      "bytes": 1292,
+      "sha256": "bdf8f2cc6c00a433d3723337d56908e035022a2459de3a5ddea8726eaf415c28"
+    },
+    "tools/combat-novel-refpack/LICENSE": {
+      "bytes": 1086,
+      "sha256": "6a806a732581063b9d2764fa429ef617a3b65a0047939062ba084870a1b90d78"
+    },
+    "tools/combat-novel-refpack/LICENSE.upstream-novel-refpack": {
+      "bytes": 1083,
+      "sha256": "ccb9eb4a40e1bbccd09555ed5bad1b532729c67eac349022735ee53eba7f425f"
+    },
+    "tools/combat-novel-refpack/README.md": {
+      "bytes": 5649,
+      "sha256": "e35655eaef82b222acb829b21e60dc328fd58112220c539effd89b0e2f7c4430"
+    },
+    "tools/combat-novel-refpack/UPSTREAM.md": {
+      "bytes": 8203,
+      "sha256": "91125357590dd25a1689d34305998c621858f8c8fd0ed5b3bf03f397be2a42cd"
+    },
+    "tools/combat-novel-refpack/combat_refpack/__init__.py": {
+      "bytes": 103,
+      "sha256": "01884822a4f2314087a2d21c6b9abe00339b9c4a6e7aa02d14ce116cd7250198"
+    },
+    "tools/combat-novel-refpack/combat_refpack/cli.py": {
+      "bytes": 5278,
+      "sha256": "14c8ba1d7a930a2f27df66a36019801c004eb3aae42524d600bb660a018edd62"
+    },
+    "tools/combat-novel-refpack/combat_refpack/core.py": {
+      "bytes": 50939,
+      "sha256": "4671dc895621ca9dfe9ef2b8a562a59a2f3799c9ad38b15927c0f32ba22e0f3e"
+    },
+    "tools/combat-novel-refpack/combat_refpack/extraction.py": {
+      "bytes": 6156,
+      "sha256": "645d4137122f6e12dec344736cea2fc33a3540962a43efd89d56f05ec8fb4659"
+    },
+    "tools/combat-novel-refpack/docs/superpowers/plans/2026-10-20-combat-refpack.md": {
+      "bytes": 3943,
+      "sha256": "548b33ea1fd2c02b9a040a12b525a7321fa0bedba4f78a3da9ac9a7995d5a41a"
+    },
+    "tools/combat-novel-refpack/docs/原版与论战版对照.md": {
+      "bytes": 2242,
+      "sha256": "968df34b5047d2bd8847cc3ff2479e335ef388ff03ddb021ec07c6935071ec98"
+    },
+    "tools/combat-novel-refpack/refpack.py": {
+      "bytes": 198,
+      "sha256": "68ab405d2d0455bed904fe03e30741315d66b949739de43f848f1d8372359cec"
+    },
+    "tools/combat-novel-refpack/tests/test_cli_contract.py": {
+      "bytes": 19717,
+      "sha256": "cb52a30a8dce565c4dd25a04d26bbe27b2065ef26c360a96c87251e3981897ae"
+    },
+    "tools/combat-novel-refpack/tests/test_prompt_compatibility.py": {
+      "bytes": 10355,
+      "sha256": "5fe9aa02f74365db82fd4ff8785d8c0090e4a3086610e714e2b1c35240aee821"
+    },
+    "tools/combat-novel-refpack/tests/test_refpack_batch.py": {
+      "bytes": 6215,
+      "sha256": "7e7d7a3bc04c084e04a896b7c44f52c1772fa21c7b744072dae0a02df8b6b4bc"
+    },
+    "tools/import_handbook_corpus.py": {
+      "bytes": 4770,
+      "sha256": "b2735f30844fb74519a9a3034f20ffa70600a798314277e845b7ccbf8f5db56f"
+    },
+    "tools/public-video/README.md": {
+      "bytes": 3818,
+      "sha256": "0c4696bc05cc05f1afc4c609c1ce4bb41891f885a9f36d148c830f0f595e61cf"
+    },
+    "tools/public-video/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1517,
+      "sha256": "c0449b822c0a757acec0955b938c063f37ae3daf0a82d92165c0759b5837badd"
+    },
+    "tools/publication_guard.py": {
+      "bytes": 15253,
+      "sha256": "2fa8644e2f9bcb63a62bdf92e7307722ea88a25be0411ee6fcfb212ae99a47a2"
+    },
+    "tools/requirements/constraints-tested.txt": {
+      "bytes": 931,
+      "sha256": "69e3dee1f585be3964c22e8f978d56e7d2d1eea55a1b92b51047c9fd64afb589"
+    },
+    "tools/requirements/media.txt": {
+      "bytes": 186,
+      "sha256": "13508ec041bf0e239928626487734c8177c0b9d6b425108f044b5ea42570d9ae"
+    },
+    "tools/requirements/research.txt": {
+      "bytes": 128,
+      "sha256": "8271f66ee88b7b436b4499ed5e62a3050ee7c042eaddebb0b4ee07ae43de095b"
+    },
+    "tools/setup.py": {
+      "bytes": 12466,
+      "sha256": "44f79adb7332e4cb89781def6476b6ac298741c510352ddfd1412f9d7faf6238"
+    },
+    "tools/sync_public.py": {
+      "bytes": 20748,
+      "sha256": "a56ee639ff0c16ccc88509f9d3709328cd9acf689d5b0bbdbac96e20ae71ae96"
+    },
+    "tools/test_public_sync.py": {
+      "bytes": 5604,
+      "sha256": "6a40e3ed6c644d490fcfcf431be258a117f3793c0c2c9c692085df725f950384"
+    },
+    "tools/test_publication_guard.py": {
+      "bytes": 10934,
+      "sha256": "426d1140cbf5d533ba02a7e4dceffae7fd020de1a33d498770dd9810e1367204"
+    },
+    "tools/test_setup.py": {
+      "bytes": 3754,
+      "sha256": "f430c66878f02cc52ac7e171e36adcdb39c384c0b19b88814df355a8a567fb18"
+    },
+    "tools/verify_package.py": {
+      "bytes": 5599,
+      "sha256": "c54dd641aa7cb6c14a72703724099ac87b22cabc2bcff0bb493717529eece348"
+    }
+  }
+}

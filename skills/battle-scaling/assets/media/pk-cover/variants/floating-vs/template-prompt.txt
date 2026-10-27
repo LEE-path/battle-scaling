@@ -1,0 +1,5 @@
+Use case: stylized-concept; reusable transparent foreground overlay for a 16:9 two-character battle cover.
+Canvas: 1920x1080, full canvas, native RGBA transparency. Keep transparent margins, do not crop to the graphic.
+Only graphic: centered staggered uppercase VS. Bright white bold serif V at upper-left and S at lower-right, slightly overlapping, with thin blue edging/compact blue glow for V and red edging/compact red glow for S. No hourglass, divider, badge or long side effects. Letter glow fades smoothly into alpha.
+All character panels, backgrounds, photographs, comic captions and names must be absent. No painted checkerboard, opaque backdrop, side flames, energy ribbons or extra text.
+Exact text: VS. Regenerate the center artwork cleanly with the built-in image generator and transparent_background=true. Normalize the full canvas proportionally if needed, preserving native alpha. Composite once above left/right full-bleed character panels that meet at the center; optional names are a separate layer.

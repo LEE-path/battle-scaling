@@ -1,9 +1,5 @@
 # VSB 属性、计算与游戏证据（按需）
 
-<!-- VSB-LICENSE-NOTICE -->
-> 改编资料 / Adapted reference: © VS Battles Wiki contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 本项目作中文翻译、摘要与执行适配 / Project changes: translation, summarization and execution guidance. 原页／修订见本页引用，作者记录见原页历史 / Sources and revisions appear below; contributors are credited through the source-page histories. [许可与署名](../THIRD_PARTY_NOTICES.md#5-vsb-模式改编资料的许可例外--vsb-mode-adapted-reference-material)。
-
-
 仅在选择 `standard=vsb` 时加载；汪吧仍按其自身规则。这里补充会改变评级/胜负的属性审查，不把属性名翻译当作完成 VSB 适配。固定来源为 2026-10-21 实际通过官方公开 MediaWiki API 核读的修订，文末列出。有限能量/速度/举力调用 `vsb_rules.run()`；其结果只是数值参考，不自动证明表现、模型、叠链或 VSB 社区认可。
 
 ## 保留用户九维，并增加 VSB 必要字段

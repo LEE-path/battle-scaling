@@ -1,6 +1,6 @@
 # 第三方来源、许可证与鸣谢 / Third-party notices and acknowledgements
 
-核查日期 / Reviewed: **2026-10-23**。范围是本次发布包，不包括仓库提交历史。 / Scope: the current release package, not repository history.
+核查更新 / Updated: **2026-10-27**。新增视频依赖与 SCP 题集署名；原有来源各自保留实际核查日期。范围是当前发布包，不包括仓库提交历史。 / New video dependencies and SCP benchmark attribution were reviewed; existing sources retain their recorded review dates. Scope: the current distribution, not repository history.
 
 ## 许可边界 / License boundaries
 
@@ -95,3 +95,47 @@ The current text returned by the official MediaWiki APIs for the [copyright page
 Wangba standards, assessment discussions and other community sources are named and linked for standards identification and research. Without an explicit grant, the original handbook or posts are not represented as MIT-licensed; their authors and original-work rights holders retain their respective rights. Full handbooks, books, comic pages and film screenshots are not bundled. Use of facts, mathematical relations and independently written explanations does not grant unlimited redistribution rights over protected source wording or arrangement.
 
 Europe PMC、百度贴吧、GitHub、arXiv、OpenAI 兼容服务等是按需资料／协议来源，不是被本仓库再许可的内容或模型。实际访问、素材上传和输出再分发还须服从对应服务条款与素材许可。 / Europe PMC, Baidu Tieba, GitHub, arXiv and OpenAI-compatible services are optional research or protocol sources, not content or models relicensed by this repository. Their service terms and the source material's license continue to apply to actual access, uploads and redistribution.
+
+## 7. 视频工程 / Video project
+
+| Component | Use and license |
+|---|---|
+| [Remotion](https://github.com/remotion-dev/remotion), pinned 4.0.539 packages | Preview, layout, effects, bundling and export. **Remotion License**, not MIT; the installed `LICENSE.md` and upstream main license were checked on 2026-10-27. Individual, eligible small-organization/nonprofit/evaluation uses and Company License requirements follow the actual license. See [upstream terms](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md) and `tools/battle-video-studio/licenses/Remotion-LICENSE.md`. Dependency source/binaries are installed with npm, not bundled. |
+| [Smiley Sans / 得意黑](https://github.com/atelier-anchor/smiley-sans) 2.0.1 | Bundled unchanged `SmileySans-Oblique.ttf`; copyright atelierAnchor, 2022–2024. **SIL Open Font License 1.1**, reserved names Smiley/得意黑. Font and complete notice stay together under `public/fonts/`; not relicensed as MIT. |
+| React / React DOM | MIT dependencies, separately installed by npm. |
+| TypeScript | Apache-2.0 development dependency, separately installed by npm. |
+| FFmpeg / ffprobe; Chrome / Edge | External media/browser tools. Their own build and distribution terms apply; executables are not bundled. |
+
+Project code and original reusable VS/branding graphics retain their included MIT license. The timing presets preserve observed cut timing and independently implemented presentation parameters; they do not include a song, source video, character image or a right to redistribute such media. Users obtain permitted media themselves, import a matching audio edit with `scripts/import-music.mjs`, and provide character assets via the workbench or job paths. A timing match, download success or third-party acknowledgement does not grant media rights.
+
+## 8. SCP 语义题集 / SCP-derived semantic benchmark portions
+
+`skills/battle-scaling/benchmarks/semantic-boundaries/` includes short textual selections, Chinese contextual paraphrases and adapted questions/review criteria from:
+
+- **SCP-3143 — Murphy Law in… The Foundation Always Rings Twice!**, by [The Great Hippo](https://www.wikidot.com/user:info/the-great-hippo), [original article](https://scp-wiki.wikidot.com/scp-3143).
+- **SCP-3812 — A Voice Behind Me**, by [djkaktus](https://scp-wiki.wikidot.com/djkaktus), [original article](https://scp-wiki.wikidot.com/scp-3812).
+
+These SCP-derived portions and their adaptations use **[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)**. Changes include short selection, Chinese paraphrase, contextual summary, adversarial reasoning examples and review criteria. Keep author/source/license links and applicable ShareAlike terms when reusing them; the root MIT license does not override these portions. Original generic recorder code remains independently MIT-licensed. Non-SCP source excerpts retain their own rights; no complete screenplay, novel, source article, SCP story or image is bundled. See the [SCP Licensing Guide](https://scp-wiki.wikidot.com/licensing-guide).
+
+## Optional DEATH BATTLE! cover variant
+
+`skills/battle-scaling/assets/media/pk-cover/variants/cosmic-death-battle/template-1920x1080.png` is an optional generated layout example bearing the **DEATH BATTLE!** wording. Its generation instructions are preserved in the adjacent `template-prompt.txt`; it was generated with that text, rather than supplied as an official brand asset. The underlying show/brand is [DEATH BATTLE](https://deathbattle.gg/en-usd). The brand wording and any associated trademark rights are **not** represented as project-owned or granted under MIT. This package has no affiliation, sponsorship or endorsement from DEATH BATTLE. No license to a third-party brand is granted by this example. The default original cover designs and the video's silver VS remain available independently.
+
+
+## Media and research installation profiles
+
+The full installer downloads these dependencies into the user's isolated environment; their source/binaries are not vendored into this distribution. Versions are recorded in `tools/requirements/constraints-tested.txt`. Declared licenses were checked from the successfully installed package metadata on 2026-10-28.
+
+| Dependency | Use | Declared license / upstream |
+|---|---|---|
+| [requests](https://github.com/psf/requests) | HTTP and platform requests | Apache-2.0 |
+| [python-qrcode](https://github.com/lincolnloop/python-qrcode) | User-confirmed QR login | BSD; its dependencies retain their own terms |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Video format resolution and downloads | Unlicense; optional bundled or linked components have separate terms |
+| [gallery-dl](https://github.com/mikf/gallery-dl), [upstream](https://codeberg.org/mikf/gallery-dl) | Image galleries and supported media sites | GPL-2.0-only |
+| [bilibili-api-python](https://github.com/Nemo2011/bilibili-api) | Optional direct Bilibili clip resolver in `media_acquire.py` | GPL-3.0-or-later |
+| [SymPy](https://github.com/sympy/sympy) | Optional symbolic mathematics | BSD |
+| [Pint](https://github.com/hgrecco/pint) | Optional physical units | BSD |
+
+GPL dependencies are not relicensed as MIT. If redistributing them or a combined program, evaluate and meet the applicable GPL terms; installing them separately or describing them as optional is not a blanket license exemption. The root MIT license covers original project portions only.
+
+The unchanged Smiley Sans font and its OFL notice are also supplied in `skills/battle-scaling/assets/media/fonts/` for portable collage output, in addition to the video project's `public/fonts/`. Keep each font with its notice.

@@ -1,0 +1,69 @@
+{
+  "id": "new-battle",
+  "mode": "media-demo",
+  "templateId": "V09",
+  "characters": {
+    "a": {
+      "name": "A",
+      "clips": []
+    },
+    "b": {
+      "name": "B",
+      "clips": []
+    }
+  },
+  "comparisons": [
+    {
+      "label": "力量",
+      "winner": "tie"
+    },
+    {
+      "label": "速度",
+      "winner": "tie"
+    },
+    {
+      "label": "防御",
+      "winner": "tie"
+    },
+    {
+      "label": "耐力",
+      "winner": "tie"
+    },
+    {
+      "label": "体质",
+      "winner": "tie"
+    },
+    {
+      "label": "智商",
+      "winner": "tie"
+    },
+    {
+      "label": "心理素质",
+      "winner": "tie"
+    },
+    {
+      "label": "技能",
+      "winner": "tie"
+    },
+    {
+      "label": "攻击力",
+      "winner": "tie"
+    },
+    {
+      "label": "战斗经验",
+      "winner": "tie"
+    },
+    {
+      "label": "近战格斗",
+      "winner": "tie"
+    },
+    {
+      "label": "优势",
+      "winner": "tie"
+    }
+  ],
+  "verdict": {
+    "winner": "tie",
+    "subtitle": "Editing demonstration; enter your own researched result."
+  }
+}

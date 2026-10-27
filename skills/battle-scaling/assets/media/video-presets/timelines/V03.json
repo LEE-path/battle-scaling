@@ -1,0 +1,131 @@
+{
+  "id": "V03",
+  "duration_s": 39.404263,
+  "frame_size": [
+    1080,
+    1440
+  ],
+  "audio_file": "music/V03.m4a",
+  "comparison_slot_count": 11,
+  "dedicated_verdict_slot_count": 1,
+  "stages": [
+    {
+      "start": 0,
+      "end": 15.33,
+      "role": "上下分屏介绍"
+    },
+    {
+      "start": 15.33,
+      "end": 31.67,
+      "role": "属性及趣味项"
+    },
+    {
+      "start": 31.67,
+      "end": 35.7,
+      "role": "总判及赢家高光"
+    },
+    {
+      "start": 35.7,
+      "end": 39.4,
+      "role": "作者片尾"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "original_label": "力量",
+      "original_role": "attribute",
+      "label_cut_s": 15.333,
+      "reveal_cut_s": 16.167,
+      "next_cut_s": 16.867
+    },
+    {
+      "order": 2,
+      "original_label": "速度",
+      "original_role": "attribute",
+      "label_cut_s": 16.867,
+      "reveal_cut_s": 17.633,
+      "next_cut_s": 18.4
+    },
+    {
+      "order": 3,
+      "original_label": "防御",
+      "original_role": "attribute",
+      "label_cut_s": 18.4,
+      "reveal_cut_s": 19.067,
+      "next_cut_s": 19.8
+    },
+    {
+      "order": 4,
+      "original_label": "耐力",
+      "original_role": "attribute",
+      "label_cut_s": 19.8,
+      "reveal_cut_s": 20.533,
+      "next_cut_s": 21.3
+    },
+    {
+      "order": 5,
+      "original_label": "智商",
+      "original_role": "attribute",
+      "label_cut_s": 21.3,
+      "reveal_cut_s": 22,
+      "next_cut_s": 22.767
+    },
+    {
+      "order": 6,
+      "original_label": "技能",
+      "original_role": "attribute",
+      "label_cut_s": 22.767,
+      "reveal_cut_s": 23.467,
+      "next_cut_s": 24.233
+    },
+    {
+      "order": 7,
+      "original_label": "攻击力",
+      "original_role": "attribute",
+      "label_cut_s": 24.233,
+      "reveal_cut_s": 25,
+      "next_cut_s": 25.733
+    },
+    {
+      "order": 8,
+      "original_label": "破坏力",
+      "original_role": "attribute",
+      "label_cut_s": 25.733,
+      "reveal_cut_s": 26.5,
+      "next_cut_s": 27.233
+    },
+    {
+      "order": 9,
+      "original_label": "战斗经验",
+      "original_role": "attribute",
+      "label_cut_s": 27.233,
+      "reveal_cut_s": 28,
+      "next_cut_s": 28.733
+    },
+    {
+      "order": 10,
+      "original_label": "优势",
+      "original_role": "summary",
+      "label_cut_s": 28.733,
+      "reveal_cut_s": 29.5,
+      "next_cut_s": 30.233
+    },
+    {
+      "order": 11,
+      "original_label": "月牙天冲",
+      "original_role": "theme",
+      "label_cut_s": 30.233,
+      "reveal_cut_s": 30.933,
+      "next_cut_s": 31.667
+    },
+    {
+      "order": 12,
+      "original_label": "完胜",
+      "original_role": "verdict",
+      "label_cut_s": 31.667,
+      "reveal_cut_s": 32.433,
+      "next_cut_s": null
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "model": "gravitational_binding",
   "inputs": {
     "mass": {
-      "value": 5.9722e24,
+      "value": 5.9722e+24,
       "unit": "kg",
       "source": "NASA Earth Fact Sheet, Bulk parameters: mass 5.9722 x 10^24 kg; https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html; checked 2026-10-18",
       "assumption": "A fictional Earth-like target is modeled using Earth's mass only if the case explicitly accepts this analogy; this file itself is a physical benchmark."

@@ -1,0 +1,19 @@
+{
+  "presetPool": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "V09"
+  ],
+  "selection": "uniform-random-once-per-new-request",
+  "renderer": "nine-templates",
+  "textScale": 1.15,
+  "vsPresentation": "image",
+  "vsVariant": "silver",
+  "watermark": "Battle Scaling"
+}

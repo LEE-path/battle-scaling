@@ -76,8 +76,11 @@ class AstronomicalAdmissionTests(unittest.TestCase):
                          'data/wangba-handbook-2026-07-30/finite-rules-curated.json')
         self.assertEqual(runtime, curated)
         rows = runtime['qualitative_astronomical_references']
-        self.assertEqual([row['label'] for row in rows], ['标准星系', '单体宇宙'])
-        row = rows[0]
+        # These two contracts do not prohibit other independently curated rows.
+        by_id = {row['id']: row for row in rows}
+        self.assertEqual(by_id['standard-galaxy']['label'], '标准星系')
+        self.assertEqual(by_id['single-universe']['label'], '单体宇宙')
+        row = by_id['standard-galaxy']
         clause = next(c for c in runtime['clauses'] if c['id'] == row['clause_id'])
         self.assertEqual(row['clause_id'], 'F250-ASTRO')
         self.assertEqual(row['definition'],

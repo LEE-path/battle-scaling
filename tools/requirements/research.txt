@@ -1,0 +1,5 @@
+# Optional PDF, symbolic quantities and Tieba adapters. No OCR/ML runtime.
+pypdf>=5
+sympy>=1.13,<2
+pint>=0.24,<1
+aiotieba>=4,<5

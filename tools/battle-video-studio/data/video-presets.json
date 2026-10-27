@@ -1,0 +1,1915 @@
+{
+  "V01": {
+    "id": "V01",
+    "width": 540,
+    "height": 960,
+    "fps": 30,
+    "durationFrames": 1323,
+    "color": "#ffffff",
+    "effect": "diagonal",
+    "revealEffect": "cut",
+    "blur": 25,
+    "shift": 52,
+    "angle": 0,
+    "stretch": 1.04,
+    "before": 0.083,
+    "after": 0.067,
+    "introFrames": 305,
+    "bloom": 0.065,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 305,
+        "effect": "diagonal",
+        "kind": "label",
+        "peakOffset": -2
+      },
+      {
+        "at": 336,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 367,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 400,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 431,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 464,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 496,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 528,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 561,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 592,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 625,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 657,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 689,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 721,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 754,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 786,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 817,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 849,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 882,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 913,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 946,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 978,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1010,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1042,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1075,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1107,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1139,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1171,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1202,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1236,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1268,
+        "effect": "cut",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1300,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "present",
+      "names": [],
+      "namesAt": 0,
+      "vsAt": 0,
+      "vs": "VS",
+      "color": "white",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": null,
+      "brand": "Battle Scaling",
+      "fade": 0.16
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V02": {
+    "id": "V02",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1339,
+    "color": "#ffffff",
+    "effect": "swirl",
+    "revealEffect": "swirl",
+    "blur": 5,
+    "shift": 22,
+    "angle": 18,
+    "stretch": 1.04,
+    "before": 0.067,
+    "after": 0.067,
+    "introFrames": 410,
+    "bloom": 0.065,
+    "particles": true,
+    "flicker": true,
+    "events": [
+      {
+        "at": 410,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 430,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 450,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 469,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 487,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 508,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 526,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 548,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 567,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 589,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 606,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 626,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 643,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 663,
+        "effect": "zoom",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 682,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 702,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 719,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 739,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 757,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 778,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 797,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 819,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 841,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 858,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 875,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 895,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 913,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 934,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 951,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 972,
+        "effect": "swirl",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 991,
+        "effect": "swirl",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1007,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1252,
+        "effect": "cut",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "present",
+      "names": [],
+      "namesAt": 0,
+      "vsAt": 0,
+      "vs": "VERSUS",
+      "color": "#e51b37",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 41.73,
+      "brand": "Battle Scaling",
+      "fade": 0.35
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V03": {
+    "id": "V03",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1183,
+    "color": "#ffffff",
+    "effect": "vertical",
+    "revealEffect": "vertical",
+    "blur": 42,
+    "shift": 58,
+    "angle": 0,
+    "stretch": 1.35,
+    "before": 0.033,
+    "after": 0.067,
+    "introFrames": 460,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 460,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 485,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 506,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 529,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 552,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 572,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 594,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 616,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 639,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 660,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 683,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 704,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 727,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 750,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 772,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 795,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 817,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 840,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 862,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 885,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 907,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 928,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 950,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 973,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1071,
+        "effect": "cut",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "delayed",
+      "names": [],
+      "namesAt": 2.85,
+      "vsAt": 0.03,
+      "vs": "VS",
+      "color": "#e82b42",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 35.7,
+      "brand": "Battle Scaling",
+      "fade": 1.4
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V04": {
+    "id": "V04",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1553,
+    "color": "#ffffff",
+    "effect": "horizontal",
+    "revealEffect": "horizontal",
+    "blur": 22,
+    "shift": 26,
+    "angle": 0,
+    "stretch": 1.02,
+    "before": 0.0,
+    "after": 0.033,
+    "introFrames": 269,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 269,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 286,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 304,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 320,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 337,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 353,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 370,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 388,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 405,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 422,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 438,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 455,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 472,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 488,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 505,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 522,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 538,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 554,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 571,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 588,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 605,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 621,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 638,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 655,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 672,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 689,
+        "effect": "horizontal",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 706,
+        "effect": "horizontal",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 722,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1463,
+        "effect": "cut",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "delayed",
+      "names": [],
+      "namesAt": 1.98,
+      "vsAt": 0.03,
+      "vs": "VS",
+      "color": "white",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": 26.73,
+      "brandAt": 48.77,
+      "brand": "Battle Scaling",
+      "fade": 0.7
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V05": {
+    "id": "V05",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1698,
+    "color": "#ffffff",
+    "effect": "vertical",
+    "revealEffect": "vertical",
+    "blur": 50,
+    "shift": 68,
+    "angle": 0,
+    "stretch": 1.6,
+    "before": 0.033,
+    "after": 0.067,
+    "introFrames": 270,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 270,
+        "effect": "dissolve",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 288,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 305,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 321,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 338,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 355,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 372,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 390,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 406,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 423,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 439,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 456,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 472,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 489,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 507,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 525,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 541,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 559,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 575,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 593,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 609,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 625,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 642,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 658,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 676,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 694,
+        "effect": "dissolve",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1623,
+        "effect": "vertical",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "none",
+      "names": [],
+      "namesAt": 0,
+      "vsAt": 0,
+      "vs": "VS",
+      "color": "white",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 54.1,
+      "brand": "Battle Scaling",
+      "fade": 0.2
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": [
+      {
+        "start": 0,
+        "end": 1.13,
+        "side": "a"
+      },
+      {
+        "start": 1.13,
+        "end": 2.27,
+        "side": "b"
+      },
+      {
+        "start": 2.27,
+        "end": 3.47,
+        "side": "a"
+      },
+      {
+        "start": 3.47,
+        "end": 4.53,
+        "side": "b"
+      },
+      {
+        "start": 4.53,
+        "end": 5.43,
+        "side": "a"
+      },
+      {
+        "start": 5.43,
+        "end": 6.83,
+        "side": "b"
+      },
+      {
+        "start": 6.83,
+        "end": 7.37,
+        "side": "b"
+      },
+      {
+        "start": 7.37,
+        "end": 9,
+        "side": "b"
+      }
+    ]
+  },
+  "V06": {
+    "id": "V06",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1367,
+    "color": "#2476d4",
+    "effect": "vertical",
+    "revealEffect": "vertical",
+    "blur": 64,
+    "shift": 76,
+    "angle": 1.3,
+    "stretch": 1.7,
+    "before": 0.033,
+    "after": 0.067,
+    "introFrames": 811,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 811,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 835,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 862,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 886,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 907,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 931,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 956,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 980,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1005,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1029,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1054,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1076,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1098,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1121,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1146,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1170,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1195,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1216,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1242,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1267,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1314,
+        "effect": "vertical",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "delayed",
+      "names": [],
+      "namesAt": 2.98,
+      "vsAt": 0.03,
+      "vs": "VS",
+      "color": "#ed2341",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 43.8,
+      "brand": "Battle Scaling",
+      "fade": 0.7
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V07": {
+    "id": "V07",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1047,
+    "color": "#ffe532",
+    "effect": "vertical",
+    "revealEffect": "vertical",
+    "blur": 61,
+    "shift": 72,
+    "angle": 0.7,
+    "stretch": 1.85,
+    "before": 0.067,
+    "after": 0.067,
+    "introFrames": 572,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 572,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 590,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 608,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 626,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 641,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 658,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 674,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 691,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 707,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 724,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 740,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 757,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 772,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 789,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 806,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 823,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 839,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 856,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 872,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 888,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 904,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 921,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 938,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 955,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 972,
+        "effect": "vertical",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "typing",
+      "names": [],
+      "namesAt": 0.1,
+      "vsAt": 0.95,
+      "vs": "VS",
+      "color": "#ef173b",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 32.4,
+      "brand": "Battle Scaling",
+      "fade": 0.7
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V08": {
+    "id": "V08",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1449,
+    "color": "#ffffff",
+    "effect": "vertical-dark",
+    "revealEffect": "vertical-dark",
+    "blur": 57,
+    "shift": 67,
+    "angle": 0,
+    "stretch": 1.55,
+    "before": 0.067,
+    "after": 0.067,
+    "introFrames": 553,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 553,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 570,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 589,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 606,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 624,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 642,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 661,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 676,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 694,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 711,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 729,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 744,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 762,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 779,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 799,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 814,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 833,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 847,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 867,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 883,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 902,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 917,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 937,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 951,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 971,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 988,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1008,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1024,
+        "effect": "vertical-dark",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1041,
+        "effect": "vertical-dark",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1060,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "shrink",
+      "names": [],
+      "namesAt": 1.25,
+      "vsAt": 1.55,
+      "vs": "VS",
+      "color": "white",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": 40.5,
+      "brandAt": null,
+      "brand": "Battle Scaling",
+      "fade": 1.1
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  },
+  "V09": {
+    "id": "V09",
+    "width": 540,
+    "height": 720,
+    "fps": 30,
+    "durationFrames": 1278,
+    "color": "#e31c34",
+    "effect": "vertical",
+    "revealEffect": "vertical",
+    "blur": 72,
+    "shift": 82,
+    "angle": 0,
+    "stretch": 1.95,
+    "before": 0.067,
+    "after": 0.1,
+    "introFrames": 611,
+    "bloom": 0,
+    "particles": false,
+    "flicker": false,
+    "events": [
+      {
+        "at": 611,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 631,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 650,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 671,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 692,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 710,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 731,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 749,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 768,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 789,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 807,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 826,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 848,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 866,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 887,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 907,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 925,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 946,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 967,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 986,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1006,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1027,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1049,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1065,
+        "effect": "vertical",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1086,
+        "effect": "vertical",
+        "kind": "label",
+        "peakOffset": 0
+      },
+      {
+        "at": 1105,
+        "effect": "cut",
+        "kind": "reveal",
+        "peakOffset": 0
+      },
+      {
+        "at": 1192,
+        "effect": "vertical",
+        "kind": "outro",
+        "peakOffset": 0
+      }
+    ],
+    "title": {
+      "mode": "together",
+      "names": [],
+      "namesAt": 0.03,
+      "vsAt": 0.03,
+      "vs": "VS",
+      "color": "#f00a35",
+      "vsAsset": "media/vs/vs-01-silver.png",
+      "suffix": ""
+    },
+    "ending": {
+      "winner": null,
+      "tail": null,
+      "brandAt": 39.733,
+      "brand": "Battle Scaling",
+      "fade": 0.8
+    },
+    "segments": [],
+    "plate": "",
+    "introShots": []
+  }
+}

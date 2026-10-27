@@ -1,0 +1,18 @@
+{
+  "version": "1.21.0",
+  "static_files": 409,
+  "copied": {
+    "skill": 301,
+    "novel": 8,
+    "novel_core": 4
+  },
+  "excluded_counts": {
+    "skill": 131,
+    "novel": 10
+  },
+  "preserved": [
+    "skills/battle-scaling/references/writing-experience.md"
+  ],
+  "mode": "write",
+  "changed_files": 3
+}

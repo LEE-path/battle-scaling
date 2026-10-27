@@ -448,11 +448,15 @@ def _chain(request, audit):
     cycles = _cycles(case['edges'])
     if cycles:
         audit.issue('circular_scaling', 'Cycles cannot supply independent escalation; existing engine rejects revisited endpoints.', 'case.edges')
-        for cycle in cycles:
-            audit.task('independent_anchor', 'Find independent feat anchor for cycle ' + ' -> '.join(cycle),
-                       'case.edges', ['anchor', 'source_ids', 'state', 'quantity_or_typed_object'],
-                       'Break circular justification with an independently sourced starting bound.')
     case['edges'] = accepted
+    from research import chain_tasks
+    # Reuse the same dependency-directed source work as research.plan. A rooted
+    # cycle does not need another starting feat; an unrooted acyclic chain does.
+    directed = chain_tasks(case, mode=audit.out['mode'], hop_audits=request.get('hop_audits', []))
+    audit.out['research_tasks'] = directed + audit.out['research_tasks']
+    if any(t['kind'] == 'independent_anchor' for t in directed):
+        audit.issue('unrooted_scaling', 'A reference chain lacks a readable independent starting '
+                    'candidate. Research its root; combat comparisons alone supply no absolute scale.', 'case.anchors')
     audit.out['hop_ledger'] = ledger
     audit.out['cycles'] = cycles
     audit.out['chain_analysis'] = analyze_case(case, audit.out['mode'])

@@ -1,0 +1,53 @@
+{
+  "id": "starter",
+  "title": "Import your media",
+  "mode": "media-demo",
+  "fps": 30,
+  "width": 1080,
+  "height": 1440,
+  "durationInFrames": 90,
+  "templateId": "V09",
+  "renderer": "nine-templates",
+  "music": "",
+  "musicVolume": 0.9,
+  "characters": {
+    "a": {
+      "name": "A",
+      "version": "",
+      "tier": "",
+      "clips": []
+    },
+    "b": {
+      "name": "B",
+      "version": "",
+      "tier": "",
+      "clips": []
+    }
+  },
+  "scenes": [
+    {
+      "type": "intro",
+      "from": 0,
+      "duration": 90,
+      "label": "VS",
+      "winner": "tie",
+      "slotIndex": 0,
+      "layout": "split"
+    }
+  ],
+  "verdict": {
+    "winner": "tie",
+    "label": "Winner",
+    "subtitle": ""
+  },
+  "style": {
+    "accent": "#edff57",
+    "accentB": "#ff5478",
+    "intensity": 0.65,
+    "watermark": "Battle Scaling",
+    "showValues": false,
+    "textScale": 1.15,
+    "vsVariant": "silver",
+    "vsPresentation": "image"
+  }
+}

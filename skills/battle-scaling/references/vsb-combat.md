@@ -1,9 +1,5 @@
 # VSB：对战默认、等化及结果边界
 
-<!-- VSB-LICENSE-NOTICE -->
-> 改编资料 / Adapted reference: © VS Battles Wiki contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 本项目作中文翻译、摘要与执行适配 / Project changes: translation, summarization and execution guidance. 原页／修订见本页引用，作者记录见原页历史 / Sources and revisions appear below; contributors are credited through the source-page histories. [许可与署名](../THIRD_PARTY_NOTICES.md#5-vsb-模式改编资料的许可例外--vsb-mode-adapted-reference-material)。
-
-
 仅适用于 `standard: "vsb"`。用户明确指定的角色版本/状态、装备和场景优先；缺项再用下列 [Standard Battle Assumptions](https://vsbattles.fandom.com/wiki/Standard_Battle_Assumptions?oldid=9377396)（SBA），不能沿用汪吧案例的开局距离或外援配置。这里的“最强版本”是**已列的最强正史版本/键值**，不是跨连续性大拼盘，也不代表将全部高光、争议解释和互斥配置强行合并；按[统一综合评级](modes-scaling.md)处理。
 
 | 项目 | 未另指定时的 VSB 默认 |

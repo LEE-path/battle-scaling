@@ -12,14 +12,15 @@ import copy
 
 from writing_fidelity import review_fidelity
 from rating_preflight import review as review_ratings
-from rating_pipeline import verify_execution
+from rating_pipeline import review_handoff
+from rating_dossier import subject_views
 
 
 RATING_FIELDS = ('输出', '体防', '智力', '战斗智商', '经验', '特殊技能', '破坏', '速度', '体量')
 SKILL_FIELDS = ('name', 'effect', 'activation', 'cost', 'range', 'limits')
 SPECIAL_ENDINGS = {'draw', 'mutual_defeat', 'open'}
 WRITING_POLICY = {
-    'scope': 'purpose=writing only; independent ratings and ordinary PK retain their existing gates',
+    'scope': 'purpose=writing only; ordinary PK and writing share the same actual independent-research handoff',
     'evidence_priority': ['qualified_matching_dossiers', 'canon_text', 'official_scripts', 'reliable_material'],
     'mandatory_media_steps': [],
     'interaction_reasoning': 'Research decisive gaps and trace attribute-matched inferences to evidence; missing direct crossover footage alone is neither a new setting nor a reason to ask the author.',
@@ -63,10 +64,11 @@ def _strings(value, path, errors):
 
 def _host_tasks(unresolved, response):
     tasks = [
-        'Read every fighter persona, current state, nine-dimensional rating, skill mechanism, activation, cost, range and limit before outlining.',
+        'Read every fighter persona, current state, resolved main tier and nine-dimensional rating, skill mechanism, activation, cost, range and limit before outlining. fighter.rating_ref identifies the reviewed independent base; explicit author_rating_overrides replace only their named fields and never turn that base acceptance into canon evidence for an author change.',
         'Before plotting prose, follow the same independent single-character rating workflow for each selected version, state and equipment, completing or reusing an actually reviewed full nine-dimensional dossier. Establish one specific main tier and evidence-backed concrete conservative floor tiers for applicable output, durability and destruction; keep unknown ceilings separate. Review the configuration, credible materially higher feats and transfer chains, and explain the mode-specific selection before treating any local floor as representative. Record sourced completion_review findings and candidate dispositions, bind host acceptance to its exact revision, and freshly read the current dossier status before reuse; a withdrawn or superseded acceptance cannot be revived by an old ready receipt. Reuse qualified matching dossiers first, then prioritize canon text, official scripts and reliable material with source locations, calculations or scaling arguments, relevant counterfeats and uncertainties retained internally. Only this story route has no mandatory image viewing, video downloading, frame extraction or visual verification. Do not automatically start new media analysis to fill gaps; use fresh visual analysis only when the user explicitly requests analysis of supplied or new media, without expanding that request into a full visual review of the story. Accepted image-derived dossier conclusions can be reused. Missing ratings still require research before plotting, never a default truce or draw. Quantify where evidence permits; never invent numbers for intelligence, experience or unknown parameters. Nonempty ratings and ready_for_host do not establish that this work is complete.',
         'When a key fact is missing, identify which conclusion depends on it and actively seek other sources, related feats or defensible bounds before treating it as an author conflict; use references/evidence-gap-recovery.md to recover the evidence chain. For weapon damage, check established material without inventing a named alloy, actual destruction feats, the target\'s prior injuries and resistances, and the injuring agent\'s material, edge, energy, output, contact area and condition. Match the relevant attributes and trace cross-inferences through sourced premises, limits and alternatives; material names alone do not rank cutting or durability, and an unconfirmed material remains unknown while demonstrated feats can still bound the interaction. A grounded inference without a direct crossover scene is not an added setting. Ask only after targeted research and inference leave an irreducible conflict that changes the outcome.',
-        'Track intent, knowledge, resources, injuries, location, cooldowns and available actions across the full battle. Reveal pivotal tactics through action; provide a concise separate design summary only if the author asks.',
+        'For a story with no author-fixed ending, determine the winner before plotting: prioritize the completed integrated main tiers, then check speed, hax, activation, resistance, equipment and state for a clear evidenced exception. Reverse-design a plausible victory for that selected fighter, then replay forward with the losing side using its strongest actually available responses. If those responses defeat the proposed route, revise the route or the verdict; never choose a winner because a tactic is easy to write, forget abilities, lower intelligence or invent resistance to preserve an ending. Preserve explicit author endings and the selected Wangba or VSB attribution rules.',
+        'Turn the full ability dossiers into adaptive tactics. Track intent, knowledge, resources, injuries, location, cooldowns and available actions across the full battle. Let meaningful feedback update both fighters knowledge and next skill choices; separate recognizing a threat, selecting an answer, completing activation, effect application and counterplay using the same timing standard for both sides. Skills need not all appear, but do not omit the most appropriate available response. Information advantages need an established causal source, not narrator foreknowledge. Reveal pivotal tactics through action; provide a concise separate design summary only if the author asks.',
         'Once the full ratings and decisive interactions are sufficiently grounded, stop expanding research. Put the main effort into character choices, natural dialogue, tension, pacing, spectacular readable action, a clear battle result and character-consistent aftermath. Show action, activation, contact or evasion, response and resulting state changes through the scene; do not turn the story into a terminology manual or audit report. Do not invent a decisive environmental advantage to manufacture a tactical solution.',
         'Unless the author sets a length limit, let characterization, dialogue, reactions and necessary causality determine the space needed, including a substantially longer story. Do not compress speech into uniformly clipped or cryptic one-liners to appear concise. Let each character respond naturally and express what the situation warrants while preserving their established degree of talkativeness. Make essential motives and consequences understandable within the prose. Avoid padding, explanatory lectures, invented counterplay or extra combat rounds merely to fill length; concise design summaries do not impose a prose length cap.',
         'Deliver the requested actual matchup through the named participants and their available actions, abilities and consequences. Let characters, settings and author requirements determine narrative form without prescribing plot types or a fixed structure. Other narrative achievements must not replace the core confrontation or its victory conditions. Match the declared outcome to its actual scope, preserve faction relations and explicit author constraints, and ground the resolution in the realized fight. One-sided control or ineffective resistance can be decisive combat; never manufacture reciprocal damage or resistance.',
@@ -130,6 +132,14 @@ def run(request):
     response = request.get('author_response', 'ask_author')
     if response not in ('ask_author', 'keep_settings'):
         raise ValueError('author_response must be ask_author or keep_settings')
+
+    # Read the actual independent product before using any presentation labels.
+    # A stale draft card is disposable; it never overrides an accepted row.
+    execution_gate = review_handoff(request)
+    if execution_gate['status'] == 'ready':
+        request['fighters'], _ = subject_views(request.get('fighters', []),
+            request.get('independent_ratings', []), standard, request.get('mode', 'integrated'),
+            sources=request.get('sources', []), allow_author_overrides=True)
 
     errors, needs, revision = [], [], []
     fighters = request.get('fighters', [])
@@ -356,13 +366,13 @@ def run(request):
     rating_gate = review_ratings(fighters, request.get('independent_ratings', []),
                                 request.get('sources', []), standard=standard,
                                 mode=request.get('mode', 'integrated'), writing=True,
+                                qualitative_claims=request.get('qualitative_claims', []),
                                 **({'rating_status':request['rating_status']} if 'rating_status' in request else {}))
-    execution_gate = verify_execution(request)
     if execution_gate['status'] != 'ready':
         rating_gate['status'] = 'needs_research'
         rating_gate['accepted_subject_ids'] = []
         rating_gate['needs'] = list(dict.fromkeys(rating_gate['needs'] + execution_gate['needs']))
-        rating_gate['research_tasks'].append('Execute the isolated single-character tasks and import the real report, CASE, source and replayable analysis files with battle.py rating-pipeline assemble before outlining the story.')
+        rating_gate['research_tasks'].append('Complete the independent single-character research and import its actual reviewed dossier with battle.py rating-pipeline assemble before outlining; a consolidated report/rating/source dossier or the existing replayable artifact bundle can be reused.')
     rating_gate['dossier_contents_read_by_checker'] = execution_gate['dossier_contents_read_by_checker']
 
     if errors:

@@ -2,16 +2,16 @@
   "case_id": "authored-fixture-lan",
   "files": {
     "analysis.json": {
-      "bytes": 177499,
-      "sha256": "29555aa788c4bc935f99b5f54fd5feff9fbf2867c9a41eb80da0856d2ac21de4"
+      "bytes": 181633,
+      "sha256": "aa301789817870116db0433458f7736b28d4b074a2e3a529a8d6377ea6f2b6cb"
     },
     "sources.json": {
       "bytes": 537,
       "sha256": "8639b729122003a7480f50e3b606167df0e1820c25bdce236379f075bae0db43"
     },
     "derivations.json": {
-      "bytes": 7421,
-      "sha256": "f09ff305fa5753849e32021a3a2e7513d138a69c86ecad0f51820d3471baa1ca"
+      "bytes": 7153,
+      "sha256": "2ff08b769dfda595e73b81cb6e77a20dab4d570e176db8c8e3ea25dc4db3037f"
     },
     "report.md": {
       "bytes": 2097,
@@ -19,15 +19,15 @@
     },
     "run-ledger.json": {
       "bytes": 696,
-      "sha256": "45c416e4ba28df5fe38866f03cec542b44b1d365d75e5d6665adcc16f6acc701"
+      "sha256": "ad5158a0583ca7f15f88b5ae1944425629cf13b743583c2391630240413a7981"
     },
     "hax-checks.json": {
       "bytes": 548,
       "sha256": "2a72d40e79b266462b488f38c2872d3f88e85e06b9f1fcb8b4d60d0a2c1f4a09"
     },
     "rules-snapshot.json": {
-      "bytes": 153325,
-      "sha256": "fc025c3b0ee8bbee9bd941918a241f233f96c8acfd8055a00208d42bd60571d7"
+      "bytes": 157916,
+      "sha256": "4eaa989dae354cd8d891e93d8bc8ae9423af26a6e5636cc68be32d2a221e194a"
     },
     "CASE.json": {
       "bytes": 11783,
@@ -39,7 +39,7 @@
     },
     "host-acceptance.json": {
       "bytes": 812,
-      "sha256": "2cd5e866df365e1553c2773deb045ac251c30c9e7640901aedd018ad4d3082cd"
+      "sha256": "a747354b50e994ddc8b60a2c275df1a61f0227f8c28493c0f907327481e721c4"
     }
   },
   "ruleset_profile": {
@@ -55,7 +55,7 @@
     "document_manifest": "data/wangba-handbook-2026-07-30/manifest.json",
     "policy": "Modes select evidence; they do not change rule edition. Each explicitly named high standard remains separate.",
     "id": "wangba-handbook-2026-07-30",
-    "selection_source": "explicit_standard",
+    "selection_source": "explicit_profile",
     "profile_configuration": {
       "path": "SKILL_ROOT/rulesets/profiles.json",
       "sha256": "679debe8f514ac5ab45fa657ce558cdc94af42b2eab4352b8fdedc6698ed92ab",
@@ -63,8 +63,8 @@
     },
     "finite_rule_snapshot": {
       "path": "SKILL_ROOT/rulesets/wangba-handbook-2026-07-30-finite.json",
-      "sha256": "dade723fbcdfef5b5318f6475a52860afa8ad06e8d94c8cb3e781908196d7934",
-      "bytes": 131945
+      "sha256": "3a58a3eef284855396a1d9c49758db1a41ebcf5e906817d76dd7dde91064669f",
+      "bytes": 136457
     },
     "document_snapshot": {
       "document_id": "wangba-handbook-2026-07-30-9d9440127d33",
