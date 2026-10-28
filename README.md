@@ -20,13 +20,13 @@
 
 ## 先看成品
 
-动图先看效果，点击打开完整有声 MP4 样片。
+动图先看效果，展开下方播放器观看完整有声 MP4 样片。
 
 <table>
 <tr><th>六宝石灭霸 vs 闪电侠</th><th>吕墨菲 vs 六宝石灭霸</th></tr>
 <tr>
-<td align="center"><a href="https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3"><img src="https://github.com/user-attachments/assets/b9b7bb22-4d48-4f7a-a8aa-1b60d796e90d" width="300" alt="六宝石灭霸 vs 闪电侠: animated video preview"></a></td>
-<td align="center"><a href="https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3"><img src="https://github.com/user-attachments/assets/100fbfb6-e540-48f5-b458-22c36c026bba" width="300" alt="吕墨菲 vs 六宝石灭霸: animated video preview"></a></td>
+<td align="center"><img src="https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/showcase-thanos-vs-flash-preview.gif" width="300" alt="六宝石灭霸 vs 闪电侠: animated video preview"></td>
+<td align="center"><img src="https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/showcase-murphy-vs-thanos-preview.gif" width="300" alt="吕墨菲 vs 六宝石灭霸: animated video preview"></td>
 </tr>
 <tr><td align="center">影视片段 · 音乐卡点 · 维度揭晓</td><td align="center">稀缺角色动画 · 动态插画 · 高光轮换</td></tr>
 </table>

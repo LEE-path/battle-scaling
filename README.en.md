@@ -20,13 +20,13 @@ From a version-specific character question to a sourced rating, a battle with a 
 
 ## See it in action
 
-Click a preview to open the full video with audio.
+Watch the animated previews, then expand the players below for the full videos with audio.
 
 <table>
 <tr><th>Thanos vs The Flash</th><th>Murphy Law vs Thanos</th></tr>
 <tr>
-<td align="center"><a href="https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3"><img src="https://github.com/user-attachments/assets/b9b7bb22-4d48-4f7a-a8aa-1b60d796e90d" width="300" alt="Thanos vs The Flash: animated video preview"></a></td>
-<td align="center"><a href="https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3"><img src="https://github.com/user-attachments/assets/100fbfb6-e540-48f5-b458-22c36c026bba" width="300" alt="Murphy Law vs Thanos: animated video preview"></a></td>
+<td align="center"><img src="https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/showcase-thanos-vs-flash-preview.gif" width="300" alt="Thanos vs The Flash: animated video preview"></td>
+<td align="center"><img src="https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/showcase-murphy-vs-thanos-preview.gif" width="300" alt="Murphy Law vs Thanos: animated video preview"></td>
 </tr>
 <tr><td align="center">Cinematic footage · beat cuts · attribute reveals</td><td align="center">Rare-character animation · dynamic art · varied highlights</td></tr>
 </table>
