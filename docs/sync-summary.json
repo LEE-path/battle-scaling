@@ -1,6 +1,6 @@
 {
   "version": "1.21.0",
-  "static_files": 409,
+  "static_files": 410,
   "copied": {
     "skill": 301,
     "novel": 8,
@@ -14,5 +14,5 @@
     "skills/battle-scaling/references/writing-experience.md"
   ],
   "mode": "write",
-  "changed_files": 3
+  "changed_files": 1
 }

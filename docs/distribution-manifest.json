@@ -19,16 +19,16 @@
       "sha256": "a6a416b46b86a87759ffe1b8cb5e93f5c6583d922f672b28fdf909f228ed9cbd"
     },
     "README.en.md": {
-      "bytes": 13526,
-      "sha256": "56af7644a2fa958c75028014c4346127d0a26ede69e9f08ccac44e9b7df8c48b"
+      "bytes": 17694,
+      "sha256": "769f158c7f497eaa6be3fffada3eaa16d2cee26e024d5c4b7f0a4f5d6b55a521"
     },
     "README.md": {
-      "bytes": 11942,
-      "sha256": "ce1fbdeb3208c560bc13816ae3fdc4609153443e6685071f302096dcc4c7e183"
+      "bytes": 16024,
+      "sha256": "ddd1e808d9d8587690997408cdb3b241ad4aa372b7a8c61fee4d643df662366c"
     },
     "THIRD_PARTY_NOTICES.md": {
-      "bytes": 24786,
-      "sha256": "59100be2a6ca62b8cb6bcfdf361ff3724b3f932055c4b6401114ec4a2852d887"
+      "bytes": 25359,
+      "sha256": "42e2a809dde1fcabdab12575070b3a48d76e8543dc5856f6cc4d1772832825ed"
     },
     "UPSTREAM-SOURCES.json": {
       "bytes": 26667,
@@ -57,6 +57,10 @@
     "docs/RELEASE-v1.12.3.md": {
       "bytes": 1372,
       "sha256": "329cfbaf28023c356881fca980fc81e7a8abc3130ddebe4321b6a30edc976b63"
+    },
+    "docs/SHOWCASE.md": {
+      "bytes": 4113,
+      "sha256": "de181f802a3c1fa0f235f1cf9ea20a16d47dc15d024c05808685108992c36d31"
     },
     "docs/assets/hero-en.png": {
       "bytes": 2778122,

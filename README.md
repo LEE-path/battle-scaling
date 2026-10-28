@@ -1,16 +1,81 @@
-[简体中文](README.md) | [English](README.en.md)
+**简体中文** | [English](README.en.md)
 
-![BATTLE SCALING：角色评级、VS推演、战斗写作](docs/assets/hero-zh.png)
+![Battle Scaling](docs/assets/hero-zh.png)
+
+<div align="center">
 
 # Battle Scaling
 
-**给 Agent 使用的原作取证、综合量级评定、VS 推演、战斗写作与视频工具 · v1.21.0**
+### 让 Agent 会论战，也会把论战做成作品。
 
-把“角色有多强、根据什么、如何获胜”整理成可追溯的证据和推导。默认采用汪吧标准，也可切换到完整 VSB 规则。宿主 Agent 负责搜索、阅读与判断；配套 Python 工具负责定位、计算、约束检查和归档。
+角色评级 · VS 推演 · 战斗故事 · 海报 · 一图流 · 卡点视频
 
-[安装](#安装) · [任务示例](#任务示例) · [许可与鸣谢](#许可与鸣谢) · [Release](https://github.com/LEE-path/battle-scaling/releases/latest)
+![Version](https://img.shields.io/badge/version-1.21.0-36c5f0?style=flat-square) ![Standards](https://img.shields.io/badge/standards-Wangba_%2B_VSB-8b5cf6?style=flat-square) ![Video templates](https://img.shields.io/badge/video_templates-9-f59e0b?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square)
 
-## 能做什么
+**[下载完整工具包](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/battle-scaling-v1.21.0.zip)** · [ 安装指南 ](docs/INSTALL.md) · [ 先看成品 ](#先看成品) · [Release](https://github.com/LEE-path/battle-scaling/releases/tag/v1.21.0)
+
+</div>
+
+从“这个版本到底有多强”，到有出处的综合评级、清楚的胜负手，再到能分享的图像与视频。默认汪吧，支持完整 VSB。定档、PK 和故事共用独立角色研究，媒体制作按需调用。
+
+## 先看成品
+
+动图先看效果，点击打开完整有声 MP4 样片。
+
+<table>
+<tr><th>六宝石灭霸 vs 闪电侠</th><th>吕墨菲 vs 六宝石灭霸</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3"><img src="https://github.com/user-attachments/assets/b9b7bb22-4d48-4f7a-a8aa-1b60d796e90d" width="300" alt="六宝石灭霸 vs 闪电侠: animated video preview"></a></td>
+<td align="center"><a href="https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3"><img src="https://github.com/user-attachments/assets/100fbfb6-e540-48f5-b458-22c36c026bba" width="300" alt="吕墨菲 vs 六宝石灭霸: animated video preview"></a></td>
+</tr>
+<tr><td align="center">影视片段 · 音乐卡点 · 维度揭晓</td><td align="center">稀缺角色动画 · 动态插画 · 高光轮换</td></tr>
+</table>
+
+**剪辑与素材演示** · 片内给分用于展示剪辑，不作当前角色评级结论。 [ 示例说明与素材署名 ](docs/SHOWCASE.md)
+
+<details>
+<summary><b>完整有声样片 · 展开播放器</b></summary>
+
+**Thanos vs The Flash / 六宝石灭霸 vs 闪电侠**
+
+https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3
+
+**Murphy Law vs Thanos / 吕墨菲 vs 六宝石灭霸**
+
+https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3
+
+</details>
+
+### 同一场对战，也能做封面和一图流
+
+<table>
+<tr><th>影视角色海报</th><th>动画角色海报</th></tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/9ab56cfc-90c2-48a5-90c2-d336a188a195" width="440" alt="The Flash versus six-stone Thanos poster"></td>
+<td><img src="https://github.com/user-attachments/assets/2728da7d-5400-475e-b0fe-7825b1e05119" width="440" alt="Akainu versus Whitebeard poster"></td>
+</tr>
+</table>
+
+<details>
+<summary><b>也能做一图流胜负梗图 · 展开看示例</b></summary>
+
+<p align="center"><img src="https://github.com/user-attachments/assets/8d430c45-35db-472a-b1e5-55584990340f" width="520" alt="Murphy Law versus Infinite Ultron one-image collage"></p>
+
+沿用既有结果：胜者左、败者右，贴图与配文独立排版；成图不反过来参与定级。
+
+</details>
+
+
+## 你想做到哪一步
+
+<table>
+<tr><td width="50%"><b>📚 原作搜证与拆书</b><br>查能力，也查能力的实际表现；追踪版本、状态、章节与原文上下文。</td><td width="50%"><b>📐 物理推算与高层叠链</b><br>材料、比例、受力与能量；数学结构、无限层级与叙事关系。</td></tr>
+<tr><td width="50%"><b>⚖️ 综合定档与九维</b><br>汪吧／VSB，明确综合主档；九维、原始来源、叠法与限制一起给。</td><td width="50%"><b>⚔️ PK 与战斗写作</b><br>胜路、反制与反馈换招；保留人物性格、语言和清楚的战斗因果。</td></tr>
+<tr><td width="50%"><b>🎬 从图片到可编辑视频</b><br>透明封面资产、一图流、九套音乐时序模板，交工程与 MP4。</td><td width="50%"><b>🔌 素材搜寻与生成扩展</b><br>搜索、提取与下载；接入图像／视频 API、MCP、CLI 或所选本地模型。</td></tr>
+</table>
+
+<details>
+<summary><b>完整能力清单</b></summary>
 
 | 能力 | 具体内容 |
 |---|---|
@@ -28,6 +93,8 @@
 | 属性卡点视频 | 九套独立音乐时序、可编辑 Remotion 工程、角色素材区间编排、双高光轮换和 MP4 导出；使用者自行提供有权使用的音轨及素材。 |
 
 九维固定包含：**输出、体防、智力、战斗智商、经验、特殊技能、破坏、速度、体量**。速度等可继续分项；智力、经验使用适合该属性的能力等级，不硬套爆炸能量档。
+
+</details>
 
 ## 两种标准，一个综合主档
 
@@ -78,13 +145,18 @@ A vs B，具体过程：先写总体优势方获胜的一局，再说明整体�
 A vs B，故事版：保留人设与能力，补合理前因，写完整交锋和明确结局。
 为某小说角色建立结尾状态档案；没有完整档案时先用拆书管线。
 分析这次单次表现，核材料、受力、状态和能力机制，再定档。
+A vs B，故事版＋海报＋一图流：沿用指定配置，分别交付。
+A vs B，严谨PK＋卡点视频：先定胜者和难度，再交可编辑工程与成片。
+把我提供的参考视频复刻成可换人物模板，包含开场、维度揭晓、动效和片尾。
+为冷门角色搜集适配素材；需要生成时，优先接入我已有的图像／视频后端。
 ```
 
 Agent 从 [SKILL.md](skills/battle-scaling/SKILL.md)路由到所需资料。脚本不包含独立聊天模型，不会因生成索引、哈希或 JSON 就自动读懂原作。
 
 完整包提供相同的方法、工具代码、模板与可复用资产。搜索／图像／视频生成能力由宿主或使用者配置的后端提供；账号、API Key、素材授权与音轨由使用者自行准备，不绑定某台电脑的会话或路径。
 
-## 本地验证与小说工具
+<details>
+<summary><b>进阶命令：环境诊断、计算与小说拆书</b></summary>
 
 在仓库根目录运行：
 
@@ -108,7 +180,9 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book
 
 未读原文保持部分覆盖，程序 `complete` 不替代宿主语义验收；候选 CASE 仍需正式定档。详见[独立拆书库](tools/combat-novel-refpack/README.md)与[完整拆书协议](skills/battle-scaling/references/novel-refpack-pipeline.md)。
 
-## 视频工具
+</details>
+
+## 把下一场对战做成视频
 
 [`tools/battle-video-studio`](tools/battle-video-studio/README.md) 需要 Node.js 22.18+、npm、FFmpeg/ffprobe 和 Chrome/Edge。进入该目录运行 `npm ci`、`npm start`，访问 <http://127.0.0.1:3210>。从工作台导入双方素材，或提供任务 JSON。
 
@@ -131,4 +205,4 @@ npm run render -- --job 工程ID
 
 特别感谢 [novel-refpack](https://github.com/scp3500/novel-refpack) 的拆书工作流参考。流程与研究还参考了 [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill)、[OmniBattle](https://github.com/Zerhal/omnibattle-ai)、[vskill](https://github.com/GentleClash/vskill)、[Fictional Ranking](https://github.com/BenCantCode/fictional-ranking)、[Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats)、[QuantiPhy](https://github.com/Paulineli/QuantiPhy) 和 [MangaLMM](https://github.com/manga109/MangaLMM)。[Cited Feats](https://citedfeats.com/data/) 与 [ManGo](https://arxiv.org/abs/2608.29865) 使用其已核官网／论文入口；没有虚构实现仓库。
 
-这些研究项目不是默认运行依赖，也不表示其模型已被本包安装或复现。公开包不分发原作截图、整本小说、完整参考册 OCR、第三方模型权重或私有运行记录；写作参考使用[可复用写作经验](skills/battle-scaling/references/writing-experience.md)，不附教学故事或故事原文摘录。本次只审计当前发布包，不追溯 Git 历史，也不作无侵权或任意评级必然正确的保证。
+这些研究项目不是默认运行依赖，也不表示其模型已被本包安装或复现。安装归档不预置原作截图、整本小说、完整参考册 OCR、第三方模型权重或私有运行记录；另行链接的展示成图与样片按[示例说明](docs/SHOWCASE.md)保留来源及权利边界。写作参考使用[可复用写作经验](skills/battle-scaling/references/writing-experience.md)，不附教学故事或故事原文摘录。具体组件边界见上述许可与分发说明。

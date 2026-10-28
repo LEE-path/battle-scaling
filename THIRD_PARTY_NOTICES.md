@@ -139,3 +139,8 @@ The full installer downloads these dependencies into the user's isolated environ
 GPL dependencies are not relicensed as MIT. If redistributing them or a combined program, evaluate and meet the applicable GPL terms; installing them separately or describing them as optional is not a blanket license exemption. The root MIT license covers original project portions only.
 
 The unchanged Smiley Sans font and its OFL notice are also supplied in `skills/battle-scaling/assets/media/fonts/` for portable collage output, in addition to the video project's `public/fonts/`. Keep each font with its notice.
+
+
+## Linked showcase media
+
+The README and Release page separately embed existing edited character-media examples and display copies. These are presentation examples, not an MIT-licensed stock-media library or a source of canonical rating evidence. Their film, animation, character art, manga sticker and music rights remain distinct from the original project code, templates and brand graphics. The installable archives do not preload that footage or audio. Source-level credits and the scope of SCP-derived material are listed in [showcase notes](docs/SHOWCASE.md).

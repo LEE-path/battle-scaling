@@ -1,16 +1,81 @@
-[简体中文](README.md) | [English](README.en.md)
+[简体中文](README.md) | **English**
 
-![BATTLE SCALING: character scaling, VS analysis and battle writing](docs/assets/hero-en.png)
+![Battle Scaling](docs/assets/hero-en.png)
+
+<div align="center">
 
 # Battle Scaling
 
-**An Agent Skill for canonical evidence, integrated ratings, VS analysis, battle writing and video tools · v1.21.0**
+### Research the canon. Settle the matchup. Make it watchable.
 
-Turn “how strong is this character, why, and how could they win?” into traceable evidence and reasoning. Wangba is the default standard; a complete VSB rule mode is also available. The host Agent searches, reads and judges. Python tools handle source locations, calculations, constraints and artifacts.
+Character ratings · VS analysis · battle stories · posters · beat-synced videos
 
-[Install](#install) · [Example requests](#example-requests) · [Licensing and credits](#licensing-and-credits) · [Release](https://github.com/LEE-path/battle-scaling/releases/latest)
+![Version](https://img.shields.io/badge/version-1.21.0-36c5f0?style=flat-square) ![Standards](https://img.shields.io/badge/standards-Wangba_%2B_VSB-8b5cf6?style=flat-square) ![Video templates](https://img.shields.io/badge/video_templates-9-f59e0b?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square)
 
-## Capabilities
+**[Download the full toolkit](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/battle-scaling-v1.21.0.zip)** · [ Installation guide ](docs/INSTALL.md) · [ Watch demos ](#see-it-in-action) · [Release](https://github.com/LEE-path/battle-scaling/releases/tag/v1.21.0)
+
+</div>
+
+From a version-specific character question to a sourced rating, a battle with a clear outcome and shareable visual outputs. Wangba is the default; full VSB mode is available. Use the same independent character research across ratings, matchup analysis and stories, then invoke media tools when needed.
+
+## See it in action
+
+Click a preview to open the full video with audio.
+
+<table>
+<tr><th>Thanos vs The Flash</th><th>Murphy Law vs Thanos</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3"><img src="https://github.com/user-attachments/assets/b9b7bb22-4d48-4f7a-a8aa-1b60d796e90d" width="300" alt="Thanos vs The Flash: animated video preview"></a></td>
+<td align="center"><a href="https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3"><img src="https://github.com/user-attachments/assets/100fbfb6-e540-48f5-b458-22c36c026bba" width="300" alt="Murphy Law vs Thanos: animated video preview"></a></td>
+</tr>
+<tr><td align="center">Cinematic footage · beat cuts · attribute reveals</td><td align="center">Rare-character animation · dynamic art · varied highlights</td></tr>
+</table>
+
+**Editing & media demonstrations** · The sample scores illustrate presentation, not current canonical ratings. [ Sources and sample notes ](docs/SHOWCASE.md)
+
+<details>
+<summary><b>Full videos with audio — expand players</b></summary>
+
+**Thanos vs The Flash / 六宝石灭霸 vs 闪电侠**
+
+https://github.com/user-attachments/assets/aeb27429-cbfc-402f-851f-b4ba20bc6ce3
+
+**Murphy Law vs Thanos / 吕墨菲 vs 六宝石灭霸**
+
+https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3
+
+</details>
+
+### A matchup can become a cover, too
+
+<table>
+<tr><th>Live-action poster</th><th>Anime poster</th></tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/9ab56cfc-90c2-48a5-90c2-d336a188a195" width="440" alt="The Flash versus six-stone Thanos poster"></td>
+<td><img src="https://github.com/user-attachments/assets/2728da7d-5400-475e-b0fe-7825b1e05119" width="440" alt="Akainu versus Whitebeard poster"></td>
+</tr>
+</table>
+
+<details>
+<summary><b>Also supports one-image victory memes — expand example</b></summary>
+
+<p align="center"><img src="https://github.com/user-attachments/assets/8d430c45-35db-472a-b1e5-55584990340f" width="520" alt="Murphy Law versus Infinite Ultron one-image collage"></p>
+
+Existing results become a collage: winner left, loser right, an overlay and localized text. The image does not create a new rating.
+
+</details>
+
+
+## Choose what to make
+
+<table>
+<tr><td width="50%"><b>📚 Canon research & novel dossiers</b><br>Trace abilities to their actual feats. Follow states, versions, chapters and source context.</td><td width="50%"><b>📐 Physics & higher structures</b><br>Materials, geometry, forces and energy; mathematical hierarchies and narrative relations.</td></tr>
+<tr><td width="50%"><b>⚖️ One integrated rating</b><br>Wangba or VSB, nine attributes, explicit scaling and a traceable overall tier.</td><td width="50%"><b>⚔️ Matchups & battle writing</b><br>Win paths, counters and tactical feedback, with characterization and readable causality.</td></tr>
+<tr><td width="50%"><b>🎬 Posters & editable video</b><br>Transparent cover assets, collage, nine beat-timing presets and MP4 export.</td><td width="50%"><b>🔌 Find media, connect tools</b><br>Search/extract/download; connect image/video APIs, MCPs, CLIs or selected local models.</td></tr>
+</table>
+
+<details>
+<summary><b>Full capability details</b></summary>
 
 | Capability | What it does |
 |---|---|
@@ -28,6 +93,8 @@ Turn “how strong is this character, why, and how could they win?” into trace
 | Comparison videos | Nine independent music-timing presets, editable Remotion projects, source-interval planning, character-specific highlight rotation and MP4 export; users supply licensed audio and character media. |
 
 The nine attributes are **output, durability, intelligence, battle IQ, experience, special abilities, destruction, speed and body scale**. Relevant attributes can be subdivided. Intelligence and experience use suitable evidence-based levels, not explosive-energy labels.
+
+</details>
 
 ## Two standards, one integrated rating
 
@@ -78,13 +145,18 @@ A vs B, detailed process: show one battle won by the overall favorite, then expl
 A vs B, story mode: preserve characterization and abilities, design a plausible setup, and write full combat with a clear ending.
 Build an ending-state dossier for a novel character; use the full extraction pipeline if no qualified dossier exists.
 Analyze this single feat, including materials, forces, state and ability mechanism, then assign a tier.
+A vs B, story + poster + one-image collage: produce all three from the established configuration.
+A vs B, researched PK + comparison video: settle the winner/difficulty, then create an editable beat-synced project.
+Replicate this reference video as a replaceable-character template, including entrances, reveals, effects and ending.
+Find suitable media for a rare character; connect my existing image/video backend if needed.
 ```
 
 The Agent routes from [SKILL.md](skills/battle-scaling/SKILL.md). The CLI contains no standalone chat model; indexes, hashes and JSON generation do not amount to understanding or validating canon.
 
 The full distribution provides the same maintained workflows, tool code, templates and reusable assets. Search, image and video generation depend on the host or a configured backend. Users supply their own accounts, API credentials and permitted media/audio; no particular machine's sessions or private paths are required.
 
-## Local verification and novel tools
+<details>
+<summary><b>Advanced commands: diagnostics, calculations and novel dossiers</b></summary>
 
 Run from the repository root:
 
@@ -108,7 +180,9 @@ python -X utf8 tools/combat-novel-refpack/refpack.py verify --bundle runs/book
 
 Unread material remains partial. Programmatic `complete` does not replace host semantic review, and candidate CASEs still need a formal rating. See the [standalone library](tools/combat-novel-refpack/README.md) and [full novel protocol](skills/battle-scaling/references/novel-refpack-pipeline.md).
 
-## Video tool
+</details>
+
+## Make your own video
 
 [`tools/battle-video-studio`](tools/battle-video-studio/README.md) requires Node.js 22.18+, npm, FFmpeg/ffprobe and Chrome/Edge. Run `npm ci` and `npm start` in that directory, then open <http://127.0.0.1:3210>. Import character media through the workbench or provide a job JSON.
 
@@ -131,4 +205,4 @@ The full installer writes a private video-project pointer, and the repository wr
 
 Special thanks to [novel-refpack](https://github.com/scp3500/novel-refpack) for the extraction-workflow design. Workflow/research references include [AutoSkill](https://github.com/ECNU-ICALK/AutoSkill), [OmniBattle](https://github.com/Zerhal/omnibattle-ai), [vskill](https://github.com/GentleClash/vskill), [Fictional Ranking](https://github.com/BenCantCode/fictional-ranking), [Animal Battle Stats](https://github.com/RamiNoodle733/animal-battle-stats), [QuantiPhy](https://github.com/Paulineli/QuantiPhy) and [MangaLMM](https://github.com/manga109/MangaLMM). [Cited Feats](https://citedfeats.com/data/) and [ManGo](https://arxiv.org/abs/2608.29865) link to verified websites/papers; no implementation repository has been invented.
 
-These research projects are not default runtime dependencies, and their models are not installed or reproduced by this package. Original-work screenshots, complete novels, complete handbook OCR, third-party weights and private runtime records are excluded. Writing guidance uses [reusable writing methods](skills/battle-scaling/references/writing-experience.md), with no tutorial stories or story excerpts. This review covers only the current release package, not Git history, and is not a guarantee of non-infringement or arbitrary rating accuracy.
+These research projects are not default runtime dependencies, and their models are not installed or reproduced by this package. The installable archives do not preload original-work screenshots, complete novels, complete handbook OCR, third-party weights or private runtime records. Separately linked showcase media has its own source/rights notice in [showcase notes](docs/SHOWCASE.md). Writing guidance uses [reusable writing methods](skills/battle-scaling/references/writing-experience.md), with no tutorial stories or story excerpts. See the linked license and distribution documents for component boundaries.
