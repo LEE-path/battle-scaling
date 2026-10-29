@@ -12,7 +12,7 @@ Character ratings · VS analysis · battle stories · posters · beat-synced vid
 
 ![Version](https://img.shields.io/badge/version-1.21.0-36c5f0?style=flat-square) ![Standards](https://img.shields.io/badge/standards-Wangba_%2B_VSB-8b5cf6?style=flat-square) ![Video templates](https://img.shields.io/badge/video_templates-9-f59e0b?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square)
 
-**[Download the full toolkit](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/battle-scaling-v1.21.0.zip)** · [ Installation guide ](docs/INSTALL.md) · [ Watch demos ](#see-it-in-action) · [Release](https://github.com/LEE-path/battle-scaling/releases/tag/v1.21.0)
+**[Download the full toolkit](https://github.com/LEE-path/battle-scaling/releases/latest)** · **[Copy Agent install request](#agent-install)** · [ Installation guide ](docs/INSTALL.md) · [ Capabilities and requirements ](docs/CAPABILITIES.md) · [ Watch demos ](#see-it-in-action) · [Release](https://github.com/LEE-path/battle-scaling/releases/latest)
 
 </div>
 
@@ -115,12 +115,33 @@ Story mode removes mandatory new image inspection, video downloads and frame mea
 
 ## Install
 
+<a id="agent-install"></a>
+
+### Copy to your Agent: install or upgrade in one request
+
+Send this complete instruction to your Agent so it performs the installation:
+
+```text
+Install or upgrade the latest stable full release of https://github.com/LEE-path/battle-scaling. Download battle-scaling-v<version>.zip (not the Skill-only ZIP) and SHA256SUMS.txt from the latest Release, verify the checksum, and extract into a persistent directory. Read docs/INSTALL.md and docs/CAPABILITIES.md. Check Python 3.11+, Node.js 22.18+, npm, FFmpeg/ffprobe and Chrome/Edge, and install missing system dependencies appropriately. Determine this Agent's actual skills directory, then run python -X utf8 tools/setup.py install --profile full --skill-dir "ACTUAL_SKILLS_DIRECTORY/battle-scaling" --upgrade from the extracted root. Preserve runtime data and settings and use the installer's backup procedure for existing static files. Keep the whole extracted directory for its isolated environment and video project. Run setup.py check afterwards and report available capabilities and any accounts, media or generation backend still to configure. Set up optional OCR and models only when needed.
+```
+
+### Choose a download
+
+| Download | Contents | Best for |
+|---|---|---|
+| **[Full toolkit](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.1/battle-scaling-v1.21.1.zip)** | Complete Skill, rules/assets, media acquisition scripts, standalone novel tool, video project, installer and dependency recipes | **Recommended** for all companion capabilities |
+| [Skill-only ZIP](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.1/battle-scaling-skill-v1.21.1.zip) | The same Skill rules, workflows, scripts and bundled image assets; excludes the external video project, standalone tools directory and full installer | Existing environments, rating/writing use, or manually connected media tools |
+
+Both use the same rating and writing rules. The full toolkit adds companion projects and their setup path. Users supply accounts, keys, generation backends and permitted media. [Capability and dependency map](docs/CAPABILITIES.md)
+
+### Terminal installation
+
 Requires **Python 3.11+** and a host Agent that can research, read files and execute tools. Core calculations and the novel pipeline use the standard library. Configure visual, PDF, OCR, Tieba and video tools only when needed; model weights are not bundled.
 
 ```powershell
 git clone https://github.com/LEE-path/battle-scaling.git
 cd battle-scaling
-python -X utf8 tools/setup.py install --profile full
+python -X utf8 tools/setup.py install --profile full --upgrade
 ```
 
 Use the **full Release ZIP** or clone the whole repository, then run the installer above. It creates an isolated Python environment, installs lightweight media/research packages and the pinned video npm dependencies, installs the complete Skill into Codex's default directory and binds the extracted video project. Python 3.11+ is required; video also needs Node.js 22.18+, npm, FFmpeg/ffprobe and Chrome/Edge. Add `--upgrade` for an existing installation: replaced static files are backed up and runtime data is retained. Use `--skill-dir` for another Agent. See the [complete setup guide](docs/INSTALL.md) for capability coverage and diagnostics.

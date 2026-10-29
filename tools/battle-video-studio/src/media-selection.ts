@@ -6,7 +6,7 @@ const rank:Record<string,number>={S:4,A:3,B:2,C:1,unrated:0};
 export const selectClip=(character:Character,role:string,index:number):Clip=>{
   const usable=character.clips.filter(c=>c.qualityTier!=='exclude'&&c.cropUsable!==false);
   if(!usable.length)throw Error(`${character.name}没有可用素材`);
-  const matching=usable.filter(c=>c.role===role||c.role==='any');
+  const matching=usable.filter(c=>(c.role===role||c.role==='any')&&(!['plate','highlight'].includes(role)||c.kind==='image'||c.continuous!==false));
   if(!matching.length)throw Error(`${character.name} 缺少适合 ${role} 的素材；请补充该用途候选并设置有效入出点。`);
   const pool=matching;
   const highest=Math.max(...pool.map(c=>rank[c.qualityTier||'unrated']??0));

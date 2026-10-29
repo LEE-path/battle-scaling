@@ -63,4 +63,28 @@ class SetupTests(unittest.TestCase):
             self.assertFalse(setup.verify_static(root)['valid'])
 
 
+    def test_optional_runtimes_do_not_replace_the_main_media_environment(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            main=setup.python_path(root); main.parent.mkdir(parents=True); main.write_bytes(b'')
+            optional=setup.optional_python('ocr',root); optional.parent.mkdir(parents=True); optional.write_bytes(b'')
+            self.assertEqual(setup.tool_python('ocr_pdf',root),optional)
+            self.assertEqual(setup.tool_python('poster',root),main)
+            with self.assertRaises(ValueError):setup.optional_python('../outside',root)
+
+    def test_research_install_binds_tieba_worker_and_preserves_formula_settings(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);skill=root/'installed';(skill/'runtime').mkdir(parents=True)
+            local=skill/'runtime/local-tools.json';local.write_text(json.dumps({'formula_python':'keep-existing'}))
+            setup.bind_runtime(skill,root,research=True)
+            settings=json.loads(local.read_text())
+            self.assertEqual(settings['tieba_python'],str(setup.python_path(root)))
+            self.assertEqual(settings['formula_python'],'keep-existing')
+
+    def test_missing_formula_models_stop_before_package_installation(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(setup.subprocess,'run') as run:
+            with self.assertRaisesRegex(ValueError,'four existing'):
+                setup.install_optional('formula',model_dir=Path(td)/'missing',root=Path(td))
+            run.assert_not_called()
+
 if __name__=='__main__':unittest.main()

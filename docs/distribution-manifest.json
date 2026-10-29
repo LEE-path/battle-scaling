@@ -1,5 +1,5 @@
 {
-  "version": "1.21.0",
+  "version": "1.21.1",
   "scope": "Static distribution; runtime libraries and user media excluded.",
   "files": {
     ".gitattributes": {
@@ -19,12 +19,12 @@
       "sha256": "a6a416b46b86a87759ffe1b8cb5e93f5c6583d922f672b28fdf909f228ed9cbd"
     },
     "README.en.md": {
-      "bytes": 17807,
-      "sha256": "2865fba2a7068eb0340c37f6c87d3297afe8a9345596a07ba55acbb304bb974d"
+      "bytes": 20077,
+      "sha256": "e11f6a06a5910bbc4e264749db0f3881c9dc90511c33875345c25e7f7765ff71"
     },
     "README.md": {
-      "bytes": 16112,
-      "sha256": "4010474e362aa0ce4b410defef6b2cd54d4f520a1fe9253078d31e278e132d39"
+      "bytes": 18166,
+      "sha256": "8cbf34eabf12267aeaa8a8d2ac700f45aa9e987203498322939a5b7900af2d47"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 25359,
@@ -34,21 +34,25 @@
       "bytes": 26667,
       "sha256": "03eb9efa32978e64c7a22903102670ae7dc715c71b7cbba544ce43c005e6b4a2"
     },
+    "docs/CAPABILITIES.md": {
+      "bytes": 5426,
+      "sha256": "ab4c2531753cebb8cac8145e177977930a0111471d3409a4bea8cdc2f832de7f"
+    },
     "docs/CURRENT-RELEASE-AUDIT.md": {
       "bytes": 3447,
       "sha256": "ff5015a3976ae2088f776ba4140f374fba6ac8c8cd01fcb787edb1aeeb50e98f"
     },
     "docs/INSTALL.md": {
-      "bytes": 8171,
-      "sha256": "1a82909277ea82dfabba60889a1a09ba61d22560af5253c1ecb6dd70046e23cb"
+      "bytes": 9982,
+      "sha256": "c06fa8fe6b1a17e98254e4a07c00f2df386c4a2ee1996900c28f77660e863218"
     },
     "docs/PUBLIC-CONTENT-AUDIT.md": {
       "bytes": 1473,
       "sha256": "115a2dc614e1c036e7e02b44a0dd20fa214d069f30a360978f63571ce0eaa23f"
     },
     "docs/PUBLICATION-SYNC.md": {
-      "bytes": 7375,
-      "sha256": "3f070fdf139a42b890f4bab701ae199a93ecf58488f225a852088e6dd150eea7"
+      "bytes": 7840,
+      "sha256": "1c23e651435ab4d249d5c0a4fa750925425a05a443051ae7db9644b71035fc68"
     },
     "docs/RELEASE-v1.12.2.md": {
       "bytes": 2815,
@@ -79,8 +83,8 @@
       "sha256": "26091c1dfcdc6d41f41bfa00175a6704307c78aeeb63db8bb408a6f5b9653f82"
     },
     "docs/public-distribution.md": {
-      "bytes": 5397,
-      "sha256": "0edbbfcfae00d7d2b1ef0b343b873ec551827f2959d8d8b2b6efc61856b5f028"
+      "bytes": 5414,
+      "sha256": "caf924fbc7ff66e1c85470bed746be8a9cba08a52ff473adb1b59c228dd64d88"
     },
     "docs/release-validation.json": {
       "bytes": 2388,
@@ -95,8 +99,8 @@
       "sha256": "887793a9ca01ace6f62de8b8bc3d95feced5335707a10195a04e7a6abadb5810"
     },
     "skills/battle-scaling/SKILL.md": {
-      "bytes": 17629,
-      "sha256": "6126e70fe655731983a6d690cfd8941df7aa446c76f7f0ee0a40860faca52961"
+      "bytes": 19291,
+      "sha256": "916d546acae81864ce2feecec213488ee77d860ce7ec2893fbf8ea337a16c06f"
     },
     "skills/battle-scaling/THIRD_PARTY_NOTICES.md": {
       "bytes": 22003,
@@ -579,12 +583,12 @@
       "sha256": "ae274fdf8d4c1d4f257c01173ffdc52e47e45c2124f001c917c8e6c909ed98f3"
     },
     "skills/battle-scaling/package-manifest.json": {
-      "bytes": 49428,
-      "sha256": "5f8d2bcdc9c597c1c26f22e523810767f0c3e8ba58d4737f9285cef796f15d24"
+      "bytes": 49854,
+      "sha256": "4291c6f408d896cb377877bd96c8846dbfaec99814e2b74c4ffb5c73ac550af3"
     },
     "skills/battle-scaling/references/ability-feats-and-combos.md": {
-      "bytes": 7117,
-      "sha256": "cbb66b8e672638031d3613c410db9b888c1485d07d271d68f7e3f24d5e4ac170"
+      "bytes": 8348,
+      "sha256": "18c520a3416cc5b2375ed5e0d57841c11cde2be6af10b9897b08436b3bfe6c00"
     },
     "skills/battle-scaling/references/bilibili-media.md": {
       "bytes": 3572,
@@ -603,8 +607,8 @@
       "sha256": "7890625f1aa2c7989d0e3f5c2f7dd4cf05ed4c3c4aa2fd814b76db06879bd806"
     },
     "skills/battle-scaling/references/character-rating-worker.md": {
-      "bytes": 5471,
-      "sha256": "a61422ddce20afae542eb492d82591da824a965af6480f2fb73375d37516de58"
+      "bytes": 6014,
+      "sha256": "2e04fc2215b82f64f3a272eff7586099c4a64d14a33eabbdcb3529c90e62dc9f"
     },
     "skills/battle-scaling/references/character-rating-workflow.md": {
       "bytes": 12759,
@@ -683,16 +687,20 @@
       "sha256": "e4ef765c3d1c7b76225894981c081e77ad3a1d9401a303477666c60cf1d3036d"
     },
     "skills/battle-scaling/references/media-output.md": {
-      "bytes": 8693,
-      "sha256": "eda34443d0bf226e2f5a75396f6de405cb0ab05f6e8bc026b5488867a5ad2738"
+      "bytes": 9604,
+      "sha256": "1a6f74517e0d6d74652d764d8a17434257b8a5d29d2b24261239542b2597e0ca"
     },
     "skills/battle-scaling/references/media-reading.md": {
       "bytes": 10633,
       "sha256": "a873d3a18b88cb6dbaaaa58e8c6609605e45dcec6dda9c519d9f2956d3385062"
     },
+    "skills/battle-scaling/references/media-review.md": {
+      "bytes": 8274,
+      "sha256": "0cca8d5e097a268b0c8ce235fddd5c916c56d427e94ca10b51f89b56a0478c89"
+    },
     "skills/battle-scaling/references/media-selection.md": {
-      "bytes": 13479,
-      "sha256": "7332f4ca0f4a583b2140371b8bfa30810eb553a60925e2c574cb176f223b94c0"
+      "bytes": 14330,
+      "sha256": "44854ea3dd70a8e7b47988a98b12434e9261c441b20661053d800da85b391abb"
     },
     "skills/battle-scaling/references/media-sourcing.md": {
       "bytes": 14124,
@@ -723,8 +731,8 @@
       "sha256": "0e3d5bf1c1cb2639db58b74d311471bacf3e93d908c2b7075bd227ac0ee2b1b2"
     },
     "skills/battle-scaling/references/pk-cover.md": {
-      "bytes": 10012,
-      "sha256": "7366fec25a649e79a0390e950ee8eec266eac986065c0a9eb280088ea59f5226"
+      "bytes": 11641,
+      "sha256": "e4ab122c1c194e362520c071baf08c27387d4cc4f5e05d63380ef11787d0ad9d"
     },
     "skills/battle-scaling/references/rating-card.md": {
       "bytes": 11221,
@@ -783,12 +791,12 @@
       "sha256": "906b2a8f421294dc297fab01ad59832f1fc2f233d1db445d8d0758306f710089"
     },
     "skills/battle-scaling/references/video-editing.md": {
-      "bytes": 15784,
-      "sha256": "dded50e02d1b84db97f4fd95e07d0af10fa26957054a4a11c439feff5b2a908e"
+      "bytes": 17278,
+      "sha256": "de983c358bcb1110af478f76b251a31c72cd401eddea3b8abcaa9bd34bbea9f3"
     },
     "skills/battle-scaling/references/video-template-replication.md": {
-      "bytes": 8308,
-      "sha256": "b5425af167699c3a896f67e015f77834b08f9750ee91089d19f5a95587520411"
+      "bytes": 8573,
+      "sha256": "1c53d70d50b49f6a79cc3dbf6a87728bdb27a3776fdcc0d40bb5f773457f343a"
     },
     "skills/battle-scaling/references/vsb-attributes.md": {
       "bytes": 14369,
@@ -979,8 +987,8 @@
       "sha256": "8bdef99b66155fb7dd3b69c92ff186038bb7910b44c78fc6368cff8a4ffecf20"
     },
     "skills/battle-scaling/scripts/one_image.py": {
-      "bytes": 6634,
-      "sha256": "66c629c1b6767e9cc1ae666ba9afcea8c289f2e364605f2c7dd38769ef1c7273"
+      "bytes": 7184,
+      "sha256": "f31ecdb2e18599182cc763f90faaf2378bc1e5e21fa41fb3d89932f7049bf27f"
     },
     "skills/battle-scaling/scripts/physics.py": {
       "bytes": 27601,
@@ -989,6 +997,10 @@
     "skills/battle-scaling/scripts/pk_modes.py": {
       "bytes": 4825,
       "sha256": "fb242b8db127db46dd6031f2d8624395e633600d34f6d43af231bc1fefa63e90"
+    },
+    "skills/battle-scaling/scripts/poster.py": {
+      "bytes": 4463,
+      "sha256": "7842f631cbbee841ce6b530d89bf450eb18fc53191073c0473149bd11afe7311"
     },
     "skills/battle-scaling/scripts/rating_dossier.py": {
       "bytes": 8349,
@@ -1210,6 +1222,10 @@
       "bytes": 3853,
       "sha256": "637dd3e2bd813dc93a7cda93946c5f5f0631b8e59149dea34b3686392fdbae61"
     },
+    "skills/battle-scaling/tests/test_poster.py": {
+      "bytes": 2849,
+      "sha256": "01d591e2830041497f9d735e5e140d503707304a0c167b9b831c9337cfe0b5e8"
+    },
     "skills/battle-scaling/tests/test_process_rating_handoff.py": {
       "bytes": 7725,
       "sha256": "0de2c20ef55f1f563dabea5eb42a37b26d9c641a3845588517d3aa3b3a5d194f"
@@ -1327,8 +1343,8 @@
       "sha256": "eaf81be62a36aa8c355d98f6e4bb96c272f3844e521a6df50f7a2d324ffaf540"
     },
     "tools/battle-video-studio/README.md": {
-      "bytes": 3749,
-      "sha256": "3e504859dcdee761ea2848e34ddff49752fd269d9e62d405d2628a13c5ca746d"
+      "bytes": 5701,
+      "sha256": "68498892380fd42a4fd6897255697671bf06cdad4ddcc7054ee0d71dba89eb72"
     },
     "tools/battle-video-studio/THIRD_PARTY_NOTICES.md": {
       "bytes": 1471,
@@ -1351,8 +1367,8 @@
       "sha256": "972db86f78580d616efcec7b46e11b413208e71c25bf3658d046e9ee5d111031"
     },
     "tools/battle-video-studio/docs/media-planning-api.md": {
-      "bytes": 6057,
-      "sha256": "6b84d5d1a10497cb2848e40f24bcb164213254ff9282f308476cb75cc0757327"
+      "bytes": 7225,
+      "sha256": "36a2384f211887731f24726ea2837743a81191cb276584af302d794c98f5f848"
     },
     "tools/battle-video-studio/examples/reference-demo.json": {
       "bytes": 1084,
@@ -1414,6 +1430,10 @@
       "bytes": 5784,
       "sha256": "75b2c97782e7ab06599f86c19a39eca29619900492d48e3aa2861fe688b5a18d"
     },
+    "tools/battle-video-studio/scripts/review-video.mjs": {
+      "bytes": 4521,
+      "sha256": "75c5739608c87be290fa9ff415f608867f69383775919a33a444ee9ad874faa4"
+    },
     "tools/battle-video-studio/scripts/select-template.mjs": {
       "bytes": 2039,
       "sha256": "811d36197230812b2e59500237f6839f4e257087086702dad980e76acd83741b"
@@ -1427,8 +1447,8 @@
       "sha256": "70930cd2335d9e17d24913e5a2db15b8e0e83faba3e38c19c50e05a6da6ed13f"
     },
     "tools/battle-video-studio/src/BattleTemplateEdit.tsx": {
-      "bytes": 8538,
-      "sha256": "47e61e4ab451e7fc4862cb3bbfd292804d3419dccf7eba5492ef4e4731320c17"
+      "bytes": 9409,
+      "sha256": "666b70167d6cb5497287746c85af13d9dfd9366b389be7fda958222f85bf5d13"
     },
     "tools/battle-video-studio/src/Root.tsx": {
       "bytes": 1275,
@@ -1443,12 +1463,12 @@
       "sha256": "1b1a5cd631a0967e2d632b2c0acbab3d0fd9072947fb88ce81b4610854be1558"
     },
     "tools/battle-video-studio/src/media-plan.mjs": {
-      "bytes": 12548,
-      "sha256": "73f5838ebc53310576bf647d54e2095355921f5858bfd122f95f8b0a0d934640"
+      "bytes": 13553,
+      "sha256": "16038ebce9b3143b23f8cb60e37916be4f69e37ba066d3aab27ed1ec62239518"
     },
     "tools/battle-video-studio/src/media-selection.ts": {
-      "bytes": 1680,
-      "sha256": "b73548cffd2660f28cb35306fb243a5f036dccc7b625020d40c2024ab9140703"
+      "bytes": 1763,
+      "sha256": "c3842b4802c3eaae91cdbec867260732e3ca6c512dab38264c88e6b77fd68763"
     },
     "tools/battle-video-studio/src/template-presentation.tsx": {
       "bytes": 11641,
@@ -1499,12 +1519,16 @@
       "sha256": "9669ca4b6f718f5fa9b02094d1f343e7385cd451d96e40e47dde32481f6d52f5"
     },
     "tools/battle-video-studio/tests/media-planning.test.mjs": {
-      "bytes": 7782,
-      "sha256": "de94a6971b663c5c74c04995bc812e2d804b4e931baad992b2ca591fb9f6d527"
+      "bytes": 9502,
+      "sha256": "770edd49fd17e160fdd5803a7277c9ca27655da27fe22573a31722c405dbc96e"
     },
     "tools/battle-video-studio/tests/render-output.test.mjs": {
       "bytes": 1033,
       "sha256": "4ca16bea38705ea34dd0809f697818f477dba5ca1b9e4e26af78ae0a2b75456f"
+    },
+    "tools/battle-video-studio/tests/review-video.test.mjs": {
+      "bytes": 2576,
+      "sha256": "399ba2d19ba2dd44f225b35448bf6453444df509ac0435fe2b888ea8a622ee69"
     },
     "tools/battle-video-studio/tsconfig.json": {
       "bytes": 369,
@@ -1529,6 +1553,10 @@
     "tools/battle-video-studio/打开剪辑工作台.ps1": {
       "bytes": 1292,
       "sha256": "bdf8f2cc6c00a433d3723337d56908e035022a2459de3a5ddea8726eaf415c28"
+    },
+    "tools/build_release.py": {
+      "bytes": 4391,
+      "sha256": "08d73663886a7da7bc48ad56b087abc41ae95afe38b7a21d39d70589780e1b65"
     },
     "tools/combat-novel-refpack/LICENSE": {
       "bytes": 1086,
@@ -1591,8 +1619,8 @@
       "sha256": "b2735f30844fb74519a9a3034f20ffa70600a798314277e845b7ccbf8f5db56f"
     },
     "tools/public-video/README.md": {
-      "bytes": 3818,
-      "sha256": "0c4696bc05cc05f1afc4c609c1ce4bb41891f885a9f36d148c830f0f595e61cf"
+      "bytes": 5770,
+      "sha256": "b4426548feebcc6aa16beb9ab0d2befc40473ede5b6559d0482ab46d824eb4b6"
     },
     "tools/public-video/THIRD_PARTY_NOTICES.md": {
       "bytes": 1517,
@@ -1610,29 +1638,41 @@
       "bytes": 186,
       "sha256": "13508ec041bf0e239928626487734c8177c0b9d6b425108f044b5ea42570d9ae"
     },
+    "tools/requirements/optional-formula.txt": {
+      "bytes": 174,
+      "sha256": "a2eed888e037ce0b9a108307b9f95f71bfebe7537f82141db52b783c7daa71a6"
+    },
+    "tools/requirements/optional-ocr.txt": {
+      "bytes": 206,
+      "sha256": "329f17bf00e414e27ab6481575e402f792375f16b23ce45c9f332646fe8c66a0"
+    },
     "tools/requirements/research.txt": {
       "bytes": 128,
       "sha256": "8271f66ee88b7b436b4499ed5e62a3050ee7c042eaddebb0b4ee07ae43de095b"
     },
     "tools/setup.py": {
-      "bytes": 12466,
-      "sha256": "44f79adb7332e4cb89781def6476b6ac298741c510352ddfd1412f9d7faf6238"
+      "bytes": 16560,
+      "sha256": "3510150c0f6980e754d78ddc258d47b582ccc61c863d1951320d92f91715e86b"
     },
     "tools/sync_public.py": {
-      "bytes": 20748,
-      "sha256": "a56ee639ff0c16ccc88509f9d3709328cd9acf689d5b0bbdbac96e20ae71ae96"
+      "bytes": 20810,
+      "sha256": "ae6179adea86a8cdec2f010cf688802d8534553b0104cc477b74ef9b3e1fc1c8"
+    },
+    "tools/test_build_release.py": {
+      "bytes": 2353,
+      "sha256": "ccd7c17f8bb8150ea32ee94a8a51f24c6441b1e668ab8d3c7483144ede0d6185"
     },
     "tools/test_public_sync.py": {
-      "bytes": 5604,
-      "sha256": "6a40e3ed6c644d490fcfcf431be258a117f3793c0c2c9c692085df725f950384"
+      "bytes": 5647,
+      "sha256": "dc1a86fea0a7ab9fa61ef92fac8b155a78e09bc61e29c084b5269fa8fc01e1e4"
     },
     "tools/test_publication_guard.py": {
-      "bytes": 10934,
-      "sha256": "426d1140cbf5d533ba02a7e4dceffae7fd020de1a33d498770dd9810e1367204"
+      "bytes": 10979,
+      "sha256": "6b979724c7f787612fccfec0f21ed72c46ebd7d946724d61651748d1c96c2e5a"
     },
     "tools/test_setup.py": {
-      "bytes": 3754,
-      "sha256": "f430c66878f02cc52ac7e171e36adcdb39c384c0b19b88814df355a8a567fb18"
+      "bytes": 5332,
+      "sha256": "2599a881acd61e627ac717c037af5b7ea55963781af97d10f8d40d53e60af63b"
     },
     "tools/verify_package.py": {
       "bytes": 5599,

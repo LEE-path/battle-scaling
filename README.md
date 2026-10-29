@@ -12,7 +12,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.21.0-36c5f0?style=flat-square) ![Standards](https://img.shields.io/badge/standards-Wangba_%2B_VSB-8b5cf6?style=flat-square) ![Video templates](https://img.shields.io/badge/video_templates-9-f59e0b?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square)
 
-**[下载完整工具包](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.0/battle-scaling-v1.21.0.zip)** · [ 安装指南 ](docs/INSTALL.md) · [ 先看成品 ](#先看成品) · [Release](https://github.com/LEE-path/battle-scaling/releases/tag/v1.21.0)
+**[下载完整工具包](https://github.com/LEE-path/battle-scaling/releases/latest)** · **[复制给 Agent 安装](#agent-install)** · [ 安装指南 ](docs/INSTALL.md) · [ 全部能力与依赖 ](docs/CAPABILITIES.md) · [ 先看成品 ](#先看成品) · [Release](https://github.com/LEE-path/battle-scaling/releases/latest)
 
 </div>
 
@@ -115,12 +115,33 @@ https://github.com/user-attachments/assets/9ed4cdcf-7b0e-46dd-b62a-0cf67b1d39c3
 
 ## 安装
 
+<a id="agent-install"></a>
+
+### 复制给 Agent：一次完成安装或升级
+
+把下面整段发给你的 Agent；它应执行安装，而不是只解释步骤：
+
+```text
+请安装或升级 https://github.com/LEE-path/battle-scaling 的最新正式完整版。读取最新 Release，下载 battle-scaling-v<版本>.zip（不是 skill-only 包）和 SHA256SUMS.txt，核对摘要后解压到持久目录。阅读 docs/INSTALL.md 和 docs/CAPABILITIES.md，检查 Python 3.11+、Node.js 22.18+、npm、FFmpeg/ffprobe 与 Chrome/Edge，按系统补齐缺失项。识别当前 Agent 的实际 skills 目录，在解压根目录运行 python -X utf8 tools/setup.py install --profile full --skill-dir "实际技能目录/battle-scaling" --upgrade。已有安装按升级流程备份静态文件、保留运行数据与配置；保留完整解压目录供隔离环境和视频工程使用。完成后运行 setup.py check 并说明已可用的能力及仍需配置的账号、素材或生成后端。可选 OCR 与模型按需要另配。
+```
+
+### 选择下载包
+
+| 下载项 | 包含什么 | 适合谁 |
+|---|---|---|
+| **[完整包](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.1/battle-scaling-v1.21.1.zip)** | 完整 Skill、规则和模板、媒体获取脚本、独立拆书工具、视频工程、安装器与依赖配方 | **推荐**，希望使用全部配套能力 |
+| [仅 Skill 包](https://github.com/LEE-path/battle-scaling/releases/download/v1.21.1/battle-scaling-skill-v1.21.1.zip) | 同一套 Skill 规则、工作流、脚本和随包图像资产；不含外部视频工程、独立工具目录与完整安装器 | 已有运行环境，主要需要评级／写作，或自行接入媒体工具 |
+
+两包采用相同评级与写作规则。完整包补齐配套工程和安装路径；账号、密钥、模型后端及有权使用的素材由使用者准备。[完整能力与依赖表](docs/CAPABILITIES.md)
+
+### 在终端安装
+
 需要 **Python 3.11+**，以及能搜索、阅读文件并执行工具的宿主 Agent。核心计算与拆书管线使用标准库；视觉、PDF、OCR、贴吧和视频工具按需配置，不内置模型权重。
 
 ```powershell
 git clone https://github.com/LEE-path/battle-scaling.git
 cd battle-scaling
-python -X utf8 tools/setup.py install --profile full
+python -X utf8 tools/setup.py install --profile full --upgrade
 ```
 
 推荐下载 Release 的 **完整包**或克隆整个仓库，再用上述安装命令。它创建隔离 Python 环境、安装轻量媒体／研究依赖与视频 npm 依赖，将完整 Skill 安装到 Codex 默认目录并绑定本次视频工程。需要预先安装 Python 3.11+；视频还需 Node.js 22.18+、npm、FFmpeg/ffprobe 和 Chrome/Edge。已有安装追加 `--upgrade`，被替换的静态文件先备份，运行数据保留。其他 Agent 用 `--skill-dir` 指定位置。详细步骤、能力对应关系及缺项检查见[完整安装指南](docs/INSTALL.md)。

@@ -1,8 +1,8 @@
 {
-  "version": "1.21.0",
-  "static_files": 410,
+  "version": "1.21.1",
+  "static_files": 420,
   "copied": {
-    "skill": 301,
+    "skill": 304,
     "novel": 8,
     "novel_core": 4
   },

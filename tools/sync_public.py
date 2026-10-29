@@ -136,7 +136,7 @@ def safe_target(target,sources):
 def video_payload(source):
     files={}
     roots=('src/','templates/','workbench/','tests/')
-    scripts={'prepare-job.mjs','select-template.mjs','render-job.mjs','server.mjs','bootstrap.mjs','import-music.mjs'}
+    scripts={'prepare-job.mjs','select-template.mjs','render-job.mjs','review-video.mjs','server.mjs','bootstrap.mjs','import-music.mjs'}
     top={'package.json','package-lock.json','tsconfig.json','.gitignore','LICENSE','THIRD_PARTY_NOTICES.md','打开剪辑工作台.cmd','打开剪辑工作台.ps1','关闭剪辑工作台.ps1'}
     for path in sorted(source.rglob('*')):
         if not path.is_file() or path.is_symlink() or not path.resolve().is_relative_to(source.resolve()):continue
@@ -239,7 +239,7 @@ def build_payload(skill_source,video_source,novel_source,version):
         for path in (PUBLICATION/folder).rglob('*'):
             relative=path.relative_to(PUBLICATION).as_posix()
             if path.is_file() and not path.is_symlink() and not excluded(relative,'public') and path.name not in {'sync-summary.json','distribution-manifest.json'}:files[relative]=path.read_bytes()
-    for name in ('sync_public.py','verify_package.py','publication_guard.py','test_publication_guard.py','test_public_sync.py','import_handbook_corpus.py','setup.py','test_setup.py'):
+    for name in ('sync_public.py','verify_package.py','publication_guard.py','test_publication_guard.py','test_public_sync.py','import_handbook_corpus.py','setup.py','test_setup.py','build_release.py','test_build_release.py'):
         files['tools/'+name]=(PUBLICATION/'tools'/name).read_bytes()
     files['docs/distribution-manifest.json']=dumps({'version':version,'scope':'Static distribution; runtime libraries and user media excluded.','files':{rel:digest(data) for rel,data in sorted(files.items())}}).encode()
     errors=scan_payload(files)
@@ -253,7 +253,7 @@ def main():
     parser.add_argument('--video-source',type=Path,required=True)
     parser.add_argument('--novel-source',type=Path,required=True)
     parser.add_argument('--target',type=Path,required=True)
-    parser.add_argument('--version',default='1.21.0')
+    parser.add_argument('--version',default='1.21.1')
     parser.add_argument('--apply',action='store_true')
     args=parser.parse_args()
     target=safe_target(args.target,[args.skill_source,args.video_source,args.novel_source])

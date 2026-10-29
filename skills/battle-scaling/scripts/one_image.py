@@ -2,6 +2,7 @@
 """Optional Pillow collage helper. Creates a PNG; no rating or acceptance workflow."""
 import argparse
 import json
+import math
 from pathlib import Path
 
 DEFAULT_TITLE = '论战圈你不得不承认的事实'
@@ -96,7 +97,9 @@ def main(argv=None):
     parser.add_argument('--output', required=True)
     parser.add_argument('--surrender')
     parser.add_argument('--face-box', type=float, nargs=4, metavar=('LEFT','TOP','RIGHT','BOTTOM'),
-                        help='Optional normalized face/core position in loser image, used only for layout')
+                        help='Actual normalized face/core bounds in loser image; omitted legacy rectangle is not face detection')
+    parser.add_argument('--face-angle', type=float, default=0,
+                        help='Clockwise overlay angle in degrees, aligned to the face/core orientation')
     parser.add_argument('--title', default=DEFAULT_TITLE)
     parser.add_argument('--address', default='爸爸')
     parser.add_argument('--font')
@@ -121,6 +124,8 @@ def main(argv=None):
         a, b, c, d = target
         if not (0 <= a < c <= 1 and 0 <= b < d <= 1):
             parser.error('--face-box uses normalized left top right bottom coordinates.')
+        if not math.isfinite(args.face_angle):
+            parser.error('--face-angle must be finite.')
         font = font_file(args.font)
         canvas = Image.new('RGBA', (args.width, args.height), 'white')
         w, h = args.width, args.height
@@ -130,7 +135,11 @@ def main(argv=None):
         box = (round(x+a*lw), round(y+b*lh), round(x+c*lw), round(y+d*lh))
         overlay = ImageOps.fit(open_image(surrender), (box[2]-box[0], box[3]-box[1]),
                                method=Image.Resampling.LANCZOS)
-        canvas.alpha_composite(overlay, (box[0], box[1]))
+        if args.face_angle:
+            overlay = overlay.rotate(-args.face_angle, resample=Image.Resampling.BICUBIC, expand=True)
+        position = (round((box[0]+box[2]-overlay.width)/2),
+                    round((box[1]+box[3]-overlay.height)/2))
+        canvas.alpha_composite(overlay, position)
         icon = emoji_image(args.emoji_image) if args.emoji or args.emoji_image else None
         draw_text(canvas, args.title, slot(.05,.04,.95,.23), font, min(w*.056,h*.09), icon)
         draw_text(canvas, '>', slot(.455,.42,.545,.67), font, min(w*.14,h*.20))

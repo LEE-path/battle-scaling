@@ -196,7 +196,7 @@ class PrivacyTests(unittest.TestCase):
                 p.mkdir(parents=True, exist_ok=True)
             (pub/'skills/battle-scaling/references/writing-experience.md').write_text(synthetic_key(), encoding='utf-8')
             (pub/'LICENSE').write_text('license fixture', encoding='utf-8')
-            for name in ('sync_public.py', 'verify_package.py', 'publication_guard.py', 'test_publication_guard.py', 'test_public_sync.py', 'import_handbook_corpus.py', 'setup.py', 'test_setup.py'):
+            for name in ('sync_public.py', 'verify_package.py', 'publication_guard.py', 'test_publication_guard.py', 'test_public_sync.py', 'import_handbook_corpus.py', 'setup.py', 'test_setup.py', 'build_release.py', 'test_build_release.py'):
                 (pub/'tools'/name).write_text('# fixture\n', encoding='utf-8')
             with patch.object(s, 'PUBLICATION', pub), patch.object(s, 'video_payload', return_value={}):
                 with self.assertRaises(ValueError) as caught:

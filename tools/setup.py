@@ -18,10 +18,51 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MODULES = {'media': ['PIL', 'requests', 'qrcode', 'yt_dlp', 'gallery_dl', 'bilibili_api'],
            'research': ['pypdf', 'sympy', 'pint', 'aiotieba']}
+OPTIONAL_MODULES = {'ocr': ['pymupdf', 'numpy', 'rapidocr_onnxruntime'],
+                    'formula': ['PIL', 'numpy', 'onnxruntime', 'rapid_latex_ocr']}
 
 
 def python_path(root=ROOT):
     return root/'.venv'/('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+
+
+def optional_python(name, root=ROOT):
+    if name not in OPTIONAL_MODULES:
+        raise ValueError('Unknown optional environment.')
+    return root/('.venv-'+name)/('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+
+
+def tool_python(tool, root=ROOT):
+    optional = {'ocr_pdf': 'ocr', 'formula_adapter': 'formula'}.get(tool)
+    if optional and optional_python(optional, root).is_file():
+        return optional_python(optional, root)
+    return python_path(root) if python_path(root).is_file() else Path(sys.executable)
+
+
+def install_optional(name, skill_dir=None, model_dir=None, root=ROOT):
+    """Explicit optional OCR install; upstream packages may include model assets."""
+    if not (3,11) <= sys.version_info[:2] < (3,13):
+        raise RuntimeError('These compatibility OCR packages need Python 3.11 or 3.12. Run this optional command with that interpreter.')
+    interpreter = optional_python(name, root)
+    if model_dir is not None:
+        if name != 'formula':
+            raise ValueError('--model-dir is only used by formula recognition.')
+        from pathlib import Path as LocalPath
+        folder = LocalPath(model_dir).expanduser().resolve()
+        if not all((folder/f).is_file() for f in ('image_resizer.onnx','encoder.onnx','decoder.onnx','tokenizer.json')):
+            raise ValueError('Provide all four existing formula model files; the installer does not download them.')
+    if not interpreter.is_file():
+        subprocess.run([sys.executable,'-m','venv',str(interpreter.parents[1])],check=True)
+    subprocess.run([str(interpreter),'-m','pip','install','-r',str(root/'tools/requirements'/('optional-'+name+'.txt'))],check=True)
+    if skill_dir and name == 'formula':
+        config = Path(skill_dir).expanduser()/'runtime/local-tools.json'
+        settings = json.loads(config.read_text(encoding='utf-8-sig')) if config.exists() else {}
+        settings['formula_python'] = str(interpreter)
+        if model_dir is not None: settings['formula_model_dir'] = str(folder)
+        _write_json(config,settings)
+    return {'environment': name, 'python': str(interpreter),
+            'models': 'existing local files only' if model_dir else 'not configured',
+            'note': 'This explicit optional install can fetch upstream OCR model assets as part of its packages. Generative model repositories are not downloaded.'}
 
 
 def npm_command():
@@ -106,7 +147,7 @@ def install_skill(source, destination, *, upgrade=False):
             'backup': str(backup) if backup.exists() else None}
 
 
-def bind_runtime(skill, root=ROOT):
+def bind_runtime(skill, root=ROOT, *, research=False):
     # Preserve unrelated settings and existing credentials; this file stores
     # tool locations only. It is ignored by Git and excluded from distribution.
     folder = skill/'runtime'; folder.mkdir(parents=True, exist_ok=True)
@@ -119,6 +160,11 @@ def bind_runtime(skill, root=ROOT):
     settings.update({'python': str(python_path(root)), 'node': shutil.which('node'),
                      'ffmpeg': shutil.which('ffmpeg'), 'ffprobe': shutil.which('ffprobe')})
     _write_json(tools, settings)
+    if research:
+        local = folder/'local-tools.json'
+        settings = json.loads(local.read_text(encoding='utf-8-sig')) if local.exists() else {}
+        settings['tieba_python'] = str(python_path(root))
+        _write_json(local, settings)
 
 
 def check(root=ROOT, skill_dir=None):
@@ -150,6 +196,12 @@ def check(root=ROOT, skill_dir=None):
               'user_setup': ['Provide permitted character assets, a matching audio edit and any surrender sticker.',
                              'Connect image/video/search tools in your host Agent, or configure an optional backend.',
                              'Bilibili HD requires your own QR login and the quality entitlement of your account.']}
+    result['optional_environments'] = {name: optional_python(name, root).is_file() for name in OPTIONAL_MODULES}
+    result['shipped_tools'] = {name: (root/'skills/battle-scaling/scripts'/(name+'.py')).is_file()
+                              for name in ('battle','novel_refpack','tieba','media_acquire','bili_media','poster','one_image','video_studio','vision_adapter','ocr_pdf','formula_adapter')}
+    result['video_frame_review'] = (video/'scripts/review-video.mjs').is_file()
+    result['host_requirements'] = ['Reasoning, research/search, source reading and visual judgment are supplied by your Agent.',
+                                   'Image/video generation needs your own working host tool or API/MCP/CLI/local backend.']
     result['media_ready'] = (all(packages.get(m) for m in MODULES['media']) and node_ok
         and bool(executables['ffmpeg'] and executables['ffprobe'] and browser) and result['video_dependencies'])
     return result
@@ -168,6 +220,10 @@ def main(argv=None):
     p = sub.add_parser('run')
     p.add_argument('tool', help='Skill script name, e.g. battle, bili_media, one_image or video_studio')
     p.add_argument('arguments', nargs=argparse.REMAINDER)
+    p = sub.add_parser('optional', help='Explicitly install OCR/formula packages in a separate environment; no standalone model download.')
+    p.add_argument('name', choices=sorted(OPTIONAL_MODULES))
+    p.add_argument('--skill-dir', type=Path)
+    p.add_argument('--model-dir', type=Path)
     args = parser.parse_args(argv)
     if args.action=='verify-static':
         result=verify_static();print(json.dumps(result,ensure_ascii=False,indent=2));return 0 if result['valid'] else 1
@@ -177,8 +233,13 @@ def main(argv=None):
         if not args.tool.replace('_','').isalnum(): parser.error('Tool must be a script name, not a path.')
         script = ROOT/'skills/battle-scaling/scripts'/(args.tool+'.py')
         if not script.is_file(): parser.error('Unknown Skill script.')
-        python = python_path(); python = python if python.is_file() else Path(sys.executable)
+        python = tool_python(args.tool)
         return subprocess.run([str(python),str(script),*args.arguments], cwd=ROOT).returncode
+    if args.action == 'optional':
+        verified = verify_static()
+        if not verified['valid']:
+            print(json.dumps(verified, ensure_ascii=False, indent=2)); return 1
+        print(json.dumps(install_optional(args.name,args.skill_dir,args.model_dir),ensure_ascii=False,indent=2));return 0
     if sys.version_info < (3,11): parser.error('Python 3.11+ is required.')
     verified = verify_static()
     # A fresh Python may lack Pillow. Only this explicit inspection dependency
@@ -201,7 +262,7 @@ def main(argv=None):
     if args.profile in {'media','full'} and not args.skip_npm:
         subprocess.run([*npm_command(),'ci'], cwd=ROOT/'tools/battle-video-studio', check=True)
     installed = install_skill(ROOT/'skills/battle-scaling',args.skill_dir,upgrade=args.upgrade)
-    if selected: bind_runtime(Path(installed['skill_dir']))
+    if selected: bind_runtime(Path(installed['skill_dir']),research='research' in selected)
     print(json.dumps({'installed': installed, 'capabilities': check(skill_dir=args.skill_dir)}, ensure_ascii=False, indent=2))
     return 0
 

@@ -1,6 +1,6 @@
 {
   "skill": "battle-scaling",
-  "version": "1.21.0",
+  "version": "1.21.1",
   "scope": "Distributed static files; optional runtime libraries and user media are not bundled.",
   "mutable_paths": [
     "runtime/**",
@@ -18,8 +18,8 @@
       "sha256": "887793a9ca01ace6f62de8b8bc3d95feced5335707a10195a04e7a6abadb5810"
     },
     "SKILL.md": {
-      "bytes": 17629,
-      "sha256": "6126e70fe655731983a6d690cfd8941df7aa446c76f7f0ee0a40860faca52961"
+      "bytes": 19291,
+      "sha256": "916d546acae81864ce2feecec213488ee77d860ce7ec2893fbf8ea337a16c06f"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 22003,
@@ -502,8 +502,8 @@
       "sha256": "ae274fdf8d4c1d4f257c01173ffdc52e47e45c2124f001c917c8e6c909ed98f3"
     },
     "references/ability-feats-and-combos.md": {
-      "bytes": 7117,
-      "sha256": "cbb66b8e672638031d3613c410db9b888c1485d07d271d68f7e3f24d5e4ac170"
+      "bytes": 8348,
+      "sha256": "18c520a3416cc5b2375ed5e0d57841c11cde2be6af10b9897b08436b3bfe6c00"
     },
     "references/bilibili-media.md": {
       "bytes": 3572,
@@ -522,8 +522,8 @@
       "sha256": "7890625f1aa2c7989d0e3f5c2f7dd4cf05ed4c3c4aa2fd814b76db06879bd806"
     },
     "references/character-rating-worker.md": {
-      "bytes": 5471,
-      "sha256": "a61422ddce20afae542eb492d82591da824a965af6480f2fb73375d37516de58"
+      "bytes": 6014,
+      "sha256": "2e04fc2215b82f64f3a272eff7586099c4a64d14a33eabbdcb3529c90e62dc9f"
     },
     "references/character-rating-workflow.md": {
       "bytes": 12759,
@@ -602,16 +602,20 @@
       "sha256": "e4ef765c3d1c7b76225894981c081e77ad3a1d9401a303477666c60cf1d3036d"
     },
     "references/media-output.md": {
-      "bytes": 8693,
-      "sha256": "eda34443d0bf226e2f5a75396f6de405cb0ab05f6e8bc026b5488867a5ad2738"
+      "bytes": 9604,
+      "sha256": "1a6f74517e0d6d74652d764d8a17434257b8a5d29d2b24261239542b2597e0ca"
     },
     "references/media-reading.md": {
       "bytes": 10633,
       "sha256": "a873d3a18b88cb6dbaaaa58e8c6609605e45dcec6dda9c519d9f2956d3385062"
     },
+    "references/media-review.md": {
+      "bytes": 8274,
+      "sha256": "0cca8d5e097a268b0c8ce235fddd5c916c56d427e94ca10b51f89b56a0478c89"
+    },
     "references/media-selection.md": {
-      "bytes": 13479,
-      "sha256": "7332f4ca0f4a583b2140371b8bfa30810eb553a60925e2c574cb176f223b94c0"
+      "bytes": 14330,
+      "sha256": "44854ea3dd70a8e7b47988a98b12434e9261c441b20661053d800da85b391abb"
     },
     "references/media-sourcing.md": {
       "bytes": 14124,
@@ -642,8 +646,8 @@
       "sha256": "0e3d5bf1c1cb2639db58b74d311471bacf3e93d908c2b7075bd227ac0ee2b1b2"
     },
     "references/pk-cover.md": {
-      "bytes": 10012,
-      "sha256": "7366fec25a649e79a0390e950ee8eec266eac986065c0a9eb280088ea59f5226"
+      "bytes": 11641,
+      "sha256": "e4ab122c1c194e362520c071baf08c27387d4cc4f5e05d63380ef11787d0ad9d"
     },
     "references/rating-card.md": {
       "bytes": 11221,
@@ -702,12 +706,12 @@
       "sha256": "906b2a8f421294dc297fab01ad59832f1fc2f233d1db445d8d0758306f710089"
     },
     "references/video-editing.md": {
-      "bytes": 15784,
-      "sha256": "dded50e02d1b84db97f4fd95e07d0af10fa26957054a4a11c439feff5b2a908e"
+      "bytes": 17278,
+      "sha256": "de983c358bcb1110af478f76b251a31c72cd401eddea3b8abcaa9bd34bbea9f3"
     },
     "references/video-template-replication.md": {
-      "bytes": 8308,
-      "sha256": "b5425af167699c3a896f67e015f77834b08f9750ee91089d19f5a95587520411"
+      "bytes": 8573,
+      "sha256": "1c53d70d50b49f6a79cc3dbf6a87728bdb27a3776fdcc0d40bb5f773457f343a"
     },
     "references/vsb-attributes.md": {
       "bytes": 14369,
@@ -898,8 +902,8 @@
       "sha256": "8bdef99b66155fb7dd3b69c92ff186038bb7910b44c78fc6368cff8a4ffecf20"
     },
     "scripts/one_image.py": {
-      "bytes": 6634,
-      "sha256": "66c629c1b6767e9cc1ae666ba9afcea8c289f2e364605f2c7dd38769ef1c7273"
+      "bytes": 7184,
+      "sha256": "f31ecdb2e18599182cc763f90faaf2378bc1e5e21fa41fb3d89932f7049bf27f"
     },
     "scripts/physics.py": {
       "bytes": 27601,
@@ -908,6 +912,10 @@
     "scripts/pk_modes.py": {
       "bytes": 4825,
       "sha256": "fb242b8db127db46dd6031f2d8624395e633600d34f6d43af231bc1fefa63e90"
+    },
+    "scripts/poster.py": {
+      "bytes": 4463,
+      "sha256": "7842f631cbbee841ce6b530d89bf450eb18fc53191073c0473149bd11afe7311"
     },
     "scripts/rating_dossier.py": {
       "bytes": 8349,
@@ -1129,6 +1137,10 @@
       "bytes": 3853,
       "sha256": "637dd3e2bd813dc93a7cda93946c5f5f0631b8e59149dea34b3686392fdbae61"
     },
+    "tests/test_poster.py": {
+      "bytes": 2849,
+      "sha256": "01d591e2830041497f9d735e5e140d503707304a0c167b9b831c9337cfe0b5e8"
+    },
     "tests/test_process_rating_handoff.py": {
       "bytes": 7725,
       "sha256": "0de2c20ef55f1f563dabea5eb42a37b26d9c641a3845588517d3aa3b3a5d194f"
@@ -1238,5 +1250,5 @@
       "sha256": "ec1dbc07a768880a77484f95728fcea3df1385df8142cd9cebac383cbbf20342"
     }
   },
-  "updated": "2026-10-27"
+  "updated": "2026-10-29"
 }

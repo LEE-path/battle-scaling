@@ -1,8 +1,8 @@
 # 公开发布范围 / Public distribution
 
-本仓库发布 **battle-scaling 1.21.0** 、自包含的 combat-novel-refpack 与 Battle Video Studio。只审计和整理当前发布包，不改写 Git 历史。公开包有独立文件清单，不能用本地全量资料的manifest覆盖它。
+本仓库提供 **battle-scaling 1.21.1** 、自包含的 combat-novel-refpack 与 Battle Video Studio。完整能力与安装条件见[能力对照表](CAPABILITIES.md)。公开包有独立文件清单，描述实际可分发文件。
 
-The repository distributes **battle-scaling 1.21.0** with the self-contained novel dossier library and Battle Video Studio. This review covers the current distribution, not Git history. Its manifest describes public files only.
+The repository provides **battle-scaling 1.21.1** with the self-contained novel dossier library and Battle Video Studio. See the [capability map](CAPABILITIES.md) for portable entry points and setup requirements. Its manifest describes distributable files.
 
 ## 保留 / Included
 

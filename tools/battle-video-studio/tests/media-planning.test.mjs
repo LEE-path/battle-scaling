@@ -35,10 +35,11 @@ test('finish assembles disjoint candidates and never loops long display',()=>{
   const p=plan(job([clip('one','finish',3),clip('two','finish',3)],[scene('verdict',0,180)]));
   assert.deepEqual(segments(p).map(s=>s.duration),[90,90]);assert.ok(segments(p).every(s=>!s.loop));
 });
-test('0.5 is the slowest automatic rate; shortfall is actionable before render',()=>{
-  const p=plan(job([clip('one','finish',3)],[scene('verdict',0,180)]));
+test('slowdown is opt-in and its 0.5 boundary still yields actionable shortfall',()=>{
+  assert.throws(()=>plan(job([clip('one','finish',3)],[scene('verdict',0,180)])),e=>e.code==='MEDIA_GAPS'&&e.gaps[0].missingSeconds===3);
+  const p=plan(job([clip('one','finish',3,{allowSlowdown:true})],[scene('verdict',0,180)]));
   assert.equal(segments(p)[0].clip.speed,.5);
-  assert.throws(()=>plan(job([clip('one','finish',3)],[scene('verdict',0,210)])),e=>e.code==='MEDIA_GAPS'&&e.gaps[0].role==='finish'&&e.gaps[0].missingSeconds>=.99);
+  assert.throws(()=>plan(job([clip('one','finish',3,{allowSlowdown:true})],[scene('verdict',0,210)])),e=>e.code==='MEDIA_GAPS'&&e.gaps[0].role==='finish'&&e.gaps[0].missingSeconds>=.99);
 });
 test('source intervals prevent renamed/trimmed overlap across intro and finish',()=>{
   const p=plan(job([clip('intro','intro',5,{sourceId:'film',sourceIn:10,sourceOut:15}),clip('renamed','finish',6,{sourceId:'film',sourceIn:12,sourceOut:18}),clip('clean','finish',4,{sourceId:'film',sourceIn:20,sourceOut:24})],[scene('intro',0,150,{layout:'full',subject:'a'}),scene('verdict',150,120)]));
@@ -65,7 +66,8 @@ test('host-rejected crop is not imported into the plan',()=>{
 });
 test('invalid trim and speed fail before staging a broken render timeline',()=>{
  for(const raw of [{trimIn:'wat'},{trimOut:Infinity},{speed:0},{speed:.49},{speed:'NaN'},{trimIn:-1},{trimIn:4,trimOut:3},{trimOut:5.1}])assert.throws(()=>normalizeClipInput(raw,{duration:5}),/trim|speed|区间/);
- const c=normalizeClipInput({trimIn:.01,trimOut:4.99,speed:.5},{duration:5});
+ assert.throws(()=>normalizeClipInput({speed:.5},{duration:5}),/allowSlowdown/);
+ const c=normalizeClipInput({trimIn:.01,trimOut:4.99,speed:.5,allowSlowdown:true},{duration:5});
  assert.ok(c.trimIn>=.01&&c.trimOut<=4.99);assert.equal(c.speed,.5);
 });
 test('only exact, source-disjoint high-quality reveal choices are rotated',()=>{
@@ -94,4 +96,26 @@ test('resuming a half-frame slow interval does not sample the next source shot',
  const w=videoFrameWindow(c,30),frames=89;
  assert.ok(w.before+(frames-1)*c.speed<c.trimOut*30);
  assert.ok(w.before+(frames-1)*c.speed<w.before+w.length);
+});
+
+test('known internal cuts are excluded from quick slots even at S tier or role any',()=>{
+ for(const [role,type] of [['plate','compare'],['highlight','reveal']]){
+  const j=job([clip('hidden-cut','any',2,{continuous:false}),clip('clean',role,1,{qualityTier:'A',continuous:true})],[scene(type,0,20)]);
+  if(type==='compare')j.characters.b.clips=[clip('bp','plate',1,{kind:'image'})];
+  assert.equal(segments(plan(j))[0].clip.src,'clean.mp4');
+  assert.equal(selection.selectClip(j.characters.a,role,0).src,'clean.mp4');
+ }
+});
+test('quick slots never loop or auto-slow a too-short source; a clear still is a fallback',()=>{
+ for(const [role,type] of [['plate','compare'],['highlight','reveal']]){
+  const j=job([clip('short',role,.3,{continuous:true,allowSlowdown:true})],[scene(type,0,24)]);
+  if(type==='compare')j.characters.b.clips=[clip('bp','plate',1,{kind:'image'})];
+  assert.throws(()=>plan(j),e=>e.code==='MEDIA_GAPS'&&e.gaps[0].role===role);
+  j.characters.a.clips.push(clip('still',role,1,{kind:'image',qualityTier:'A'}));
+  const p=plan(j);assert.equal(segments(p)[0].clip.src,'still.mp4');assert.equal(segments(p)[0].loop,false);
+ }
+});
+test('unknown legacy shot continuity is a viewing reminder, never an automatic visual pass',()=>{
+ const p=plan(job([clip('legacy','highlight',1)],[scene('reveal',0,20)]));
+ assert.ok(p.mediaPlanning.notes.some(n=>n.includes('实际核看')));assert.equal(segments(p)[0].loop,false);
 });

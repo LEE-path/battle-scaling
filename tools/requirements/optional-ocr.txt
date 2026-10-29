@@ -1,0 +1,5 @@
+# Explicit opt-in environment. Packages may contain their own small OCR assets.
+# PyMuPDF has AGPL/commercial terms; see THIRD_PARTY_NOTICES.md.
+PyMuPDF>=1.24,<2
+numpy>=1.26,<3
+rapidocr-onnxruntime>=1.4,<2

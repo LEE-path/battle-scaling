@@ -8,13 +8,21 @@ import {selectClip,revealOrdinal} from './media-selection';
 import {videoFrameWindow} from './media-plan.mjs';
 import {TemplateShot,TemplateTransition,TemplateBloom,TemplateAtmosphere,type Profile} from './template-presentation';
 
-const ClipLayer:React.FC<{clip:Clip;width:number;height:number;duration:number;loop:boolean;sourceOffset?:number;planned?:boolean}>=({clip,width,height,duration,loop,sourceOffset=0,planned=false})=>{
+const ClipLayer:React.FC<{clip:Clip;width:number;height:number;duration:number;loop:boolean;sourceOffset?:number;planned?:boolean;blurFill?:boolean}>=({clip,width,height,duration,loop,sourceOffset=0,planned=false,blurFill=false})=>{
  const frame=useCurrentFrame();const {fps}=useVideoConfig();const cover=Math.max(width/clip.width,height/clip.height);const w=clip.width*cover,h=clip.height*cover;
  const style:React.CSSProperties={position:'absolute',width:w,height:h,left:(width-w)*clip.focalX/100,top:(height-h)*clip.focalY/100};
  const window=planned?videoFrameWindow(clip,fps):{before:Math.round(clip.trimIn*fps),length:Math.max(1,Math.round((clip.trimOut-clip.trimIn)*fps))};const length=window.length;
+ const fill=blurFill&&Math.abs(clip.width/clip.height-width/height)>.01;
+ const contain=Math.min(width/clip.width,height/clip.height);const fw=clip.width*contain,fh=clip.height*contain;
+ const foreground:React.CSSProperties=fill?{position:'absolute',width:fw,height:fh,left:(width-fw)/2,top:(height-fh)/2}:style;
+ // Both layers read the identical source interval and playback clock. Keep the
+ // sharp foreground complete; only the soft backdrop is enlarged and cropped.
+ const layer=(layerStyle:React.CSSProperties,drawWidth:number,drawHeight:number,animate=false)=>clip.kind==='image'
+  ?<CanvasImage src={staticFile(clip.src)} width={Math.round(drawWidth)} height={Math.round(drawHeight)} fit="fill" style={{...layerStyle,scale:animate?1.015+Math.min(1,frame/Math.max(1,duration))*.025:1}}/>
+  :<Video src={staticFile(clip.src)} muted trimBefore={Math.round(window.before+sourceOffset*clip.speed)} durationInFrames={Math.max(1,length-Math.round(sourceOffset*clip.speed))} playbackRate={clip.speed} loop={loop&&duration*clip.speed>length} objectFit="fill" style={layerStyle}/>;
  return <AbsoluteFill style={{overflow:'hidden',backgroundColor:'black'}}>
-  {clip.kind==='image'?<CanvasImage src={staticFile(clip.src)} width={Math.round(w)} height={Math.round(h)} fit="fill" style={{...style,scale:1.015+Math.min(1,frame/Math.max(1,duration))*.025}}/>
-   :<Video src={staticFile(clip.src)} muted trimBefore={Math.round(window.before+sourceOffset*clip.speed)} durationInFrames={Math.max(1,length-Math.round(sourceOffset*clip.speed))} playbackRate={clip.speed} loop={loop&&duration*clip.speed>length} objectFit="fill" style={style}/>}
+  {fill&&<AbsoluteFill style={{filter:'blur(18px) brightness(0.48)',scale:1.16}}>{layer(style,w,h)}</AbsoluteFill>}
+  {layer(foreground,fill?fw:w,fill?fh:h,!fill)}
  </AbsoluteFill>;
 };
 
@@ -37,7 +45,7 @@ export const BattleTemplateEdit:React.FC<{job:EditJob}>=({job})=>{
   if(scene.type==='outro'&&['V02','V03','V04'].includes(p.id))return null;
   const plate=(which:'a'|'b',boxHeight:number)=>{
    const planned=scene.media?.[which];
-   if(planned)return <>{planned.map((s,i)=><Sequence key={i} from={s.from} durationInFrames={s.duration} layout="none"><ClipLayer clip={s.clip} width={540} height={boxHeight} duration={s.duration} loop={s.loop} planned/></Sequence>)}</>;
+   if(planned)return <>{planned.map((s,i)=><Sequence key={i} from={s.from} durationInFrames={s.duration} layout="none"><ClipLayer clip={s.clip} width={540} height={boxHeight} duration={s.duration} loop={s.loop} planned blurFill={role==='finish'&&!split}/></Sequence>)}</>;
    const introFor=(s:Scene)=>s.type==='intro'&&(s.layout!=='full'||s.subject===which);
    const earlier=job.scenes.filter(s=>s.from<scene.from&&introFor(s));
    const clip=selectClip(job.characters[which],role,role==='intro'?earlier.length:index);
@@ -47,7 +55,7 @@ export const BattleTemplateEdit:React.FC<{job:EditJob}>=({job})=>{
     const previous=selectClip(job.characters[which],'intro',i);
     return sum+(previous.src===clip.src&&previous.trimIn===clip.trimIn&&previous.trimOut===clip.trimOut?s.duration:0);
    },0):0;
-   return <ClipLayer clip={clip} width={540} height={boxHeight} duration={scene.duration+(scene.from-start)} sourceOffset={sourceOffset} loop={['plate','highlight'].includes(role)}/>;
+   return <ClipLayer clip={clip} width={540} height={boxHeight} duration={scene.duration+(scene.from-start)} sourceOffset={sourceOffset} loop={['plate','highlight'].includes(role)} blurFill={role==='finish'&&!split}/>;
   };
   return <Sequence from={start} layout="none">{split?<AbsoluteFill>
    <div style={{position:'absolute',width:540,height:p.height/2,overflow:'hidden',top:0}}>{plate('a',p.height/2)}</div>

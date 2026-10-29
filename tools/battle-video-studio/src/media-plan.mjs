@@ -1,7 +1,8 @@
 // This module consumes host-assigned semantics. It does not inspect or grade pixels.
 const ranks={S:4,A:3,B:2,C:1,unrated:0};
 const tier=c=>ranks[c.qualityTier||'unrated']??0;
-const eligible=(c,role)=>c.qualityTier!=='exclude'&&c.cropUsable!==false&&(c.role===role||c.role==='any');
+const shortRole=role=>role==='plate'||role==='highlight';
+const eligible=(c,role)=>c.qualityTier!=='exclude'&&c.cropUsable!==false&&(c.role===role||c.role==='any')&&(!shortRole(role)||c.kind==='image'||c.continuous!==false);
 const source=c=>String(c.sourceId||c.src).replaceAll('\\','/').toLowerCase();
 const start=c=>c.sourceIn??c.trimIn;
 const end=c=>c.sourceOut??c.trimOut;
@@ -51,6 +52,7 @@ export function normalizeClipInput(raw,meta,{fps=30,label='素材'}={}){
  const requestedIn=number('trimIn',raw.trimIn,0),requestedOut=number('trimOut',raw.trimOut,duration);
  const speed=number('speed',raw.speed,1);
  if(speed<.5)throw Error(`${label} 的 speed 最低为 0.5；请补充片段，不能靠更低速度凑长。`);
+ if(speed<1&&raw.allowSlowdown!==true)throw Error(`${label} 默认原速；确需且已审看慢放效果后才对该片段显式设置 allowSlowdown:true。`);
  if(requestedIn<0||requestedOut<=requestedIn||requestedOut>duration+.001)throw Error(`${label} 的有效区间应在 0—${duration.toFixed(3)} 秒内，且 trimOut 大于 trimIn。`);
  const trimIn=kind==='image'?requestedIn:Math.ceil(requestedIn*fps-1e-6)/fps;
  const trimOut=kind==='image'?requestedOut:Math.floor(Math.min(requestedOut,duration)*fps+1e-6)/fps;
@@ -88,12 +90,12 @@ function sequence(clips,frames,fps,slow=false){
  const used=[],result=[];let left=frames;
  const available=()=>freeClips(clips,used,fps).sort(compare);
  // One fitting continuous shot wins within an equally exciting category.
- const fitting=available().find(c=>c.continuous!==false&&displayFrames(c,fps,slow&&c.allowSlowdown!==false?.5:c.speed)>=left);
+ const fitting=available().find(c=>c.continuous!==false&&displayFrames(c,fps,slow&&c.allowSlowdown===true?.5:c.speed)>=left);
  if(fitting)clips=[fitting];
  for(const original of clips){
   for(const c of freeClips([original],used,fps)){
    if(left<=0)break;
-   const minimum=slow&&c.allowSlowdown!==false?.5:c.speed;
+   const minimum=slow&&c.allowSlowdown===true?.5:c.speed;
    const capacity=displayFrames(c,fps,minimum);
    const take=Math.min(left,capacity);if(take<1)continue;
    const speed=c.kind==='image'?1:slow?Math.min(c.speed,Math.max(minimum,(c.trimOut-c.trimIn)*fps/take)):c.speed;
@@ -165,10 +167,15 @@ export function planMedia(input){
   const total=windows.reduce((n,w)=>n+w.duration,0);
   if(!pool.length){gaps.push({side,character:character.name,role,requiredSeconds:total/fps,missingSeconds:total/fps,action:`补充已看过、适合 ${role} 且未与其他位置重叠的素材；可标 role: "${role}"（或明确适配的 any），再设置有效入出点。`});continue;}
   if(role==='plate'||role==='highlight'){
-   const floor=role==='highlight'?Math.min(3,tier(pool[0])):tier(pool[0]);
-   const chosen=[];const own=[];
    const maximum=Math.max(...windows.map(w=>w.duration));
-   for(const c of pool.filter(c=>tier(c)>=floor)){
+   const fitting=pool.filter(c=>c.kind==='image'||displayFrames(c,fps)>=maximum);
+   if(!fitting.length){
+    const available=Math.max(0,...pool.map(c=>displayFrames(c,fps)));
+    gaps.push({side,character:character.name,role,requiredSeconds:maximum/fps,availableSeconds:available/fps,missingSeconds:Math.max(0,(maximum-available)/fps),action:'快切底板/揭晓需要覆盖完整槽位的单个连续镜头；补更长单镜头或稳定图片，不能窗口内回卷、夹切镜或自动慢放凑长。'});continue;
+   }
+   const floor=role==='highlight'?Math.min(3,tier(fitting[0])):tier(fitting[0]);
+   const chosen=[];const own=[];
+   for(const c of fitting.filter(c=>tier(c)>=floor)){
     if(own.some(u=>overlaps(range(c),u)))continue;
     const selected=c.kind==='image'?c:subclip(c,0,Math.min(c.trimOut-c.trimIn,maximum*c.speed/fps));
     chosen.push(selected);reserve(selected,own);reserve(selected,used);
@@ -177,8 +184,9 @@ export function planMedia(input){
    if(role==='highlight'&&chosen.length<2)notes.push(`${character.name} 只有一段互不重叠的优选 highlight；本次按既有规则重复它。要交替请补一段独立的 S/A 高光。`);
    for(const [ordinal,w] of windows.entries()){
     const c=chosen[role==='plate'?0:ordinal%chosen.length];
-    job.scenes[w.index].media[side]=[{from:0,duration:w.duration,clip:c,loop:c.kind!=='image'&&w.duration>displayFrames(c,fps)}];
+    job.scenes[w.index].media[side]=[{from:0,duration:w.duration,clip:c,loop:false}];
    }
+   if(chosen.some(c=>c.kind==='video'&&c.continuous===undefined))notes.push(`${character.name} / ${role}：旧素材未标单镜头连续性；程序未检查像素，制作方须按审片流程实际核看完整区间及最终构图。`);
   }else{
    const planned=longPlan(pool,total,fps);
    if(planned.remaining){const missing=planned.remaining/fps;gaps.push({side,character:character.name,role,requiredSeconds:total/fps,availableSeconds:(total-planned.remaining)/fps,missingSeconds:missing,action:`仍缺 ${missing.toFixed(3)} 秒展示。补充不同源区间的精彩 ${role} 视频/动效/图片；当前允许的慢放已计入（最低 0.5），图片可明确 displayDuration。不循环已有长展示。`});continue;}

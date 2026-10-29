@@ -1,5 +1,13 @@
 # Distribution synchronization
 
+Build upload-ready archives only after synchronization and verification:
+
+```sh
+python -X utf8 tools/build_release.py --out ../release-assets/v1.21.1
+```
+
+The builder uses the static manifests for both ZIPs, verifies archive entry bytes, writes SHA256SUMS.txt, preserves existing assets and performs no Git or network publishing. The full ZIP contains all declared tools; the smaller Skill ZIP is explicitly separate. Do not ZIP the working directory recursively.
+
 `tools/sync_public.py` prepares a file-based distribution from explicit source directories. It does not install software, alter sources, overwrite site databases, or invoke Git/network publishing. Run against a separate target first.
 
 ```powershell

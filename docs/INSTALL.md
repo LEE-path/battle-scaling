@@ -16,7 +16,7 @@ python -X utf8 tools/setup.py check --skill-dir "~/.codex/skills/battle-scaling"
 
 `install` creates an isolated `.venv`, installs lightweight media/research packages, runs the pinned video project's `npm ci`, installs the full Skill into the Codex skills folder and writes private runtime pointers to this extracted project. Use `--skill-dir <your-agent-skill-directory>` for another compatible Agent. Keep the extracted folder: its video code and `.venv` remain in use.
 
-`install` 创建隔离环境、安装轻量依赖和视频 npm 依赖，复制完整 Skill，并绑定本次解压目录。其他 Agent 用 `--skill-dir` 指定技能目录。安装目标已有内容时需显式 `--upgrade`；替换的静态文件先备份到目标 `runtime/install-backups/`，运行数据库、用户素材、凭证及其他设置不被清空。依赖安装失败时会停止，不宣称安装完成。
+`install` 创建隔离环境、安装轻量依赖和视频 npm 依赖，复制完整 Skill，并绑定本次解压目录；`research/full`还将贴吧worker绑定到该隔离Python，避免宿主默认Python未装aiotieba而失效。其他 Agent 用 `--skill-dir` 指定技能目录。安装目标已有内容时需显式 `--upgrade`；替换的静态文件先备份到目标 `runtime/install-backups/`，运行数据库、用户素材、凭证及其他设置不被清空。依赖安装失败时会停止，不宣称安装完成。
 
 ```powershell
 # Existing installation / 已有安装：保留运行数据，备份被替换文件
@@ -57,6 +57,7 @@ python -X utf8 tools/setup.py run battle doctor
 python -X utf8 tools/setup.py run bili_media --help
 python -X utf8 tools/setup.py run media_acquire --help
 python -X utf8 tools/setup.py run one_image --help
+python -X utf8 tools/setup.py run poster --help
 python -X utf8 tools/setup.py run video_studio select-template
 ```
 
@@ -79,3 +80,18 @@ Open <http://127.0.0.1:3210>. Import authorized audio and character assets, then
 User runtime settings, acquisition histories, credentials, source media and outputs are excluded from distribution. Do not put secrets in prompts, public jobs or static package files. Release verification is separate from normal rating, storytelling and media creation; it is not a per-output acceptance gate.
 
 The installer verifies the shipped static files while preserving additional user runtime files; `verify-static` is only this installation check. Public release preparation still uses `tools/verify_package.py`, which checks all upload candidates and is never replaced by the installer check.
+
+## Optional OCR environments / 按需安装OCR与公式环境
+
+默认`full`不安装神经OCR或生成模型。下列兼容环境需Python 3.11/3.12，使用独立`.venv-ocr`／`.venv-formula`，不改主环境。显式选择这些命令会安装上游包；这些包可能自带或获取识别模型资源，不能将它们理解为零模型下载。公式适配器仍只加载已经提供的四个本地模型文件，未配置不隐式下载。
+
+```powershell
+python -X utf8 tools/setup.py optional ocr
+python -X utf8 tools/setup.py run ocr_pdf --input book.pdf --output ocr-new
+python -X utf8 tools/setup.py optional formula --skill-dir "your-agent-skills/battle-scaling" --model-dir "your-existing-formula-models"
+python -X utf8 tools/setup.py run formula_adapter --help
+```
+
+The OCR recipes preserve the existing adapters' compatible APIs; they do not claim these older packages are the latest recommended OCR stack. RapidOCR now develops its unified package rather than the legacy ONNX-specific package; migration needs a separately validated adapter. See [upstream installation guidance](https://rapidai.github.io/RapidOCRDocs/main/en/install_usage/rapidocr/install/) and [RapidLaTeXOCR](https://github.com/RapidAI/RapidLaTeXOCR). PyMuPDF's AGPL/commercial terms remain applicable. These optional recipes do not install an image/video generation backend.
+
+完整能力、安装入口与必须自行提供的内容见[能力对照表](CAPABILITIES.md)。隔离环境中的`setup.py run`会为OCR/公式选择对应可选解释器；没有安装时不冒充可推理。其他API/MCP/CLI由Agent按照随包接入流程绑定实际可用工具。

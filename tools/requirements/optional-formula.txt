@@ -1,0 +1,6 @@
+# Explicit opt-in environment. Four user-provided local model files are required.
+Pillow>=10
+numpy>=1.26,<2
+opencv-python<4.12
+onnxruntime>=1.17,<2
+rapid-latex-ocr>=0.0.9,<1

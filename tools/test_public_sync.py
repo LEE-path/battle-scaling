@@ -55,7 +55,7 @@ class DistributionTests(unittest.TestCase):
             writing=b'# independently written methods\r\nKeep existing edits.\r\n'
             (pub/'skills/battle-scaling/references/writing-experience.md').write_bytes(writing)
             (pub/'LICENSE').write_bytes(b'Original permission text\n')
-            for name in ('sync_public.py','verify_package.py','publication_guard.py','test_publication_guard.py','test_public_sync.py','import_handbook_corpus.py','setup.py','test_setup.py'):(pub/'tools'/name).write_bytes(b'# fixture\n')
+            for name in ('sync_public.py','verify_package.py','publication_guard.py','test_publication_guard.py','test_public_sync.py','import_handbook_corpus.py','setup.py','test_setup.py','build_release.py','test_build_release.py'):(pub/'tools'/name).write_bytes(b'# fixture\n')
             with patch.object(s,'PUBLICATION',pub),patch.object(s,'video_payload',return_value={}):
                 files,_=s.build_payload(skill,root/'video',novel,'1.21.0')
             self.assertEqual(files['tools/combat-novel-refpack/combat_refpack/core.py'],b'# authoritative core\n')
